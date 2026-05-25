@@ -1,14 +1,15 @@
 <script type="application/json" id="cowork-artifact-meta">
 {
   "name": "Second Scan Dashboard",
-  "schemaVersion": 1
+  "schemaVersion": 1,
+  "description": "Live dashboard for Kalos second scan sessions. Shows upcoming scan members with DEXA data, lift targets, coaching flags, and modal detail views."
 }
 </script>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalos | Second Scan Week — May 8–20, 2026</title>
+<title>Kalos | Second Scan Week — May 8–28, 2026</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -608,94 +609,21 @@
 <div class="header">
   <div class="header-left">
     <h1>⚡ Second Scan Week</h1>
-    <p>Kalos · May 8–20, 2026 · Daniel Christensen · 1 active</p>
+    <p>Kalos · May 8–28, 2026 · Daniel Christensen · 7 upcoming</p>
   </div>
   <div class="header-stats">
-    <div class="header-stat"><div class="num">4</div><div class="lbl">Clients</div></div>
-    <div class="header-stat"><div class="num">5</div><div class="lbl">Days</div></div>
+    <div class="header-stat"><div class="num">7</div><div class="lbl">Clients</div></div>
+    <div class="header-stat"><div class="num">4</div><div class="lbl">Scan Days</div></div>
     <div class="header-stat"><div class="num">0</div><div class="lbl">Fat Loss</div></div>
-    <div class="header-stat"><div class="num">4</div><div class="lbl">LBM</div></div>
+    <div class="header-stat"><div class="num">7</div><div class="lbl">LBM</div></div>
   </div>
 </div>
 
 
-
-<!-- ═══════════ MAY 14 ═══════════ -->
 <!-- ═══════════ MAY 25 ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Sunday · May 25, 2026</div>
+  <div class="day-label">Monday · May 25, 2026</div>
   <div class="cards-row">
-
-    <!-- ── SUE FILICE ── -->
-    <div class="card" id="card-sue">
-      <div class="card-header">
-        <div>
-          <div class="card-name clickable" onclick="openModal('sue')">Sue Filice <span class="expand-chevron">↗</span></div>
-          <div class="card-sub">Female · 65 · Second Scan</div>
-        </div>
-        <div class="card-badges">
-          <span class="badge badge-lbm">LBM Build</span>
-          <span class="badge badge-scan">12:00 PM</span>
-        </div>
-      </div>
-      <div class="scan-row">
-        <span>📅</span>
-        <span><strong>Sunday, May 25</strong> · Second Kalos DEXA Scan · 12:00 PM · Campbell</span>
-      </div>
-      <div class="metrics-grid">
-        <div class="metric">
-          <div class="metric-val">137.2</div>
-          <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Scan 1 · Apr 20</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val warn">35.0%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">22nd %ile AM</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val warn">102.8</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Elevated</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val warn">27th</div>
-          <div class="metric-label">ALMI AM%</div>
-          <div class="metric-sub">6.0 kg/m²</div>
-        </div>
-      </div>
-      <div class="consistency-section">
-        <div class="cons-label">📊 Training Consistency</div>
-        <div class="cons-row">
-          <div class="cons-pct" style="color:#ef4444">Low</div>
-          <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:15%;background:#ef4444"></div></div>
-            <div class="cons-detail">1 logged session · Travel + illness Apr 23–May 4 · 25 lb DBs arrived May 5 · 3×/week revised program</div>
-          </div>
-        </div>
-      </div>
-      <div class="why-section">
-        <div class="why-tag">⭐ Her Deep Why</div>
-        <div class="why-text">"I want to rebuild what I've built — the muscle I worked so hard to keep after losing 75 lb — and walk the walk for the seniors I lead in wellness every day." — Sue</div>
-      </div>
-      <div class="checklist-section">
-        <div class="checklist-header" onclick="toggleChecklist('sue')">
-          <span class="checklist-title">✅ Pre-Scan Prep</span>
-          <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-sue">2/6</span>
-            <span class="checklist-chevron" id="chev-sue">›</span>
-          </div>
-        </div>
-        <div class="checklist-items" id="items-sue">
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sue')"><span> Projection script ready &mdash; <a href="https://drive.google.com/open?id=13I_7J9tG_TIkAEG8o3PVDZR7b0u5h5_L" target="_blank" style="color:#2e7d32;font-size:11px">Open notebook ↗</a></span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sue')"><span> Review Iris, Everfit DMs &amp; Intro/10-Day notes — find personalization</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sue')"><span> Pre-scan message sent — tie in goals and why</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sue')"><span> Everfit lifting metrics — send targets for upcoming lifts</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sue')"><span> Gold standard strength projections reviewed</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sue')"><span> Membership recommendation in mind</span></label>
-        </div>
-      </div>
-    </div>
 
     <!-- ── NATALIE NGUYEN ── -->
     <div class="card" id="card-natalie">
@@ -710,7 +638,7 @@
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Sunday, May 25</strong> · Second Kalos DEXA Scan · 8:15 AM · Campbell</span>
+        <span><strong>Monday, May 25</strong> · Second Kalos DEXA Scan · 8:15 AM · Campbell</span>
       </div>
       <div class="metrics-grid">
         <div class="metric">
@@ -782,37 +710,37 @@
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Sunday, May 25</strong> · Second Kalos DEXA Scan · 9:00 AM · Campbell</span>
+        <span><strong>Monday, May 25</strong> · Second Kalos DEXA Scan · 9:00 AM · Campbell</span>
       </div>
       <div class="metrics-grid">
-        <div class="metric note">
-          <div class="metric-val">144</div>
+        <div class="metric ok">
+          <div class="metric-val">145.7</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">May 17 Everfit</div>
+          <div class="metric-sub">May 23 Everfit</div>
         </div>
         <div class="metric ok">
-          <div class="metric-val">15.6%</div>
+          <div class="metric-val">18.8%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">May 17 logged</div>
+          <div class="metric-sub">Apr 27 DEXA (16th AM)</div>
         </div>
-        <div class="metric note">
-          <div class="metric-val">—</div>
+        <div class="metric ok">
+          <div class="metric-val">52.8</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">healthy range</div>
         </div>
         <div class="metric note">
-          <div class="metric-val">—</div>
+          <div class="metric-val">18th</div>
           <div class="metric-label">ALMI AM%</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">8.0 kg/m²</div>
         </div>
       </div>
       <div class="consistency-section">
         <div class="cons-label">📊 Training Consistency</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#22c55e">89%</div>
+          <div class="cons-pct" style="color:#22c55e">100%</div>
           <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:89%;background:#22c55e"></div></div>
-            <div class="cons-detail">8 of 9 sessions · Build | 3-Day | Push / Pull / Leg · Movement Gym (Santa Clara)</div>
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail">11 of 11 sessions · Build | 3-Day | Push / Pull / Leg · Movement Gym (Santa Clara)</div>
           </div>
         </div>
       </div>
@@ -832,7 +760,7 @@
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Projection script ready — <a href="https://drive.google.com/open?id=1OjWPN_Z1U5MTergBpJaSrm64imiJlQDr" target="_blank" style="color:#2e7d32;font-size:11px">Open notebook ↗</a></span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Review Iris, Everfit DMs &amp; Intro/10-Day notes — find personalization</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Gold standard strength projections reviewed</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('joseph')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive — needed for DEXA comparison table</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Scan 1 DEXA PDF confirmed in Drive (Apr 27)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Everfit lifting metrics — send targets for upcoming lifts</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('joseph')"><span> Pre-scan message sent — tie in goals and why</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('joseph')"><span> Review food journal — confirm 125g protein target</span></label>
@@ -850,12 +778,12 @@
           <div class="card-sub">Male · 61 · Second Scan</div>
         </div>
         <div class="card-badges">
-          <span class="badge badge-scan">10:30 AM</span>
+          <span class="badge badge-scan">3:30 PM</span>
         </div>
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Sunday, May 25</strong> · Second Kalos DEXA Scan · 10:30 AM · Campbell</span>
+        <span><strong>Monday, May 25</strong> · Second Kalos DEXA Scan · 3:30 PM · Campbell</span>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -913,10 +841,626 @@
         </div>
       </div>
     </div>
-    
+
 
   </div>
 </div>
+
+
+<!-- ═══════════ MAY 28 ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Thursday · May 28, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── RYAN YOUNG ── -->
+    <div class="card" id="card-ryanyoung">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('ryanyoung')">Ryan Young <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · ~30s · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">9:45 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, May 28</strong> · Second Kalos DEXA Scan · 9:45 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val pending">—</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">DEXA pending</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val pending">—</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">DEXA pending</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val pending">—</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">DEXA pending</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val pending">—</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">DEXA pending</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">100%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail">8/8 sessions last 30d · 3/3 last 7d · Growth | 3-Day | 3×/wk + volleyball &amp; basketball 2–3×/wk</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">TBD — confirm at scan day via Iris notes</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('ryanyoung')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-ryanyoung">3/8</span>
+            <span class="checklist-chevron" id="chev-ryanyoung">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-ryanyoung">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('ryanyoung')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive — needed for baseline comparison table</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('ryanyoung')"><span> Review Iris notes — confirm deep why, goals, personal context</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('ryanyoung')"><span> Gold standard strength projections reviewed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('ryanyoung')"><span> Everfit lifting metrics — targets sent: Bench 165×7-8, Sumo DL 315×8, Lat Pulldown 175×11+</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('ryanyoung')"><span> Pre-scan message sent — tie in goals and why</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('ryanyoung')"><span> Food journal task added to Everfit</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('ryanyoung')"><span> Review nutrition — confirm 140g protein + creatine 5g</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('ryanyoung')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PRIYAL MEHTA ── -->
+    <div class="card" id="card-priyal">
+      <div class="duo-label">Duo Scan — Priyal &amp; Mihir</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('priyal')">Priyal Mehta <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 37 · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-duo">Duo</span>
+          <span class="badge badge-scan">12:00 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, May 28</strong> · Second Kalos DEXA Scan · 12:00 PM · Campbell · with Mihir</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">151.6</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">40.1%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">75th AM %ile</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">118.9</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">⚠️ elevated</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">21st</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">6.0 kg/m²</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Everfit before scan day · Home DB program · targets sent: DB Bench 35×12, Row 20×12, RDL 30×12</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Deep Why</div>
+        <div class="why-text">TBD — confirm at scan day via Iris notes</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('priyal')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-priyal">3/8</span>
+            <span class="checklist-chevron" id="chev-priyal">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-priyal">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('priyal')"><span> Review Iris notes — confirm deep why, goals, personal context</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('priyal')"><span> Gold standard strength projections reviewed (home DB context)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('priyal')"><span> Everfit lifting metrics — targets sent: DB Bench 35×12, DB Row 20×12, DB RDL 30×12</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('priyal')"><span> Pre-scan message sent — tie in goals and why</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('priyal')"><span> Food journal task added to Everfit</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('priyal')"><span> Review nutrition — confirm protein target and VAT-reduction strategy</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('priyal')"><span> Next program ready — confirm home DB availability and progression plan</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('priyal')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MIHIR PATEL ── -->
+    <div class="card" id="card-mihir">
+      <div class="duo-label">Duo Scan — Priyal &amp; Mihir</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('mihir')">Mihir Patel <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 38 · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-duo">Duo</span>
+          <span class="badge badge-scan">12:00 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, May 28</strong> · Second Kalos DEXA Scan · 12:00 PM · Campbell · with Priyal</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">181.4</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">26.5%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">70th AM %ile</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">74.6</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">✓ healthy</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">21st</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">8.1 kg/m²</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Everfit before scan day · Home DB program · targets sent: DB Bench 80×15, Row 40×15, RDL 80×15</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">TBD — confirm at scan day via Iris notes</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('mihir')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-mihir">3/8</span>
+            <span class="checklist-chevron" id="chev-mihir">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-mihir">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mihir')"><span> Review Iris notes — confirm deep why, goals, personal context</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mihir')"><span> Gold standard strength projections reviewed (home DB context)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('mihir')"><span> Everfit lifting metrics — targets sent: DB Bench 80×15, DB Row 40×15, DB RDL 80×15</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('mihir')"><span> Pre-scan message sent — tie in goals and why</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('mihir')"><span> Food journal task added to Everfit</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mihir')"><span> Review nutrition — confirm protein target and recomp strategy</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mihir')"><span> Next program ready — confirm home DB availability and progression plan</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mihir')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════ MAY 31 ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Sunday · May 31, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── JENNA WELTON ── -->
+    <div class="card" id="card-jenna">
+      <div class="duo-label">Duo Scan · Jenna + Scott Welton</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('jenna')">Jenna Welton <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 42 · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">LBM Build</span>
+          <span class="badge badge-scan">12:45 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Sunday, May 31</strong> · Second Kalos Duo DEXA Scan · 12:45 PM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">140.8</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">May 2 DEXA</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">31.3%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">26th AM %ile</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">46.5</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Healthy &lt;100</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">31st %ile</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">6.3 kg/m²</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Iris before scan day · ⚠️ BMD T-1.9 (osteopenia range) — bone density program critical</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Deep Why</div>
+        <div class="why-text">Pull from Iris member summary before scan day. BMD T-1.9 suggests bone density + lean mass framing will resonate.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('jenna')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-jenna">4/8</span>
+            <span class="checklist-chevron" id="chev-jenna">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-jenna">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jenna')"><span> Scan 1 DEXA PDF in Drive — <a href="https://drive.google.com/file/d/1z6-r-zlpexv_Za1GeuDADCZo9HH5HJgM/view" target="_blank" style="color:#2e7d32;font-size:11px">View PDF ↗</a></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jenna')"><span> Pre-scan opener sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jenna')"><span> Lift targets sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jenna')"><span> Food journal task added (Fri May 29 + Sat May 30)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jenna')"><span> Pull Iris goals, why, coaching flags — update modal</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jenna')"><span> Review food journal — confirm protein target + log quality</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jenna')"><span> Next program decided and ready to discuss</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jenna')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SCOTT WELTON ── -->
+    <div class="card" id="card-scott">
+      <div class="duo-label">Duo Scan · Jenna + Scott Welton</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('scott')">Scott Welton <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 48 · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">LBM Build</span>
+          <span class="badge badge-scan">12:45 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Sunday, May 31</strong> · Second Kalos Duo DEXA Scan · 12:45 PM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">175.4</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">May 2 DEXA</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">22.3%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">33rd AM %ile</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">87.5</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Healthy &lt;100</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">38th %ile</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">8.7 kg/m²</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Iris before scan day · BMD T+0.3 excellent · VAT 87.5 just under healthy cutoff</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Pull from Iris member summary before scan day.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('scott')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-scott">4/8</span>
+            <span class="checklist-chevron" id="chev-scott">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-scott">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Scan 1 DEXA PDF in Drive — <a href="https://drive.google.com/file/d/1maKuR8QOn6A0TR4Z728vRnxHnqL8GMIH/view" target="_blank" style="color:#2e7d32;font-size:11px">View PDF ↗</a></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Pre-scan opener sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Lift targets sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Food journal task added (Fri May 29 + Sat May 30)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Pull Iris goals, why, coaching flags — update modal</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Review food journal — confirm protein target</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Next program decided and ready to discuss</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── UMAR KHAN PATHAN ── -->
+    <div class="card" id="card-umar">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('umar')">Umar Khan Pathan <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 31 · Second Scan · Messages on hold</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-fat-loss">Fat Loss</span>
+          <span class="badge badge-scan">2:15 PM</span>
+        </div>
+      </div>
+      <div class="scan-row" style="background:#fff8e1;">
+        <span>⏸</span>
+        <span><strong>Sunday, May 31</strong> · Second Kalos DEXA Scan · 2:15 PM · Campbell · <strong style="color:#e65100">Week-out messages on hold — await Daniel's trigger</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">231.9</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Apr 30 DEXA</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">38.7%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">99th AM %ile</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">162.3</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">⚠️ Very elevated</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">44th %ile</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">8.8 kg/m²</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Iris before scan day · VAT 162.3 cm² = health priority flag</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Pull from Iris member summary. Card built; messages held pending Daniel's go-ahead.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('umar')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-umar">1/8</span>
+            <span class="checklist-chevron" id="chev-umar">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-umar">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('umar')"><span> Scan 1 DEXA PDF in Drive — <a href="https://drive.google.com/file/d/13nwKm9B4PggVWJHPp9APbfVWUCEYTP_g/view" target="_blank" style="color:#2e7d32;font-size:11px">View PDF ↗</a></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> ⏸ Pre-scan opener — HOLD until Daniel triggers</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> ⏸ Lift targets — HOLD until Daniel triggers</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> ⏸ Food journal task — HOLD until Daniel triggers</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> Pull Iris goals, why, coaching flags — update modal</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> Review Everfit for lift history and program</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> Next program decided and ready to discuss</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('umar')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════ JUN 1 ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Monday · June 1, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── JUHI KHANNA ── -->
+    <div class="card" id="card-juhi">
+      <div class="duo-label">Duo Scan · Juhi + Aridaman Tripathi</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('juhi')">Juhi Khanna <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-duo">Duo</span>
+          <span class="badge badge-scan">9:45 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, June 1</strong> · Second Kalos Duo DEXA Scan · 9:45 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Iris before scan day · ⚠️ Upload Scan 1 DEXA PDF to Drive</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Deep Why</div>
+        <div class="why-text">Pull from Iris member summary before scan day.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('juhi')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-juhi">3/8</span>
+            <span class="checklist-chevron" id="chev-juhi">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-juhi">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive (not found — needed for baseline comparison)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Pre-scan opener sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Lift targets sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Food journal task added (Sat May 30 + Sun May 31)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> Pull Iris goals, why, coaching flags</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> Review food journal — confirm protein target</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> Next program decided and ready to discuss</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ARIDAMAN TRIPATHI ── -->
+    <div class="card" id="card-aridaman">
+      <div class="duo-label">Duo Scan · Juhi + Aridaman Tripathi</div>
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('aridaman')">Aridaman Tripathi <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · Second Scan</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-duo">Duo</span>
+          <span class="badge badge-scan">9:45 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, June 1</strong> · Second Kalos Duo DEXA Scan · 9:45 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">PDF pending</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#aaa">—</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#aaa"></div></div>
+            <div class="cons-detail">Pull from Iris before scan day · ⚠️ Upload Scan 1 DEXA PDF to Drive</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Pull from Iris member summary before scan day. (Note: Aridaman appears as a tab on Juhi's Iris profile.)</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('aridaman')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-aridaman">3/8</span>
+            <span class="checklist-chevron" id="chev-aridaman">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-aridaman">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive (not found — needed for baseline comparison)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Pre-scan opener sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Lift targets sent via Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Food journal task added (Sat May 30 + Sun May 31)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> Pull Iris goals, why, coaching flags</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> Review food journal — confirm protein target</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> Next program decided and ready to discuss</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 <!-- ═══════════ MODAL OVERLAY ═══════════ -->
 <div class="modal-backdrop" id="modal-backdrop">
@@ -935,302 +1479,6 @@
 
 <!-- end modal-vishaka -->
 
-<!-- ── HERC DE GUZMAN MODAL ── -->
-
-<!-- ── VISHAKA IYER MODAL ── -->
-<div id="modal-sue" class="modal-content"
-     data-name="Sue Filice"
-     data-sub="Second Scan · May 25, 2026 · LBM Build + Longevity · F · 65">
-
-  <script>
-  window.__scan1_sue = {
-    bw: 137.2, bfPct: 35.0, bfAMpct: 22,
-    lean: 88.42, fat: 47.65, vat: 102.8,
-    almiVal: 6.0, almiAMpct: 27,
-    bmd: 1.132, bmdZ: 0.9,
-    regional: {
-      larm:  { lean: 4.40, fat: 2.26 },
-      rarm:  { lean: 4.70, fat: 2.62 },
-      trunk: { lean: 43.96, fat: 21.83 },
-      lleg:  { lean: 14.27, fat: 8.84 },
-      rleg:  { lean: 13.98, fat: 9.89 }
-    }
-  };
-  </script>
-
-  <!-- 1 — Wins & Pre-Scan Snapshot -->
-  <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="sue-scan-badge">Scan 2 Pending</span></div>
-    <div class="success-wins">
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>-75 lb total weight loss maintained</strong> — held the loss and now pivoting to rebuild muscle. Big deal.</span></div>
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>InBody self-report (May 5): +3.7 lb muscle, -3.3% BF</strong> — directional win in the right direction despite low Everfit logging</span></div>
-      <div class="success-win"><span class="win-icon">🦴</span><span class="win-text"><strong>BMD strong: T +0.3, Z +0.9</strong> — excellent bone density for 65F; Scan 2 will track preservation</span></div>
-      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>120g protein/day target, creatine 5g/day</strong> — nutrition fundamentals in place; vegetarian + eggs/dairy</span></div>
-    </div>
-    <div class="success-targets">
-      <div class="success-targets-label">Lift targets: not yet sent — to be drafted this week</div>
-      <div class="success-target-item">DB Bench Press target (3×12) — TBD based on current strength</div>
-      <div class="success-target-item">DB Single Arm Row target (3×12) — TBD</div>
-      <div class="success-target-item">Goblet Squat target (3×12) — TBD</div>
-    </div>
-  </div>
-
-  <!-- 2 — Goal & Deep Why -->
-  <div class="dp-section dp-section-goal">
-    <div class="dp-title">Goal &amp; Why</div>
-    <div class="dp-goal"><strong>LBM Build + Longevity</strong> — Rebuild muscle mass after major weight loss (-75 lb), protect bone density, and improve ALMI (currently 27th %ile AM — below average for 65F). VAT at 102.8 cm² — just into elevated range, target &lt;100.</div>
-    <div class="dp-why">"I want to rebuild what I worked so hard to keep after losing 75 lb — and walk the walk for the seniors I lead in wellness every day." — Sue</div>
-  </div>
-
-  <!-- 3 — Personal Context & Coaching Flags -->
-  <div class="dp-section">
-    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
-    <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Sciatica — right side, ongoing</strong> — Chiro + PT referral in place. Monitor: avoid heavy spinal loading, unilateral work OK. No back squats. DB front squat and lunge are in program (check form cues on scan day).</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Consistency flag — low Everfit logging</strong> — 1 session logged in 4 weeks, but she was active: travel Apr 23–May 4 (yoga + hotel gym + bodyweight), then 25 lb adj DBs arrived May 5. Revised to 3×/week Full Body from 4×. Real consistency likely 40–60% — not as bad as the log shows.</span></div>
-      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Equipment transition</strong> — 25 lb adjustable DBs arrived May 5. Prior access: work gym (full equipment) + hotel gyms. Program is DB-only — she should be using heavier loads at work gym now.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Nutrition: Vegetarian + eggs/dairy, no soy</strong> — 120g protein/day target (high for vegetarian — needs tracking). Creatine 5g/day already in place. Priority: protein density, not volume.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Left knee — remote meniscus/patella surgery</strong> — No current issues. Cleared for all lower body work. Monitor during lunges and squat progression.</span></div>
-    </div>
-    <div class="personal-notes" style="margin-top:10px">
-      <div class="personal-note"><span class="note-emoji">🏢</span><span><strong>Works in senior living/wellness</strong> — She leads health programs for the residents she serves. Muscle gain and bone health are professionally meaningful, not just personal. Use this framing on scan day.</span></div>
-      <div class="personal-note"><span class="note-emoji">📊</span><span><strong>10-day check-in (May 5):</strong> Self-reported active despite travel + illness. Program revised to 3×/week. InBody self-report: +3.7 lb muscle, -3.3% BF. Scale at 143.7 lb (May 14) vs DEXA 137.2 lb — difference is scale vs DEXA method, not actual gain.</span></div>
-    </div>
-  </div>
-
-  <!-- 4 — Body Snapshot -->
-  <div class="dp-section">
-    <div class="dp-title">Body Snapshot — Scan 1 Baseline</div>
-    <div class="snap-metrics">
-      <div class="snap-metric">
-        <div class="snap-mv">137.2</div>
-        <div class="snap-ml">Body Weight</div>
-        <div class="snap-ms">lb · DEXA Apr 20</div>
-      </div>
-      <div class="snap-metric">
-        <div class="snap-mv note">35.0%</div>
-        <div class="snap-ml">Body Fat %</div>
-        <div class="snap-ms">22nd %ile AM</div>
-      </div>
-      <div class="snap-metric">
-        <div class="snap-mv warn">102.8</div>
-        <div class="snap-ml">VAT cm²</div>
-        <div class="snap-ms">Elevated (100–160)</div>
-      </div>
-      <div class="snap-metric">
-        <div class="snap-mv note">27th</div>
-        <div class="snap-ml">ALMI AM %ile</div>
-        <div class="snap-ms">6.0 kg/m²</div>
-      </div>
-    </div>
-    <div class="nutri-protocol" style="background:#e8f5e9;border-color:#a5d6a7;">
-      <strong>Current:</strong> Scale 143.7 lb (May 14 Everfit) vs DEXA 137.2 lb (Apr 20) — different methods, don't compare directly. Fat 47.65 lb · Lean 88.42 lb at Scan 1. BMD T+0.3 / Z+0.9 — strong bones for age 65. Creatine 5g/day since program start — expect some glycogen/water loading in lean mass.
-    </div>
-  </div>
-
-  <!-- 5 — DEXA Results -->
-  <div class="dp-section dexa-print-section">
-    <div class="dp-title">DEXA Results</div>
-
-    <div class="print-page-header">
-      <div class="pph-left">
-        <h1>Kalos Body Composition Results</h1>
-        <div class="pph-sub">Sue Filice · LBM Build + Longevity</div>
-      </div>
-      <div class="pph-right">
-        <strong>Second Scan · May 25, 2026</strong>
-        Kalos Fitness · daniel@livekalos.com
-      </div>
-    </div>
-
-    <div class="scan-meta">
-      <div class="meta-item"><span class="meta-label">Scan 1 Date</span><span class="meta-value">Apr 20, 2026</span></div>
-      <div class="meta-item"><span class="meta-label">Scan 2 Date</span><span class="meta-value r-pending" id="sue-s2-date">—</span></div>
-      <div class="meta-item"><span class="meta-label">S1 Weight</span><span class="meta-value">137.2 lb</span></div>
-      <div class="meta-item"><span class="meta-label">S2 Weight</span><span class="meta-value r-pending" id="sue-s2-bw">—</span></div>
-      <div class="meta-item"><span class="meta-label">Height</span><span class="meta-value">64.0 in</span></div>
-    </div>
-
-    <table class="results-table">
-      <thead>
-        <tr>
-          <th>Metric</th>
-          <th class="tc">Scan 1</th>
-          <th class="tc">Scan 2</th>
-          <th class="tc">Δ Change</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Body Fat %</strong></td>
-          <td class="tc">35.0% <span style="font-size:10px;color:#888">(22nd AM)</span></td>
-          <td class="tc r-pending" id="sue-s2-bf">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-bf">—</td>
-        </tr>
-        <tr>
-          <td><strong>Lean Mass</strong></td>
-          <td class="tc">88.42 lb</td>
-          <td class="tc r-pending" id="sue-s2-lean">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-lean">—</td>
-        </tr>
-        <tr>
-          <td><strong>Fat Mass</strong></td>
-          <td class="tc">47.65 lb</td>
-          <td class="tc r-pending" id="sue-s2-fat">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-fat">—</td>
-        </tr>
-        <tr>
-          <td><strong>VAT Area</strong></td>
-          <td class="tc">102.8 cm² <span style="font-size:10px;color:#f59e0b">⚠ elevated</span></td>
-          <td class="tc r-pending" id="sue-s2-vat">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-vat">—</td>
-        </tr>
-        <tr>
-          <td><strong>ALMI</strong></td>
-          <td class="tc"><span class="almi-pct">27th %ile AM</span><span class="almi-sub">6.0 kg/m²</span></td>
-          <td class="tc r-pending" id="sue-s2-almi">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-almi">—</td>
-        </tr>
-        <tr>
-          <td><strong>BMD</strong></td>
-          <td class="tc">1.132 <span style="font-size:10px;color:#2e7d32">T+0.3 / Z+0.9</span></td>
-          <td class="tc r-pending" id="sue-s2-bmd">—</td>
-          <td class="tc r-pending r-delta" id="sue-d-bmd">—</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- Regional Table -->
-    <table class="dexa-reg-table" style="margin-top:14px">
-      <thead>
-        <tr>
-          <th>Region</th>
-          <th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th>
-          <th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Left Arm</td>
-          <td class="tc">4.40 lb</td><td class="tc r-pending" id="sue-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="sue-d-larm-lean">—</td>
-          <td class="tc">2.26 lb</td><td class="tc r-pending" id="sue-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="sue-d-larm-fat">—</td>
-        </tr>
-        <tr>
-          <td>Right Arm</td>
-          <td class="tc">4.70 lb</td><td class="tc r-pending" id="sue-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="sue-d-rarm-lean">—</td>
-          <td class="tc">2.62 lb</td><td class="tc r-pending" id="sue-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="sue-d-rarm-fat">—</td>
-        </tr>
-        <tr>
-          <td>Trunk</td>
-          <td class="tc">43.96 lb</td><td class="tc r-pending" id="sue-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="sue-d-trunk-lean">—</td>
-          <td class="tc">21.83 lb</td><td class="tc r-pending" id="sue-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="sue-d-trunk-fat">—</td>
-        </tr>
-        <tr>
-          <td>Left Leg</td>
-          <td class="tc">14.27 lb</td><td class="tc r-pending" id="sue-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="sue-d-lleg-lean">—</td>
-          <td class="tc">8.84 lb</td><td class="tc r-pending" id="sue-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="sue-d-lleg-fat">—</td>
-        </tr>
-        <tr>
-          <td>Right Leg</td>
-          <td class="tc">13.98 lb</td><td class="tc r-pending" id="sue-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="sue-d-rleg-lean">—</td>
-          <td class="tc">9.89 lb</td><td class="tc r-pending" id="sue-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="sue-d-rleg-fat">—</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div style="margin-top:10px;text-align:right">
-      <button onclick="window.print()" style="background:#0f3460;color:white;border:none;padding:7px 18px;border-radius:8px;font-size:12px;cursor:pointer;font-weight:600">🖨 Print Results</button>
-    </div>
-  </div>
-
-  <!-- 6 — Lifting Metrics -->
-  <div class="dp-section">
-    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/69e66a51defa6b2dac072fbe/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
-    <div style="font-size:11px;color:#888;margin-bottom:10px">Apr 21 log (Day 1 only — 1 confirmed session). Weights are starting weights, not working maxes. 25 lb adj DBs arrived May 5.</div>
-    <table class="results-table" style="font-size:12px">
-      <thead>
-        <tr>
-          <th>Exercise</th>
-          <th class="tc">Apr 21 Log</th>
-          <th class="tc">Est. 1RM</th>
-          <th class="tc">Gold Standard<br><span style="font-size:9px;font-weight:400;color:#aaa">60s Female · 137 lb BW</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>DB Bench Press</strong> ×12</td>
-          <td class="tc">10 lb × 12</td>
-          <td class="tc">~14 lb</td>
-          <td class="tc">~96 lb 1RM <span style="font-size:9px;color:#bbb">0.70×BW</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Bent Over Row</strong> ×12</td>
-          <td class="tc">10 lb × 12</td>
-          <td class="tc">~14 lb</td>
-          <td class="tc">~48 lb/arm <span style="font-size:9px;color:#bbb">0.35×BW ×8–10</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Front Squat</strong> ×12</td>
-          <td class="tc">10 lb × 12</td>
-          <td class="tc">~14 lb</td>
-          <td class="tc">~48 lb <span style="font-size:9px;color:#bbb">0.35×BW goblet</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Seated OHP</strong> ×12</td>
-          <td class="tc">10 lb × 12</td>
-          <td class="tc">~14 lb</td>
-          <td class="tc">~62 lb 1RM <span style="font-size:9px;color:#bbb">0.45×BW</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Walking Lunge</strong> ×10</td>
-          <td class="tc">20 lb × 10</td>
-          <td class="tc">~27 lb</td>
-          <td class="tc">—</td>
-        </tr>
-        <tr>
-          <td><strong>DB Lateral/Front Raise</strong> ×10</td>
-          <td class="tc">16 lb × 10</td>
-          <td class="tc">~21 lb</td>
-          <td class="tc">—</td>
-        </tr>
-        <tr>
-          <td><strong>DB Single Arm Row</strong> ×12<br><span style="font-size:10px;color:#888">(Workout B — not yet logged)</span></td>
-          <td class="tc">—</td>
-          <td class="tc">—</td>
-          <td class="tc">~48 lb/arm <span style="font-size:9px;color:#bbb">0.35×BW ×8–10</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Goblet Squat</strong> ×12<br><span style="font-size:10px;color:#888">(Workout B — not yet logged)</span></td>
-          <td class="tc">—</td>
-          <td class="tc">—</td>
-          <td class="tc">~48 lb <span style="font-size:9px;color:#bbb">0.35×BW ×10–12</span></td>
-        </tr>
-        <tr>
-          <td><strong>DB Stiff Leg DL</strong> ×12<br><span style="font-size:10px;color:#888">(Workout B — not yet logged)</span></td>
-          <td class="tc">—</td>
-          <td class="tc">—</td>
-          <td class="tc">~158 lb 1RM <span style="font-size:9px;color:#bbb">1.15×BW DL</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
-      ⚠️ <strong>Lift targets not yet sent.</strong> Day 1 log shows 10 lb across most exercises — form-learning weights, not capacity. Before Monday: assess what she can do at work gym with heavier DBs and draft realistic 4-week targets. She has 25 lb adj DBs at home. Work gym has full DB rack.
-    </div>
-  </div>
-
-  <!-- 7 — Nutrition -->
-  <div class="dp-section">
-    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69e66a51defa6b2dac072fbe/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
-    <div class="nutri-protocol">
-      <div style="margin-bottom:8px"><strong>Protocol: LBM Build · Vegetarian + Eggs/Dairy · No Soy</strong></div>
-      <div>🎯 <strong>Protein target:</strong> 120g/day — high bar for vegetarian. Key sources: Greek yogurt, eggs, cottage cheese, lentils, edamame (no soy per restriction — double-check edamame), whey/egg white protein powder.</div>
-      <div style="margin-top:6px">💊 <strong>Creatine:</strong> 5g/day already in place — great. Note for scan day: creatine causes ~2-3 lb lean mass increase via glycogen/water — this shows positively on DEXA. Worth explaining during results conversation.</div>
-      <div style="margin-top:6px">🔢 <strong>Calorie target:</strong> ~1,700–1,850 kcal/day for LBM build at maintenance/slight surplus. Pull from Everfit food journal during day-before refresh — check actual protein intake and whether she's hitting the target.</div>
-      <div style="margin-top:6px">📱 <strong>Tracking method:</strong> Confirm on scan day — is she using Everfit food journal, LoseIt, or tracking informally? Assign a 2-day food journal task if not yet tracking precisely.</div>
-    </div>
-  </div>
-
-</div><!-- end modal-sue div -->
 
     <!-- modal content added by scan-modal-builder the evening before each scan -->
 
@@ -1400,16 +1648,16 @@
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="joseph-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>245 lb Barbell Squat PR</strong> — standout strength win in first month; already approaching the 40s male gold standard (~259 lb)</span></div>
-      <div class="success-win"><span class="win-icon">📅</span><span class="win-text"><strong>89% consistency (8/9 sessions)</strong> — Mon/Thu/Sat rhythm locked in; every-other-week tougher due to 8-year-old logistics but he adapts</span></div>
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Intro scan recomp already showing</strong> — lean up ~2.18 lb, fat down ~same, ~1.5% BF reduction from initial baseline vs prior scan</span></div>
-      <div class="success-win"><span class="win-icon">🚵</span><span class="win-text"><strong>Mountain biking performance tie-in</strong> — stronger glutes, quads, and posterior chain directly translates to climbing and control</span></div>
+      <div class="success-win"><span class="win-icon">📅</span><span class="win-text"><strong>100% consistency — 11/11 sessions</strong> — perfect Mon/Thu/Sat rhythm; even managed around the every-other-week child logistics without missing a beat</span></div>
+      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>245 lb Barbell Squat PR</strong> — already approaching the 40s male gold standard (~259 lb). Bent-over row at 125×8 is above gold standard for his stats.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Recomp signal from intro scan</strong> — lean up 2.18 lb, BF down ~1.5 percentage points from prior baseline. Trend is clearly in the right direction before Scan 2.</span></div>
+      <div class="success-win"><span class="win-icon">🚵</span><span class="win-text"><strong>Mountain biking carry-over</strong> — stronger quads, glutes, and posterior chain directly feeds into climbing power and trail control</span></div>
     </div>
     <div class="success-targets">
-      <div class="success-targets-label">Lift targets: not yet formally sent in DMs — to draft this week</div>
-      <div class="success-target-item">BB Bench Press: target 120 lb × 10 (from 110 lb × 12)</div>
-      <div class="success-target-item">BB Shoulder Press: target 75–80 lb × 8 (from 70 lb × 10)</div>
-      <div class="success-target-item">Bent Over Row: start at 90 lb per Daniel's May instruction</div>
+      <div class="success-targets-label">Pre-scan lift targets sent this week</div>
+      <div class="success-target-item">BB Bench Press: 125 lb × 6-8 (from 110×12)</div>
+      <div class="success-target-item">BB Deadlift: 225 lb × 8 (Est. 1RM 285 lb)</div>
+      <div class="success-target-item">BB Bent Over Row: 125 lb × 8 (above gold standard)</div>
     </div>
   </div>
 
@@ -1432,22 +1680,22 @@
     </div>
     <div class="personal-notes" style="margin-top:10px">
       <div class="personal-note"><span class="note-emoji">📍</span><span>Training at Movement Gym, Santa Clara — power racks, barbells, dumbbells, cable machines. Assisted pull-up machine preferred over lat pulldown cable setup.</span></div>
-      <div class="personal-note"><span class="note-emoji">⚠️</span><span><strong>Scan 1 DEXA PDF not in Drive</strong> — DEXA table below cannot be pre-filled. Upload PDF to Drive → Member Second Scans folder to complete records before scan day.</span></div>
+      <div class="personal-note"><span class="note-emoji">📁</span><span>Scan 1 DEXA PDF confirmed in Drive — all baseline data populated. DEXA table ready for Scan 2 fill-in.</span></div>
     </div>
   </div>
 
   <!-- 4 — Body Snapshot -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot (Current — No DEXA Baseline on File)</div>
+    <div class="dp-title">Body Snapshot (Scan 1 — Apr 27, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">144 lb</div><div class="snap-lbl">Body Weight (May 17)</div></div>
-      <div class="snap-metric"><div class="snap-val">15.6%</div><div class="snap-lbl">Body Fat (May 17 logged)</div></div>
-      <div class="snap-metric"><div class="snap-val">~121 lb</div><div class="snap-lbl">Est. Lean Mass</div></div>
-      <div class="snap-metric"><div class="snap-val">~22 lb</div><div class="snap-lbl">Est. Fat Mass</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">15th %ile</div><div class="snap-lbl">ALMI AM% (intro scan)</div></div>
+      <div class="snap-metric"><div class="snap-val">145.7 lb</div><div class="snap-lbl">Body Weight (May 23)</div></div>
+      <div class="snap-metric"><div class="snap-val">18.8%</div><div class="snap-lbl">Body Fat (16th AM)</div></div>
+      <div class="snap-metric"><div class="snap-val">109.04 lb</div><div class="snap-lbl">Lean Mass (Scan 1)</div></div>
+      <div class="snap-metric"><div class="snap-val">26.61 lb</div><div class="snap-lbl">Fat Mass (Scan 1)</div></div>
+      <div class="snap-metric"><div class="snap-val">52.8 cm²</div><div class="snap-lbl">VAT (healthy range)</div></div>
+      <div class="snap-metric"><div class="snap-val">18th AM%</div><div class="snap-lbl">ALMI (8.0 kg/m²)</div></div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Prior scan recomp: +2.18 lb lean, −1.5% BF vs baseline. Visceral fat near 60 cm² healthy cutoff — target is to see reduction on Scan 2.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Intro scan to Scan 1 recomp: lean up 2.18 lb, BF down 1.5 pp from prior baseline. VAT already in healthy range. Key win to lead with.</div>
   </div>
 
   <!-- 5 — DEXA Results Table -->
@@ -1487,11 +1735,12 @@
     <table class="lift-table">
       <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard (40s M, 144 lb)</th></tr></thead>
       <tbody>
-        <tr><td>Barbell Squat</td><td>245 lb × PR</td><td>~245–260 lb</td><td>~259 lb <span style="font-size:9px;color:#bbb">1.80×BW ✓ Near Gold</span></td></tr>
-        <tr><td>Barbell Bench Press</td><td>110 lb × 12</td><td>~154 lb</td><td>~194 lb <span style="font-size:9px;color:#bbb">1.35×BW</span></td></tr>
-        <tr><td>Barbell Shoulder Press</td><td>70 lb × 10</td><td>~93 lb</td><td>~130 lb <span style="font-size:9px;color:#bbb">0.90×BW</span></td></tr>
-        <tr><td>Barbell Bent Over Row</td><td>115 lb × 8</td><td>~146 lb</td><td>~84 lb <span style="font-size:9px;color:#bbb">0.58×BW ✓ Above</span></td></tr>
-        <tr><td>Weighted Chin Up</td><td>BW × 9</td><td>~BW (144 lb)</td><td>~144 lb <span style="font-size:9px;color:#bbb">1.00×BW Lat</span></td></tr>
+        <tr><td>Barbell Squat</td><td>245 lb × 1 (PR)</td><td>~259 lb</td><td>~259 lb <span style="font-size:9px;color:#bbb">1.80×BW ✓ Near Gold</span></td></tr>
+        <tr><td>Barbell Bench Press</td><td>125 lb × 5-6</td><td>~153 lb</td><td>~194 lb <span style="font-size:9px;color:#bbb">1.35×BW</span></td></tr>
+        <tr><td>Barbell Deadlift</td><td>225 lb × 8</td><td>~285 lb</td><td>~217 lb <span style="font-size:9px;color:#bbb">1.50×BW ✓ Above</span></td></tr>
+        <tr><td>Barbell Bent Over Row</td><td>125 lb × 8</td><td>~158 lb</td><td>~84 lb <span style="font-size:9px;color:#bbb">0.58×BW ✓ Above</span></td></tr>
+        <tr><td>Weighted Chin Up</td><td>BW × 9 / 8 / 7</td><td>~BW+</td><td>~144 lb <span style="font-size:9px;color:#bbb">1.00×BW Lat</span></td></tr>
+        <tr><td>DB Bulgarian SS</td><td>80 lb × 10</td><td>~107 lb</td><td>~86 lb <span style="font-size:9px;color:#bbb">0.60×BW</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:8px;font-size:12px;color:#666">Squat is near gold standard — highlight this win. Bench and OHP have clear runway. Row is strong. Lat pulldown: uses assisted pull-up (weights not logged in Everfit — awkward cable machine setup).</div>
@@ -1512,27 +1761,38 @@
   </div>
 
 </div><!-- end modal-joseph div -->
-
 <!-- ── DANIEL SWARTZ MODAL ── -->
 <div id="modal-danielswartz" class="modal-content"
      data-name="Daniel Swartz"
      data-sub="Second Scan · May 25, 2026 · Bone Density + ALMI Build · M · 61">
 
   <script>
-  window.__scan1_danielswartz = null; // DEXA PDF not yet uploaded — first scan Apr 23; upload before scan day
+  window.__scan1_danielswartz = {
+  bw: 175.8, bfPct: 24.6, bfAMpct: 33,
+  lean: 125.8, fat: 42.98, vat: 121.3,
+  almiVal: 8.1, almiAMpct: 30,
+  bmd: 1.178, bmdZ: 0.1,
+  regional: {
+    larm:  { lean: 8.21, fat: 2.13 },
+    rarm:  { lean: 8.92, fat: 2.16 },
+    trunk: { lean: 63.26, fat: 22.08 },
+    lleg:  { lean: 21.78, fat: 6.80 },
+    rleg:  { lean: 21.02, fat: 7.17 }
+  }
+};
   </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="danielswartz-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Perfect consistency (6/6 sessions)</strong> — upgraded from 2×/week to 3×/week at May 5 check-in and immediately hit 100%. Shows real commitment.</span></div>
-      <div class="success-win"><span class="win-icon">🏨</span><span class="win-text"><strong>Training hotel gyms while traveling</strong> — never missed a session despite travel + time zones. Strong self-directed training habit established.</span></div>
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>DB Bench: 90 lb × 9, Gorilla Row: 80 lb × 10</strong> — solid compound lift numbers for a 61yo building from scratch with dumbbells only</span></div>
-      <div class="success-win"><span class="win-icon">🦴</span><span class="win-text"><strong>Primary goal on track</strong> — every session contributes to the bone density and ALMI signal we're looking for on Scan 2</span></div>
+      <div class="success-win"><span class="win-icon">📅</span><span class="win-text"><strong>83% consistency (10/12 sessions)</strong> — includes moving logistics, travel across time zones, and hotel gym sessions. Strong self-directed training habit under real-world stress.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Gorilla Row 80 lb × 10 — above gold standard</strong> for his age and bodyweight. DB Bench 90×9 solid. Pushed heavier loads after May 5 check-in as directed.</span></div>
+      <div class="success-win"><span class="win-icon">🦴</span><span class="win-text"><strong>Primary goal on track</strong> — every session contributes to the bone density and ALMI signal we're looking for on Scan 2. VAT reduction is the other key metric to watch.</span></div>
+      <div class="success-win"><span class="win-icon">🥤</span><span class="win-text"><strong>Mostly dry period honored</strong> — reduced alcohol over the 4-week block, including during travel. Key for sleep quality and VAT reduction trajectory.</span></div>
     </div>
     <div class="success-targets">
-      <div class="success-targets-label">Lift targets: not yet formally sent in DMs — to draft this week</div>
+      <div class="success-targets-label">Lift targets sent May 19, 2026</div>
       <div class="success-target-item">DB Romanian Deadlift: push toward 65–70 lb × 10 (from 60 lb × 12)</div>
       <div class="success-target-item">DB Bench Press: push toward 95–100 lb × 8 (from 90 lb × 9)</div>
       <div class="success-target-item">DB Gorilla Row: push toward 85 lb × 10 (from 80 lb × 10)</div>
@@ -1550,30 +1810,30 @@
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Consistency: 100%</strong> — 6/6 sessions; self-directed in hotel gyms. Instruction is to go heavier, work near failure, 1–2 warm-up sets. He's ready to push intensity.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Intensity — Next Frontier</strong> — Direction from last check-in: go heavier, get closer to failure, reduce warm-up sets from 3 to 1–2. This is the growth lever now that consistency is established.</span></div>
-      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Equipment: Dumbbells Only</strong> — Hotel gym setup: dumbbells and benches; bands often unavailable. Program is designed around this constraint. Moving Oakland→SJ in June 2026 — new gym access possible.</span></div>
-      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Sleep Disruption</strong> — Travel across time zones disrupts sleep schedule. Monitor recovery quality. No acute injury flags.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Family/Life Context</strong> — Has 21-year-old son. Stress reported as low. High compliance with coaching guidance; asks good questions and self-monitors well.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Consistency: 83% (10/12 sessions)</strong> — strong given travel + move. Now 3×/week; direction is heavier loads, near failure, 1-2 warm-up sets. Intensity is the next growth lever.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Alcohol — main recovery limiter</strong> — Iris note: "routine drinking discouraged." Travel and social events are the risk windows. Sleep quality (and thus VAT and lean mass gains) is directly affected. Align on a practical ruleset for scan-day conversation.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Lower back history (L3)</strong> — Cortisone injections ~20 and ~8 years ago; currently well-managed. All hinge patterns (RDLs) require solid bracing and cautious load progression. If pain emerges: sub to alternate, skip if alternate also hurts.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Equipment: Dumbbells Only</strong> — Hotel gyms, bands often absent. Moving Oakland to San Jose in June 2026 — may gain access to more equipment. Discuss program evolution at scan.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Highly engaged and motivated</strong> — 21-year-old son, family history of hip fracture, clear long-term vision. Responds to concrete targets and brief "why" education. High compliance.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
       <div class="personal-note"><span class="note-emoji">🏠</span><span>Moving Oakland → San Jose in June 2026. Discuss new gym options (likely access to more equipment) and updated program for Phase 2.</span></div>
-      <div class="personal-note"><span class="note-emoji">⚠️</span><span><strong>Scan 1 DEXA PDF not in Drive</strong> — First scan was Apr 23, 2026. PDF needs to be uploaded to Member Second Scans folder before scan day to enable comparison table.</span></div>
+      <div class="personal-note"><span class="note-emoji">📁</span><span>Scan 1 DEXA PDF confirmed in Drive (Apr 23, 2026) — all baseline values populated in table below.</span></div>
     </div>
   </div>
 
   <!-- 4 — Body Snapshot -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot (Current — No DEXA Baseline on File)</div>
+    <div class="dp-title">Body Snapshot (Scan 1 — Apr 23, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight (not logged)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Fat (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Lean Mass (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">ALMI (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">61yo</div><div class="snap-lbl">Age · Male</div></div>
+      <div class="snap-metric"><div class="snap-val">175.8 lb</div><div class="snap-lbl">Body Weight (Scan 1)</div></div>
+      <div class="snap-metric"><div class="snap-val">24.6%</div><div class="snap-lbl">Body Fat (33rd AM)</div></div>
+      <div class="snap-metric"><div class="snap-val">125.8 lb</div><div class="snap-lbl">Lean Mass (Scan 1)</div></div>
+      <div class="snap-metric"><div class="snap-val">42.98 lb</div><div class="snap-lbl">Fat Mass (Scan 1)</div></div>
+      <div class="snap-metric"><div class="snap-val">121.3 cm²</div><div class="snap-lbl">VAT (elevated)</div></div>
+      <div class="snap-metric"><div class="snap-val">30th AM%</div><div class="snap-lbl">ALMI (8.1 kg/m²)</div></div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">DEXA Scan 1 was April 23, 2026. Upload PDF to Drive to unlock baselines. Scan 2 on May 25 will be the first comparison point for bone density, ALMI, and VAT trajectory.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Key watch metrics: VAT (121.3 → target below 100), lean mass gain in arms and legs. BMD baseline 1.178 — 4 weeks too short to move, but trend matters long-term.</div>
   </div>
 
   <!-- 5 — DEXA Results Table -->
@@ -1627,17 +1887,910 @@
   <div class="dp-section">
     <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69ea8c0061ebcbbc2d17550b/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
     <div class="nutri-protocol">
-      <div><strong>Goal context:</strong> Fat loss with lean mass preservation — protein and total calories are the primary levers</div>
-      <div><strong>Protein target:</strong> Pull from Everfit food journal or Iris notes — confirm daily protein target set at intake</div>
-      <div><strong>Training:</strong> Hotel gym environment means minimal equipment; coach direction is heavier loads and closer to failure on working sets</div>
-      <div><strong>Supplements:</strong> Pull from Iris notes — confirm current supplement stack (creatine, vitamin D)</div>
-      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal during Phase 1 refresh — confirm protein intake and calorie target against fat loss goal.</em></div>
+      <div><strong>Protein target:</strong> 150g/day — primary metric. Anchor is 3 solid protein meals + 1-2 shakes around workouts.</div>
+      <div><strong>Pre-workout (45-60 min):</strong> 25g protein shake + 50g carbs + 1 tbsp PB</div>
+      <div><strong>Post-workout:</strong> 25g protein shake + 50g carbs + 1 tbsp PB; meal within 60-90 min: 25g lean protein + 50g starch</div>
+      <div><strong>VAT reduction extras:</strong> 2 cups green tea/day, dark berries, microgreens/greens powder, reduced processed carbs</div>
+      <div><strong>Alcohol:</strong> Mostly dry for the 4-week block. Occasional single drink for special occasions only. Routine drinking discouraged — direct sleep and VAT impact.</div>
+      <div><strong>Creatine:</strong> Optional ~5g/day via travel packs</div>
+      <div><strong>Dietary note:</strong> Avoids oysters (repeated GI illness). No other restrictions.</div>
+      <div style="margin-top:6px;color:#666"><em>Food log photos uploaded via Kalos app (may call it "Everfit" interchangeably — same app). Check journal for recent protein distribution before scan conversation.</em></div>
     </div>
   </div>
 
 </div><!-- end modal-danielswartz div -->
 
 <!-- ── DANIEL NGUYEN MODAL ── -->
+
+<!-- ── RYAN YOUNG MODAL ── -->
+<div id="modal-ryanyoung" class="modal-content"
+     data-name="Ryan Young"
+     data-sub="Second Scan · May 28, 2026 · LBM Build · M · ~30s">
+
+  <script>
+  window.__scan1_ryanyoung = null; // DEXA PDF not yet uploaded — upload before scan day
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="ryanyoung-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Perfect consistency — 8/8 sessions last 30 days, 3/3 last 7 days</strong> — walking into scan day with elite training adherence</span></div>
+      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Lift targets locked: Bench 165×7-8, Sumo DL 315×8, Lat Pulldown 175×11+</strong> — strong numbers going into scan week</span></div>
+      <div class="success-win"><span class="win-icon">🏐</span><span class="win-text"><strong>Active lifestyle on top of program</strong> — volleyball + basketball 2–3×/wk in addition to Growth | 3-Day training</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>Nutrition fundamentals: 140g protein/day + creatine 5g</strong> — hitting a high protein target with supplementation in place</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">Bench Press: 165 lb × 7-8 reps</div>
+      <div class="success-target-item">Sumo Deadlift: 315 lb × 8 reps</div>
+      <div class="success-target-item">Lat Pulldown: 175 lb × 11+ reps</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>LBM Build + Performance</strong> — Building lean mass and strength while maintaining athletic performance in volleyball and basketball. Confirm primary goal and deep why at scan day via Iris notes.</div>
+    <div class="dp-why">TBD — pull from Iris notes before or at scan. Iris member summary was unavailable during week-out prep.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Consistency: 100%</strong> — 8/8 sessions last 30d, 3/3 last 7d. Gold standard adherence. Training volume includes program + active recreation.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No injuries noted</strong> — No limitations flagged during week-out check. Full range of motion on all target lifts.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Program: Growth | 3-Day | 3×/wk</strong> — Structured progressive overload program. Sumo DL and Lat Pulldown are primary barbell/cable movements alongside bench.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not yet uploaded</strong> — Scan 1 data not available. Upload to Google Drive before scan day to enable baseline comparison on scan 2.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏐</span><span>Active in recreational sports: volleyball + basketball 2–3×/wk. Total weekly activity load is high — factor into recovery and calorie needs.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot (Scan 1 — PDF Upload Needed)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Fat % (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Lean Mass (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Fat Mass (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">~30s</div><div class="snap-lbl">Age · Male</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Upload Scan 1 DEXA PDF to Drive → Member Second Scans folder to unlock all baseline data before scan day.</div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (May 28)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bw">—</td><td class="r-pending" id="ryanyoung-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bf">—</td><td class="r-pending" id="ryanyoung-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-lean">—</td><td class="r-pending" id="ryanyoung-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-fat">—</td><td class="r-pending" id="ryanyoung-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-vat">—</td><td class="r-pending" id="ryanyoung-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-almi">—</td><td class="r-pending" id="ryanyoung-d-almi">—</td></tr>
+        <tr><td>BMD</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bmd">—</td><td class="r-pending" id="ryanyoung-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
+      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
+    </div>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/69f2630667f970a43cd6f311/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Bench Press</td><td>165 lb × 7-8</td><td style="font-size:11px;color:#666">Target sent — confirm on scan day</td></tr>
+        <tr><td>Sumo Deadlift</td><td>315 lb × 8</td><td style="font-size:11px;color:#666">Target sent — strong number for M ~30s</td></tr>
+        <tr><td>Lat Pulldown</td><td>175 lb × 11+</td><td style="font-size:11px;color:#666">Target sent — great lat development indicator</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Full lift history available in Everfit Training Tab. Gold standard projections to be completed once Scan 1 DEXA weight is known.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69f2630667f970a43cd6f311/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 140g/day — strong target for M ~30s; appropriate for LBM build + active lifestyle</div>
+      <div><strong>Creatine:</strong> 5g/day — in place. Note on scan day: creatine causes ~2–3 lb lean mass increase via glycogen/water loading — explains some of the lean gain on DEXA.</div>
+      <div><strong>Activity context:</strong> Program 3×/wk + volleyball/basketball 2–3×/wk = high TDEE. Ensure calorie intake supports the training load.</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal during day-before refresh — confirm protein consistency and calorie target against training load.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-ryanyoung -->
+
+<!-- ── PRIYAL MEHTA MODAL ── -->
+<div id="modal-priyal" class="modal-content"
+     data-name="Priyal Mehta"
+     data-sub="Second Scan · May 28, 2026 · Duo Scan · F · 37">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="priyal-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>+2.95 lb lean from baseline</strong> — building muscle with home DBs. Real progress with limited equipment.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>-0.86 lb fat from baseline</strong> — going in the right direction on body fat despite home-only training context</span></div>
+      <div class="success-win"><span class="win-icon">🏠</span><span class="win-text"><strong>Home DB program active</strong> — lift targets set: DB Bench 35×12, DB Row 20×12, DB RDL 30×12. Consistent with equipment available.</span></div>
+      <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Mihir</strong> — scanning together at 12pm. Good support dynamic and shared accountability.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">DB Bench Press: 35 lb × 12 reps</div>
+      <div class="success-target-item">DB Bent-Over Row: 20 lb × 12 reps</div>
+      <div class="success-target-item">DB Romanian Deadlift: 30 lb × 12 reps</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Goal TBD</strong> — pull from Iris member notes before or at scan day. VAT at 118.9 cm² (elevated) and ALMI at 21st %ile AM suggest fat loss + LBM build framing is appropriate.</div>
+    <div class="dp-why">TBD — Iris member summary was unavailable during week-out prep. Confirm deep why and personal context at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>VAT: 118.9 cm² — elevated (healthy cutoff: &lt;100)</strong> — Priority coaching flag. VAT reduction requires caloric consistency, protein prioritization, and progressive strength training. Every session matters.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>BF% 40.1% — 75th %ile AM</strong> — Above average for age/sex. Primary lever: fat loss via caloric deficit + protein target. Home DB training is appropriate for entry-level recomposition.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>ALMI: 6.0 kg/m² — 21st %ile AM</strong> — Below average appendicular lean mass. Building this up is the second priority after VAT reduction. Strength progression on home DBs is critical.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>BMD: T-0.5 / Z-0.6</strong> — Slightly below average for age and sex. Not osteopenic yet but worth monitoring. Compound lifts (RDL, bench) support bone density through axial loading.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Home DB program</strong> — Training at home with DBs. Current targets reflect available equipment. If heavier DBs become available, progressions are straightforward.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">💑</span><span>Scanning as a duo with Mihir Patel (partner/spouse). Good support dynamic — both training at home with DBs. Scan day is a shared milestone.</span></div>
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Confirm goals, limitations, and training history from Iris notes before scan conversation. Context for VAT framing and fat-loss vs LBM priority to be confirmed.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline</div>
+    <div class="snap-metrics">
+      <div class="snap-metric">
+        <div class="snap-mv">151.6</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · Scan 1</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">40.1%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">75th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">118.9</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">Elevated (100–160)</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">21st</div>
+        <div class="snap-ml">ALMI AM %ile</div>
+        <div class="snap-ms">6.0 kg/m²</div>
+      </div>
+    </div>
+    <div class="nutri-protocol" style="background:#e8f5e9;border-color:#a5d6a7;">
+      <strong>Scan 1 baseline:</strong> Fat 60.09 lb · Lean 89.70 lb · BMD T-0.5/Z-0.6 · Height 64.0 in<br>
+      <strong>Progress from intro baseline:</strong> +2.95 lb lean / −0.86 lb fat — positive recomposition signal heading into Scan 2.
+    </div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (May 28)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>151.6</td><td class="r-pending" id="priyal-s2-bw">—</td><td class="r-pending" id="priyal-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>40.1% <span style="font-size:10px;color:#888">(75th AM)</span></td><td class="r-pending" id="priyal-s2-bf">—</td><td class="r-pending" id="priyal-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>89.70</td><td class="r-pending" id="priyal-s2-lean">—</td><td class="r-pending" id="priyal-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>60.09</td><td class="r-pending" id="priyal-s2-fat">—</td><td class="r-pending" id="priyal-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>118.9 <span style="color:#ff9800;font-size:11px">⚠️ elevated</span></td><td class="r-pending" id="priyal-s2-vat">—</td><td class="r-pending" id="priyal-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>6.0 <span style="font-size:10px;color:#888">(21st AM)</span></td><td class="r-pending" id="priyal-s2-almi">—</td><td class="r-pending" id="priyal-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.5/Z-0.6</span></td><td class="r-pending" id="priyal-s2-bmd">—</td><td class="r-pending" id="priyal-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Gold Standard (F 37, 151.6 lb)</th></tr></thead>
+      <tbody>
+        <tr><td>DB Bench Press</td><td>35 lb × 12</td><td>~152 lb 1RM <span style="font-size:9px;color:#bbb">1.00×BW</span></td></tr>
+        <tr><td>DB Bent-Over Row</td><td>20 lb × 12</td><td>~68 lb/arm <span style="font-size:9px;color:#bbb">0.45×BW</span></td></tr>
+        <tr><td>DB Romanian Deadlift</td><td>30 lb × 12</td><td>~258 lb 1RM <span style="font-size:9px;color:#bbb">1.70×BW (DL)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Home DB program — targets represent starting working weights appropriate for home equipment. Significant runway ahead as equipment or gym access expands. Gold standards are barbell-equivalent for context.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Primary lever:</strong> Fat loss + lean retention — VAT reduction requires sustained caloric deficit with high protein to preserve lean mass</div>
+      <div><strong>Protein target:</strong> Pull from Iris notes — confirm target set at intake. Recommend ≥100g/day as a minimum floor for 151.6 lb F.</div>
+      <div><strong>VAT strategy:</strong> Consistent mild deficit (~300–500 kcal/day below TDEE) + protein priority + sleep quality are the main drivers of VAT reduction</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes during day-before refresh — confirm current protein target and eating pattern.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-priyal -->
+<!-- ── MIHIR PATEL MODAL ── -->
+<div id="modal-mihir" class="modal-content"
+     data-name="Mihir Patel"
+     data-sub="Second Scan · May 28, 2026 · Duo Scan · M · 38">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="mihir-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>+4.04 lb lean from baseline</strong> — strong lean mass gain with home DB-only training. Real signal on DEXA.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>-2.80 lb fat from baseline</strong> — excellent recomposition result. Fat going down while lean goes up = the goal.</span></div>
+      <div class="success-win"><span class="win-icon">🏠</span><span class="win-text"><strong>Home DB program hitting strong numbers</strong> — targets: DB Bench 80×15, DB Row 40×15, DB RDL 80×15. Heavy and progressive.</span></div>
+      <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Priyal</strong> — scanning together at 12pm. Good accountability dynamic and shared milestone.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">DB Bench Press: 80 lb × 15 reps</div>
+      <div class="success-target-item">DB Bent-Over Row: 40 lb × 15 reps</div>
+      <div class="success-target-item">DB Romanian Deadlift: 80 lb × 15 reps</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Goal TBD</strong> — pull from Iris member notes before or at scan day. Recomposition framing fits the data: BF% 26.5% (70th AM) with strong lean trajectory (+4.04 lb from baseline) suggests fat loss + lean preservation as primary goal.</div>
+    <div class="dp-why">TBD — Iris member summary was unavailable during week-out prep. Confirm deep why and personal context at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>BF% 26.5% — 70th %ile AM</strong> — Above average body fat for 38M. Recomposition goal: lean up while preserving the +4.04 lb lean already built. Fat loss is the secondary lever now.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>ALMI: 8.1 kg/m² — 21st %ile AM</strong> — Below average for age/sex despite good absolute lean mass. Building ALMI (appendicular lean) is a primary long-term target. Compound lifts are the mechanism.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>VAT: 74.6 cm² — healthy</strong> — Below 100 cm² healthy threshold. Great signal. Maintain via continued training and moderate caloric management.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>BMD: T-0.1 / Z-0.1</strong> — Normal bone density for age. No flag here. Compound loading continues to support maintenance and improvement.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Home DB program — heavy loading</strong> — 80 lb DBs on bench and RDL indicates strong home setup. At this load, progressive overload is still achievable before equipment becomes a ceiling.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">💑</span><span>Scanning as a duo with Priyal Mehta (partner/spouse). Both training at home with DBs. Scan day is a shared milestone — framing as a team win is powerful.</span></div>
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Confirm goals, training history, and any limitations from Iris notes before scan conversation. The +4.04 lb lean / -2.80 lb fat story is a strong scan-day win to lead with.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline</div>
+    <div class="snap-metrics">
+      <div class="snap-metric">
+        <div class="snap-mv">181.4</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · Scan 1</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">26.5%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">70th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv ok">74.6</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">✓ Healthy &lt;100</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">21st</div>
+        <div class="snap-ml">ALMI AM %ile</div>
+        <div class="snap-ms">8.1 kg/m²</div>
+      </div>
+    </div>
+    <div class="nutri-protocol" style="background:#e8f5e9;border-color:#a5d6a7;">
+      <strong>Scan 1 baseline:</strong> Fat 47.77 lb · Lean 132.56 lb · BMD T-0.1/Z-0.1 · Height 73.0 in<br>
+      <strong>Progress from intro baseline:</strong> +4.04 lb lean / −2.80 lb fat — excellent recomposition signal. This is what the program is designed to produce.
+    </div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (May 28)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>181.4</td><td class="r-pending" id="mihir-s2-bw">—</td><td class="r-pending" id="mihir-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>26.5% <span style="font-size:10px;color:#888">(70th AM)</span></td><td class="r-pending" id="mihir-s2-bf">—</td><td class="r-pending" id="mihir-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>132.56</td><td class="r-pending" id="mihir-s2-lean">—</td><td class="r-pending" id="mihir-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>47.77</td><td class="r-pending" id="mihir-s2-fat">—</td><td class="r-pending" id="mihir-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>74.6 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="mihir-s2-vat">—</td><td class="r-pending" id="mihir-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>8.1 <span style="font-size:10px;color:#888">(21st AM)</span></td><td class="r-pending" id="mihir-s2-almi">—</td><td class="r-pending" id="mihir-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.1/Z-0.1</span></td><td class="r-pending" id="mihir-s2-bmd">—</td><td class="r-pending" id="mihir-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Gold Standard (M 38, 181.4 lb)</th></tr></thead>
+      <tbody>
+        <tr><td>DB Bench Press</td><td>80 lb × 15</td><td>~181 lb 1RM <span style="font-size:9px;color:#bbb">1.00×BW</span></td></tr>
+        <tr><td>DB Bent-Over Row</td><td>40 lb × 15</td><td>~81 lb/arm <span style="font-size:9px;color:#bbb">0.45×BW</span></td></tr>
+        <tr><td>DB Romanian Deadlift</td><td>80 lb × 15</td><td>~308 lb 1RM <span style="font-size:9px;color:#bbb">1.70×BW (DL)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">80 lb DBs for bench and RDL is a strong home gym setup. At 80 lb × 15, Mihir is building real volume load. Est. 1RM bench ~107 lb — approaching gold standard. DB targets will hit a ceiling around 100 lb without heavier equipment or gym access.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Primary lever:</strong> Body recomposition — maintain lean while reducing fat. The +4.04 lb lean / -2.80 lb fat trajectory is the goal to sustain.</div>
+      <div><strong>Protein target:</strong> Pull from Iris notes — confirm target set at intake. Recommend ≥140g/day for 181.4 lb M in recomposition phase.</div>
+      <div><strong>Caloric approach:</strong> Mild deficit (~200–300 kcal/day) to continue fat loss without compromising lean mass. Not an aggressive cut — protect the lean gains.</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes during day-before refresh — confirm protein hitting target and check calorie pattern.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-mihir -->
+
+<!-- ── JENNA WELTON MODAL ── -->
+<div id="modal-jenna" class="modal-content"
+     data-name="Jenna Welton"
+     data-sub="Second Scan · May 31, 2026 · Duo · F · 42">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jenna-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
+      <div class="success-win"><span class="win-icon">📋</span><span class="win-text"><strong>Duo scan with Scott</strong> — scanning together May 31, 12:45 PM. Built-in accountability dynamic.</span></div>
+      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>BMD T-1.9 (osteopenia range)</strong> — key frame for scan day. Resistance training + protein directly address this. Progress here is a major motivator.</span></div>
+      <div class="success-win"><span class="win-icon">🩻</span><span class="win-text"><strong>VAT 46.5 cm² (healthy)</strong> — excellent visceral fat marker. Metabolically in good shape despite BF% and BMD flags.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">Pull from Everfit — targets sent, confirm on scan day</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>LBM Build + Bone Density</strong> — ALMI 31st %ile AM and BMD T-1.9 point to lean mass + bone density as the primary program frame. Confirm exact goal and framing via Iris before scan day.</div>
+    <div class="dp-why">Pull from Iris member summary before or at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>BMD T-1.9 / Z-1.8 — osteopenia range</strong> — Significant finding for a 42-year-old female. T-score between -1.0 and -2.5 = osteopenia. Priority coaching flag. Resistance training (compound lifts) + calcium + vitamin D + protein are the levers. Every session counts toward bone density.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>ALMI 6.3 kg/m² — 31st %ile AM</strong> — Below average appendicular lean mass for age. Building lean is both the physique goal AND the clinical need for bone support. Strong alignment between what she wants and what the body needs.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>VAT 46.5 cm² — excellent</strong> — Well within healthy range (&lt;100). Visceral fat is not a concern. This is a meaningful green flag going into Scan 2.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>BF% 31.3% — 26th AM %ile</strong> — Below average for age-matched peers. Not a primary concern; primary focus is lean + bone density, not fat loss.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Scott</strong> — Scanning as a pair. Good support dynamic. Keep each conversation individually focused.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Pull additional context, limitations, and training history from Iris notes before scan day. Confirm any injury flags.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 (May 2, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric">
+        <div class="snap-mv">140.8</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · May 2 DEXA</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">31.3%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">26th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv ok">46.5</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">Healthy</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">31st %ile</div>
+        <div class="snap-ml">ALMI AM</div>
+        <div class="snap-ms">6.3 kg/m²</div>
+      </div>
+    </div>
+    <div class="nutri-protocol" style="background:#fff3e0;border-color:#ffcc80;">
+      <strong>Scan 1 baseline:</strong> Fat 43.64 lb · Lean 95.77 lb · BMD T-1.9/Z-1.8 (osteopenia) · Height 65.0 in<br>
+      <strong>Regional lean:</strong> L Arm 4.41 / R Arm 4.24 / Trunk 49.47 / L Leg 15.76 / R Leg 15.69 lb
+    </div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (May 2)</th><th>Scan 2 (May 31)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>140.8</td><td class="r-pending" id="jenna-s2-bw">—</td><td class="r-pending" id="jenna-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>31.3% <span style="font-size:10px;color:#888">(26th AM)</span></td><td class="r-pending" id="jenna-s2-bf">—</td><td class="r-pending" id="jenna-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>95.77</td><td class="r-pending" id="jenna-s2-lean">—</td><td class="r-pending" id="jenna-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>43.64</td><td class="r-pending" id="jenna-s2-fat">—</td><td class="r-pending" id="jenna-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>46.5 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="jenna-s2-vat">—</td><td class="r-pending" id="jenna-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>6.3 <span style="font-size:10px;color:#888">(31st AM)</span></td><td class="r-pending" id="jenna-s2-almi">—</td><td class="r-pending" id="jenna-d-almi">—</td></tr>
+        <tr><td>BMD</td><td><span style="color:#f44336;font-size:11px">⚠️</span> <span style="font-size:10px;color:#888">T-1.9/Z-1.8</span></td><td class="r-pending" id="jenna-s2-bmd">—</td><td class="r-pending" id="jenna-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Gold Standard (F 42, 140.8 lb)</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="font-size:12px;color:#888;font-style:italic">Pull lift targets from Everfit week-out message sent. Gold standards: Bench ~141 lb 1RM (1.0×BW), Squat ~197 lb (1.4×BW), DL ~239 lb (1.7×BW).</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Compound lifts (bench, squat, deadlift, row) directly support BMD improvement. Frame every rep as a bone density investment.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Primary lever:</strong> LBM build + bone density — adequate protein + caloric support (not a deficit) to drive lean gains</div>
+      <div><strong>Protein target:</strong> Pull from Iris notes. Recommend ≥110g/day for 140.8 lb F focused on lean mass and BMD improvement</div>
+      <div><strong>Calcium + Vitamin D:</strong> Confirm supplementation status given T-1.9 BMD — critical co-factor for bone adaptation response to training</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day — confirm protein target and whether Jenna is hitting her window.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-jenna -->
+
+<!-- ── SCOTT WELTON MODAL ── -->
+<div id="modal-scott" class="modal-content"
+     data-name="Scott Welton"
+     data-sub="Second Scan · May 31, 2026 · Duo · M · 48">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="scott-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
+      <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Jenna</strong> — scanning together May 31, 12:45 PM</span></div>
+      <div class="success-win"><span class="win-icon">🦴</span><span class="win-text"><strong>BMD T+0.3 / Z+0.3 — excellent bone density</strong> — above average for age. Strong foundation for long-term health.</span></div>
+      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>VAT 87.5 cm² — in healthy range</strong> — just under the 100 cm² threshold. Goal: push this number lower toward the optimal zone (&lt;70).</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">Pull from Everfit — targets sent, confirm on scan day</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>LBM Build / Recomposition</strong> — BF% 22.3% (33rd AM) and ALMI 38th AM %ile suggest lean mass build as the primary frame. Confirm goal and deep why via Iris before scan day.</div>
+    <div class="dp-why">Pull from Iris member summary before or at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>BMD T+0.3 / Z+0.3 — excellent</strong> — Above average bone density for age/sex. Strong skeleton going into Scan 2. No bone density concerns.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>VAT 87.5 cm² — healthy but watch</strong> — Just under the 100 cm² healthy cutoff. Keep a close eye. Goal is to see this trend toward &lt;70 cm² (optimal zone) over Phase 2.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>ALMI 8.7 kg/m² — 38th AM %ile</strong> — Near average. Lean mass build is the opportunity. Moving from 38th to 50th+ percentile is a concrete goal.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>BF% 22.3% — 33rd AM %ile</strong> — Average for age. Not a primary flag but recomposition (lean up, fat down) is achievable given his current base.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Jenna</strong> — Scanning as a pair. Good support dynamic.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Pull goals, limitations, and training history from Iris notes before scan day. Confirm any injury flags. (Note: Scott appears as a tab on Jenna's Iris profile.)</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 (May 2, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric">
+        <div class="snap-mv">175.4</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · May 2 DEXA</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">22.3%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">33rd %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv ok">87.5</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">Healthy (&lt;100)</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">38th %ile</div>
+        <div class="snap-ml">ALMI AM</div>
+        <div class="snap-ms">8.7 kg/m²</div>
+      </div>
+    </div>
+    <div class="nutri-protocol" style="background:#e8f5e9;border-color:#a5d6a7;">
+      <strong>Scan 1 baseline:</strong> Fat 38.64 lb · Lean 134.47 lb · BMD T+0.3/Z+0.3 (excellent) · Height 68.0 in<br>
+      <strong>Regional lean:</strong> L Arm 9.18 / R Arm 8.75 / Trunk 64.68 / L Leg 21.09 / R Leg 21.25 lb
+    </div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (May 2)</th><th>Scan 2 (May 31)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>175.4</td><td class="r-pending" id="scott-s2-bw">—</td><td class="r-pending" id="scott-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>22.3% <span style="font-size:10px;color:#888">(33rd AM)</span></td><td class="r-pending" id="scott-s2-bf">—</td><td class="r-pending" id="scott-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>134.47</td><td class="r-pending" id="scott-s2-lean">—</td><td class="r-pending" id="scott-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>38.64</td><td class="r-pending" id="scott-s2-fat">—</td><td class="r-pending" id="scott-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>87.5 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="scott-s2-vat">—</td><td class="r-pending" id="scott-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>8.7 <span style="font-size:10px;color:#888">(38th AM)</span></td><td class="r-pending" id="scott-s2-almi">—</td><td class="r-pending" id="scott-d-almi">—</td></tr>
+        <tr><td>BMD</td><td><span style="color:#4caf50;font-size:11px">✓</span> <span style="font-size:10px;color:#888">T+0.3/Z+0.3</span></td><td class="r-pending" id="scott-s2-bmd">—</td><td class="r-pending" id="scott-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Gold Standard (M 48, 175.4 lb)</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="font-size:12px;color:#888;font-style:italic">Pull lift targets from Everfit week-out message sent. Gold standards: Bench ~175 lb 1RM (1.0×BW), Squat ~263 lb (1.5×BW), DL ~298 lb (1.7×BW).</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Primary lever:</strong> LBM build — protein priority with slight caloric surplus to support lean gains while keeping VAT in check</div>
+      <div><strong>Protein target:</strong> Pull from Iris notes. Recommend ≥140g/day for 175.4 lb M focused on LBM build.</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-scott -->
+
+<!-- ── UMAR KHAN PATHAN MODAL ── -->
+<div id="modal-umar" class="modal-content"
+     data-name="Umar Khan Pathan"
+     data-sub="Second Scan · May 31, 2026 · Fat Loss · M · 31 · Messages on hold">
+
+  <div style="margin:12px 0;padding:10px 14px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80;">
+    ⏸ <strong>Week-out messages on hold.</strong> Card and modal built. Send messages only when Daniel gives the explicit trigger.
+  </div>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="umar-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🚨</span><span class="win-text"><strong>VAT 162.3 cm² — very elevated</strong> — Above 160 cm² is high metabolic risk. This is the primary health frame for scan day: every session and every nutrition choice is directly addressing this number.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>38.7% body fat (99th %ile AM)</strong> — Significant opportunity for transformation. Phase 2 goal: move BF% toward the 70th–80th %ile range (meaningful visual and health change).</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>ALMI 8.8 kg/m² — 44th %ile AM</strong> — Good base of lean mass for a 231.9 lb male. Protecting this while losing fat is the strategic priority.</span></div>
+      <div class="success-win"><span class="win-icon">⏸</span><span class="win-text"><strong>Messages on hold</strong> — Pre-scan opener and lift targets ready to send once Daniel gives the go-ahead.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets (ready to send on trigger)</div>
+      <div class="success-target-item">Pull from Everfit — draft targets pending send trigger</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Fat Loss + Metabolic Health</strong> — VAT 162.3 cm² and BF% 99th %ile AM make fat loss and VAT reduction the clear primary frame. Lean mass protection is the secondary goal. Confirm deep why via Iris before scan day.</div>
+    <div class="dp-why">Pull from Iris member summary before or at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>VAT 162.3 cm² — very elevated (&gt;160 = high risk)</strong> — Primary health priority. Linked to insulin resistance, cardiovascular risk, and inflammatory markers. Fat loss + resistance training + sleep quality are the key levers. Every scan should show this number moving toward &lt;100.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>BF% 38.7% — 99th %ile AM</strong> — Highest decile for age-matched males. Significant transformation potential. Frame: this is the starting line, not a ceiling. Phase 2 goal is meaningful movement here.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>BMD T-0.6/Z-0.6 — slightly below average</strong> — Not osteopenic (threshold T &lt; -1.0) but trending below average. Worth monitoring. Note: previous scan April 22 was T-0.1; drop to T-0.6 in 8 days may be measurement variance. Track over full phase.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>ALMI 8.8 kg/m² — 44th %ile AM</strong> — Near average lean mass index. Protecting this through fat loss is the strategic goal for Phase 2. Avoid large caloric deficits that erode muscle.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Pull goals, limitations, training history, and schedule context from Iris notes. Confirm program and current training frequency. (Umar is paused 1-2 weeks — factor into consistency discussion.)</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 (Apr 30, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric">
+        <div class="snap-mv">231.9</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · Apr 30 DEXA</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">38.7%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">99th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">162.3</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">Very elevated</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">44th %ile</div>
+        <div class="snap-ml">ALMI AM</div>
+        <div class="snap-ms">8.8 kg/m²</div>
+      </div>
+    </div>
+    <div class="nutri-protocol" style="background:#fff3e0;border-color:#ffcc80;">
+      <strong>Scan 1 baseline (Apr 30):</strong> Fat 88.50 lb · Lean 131.60 lb (soft lean) · BMD T-0.6/Z-0.6 · Height 71.0 in · Asian ethnicity<br>
+      <strong>Prior scan (Apr 22):</strong> BF% 39.4%, Fat 89.07 lb, Lean 130.66 lb, BMD T-0.1 — 8-day delta likely reflects measurement variance<br>
+      <strong>Regional fat:</strong> L Arm 4.96 / R Arm 5.16 / Trunk 42.95 / L Leg 16.26 / R Leg 16.30 lb
+    </div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Apr 30)</th><th>Scan 2 (May 31)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>231.9</td><td class="r-pending" id="umar-s2-bw">—</td><td class="r-pending" id="umar-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>38.7% <span style="font-size:10px;color:#888">(99th AM)</span></td><td class="r-pending" id="umar-s2-bf">—</td><td class="r-pending" id="umar-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>131.60</td><td class="r-pending" id="umar-s2-lean">—</td><td class="r-pending" id="umar-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>88.50</td><td class="r-pending" id="umar-s2-fat">—</td><td class="r-pending" id="umar-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>162.3 <span style="color:#f44336;font-size:11px">⚠️ very elevated</span></td><td class="r-pending" id="umar-s2-vat">—</td><td class="r-pending" id="umar-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>8.8 <span style="font-size:10px;color:#888">(44th AM)</span></td><td class="r-pending" id="umar-s2-almi">—</td><td class="r-pending" id="umar-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.6/Z-0.6</span></td><td class="r-pending" id="umar-s2-bmd">—</td><td class="r-pending" id="umar-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Gold Standard (M 31, 231.9 lb)</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="font-size:12px;color:#888;font-style:italic">Pull lift targets from Everfit once messages are sent. Gold standards: Bench ~232 lb 1RM (1.0×BW), Squat ~371 lb (1.6×BW), DL ~394 lb (1.7×BW).</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Priority: preserve lean mass while creating caloric deficit. Resistance training frequency is critical for maintaining ALMI during fat loss phase.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Primary lever:</strong> Fat loss + VAT reduction — sustained moderate deficit with high protein to protect lean mass (131.60 lb to protect)</div>
+      <div><strong>Protein target:</strong> Pull from Iris. Recommend ≥170g/day for 231.9 lb M in fat loss phase (protect lean mass at 0.75g/lb BW minimum)</div>
+      <div><strong>VAT strategy:</strong> Caloric deficit ~400–600 kcal/day, eliminate liquid calories, sleep quality ≥7h, manage stress — all drive VAT reduction</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day — confirm adherence and calorie/protein tracking quality.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-umar -->
+
+<!-- ── JUHI KHANNA MODAL ── -->
+<div id="modal-juhi" class="modal-content"
+     data-name="Juhi Khanna"
+     data-sub="Second Scan · June 1, 2026 · Duo · F">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="juhi-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
+      <div class="success-win"><span class="win-icon">📋</span><span class="win-text"><strong>Food journal task added</strong> — Sat May 30 + Sun May 31 in Everfit task calendar</span></div>
+      <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Aridaman</strong> — scanning together June 1, 9:45 AM</span></div>
+      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>Scan 1 DEXA PDF not in Drive</strong> — upload before scan day to enable full comparison table</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">Pull from Everfit — targets sent, confirm on scan day</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>TBD</strong> — Pull from Iris member summary before scan day. DEXA data pending Drive upload.</div>
+    <div class="dp-why">Pull from Iris member summary before or at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not in Drive</strong> — Upload Scan 1 PDF to enable baseline comparison on scan day. Without it, the DEXA table and body snapshot will show pending values.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Aridaman Tripathi</strong> — Both scanning at 9:45 AM on June 1. Run individual conversations but use the shared motivation of scanning together as an opener.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Pull goals, limitations, consistency, and coaching flags from Iris before scan day. All coaching context is TBD until then.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot (Scan 1 — PDF Upload Needed)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Fat % (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">ALMI (DEXA pending)</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Upload Scan 1 DEXA PDF to Drive to unlock all baseline data before scan day.</div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-bw">—</td><td class="r-pending" id="juhi-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-bf">—</td><td class="r-pending" id="juhi-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-lean">—</td><td class="r-pending" id="juhi-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-fat">—</td><td class="r-pending" id="juhi-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-vat">—</td><td class="r-pending" id="juhi-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-almi">—</td><td class="r-pending" id="juhi-d-almi">—</td></tr>
+        <tr><td>BMD</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-bmd">—</td><td class="r-pending" id="juhi-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
+      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
+    </div>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/69f521d3e211d7109ee53c12/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="font-size:12px;color:#888;font-style:italic">Pull lift targets from Everfit week-out message sent.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69f521d3e211d7109ee53c12/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> Pull from Iris notes before scan day</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-juhi -->
+
+<!-- ── ARIDAMAN TRIPATHI MODAL ── -->
+<div id="modal-aridaman" class="modal-content"
+     data-name="Aridaman Tripathi"
+     data-sub="Second Scan · June 1, 2026 · Duo · M">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="aridaman-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
+      <div class="success-win"><span class="win-icon">📋</span><span class="win-text"><strong>Food journal task added</strong> — Sat May 30 + Sun May 31 in Everfit task calendar</span></div>
+      <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Juhi</strong> — scanning together June 1, 9:45 AM</span></div>
+      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>Scan 1 DEXA PDF not in Drive</strong> — upload before scan day to enable full comparison table</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent this week</div>
+      <div class="success-target-item">Pull from Everfit — targets sent, confirm on scan day</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>TBD</strong> — Pull from Iris member summary (Aridaman appears as a tab on Juhi's Iris profile). DEXA data pending Drive upload.</div>
+    <div class="dp-why">Pull from Iris member summary before or at scan day.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not in Drive</strong> — Upload Scan 1 PDF to enable baseline comparison on scan day.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Juhi Khanna</strong> — Both scanning at 9:45 AM on June 1. Individual conversations with shared scan motivation.</span></div>
+      <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Iris profile</strong> — Aridaman appears as a second tab on Juhi's Iris profile. Pull his data from there.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">📋</span><span>Pull goals, limitations, consistency, and coaching flags from Iris (Juhi's profile, Aridaman tab) before scan day.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot (Scan 1 — PDF Upload Needed)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Fat % (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">ALMI (DEXA pending)</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Upload Scan 1 DEXA PDF to Drive to unlock all baseline data before scan day.</div>
+  </div>
+
+  <!-- 5 — DEXA Results -->
+  <div class="dp-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-bw">—</td><td class="r-pending" id="aridaman-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-bf">—</td><td class="r-pending" id="aridaman-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-lean">—</td><td class="r-pending" id="aridaman-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-fat">—</td><td class="r-pending" id="aridaman-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-vat">—</td><td class="r-pending" id="aridaman-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-almi">—</td><td class="r-pending" id="aridaman-d-almi">—</td></tr>
+        <tr><td>BMD</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-bmd">—</td><td class="r-pending" id="aridaman-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
+      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
+    </div>
+    <button onclick="window.print()" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/69f5220b444dd157e516b311/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Target (Week-Out)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td colspan="3" style="font-size:12px;color:#888;font-style:italic">Pull lift targets from Everfit week-out message sent.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69f5220b444dd157e516b311/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> Pull from Iris notes before scan day</div>
+      <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-aridaman -->
+
   </div><!-- end modal-window -->
 </div><!-- end modal-backdrop -->
 
@@ -1664,7 +2817,7 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 
-<footer>Kalos · Updated May 16, 2026 · 1 active: Vishaka Iyer (May 20) · 5 archived: Elise, Valerie, Mahmoud, Herc, Yasmin</footer>
+<footer>Kalos · Updated May 24, 2026 · 3 scanning May 25: Natalie, Joseph, Daniel S · 3 scanning May 28: Ryan, Priyal, Mihir · 3 scanning May 31: Jenna, Scott, Umar · 2 scanning June 1: Juhi, Aridaman</footer>
 
 <script>
   // ── Pre-Scan Prep Checklist ──────────────────────────────────────────
@@ -1721,9 +2874,8 @@ document.addEventListener('keydown', function(e) {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    ['sue', 'natalie', 'joseph', 'danielswartz'].forEach(loadChecklist);
+    ['natalie', 'joseph', 'danielswartz', 'ryanyoung', 'priyal', 'mihir', 'jenna', 'scott', 'umar', 'juhi', 'aridaman'].forEach(loadChecklist);
   });
 </script>
 </body>
 </html>
-
