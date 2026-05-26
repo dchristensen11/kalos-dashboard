@@ -845,24 +845,24 @@
       </div>
       <div class="metrics-grid">
         <div class="metric">
-          <div class="metric-val pending">—</div>
+          <div class="metric-val">152.0</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">Apr 29 scan</div>
         </div>
         <div class="metric">
-          <div class="metric-val pending">—</div>
+          <div class="metric-val">14.3%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">Apr 29 scan</div>
         </div>
         <div class="metric">
-          <div class="metric-val pending">—</div>
+          <div class="metric-val">43.4</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">Apr 29 scan</div>
         </div>
         <div class="metric">
-          <div class="metric-val pending">—</div>
+          <div class="metric-val">46th</div>
           <div class="metric-label">ALMI AM%</div>
-          <div class="metric-sub">DEXA pending</div>
+          <div class="metric-sub">Apr 29 scan</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -1892,7 +1892,7 @@
      data-sub="Second Scan · May 28, 2026 · LBM Build · M · ~30s">
 
   <script>
-  window.__scan1_ryanyoung = null; // DEXA PDF not yet uploaded — upload before scan day
+  window.__scan1_ryanyoung = {bw:152.0, bf:14.3, lean:124.7, fat:21.7, vat:43.4, almi:46, bmd:null};
   </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
@@ -1926,7 +1926,7 @@
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Consistency: 100%</strong> — 8/8 sessions last 30d, 3/3 last 7d. Gold standard adherence. Training volume includes program + active recreation.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No injuries noted</strong> — No limitations flagged during week-out check. Full range of motion on all target lifts.</span></div>
       <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Program: Growth | 3-Day | 3×/wk</strong> — Structured progressive overload program. Sumo DL and Lat Pulldown are primary barbell/cable movements alongside bench.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not yet uploaded</strong> — Scan 1 data not available. Upload to Google Drive before scan day to enable baseline comparison on scan 2.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Scan 1 DEXA loaded from Iris (Apr 29, 2026)</strong> — Weight 152.0 lb, BF 14.3%, Lean 124.7 lb, Fat 21.7 lb, VAT 43.4 cm², ALMI 46th %ile AM. BMD: pull from PDF.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
       <div class="personal-note"><span class="note-emoji">🏐</span><span>Active in recreational sports: volleyball + basketball 2–3×/wk. Total weekly activity load is high — factor into recovery and calorie needs.</span></div>
@@ -1935,16 +1935,16 @@
 
   <!-- 4 — Body Snapshot -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot (Scan 1 — PDF Upload Needed)</div>
+    <div class="dp-title">Body Snapshot (Scan 1 — Apr 29, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Fat % (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Lean Mass (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Fat Mass (DEXA pending)</div></div>
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">VAT cm² (DEXA pending)</div></div>
+      <div class="snap-metric"><div class="snap-val">152.0</div><div class="snap-lbl">Body Weight (lb)</div></div>
+      <div class="snap-metric"><div class="snap-val">14.3%</div><div class="snap-lbl">Body Fat %</div></div>
+      <div class="snap-metric"><div class="snap-val">124.7</div><div class="snap-lbl">Lean Mass (lb)</div></div>
+      <div class="snap-metric"><div class="snap-val">21.7</div><div class="snap-lbl">Fat Mass (lb)</div></div>
+      <div class="snap-metric"><div class="snap-val">43.4</div><div class="snap-lbl">VAT cm²</div></div>
       <div class="snap-metric"><div class="snap-val">~30s</div><div class="snap-lbl">Age · Male</div></div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Upload Scan 1 DEXA PDF to Drive → Member Second Scans folder to unlock all baseline data before scan day.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Scan 1 baseline: Apr 29, 2026 · via Iris member dashboard. BMD pull from PDF when available.</div>
   </div>
 
   <!-- 5 — DEXA Results -->
@@ -1953,17 +1953,17 @@
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (May 28)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bw">—</td><td class="r-pending" id="ryanyoung-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bf">—</td><td class="r-pending" id="ryanyoung-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-lean">—</td><td class="r-pending" id="ryanyoung-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-fat">—</td><td class="r-pending" id="ryanyoung-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-vat">—</td><td class="r-pending" id="ryanyoung-d-vat">—</td></tr>
-        <tr><td>ALMI (kg/m²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-almi">—</td><td class="r-pending" id="ryanyoung-d-almi">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>152.0</td><td class="r-pending" id="ryanyoung-s2-bw">—</td><td class="r-pending" id="ryanyoung-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>14.3%</td><td class="r-pending" id="ryanyoung-s2-bf">—</td><td class="r-pending" id="ryanyoung-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>124.7</td><td class="r-pending" id="ryanyoung-s2-lean">—</td><td class="r-pending" id="ryanyoung-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>21.7</td><td class="r-pending" id="ryanyoung-s2-fat">—</td><td class="r-pending" id="ryanyoung-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>43.4</td><td class="r-pending" id="ryanyoung-s2-vat">—</td><td class="r-pending" id="ryanyoung-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>46th %ile AM</td><td class="r-pending" id="ryanyoung-s2-almi">—</td><td class="r-pending" id="ryanyoung-d-almi">—</td></tr>
         <tr><td>BMD</td><td class="r-pending">PDF needed</td><td class="r-pending" id="ryanyoung-s2-bmd">—</td><td class="r-pending" id="ryanyoung-d-bmd">—</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
-      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
+    <div style="margin-top:10px;padding:10px;background:#e8f5e9;border-radius:8px;font-size:12px;color:#2e7d32;border:1px solid #a5d6a7">
+      ✅ <strong>Scan 1 data loaded from Iris (Apr 29, 2026).</strong> BMD not in Iris — pull from PDF when uploaded.
     </div>
     <button onclick="printDexaSummary('ryanyoung')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
   </div>
