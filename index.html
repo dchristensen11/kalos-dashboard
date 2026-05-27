@@ -1937,6 +1937,21 @@
 <div id="modal-scott" class="modal-content"
      data-name="Scott Welton"
      data-sub="Second Scan · May 31, 2026 · Duo · M · 48">
+  <script>
+  window.__scan1_scott = {
+    bw: 175.4, bfPct: 22.3, bfAMpct: 33,
+    lean: 134.47, fat: 38.64, vat: 87.5,
+    almiAMpct: 38, bmd: 1.223, bmdZ: 0.3,
+    scan1Date: 'May 2, 2026', height: 68.0,
+    regional: {
+      larm:  { lean: 9.18,  fat: 2.35  },
+      rarm:  { lean: 8.75,  fat: 2.29  },
+      trunk: { lean: 64.68, fat: 18.63 },
+      lleg:  { lean: 21.09, fat: 6.32  },
+      rleg:  { lean: 21.25, fat: 6.02  }
+    }
+  };
+  </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
@@ -2018,7 +2033,18 @@
         <tr><td>Fat Mass (lb)</td><td>38.64</td><td class="r-pending" id="scott-s2-fat">—</td><td class="r-pending" id="scott-d-fat">—</td></tr>
         <tr><td>VAT (cm²)</td><td>87.5 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="scott-s2-vat">—</td><td class="r-pending" id="scott-d-vat">—</td></tr>
         <tr><td>ALMI (kg/m²)</td><td>8.7 <span style="font-size:10px;color:#888">(38th AM)</span></td><td class="r-pending" id="scott-s2-almi">—</td><td class="r-pending" id="scott-d-almi">—</td></tr>
-        <tr><td>BMD</td><td><span style="color:#4caf50;font-size:11px">✓</span> <span style="font-size:10px;color:#888">T+0.3/Z+0.3</span></td><td class="r-pending" id="scott-s2-bmd">—</td><td class="r-pending" id="scott-d-bmd">—</td></tr>
+        <tr><td>BMD</td><td>1.223 <span style="color:#4caf50;font-size:11px">✓</span> <span style="font-size:10px;color:#888">Z: +0.3</span></td><td class="r-pending" id="scott-s2-bmd">—</td><td class="r-pending" id="scott-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean &amp; Fat Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th><th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td> <td class="tc">9.18</td><td class="tc r-pending" id="scott-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="scott-d-larm-lean">—</td><td class="tc">2.35</td><td class="tc r-pending" id="scott-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="scott-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td class="tc">8.75</td><td class="tc r-pending" id="scott-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="scott-d-rarm-lean">—</td><td class="tc">2.29</td><td class="tc r-pending" id="scott-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="scott-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td>    <td class="tc">64.68</td><td class="tc r-pending" id="scott-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="scott-d-trunk-lean">—</td><td class="tc">18.63</td><td class="tc r-pending" id="scott-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="scott-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td> <td class="tc">21.09</td><td class="tc r-pending" id="scott-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="scott-d-lleg-lean">—</td><td class="tc">6.32</td><td class="tc r-pending" id="scott-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="scott-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td class="tc">21.25</td><td class="tc r-pending" id="scott-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="scott-d-rleg-lean">—</td><td class="tc">6.02</td><td class="tc r-pending" id="scott-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="scott-d-rleg-fat">—</td></tr>
       </tbody>
     </table>
     <button onclick="printDexaSummary('scott')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
