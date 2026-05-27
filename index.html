@@ -1079,24 +1079,24 @@
       </div>
       <div class="metrics-grid">
         <div class="metric note">
-          <div class="metric-val">—</div>
+          <div class="metric-val">139.6</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">PDF pending</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">39.9%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">May 1 scan</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">83</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">May 1 scan</div>
+          <div class="metric-sub">May 1 DEXA</div>
         </div>
         <div class="metric note">
-          <div class="metric-val">—</div>
+          <div class="metric-val">39.9%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">67th AM %ile</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">83.1</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">approaching elevated</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">45th %ile</div>
           <div class="metric-label">ALMI AM%</div>
-          <div class="metric-sub">PDF pending</div>
+          <div class="metric-sub">near average</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -1122,7 +1122,7 @@
           </div>
         </div>
         <div class="checklist-items" id="items-juhi">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('juhi')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive (not found — needed for baseline comparison)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Scan 1 DEXA PDF in Drive — baseline data populated</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Pre-scan opener sent via Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Lift targets sent via Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('juhi')"><span> Food journal task added (Sat May 30 + Sun May 31)</span></label>
@@ -1153,24 +1153,24 @@
       </div>
       <div class="metrics-grid">
         <div class="metric note">
-          <div class="metric-val">—</div>
+          <div class="metric-val">180.0</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">PDF pending</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">30.6%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">May 1 scan</div>
+          <div class="metric-sub">May 1 DEXA</div>
         </div>
         <div class="metric note">
-          <div class="metric-val">—</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">PDF pending</div>
+          <div class="metric-val">30.6%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">84th AM %ile</div>
         </div>
-        <div class="metric">
-          <div class="metric-val">46th</div>
+        <div class="metric warn">
+          <div class="metric-val">138.8</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Elevated &gt;100</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">15th %ile</div>
           <div class="metric-label">ALMI AM%</div>
-          <div class="metric-sub">May 1 scan</div>
+          <div class="metric-sub">below average</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -1196,7 +1196,7 @@
           </div>
         </div>
         <div class="checklist-items" id="items-aridaman">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('aridaman')"><span> ⚠️ Upload Scan 1 DEXA PDF to Drive (not found — needed for baseline comparison)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Scan 1 DEXA PDF in Drive — baseline data populated</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Pre-scan opener sent via Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Lift targets sent via Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('aridaman')"><span> Food journal task added (Sat May 30 + Sun May 31)</span></label>
@@ -1790,6 +1790,21 @@
 <div id="modal-jenna" class="modal-content"
      data-name="Jenna Welton"
      data-sub="Second Scan · May 31, 2026 · Duo · F · 42">
+  <script>
+  window.__scan1_jenna = {
+    bw: 140.8, bfPct: 31.3, bfAMpct: 26,
+    lean: 95.77, fat: 43.64, vat: 46.5,
+    almiAMpct: 31, bmd: 0.959, bmdZ: -1.8,
+    scan1Date: 'May 2, 2026', height: 65.0,
+    regional: {
+      larm:  { lean: 4.41, fat: 2.60 },
+      rarm:  { lean: 4.24, fat: 2.63 },
+      trunk: { lean: 49.47, fat: 16.49 },
+      lleg:  { lean: 15.76, fat: 10.07 },
+      rleg:  { lean: 15.69, fat: 9.90 }
+    }
+  };
+  </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
@@ -1871,7 +1886,18 @@
         <tr><td>Fat Mass (lb)</td><td>43.64</td><td class="r-pending" id="jenna-s2-fat">—</td><td class="r-pending" id="jenna-d-fat">—</td></tr>
         <tr><td>VAT (cm²)</td><td>46.5 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="jenna-s2-vat">—</td><td class="r-pending" id="jenna-d-vat">—</td></tr>
         <tr><td>ALMI (kg/m²)</td><td>6.3 <span style="font-size:10px;color:#888">(31st AM)</span></td><td class="r-pending" id="jenna-s2-almi">—</td><td class="r-pending" id="jenna-d-almi">—</td></tr>
-        <tr><td>BMD</td><td><span style="color:#f44336;font-size:11px">⚠️</span> <span style="font-size:10px;color:#888">T-1.9/Z-1.8</span></td><td class="r-pending" id="jenna-s2-bmd">—</td><td class="r-pending" id="jenna-d-bmd">—</td></tr>
+        <tr><td>BMD</td><td>0.959 <span style="color:#f44336;font-size:11px">⚠️</span> <span style="font-size:10px;color:#888">Z: −1.8</span></td><td class="r-pending" id="jenna-s2-bmd">—</td><td class="r-pending" id="jenna-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean &amp; Fat Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th><th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td> <td class="tc">4.41</td><td class="tc r-pending" id="jenna-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="jenna-d-larm-lean">—</td><td class="tc">2.60</td><td class="tc r-pending" id="jenna-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="jenna-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td class="tc">4.24</td><td class="tc r-pending" id="jenna-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="jenna-d-rarm-lean">—</td><td class="tc">2.63</td><td class="tc r-pending" id="jenna-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="jenna-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td>    <td class="tc">49.47</td><td class="tc r-pending" id="jenna-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="jenna-d-trunk-lean">—</td><td class="tc">16.49</td><td class="tc r-pending" id="jenna-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="jenna-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td> <td class="tc">15.76</td><td class="tc r-pending" id="jenna-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="jenna-d-lleg-lean">—</td><td class="tc">10.07</td><td class="tc r-pending" id="jenna-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="jenna-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td class="tc">15.69</td><td class="tc r-pending" id="jenna-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="jenna-d-rleg-lean">—</td><td class="tc">9.90</td><td class="tc r-pending" id="jenna-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="jenna-d-rleg-fat">—</td></tr>
       </tbody>
     </table>
     <button onclick="printDexaSummary('jenna')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
@@ -2030,6 +2056,21 @@
 <div id="modal-umar" class="modal-content"
      data-name="Umar Khan Pathan"
      data-sub="Second Scan · May 31, 2026 · Fat Loss · M · 31 · Messages on hold">
+  <script>
+  window.__scan1_umar = {
+    bw: 231.9, bfPct: 38.7, bfAMpct: 99,
+    lean: 134.27, fat: 88.50, vat: 162.3,
+    almiAMpct: 44, bmd: 1.138, bmdZ: -0.6,
+    scan1Date: 'Apr 30, 2026', height: 71.0,
+    regional: {
+      larm:  { lean: 8.52,  fat: 4.96  },
+      rarm:  { lean: 9.26,  fat: 5.16  },
+      trunk: { lean: 64.69, fat: 42.95 },
+      lleg:  { lean: 23.69, fat: 16.26 },
+      rleg:  { lean: 25.44, fat: 16.30 }
+    }
+  };
+  </script>
 
   <div style="margin:12px 0;padding:10px 14px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80;">
     ⏸ <strong>Week-out messages on hold.</strong> Card and modal built. Send messages only when Daniel gives the explicit trigger.
@@ -2097,7 +2138,7 @@
       </div>
     </div>
     <div class="nutri-protocol" style="background:#fff3e0;border-color:#ffcc80;">
-      <strong>Scan 1 baseline (Apr 30):</strong> Fat 88.50 lb · Lean 131.60 lb (soft lean) · BMD T-0.6/Z-0.6 · Height 71.0 in · Asian ethnicity<br>
+      <strong>Scan 1 baseline (Apr 30):</strong> Fat 88.50 lb · Lean 134.27 lb (soft lean) · BMD T-0.6/Z-0.6 · Height 71.0 in · Asian ethnicity<br>
       <strong>Prior scan (Apr 22):</strong> BF% 39.4%, Fat 89.07 lb, Lean 130.66 lb, BMD T-0.1 — 8-day delta likely reflects measurement variance<br>
       <strong>Regional fat:</strong> L Arm 4.96 / R Arm 5.16 / Trunk 42.95 / L Leg 16.26 / R Leg 16.30 lb
     </div>
@@ -2111,11 +2152,22 @@
       <tbody>
         <tr><td>Body Weight (lb)</td><td>231.9</td><td class="r-pending" id="umar-s2-bw">—</td><td class="r-pending" id="umar-d-bw">—</td></tr>
         <tr><td>Body Fat %</td><td>38.7% <span style="font-size:10px;color:#888">(99th AM)</span></td><td class="r-pending" id="umar-s2-bf">—</td><td class="r-pending" id="umar-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>131.60</td><td class="r-pending" id="umar-s2-lean">—</td><td class="r-pending" id="umar-d-lean">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>134.27</td><td class="r-pending" id="umar-s2-lean">—</td><td class="r-pending" id="umar-d-lean">—</td></tr>
         <tr><td>Fat Mass (lb)</td><td>88.50</td><td class="r-pending" id="umar-s2-fat">—</td><td class="r-pending" id="umar-d-fat">—</td></tr>
         <tr><td>VAT (cm²)</td><td>162.3 <span style="color:#f44336;font-size:11px">⚠️ very elevated</span></td><td class="r-pending" id="umar-s2-vat">—</td><td class="r-pending" id="umar-d-vat">—</td></tr>
         <tr><td>ALMI (kg/m²)</td><td>8.8 <span style="font-size:10px;color:#888">(44th AM)</span></td><td class="r-pending" id="umar-s2-almi">—</td><td class="r-pending" id="umar-d-almi">—</td></tr>
-        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.6/Z-0.6</span></td><td class="r-pending" id="umar-s2-bmd">—</td><td class="r-pending" id="umar-d-bmd">—</td></tr>
+        <tr><td>BMD</td><td>1.138 <span style="font-size:10px;color:#888">Z: −0.6</span></td><td class="r-pending" id="umar-s2-bmd">—</td><td class="r-pending" id="umar-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean &amp; Fat Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th><th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td> <td class="tc">8.52</td><td class="tc r-pending" id="umar-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="umar-d-larm-lean">—</td><td class="tc">4.96</td><td class="tc r-pending" id="umar-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="umar-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td class="tc">9.26</td><td class="tc r-pending" id="umar-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="umar-d-rarm-lean">—</td><td class="tc">5.16</td><td class="tc r-pending" id="umar-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="umar-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td>    <td class="tc">64.69</td><td class="tc r-pending" id="umar-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="umar-d-trunk-lean">—</td><td class="tc">42.95</td><td class="tc r-pending" id="umar-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="umar-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td> <td class="tc">23.69</td><td class="tc r-pending" id="umar-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="umar-d-lleg-lean">—</td><td class="tc">16.26</td><td class="tc r-pending" id="umar-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="umar-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td class="tc">25.44</td><td class="tc r-pending" id="umar-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="umar-d-rleg-lean">—</td><td class="tc">16.30</td><td class="tc r-pending" id="umar-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="umar-d-rleg-fat">—</td></tr>
       </tbody>
     </table>
     <button onclick="printDexaSummary('umar')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
@@ -2137,7 +2189,7 @@
   <div class="dp-section">
     <div class="dp-title">Nutrition <a href="https://app.everfit.io" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
     <div class="nutri-protocol">
-      <div><strong>Primary lever:</strong> Fat loss + VAT reduction — sustained moderate deficit with high protein to protect lean mass (131.60 lb to protect)</div>
+      <div><strong>Primary lever:</strong> Fat loss + VAT reduction — sustained moderate deficit with high protein to protect lean mass (134.27 lb to protect)</div>
       <div><strong>Protein target:</strong> Pull from Iris. Recommend ≥170g/day for 231.9 lb M in fat loss phase (protect lean mass at 0.75g/lb BW minimum)</div>
       <div><strong>VAT strategy:</strong> Caloric deficit ~400–600 kcal/day, eliminate liquid calories, sleep quality ≥7h, manage stress — all drive VAT reduction</div>
       <div style="margin-top:6px;color:#666"><em>Pull from Everfit food journal and Iris notes before scan day — confirm adherence and calorie/protein tracking quality.</em></div>
@@ -2150,6 +2202,21 @@
 <div id="modal-juhi" class="modal-content"
      data-name="Juhi Khanna"
      data-sub="Second Scan · June 1, 2026 · Duo · F">
+  <script>
+  window.__scan1_juhi = {
+    bw: 139.6, bfPct: 39.9, bfAMpct: 67,
+    lean: 82.75, fat: 55.02, vat: 83.1,
+    almiAMpct: 45, bmd: 1.093, bmdZ: -0.2,
+    scan1Date: 'May 1, 2026', height: null,
+    regional: {
+      larm:  { lean: 3.53, fat: 3.21 },
+      rarm:  { lean: 3.56, fat: 3.13 },
+      trunk: { lean: 38.79, fat: 24.00 },
+      lleg:  { lean: 14.65, fat: 11.33 },
+      rleg:  { lean: 14.73, fat: 11.01 }
+    }
+  };
+  </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
@@ -2158,7 +2225,7 @@
       <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
       <div class="success-win"><span class="win-icon">📋</span><span class="win-text"><strong>Food journal task added</strong> — Sat May 30 + Sun May 31 in Everfit task calendar</span></div>
       <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Aridaman</strong> — scanning together June 1, 9:45 AM</span></div>
-      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>Scan 1 DEXA PDF not in Drive</strong> — upload before scan day to enable full comparison table</span></div>
+      <div class="success-win"><span class="win-icon">🩻</span><span class="win-text"><strong>BMD 1.093 / Z-score −0.2 — normal bone density</strong> — Perimenopause + HRT is maintaining normal bone. Resistance training continues to build on this baseline.</span></div>
     </div>
     <div class="success-targets">
       <div class="success-targets-label">Lift targets sent May 24</div>
@@ -2177,7 +2244,9 @@
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not in Drive</strong> — Upload Scan 1 PDF to enable baseline comparison on scan day. Without it, the DEXA table and body snapshot will show pending values.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>VAT 83.1 cm² — approaching elevated range</strong> — Healthy threshold is &lt;100 cm². Currently within range but reducing VAT is a beneficial secondary goal alongside lean mass build.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>ALMI — 45th %ile AM</strong> — Near average appendicular lean for age. Building lean mass is the primary composition goal for Scan 2. Protein adherence + progressive overload are the primary tools.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>BMD 1.093 / Z-score −0.2 — normal bone density</strong> — In normal range despite perimenopause. HRT + resistance training are maintaining and building bone. Compound lifts (RDL, squats) are the key levers going forward.</span></div>
       <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Aridaman Tripathi</strong> — Both scanning at 9:45 AM on June 1. Run individual conversations but use the shared motivation of scanning together as an opener.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
@@ -2187,34 +2256,61 @@
 
   <!-- 4 — Body Snapshot -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot (Scan 1 — May 1, 2026)</div>
+    <div class="dp-title">Body Snapshot — Scan 1 (May 1, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight</div></div>
-      <div class="snap-metric"><div class="snap-val">39.9%</div><div class="snap-lbl">Body Fat (May 1)</div></div>
-      <div class="snap-metric"><div class="snap-val">83 cm²</div><div class="snap-lbl">VAT (May 1)</div></div>
-      <div class="snap-metric"><div class="snap-val">82.8 lb</div><div class="snap-lbl">Lean Mass (May 1)</div></div>
+      <div class="snap-metric">
+        <div class="snap-mv">139.6</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · May 1 DEXA</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">39.9%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">67th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">83.1</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">approaching elevated</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv ok">45th %ile</div>
+        <div class="snap-ml">ALMI AM</div>
+        <div class="snap-ms">near average</div>
+      </div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Partial data from Iris member summary. Upload Scan 1 PDF to Drive to enable full DEXA table with BMD, ALMI %ile, regional breakdown, and fat mass.</div>
+    <div class="nutri-protocol" style="background:#fff3e0;border-color:#ffcc80;">
+      <strong>Scan 1 baseline:</strong> Fat 55.02 lb · Lean 82.75 lb · BMD 1.093/Z−0.2 (normal) · BF 39.9%<br>
+      <strong>Regional lean:</strong> L Arm 3.53 / R Arm 3.56 / Trunk 38.79 / L Leg 14.65 / R Leg 14.73 lb
+    </div>
   </div>
 
   <!-- 5 — DEXA Results -->
   <div class="dp-section dexa-print-section">
     <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
     <table class="dexa-table">
-      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
+      <thead><tr><th>Metric</th><th>Scan 1 (May 1)</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-bw">—</td><td class="r-pending" id="juhi-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>39.9%</td><td class="r-pending" id="juhi-s2-bf">—</td><td class="r-pending" id="juhi-d-bf">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>139.6</td><td class="r-pending" id="juhi-s2-bw">—</td><td class="r-pending" id="juhi-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>39.9% <span style="font-size:10px;color:#888">(67th AM)</span></td><td class="r-pending" id="juhi-s2-bf">—</td><td class="r-pending" id="juhi-d-bf">—</td></tr>
         <tr><td>Lean Mass (lb)</td><td>82.75</td><td class="r-pending" id="juhi-s2-lean">—</td><td class="r-pending" id="juhi-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-fat">—</td><td class="r-pending" id="juhi-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>83</td><td class="r-pending" id="juhi-s2-vat">—</td><td class="r-pending" id="juhi-d-vat">—</td></tr>
-        <tr><td>ALMI (kg/m²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-almi">—</td><td class="r-pending" id="juhi-d-almi">—</td></tr>
-        <tr><td>BMD</td><td class="r-pending">PDF needed</td><td class="r-pending" id="juhi-s2-bmd">—</td><td class="r-pending" id="juhi-d-bmd">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>55.02</td><td class="r-pending" id="juhi-s2-fat">—</td><td class="r-pending" id="juhi-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>83.1</td><td class="r-pending" id="juhi-s2-vat">—</td><td class="r-pending" id="juhi-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>6.7 <span style="font-size:10px;color:#888">(45th AM)</span></td><td class="r-pending" id="juhi-s2-almi">—</td><td class="r-pending" id="juhi-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>1.093 <span style="font-size:10px;color:#888">Z: −0.2</span></td><td class="r-pending" id="juhi-s2-bmd">—</td><td class="r-pending" id="juhi-d-bmd">—</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
-      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
-    </div>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean &amp; Fat Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th><th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td> <td class="tc">3.53</td><td class="tc r-pending" id="juhi-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="juhi-d-larm-lean">—</td><td class="tc">3.21</td><td class="tc r-pending" id="juhi-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="juhi-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td class="tc">3.56</td><td class="tc r-pending" id="juhi-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="juhi-d-rarm-lean">—</td><td class="tc">3.13</td><td class="tc r-pending" id="juhi-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="juhi-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td>    <td class="tc">38.79</td><td class="tc r-pending" id="juhi-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="juhi-d-trunk-lean">—</td><td class="tc">24.00</td><td class="tc r-pending" id="juhi-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="juhi-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td> <td class="tc">14.65</td><td class="tc r-pending" id="juhi-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="juhi-d-lleg-lean">—</td><td class="tc">11.33</td><td class="tc r-pending" id="juhi-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="juhi-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td class="tc">14.73</td><td class="tc r-pending" id="juhi-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="juhi-d-rleg-lean">—</td><td class="tc">11.01</td><td class="tc r-pending" id="juhi-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="juhi-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
     <button onclick="printDexaSummary('juhi')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
   </div>
 
@@ -2252,6 +2348,21 @@
 <div id="modal-aridaman" class="modal-content"
      data-name="Aridaman Tripathi"
      data-sub="Second Scan · June 1, 2026 · Duo · M">
+  <script>
+  window.__scan1_aridaman = {
+    bw: 180.0, bfPct: 30.6, bfAMpct: 84,
+    lean: 123.17, fat: 54.32, vat: 138.8,
+    almiAMpct: 15, bmd: 1.086, bmdZ: -1.0,
+    scan1Date: 'May 1, 2026', height: null,
+    regional: {
+      larm:  { lean: 6.64,  fat: 2.66  },
+      rarm:  { lean: 7.60,  fat: 2.44  },
+      trunk: { lean: 59.47, fat: 31.55 },
+      lleg:  { lean: 21.40, fat: 7.66  },
+      rleg:  { lean: 20.41, fat: 7.50  }
+    }
+  };
+  </script>
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
@@ -2260,7 +2371,7 @@
       <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Week-out opener + lift targets sent</strong> — scan prep messages delivered via Everfit</span></div>
       <div class="success-win"><span class="win-icon">📋</span><span class="win-text"><strong>Food journal task added</strong> — Sat May 30 + Sun May 31 in Everfit task calendar</span></div>
       <div class="success-win"><span class="win-icon">💑</span><span class="win-text"><strong>Duo scan with Juhi</strong> — scanning together June 1, 9:45 AM</span></div>
-      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>Scan 1 DEXA PDF not in Drive</strong> — upload before scan day to enable full comparison table</span></div>
+      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>VAT 138.8 cm² — elevated (target: below 100)</strong> — This is the primary health number to move. Frame Phase 2 around how far VAT has come from 138.8 toward the healthy &lt;100 cm² threshold.</span></div>
     </div>
     <div class="success-targets">
       <div class="success-targets-label">Lift targets sent May 24</div>
@@ -2271,7 +2382,7 @@
   <!-- 2 — Goal & Deep Why -->
   <div class="dp-section dp-section-goal">
     <div class="dp-title">Goal &amp; Why</div>
-    <div class="dp-goal"><strong>Recomposition + Bone Density + VAT Reduction</strong> – Build lean mass (ALMI 46th %ile AM), improve bone density (Z-score -1.0), and reduce visceral fat. Borderline cholesterol (~200 mg/dL). Home gym DB-only 3x/week. No rack. Left shoulder weaker but pain-free. Vegetarian. 49 years old.</div>
+    <div class="dp-goal"><strong>Recomposition + Bone Density + VAT Reduction</strong> – Build lean mass (ALMI 15th %ile AM), improve bone density (Z-score -1.0), and reduce visceral fat. Borderline cholesterol (~200 mg/dL). Home gym DB-only 3x/week. No rack. Left shoulder weaker but pain-free. Vegetarian. 49 years old.</div>
     <div class="dp-why">Longevity, bone health, and metabolic resilience. Addressing borderline-low bone density and visceral fat risk through consistent strength and protein habits. Vegetarian navigating a high-protein target. In it for decades.</div>
   </div>
 
@@ -2279,7 +2390,9 @@
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>DEXA PDF not in Drive</strong> — Upload Scan 1 PDF to enable baseline comparison on scan day.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>VAT 138.8 cm² — elevated (healthy threshold &lt;100 cm²)</strong> — Primary metabolic priority for Phase 2. Visceral fat at this level is linked to insulin resistance and cardiovascular risk. Fat loss + resistance training + sleep are the key levers. Every scan should show this moving toward &lt;100.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>ALMI — 15th %ile AM</strong> — Below average appendicular lean for age. Building lean mass while reducing fat is the dual goal for Phase 2. Protein adherence and progressive overload on compound movements are the primary tools.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>BMD 1.086 / Z-score −1.0 — borderline low</strong> — Slightly below average for age-matched males. Resistance training even on a DB-only program supports bone adaptation. Track across Phase 2.</span></div>
       <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Duo scan with Juhi Khanna</strong> — Both scanning at 9:45 AM on June 1. Individual conversations with shared scan motivation.</span></div>
       <div class="coaching-point"><span class="cp-dot blue"></span><span><strong>Iris profile</strong> — Aridaman appears as a second tab on Juhi's Iris profile. Pull his data from there.</span></div>
     </div>
@@ -2290,34 +2403,61 @@
 
   <!-- 4 — Body Snapshot -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot (Scan 1 — May 1, 2026)</div>
+    <div class="dp-title">Body Snapshot — Scan 1 (May 1, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">Body Weight</div></div>
-      <div class="snap-metric"><div class="snap-val">30.6%</div><div class="snap-lbl">Body Fat (May 1)</div></div>
-      <div class="snap-metric"><div class="snap-val">123.2 lb</div><div class="snap-lbl">Lean Mass (May 1)</div></div>
-      <div class="snap-metric"><div class="snap-val">46th %ile</div><div class="snap-lbl">ALMI AM (May 1)</div></div>
+      <div class="snap-metric">
+        <div class="snap-mv">180.0</div>
+        <div class="snap-ml">Body Weight</div>
+        <div class="snap-ms">lb · May 1 DEXA</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv note">30.6%</div>
+        <div class="snap-ml">Body Fat %</div>
+        <div class="snap-ms">84th %ile AM</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">138.8</div>
+        <div class="snap-ml">VAT cm²</div>
+        <div class="snap-ms">Elevated &gt;100</div>
+      </div>
+      <div class="snap-metric">
+        <div class="snap-mv warn">15th %ile</div>
+        <div class="snap-ml">ALMI AM</div>
+        <div class="snap-ms">below average</div>
+      </div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Partial data from Iris member summary. Upload Scan 1 PDF to Drive to enable full DEXA table with BMD, VAT, regional breakdown, and fat mass.</div>
+    <div class="nutri-protocol" style="background:#fff3e0;border-color:#ffcc80;">
+      <strong>Scan 1 baseline:</strong> Fat 54.32 lb · Lean 123.17 lb · BMD 1.086/Z−1.0 (borderline low) · VAT 138.8 cm²<br>
+      <strong>Regional lean:</strong> L Arm 6.64 / R Arm 7.60 / Trunk 59.47 / L Leg 21.40 / R Leg 20.41 lb
+    </div>
   </div>
 
   <!-- 5 — DEXA Results -->
   <div class="dp-section dexa-print-section">
     <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
     <table class="dexa-table">
-      <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
+      <thead><tr><th>Metric</th><th>Scan 1 (May 1)</th><th>Scan 2 (Jun 1)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-bw">—</td><td class="r-pending" id="aridaman-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>30.6%</td><td class="r-pending" id="aridaman-s2-bf">—</td><td class="r-pending" id="aridaman-d-bf">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>180.0</td><td class="r-pending" id="aridaman-s2-bw">—</td><td class="r-pending" id="aridaman-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>30.6% <span style="font-size:10px;color:#888">(84th AM)</span></td><td class="r-pending" id="aridaman-s2-bf">—</td><td class="r-pending" id="aridaman-d-bf">—</td></tr>
         <tr><td>Lean Mass (lb)</td><td>123.17</td><td class="r-pending" id="aridaman-s2-lean">—</td><td class="r-pending" id="aridaman-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-fat">—</td><td class="r-pending" id="aridaman-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td class="r-pending">PDF needed</td><td class="r-pending" id="aridaman-s2-vat">—</td><td class="r-pending" id="aridaman-d-vat">—</td></tr>
-        <tr><td>ALMI (kg/m²)</td><td>46th %ile AM</td><td class="r-pending" id="aridaman-s2-almi">—</td><td class="r-pending" id="aridaman-d-almi">—</td></tr>
-        <tr><td>BMD</td><td><span style="color:#ff9800;font-size:11px">⚠️</span> <span style="font-size:10px;color:#888">Z-score -1.0</span></td><td class="r-pending" id="aridaman-s2-bmd">—</td><td class="r-pending" id="aridaman-d-bmd">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>54.32</td><td class="r-pending" id="aridaman-s2-fat">—</td><td class="r-pending" id="aridaman-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>138.8 <span style="color:#f44336;font-size:11px">⚠️ elevated</span></td><td class="r-pending" id="aridaman-s2-vat">—</td><td class="r-pending" id="aridaman-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>7.8 <span style="font-size:10px;color:#888">(15th AM)</span></td><td class="r-pending" id="aridaman-s2-almi">—</td><td class="r-pending" id="aridaman-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>1.086 <span style="color:#ff9800;font-size:11px">⚠️</span> <span style="font-size:10px;color:#888">Z: −1.0</span></td><td class="r-pending" id="aridaman-s2-bmd">—</td><td class="r-pending" id="aridaman-d-bmd">—</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:10px;padding:10px;background:#fff3e0;border-radius:8px;font-size:12px;color:#7c4700;border:1px solid #ffcc80">
-      ⚠️ <strong>Scan 1 DEXA PDF not found in Drive.</strong> Upload PDF to the Member Second Scans folder to enable the baseline comparison table before scan day.
-    </div>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean &amp; Fat Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th class="tc">S1 Lean</th><th class="tc">S2 Lean</th><th class="tc">Δ Lean</th><th class="tc">S1 Fat</th><th class="tc">S2 Fat</th><th class="tc">Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td> <td class="tc">6.64</td><td class="tc r-pending" id="aridaman-s2-larm-lean">—</td><td class="tc r-pending r-delta" id="aridaman-d-larm-lean">—</td><td class="tc">2.66</td><td class="tc r-pending" id="aridaman-s2-larm-fat">—</td><td class="tc r-pending r-delta" id="aridaman-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td class="tc">7.60</td><td class="tc r-pending" id="aridaman-s2-rarm-lean">—</td><td class="tc r-pending r-delta" id="aridaman-d-rarm-lean">—</td><td class="tc">2.44</td><td class="tc r-pending" id="aridaman-s2-rarm-fat">—</td><td class="tc r-pending r-delta" id="aridaman-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td>    <td class="tc">59.47</td><td class="tc r-pending" id="aridaman-s2-trunk-lean">—</td><td class="tc r-pending r-delta" id="aridaman-d-trunk-lean">—</td><td class="tc">31.55</td><td class="tc r-pending" id="aridaman-s2-trunk-fat">—</td><td class="tc r-pending r-delta" id="aridaman-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td> <td class="tc">21.40</td><td class="tc r-pending" id="aridaman-s2-lleg-lean">—</td><td class="tc r-pending r-delta" id="aridaman-d-lleg-lean">—</td><td class="tc">7.66</td><td class="tc r-pending" id="aridaman-s2-lleg-fat">—</td><td class="tc r-pending r-delta" id="aridaman-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td class="tc">20.41</td><td class="tc r-pending" id="aridaman-s2-rleg-lean">—</td><td class="tc r-pending r-delta" id="aridaman-d-rleg-lean">—</td><td class="tc">7.50</td><td class="tc r-pending" id="aridaman-s2-rleg-fat">—</td><td class="tc r-pending r-delta" id="aridaman-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
     <button onclick="printDexaSummary('aridaman')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
   </div>
 
