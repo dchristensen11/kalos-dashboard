@@ -1683,8 +1683,8 @@
     bw: 181.4, bfPct: 26.5, bfAMpct: 70,
     lean: 132.56, fat: 47.77, vat: 74.6,
     almiAMpct: 21,
-    bmd: null, bmdZ: -0.1,
-    scan1Date: 'Apr 29, 2026', height: null,
+    bmd: 1.188, bmdZ: -0.1,
+    scan1Date: 'Apr 20, 2026', height: 73.0,
     regional: null
   };
 </script>
@@ -1695,7 +1695,7 @@
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="mihir-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="mihir-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
   <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">21/21 sessions, perfect adherence across both phases</span></div>
   <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">DB Row PR: 40x12 x3 sets (two PRs in a single session)</span></div>
@@ -1770,13 +1770,13 @@
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1</th><th>Scan 2 (May 28)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>181.4</td><td class="r-pending" id="mihir-s2-bw">—</td><td class="r-pending" id="mihir-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>26.5% <span style="font-size:10px;color:#888">(70th AM)</span></td><td class="r-pending" id="mihir-s2-bf">—</td><td class="r-pending" id="mihir-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>132.56</td><td class="r-pending" id="mihir-s2-lean">—</td><td class="r-pending" id="mihir-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>47.77</td><td class="r-pending" id="mihir-s2-fat">—</td><td class="r-pending" id="mihir-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>74.6 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="r-pending" id="mihir-s2-vat">—</td><td class="r-pending" id="mihir-d-vat">—</td></tr>
-        <tr><td>ALMI (kg/m²)</td><td>8.1 <span style="font-size:10px;color:#888">(21st AM)</span></td><td class="r-pending" id="mihir-s2-almi">—</td><td class="r-pending" id="mihir-d-almi">—</td></tr>
-        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.1/Z-0.1</span></td><td class="r-pending" id="mihir-s2-bmd">—</td><td class="r-pending" id="mihir-d-bmd">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>181.4</td><td class="" id="mihir-s2-bw">183.0</td><td class="" id="mihir-d-bw">+1.6</td></tr>
+        <tr><td>Body Fat %</td><td>26.5% <span style="font-size:10px;color:#888">(70th AM)</span></td><td class="" id="mihir-s2-bf">26.1%</td><td class="" id="mihir-d-bf">-0.4%</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>132.56</td><td class="" id="mihir-s2-lean">133.06</td><td class="" id="mihir-d-lean">+0.50</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>47.77</td><td class="" id="mihir-s2-fat">47.06</td><td class="" id="mihir-d-fat">-0.71</td></tr>
+        <tr><td>VAT (cm²)</td><td>74.6 <span style="color:#4caf50;font-size:11px">✓ healthy</span></td><td class="" id="mihir-s2-vat">65.4</td><td class="" id="mihir-d-vat">-9.2</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>8.1 <span style="font-size:10px;color:#888">(21st AM)</span></td><td class="" id="mihir-s2-almi">22nd %ile AM</td><td class="" id="mihir-d-almi">+1 %ile</td></tr>
+        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">T-0.1/Z-0.1</span></td><td class="" id="mihir-s2-bmd">1.230 (T: +0.3)</td><td class="" id="mihir-d-bmd">+0.042</td></tr>
       </tbody>
     </table>
     <button onclick="printDexaSummary('mihir')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
