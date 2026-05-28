@@ -2717,7 +2717,6 @@ function printDexaSummary(slug) {
       + '<td class="center delta">' + (parseFloat(df) >= 0 ? '+' : '') + df + '</td>'
       + '</tr>';
   });
-  }); // end if hasRegional
   var totDL = (totLean2 - totLean1).toFixed(2);
   var totDF = (totFat2 - totFat1).toFixed(2);
   if (hasRegional) regionRows += '<tr class="total-row">'
