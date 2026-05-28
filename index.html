@@ -2797,11 +2797,19 @@ function printDexaSummary(slug) {
     + '<div class="footer">DEXA scan performed at Kalos San Jose · sjsupport@livekalos.com · (669) 279-4664</div>'
     + '</div></body></html>';
 
-  var w = window.open('', '_blank');
-  w.document.open();
-  w.document.write(printHtml);
-  w.document.close();
-  setTimeout(function() { w.focus(); w.print(); }, 600);
+  // Use hidden iframe to avoid popup blocking in webview contexts
+  var iframe = document.createElement('iframe');
+  iframe.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;border:0;';
+  document.body.appendChild(iframe);
+  var doc = iframe.contentDocument || iframe.contentWindow.document;
+  doc.open();
+  doc.write(printHtml);
+  doc.close();
+  setTimeout(function() {
+    iframe.contentWindow.focus();
+    iframe.contentWindow.print();
+    setTimeout(function() { document.body.removeChild(iframe); }, 2000);
+  }, 400);
 }
 </script>
 
