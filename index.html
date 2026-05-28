@@ -1441,7 +1441,14 @@
     almiAMpct: 46,
     bmd: 1.179, bmdZ: -0.2,
     scan1Date: 'Apr 29, 2026', height: 68.0,
-    regional: null
+    regional: null,
+    scan2regional: {
+      larm:  { lean: 7.67,  fat: 1.08 },
+      rarm:  { lean: 9.72,  fat: 1.30 },
+      trunk: { lean: 61.66, fat: 9.55 },
+      lleg:  { lean: 22.97, fat: 3.41 },
+      rleg:  { lean: 22.24, fat: 3.27 }
+    }
   };
   </script>
 
@@ -1685,7 +1692,14 @@
     almiAMpct: 21,
     bmd: 1.188, bmdZ: -0.1,
     scan1Date: 'Apr 20, 2026', height: 73.0,
-    regional: null
+    regional: null,
+    scan2regional: {
+      larm:  { lean: 7.43,  fat: 3.48 },
+      rarm:  { lean: 9.25,  fat: 3.41 },
+      trunk: { lean: 58.33, fat: 17.44 },
+      lleg:  { lean: 24.59, fat: 10.02 },
+      rleg:  { lean: 24.65, fat: 9.84 }
+    }
   };
 </script>
 <!-- ── MIHIR PATEL MODAL ── -->
@@ -2697,7 +2711,8 @@ function printDexaSummary(slug) {
     { label: 'R Leg',  key: 'rleg'  }
   ];
   var regionRows = '';
-  var hasRegional = s1.regional != null;
+  var hasRegional    = s1.regional != null;
+  var hasScan2Regional = !hasRegional && s1.scan2regional != null;
   var totLean1 = 0, totLean2 = 0, totFat1 = 0, totFat2 = 0;
   if (hasRegional) regions.forEach(function(r) {
     var rl1 = s1.regional[r.key].lean;
@@ -2717,6 +2732,16 @@ function printDexaSummary(slug) {
       + '<td class="center delta">' + (parseFloat(df) >= 0 ? '+' : '') + df + '</td>'
       + '</tr>';
   });
+  if (hasScan2Regional) regions.forEach(function(r) {
+    var rl2 = s1.scan2regional[r.key].lean;
+    var rf2 = s1.scan2regional[r.key].fat;
+    totLean2 += rl2; totFat2 += rf2;
+    regionRows += '<tr>'
+      + '<td>' + r.label + '</td>'
+      + '<td class="center">' + rl2 + '</td>'
+      + '<td class="center">' + rf2 + '</td>'
+      + '</tr>';
+  });
   var totDL = (totLean2 - totLean1).toFixed(2);
   var totDF = (totFat2 - totFat1).toFixed(2);
   if (hasRegional) regionRows += '<tr class="total-row">'
@@ -2727,6 +2752,11 @@ function printDexaSummary(slug) {
     + '<td class="center">' + totFat1.toFixed(2) + '</td>'
     + '<td class="center">' + totFat2.toFixed(2) + '</td>'
     + '<td class="center delta">' + (parseFloat(totDF) >= 0 ? '+' : '') + totDF + '</td>'
+    + '</tr>';
+  if (hasScan2Regional) regionRows += '<tr class="total-row">'
+    + '<td>Subtotal</td>'
+    + '<td class="center">' + totLean2.toFixed(2) + '</td>'
+    + '<td class="center">' + totFat2.toFixed(2) + '</td>'
     + '</tr>';
 
   var printHtml = '<!DOCTYPE html><html lang="en"><head>'
@@ -2792,7 +2822,12 @@ function printDexaSummary(slug) {
     + '<table><thead><tr>'
     + '<th>Region</th><th class="center">Lean S1</th><th class="center">Lean S2</th><th class="center">Lean Change</th>'
     + '<th class="center">Fat S1</th><th class="center">Fat S2</th><th class="center">Fat Change</th>'
-    + '</tr></thead><tbody>' + regionRows + '</tbody></table>' : '')
+    + '</tr></thead><tbody>' + regionRows + '</tbody></table>'
+    : hasScan2Regional ? '<div class="section-title" style="margin-top:24px">Regional Lean / Fat — Scan 2 (lb)</div>'
+    + '<table><thead><tr>'
+    + '<th>Region</th><th class="center">Lean Mass (lb)</th><th class="center">Fat Mass (lb)</th>'
+    + '</tr></thead><tbody>' + regionRows + '</tbody></table>'
+    : '')
     + '<div class="footer">DEXA scan performed at Kalos San Jose · sjsupport@livekalos.com · (669) 279-4664</div>'
     + '</div></body></html>';
 
