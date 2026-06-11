@@ -1282,6 +1282,71 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div>
 
 
+
+<!-- ── JUNE 15 DAY GROUP ── -->
+<div class="day-group">
+  <div class="day-label">Monday · June 15, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── VLADIMIR NOVIKOV ── -->
+    <div class="card" id="card-vladimir">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('vladimir')">Vladimir Novikov <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Fat Loss · CTC Active · No Everfit Log</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-fat-loss">Fat Loss</span>
+          <span class="badge badge-scan">1:30 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, June 15</strong> · Second Kalos DEXA Scan · 1:30 PM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric"><div class="metric-val">207</div><div class="metric-label">Weight lb</div><div class="metric-sub">Jun 4 log</div></div>
+        <div class="metric"><div class="metric-val warn">26.9%</div><div class="metric-label">Body Fat</div><div class="metric-sub">goal ↓</div></div>
+        <div class="metric"><div class="metric-val warn">195 cm²</div><div class="metric-label">VAT</div><div class="metric-sub">⚠ high risk</div></div>
+        <div class="metric"><div class="metric-val ok">88th %ile</div><div class="metric-label">ALMI AM</div><div class="metric-sub">protect ↑</div></div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">0%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#ef4444"></div></div>
+            <div class="cons-detail">0% logged in Everfit · trains CTC 4-5x/week but no app tracking · baselines set via DM Jun 10</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Their Deep Why</div>
+        <div class="why-text">Longevity and long-term health. VAT at 195 cm² is the primary risk to move. BF% from 26.9% toward 25% near-term, 20% long-term. ALMI at 88th %ile is a significant muscle asset to protect. Tennis coach, 4 weeks alcohol-free, creatine 5g/day. Possible World Cup travel post-scan.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('vladimir')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-vladimir">5/7</span>
+            <span class="checklist-chevron" id="chev-vladimir">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-vladimir">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('vladimir')"><span> Iris review complete; goals, why, VAT 195, ALMI 88th %ile, no food log since Jun 4</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('vladimir')"><span> Lift baselines established via DM (Jun 10); DB Shoulder Press, Goblet Squat, DB Row at CTC</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('vladimir')"><span> Pre-scan opener sent via Everfit (Jun 10); longevity framing, VAT as primary target</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('vladimir')"><span> Lift targets + nutrition sent via Everfit (Jun 10); protein 175g, food tracking emphasis</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('vladimir')"><span> Food journal task added; Jun 13 + Jun 14</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('vladimir')"><span> Scan 1 DEXA PDF in Drive; not found, use Iris data to populate DEXA table night before</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('vladimir')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="day-group">
   <div class="day-label">Wednesday · June 17, 2026</div>
   <div class="cards-row">
@@ -2746,6 +2811,126 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div><!-- end modal-umar -->
 
+
+
+
+<!-- ── VLADIMIR NOVIKOV MODAL ── -->
+<script>
+  window.__scan1_vladimir = {
+    bw: 207, bfPct: 26.9, lean: 151.3, fat: 55.7, vat: 195,
+    almiAMpct: 88, bmdZ: 0.5, scan1Date: 'May 14, 2026'
+  };
+</script>
+<div id="modal-vladimir" class="modal-content"
+     data-name="Vladimir Novikov"
+     data-sub="Second Scan · June 15, 2026 · Age/Sex Profile Pending">
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="vladimir-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>ALMI 88th %ile</strong>: exceptional lean mass advantage. The highest of any current second-scan client. This is the primary structural asset to protect through the fat loss phase.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>4 weeks alcohol-free + creatine 5g/day</strong>: meaningful lifestyle shifts heading into the scan. Alcohol removal alone is a significant lever for body composition and visceral fat reduction.</span></div>
+      <div class="success-win"><span class="win-icon">🎯</span><span class="win-text"><strong>Week-out messaging complete.</strong> Opener and lift/nutrition targets sent Jun 10. Food journal task added for Jun 13 + Jun 14.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Week-out targets sent Jun 10</div>
+      <div class="success-target-item">Protein: minimum 175g daily</div>
+      <div class="success-target-item">DB Shoulder Press: match or exceed Jun 10 RPE 8/10 baseline</div>
+      <div class="success-target-item">Goblet Squat: 3 × 15 clean reps at same or heavier load</div>
+      <div class="success-target-item">DB Row: 3 × 10/side at same or heavier load</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Fat Loss + VAT Reduction. Protect ALMI.</strong> Primary target is visceral fat from 195 cm² to below 100 cm². BF% from 26.9% to 25% near-term, 20% long-term. ALMI 88th %ile is the lean mass asset to preserve through the cut. No Everfit program; trains independently at CTC 4-5x/week, DB-based. No known injuries (slight postural scan curve, not scoliosis). Scan 1: May 14, 2026.</div>
+    <div class="dp-why">Longevity and long-term health. VAT at 195 cm² is the cardiovascular and metabolic priority. The exceptional ALMI at 88th %ile is a rare advantage that makes fat-specific loss achievable without sacrificing muscle. Building a body that performs well into the next decade.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>VAT 195 cm² (HIGH RISK)</strong>: Primary metabolic target. Above 100 cm² is elevated risk; 195 cm² is in the danger zone. This is the headline number to move at Scan 2. Deficit + resistance training is the correct approach.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Under-eating pattern</strong>: Iris notes indicate green juice only and low energy/drive. Likely caloric deficit is too severe and protein too low. This undercuts fat loss quality and muscle preservation. Check food journal before scan.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>No food logs since June 4</strong>: Critical accountability gap. Food journal task added Jun 13-14 is the only recent data. Pull Everfit food journal the night before scan to assess protein and calorie compliance.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>0% Everfit logging</strong>: Trains CTC independently 4-5x/week but uses no app tracking. Lift baselines established via DM only. No visibility into training load or session quality.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>ALMI 88th %ile</strong>: Exceptional lean mass foundation. Highest of any second-scan client this cycle. The muscle base is there; the work is fat and VAT reduction.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>4 weeks alcohol-free</strong>: Strong positive lifestyle signal. Alcohol drives visceral fat accumulation directly; removing it is a meaningful lever. Worth acknowledging explicitly in the debrief.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Creatine 5g/day</strong>: Smart supplementation. Supports performance and lean mass preservation during a deficit. Continue.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🎾</span><span>Tennis coach. Physically active lifestyle outside the gym. CTC training fits around coaching schedule.</span></div>
+      <div class="personal-note"><span class="note-emoji">✈️</span><span>Possible World Cup travel post-scan. Factor into program transition timing if converting to a full Everfit program after scan.</span></div>
+      <div class="personal-note"><span class="note-emoji">⚠️</span><span>Everfit profile shows age 0 and sex "Other" (DOB entered incorrectly). Confirm actual age and biological sex before or at the scan appointment. Affects Gold Standard references and long-term programming.</span></div>
+      <div class="personal-note"><span class="note-emoji">📄</span><span>Scan 1 DEXA PDF not found in Drive. All Scan 1 data sourced from Iris initial scan notes. Confirm exact figures at scan or from DEXA facility records.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (May 14, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">207 lb</div><div class="snap-lbl">Body Weight (Jun 4 log)</div></div>
+      <div class="snap-metric"><div class="snap-val warn">26.9%</div><div class="snap-lbl">Body Fat</div></div>
+      <div class="snap-metric"><div class="snap-val">~151.3 lb</div><div class="snap-lbl">Lean Mass (est.)</div></div>
+      <div class="snap-metric"><div class="snap-val note">~55.7 lb</div><div class="snap-lbl">Fat Mass (est.)</div></div>
+      <div class="snap-metric"><div class="snap-val warn">195 cm²</div><div class="snap-lbl">VAT (HIGH RISK)</div></div>
+      <div class="snap-metric"><div class="snap-val ok">88th %ile</div><div class="snap-lbl">ALMI AM</div></div>
+      <div class="snap-metric"><div class="snap-val ok">+0.5</div><div class="snap-lbl">BMD Z-Score</div></div>
+      <div class="snap-metric"><div class="snap-val">Unknown</div><div class="snap-lbl">Age (profile error)</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Scan 1 DEXA PDF not in Drive. Values from Iris notes. Confirm exact Scan 1 figures before or at scan. Weight of 207 lb is from Jun 4 Everfit log, not confirmed scan-day weight.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (May 14)*</th><th>Scan 2 (Jun 15)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>207 (Jun 4 log)</td><td class="r-pending" id="vladimir-s2-bw">--</td><td class="r-pending" id="vladimir-d-bw">--</td></tr>
+        <tr><td>Body Fat %</td><td>26.9%</td><td class="r-pending" id="vladimir-s2-bf">--</td><td class="r-pending" id="vladimir-d-bf">--</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>~151.3</td><td class="r-pending" id="vladimir-s2-lean">--</td><td class="r-pending" id="vladimir-d-lean">--</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>~55.7</td><td class="r-pending" id="vladimir-s2-fat">--</td><td class="r-pending" id="vladimir-d-fat">--</td></tr>
+        <tr><td>VAT (cm²)</td><td>195</td><td class="r-pending" id="vladimir-s2-vat">--</td><td class="r-pending" id="vladimir-d-vat">--</td></tr>
+        <tr><td>ALMI AM %ile</td><td>88th %ile</td><td class="r-pending" id="vladimir-s2-almi">--</td><td class="r-pending" id="vladimir-d-almi">--</td></tr>
+        <tr><td>BMD Z-Score</td><td>+0.5</td><td class="r-pending" id="vladimir-s2-bmd">--</td><td class="r-pending" id="vladimir-d-bmd">--</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:6px;font-size:11px;color:#888">* Scan 1 DEXA PDF not found in Drive. All Scan 1 values sourced from Iris initial scan notes. Confirm exact values from DEXA PDF before scan.</div>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a063dacb5636bb67cf1dd92/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Baseline (Jun 10 DM)</th><th>Est. 1RM</th><th>Week-Out Target</th></tr></thead>
+      <tbody>
+        <tr><td>DB Shoulder Press</td><td>3 × 10 @ RPE 8/10 (CTC)</td><td>Pull from CTC</td><td>Match or exceed baseline load</td></tr>
+        <tr><td>Goblet Squat</td><td>3 × 15 (RPE est., CTC)</td><td>Pull from CTC</td><td>Clean 15 reps, same or heavier</td></tr>
+        <tr><td>DB Row (per side)</td><td>3 × 10/side (RPE est., CTC)</td><td>Pull from CTC</td><td>Full ROM, same or heavier</td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards -- Profile age/sex pending Everfit correction. Update GS rows when age and sex are confirmed.</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:11px;color:#888">All baselines via DM Jun 10. No Everfit program. Trains CTC independently. Confirm specific loads night before if Vladimir logs any sessions before Jun 15. No barbell program; DB/machine-based.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a063dacb5636bb67cf1dd92/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 175g/day minimum</div>
+      <div><strong>Calorie target:</strong> Not formally set; under-eating suspected (green juice only pattern noted in Iris). Assess before setting a formal deficit target post-scan.</div>
+      <div><strong>2-day food log assigned:</strong> Jun 13 + Jun 14 (photo journal via Everfit app)</div>
+      <div><strong>Last logged:</strong> June 4 (no logs since initial food journal task)</div>
+      <div style="margin-top:6px;color:#666"><em>Critical: pull food journal entries the night before scan. No food logs since Jun 4 is a significant gap. Under-eating is the suspected issue. If protein is consistently low, this is the most important coaching correction before or at the scan debrief. The food tracking habit is as important as the nutrition itself at this stage.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-vladimir -->
 
   </div><!-- end modal-window -->
 </div><!-- end modal-backdrop -->
