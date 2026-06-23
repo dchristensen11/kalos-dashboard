@@ -1160,17 +1160,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('wendy')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge badge-partial" id="prog-wendy">2/7</span>
+            <span class="checklist-progress-badge badge-complete" id="prog-wendy">7/7</span>
             <span class="checklist-chevron" id="chev-wendy">›</span>
           </div>
         </div>
         <div class="checklist-items" id="items-wendy">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('wendy')"><span> Scan 1 DEXA PDF — populated in modal below (Drive ID: 1DISLZ1GCXPkZPj9wBe97P_-2oI7tiqm3)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Scan 1 DEXA PDF — populated in modal (Drive ID: 1DISLZ1GCXPkZPj9wBe97P_-2oI7tiqm3)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Iris review complete — LBM + bone goal, osteoporosis, 110g protein, M/W/F schedule</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('wendy')"><span> Everfit data pulled — find Everfit ID, pull lift history and consistency %</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('wendy')"><span> Pre-scan opener — not yet sent (run week-out workflow for Wendy)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('wendy')"><span> Lift targets + nutrition — not yet sent</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('wendy')"><span> Food journal task — not yet added in Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Everfit data pulled — ID: 6a0a22dc43f1317108acb80a · P1A: Chest Press 55×5, Lat PD 55×12 · P1B: Cable Row 66×9 PR</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Pre-scan opener sent Jun 22 — 8 PRs today + 7/7 consistency, re-engagement after quiet stretch</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Lift targets + nutrition sent Jun 22 — Cable Row 66×10, Chest Press 55×8, Lat PD 60×8 · 110g protein</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Food journal task added — Jun 23 + Jun 24 in Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> DEXA flags noted — OSTEOPOROSIS (T −2.8), ALMI 6th %ile critical — frame debrief as action plan</span></label>
         </div>
       </div>
@@ -2231,17 +2231,19 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="wendy-scan-badge">Scan 2 Pending</span></div>
-    <div style="margin-bottom:10px;padding:8px 12px;background:#2d1a1a;border:1px solid #ef4444;border-radius:8px;font-size:12px;color:#fca5a5">
-      Week-out messages not yet sent — run the week-out workflow for Wendy separately. Pre-scan opener, lift targets, and food journal task still outstanding.
+    <div style="margin-bottom:10px;padding:8px 12px;background:#1a2d1a;border:1px solid #22c55e;border-radius:8px;font-size:12px;color:#86efac">
+      ✅ Week-out complete — opener + lift targets sent Jun 22 · food journal Jun 23+24 assigned · 8 PRs on Jun 22 session
     </div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>7/7 workouts through June 2</strong> — 100% consistency in the first two weeks of the program. Strong start given the challenging DEXA baseline.</span></div>
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Down ~2 lbs by May 26</strong> — early positive movement on body weight within first 9 days. Metabolism responding.</span></div>
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Leg Press working weight: 50 lb × 10</strong> — progressive loading established within first weeks. Foundation for the compound strength gains that drive bone loading.</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>8 PRs on Jun 22</strong> — Cable Seated Row 66×9 PR, Cable Tricep 27.5×8 PR, and 6 more. Best session so far.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Leg Press: 50 lb × 10</strong> — progressive loading established. Foundation for compound strength gains that drive bone loading.</span></div>
     </div>
-    <div class="success-targets" style="background:#2d1a1a;border:1px solid #f97316">
-      <div class="success-targets-label" style="color:#fdba74">Formal lift targets: not yet sent — to do this week</div>
-      <div class="success-target-item" style="color:#888">Pull lift history from Everfit · find Everfit ID first · key lifts: Leg Press, DB Row, Lat Pulldown, DB Press</div>
+    <div class="success-targets">
+      <div class="success-targets-label">Week-out targets sent Jun 22</div>
+      <div class="success-target-item"><strong>Cable Seated Row</strong> — target 66 × 10 <span style="color:#888">(up from 66×9 PR)</span></div>
+      <div class="success-target-item"><strong>Chest Press Machine</strong> — target 55 × 8 <span style="color:#888">(up from 55×5)</span></div>
+      <div class="success-target-item"><strong>Lat Pulldown</strong> — target 60 × 8 <span style="color:#888">(weight increase from 55×12)</span></div>
     </div>
   </div>
 
@@ -2262,7 +2264,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>ALMI Critical — 6th %ile</strong> — Only 74.58 lb lean mass at 142.4 lb total weight. Less than 53% of her body is lean tissue. Building muscle is not optional — it is urgent.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>OSTEOPOROSIS — T −2.8</strong> — Clinically significant (threshold is −2.5). Axial loading movements — squats, hip hinges, pressing — are the correct stimulus. Resistance training directly drives bone remodeling.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>VAT 156.6 cm² — Elevated</strong> — Approaching high-risk threshold (&gt;160 cm²). Muscle gain + protein + visceral fat protocol (ACV, green tea, omega-3, probiotics) is the multi-pronged approach.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Communication quiet since Jun 3</strong> — Stopped responding after Jun 3. Food journal tasks missed. Re-engage warmly and directly before scan day.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Week-out messages sent Jun 22</strong> — Re-engaged warmly. Opener referenced 8 PRs + 4-week consistency. Food journal tasks assigned Jun 23+24. Monitor for response.</span></div>
       <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Protein Target — 110g/day</strong> — Two shakes/day is the backbone. Food logging inconsistent. Need to confirm whether protein habit is landing.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Workout Consistency</strong> — 7/7 through June 2. The training habit is established. Intensity (8/10 RPE from set 1) is the next lever to address.</span></div>
     </div>
@@ -2324,11 +2326,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="lift-table">
       <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard</th></tr></thead>
       <tbody>
-        <tr><td><strong>Leg Press</strong></td><td>50 lb × 10</td><td>~67 lb</td><td>— <span style="font-size:9px;color:#888">(machine baseline)</span></td></tr>
-        <tr><td>Lat Pulldown</td><td>Pull Training Tab</td><td>—</td><td>~93 lb <span style="font-size:9px;color:#bbb">0.65×BW</span></td></tr>
-        <tr><td>DB Row / Cable Row</td><td>Pull Training Tab</td><td>—</td><td>~57 lb <span style="font-size:9px;color:#bbb">0.40×BW</span></td></tr>
-        <tr><td>Goblet / Squat</td><td>Pull Training Tab</td><td>—</td><td>~57 lb <span style="font-size:9px;color:#bbb">0.40×BW</span></td></tr>
-        <tr><td>DB Bench / Press</td><td>Pull Training Tab</td><td>—</td><td>~114 lb <span style="font-size:9px;color:#bbb">0.80×BW</span></td></tr>
+        <tr><td><strong>Cable Seated Row</strong></td><td>66 lb × 9 <span style="font-size:9px;color:#22c55e">PR</span></td><td>~86 lb</td><td>~57 lb <span style="font-size:9px;color:#bbb">0.40×BW</span> <span style="font-size:9px;color:#22c55e">✓ ABOVE</span></td></tr>
+        <tr><td><strong>Chest Press Machine</strong></td><td>55 lb × 5</td><td>~64 lb</td><td>~114 lb <span style="font-size:9px;color:#bbb">0.80×BW</span></td></tr>
+        <tr><td><strong>Lat Pulldown</strong></td><td>55 lb × 12</td><td>~77 lb</td><td>~93 lb <span style="font-size:9px;color:#bbb">0.65×BW</span></td></tr>
+        <tr><td>DB Front Squat</td><td>35 lb × 8</td><td>~44 lb</td><td>~171 lb <span style="font-size:9px;color:#bbb">1.20×BW</span></td></tr>
+        <tr><td>Shoulder Press</td><td>15 lb × 12</td><td>~21 lb</td><td>~71 lb <span style="font-size:9px;color:#bbb">0.50×BW</span></td></tr>
+        <tr><td>Leg Extension</td><td>45 lb × 12</td><td>~63 lb</td><td>— <span style="font-size:9px;color:#888">(isolation baseline)</span></td></tr>
         <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — F 50s · 142.4 lb BW</td></tr>
         <tr><td style="color:#aaa">Deadlift</td><td style="color:#555">—</td><td style="color:#555">—</td><td><strong>~192 lb</strong> <span style="font-size:9px;color:#bbb">1.35×BW</span></td></tr>
         <tr><td style="color:#aaa">Back Squat</td><td style="color:#555">—</td><td style="color:#555">—</td><td><strong>~171 lb</strong> <span style="font-size:9px;color:#bbb">1.20×BW</span></td></tr>
