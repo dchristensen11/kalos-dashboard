@@ -1214,6 +1214,78 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="day-label">Monday · June 29, 2026</div>
   <div class="cards-row">
 
+    <!-- KIM CELESTRE -->
+    <div class="card" id="card-kim">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('kim')">Kim Celestre <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 3×/week Recomp · DB Only · Home · GLP-1 (Zepbound) · ⚠ L-Spine</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Recomp</span>
+          <span class="badge badge-scan">8:15 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, June 29</strong> · Second Kalos DEXA Scan · 8:15 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val">~154</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1 (May 28)</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">37.3%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">Scan 1 baseline</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">—</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Pull Scan 1 PDF</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">59th</div>
+          <div class="metric-label">ALMI AM</div>
+          <div class="metric-sub">Percentile · protect</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">92%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:92%;background:#22c55e"></div></div>
+            <div class="cons-detail">92% last 30d (11/12) · 3×/week Full Body A/B/C · DB Only · Home · P2 started Jun 24</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Focus</div>
+        <div class="why-text">GLP-1 muscle retention — protect lean mass while reducing fat during Zepbound ramp. 3x/week strength at RPE 8+, 125g protein daily. Longevity and health as primary driver. Strength climbing week over week, intensity now consistently in Difficult range heading into scan.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('kim')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-kim">5/7</span>
+            <span class="checklist-chevron" id="chev-kim">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-kim">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Scan 1 DEXA PDF — not found in Drive · pull and populate body snapshot before scan day</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Iris review complete — GLP-1 muscle retention, 125g protein, DB-only home, L-spine history, Zepbound side effects</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Everfit data pulled — 92% last 30d (11/12), Full Body A/B/C, P2 started Jun 24</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Pre-scan opener sent via Everfit (Jun 24) — foreshadowing long-term program build</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Lift targets + nutrition sent via Everfit (Jun 24) — RDL 45×12, Bench 45×10 flat, Row 45×10</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Food journal task added — Jun 25 + Jun 26 in Everfit</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Membership recommendation in mind</span></label>
+        </div>
+      </div>
+    </div>
+
     <!-- CATHERINE WATSON -->
     <div class="card" id="card-catherine">
       <div class="card-header">
@@ -2623,6 +2695,151 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-catherine -->
+
+
+<!-- ── KIM CELESTRE MODAL ── -->
+<div id="modal-kim" class="modal-content"
+     data-name="Kim Celestre"
+     data-sub="Second Scan · June 29, 2026 · Recomp · F · GLP-1 (Zepbound)">
+
+  <script>
+  window.__scan1_kim = {
+    bw: 154.0, bfPct: 37.3, bfAMpct: null,
+    lean: 96.5, fat: 57.47, vat: null,
+    almiVal: null, almiAMpct: 59,
+    bmd: null, bmdZ: -1.5,
+    regional: null
+  };
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="kim-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>11/12 sessions (92%) — every Monday, Wednesday, Friday for 4 weeks.</strong> On a GLP-1 with appetite suppression and still showing up at RPE 8+. Exceptional adherence.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>DB Bent Over Row: 20 lb → 40 lb in 4 sessions</strong> — doubled the load at the same rep count. Real strength adaptation, not just familiarity.</span></div>
+      <div class="success-win"><span class="win-icon">🔥</span><span class="win-text"><strong>45 lb × 10 × 4 sets on DB Incline — Jun 24 (today).</strong> That's the flat bench target already proven before Friday's session even happens.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Intensity: Challenging → Difficult</strong> — locked into true RPE 8+ working sets after the Jun 10 coaching correction. Executing the shift exactly as asked.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent Jun 24 via Everfit</div>
+      <div class="success-target-item">DB Romanian Deadlift: 45 lb × 12 reps (current: 40 lb × 3 × 12)</div>
+      <div class="success-target-item">DB Bench Press (flat): 45 lb × 10 reps (just hit 45×10×4 sets incline)</div>
+      <div class="success-target-item">DB Bent Over Row: 45 lb × 10 reps (current: 40 lb × 10)</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>GLP-1 Muscle Retention + Fat Loss</strong> — Protect and build lean mass during Zepbound ramp while reducing body fat. Starting BF 37.3%, target below 30% for health, 25% long-term. ALMI at 59th percentile — maintain or improve while appetite is suppressed. BMD Z-score −1.5 — consistent resistance training is the medicine.</div>
+    <div class="dp-why">"Longevity and health — starting GLP-1 and wants to lose fat without losing muscle." The 4-week program is designed around the single hardest constraint in GLP-1 coaching: eating enough protein when you never feel hungry. She has been executing that constraint under real physiological pressure.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>GLP-1 (Zepbound) — Appetite Suppression</strong> — Side effects limit appetite and food volume. Sunday fatigue/nausea lines up with Friday injection timing. Strategy: protein shakes as primary protein delivery vehicle, not whole meals. Already executing with 2 shakes/day + mini-meals.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>L3-L5 Disc Herniation (2.5 yrs ago)</strong> — Avoid barbell lifts and low-back arching. Hip flexors get tight. DB-only program has this baked in. No pain reported in recent sessions. Monitor RDL form — brace hard, hip hinge, no rounding at the bottom.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Protein at 125g/day target</strong> — GLP-1 fullness makes this a challenge. Mini-meals + shakes are the solution in place. Pre/post workout nutrition protocol established (25g protein + 25g carbs each window). Food journal Jun 25+26 assigned — review before scan.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Equipment ceiling — Bowflex to 50 lb max</strong> — RDL and Row are both approaching the DB limit. Next phase needs heavier equipment or gym access conversation. Goblet squat stalled at 20 lb due to hand grip limitation (not strength).</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Intensity breakthrough (Jun 10 call)</strong> — Corrected from warm-up-set logging to true RPE 8+ working sets. Last 5 sessions showed consistent uptick in logged difficulty. This was the key coaching win of the program.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>BMD Z-score −1.5 — resistance training is the right medicine.</strong> Consistent loading for 4 weeks via RDL, row, and push patterns. Bone changes won't show in 4 weeks, but the habit is being built.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🐟</span><span>Mostly plant-based pescatarian — fish and eggs OK, limited dairy (cholesterol sensitivity). Protein sources: eggs, fish, tofu, high-protein cashew yogurt, protein shakes. No alcohol for 4 weeks.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏡</span><span>Home gym only — Bowflex adjustable DBs to 50 lb, bench, bands. M/W/F cadence. No cable, no barbell, no commercial gym access.</span></div>
+      <div class="personal-note"><span class="note-emoji">🧬</span><span>Creatine in place for 4+ weeks. Expect ~2-3 lb lean mass contribution from glycogen/water on DEXA — important for scan-day result interpretation.</span></div>
+      <div class="personal-note"><span class="note-emoji">📱</span><span>Wrist irritation noted — monitor pressing and rowing. No pain in recent sessions. Hip flexors tight — watch forward lean on hip hinge movements (RDL depth, lunge mechanics).</span></div>
+      <div class="personal-note"><span class="note-emoji">🎯</span><span>Current Iris focus: GLP-1 muscle retention, 3x/wk home strength at RPE 8+, 125g protein daily, simplify shakes, second DEXA June 29.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (May 28, 2026)</div>
+    <div style="padding:12px;background:#2d1a1a;border:1px solid #ef4444;border-radius:6px;font-size:12px;color:#fca5a5;font-weight:600;margin-bottom:10px">
+      ⚠ Scan 1 DEXA PDF not confirmed in Drive — partial data from session notes. Pull PDF and populate VAT, height, BMD value, and regional data before scan day.
+    </div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">~154 lb</div><div class="snap-lbl">Body Weight (calc)</div></div>
+      <div class="snap-metric"><div class="snap-val warn">37.3%</div><div class="snap-lbl">Body Fat %</div></div>
+      <div class="snap-metric"><div class="snap-val">~96.5 lb</div><div class="snap-lbl">Lean Mass (calc)</div></div>
+      <div class="snap-metric"><div class="snap-val">57.47 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val note">—</div><div class="snap-lbl">VAT cm² (not in notes)</div></div>
+      <div class="snap-metric"><div class="snap-val ok">59th %ile</div><div class="snap-lbl">ALMI AM (protect)</div></div>
+      <div class="snap-metric"><div class="snap-val note">Z: −1.5</div><div class="snap-lbl">BMD (below avg)</div></div>
+      <div class="snap-metric"><div class="snap-val">153.3 lb</div><div class="snap-lbl">Current BW (Jun 18)</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">4-week goal: maintain ALMI near 59th %ile while on GLP-1 (muscle retention priority), reduce BF% from 37.3%. Creatine on board — expect 2-3 lb lean mass contribution from glycogen/water on DEXA. Pull Scan 1 PDF for exact BW, VAT, height, and regional data before scan day.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <div style="padding:8px;background:#1e2030;border-radius:6px;font-size:11px;color:#888;margin-bottom:8px">Scan 1 partial data from session notes — pull DEXA PDF to confirm BW and add VAT, height, BMD value, and regional data before scan day.</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (May 28)</th><th>Scan 2 (Jun 29)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>~154.0</td><td class="r-pending" id="kim-s2-bw">—</td><td class="r-pending" id="kim-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>37.3%</td><td class="r-pending" id="kim-s2-bf">—</td><td class="r-pending" id="kim-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>~96.5</td><td class="r-pending" id="kim-s2-lean">—</td><td class="r-pending" id="kim-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>57.47</td><td class="r-pending" id="kim-s2-fat">—</td><td class="r-pending" id="kim-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>— (pull PDF)</td><td class="r-pending" id="kim-s2-vat">—</td><td class="r-pending" id="kim-d-vat">—</td></tr>
+        <tr><td>ALMI AM %ile</td><td>59th %ile</td><td class="r-pending" id="kim-s2-almi">—</td><td class="r-pending" id="kim-d-almi">—</td></tr>
+        <tr><td>BMD (Z-Score)</td><td>— (Z: −1.5)</td><td class="r-pending" id="kim-s2-bmd">—</td><td class="r-pending" id="kim-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td><td>—</td><td class="r-pending" id="kim-s2-larm-lean">—</td><td class="r-pending r-delta" id="kim-d-larm-lean">—</td><td>—</td><td class="r-pending" id="kim-s2-larm-fat">—</td><td class="r-pending r-delta" id="kim-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td>—</td><td class="r-pending" id="kim-s2-rarm-lean">—</td><td class="r-pending r-delta" id="kim-d-rarm-lean">—</td><td>—</td><td class="r-pending" id="kim-s2-rarm-fat">—</td><td class="r-pending r-delta" id="kim-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td><td>—</td><td class="r-pending" id="kim-s2-trunk-lean">—</td><td class="r-pending r-delta" id="kim-d-trunk-lean">—</td><td>—</td><td class="r-pending" id="kim-s2-trunk-fat">—</td><td class="r-pending r-delta" id="kim-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td><td>—</td><td class="r-pending" id="kim-s2-lleg-lean">—</td><td class="r-pending r-delta" id="kim-d-lleg-lean">—</td><td>—</td><td class="r-pending" id="kim-s2-lleg-fat">—</td><td class="r-pending r-delta" id="kim-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td>—</td><td class="r-pending" id="kim-s2-rleg-lean">—</td><td class="r-pending r-delta" id="kim-d-rleg-lean">—</td><td>—</td><td class="r-pending" id="kim-s2-rleg-fat">—</td><td class="r-pending r-delta" id="kim-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('kim')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a1865873b7676a0a86525af/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard (F · ~154 lb)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>DB Romanian Deadlift</strong></td><td>40 lb × 3 × 12</td><td>~56 lb/arm</td><td>~239 lb DL equiv <span style="font-size:9px;color:#bbb">1.55×BW (F 40s)</span></td></tr>
+        <tr><td><strong>DB Bench Press (flat)</strong></td><td>40 lb flat; 45 lb × 10 × 4 sets incline (Jun 24)</td><td>~60 lb/arm</td><td>~139 lb bench equiv <span style="font-size:9px;color:#bbb">0.90×BW (F 40s)</span></td></tr>
+        <tr><td><strong>DB Bent Over Row</strong></td><td>40 lb × 10</td><td>~53 lb/arm</td><td>~69 lb/arm <span style="font-size:9px;color:#bbb">0.45×BW DB row (F 40s)</span></td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — F · ~154 lb BW · Age assumed 40s · DB program (max 50 lb/arm)</td></tr>
+        <tr><td style="color:#aaa">Goblet Squat (×10-12)</td><td style="color:#555">Stalled at 20 lb (hand grip limit, not strength)</td><td style="color:#555">—</td><td><strong>~69 lb</strong> <span style="font-size:9px;color:#bbb">0.45×BW</span></td></tr>
+        <tr><td style="color:#aaa">DB Single Arm Row (×8-10)</td><td style="color:#555">—</td><td style="color:#555">—</td><td><strong>~69 lb/arm</strong> <span style="font-size:9px;color:#bbb">0.45×BW</span></td></tr>
+        <tr><td style="color:#aaa">Overhead Press</td><td style="color:#555">—</td><td style="color:#555">—</td><td><strong>~89 lb</strong> <span style="font-size:9px;color:#bbb">0.58×BW</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:6px;padding:8px;background:#1e2a1e;border-radius:6px;font-size:12px;color:#86efac">
+      <strong>Targets sent (Jun 24):</strong> DB RDL 45×12 · DB Bench 45×10 flat · DB Bent Row 45×10
+    </div>
+    <div style="margin-top:6px;font-size:11px;color:#888">DB-only home program, max 50 lb/arm. Gold Standards shown as barbell/total-weight equivalents at assumed 40s age range — verify age for exact multipliers. Goblet squat excluded from targets due to 20 lb hand-grip ceiling, not strength ceiling.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a1865873b7676a0a86525af/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Daily protein target:</strong> 125g/day — via 3 fist-sized portions + 2 protein shakes. GLP-1 suppresses appetite, so shakes are the primary vehicle. Mini-meals to manage fullness.</div>
+      <div><strong>Peri-workout nutrition:</strong> Pre (45-60 min before): shake (25g protein) + 25g carbs + 1 tbsp almond butter. Post-workout same. Options: banana, rice cakes + honey, pineapple blended in.</div>
+      <div><strong>GLP-1 context (Zepbound):</strong> Appetite significantly suppressed. Sunday fatigue/nausea = post-injection window (Friday injection). Creatine 5g/day in place for 4+ weeks.</div>
+      <div><strong>Dietary restrictions:</strong> Mostly plant-based pescatarian — fish and eggs OK. Limited dairy (cholesterol sensitivity). No alcohol for 4 weeks.</div>
+      <div><strong>Food journal assigned:</strong> Jun 25 + Jun 26 — review protein average and shake compliance before scan Monday.</div>
+      <div style="margin-top:6px;color:#666"><em>Key scan-day talking point: Was 125g protein sustainable on GLP-1? The lean mass retention number answers that question. 37.3% BF → target below 35% while protecting ALMI near 59th percentile.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-kim -->
 
 
   </div><!-- end modal-window -->
