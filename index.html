@@ -275,6 +275,26 @@
     transition: background 0.15s; flex-shrink: 0; margin-left: auto;
   }
   .modal-close:hover { background: rgba(255,255,255,0.28); }
+  /* Audio briefing link — modal header */
+  .modal-audio-brief-link {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22);
+    color: #c8d8ff; font-size: 11.5px; font-weight: 600; letter-spacing: 0.2px;
+    padding: 6px 12px; border-radius: 20px; text-decoration: none;
+    transition: background 0.15s; flex-shrink: 0;
+  }
+  .modal-audio-brief-link:hover { background: rgba(255,255,255,0.22); color: #fff; }
+  /* Audio briefing link — card footer */
+  .card-audio-brief {
+    padding: 9px 16px 10px;
+    border-top: 1px solid #e8eaf0;
+  }
+  .card-audio-brief a {
+    display: inline-flex; align-items: center; gap: 5px;
+    color: #0f3460; font-size: 11.5px; font-weight: 600;
+    text-decoration: none; opacity: 0.75; transition: opacity 0.15s;
+  }
+  .card-audio-brief a:hover { opacity: 1; }
 
   .modal-content { display: none; }
   .modal-content.active { display: block; }
@@ -593,6 +613,13 @@ function openModal(id) {
   backdrop.classList.add('open');
   document.getElementById('modal-title').textContent = target.dataset.name || '';
   document.getElementById('modal-sub').textContent   = target.dataset.sub  || '';
+  var audioLink = document.getElementById('modal-audio-brief');
+  if (target.dataset.audioBrief) {
+    audioLink.href = target.dataset.audioBrief;
+    audioLink.style.display = 'inline-flex';
+  } else {
+    audioLink.style.display = 'none';
+  }
   var win = document.querySelector('.modal-window');
   if (win) win.scrollTop = 0;
 }
@@ -867,6 +894,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('evans')"><span> Food journal task added — Jun 22 + Jun 23</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('evans')"><span> Membership recommendation in mind</span></label>
         </div>
+      </div>
+      <div class="card-audio-brief">
+        <a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun24.html" target="_blank">🎧 Audio Brief ↗</a>
       </div>
     </div>
   </div>
@@ -1189,6 +1219,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <h2 id="modal-title">—</h2>
         <p  id="modal-sub">—</p>
       </div>
+      <a id="modal-audio-brief" class="modal-audio-brief-link" href="#" target="_blank" style="display:none">🎧 Audio Brief ↗</a>
       <button class="modal-close" onclick="closeModal()" title="Close (Esc)">✕</button>
     </div>
 
@@ -1486,7 +1517,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </script>
 <div id="modal-andrei" class="modal-content"
      data-name="Andrei Berar"
-     data-sub="Second Scan · June 11, 2026 · M · 73">
+     data-sub="Second Scan · June 11, 2026 · M · 73"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun11.html">
 
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span id="andrei-scan-badge" style="background:#3a3a3a;color:#aaa;font-size:11px;padding:2px 8px;border-radius:10px;margin-left:8px">Scan 2 Pending</span></div>
@@ -1637,7 +1669,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- EVANS WUU MODAL -->
 <div id="modal-evans" class="modal-content"
      data-name="Evans Wuu"
-     data-sub="Second Scan · June 24, 2026 · Fat Loss · M · 62">
+     data-sub="Second Scan · June 24, 2026 · Fat Loss · M · 62"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun24.html">
 
   <script>
   window.__scan1_evans = {
