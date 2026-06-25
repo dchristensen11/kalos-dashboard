@@ -1232,24 +1232,24 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div class="metrics-grid">
         <div class="metric">
-          <div class="metric-val">~154</div>
+          <div class="metric-val">154.2</div>
           <div class="metric-label">Weight lb</div>
           <div class="metric-sub">Scan 1 (May 28)</div>
         </div>
         <div class="metric warn">
           <div class="metric-val">37.3%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">Scan 1 baseline</div>
+          <div class="metric-sub">Scan 1 · 40th %ile AM</div>
         </div>
-        <div class="metric note">
-          <div class="metric-val">—</div>
+        <div class="metric warn">
+          <div class="metric-val">113</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Elevated (100–160)</div>
         </div>
         <div class="metric ok">
           <div class="metric-val">59th</div>
           <div class="metric-label">ALMI AM</div>
-          <div class="metric-sub">Percentile · protect</div>
+          <div class="metric-sub">59th %ile · protect</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -1275,7 +1275,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           </div>
         </div>
         <div class="checklist-items" id="items-kim">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Scan 1 DEXA PDF — pull from Iris (Related Pages → Results Dashboard → Reports) and populate VAT + full body snapshot</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Scan 1 DEXA PDF — card metrics populated from Results Dashboard. Pull PDF from Iris Reports for BMD/Z-score + L/R regional splits</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Iris review complete — GLP-1 muscle retention, 125g protein, DB-only home, L-spine history, Zepbound side effects</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Everfit data pulled — 92% last 30d (11/12), Full Body A/B/C, P2 started Jun 24</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Pre-scan opener sent via Everfit (Jun 24) — foreshadowing long-term program build</span></label>
@@ -1304,24 +1304,24 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div class="metrics-grid">
         <div class="metric">
-          <div class="metric-val">~225</div>
+          <div class="metric-val">161.1</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Start — pull Scan 1</div>
+          <div class="metric-sub">Scan 1 (May 28)</div>
         </div>
-        <div class="metric note">
-          <div class="metric-val">—</div>
+        <div class="metric warn">
+          <div class="metric-val">40.7%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Scan 1 · 75th %ile AM</div>
         </div>
-        <div class="metric note">
-          <div class="metric-val">—</div>
+        <div class="metric ok">
+          <div class="metric-val">97.7</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Healthy (&lt;100)</div>
         </div>
-        <div class="metric note">
-          <div class="metric-val">—</div>
+        <div class="metric warn">
+          <div class="metric-val">10th</div>
           <div class="metric-label">ALMI AM</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Low — build lean mass</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -1347,7 +1347,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           </div>
         </div>
         <div class="checklist-items" id="items-catherine">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('catherine')"><span> Scan 1 DEXA PDF — pull from Iris (Related Pages → Results Dashboard → Reports) and populate BF%, VAT, ALMI + full body snapshot</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('catherine')"><span> Scan 1 DEXA PDF — card metrics populated from Results Dashboard. Pull PDF from Iris Reports for BMD/Z-score + L/R regional splits</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('catherine')"><span> Iris review complete — recomp goal, 150g protein, DB-only home, left knee (front reverse lunge)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('catherine')"><span> Everfit data pulled — 92% last 30d (11/12), Full Body A/B/C, Jun 17 hit 9 PRs</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('catherine')"><span> Pre-scan opener sent via Iris (Jun 23)</span></label>
@@ -2561,11 +2561,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <script>
   window.__scan1_catherine = {
-    bw: null, bfPct: null, bfAMpct: null,
-    lean: null, fat: null, vat: null,
-    almiVal: null, almiAMpct: null,
+    bw: 161.1, bfPct: 40.7, bfAMpct: 75,
+    lean: 90.2, fat: 65.5, vat: 97.7,
+    almiVal: 5.61, almiAMpct: 10,
     bmd: null, bmdT: null, bmdZ: null,
-    regional: null
+    regional: { armsFat: 7.3, legsFat: 26.3, trunkFat: 29.4, armsLean: 6.4, legsLean: 28.4, trunkLean: 49.0 }
   };
   </script>
 
@@ -2704,11 +2704,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <script>
   window.__scan1_kim = {
-    bw: 154.0, bfPct: 37.3, bfAMpct: null,
-    lean: 96.5, fat: 57.47, vat: null,
-    almiVal: null, almiAMpct: 59,
-    bmd: null, bmdZ: -1.5,
-    regional: null
+    bw: 154.2, bfPct: 37.3, bfAMpct: 40,
+    lean: 92.9, fat: 57.5, vat: 113.0,
+    almiVal: 7.07, almiAMpct: 59,
+    bmd: null, bmdZ: null,
+    regional: { armsFat: 6.5, legsFat: 21.9, trunkFat: 26.8, armsLean: 9.2, legsLean: 30.7, trunkLean: 46.6 }
   };
   </script>
 
