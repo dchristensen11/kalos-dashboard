@@ -840,86 +840,6 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
-<div class="day-group">
-  <div class="day-label">Thursday · June 25, 2026</div>
-  <div class="cards-row">
-
-    <!-- KUSH PATEL -->
-    <div class="card" id="card-kush">
-      <div class="card-header">
-        <div>
-          <div class="card-name clickable" onclick="openModal('kush')">Kush Patel <span class="expand-chevron">↗</span></div>
-          <div class="card-sub">Male · 27 · Second Scan · Prime P2 ULUL · City Sports</div>
-        </div>
-        <div class="card-badges">
-          <span class="badge badge-lbm">Recomp</span>
-          <span class="badge badge-scan">12:45 PM</span>
-        
-          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun25.html" target="_blank">🎧 Audio Brief ↗</a></div></div>
-      </div>
-      <div class="scan-row">
-        <span>📅</span>
-        <span><strong>Thursday, June 25</strong> · Second Kalos DEXA Scan · 12:45 PM · Campbell</span>
-      </div>
-      <div class="metrics-grid">
-        <div class="metric">
-          <div class="metric-val">170.5</div>
-          <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Scan 1 May 13</div>
-        </div>
-        <div class="metric note">
-          <div class="metric-val">34.0%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">Scan 1 baseline</div>
-        </div>
-        <div class="metric ok">
-          <div class="metric-val">80.5</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Healthy range</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">16th %ile</div>
-          <div class="metric-label">ALMI AM</div>
-          <div class="metric-sub">Building</div>
-        </div>
-      </div>
-      <div class="consistency-section">
-        <div class="cons-label">📊 Training Consistency</div>
-        <div class="cons-row">
-          <div class="cons-pct" style="color:#f59e0b">82%</div>
-          <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:82%;background:#f59e0b"></div></div>
-            <div class="cons-detail">82% last 30d (14/17) · Prime P2 ULUL · 4x/week close to failure</div>
-          </div>
-        </div>
-      </div>
-      <div class="why-section">
-        <div class="why-tag">⭐ His Focus</div>
-        <div class="why-text">Body recomposition — drop fat while building lean mass. 27-year-old, 6-week scan window. Down 2.2 lb fat, up 2.7 lb lean at midpoint (May 13→27). Rescheduled to Jun 25 due to family event. Consistent 155g protein and 4x/week training throughout.</div>
-      </div>
-      <div class="checklist-section">
-        <div class="checklist-header" onclick="toggleChecklist('kush')">
-          <span class="checklist-title">✅ Pre-Scan Prep</span>
-          <div class="checklist-right">
-            <span class="checklist-progress-badge badge-partial" id="prog-kush">5/7</span>
-            <span class="checklist-chevron" id="chev-kush">›</span>
-          </div>
-        </div>
-        <div class="checklist-items" id="items-kush">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kush')"><span> Scan 1 DEXA PDF — pull from Drive and populate body snapshot</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kush')"><span> Iris review complete — recomp goal, left knee (no pain), 155g protein, City Sports gym</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kush')"><span> Everfit data pulled — 80% 30d, BB Bench/Deadlift/Pull Up targets set</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kush')"><span> Pre-scan opener sent via Everfit (Jun 22)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kush')"><span> Lift targets + nutrition sent via Everfit (Jun 22) — BB Bench 115×8, Deadlift 135×5 baseline, Pull Ups 3×8+</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kush')"><span> Food journal task added — Jun 23 + Jun 24</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kush')"><span> Membership recommendation in mind</span></label>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
 
 <!-- ═══════════ JUN 28 ═══════════ -->
 <div class="day-group">
@@ -936,7 +856,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge-lbm">LBM Build</span>
           <span class="badge badge-scan">8:15 AM</span>
-        </div>
+        
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun28.html" target="_blank">&#127911; Audio Brief &#8599;</a></div></div>
       </div>
       <div class="scan-row">
         <span>📅</span>
@@ -1758,156 +1679,6 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 <!-- KUSH PATEL MODAL -->
-<div id="modal-kush" class="modal-content"
-     data-name="Kush Patel"
-     data-sub="Second Scan · June 25, 2026 · Recomp · M · 27"
-     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun25.html">
-
-  <!-- 1 — Pre-Scan Snapshot -->
-  <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="kush-scan-badge">Scan 2 Pending</span></div>
-    <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>100% primary program adherence — 16/16 sessions completed</strong>. Zero missed workouts from May 13 through Jun 24. Every Upper A, Upper B, Lower A, and Lower B session logged.</span></div>
-      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Strength progression across the board</strong>: Bulgarian split squat +65%, leg press +22.3%, hip thrust +39.6%, BB bench press +12.3%. Average progression across all tracked lifts: +6.9%.</span></div>
-      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>First deadlift baseline established Jun 23</strong> — 135 lb × 5 clean, as programmed. New movement introduced in P2, executed on schedule.</span></div>
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Recomp trajectory confirmed at midpoint</strong>: down 2.2 lb fat, up 2.7 lb lean by May 27. Full program results show today.</span></div>
-    </div>
-    <div class="success-targets">
-      <div class="success-targets-label">Week-out lift targets sent Jun 22</div>
-      <div class="success-target-item">BB Bench Press (scan morning): 115 lb × 8 (from 110×8 on Jun 11)</div>
-      <div class="success-target-item">BB Deadlift (Tue Lower B): 135 lb × 5 — establishing first baseline</div>
-      <div class="success-target-item">Pull Up (scan morning): 3 sets of 8+ reps (from 11/7/8 on Jun 18)</div>
-    </div>
-  </div>
-
-  <!-- 2 — Goal & Why -->
-  <div class="dp-section dp-section-goal">
-    <div class="dp-title">Goal &amp; Why</div>
-    <div class="dp-goal"><strong>Body Recomposition — Fat Loss + Lean Mass Build</strong> — Drop body fat while gaining lean mass through 4x/week upper/lower training close to failure and dialed-in protein. ALMI building from 16th percentile. City Sports gym with full barbell access.</div>
-    <div class="dp-why">Using DEXA to track the recomp process with precision. 27 years old with a 6-week scan window — strong early data (−2.2 lb fat, +2.7 lb lean at week 2) sets a positive tone going into the full-program scan.</div>
-  </div>
-
-  <!-- 3 — Personal Context & Coaching Flags -->
-  <div class="dp-section">
-    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
-    <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Training intensity averaging 72/100</strong> — variable across sessions. Upper B strong at 80.6, but Upper A at 62.6 and Lower B at 62.5. Some accessories (lateral raise, hip abduction, single-leg leg ext) may be underloaded. Push closer to failure today.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Protein slightly below target</strong> — averaging 142g/day across 18 logged days vs. 155g goal. Shake + yogurt system is in place but some days fall short. Confirm food journal compliance Jun 23+24 before the debrief.</span></div>
-      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Left knee — mindful of form</strong> — no current pain reported. Lower-body progression is strong (leg press +22.3%, Bulgarian split squat +65%), so keep form cues active especially on deadlift and split squat patterns.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>100% primary program adherence</strong> — 16/16 sessions completed with no misses. Deadlift baseline established Jun 23 (135 lb × 5), food journal done Jun 23+24.</span></div>
-    </div>
-    <div class="personal-notes" style="margin-top:10px">
-      <div class="personal-note"><span class="note-emoji">🏋️</span><span>City Sports gym — full equipment: barbells, dumbbells, bench, Smith machine, cables. No exercise limitations.</span></div>
-      <div class="personal-note"><span class="note-emoji">📅</span><span>Scan rescheduled to Jun 25 (from original date) due to family event weekend of Jun 27. 4-week Kalos program: May 13 – Jun 25.</span></div>
-    </div>
-  </div>
-
-  <!-- 4 — Body Snapshot -->
-  <div class="dp-section">
-    <div class="dp-title">Body Snapshot — Scan 1 Baseline (May 13, 2026)</div>
-    <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">170.5 lb</div><div class="snap-lbl">Body Weight</div></div>
-      <div class="snap-metric"><div class="snap-val note">34.0%</div><div class="snap-lbl">Body Fat %</div></div>
-      <div class="snap-metric"><div class="snap-val">107.8 lb</div><div class="snap-lbl">Lean Mass</div></div>
-      <div class="snap-metric"><div class="snap-val">58.0 lb</div><div class="snap-lbl">Fat Mass</div></div>
-      <div class="snap-metric"><div class="snap-val ok">80.5 cm²</div><div class="snap-lbl">VAT (Healthy)</div></div>
-      <div class="snap-metric"><div class="snap-val">16th %ile</div><div class="snap-lbl">ALMI AM</div></div>
-      <div class="snap-metric"><div class="snap-val">27 · Male</div><div class="snap-lbl">Age · Sex</div></div>
-      <div class="snap-metric"><div class="snap-val">5'7"</div><div class="snap-lbl">Height</div></div>
-    </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Midpoint check (May 27): BF 32.6% (−1.4 pts), Fat 55.8 lb (−2.2 lb), Lean 110.5 lb (+2.7 lb), VAT 75.3 cm². Regional (May 27): Arms 12.3 lb lean / 6.9 lb fat · Legs 37.4 lb lean / 20.0 lb fat · Trunk 53.1 lb lean / 26.0 lb fat.</div>
-  </div>
-
-  <!-- 5 — DEXA Results -->
-  <div class="dp-section dexa-print-section">
-    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
-    <table class="dexa-table">
-      <thead><tr><th>Metric</th><th>Scan 1 (May 13)</th><th>Scan 2 (Jun 25)</th><th>Delta</th></tr></thead>
-      <tbody>
-        <tr><td>Body Weight (lb)</td><td>170.5</td><td class="r-pending" id="kush-s2-bw">—</td><td class="r-pending" id="kush-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>34.0%</td><td class="r-pending" id="kush-s2-bf">—</td><td class="r-pending" id="kush-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>107.8</td><td class="r-pending" id="kush-s2-lean">—</td><td class="r-pending" id="kush-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>58.0</td><td class="r-pending" id="kush-s2-fat">—</td><td class="r-pending" id="kush-d-fat">—</td></tr>
-        <tr><td>VAT Area (cm²)</td><td>80.5</td><td class="r-pending" id="kush-s2-vat">—</td><td class="r-pending" id="kush-d-vat">—</td></tr>
-        <tr><td>ALMI</td><td>16th %ile AM</td><td class="r-pending" id="kush-s2-almi">—</td><td class="r-pending" id="kush-d-almi">—</td></tr>
-      </tbody>
-    </table>
-    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Body Composition (lb) — Midpoint May 27 as Scan 1 reference</div>
-    <table class="dexa-table" style="margin-top:4px">
-      <thead><tr><th>Region</th><th>S1 Lean</th><th>S2 Lean</th><th>Δ Lean</th><th>S1 Fat</th><th>S2 Fat</th><th>Δ Fat</th></tr></thead>
-      <tbody>
-        <tr><td>Arms</td><td>12.3</td><td class="r-pending" id="kush-s2-arms-lean">—</td><td class="r-pending" id="kush-d-arms-lean">—</td><td>6.9</td><td class="r-pending" id="kush-s2-arms-fat">—</td><td class="r-pending" id="kush-d-arms-fat">—</td></tr>
-        <tr><td>Legs</td><td>37.4</td><td class="r-pending" id="kush-s2-legs-lean">—</td><td class="r-pending" id="kush-d-legs-lean">—</td><td>20.0</td><td class="r-pending" id="kush-s2-legs-fat">—</td><td class="r-pending" id="kush-d-legs-fat">—</td></tr>
-        <tr><td>Trunk</td><td>53.1</td><td class="r-pending" id="kush-s2-trunk-lean">—</td><td class="r-pending" id="kush-d-trunk-lean">—</td><td>26.0</td><td class="r-pending" id="kush-s2-trunk-fat">—</td><td class="r-pending" id="kush-d-trunk-fat">—</td></tr>
-      </tbody>
-    </table>
-    <button onclick="printDexaSummary('kush')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
-  </div>
-
-  <!-- 6 — Lifting Metrics -->
-  <div class="dp-section">
-    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a04ec2e7ba74e1b78aa6da4/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
-    <table class="lift-table">
-      <thead><tr><th>Exercise</th><th>Week-Out Target (Jun 22 DM)</th><th>Recent Top Set / Est. 1RM</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><strong>BB Bench Press</strong> (Upper A · scan morning)
-            <br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS (M20s): ~171 lb 1RM</span> <span style="font-size:9px;color:#bbb">1.0×BW</span></td>
-          <td>115 lb × 8</td>
-          <td>110 lb × 8 (Jun 11) · ~139 lb est. 1RM</td>
-          <td>~81% of Gold Standard — closing the gap</td>
-        </tr>
-        <tr>
-          <td><strong>Barbell Deadlift</strong> (Lower B · Tue Jun 23)
-            <br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS (M20s): ~290 lb 1RM</span> <span style="font-size:9px;color:#bbb">1.7×BW</span></td>
-          <td>135 lb × 3×5 — establish baseline</td>
-          <td>New in P2 · no prior data</td>
-          <td>First session ever — quality and lockout, not load</td>
-        </tr>
-        <tr>
-          <td><strong>Pull Up / Machine Assisted</strong> (Upper A · scan morning)</td>
-          <td>3 sets × 8+ reps</td>
-          <td>11 / 7 / 8 reps (Jun 18)</td>
-          <td>Reduce set-to-set drop; full rest between sets</td>
-        </tr>
-        <tr style="background:#1e2030">
-          <td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Additional History</td>
-        </tr>
-        <tr>
-          <td>BB Squat</td>
-          <td>Not in P2 program</td>
-          <td>95 lb × 6 (May 30) · ~114 lb est. 1RM</td>
-          <td>GS: ~256 lb (1.5×BW) — long-term target</td>
-        </tr>
-        <tr>
-          <td>BB Split Squat</td>
-          <td>—</td>
-          <td>Jun 19 (P2 Lower A)</td>
-          <td>Check Training Tab for logged weight</td>
-        </tr>
-        <tr>
-          <td>DB Renegade Row</td>
-          <td>—</td>
-          <td>Jun 18 (P2 Upper A)</td>
-          <td>Check Training Tab for logged weight</td>
-        </tr>
-      </tbody>
-    </table>
-    <div style="margin-top:8px;font-size:11px;color:#888">Gold Standards: Male 20s at 170.5 lb BW. Bench at 81% GS is strong for 6 weeks. Deadlift baseline being established Jun 23 — will have data before scan conversation. Pull-up consistency improving.</div>
-  </div>
-
-  <!-- 7 — Nutrition -->
-  <div class="dp-section">
-    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a04ec2e7ba74e1b78aa6da4/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
-    <div class="nutri-protocol">
-      <div><strong>Daily protein target:</strong> 155g/day (maintained throughout program)</div>
-      <div><strong>System:</strong> Two protein shakes + Greek yogurt as needed. No alcohol.</div>
-      <div><strong>2-day photo food log</strong> assigned Jun 23 + Jun 24 — pull compliance before scan.</div>
-      <div style="margin-top:6px;color:#666"><em>Protein has been consistently on target. At 34% BF with solid lean mass momentum, the program is working. Keep 155g through scan morning. Post-scan conversation: set carb timing and calorie target for Phase 3 based on full 6-week DEXA results.</em></div>
-    </div>
-  </div>
-
-</div><!-- end modal-kush -->
 
 
 <!-- ════════════════════════════════════════
@@ -1915,7 +1686,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
      ════════════════════════════════════════ -->
 <div id="modal-andres" class="modal-content"
      data-name="Andres Rodriguez"
-     data-sub="Second Scan · June 28, 2026 · LBM Build · M · 1st %ile ALMI">
+     data-sub="Second Scan · June 28, 2026 · LBM Build · M · 1st %ile ALMI"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun28.html">
 
   <!-- 1 — Pre-Scan Snapshot -->
   <div class="success-section">
@@ -1948,7 +1720,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>ALMI at 1st percentile</strong> — the single most important metric in this scan. Frame the debrief entirely around lean mass as the mission. Any increase is a significant, meaningful result.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Left meniscus tear</strong> (soccer, ~2 months before May 31 scan) + prior ACL on the same knee. Running still hurts. Knee feels unstable. Programming is knee-conscious — squat depth and loading adjusted. If any exercise causes pain, alternate immediately.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Right shoulder</strong> — clicking sound on incline DB press, no pain reported. Monitoring ongoing. Keep it in programming as long as pain-free; no loading changes currently needed.</span></div>
-      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Last 7 days: 1/2 tracked</strong> — slight dip this week. Jun 20 (Full Body B) was logged. Confirm Jun 26 session (Fri) happened before the scan debrief on Sunday.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Program calendar note (Jun 26)</strong>: Iris shows two P1 session edits on Friday (Upper + Lower), outside the normal Tue/Thu/Sun schedule. Possibly makeup sessions. Everfit confirmation not available. Advise no training scan morning.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Intensity cue landed well</strong> — switched to starting working sets heavy (no more ramping) since Jun 9 check-in. History-button approach confirmed. Progressive overload tracking properly.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Nutrition structure solid</strong> — fist-sized protein at each meal, 2 shakes/day, 130g/day floor. Creatine 5g/day started May 31. All building blocks in place.</span></div>
     </div>
