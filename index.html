@@ -1002,7 +1002,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge-lbm">LBM + Bone</span>
           <span class="badge badge-scan">12:00 PM</span>
-        </div>
+
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun28.html" target="_blank">&#127911; Audio Brief &#8599;</a></div></div>
       </div>
       <div class="scan-row">
         <span>📅</span>
@@ -1039,7 +1040,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="cons-pct" style="color:#22c55e">100%</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
-            <div class="cons-detail">7/7 workouts through Jun 2 · 3-Day M/W/F · Communication quiet since Jun 3 — confirm sessions before scan</div>
+            <div class="cons-detail">7/7 workouts through Jun 2 · 3-Day M/W/F · 8 PRs Jun 22 · Wendy replied Jun 23 — back/joint sensitivity flagged, protein compliance uncertain</div>
           </div>
         </div>
       </div>
@@ -1051,7 +1052,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('wendy')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge badge-complete" id="prog-wendy">7/7</span>
+            <span class="checklist-progress-badge badge-complete" id="prog-wendy">8/8</span>
             <span class="checklist-chevron" id="chev-wendy">›</span>
           </div>
         </div>
@@ -1063,6 +1064,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Lift targets + nutrition sent Jun 22 — Cable Row 66×10, Chest Press 55×8, Lat PD 60×8 · 110g protein</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Food journal task added — Jun 23 + Jun 24 in Everfit</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> DEXA flags noted — OSTEOPOROSIS (T −2.8), ALMI 6th %ile critical — frame debrief as action plan</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('wendy')"><span> Night-before refresh — DM check done (Jun 23 reply: back/joint pain, protein bloating, caffeine sensitive), Iris updated, audio brief built</span></label>
         </div>
       </div>
     </div>
@@ -1967,7 +1969,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- ── WENDY HALES MODAL ── -->
 <div id="modal-wendy" class="modal-content"
      data-name="Wendy Hales"
-     data-sub="Second Scan · June 28, 2026 · LBM Build + Bone · F · 58">
+     data-sub="Second Scan · June 28, 2026 · LBM Build + Bone · F · 58"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-jun28.html">
 
   <script>
   window.__scan1_wendy = {
@@ -2022,13 +2025,15 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>OSTEOPOROSIS — T −2.8</strong> — Clinically significant (threshold is −2.5). Axial loading movements — squats, hip hinges, pressing — are the correct stimulus. Resistance training directly drives bone remodeling.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>VAT 156.6 cm² — Elevated</strong> — Approaching high-risk threshold (&gt;160 cm²). Muscle gain + protein + visceral fat protocol (ACV, green tea, omega-3, probiotics) is the multi-pronged approach.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Week-out messages sent Jun 22</strong> — Re-engaged warmly. Opener referenced 8 PRs + 4-week consistency. Food journal tasks assigned Jun 23+24. Monitor for response.</span></div>
-      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Protein Target — 110g/day</strong> — Two shakes/day is the backbone. Food logging inconsistent. Need to confirm whether protein habit is landing.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Workout Consistency</strong> — 7/7 through June 2. The training habit is established. Intensity (8/10 RPE from set 1) is the next lever to address.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Joint &amp; Back Pain (NEW — Jun 23)</strong> — Joints or back hurt at times, limits leg work due to lower back stress. Recovering from overdoing first leg workout at start. With T −2.8, back-safe programming is non-negotiable. Explains leg weight variation and why she hasn't pushed heavy on lower body.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Protein Compliance Uncertain</strong> — 110g/day target. Gets bloated eating large amounts — makes it hard to hit the target. Two shakes/day is the backbone but meal protein may be falling short. If lean mass is lower than expected, connect it here.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Workout Consistency</strong> — 7/7 through June 2, 8 PRs on Jun 22. The training habit is established. Back sensitivity is the current limiter on intensity, not effort.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
       <div class="personal-note"><span class="note-emoji">📱</span><span>Doesn't always carry phone — step count is artificially low. Not a concern, just context.</span></div>
-      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Training M/W/F · 3 sessions/week. Program is compound-focused. Working sets must be 8/10 intensity from rep 1, not building up to it — that is the bone stimulus mechanism.</span></div>
-      <div class="personal-note"><span class="note-emoji">💊</span><span>Visceral fat protocol in place: ACV before 2 biggest meals, green tea 3-5 cups/day, fatty fish, probiotics + berries. These target VAT alongside training.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Uses 2 gyms — City Sport (buddy pass) + another location. Machines often don't fit well, which explains lift variation week to week. Not always inconsistent effort.</span></div>
+      <div class="personal-note"><span class="note-emoji">💊</span><span>Caffeine sensitive — no green tea. Morning matcha only. Remove green tea from VAT protocol; suggest EGCG supplement instead. ACV before 2 biggest meals, fatty fish, probiotics + berries still in place.</span></div>
+      <div class="personal-note"><span class="note-emoji">🔄</span><span>Membership expired Jun 14. Scan is post-window. Renewal conversation must happen today — medical case for continuing is strong.</span></div>
     </div>
   </div>
 
