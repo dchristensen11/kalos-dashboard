@@ -1018,19 +1018,19 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div class="metrics-grid">
         <div class="metric">
-          <div class="metric-val pending">—</div>
+          <div class="metric-val">130.8</div>
           <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Scan 1 Jun 4</div>
         </div>
         <div class="metric note">
-          <div class="metric-val">33%</div>
+          <div class="metric-val">33.8%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">Intro session notes</div>
+          <div class="metric-sub">AM 35th %ile</div>
         </div>
-        <div class="metric">
-          <div class="metric-val pending">—</div>
+        <div class="metric ok">
+          <div class="metric-val">53.7</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Pull Scan 1 PDF</div>
+          <div class="metric-sub">Healthy &lt;100</div>
         </div>
         <div class="metric warn">
           <div class="metric-val">21st %ile</div>
@@ -1056,12 +1056,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('stephanie')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge badge-partial" id="prog-stephanie">3/8</span>
+            <span class="checklist-progress-badge badge-partial" id="prog-stephanie">4/8</span>
             <span class="checklist-chevron" id="chev-stephanie">›</span>
           </div>
         </div>
         <div class="checklist-items" id="items-stephanie">
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('stephanie')"><span> Scan 1 DEXA PDF — pull from Iris Reports (weight, VAT, regional splits all pending)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('stephanie')"><span> Scan 1 DEXA PDF — pulled from Iris Reports. 130.8 lb, 33.8% BF, VAT 53.7, ALMI 21st %ile confirmed</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('stephanie')"><span> Iris review — intro + 10-day notes pulled. Recomp goal, Zepbound, W/F/Su, knee limitation</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('stephanie')"><span> Everfit data — pulled 45% consistency (5/11), current program, recent lifts</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('stephanie')"><span> Pre-scan opener — send week-out message via Everfit (never sent — too late to action before scan)</span></label>
@@ -1886,16 +1886,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <script>
   window.__scan1_stephanie = {
-    bw: null, bfPct: 33.0, bfAMpct: null,
-    lean: null, fat: null, vat: null,
-    almiVal: null, almiAMpct: 21,
-    bmd: null, bmdZ: null,
+    bw: 130.8, bfPct: 33.8, bfAMpct: 35,
+    lean: 86.05, fat: 43.89, vat: 53.7,
+    almiVal: 6.0, almiAMpct: 21,
+    bmd: 1.170, bmdZ: 0.5,
     regional: {
-      larm:  { lean: null, fat: null },
-      rarm:  { lean: null, fat: null },
-      trunk: { lean: null, fat: null },
-      lleg:  { lean: null, fat: null },
-      rleg:  { lean: null, fat: null }
+      larm:  { lean: 4.03, fat: 2.94 },
+      rarm:  { lean: 4.36, fat: 2.81 },
+      trunk: { lean: 42.64, fat: 18.46 },
+      lleg:  { lean: 14.33, fat: 8.68 },
+      rleg:  { lean: 13.48, fat: 8.84 }
     }
   };
   </script>
@@ -1913,14 +1913,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-targets-label" style="color:#e65100">⚠ Week-out messaging never sent</div>
       <div class="success-target-item" style="color:#666">Pre-scan opener + lift targets never sent via Everfit, too late to action before the Jul 2 scan, skip tonight</div>
       <div class="success-target-item" style="color:#666">Food journal tasks never added in Everfit</div>
-      <div class="success-target-item" style="color:#666">Scan 1 DEXA PDF still not pulled from Iris Reports: weight, VAT, regional splits pending</div>
     </div>
   </div>
 
   <!-- 2 — Goal & Why -->
   <div class="dp-section dp-section-goal">
     <div class="dp-title">Goal &amp; Why</div>
-    <div class="dp-goal"><strong>Recomposition: Build muscle, reduce BF, protect lean tissue on GLP-1.</strong> Starting at 33% BF, ALMI at 21st percentile after significant GLP-1 weight loss (38 lb on Zepbound). The recomp goal is to convert the Zepbound progress into a lasting, muscular body composition, not just lighter, but stronger. 3×/week Recomposition program, W/F/Su, home gym + martial arts studio.</div>
+    <div class="dp-goal"><strong>Recomposition: Build muscle, reduce BF, protect lean tissue on GLP-1.</strong> Starting at 33.8% BF (130.8 lb, 86.05 lb lean, 43.89 lb fat), ALMI at 21st percentile after significant GLP-1 weight loss (38 lb on Zepbound). The recomp goal is to convert the Zepbound progress into a lasting, muscular body composition, not just lighter, but stronger. 3×/week Recomposition program, W/F/Su, home gym + martial arts studio.</div>
     <div class="dp-why">August wedding motivation: Stephanie and Richard are getting married together. She wants to walk in looking and feeling her strongest, having done the hard work of rebuilding muscle after GLP-1 weight loss. Every session and protein gram is toward that day.</div>
   </div>
 
@@ -1946,14 +1945,14 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Body Snapshot — Scan 1 Baseline (Jun 4, 2026)</div>
     <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val pending">— lb</div><div class="snap-lbl">Body Weight</div></div>
-      <div class="snap-metric"><div class="snap-val note">33.0%</div><div class="snap-lbl">Body Fat %</div></div>
-      <div class="snap-metric"><div class="snap-val pending">— lb</div><div class="snap-lbl">Lean Mass</div></div>
-      <div class="snap-metric"><div class="snap-val pending">— lb</div><div class="snap-lbl">Fat Mass</div></div>
-      <div class="snap-metric"><div class="snap-val pending">— cm²</div><div class="snap-lbl">VAT</div></div>
+      <div class="snap-metric"><div class="snap-val">130.8 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val note">33.8%</div><div class="snap-lbl">Body Fat %</div></div>
+      <div class="snap-metric"><div class="snap-val">86.05 lb</div><div class="snap-lbl">Lean Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">43.89 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric ok"><div class="snap-val ok">53.7 cm²</div><div class="snap-lbl">VAT (Healthy)</div></div>
       <div class="snap-metric"><div class="snap-val warn">21st %ile</div><div class="snap-lbl">ALMI AM ⚠</div></div>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#e65100">⚠ BF% and ALMI %ile from intro session notes. Pull Scan 1 DEXA PDF from Iris Reports before debrief to fill weight, lean/fat mass, VAT, and regional splits.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Metrics from Scan 1 DEXA PDF (Jun 4 scan), pulled from Iris Reports. BMD 1.170 g/cm², T-score 0.8, Z-score 0.5 (normal). Arms bilateral: 8.39 lb lean / 5.75 lb fat. Legs bilateral: 27.81 lb lean / 17.52 lb fat. Trunk: 42.64 lb lean / 18.46 lb fat.</div>
   </div>
 
   <!-- 5 — DEXA Results -->
@@ -1962,11 +1961,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1 (Jun 4)</th><th>Scan 2 (Jul 2)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>— (pull PDF)</td><td class="r-pending" id="stephanie-s2-bw">—</td><td class="r-pending" id="stephanie-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>33.0%</td><td class="r-pending" id="stephanie-s2-bf">—</td><td class="r-pending" id="stephanie-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>— (pull PDF)</td><td class="r-pending" id="stephanie-s2-lean">—</td><td class="r-pending" id="stephanie-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>— (pull PDF)</td><td class="r-pending" id="stephanie-s2-fat">—</td><td class="r-pending" id="stephanie-d-fat">—</td></tr>
-        <tr><td>VAT Area (cm²)</td><td>— (pull PDF)</td><td class="r-pending" id="stephanie-s2-vat">—</td><td class="r-pending" id="stephanie-d-vat">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>130.8</td><td class="r-pending" id="stephanie-s2-bw">—</td><td class="r-pending" id="stephanie-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>33.8%</td><td class="r-pending" id="stephanie-s2-bf">—</td><td class="r-pending" id="stephanie-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>86.05</td><td class="r-pending" id="stephanie-s2-lean">—</td><td class="r-pending" id="stephanie-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>43.89</td><td class="r-pending" id="stephanie-s2-fat">—</td><td class="r-pending" id="stephanie-d-fat">—</td></tr>
+        <tr><td>VAT Area (cm²)</td><td>53.7</td><td class="r-pending" id="stephanie-s2-vat">—</td><td class="r-pending" id="stephanie-d-vat">—</td></tr>
         <tr><td>ALMI (AM %ile)</td><td>21st %ile</td><td class="r-pending" id="stephanie-s2-almi">—</td><td class="r-pending" id="stephanie-d-almi">—</td></tr>
       </tbody>
     </table>
@@ -1980,7 +1979,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Change since Jun 8</th><th>Notes</th></tr></thead>
       <tbody>
         <tr>
-          <td colspan="4" style="color:#1565c0;font-size:11px;padding:8px 10px;background:#e3f2fd">45% consistency (5/11 last 30d) · 44 min avg session · 8 all-time PRs. Gold Standards need confirmed age + body weight, pull Scan 1 PDF.</td>
+          <td colspan="4" style="color:#1565c0;font-size:11px;padding:8px 10px;background:#e3f2fd">45% consistency (5/11 last 30d) · 44 min avg session · 8 all-time PRs. Age 44, BW 130.8 lb confirmed via Scan 1 PDF (Jun 4).</td>
         </tr>
         <tr>
           <td><strong>Dumbbell Bench Press</strong></td>
@@ -2030,7 +2029,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div><strong>Protein strategy:</strong> Protein at every meal. Shakes as the primary vehicle when appetite limits volume. Greek yogurt before bed if protein is short. Reduce carbs/fats before reducing protein — never sacrifice protein to manage fullness.</div>
       <div><strong>Hydration:</strong> 2–3L daily — higher protein + Zepbound increases hydration needs. Benefiber and Mag 07 for GI regularity.</div>
       <div><strong>Food journal tasks:</strong> Never added. Only 19 meals logged across 11 days per Iris, highly variable protein, hard to give useful feedback on hitting the 118g target. Too late to fix before this scan; make it the first ask post-scan.</div>
-      <div style="margin-top:6px;color:#666"><em>Scan-day framing: BF was 33% at baseline. Any lean mass gain, even 0.5 lb, is meaningful on a GLP-1 recomp protocol. The training is doing what GLP-1 alone cannot. Frame the result around ALMI change and the shift from passive weight loss to active muscle building.</em></div>
+      <div style="margin-top:6px;color:#666"><em>Scan-day framing: BF was 33.8% at baseline (86.05 lb lean, 43.89 lb fat). Any lean mass gain, even 0.5 lb, is meaningful on a GLP-1 recomp protocol. The training is doing what GLP-1 alone cannot. Frame the result around ALMI change and the shift from passive weight loss to active muscle building.</em></div>
     </div>
   </div>
 
