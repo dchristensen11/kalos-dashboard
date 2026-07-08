@@ -1011,6 +1011,89 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 </div><!-- end JUL 9 day-group -->
 
+<!-- ═══════════ JUL 12 ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Sunday · July 12, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── HINA NASEER ── -->
+    <div class="card" id="card-hina">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('hina')">Hina Naseer <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 53 · Recomp · 5'5" · CrossFit Almaden + Home DB</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Recomp</span>
+          <span class="badge badge-scan">8:15 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Sunday, July 12</strong> · Second Kalos DEXA Scan · 8:15 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val">147.3</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1 Jun 14</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">40.5%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">AM 63rd %ile</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">97.8</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Healthy &lt;100</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">34th %ile</div>
+          <div class="metric-label">ALMI AM</div>
+          <div class="metric-sub">Build target</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#2e7d32">86%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:86%;background:#2e7d32"></div></div>
+            <div class="cons-detail">86% last 30d · 100% last 7d · Recomp Dumbbells 2×/week · plus CrossFit/bike</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Why</div>
+        <div class="why-text">Aesthetics and longevity — navigate menopause, improve bone density, build muscle, lose fat, and fit back into old clothes. ALMI at the 34th percentile (6.34 kg/m²) and a BMD Z-score of -1.0 are the key long-term levers; VAT is already healthy at 97.8 cm². Minor prior hiking injury, no current pain. 4-week membership ends the day of the scan (Jul 12) — worth a renewal conversation given the trajectory.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('hina')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-hina">3/8</span>
+            <span class="checklist-chevron" id="chev-hina">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-hina">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('hina')"><span> Iris + Everfit review complete — menopause/bone density goals, minor hiking injury, 100% consistency</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('hina')"><span> Scan 1 metrics pulled from Iris Results Dashboard — Jun 14 baseline populated</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('hina')"><span> Pre-scan opener drafted (checkpoint/foundation framing) — staged for Daniel's approval, not yet sent</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('hina')"><span> Lift targets + nutrition drafted — RDL 55-60×10-12, Bench 33-35×10-12, Kickstand DL 45×10-12 — staged for approval, not yet sent</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('hina')"><span> Food journal tasks added — Jul 10 + Jul 11 in Everfit</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('hina')"><span> Scan 1 DEXA PDF — pull from Iris Reports for exact L/R regional splits + confirm raw BMD</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('hina')"><span> Night-before refresh — audio brief, confirm lift targets hit, check DMs</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('hina')"><span> Scan day — fill DEXA results, run debrief, membership renewal conversation</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end JUL 12 day-group -->
+
+
+
 
 <div class="modal-backdrop" id="modal-backdrop">
   <div class="modal-window">
@@ -1781,6 +1864,153 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-navdeep -->
+<!-- ── HINA NASEER MODAL ── -->
+<div id="modal-hina" class="modal-content"
+     data-name="Hina Naseer"
+     data-sub="Second Scan · July 12, 2026 · Recomp · F · 53">
+
+  <script>
+  window.__scan1_hina = {
+    bw: 147.3, bfPct: 40.5, bfAMpct: 63,
+    lean: 83.6, fat: 59.6, vat: 97.8,
+    almiVal: 6.34, almiAMpct: 34,
+    bmdZ: -1.0,
+    regional: {
+      larm:  { lean: 4.05, fat: 3.00 },
+      rarm:  { lean: 4.05, fat: 3.00 },
+      trunk: { lean: 39.50, fat: 25.00 },
+      lleg:  { lean: 15.00, fat: 13.20 },
+      rleg:  { lean: 15.00, fat: 13.20 }
+    }
+  };
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="hina-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>4 personal bests</strong> in her Jul 3 Full Body B session, on top of <strong>9 PRs</strong> the week before (Jun 26) — nearly every lift trending up from a home dumbbell setup.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Dumbbell Romanian Deadlift climbing steadily</strong> — 50 lb × 19 reps on Jul 3, her strongest and most consistent lift.</span></div>
+      <div class="success-win"><span class="win-icon">📊</span><span class="win-text"><strong>100% consistency last 7 days, 86% last 30</strong> — has not missed a Kalos session since starting Jun 14.</span></div>
+      <div class="success-win"><span class="win-icon">🧠</span><span class="win-text"><strong>Highly engaged</strong> — asks thoughtful nutrition questions, upgraded to heavier home dumbbells on her own initiative.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Already sent via Everfit (Jul 2):</div>
+      <div class="success-target-item">Dumbbell Goblet Cossack Squat: 18-20 lb for sets 1-2 (from 15 lb) — not yet retested</div>
+      <div class="success-target-item">Three focuses until second scan: protein consistency (log 2-3 more days), intensity (push to failure, 90s-2min rest), consistency (both Kalos sessions + CrossFit/bike logged)</div>
+      <div class="success-targets-label" style="margin-top:8px">Drafted, staged for approval (not yet sent):</div>
+      <div class="success-target-item">Dumbbell Romanian Deadlift: 55-60 lb, 10-12 reps (from 50×19)</div>
+      <div class="success-target-item">Dumbbell Bench Press: 33-35 lb, 10-12 reps (from 30×14)</div>
+      <div class="success-target-item">Dumbbell Kickstand Deadlift: 45 lb, 10-12 reps (from 40×14)</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Recomp — Muscle Build &amp; Bone Health</strong> — Navigate menopause, improve bone density, build muscle, lose fat, and fit back into old clothes. ALMI at the 34th percentile (6.34 kg/m²) and a BMD Z-score of -1.0 are the primary long-term levers; VAT is already healthy at 97.8 cm².</div>
+    <div class="dp-why">Aesthetics and longevity — wants to navigate menopause well, protect bone density, build visible muscle, and fit back into clothes that used to fit.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>BMD Z-score -1.0, low for age</strong> — barbell strength training and plyometrics are key long-term levers per the intro session notes.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Intensity needs a deliberate push</strong> — clean workout logs (identical reps across sets) show she isn't training close to failure on the first working set yet; reinforce the 8-10/10 RPE cue from the 6/23 check-in.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Protein logging thin</strong> — only 18 meals logged over 7 of 30 days. Her weight/clothes concern makes confirming 120g on training days the immediate priority.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Weight/clothes concern voiced Jul 2</strong> — weight up ~2 lb, clothes feel tighter. Already reassured this is expected: muscle-building phase before any fat loss deficit.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>VAT healthy at 97.8 cm²</strong> — well under the 100 cm² threshold, no metabolic risk flag.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Highly engaged, strong adherence</strong> — 100% consistency on Kalos sessions, asks thoughtful nutrition questions, upgraded home dumbbells on her own initiative.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🧠</span><span>Coaching frame: she's navigating menopause-driven body changes and weight concerns while building new habits around protein timing and workout intensity — lead with encouragement on consistency and education on why the muscle-building phase will stabilize things before any deficit.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏥</span><span>Minor prior hiking injury with time off; no current pain or CrossFit injuries.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥗</span><span>No pork, no shellfish. Mostly vegetarian at home (chicken/fish/beef OK). 120g protein/day via 3 meals + 2 shakes.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>CrossFit Almaden (barbells, full gym, machines) plus bikes to work; home program is dumbbell-only, recently upgraded to heavier dumbbells.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>4-week membership ends the day of the scan (Jul 12) — frame renewal as continuing the long-term arc, not a finish line.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (Jun 14, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">147.3 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val">40.5%</div><div class="snap-lbl">Body Fat (63rd AM %ile)</div></div>
+      <div class="snap-metric"><div class="snap-val">83.6 lb</div><div class="snap-lbl">Lean Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">59.6 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">97.8 cm²</div><div class="snap-lbl">VAT (✓ Healthy)</div></div>
+      <div class="snap-metric"><div class="snap-val">34th %ile</div><div class="snap-lbl">ALMI AM (6.34 kg/m²)</div></div>
+      <div class="snap-metric"><div class="snap-val">65"</div><div class="snap-lbl">Height (5'5")</div></div>
+      <div class="snap-metric"><div class="snap-val">53</div><div class="snap-lbl">Age</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Primary targets: move ALMI up from the 34th percentile and improve the -1.0 BMD Z-score, while keeping VAT in the healthy range it's already in.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jun 14)</th><th>Scan 2 (Jul 12)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>147.3</td><td class="r-pending" id="hina-s2-bw">—</td><td class="r-pending" id="hina-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>40.5% <span style="font-size:10px;color:#888">(AM 63rd)</span></td><td class="r-pending" id="hina-s2-bf">—</td><td class="r-pending" id="hina-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>83.6</td><td class="r-pending" id="hina-s2-lean">—</td><td class="r-pending" id="hina-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>59.6</td><td class="r-pending" id="hina-s2-fat">—</td><td class="r-pending" id="hina-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>97.8</td><td class="r-pending" id="hina-s2-vat">—</td><td class="r-pending" id="hina-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>6.34 · 34th %ile</td><td class="r-pending" id="hina-s2-almi">—</td><td class="r-pending" id="hina-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>— <span style="font-size:10px;color:#888">(Z -1.0, raw not on file)</span></td><td class="r-pending" id="hina-s2-bmd">—</td><td class="r-pending" id="hina-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean Mass (lb) <span style="font-weight:400;color:#aaa">— L/R split estimated evenly from Iris totals; pull PDF for exact figures</span></div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td><td>4.05</td><td class="r-pending" id="hina-s2-larm-lean">—</td><td class="r-pending" id="hina-d-larm-lean">—</td><td>3.00</td><td class="r-pending" id="hina-s2-larm-fat">—</td><td class="r-pending" id="hina-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td>4.05</td><td class="r-pending" id="hina-s2-rarm-lean">—</td><td class="r-pending" id="hina-d-rarm-lean">—</td><td>3.00</td><td class="r-pending" id="hina-s2-rarm-fat">—</td><td class="r-pending" id="hina-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td><td>39.50</td><td class="r-pending" id="hina-s2-trunk-lean">—</td><td class="r-pending" id="hina-d-trunk-lean">—</td><td>25.00</td><td class="r-pending" id="hina-s2-trunk-fat">—</td><td class="r-pending" id="hina-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td><td>15.00</td><td class="r-pending" id="hina-s2-lleg-lean">—</td><td class="r-pending" id="hina-d-lleg-lean">—</td><td>13.20</td><td class="r-pending" id="hina-s2-lleg-fat">—</td><td class="r-pending" id="hina-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td>15.00</td><td class="r-pending" id="hina-s2-rleg-lean">—</td><td class="r-pending" id="hina-d-rleg-lean">—</td><td>13.20</td><td class="r-pending" id="hina-s2-rleg-fat">—</td><td class="r-pending" id="hina-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('hina')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a2f1a8cc2049d237d1735b3/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard</th></tr></thead>
+      <tbody>
+        <tr><td>Dumbbell Romanian Deadlift <br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 55-60 lb, 10-12 reps</span></td><td>50 lb × 19</td><td>~82 lb</td><td>~199 lb <span style="font-size:9px;color:#888">1.35×BW</span></td></tr>
+        <tr><td>Dumbbell Bench Press <br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 33-35 lb, 10-12 reps</span></td><td>30 lb × 14</td><td>~44 lb</td><td>~118 lb <span style="font-size:9px;color:#888">0.80×BW</span></td></tr>
+        <tr><td>Dumbbell Kickstand Deadlift <br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 45 lb, 10-12 reps</span></td><td>40 lb × 14</td><td>~59 lb</td><td>—</td></tr>
+        <tr><td>Dumbbell Goblet Cossack Squat <br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 18-20 lb, sets 1-2 (sent Jul 2)</span></td><td>15 lb × 16-18</td><td>~24 lb</td><td>—</td></tr>
+        <tr><td>Dumbbell Gorilla Row</td><td>25 lb × 20</td><td>~42 lb</td><td>—</td></tr>
+        <tr><td>Alternating DB Single Arm Shoulder Press</td><td>15 lb × 22</td><td>~26 lb</td><td>—</td></tr>
+        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female · 53 · 147.3 lb</td></tr>
+        <tr><td>BB Back Squat</td><td>—</td><td colspan="2">~177 lb 1RM <span style="font-size:9px;color:#888">(1.20×BW)</span></td></tr>
+        <tr><td>BB Bench Press</td><td>—</td><td colspan="2">~118 lb 1RM <span style="font-size:9px;color:#888">(0.80×BW)</span></td></tr>
+        <tr><td>BB Deadlift / Trap Bar</td><td>—</td><td colspan="2">~199 lb 1RM <span style="font-size:9px;color:#888">(1.35×BW)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">DB-only home program with CrossFit Almaden barbell access. High rep counts (19-22) at steady weight across her top sets suggest she's ready to progress load, RDL and Kickstand Deadlift targets bumped accordingly. Goblet Cossack Squat target (sent Jul 2) not yet retested.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a2f1a8cc2049d237d1735b3/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 120g/day (no pork, no shellfish; mostly vegetarian at home, chicken/fish/beef OK)</div>
+      <div><strong>Shakes:</strong> pre-workout shake with banana or rice cake, post-workout shake immediately after training, plus protein at 3 meals</div>
+      <div><strong>Tracking method:</strong> Photo food journal; only 18 meals logged over 7 of 30 days — 2-day log task added Jul 10-11 to recalibrate before the scan</div>
+      <div style="margin-top:6px;color:#666"><em>Her weight/clothes concern makes confirming 120g on training days the immediate priority before Sunday.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-hina -->
+
 
 
   </div><!-- end modal-window -->
