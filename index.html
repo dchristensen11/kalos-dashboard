@@ -1093,6 +1093,86 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div><!-- end JUL 12 day-group -->
 
 
+<!-- ═══════════ JUL 13 ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Monday · July 13, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── JENNIFER RUSSELL ── -->
+    <div class="card" id="card-jennifer">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('jennifer')">Jennifer Russell <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 59 · Recomp · 5'6" · Gym w/ Trainer (DB Only)</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Recomp</span>
+          <span class="badge badge-scan">12:00 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, July 13</strong> · Second Kalos DEXA Scan · 12:00 PM · San Jose</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val">153.4</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1 Jun 3</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">40.6%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">AM 58th %ile</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">128.2</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Elevated 100-160</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">13th %ile</div>
+          <div class="metric-label">ALMI AM</div>
+          <div class="metric-sub">Primary target</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#f59e0b">73%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:73%;background:#f59e0b"></div></div>
+            <div class="cons-detail">73% last 30d · 11/15 sessions · 60% last 7d (3/5) · dip from a ~10-day travel window, no gym access · 3-Day RECOMP DB split, Phase 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Why</div>
+        <div class="why-text">Performance and longevity: improve marathon time, recover better, reduce injury risk, and protect long-term health through heavy lifting. She's also managing a stressful home situation right now, which has understandably affected her consistency without derailing it. Her 4-week goal was +2 lb muscle, with any fat loss treated as a bonus. Daily protein target is 125g. She trains at a gym with a trainer on a DB-only 3-day split (RECOMP), currently Phase 2, moving to Phase 3 on 7/27 after the scan.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('jennifer')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-jennifer">5/8</span>
+            <span class="checklist-chevron" id="chev-jennifer">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-jennifer">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jennifer')"><span> Iris + Everfit review complete, goals, injuries (wrist, hip, back), GI issue, 73% consistency (travel dip)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jennifer')"><span> Scan 1 metrics pulled from Iris Results Dashboard, Jun 3 baseline populated</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jennifer')"><span> Pre-scan opener sent via Everfit, not yet confirmed sent</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jennifer')"><span> Lift targets + nutrition sent via Everfit (Jul 8), DB RDL 50×12, DB Goblet Split Squat 20-25/hand, DB Neutral Bench walked back to bodyweight only (wrist)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jennifer')"><span> Food journal tasks added, Jul 10 + Jul 11 in Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jennifer')"><span> Scan 1 DEXA PDF, full L/R regional splits + BMD confirmed</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jennifer')"><span> Night-before refresh, audio brief, confirm wrist status, check DMs</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jennifer')"><span> Scan day, fill DEXA results, run debrief, membership renewal conversation</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end JUL 13 day-group -->
 
 
 <div class="modal-backdrop" id="modal-backdrop">
@@ -2011,6 +2091,151 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div><!-- end modal-hina -->
 
+
+<!-- ── JENNIFER RUSSELL MODAL ── -->
+<div id="modal-jennifer" class="modal-content"
+     data-name="Jennifer Russell"
+     data-sub="Second Scan · July 13, 2026 · Recomp · F · 59">
+
+  <script>
+  window.__scan1_jennifer = {
+    bw: 153.4, bfPct: 40.6, bfAMpct: 58,
+    lean: 89.84, fat: 61.48, vat: 128.2,
+    almiVal: 5.6, almiAMpct: 13,
+    bmd: 1.057, bmdZ: -0.1,
+    regional: {
+      larm:  { lean: 4.11, fat: 3.55 },
+      rarm:  { lean: 4.94, fat: 3.44 },
+      trunk: { lean: 45.84, fat: 31.93 },
+      lleg:  { lean: 13.90, fat: 10.20 },
+      rleg:  { lean: 13.95, fat: 10.08 }
+    }
+  };
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jennifer-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Did not miss a strength session</strong> through mid-June despite a busy travel and race schedule.</span></div>
+      <div class="success-win"><span class="win-icon">🥾</span><span class="win-text"><strong>Stayed resourceful with zero gym access</strong> during a ~10-day trip: multiple hikes, a swim, walks, and hotel-room workouts instead of skipping training outright.</span></div>
+      <div class="success-win"><span class="win-icon">🏅</span><span class="win-text"><strong>Completed a half marathon in Lake Tahoe</strong> despite heat, elevation, and a late start.</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>Food-journal consistency improved noticeably</strong> since her 10-day check-in coaching, with multiple days of photo logs showing good protein-forward choices (chicken, eggs, tuna, protein bars).</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets sent via Everfit (Jul 8) for her two remaining pre-scan sessions (Fri Jul 10 &amp; Sat Jul 11):</div>
+      <div class="success-target-item">Dumbbell Neutral Grip Bench Press: originally set 25-30 lb × 4×10 for quality/baseline (new exercise), then <strong>walked back same-day</strong> after she reported a new right wrist injury; revised to bodyweight/very light work only, no added load, until the wrist settles</div>
+      <div class="success-target-item">Dumbbell Romanian Deadlift: 50 lb × 12, or 40 lb × 14 as a fallback (from 40 lb × 12, Jun 24)</div>
+      <div class="success-target-item">Dumbbell Goblet Split Squat: 20-25 lb per hand, quality/control emphasis (new unilateral variation, anchored off her 30 lb × 12 flat Goblet Squat)</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Deep Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Recomposition: Performance &amp; Longevity.</strong> Her 4-week goal was +2 lb muscle, with any fat loss treated as a bonus. ALMI at the 13th percentile age-matched (5.6 kg/m²) is her clearest opportunity. VAT at 128.2 cm² is in the elevated range and worth watching, not alarming.</div>
+    <div class="dp-why">Improve marathon time, recover better, reduce injury risk, and protect long-term health through heavy lifting. She's also managing a stressful home situation right now, which has understandably affected her training consistency without derailing it.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Consistency dipped to 60% last 7 days</strong>, driven by a ~10-day travel window with no gym access, not attitude. She still logged workouts plus a lot of hiking, swimming, and walking throughout.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>New right wrist injury (Jul 8).</strong> At its worst she couldn't open doors or hold a cup. It's improving with a wrist brace; load is reduced on pressing movements until it settles.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Ongoing GI nausea and vomiting since about 6/21</strong>, reducing appetite and affecting nutrition consistency. Still monitoring; revisit with a doctor if it doesn't improve.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Left arm lean mass is meaningfully lower than right</strong> (4.11 lb vs 4.94 lb). Worth bringing up on scan day and tying to the ALMI opportunity.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Excellent activity substitution during travel:</strong> hikes, a swim, walks, and hotel workouts kept her moving with zero gym access.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Nutrition logging and protein choices have improved</strong> since her 10-day check-in coaching.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏥</span><span>Prior left-side back injury; unresolved left hip issue (post-PT, not fully resolved); neck pain with overhead triceps work, removed and replaced with dumbbell skull crushers; new right wrist injury (Jul 8), improving with a brace, no heavy pressing loads for now.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥗</span><span>No red meat; avoids milk, yogurt, and cottage cheese; prefers real whole food. Creatine 5g/day. Does not drink alcohol.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Gym with a trainer (barbells/weights/vest available, but this program is DB-only); home has lighter weights/bands; while traveling only 10-12 lb dumbbells, a 20 lb kettlebell, bands, and 10-15 lb weighted vests. RECOMP, DUMBBELLS, 3-Day split (Full Body A/B/C), currently Phase 2, moving to Phase 3 on 7/27.</span></div>
+      <div class="personal-note"><span class="note-emoji">✈️</span><span>Out of town about 10 days starting around Jul 2 with no gym access; improvised with hotel workouts, hiking, swimming, and walking rather than skipping training. Recently completed a half marathon in Lake Tahoe (heat and elevation) that went well despite tough conditions.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>4-Week membership started Jun 3 and ends the day of the scan (Jul 13); worth a renewal conversation.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (Jun 3, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">153.4 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val">40.6%</div><div class="snap-lbl">Body Fat (58th AM %ile)</div></div>
+      <div class="snap-metric"><div class="snap-val">89.84 lb</div><div class="snap-lbl">Lean + BMC</div></div>
+      <div class="snap-metric"><div class="snap-val">61.48 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">128.2 cm²</div><div class="snap-lbl">VAT (Elevated 100-160)</div></div>
+      <div class="snap-metric"><div class="snap-val">13th %ile</div><div class="snap-lbl">ALMI AM (5.6 kg/m²)</div></div>
+      <div class="snap-metric"><div class="snap-val">1.057</div><div class="snap-lbl">BMD (Z: -0.1, ~avg)</div></div>
+      <div class="snap-metric"><div class="snap-val">66"</div><div class="snap-lbl">Height (5'6") · Age 59</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Total Mass 151.32 lb (DEXA scanner total; matches lean + fat mass, normal scanner variance vs. scale weight of 153.4 lb). Lean/Height² is 13.8 kg/m² (10th AM %ile), reinforcing ALMI as the primary opportunity. Android/Gynoid ratio 1.16. Bone density is right at the age average (T-score -0.6, Z-score -0.1, about 50th percentile), not a concern.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jun 3)</th><th>Scan 2 (Jul 13)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>153.4</td><td class="r-pending" id="jennifer-s2-bw">—</td><td class="r-pending" id="jennifer-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>40.6% <span style="font-size:10px;color:#888">(AM 58th)</span></td><td class="r-pending" id="jennifer-s2-bf">—</td><td class="r-pending" id="jennifer-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>89.84</td><td class="r-pending" id="jennifer-s2-lean">—</td><td class="r-pending" id="jennifer-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>61.48</td><td class="r-pending" id="jennifer-s2-fat">—</td><td class="r-pending" id="jennifer-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>128.2</td><td class="r-pending" id="jennifer-s2-vat">—</td><td class="r-pending" id="jennifer-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>5.6 · 13th %ile</td><td class="r-pending" id="jennifer-s2-almi">—</td><td class="r-pending" id="jennifer-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>1.057 (Z: -0.1)</td><td class="r-pending" id="jennifer-s2-bmd">—</td><td class="r-pending" id="jennifer-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td><td>4.11</td><td class="r-pending" id="jennifer-s2-larm-lean">—</td><td class="r-pending" id="jennifer-d-larm-lean">—</td><td>3.55</td><td class="r-pending" id="jennifer-s2-larm-fat">—</td><td class="r-pending" id="jennifer-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td>4.94</td><td class="r-pending" id="jennifer-s2-rarm-lean">—</td><td class="r-pending" id="jennifer-d-rarm-lean">—</td><td>3.44</td><td class="r-pending" id="jennifer-s2-rarm-fat">—</td><td class="r-pending" id="jennifer-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td><td>45.84</td><td class="r-pending" id="jennifer-s2-trunk-lean">—</td><td class="r-pending" id="jennifer-d-trunk-lean">—</td><td>31.93</td><td class="r-pending" id="jennifer-s2-trunk-fat">—</td><td class="r-pending" id="jennifer-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td><td>13.90</td><td class="r-pending" id="jennifer-s2-lleg-lean">—</td><td class="r-pending" id="jennifer-d-lleg-lean">—</td><td>10.20</td><td class="r-pending" id="jennifer-s2-lleg-fat">—</td><td class="r-pending" id="jennifer-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td>13.95</td><td class="r-pending" id="jennifer-s2-rleg-lean">—</td><td class="r-pending" id="jennifer-d-rleg-lean">—</td><td>10.08</td><td class="r-pending" id="jennifer-s2-rleg-fat">—</td><td class="r-pending" id="jennifer-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('jennifer')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics</div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard</th></tr></thead>
+      <tbody>
+        <tr><td>Dumbbell Neutral Grip Bench Press <span style="font-size:10px;color:#888">(new this cycle)</span><br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: revised to bodyweight/very light only, no added load (wrist)</span></td><td>— <span style="font-size:10px;color:#888">(no prior data)</span></td><td>—</td><td>—</td></tr>
+        <tr><td>Dumbbell Romanian Deadlift <br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 50 lb × 12 (or 40 lb × 14 fallback)</span></td><td>40 lb × 12 × 3 (Jun 24)</td><td>~56 lb</td><td>—</td></tr>
+        <tr><td>Dumbbell Goblet Split Squat <span style="font-size:10px;color:#888">(new unilateral variation)</span><br><span style="font-size:10px;color:#7c8aff;font-weight:600">Target: 20-25 lb per hand, quality/control</span></td><td>— <span style="font-size:10px;color:#888">(anchor: flat Goblet Squat 30 lb × 12, Jun 26)</span></td><td>~42 lb <span style="font-size:10px;color:#888">(anchor)</span></td><td>—</td></tr>
+        <tr><td>Dumbbell Incline Bench Press</td><td>30 lb × 10 × 4 (Jul 8)</td><td>~53 lb</td><td>—</td></tr>
+        <tr><td>Dumbbell Bench Press (flat)</td><td>60 lb × 12 × 3 (Jun 24)</td><td>~84 lb</td><td>—</td></tr>
+        <tr><td>Alternating Dumbbell Bent Over Row</td><td>30 lb × 10 × 3 (Jul 8)</td><td>~40 lb</td><td>—</td></tr>
+        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female · 59 (50s decade) · 153.4 lb BW</td></tr>
+        <tr><td>BB Bench Press</td><td>—</td><td colspan="2">~123 lb 1RM <span style="font-size:9px;color:#888">(0.80×BW)</span></td></tr>
+        <tr><td>BB Squat</td><td>—</td><td colspan="2">~169 lb 1RM <span style="font-size:9px;color:#888">(1.10×BW)</span></td></tr>
+        <tr><td>BB Deadlift</td><td>—</td><td colspan="2">~199 lb 1RM <span style="font-size:9px;color:#888">(1.30×BW)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">DB-only program (RECOMP, Phase 2). The Neutral Grip Bench Press target was walked back same-day after a new right wrist injury (Jul 8): bodyweight/very light work only until it settles. Goblet Split Squat and RDL are her two live push points heading into the scan.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition</div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 125g/day</div>
+      <div><strong>Restrictions:</strong> No red meat; avoids milk, yogurt, and cottage cheese; prefers real whole food</div>
+      <div><strong>Creatine:</strong> 5g/day. Does not drink alcohol.</div>
+      <div><strong>Tracking method:</strong> Photo food journal, historically inconsistent, improved noticeably since her 10-day check-in; 2-day log assigned Jul 10-11 to sharpen the picture before the scan</div>
+      <div style="margin-top:6px;color:#666"><em>Ongoing GI nausea and vomiting since about 6/21 means the coaching emphasis is protein sources that actually sit well, not pushing volume. Revisit with a doctor if it doesn't improve.</em></div>
+    </div>
+  </div>
+
+</div><!-- end modal-jennifer div -->
 
 
   </div><!-- end modal-window -->
