@@ -1106,6 +1106,88 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div><!-- end JUL 22 day-group -->
 
 
+<!-- ═══════════ JUL 23 — LORIN KENNEDY ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Thursday · July 23, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── LORIN KENNEDY ── -->
+    <div class="card" id="card-lorin">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('lorin')">Lorin Kennedy <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 58 · Recomp / Fat Loss · 5'5" · Home Gym (BB + DB + Cable)</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Recomp</span>
+          <span class="badge badge-scan">9:45 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, July 23</strong> · Second Kalos DEXA Scan · 9:45 AM · Campbell</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val">136.7</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Scan 1 Jun 22</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">28.7%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">AM 7th %ile (lean)</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">42.3</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">✅ Healthy &lt;100</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">38th %ile</div>
+          <div class="metric-label">ALMI AM</div>
+          <div class="metric-sub">6.4 · Build lever</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">87%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:87%;background:#22c55e"></div></div>
+            <div class="cons-detail">87% last 30d · 75% last 7d · 4x/week lifting + running · Female Recomp P1→P2, training around a left shoulder injury</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Why</div>
+        <div class="why-text">Longevity, performance, and aesthetics: stronger bones, less midsection and arm fat, and feeling great for skiing, running, hiking, and her 60th-birthday trip to Hawaii. Her first block was a clean fat-loss month (down 2.29 lb of fat, muscle held). Body fat is already lean for her age, so the levers are building muscle (ALMI) and trimming the midsection. Home gym, 4x/week lifting plus running, working smart around an ongoing left shoulder injury.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('lorin')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-lorin">4/8</span>
+            <span class="checklist-chevron" id="chev-lorin">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-lorin">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lorin')"><span> Iris + Everfit review complete: goals, L shoulder labrum injury, ALMI 38th, 87% consistency, home BB/DB program</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lorin')"><span> Scan 1 DEXA pulled, Jun 22 baseline populated (BF 28.7%, VAT 42.3, ALMI 6.4, BMD 1.061 normal)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lorin')"><span> ✍️ Pre-scan opener DRAFTED, awaiting Daniel's approval (not sent)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lorin')"><span> ✍️ Lift targets + nutrition DRAFTED, awaiting approval (shoulder-safe: Cyclist Squat 40×12, Hip Thrust 65×10, Lat Pulldown 55×12)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lorin')"><span> Food journal task added, Jul 21 + Jul 22 in Everfit</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lorin')"><span> Scan 1 DEXA PDF read, full L/R regional splits + BMD confirmed</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lorin')"><span> Night-before refresh, audio brief, send approved DMs, resolve Cable Seated Row sub</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lorin')"><span> Scan day: fill DEXA results, run debrief, membership renewal conversation</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end JUL 23 day-group -->
+
+
 <div class="modal-backdrop" id="modal-backdrop">
   <div class="modal-window">
 
@@ -1787,6 +1869,152 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-rita div -->
+
+
+<!-- ═══════════ MODAL — LORIN KENNEDY ═══════════ -->
+<div id="modal-lorin" class="modal-content"
+     data-name="Lorin Kennedy"
+     data-sub="Second Scan · July 23, 2026 · Recomp / Fat Loss · F · 58">
+
+  <script>
+  window.__scan1_lorin = {
+    bw: 136.7, bfPct: 28.7, bfAMpct: 7,
+    lean: 96.75, fat: 38.93, vat: 42.3,
+    almiVal: 6.4, almiAMpct: 38,
+    bmd: 1.061, bmdZ: -0.1,
+    regional: {
+      larm:  { lean: 5.05,  fat: 2.56 },
+      rarm:  { lean: 4.98,  fat: 2.31 },
+      trunk: { lean: 49.08, fat: 17.16 },
+      lleg:  { lean: 15.70, fat: 7.74 },
+      rleg:  { lean: 15.29, fat: 7.01 }
+    }
+  };
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="lorin-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Clean fat-loss block:</strong> down 2.29 lb of fat from May 27 to Jun 22 while holding muscle, body fat easing 29.9% → 28.7%. Exactly the recomp direction.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Strength climbing while protecting the shoulder:</strong> Barbell Hip Thrust 45 → 65 lb, DB Cyclist Squat 25 → 40 lb, Lat Pulldown 45 → 55 lb.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>87% training consistency</strong> over the last 30 days, 4x/week lifting plus running.</span></div>
+      <div class="success-win"><span class="win-icon">🧠</span><span class="win-text"><strong>Smart about the shoulder:</strong> pulled back the barbell squat load and leaned into shoulder-friendly variations rather than pushing through pain.</span></div>
+      <div class="success-win"><span class="win-icon">🎿</span><span class="win-text"><strong>Stays active in real life:</strong> just back from a 1-month Europe/Austria ski trip.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Lift targets DRAFTED, pending Daniel's approval (messages held). All chosen to be shoulder-safe (skip pressing + heavy bar-back squat):</div>
+      <div class="success-target-item"><strong>⏳ DB Cyclist Squat:</strong> 40 lb × 10 → <strong>40 × 12</strong>. Climbed from the 25s; loads the legs with no bar on the shoulder.</div>
+      <div class="success-target-item"><strong>⏳ Barbell Hip Thrust:</strong> 65 lb × 8-9 → <strong>65 × 10 all sets</strong>. Climbed 45 → 65 lb; zero shoulder involvement.</div>
+      <div class="success-target-item"><strong>⏳ Lat Pulldown:</strong> 55 lb × 10-12 → <strong>55 × 12 all sets</strong>. Climbed 45 → 55 lb; shoulder-friendly back work.</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Recomposition / fat loss + muscle tone.</strong> Body fat 28.7% is already lean for her age (AM 7th %ile), so the levers are building ALMI (38th %ile age-matched, 6.4 kg/m²) and trimming midsection and arm fat for the bikini goal. VAT 42.3 cm² is healthy and BMD is normal (T -0.6), so bone work is preventive.</div>
+    <div class="dp-why">Longevity, performance, and aesthetics: stronger bones, less midsection and arm fat, and feeling great for skiing, running, hiking, and her 60th-birthday trip to Hawaii.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Left shoulder torn labrum / frozen shoulder, ongoing and symptomatic.</strong> Modify push-ups to knees after full eccentric, keep shoulders packed, avoid shrugging. Heavy barbell back-squats bother the shoulder (bar position), she has already reduced the load. Program around it: shoulder-friendly lower and pulls, avoid heavy overhead and pressing. History of bilateral forearm fractures.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Needs a Cable Seated Row substitute</strong> (her machine does not accommodate the exercise), she flagged it 2 days ago. Open program edit.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Consistency and intensity are strong:</strong> 87% last 30d, 4x/week lifting plus running, progressive overload with top-set emphasis.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Fat loss trending well:</strong> down 2.29 lb of fat with muscle held in the first block.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Nutrition:</strong> 115g protein/day, no dairy, low-carb with carbs timed around workouts (mom's diabetes history). Struggles to get the protein shake in on non-workout days.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Frequent traveler</strong> (about 1x/month); just back from a 1-month Europe ski trip, with an upcoming family cabin trip. 4-Week membership ends the day of the scan (May 27 – Jul 23), renewal conversation.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏥</span><span>Left shoulder torn labrum / frozen shoulder (ongoing); bilateral forearm fracture history; heavy bar back-squats aggravate the shoulder; Bulgarian split squats stressful. Modify pressing, keep shoulders packed, avoid shrugging.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥗</span><span>No dairy (no Greek yogurt/cottage cheese); 115 g protein/day (1 shake + fist-sized protein at 3 meals); clean, low-processed, low-carb with carbs timed pre/post-workout (metabolic flexibility, family diabetes history); 5 g creatine; no extended fasting (12 h window).</span></div>
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Home gym (barbells, DBs, cables, bands, adjustable bench), son spots, ~1 hr sessions, no mid-body pulley. Female Recomp 4-day split (Full Body / Lower / Upper / Core &amp; Glutes), moving P1 to P2. Needs a Cable Seated Row substitute.</span></div>
+      <div class="personal-note"><span class="note-emoji">✈️</span><span>Frequent traveler (1x/month); just returned from a 1-month Europe/Austria ski trip; upcoming family cabin trip (hiking/climbing).</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>4-Week membership May 27 – Jul 23 (ends the day of the scan); renewal conversation.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (Jun 22, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">136.7 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val">28.7%</div><div class="snap-lbl">Body Fat (7th AM %ile, lean)</div></div>
+      <div class="snap-metric"><div class="snap-val">96.75 lb</div><div class="snap-lbl">Lean + BMC</div></div>
+      <div class="snap-metric"><div class="snap-val">38.93 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">42.3 cm²</div><div class="snap-lbl">VAT (Healthy &lt;100)</div></div>
+      <div class="snap-metric"><div class="snap-val">38th %ile</div><div class="snap-lbl">ALMI AM (6.4 kg/m²)</div></div>
+      <div class="snap-metric"><div class="snap-val">1.061</div><div class="snap-lbl">BMD (T -0.6, normal)</div></div>
+      <div class="snap-metric"><div class="snap-val">65"</div><div class="snap-lbl">Height (5'5") · Age 58</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Total Mass 135.68 lb. May 27 → Jun 22 was a clean fat-loss block: fat -2.29 lb, lean maintained (+0.12), body fat -1.2. Body fat is already lean for her age (AM 7th %ile); the levers are ALMI (38th %ile) and midsection/arm fat. Bone density is normal (T -0.6), so her "stronger bones" goal is preventive.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jun 22)</th><th>Scan 2 (Jul 23)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>136.7</td><td class="r-pending" id="lorin-s2-bw">—</td><td class="r-pending" id="lorin-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>28.7% <span style="font-size:10px;color:#888">(AM 7th)</span></td><td class="r-pending" id="lorin-s2-bf">—</td><td class="r-pending" id="lorin-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>96.75</td><td class="r-pending" id="lorin-s2-lean">—</td><td class="r-pending" id="lorin-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>38.93</td><td class="r-pending" id="lorin-s2-fat">—</td><td class="r-pending" id="lorin-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>42.3</td><td class="r-pending" id="lorin-s2-vat">—</td><td class="r-pending" id="lorin-d-vat">—</td></tr>
+        <tr><td>ALMI (kg/m²)</td><td>6.4 · 38th %ile</td><td class="r-pending" id="lorin-s2-almi">—</td><td class="r-pending" id="lorin-d-almi">—</td></tr>
+        <tr><td>BMD</td><td>1.061 (T: -0.6)</td><td class="r-pending" id="lorin-s2-bmd">—</td><td class="r-pending" id="lorin-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Lean Mass (lb)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Left Arm</td><td>5.05</td><td class="r-pending" id="lorin-s2-larm-lean">—</td><td class="r-pending" id="lorin-d-larm-lean">—</td><td>2.56</td><td class="r-pending" id="lorin-s2-larm-fat">—</td><td class="r-pending" id="lorin-d-larm-fat">—</td></tr>
+        <tr><td>Right Arm</td><td>4.98</td><td class="r-pending" id="lorin-s2-rarm-lean">—</td><td class="r-pending" id="lorin-d-rarm-lean">—</td><td>2.31</td><td class="r-pending" id="lorin-s2-rarm-fat">—</td><td class="r-pending" id="lorin-d-rarm-fat">—</td></tr>
+        <tr><td>Trunk</td><td>49.08</td><td class="r-pending" id="lorin-s2-trunk-lean">—</td><td class="r-pending" id="lorin-d-trunk-lean">—</td><td>17.16</td><td class="r-pending" id="lorin-s2-trunk-fat">—</td><td class="r-pending" id="lorin-d-trunk-fat">—</td></tr>
+        <tr><td>Left Leg</td><td>15.70</td><td class="r-pending" id="lorin-s2-lleg-lean">—</td><td class="r-pending" id="lorin-d-lleg-lean">—</td><td>7.74</td><td class="r-pending" id="lorin-s2-lleg-fat">—</td><td class="r-pending" id="lorin-d-lleg-fat">—</td></tr>
+        <tr><td>Right Leg</td><td>15.29</td><td class="r-pending" id="lorin-s2-rleg-lean">—</td><td class="r-pending" id="lorin-d-rleg-lean">—</td><td>7.01</td><td class="r-pending" id="lorin-s2-rleg-fat">—</td><td class="r-pending" id="lorin-d-rleg-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('lorin')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a399f9c9fdd774c8d4f457c/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Est. 1RM</th><th>Gold Standard</th></tr></thead>
+      <tbody>
+        <tr><td>Barbell Squat <span style="font-size:10px;color:#f97316;font-weight:600">(reduced 95 → 70 for shoulder)</span><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~205 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5×BW, long-term)</span></td><td>70 lb × 12 × 3 (Jul 14)</td><td>~98 lb</td><td>—</td></tr>
+        <tr><td>Barbell Hip Thrust <span style="font-size:10px;color:#22c55e;font-weight:600">(45 → 65 lb, shoulder-safe)</span></td><td>65 lb × 8-9 (Jul 14)</td><td>~85 lb</td><td>—</td></tr>
+        <tr><td>DB Cyclist Squat <span style="font-size:10px;color:#22c55e;font-weight:600">(25 → 40 lb)</span></td><td>40 lb × 10 × 3 (Jul 14)</td><td>~53 lb</td><td>—</td></tr>
+        <tr><td>Lat Pulldown <span style="font-size:10px;color:#22c55e;font-weight:600">(45 → 55 lb)</span></td><td>55 lb × 12/10/10 (Jul 15)</td><td>~77 lb</td><td>—</td></tr>
+        <tr><td>DB Bench Press <span style="font-size:10px;color:#888">(shoulder-sensitive)</span></td><td>40 lb × 12/10/10 (Jul 15)</td><td>~56 lb</td><td>—</td></tr>
+        <tr><td>DB Bulgarian Split Squat</td><td>25 lb × 8 × 3 (Jul 14)</td><td>~32 lb</td><td>—</td></tr>
+        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards · Female · 58 (under 60) · 136.7 lb BW</td></tr>
+        <tr><td>BB Bench Press <span style="font-size:9px;color:#888">(currently DB, shoulder)</span></td><td>—</td><td colspan="2">~135 lb 1RM <span style="font-size:9px;color:#888">(1.0×BW)</span></td></tr>
+        <tr><td>BB Deadlift</td><td>—</td><td colspan="2">~275 lb 1RM <span style="font-size:9px;color:#888">(2.0×BW)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Home barbell gym (son spots), Female Recomp P1→P2. The shoulder injury limits pressing and heavy bar back-squat (she cut BB Squat from 95 to 70 lb). Targets drafted (pending approval) are all shoulder-safe. Est. 1RM climbing: Hip Thrust 45→65, Cyclist Squat 25→40, Lat Pulldown 45→55.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a399f9c9fdd774c8d4f457c/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 115g/day</div>
+      <div><strong>Restrictions:</strong> No dairy (no Greek yogurt/cottage cheese); clean, low-processed, low-carb</div>
+      <div><strong>Strategy:</strong> 1 shake + fist-sized protein at 3 meals; carbs timed pre/post-workout (metabolic flexibility, family diabetes history). Struggles with the shake on non-workout days.</div>
+      <div><strong>Supplements:</strong> 5g creatine; no extended fasting (12 h overnight window)</div>
+      <div><strong>Tracking method:</strong> photo food journal; 2-day log assigned Jul 21-22 before the scan</div>
+    </div>
+  </div>
+
+</div><!-- end modal-lorin div -->
 
 
   </div><!-- end modal-window -->
