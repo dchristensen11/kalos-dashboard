@@ -1121,6 +1121,87 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 </div><!-- end JUL 30 day-group -->
 
+<div class="day-group">
+  <div class="day-label">Monday · August 3, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── ERIC MUSSYNSKI ── -->
+    <div class="card" id="card-eric">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('eric')">Eric Mussynski <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 55 · Second Scan · Recomp Dumbbells P2</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Recomp</span>
+          <span class="badge badge-scan">9:00 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, August 3</strong> · Second Kalos DEXA Scan · 9:00 AM · San Jose · <strong style="color:#1565c0">4-week membership ends scan day — renewal live</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-val">187.8</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Jul 6 baseline</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">27.0%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">Recomp — both ways</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">162.9</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Elevated — target down</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">15th %ile</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">Low — build lean</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">20%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:20%;background:#ef4444"></div></div>
+            <div class="cons-detail">20% last 30d, 0% last 7d · last logged lift Jul 10 (18 days ago), off the gym floor with a lower-back flare-up (seeing a chiro). Still logging food every day, so he is engaged, not checked out. Week-out is a comeback frame, not a scolding.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Longevity, aesthetics and performance. He wants to lose the gut and get strong enough to keep dirt biking, hiking, camping and wakeboarding, and he carries a real fear of high visceral fat despite looking lean-ish. The through-line is breaking a recurring 3-year back-injury cycle so he can get back out on the bike and the water.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('eric')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-eric">6/8</span>
+            <span class="checklist-chevron" id="chev-eric">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-eric">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Scan 1 DEXA baseline pulled (Iris Results Dashboard)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Iris goals, why, coaching flags pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Everfit reviewed (training dip, lifts, protein, DMs)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Full modal + lift/nutrition targets drafted</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Opener + targets/nutrition DMs sent (Jul 30, approved)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('eric')"><span> Food journal task added (Aug 1-2)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('eric')"><span> Next program decided (post-scan, back-aware)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('eric')"><span> Renewal recommendation in mind (membership ends scan day)</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end AUG 3 day-group -->
+
+
 
 
 
@@ -1772,6 +1853,142 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
+
+
+<div id="modal-eric" class="modal-content"
+     data-name="Eric Mussynski"
+     data-sub="Second Scan · August 3, 2026 · Recomp (VAT down / ALMI up) · M · 55">
+
+  <script>
+  window.__scan1_eric = {
+    bw: 187.8, bfPct: 27.0, bfAMpct: null,
+    lean: 132.0, fat: 50.7, vat: 162.9,
+    almiVal: 7.73, almiAMpct: 15,
+    bmd: null, bmdZ: null,
+    scan1Date: 'Jul 6, 2026 (4-week baseline)', height: 73,
+    regional: {
+      arms:  { lean: 15.6, fat: 5.6  },
+      trunk: { lean: 65.8, fat: 29.3 },
+      legs:  { lean: 43.0, fat: 12.8 }
+    }
+  };
+  </script>
+
+  <!-- 1 — Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="eric-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🎯</span><span class="win-text"><strong>Momentum before the block even started:</strong> from the Jun 1 intro to the Jul 6 baseline he dropped 4.4 lb, cut fat mass 4.3 lb and pulled visceral fat down 15.6 cm² (178.5 → 162.9) while holding lean mass flat. The engine works when he is consistent.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Bench moving in the right direction:</strong> dumbbell bench went 75 lb × 12 (Jul 7) to 80 lb × 12 (Jul 10), est 1RM ~112. Clean pressing strength with room to build.</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>Dialed on the food side:</strong> logging meals every day right through the back flare, which is the habit that actually drives the recomp.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">The training floor went quiet: last logged lift was Jul 10 (18 days ago) as a lower-back flare-up pulled him off heavy work and into chiro, ice/heat, walking and stretching. Week-out (sent Jul 30, approved) is a back-safe comeback, not a push:</div>
+      <div class="success-target-item"><strong>Neutral grip DB bench press (Thu):</strong> back to the 75-80s for a clean 10-12, his strongest lift and safe on the spine.</div>
+      <div class="success-target-item"><strong>Goblet split squat (Sat):</strong> 20 lb for 10-12 per side, tall torso, front-loaded and unilateral so it stays kind to the back.</div>
+      <div class="success-target-item"><strong>Dumbbell hip thrust (Thu):</strong> the priority, 10 clean reps ribs-down; strong glutes offload the lower back and serve the ALMI build.</div>
+      <div class="success-target-item"><strong>2-day photo food log</strong> assigned Aug 1-2 for a clean read at the scan.</div>
+    </div>
+  </div>
+
+  <!-- 2 — Goal & Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Recomp — two levers at once.</strong> Pull visceral fat down from 162.9 cm² and build lean mass off a low ALMI (7.73 kg/m², 15th percentile age-matched). ALMI is the bigger long-term lever, so the block is about adding lean while the fat trends down. He already proved both can move in the run-up to baseline (VAT -15.6, lean held).</div>
+    <div class="dp-why">Longevity, aesthetics and performance. He wants to lose the gut and get strong enough to keep dirt biking, hiking, camping and wakeboarding, and he carries a real fear of high visceral fat despite looking lean-ish. The whole thing is about breaking a recurring 3-year back-injury cycle so he can get back out on the bike and the water.</div>
+  </div>
+
+  <!-- 3 — Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Acute lower-back flare is the #1 factor.</strong> New tweak across the belt line (recurs ~every 3 years, hard to get out of bed), seeing a chiro, managing with ice/heat, walking and stretching. Keep everything off the loaded spine (hip thrust, split squat, neutral-grip press) and frame the last stretch as easing back in, not chasing PRs.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Old rib trauma:</strong> ribs 5-9 broken laterally + a punctured lung from a dirt bike crash. Ribs still ache lying down and it limits twisting and bracing, so overhead and heavy-brace work needs care.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Engaged despite the layoff:</strong> logging food every day, sent his steps (9,073), asked for hamstring-stretch help. The intent is there, the body just needs to settle.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Momentum on the numbers:</strong> VAT and fat mass already dropped into the baseline while lean held. The recomp works when he trains.</span></div>
+      <div class="coaching-point"><span class="cp-dot yellow"></span><span><strong>Renewal live:</strong> 4-Week membership Jun 1 – Aug 3 ends the day of the scan. Michigan / Ann Arbor trip Aug 4-10 right after, so position the next block around the return.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Full home gym: squat rack, Olympic bar, dumbbells, med balls, pull-up bar, rings, rope, C2 rower. Prior CrossFit / barbell experience. Current program is dumbbell-only (Recomp Dumbbells P2, Full Body A/B/C, 3x/week).</span></div>
+      <div class="personal-note"><span class="note-emoji">🩹</span><span>Lower-back flare (chiro, ice/heat, walking, stretching) plus old broken ribs 5-9 and a punctured lung. Requesting hamstring-stretch suggestions. Keep the spine unloaded and the ribs protected.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥗</span><span>152g protein/day. Fist portions + 2 shakes (25-30g), Greek yogurt, eggs/egg whites, sweet potato, broccoli, avocado, berries, omega-3s, Transparent Labs. Protein first every meal; cut avocado portions; lower carbs on low-activity / injury days.</span></div>
+      <div class="personal-note"><span class="note-emoji">🍽️</span><span>2:1 pre/post workout: pre (45-60 min) 25g shake + 50g carbs + 1 tbsp PB; immediate post the same; 60-90 min later 25g protein + 50g carbs from rice / potato.</span></div>
+      <div class="personal-note"><span class="note-emoji">✈️</span><span>Travels ~1 week/month for work; Michigan / Ann Arbor trip Aug 4-10 right after the scan. Delayed start (intro Jun 1, program baseline Jul 6). 4-Week membership ends scan day, renewal live.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 — Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot — Scan 1 Baseline (Jul 6, 2026 · 4-week baseline)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">187.8 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val">27.0%</div><div class="snap-lbl">Body Fat</div></div>
+      <div class="snap-metric"><div class="snap-val">132.0 lb</div><div class="snap-lbl">Lean + BMC</div></div>
+      <div class="snap-metric"><div class="snap-val">50.7 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">162.9 cm²</div><div class="snap-lbl">VAT (elevated — target)</div></div>
+      <div class="snap-metric"><div class="snap-val">15th %ile</div><div class="snap-lbl">ALMI AM (7.73 kg/m² — build)</div></div>
+      <div class="snap-metric"><div class="snap-val">73"</div><div class="snap-lbl">Height (6'1") · Age 55</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Delayed start: the intro scan was Jun 1, but the 4-week program began at the Jul 6 baseline, so Jul 6 is Scan 1 and Aug 3 is the true 4-week comparison (28 days). Between intro and baseline he already dropped 4.4 lb and 15.6 cm² of VAT while holding lean, so the trend is the right direction. The two things to move: VAT down and ALMI up.</div>
+  </div>
+
+  <!-- 5 — DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results — Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jul 6 baseline)</th><th>Scan 2 (Aug 3)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>187.8</td><td class="r-pending" id="eric-s2-bw">—</td><td class="r-pending" id="eric-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>27.0%</td><td class="r-pending" id="eric-s2-bf">—</td><td class="r-pending" id="eric-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>132.0</td><td class="r-pending" id="eric-s2-lean">—</td><td class="r-pending" id="eric-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>50.7</td><td class="r-pending" id="eric-s2-fat">—</td><td class="r-pending" id="eric-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>162.9</td><td class="r-pending" id="eric-s2-vat">—</td><td class="r-pending" id="eric-d-vat">—</td></tr>
+        <tr><td>ALMI (AM %ile)</td><td>15th %ile</td><td class="r-pending" id="eric-s2-almi">—</td><td class="r-pending" id="eric-d-almi">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb) — combined, Scan 1 baseline (Jul 6)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Arms (both)</td><td>15.6</td><td class="r-pending" id="eric-s2-arms-lean">—</td><td class="r-pending" id="eric-d-arms-lean">—</td><td>5.6</td><td class="r-pending" id="eric-s2-arms-fat">—</td><td class="r-pending" id="eric-d-arms-fat">—</td></tr>
+        <tr><td>Trunk</td><td>65.8</td><td class="r-pending" id="eric-s2-trunk-lean">—</td><td class="r-pending" id="eric-d-trunk-lean">—</td><td>29.3</td><td class="r-pending" id="eric-s2-trunk-fat">—</td><td class="r-pending" id="eric-d-trunk-fat">—</td></tr>
+        <tr><td>Legs (both)</td><td>43.0</td><td class="r-pending" id="eric-s2-legs-lean">—</td><td class="r-pending" id="eric-d-legs-lean">—</td><td>12.8</td><td class="r-pending" id="eric-s2-legs-fat">—</td><td class="r-pending" id="eric-d-legs-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('eric')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 — Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a4c195715688f833f799898/calendar" target="_blank" class="dp-title-link">Training Tab ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Week-Out Target</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Neutral Grip DB Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>80 lb × 12 (Jul 10, flat DB bench)</td><td>Back to 75-80 lb × 10-12, palms in</td><td>Up from 75×12 Jul 7, est 1RM ~112. Back-safe and his strongest lift, a confidence builder after the layoff.</td></tr>
+        <tr><td>Dumbbell Goblet Split Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>Goblet Cossack 15 lb × 12 ×3 (Jul 7)</td><td>20 lb × 10-12/side, controlled</td><td>Front-loaded and unilateral, kind to the lower back. Drop to 15 lb / bodyweight if the back is cranky.</td></tr>
+        <tr><td>Dumbbell Hip Thrust <span style="font-size:10px;color:#f97316;font-weight:600">(priority — glute/posterior)</span></td><td>New movement, not yet logged</td><td>10 clean reps, ribs down, full squeeze</td><td>Glute strength offloads the lower back and drives the ALMI build. The one lift most worth nailing.</td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards · Male · 55 (40-60) · 187.8 lb BW · long-term barbell targets</td></tr>
+        <tr><td>BB Bench Press <span style="font-size:9px;color:#888">(currently DB)</span></td><td>—</td><td colspan="2">~235 lb 1RM <span style="font-size:9px;color:#888">(1.25×BW)</span></td></tr>
+        <tr><td>BB Back Squat <span style="font-size:9px;color:#888">(currently DB)</span></td><td>—</td><td colspan="2">~280 lb 1RM <span style="font-size:9px;color:#888">(1.5×BW)</span></td></tr>
+        <tr><td>BB Deadlift <span style="font-size:9px;color:#888">(currently DB)</span></td><td>—</td><td colspan="2">~375 lb 1RM <span style="font-size:9px;color:#888">(2.0×BW)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">12 dumbbell lifts logged through Jul 10 (bench, RDL, kickstand / sumo deadlift, gorilla + single-arm row, goblet Cossack squat, reverse lunge, presses), then a back flare stopped logged training. Program is dumbbell-only right now, so barbell Gold Standards are shown as the long-term trajectory once the back is healthy — he has a home squat rack + Olympic bar and prior barbell experience to build back to them.</div>
+  </div>
+
+  <!-- 7 — Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a4c195715688f833f799898/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 152g/day, protein first</div>
+      <div><strong>Strategy:</strong> fist-size protein at each meal + 2 shakes (25-30g each); Greek yogurt, eggs / egg whites, sweet potato, broccoli, avocado, berries, omega-3s, Transparent Labs powder. Cut avocado portions; lower carbs on low-activity / injury days.</div>
+      <div><strong>Pre/post workout:</strong> 2:1 pre/post — pre (45-60 min) 25g shake + 50g carbs + 1 tbsp peanut butter, immediate post the same, then 60-90 min later 25g protein + 50g carbs from rice / potato.</div>
+      <div><strong>Why it matters:</strong> protein protects lean tissue and drives the ALMI build while VAT trends down; carb timing fuels the sessions without feeding fat gain.</div>
+      <div><strong>Logging status:</strong> logging food daily right through the back flare (strong). 2-day photo food log assigned Aug 1-2 for a clean read at the scan.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-eric div -->
 
   </div><!-- end modal-window -->
 </div><!-- end modal-backdrop -->
