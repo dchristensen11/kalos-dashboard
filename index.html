@@ -23,6 +23,22 @@
   }
 
   /* ── HEADER ── */
+  .navlink {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 13px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 8px;
+    color: rgba(255,255,255,.82);
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .navlink:hover {
+    border-color: rgba(255,255,255,.6);
+    color: #fff;
+    background: rgba(255,255,255,.08);
+  }
   .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
     color: white;
@@ -683,6 +699,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="header-left">
     <h1>⚡ Second Scan Week</h1>
     <p>Kalos · July 27 – 30, 2026 · Daniel Christensen · 4 second scans this week</p>
+    <a class="navlink" href="members/" title="All members dashboard">All members &rarr;</a>
   </div>
   <div class="header-stats">
     <div class="header-stat"><div class="num">6</div><div class="lbl">Remaining</div></div>
