@@ -718,6 +718,87 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══════════ AUG 5 — JAMIE LEWIS ═══════════ -->
 <div class="day-group">
+  <div class="day-label">Thursday · August 13, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── JAYA BANNARBIE ── -->
+    <div class="card" id="card-jaya">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('jaya')">Jaya Bannarbie <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female · 30 · Second Scan (4-Week) · Fat Loss / Recomp</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Fat Loss</span>
+          <span class="badge badge-scan">10:30 AM</span>
+        
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug13.html" target="_blank">🎧 Audio Brief ↗</a></div></div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, August 13</strong> · Second Kalos DEXA Scan · 10:30 AM · Campbell · <strong style="color:#c2410c">4-Week membership expired Aug 9, this is a re-engagement and renewal read</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">184.7</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Jun 25 baseline</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">35.6%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">Fat loss is the goal</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">92.5</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Elevated</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">87th %ile</div>
+          <div class="metric-label">ALMI AM%</div>
+          <div class="metric-sub">Strong lean base</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">33%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:33%;background:#ef4444"></div></div>
+            <div class="cons-detail">33% last 30d · 0% last 7d (on travel) · 9/18 primaries since Jul 8 · now locked to 3x/week Tue/Thu/Sat</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Deep Why</div>
+        <div class="why-text">Mom identity: wants to keep up with her kid and feel high-energy without leaning on caffeine or going sedentary. Came in strong as a new 4-week member and the strength is clearly there (big pull PRs), consistency is the piece to lock in.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('jaya')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-jaya">6/8</span>
+            <span class="checklist-chevron" id="chev-jaya">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-jaya">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Scan 1 DEXA baseline pulled (Jun 25 intro, via Iris Results Dash)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Iris goals, why, coaching flags pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Everfit training, lifts, nutrition reviewed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Modal built from real data</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Lift anchors listed, Daniel sets targets at the scan</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jaya')"><span> Week-out messages not sent (built night before), Daniel handling messaging</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jaya')"><span> Targets set with Jaya in the room</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jaya')"><span> Scan 2 results filled in (day of)</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="day-group">
   <div class="day-label">Wednesday · August 5, 2026</div>
   <div class="cards-row">
 
@@ -1262,6 +1343,170 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   };
 </script>
 
+
+<!-- ── JAYA BANNARBIE MODAL ── -->
+<div id="modal-jaya" class="modal-content"
+     data-name="Jaya Bannarbie"
+     data-sub="Second Scan (4-Week) · August 13, 2026 · Fat Loss / Recomp · F · 30"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug13.html">
+
+  <script>
+  window.__scan1_jaya = {
+    bw: 184.7, bfPct: 35.6, bfAMpct: null,
+    lean: 113.0, fat: 65.8, vat: 92.5,
+    almiVal: null, almiAMpct: 87,
+    bmd: null, bmdZ: null,
+    scan1Date: 'Jun 25, 2026 (intro baseline)', height: 67,
+    regional: {
+      arms:  { lean: 12.1, fat: 7.4 },
+      trunk: { lean: 52.8, fat: 31.2 },
+      legs:  { lean: 41.5, fat: 24.8 }
+    }
+  };
+  </script>
+
+  <!-- 1 - Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jaya-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Big pull-strength jump.</strong> Cable Seated Row went 42.5 to 99 lb x 12 (+134%) and Lat Pulldown 70 to 99 lb x 10 (+31%), both all-time PRs by Aug 3. The upper-body engine is clearly responding.</span></div>
+      <div class="success-win"><span class="win-icon">🙌</span><span class="win-text"><strong>Asked to be kept accountable.</strong> She explicitly said "keep me accountable" after the 3-day plan was laid out. She responds to external structure, so a locked schedule works better than autonomy for her.</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>Can execute quality meals when she logs.</strong> Grilled steak with potatoes and zucchini (48g protein) and an egg scramble with greens show she knows how to build a good plate. The gap is consistency of logging, not knowledge.</span></div>
+      <div class="success-win"><span class="win-icon">🦵</span><span class="win-text"><strong>Lower-body progress despite travel.</strong> DB Sumo Squat 60 to 65 x 12, DB Bulgarian Split Squat 20 to 25 x 8, lateral raise 6 to 20. Steady quality reps on the days she shows up.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Her 4-week membership <strong>expired Aug 9</strong>, so this is a re-engagement and renewal conversation as much as a results read. No week-out messages or lift targets were sent, Daniel is setting the scan-day targets live with Jaya in the room. Frame it as a progress check and a decision point for the next block:</div>
+      <div class="success-target-item"><strong>Lead with the wins:</strong> the pull PRs prove the engine works when she trains. Open there.</div>
+      <div class="success-target-item"><strong>Name the real lever:</strong> strong lean base (ALMI 87th %ile) to protect, body fat 35.6% and VAT 92.5 (elevated) to trend down. Recomp, not a crash cut.</div>
+      <div class="success-target-item"><strong>Solve consistency:</strong> 33% last 30d and 0% last 7d is the barrier, driven by travel and busy weeks, not capability. Give her the locked 3x/week and a dead-simple food-photo ask.</div>
+    </div>
+  </div>
+
+  <!-- 2 - Goal & Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Recomposition: drop fat and VAT while protecting a strong lean base.</strong> Body fat is 35.6% and VAT is 92.5 cm² (elevated), while ALMI already sits at the 87th age-matched percentile. The lever is fat loss with muscle preserved, run through a locked 3x/week (Tue/Thu/Sat) plan to rebuild adherence first.</div>
+    <div class="dp-why">Mom identity: keep up with her kid and feel high-energy without relying on caffeine or going sedentary.</div>
+  </div>
+
+  <!-- 3 - Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Consistency is the core issue.</strong> 33% training last 30d, 0% last 7d, 9 of 18 primary sessions since Jul 8. Pattern of slacking when work plus Livermore baseball tournament weekends hit ("I started to slack again"). Membership expired Aug 9, so this is re-engagement and renewal as much as results.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Nutrition logging is sparse.</strong> 16 meals over 8 of 42 days and many meals fall short of the 150g protein target. Drive-thru eating on travel weekends. Simplify the ask to half-eaten photos with a note so momentum survives busy weeks.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Cranky knee, minor.</strong> Old basketball injury, flagged as not limiting. Keep single-leg and loaded lower work controlled, machine and dumbbell based is fine.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Highly coachable.</strong> Asked directly to be kept accountable and responds to external structure. The locked Tue/Thu/Sat schedule plays to that.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Intensity is scattered but the engine is there.</strong> Load added to later sets in only 4 of 9 recent workouts, yet pull strength still climbed hard. Room to add progressive load now.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Female Recomposition 4-Day, Phase 2 since Jul 31. Now locked to 3x/week (Tue/Thu/Sat) to rebuild adherence. Avg session 1h02, dumbbell, machine and cable based.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥗</span><span>Protein target ~150g/day, fist-size protein at breakfast, lunch and dinner plus 2 shakes (with carbs), start meals with protein, avoid combining fat and carbs, on travel keep protein high and gauge carbs by activity.</span></div>
+      <div class="personal-note"><span class="note-emoji">🦵</span><span>Knee: old basketball injury, minor and not limiting. Keep lower body controlled, machine and DB based.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>4-Week member Jul 8 to Aug 9, 2026 (expired). East Coast (America/New_York). Travel: Livermore baseball tournament weekends with the family. Steps ~3400/day, sleep ~9h.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 - Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot: Scan 1 Baseline (Jun 25, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">184.7 lb</div><div class="snap-lbl">Body Weight</div></div>
+      <div class="snap-metric"><div class="snap-val">35.6%</div><div class="snap-lbl">Body Fat</div></div>
+      <div class="snap-metric"><div class="snap-val">113.0 lb</div><div class="snap-lbl">Lean Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">65.8 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">92.5 cm²</div><div class="snap-lbl">VAT (elevated)</div></div>
+      <div class="snap-metric"><div class="snap-val">87th %ile</div><div class="snap-lbl">ALMI AM (strong base)</div></div>
+      <div class="snap-metric"><div class="snap-val">—</div><div class="snap-lbl">BMD (not on results dash)</div></div>
+      <div class="snap-metric"><div class="snap-val">67"</div><div class="snap-lbl">Height (5'7") · Age 30</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Scan 1 is the Jun 25 intro baseline, the Aug 13 scan is the second measurement (~49 days out). The story to build: a strong lean base (ALMI 87th %ile) to protect while body fat (35.6%) and VAT (92.5, elevated) trend down. Bone density was not shown on the Iris results dashboard, so it is left blank rather than estimated.</div>
+  </div>
+
+  <!-- 5 - DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results: Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jun 25 baseline)</th><th>Scan 2 (Aug 13)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>184.7</td><td class="r-pending" id="jaya-s2-bw">—</td><td class="r-pending" id="jaya-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>35.6%</td><td class="r-pending" id="jaya-s2-bf">—</td><td class="r-pending" id="jaya-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>113.0</td><td class="r-pending" id="jaya-s2-lean">—</td><td class="r-pending" id="jaya-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>65.8</td><td class="r-pending" id="jaya-s2-fat">—</td><td class="r-pending" id="jaya-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>92.5</td><td class="r-pending" id="jaya-s2-vat">—</td><td class="r-pending" id="jaya-d-vat">—</td></tr>
+        <tr><td>ALMI (AM %ile)</td><td>87th %ile</td><td class="r-pending" id="jaya-s2-almi">—</td><td class="r-pending" id="jaya-d-almi">—</td></tr>
+        <tr><td>BMD (g/cm²)</td><td>—</td><td class="r-pending" id="jaya-s2-bmd">—</td><td class="r-pending" id="jaya-d-bmd">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jun 25)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Arms (both)</td><td>12.1</td><td class="r-pending" id="jaya-s2-arms-lean">—</td><td class="r-pending" id="jaya-d-arms-lean">—</td><td>7.4</td><td class="r-pending" id="jaya-s2-arms-fat">—</td><td class="r-pending" id="jaya-d-arms-fat">—</td></tr>
+        <tr><td>Trunk</td><td>52.8</td><td class="r-pending" id="jaya-s2-trunk-lean">—</td><td class="r-pending" id="jaya-d-trunk-lean">—</td><td>31.2</td><td class="r-pending" id="jaya-s2-trunk-fat">—</td><td class="r-pending" id="jaya-d-trunk-fat">—</td></tr>
+        <tr><td>Legs (both)</td><td>41.5</td><td class="r-pending" id="jaya-s2-legs-lean">—</td><td class="r-pending" id="jaya-d-legs-lean">—</td><td>24.8</td><td class="r-pending" id="jaya-s2-legs-fat">—</td><td class="r-pending" id="jaya-d-legs-fat">—</td></tr>
+      </tbody>
+    </table>
+    <button onclick="printDexaSummary('jaya')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 - Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a3d5add820115d8cb5b63e8/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
+      <strong>🎯 Scan-day lift targets, Daniel to set live.</strong> No week-out targets were sent. Recommended anchors (most recent top set) to build benchmarks from:
+      <div style="margin-top:6px">• <strong>Pull, Cable Seated Row:</strong> 99 lb x 12 (Aug 3, +134% PR)</div>
+      <div>• <strong>Pull, Lat Pulldown:</strong> 99 lb x 10 (Aug 3, PR)</div>
+      <div>• <strong>Push, DB Incline Bench Press:</strong> 30 lb x 12 (Aug 3)</div>
+      <div>• <strong>Squat, Hack Squat Machine:</strong> 90 lb x 12 (Aug 3)</div>
+      <div>• <strong>Hinge, DB Sumo Squat:</strong> 65 lb x 12 (Aug 1, +18%)</div>
+    </div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Cable Seated Row <span style="font-size:10px;color:#888">(pull)</span></td><td>99 lb x 12 <span style="font-size:10px;color:#888">(Aug 3, PR)</span></td><td>42.5 to 99, +134%</td><td>Standout, biggest strength jump in the block.</td></tr>
+        <tr><td>Lat Pulldown <span style="font-size:10px;color:#888">(pull)</span></td><td>99 lb x 10 <span style="font-size:10px;color:#888">(Aug 3, PR)</span></td><td>70 to 99, +31%</td><td>Strong vertical pull progress.</td></tr>
+        <tr><td>Hack Squat Machine <span style="font-size:10px;color:#888">(squat)</span></td><td>90 lb x 12 <span style="font-size:10px;color:#888">(Aug 3)</span></td><td>flat, +0%</td><td>Knee-friendly lower driver, ready to add load.</td></tr>
+        <tr><td>Dumbbell Sumo Squat <span style="font-size:10px;color:#888">(hinge)</span></td><td>65 lb x 12 <span style="font-size:10px;color:#888">(Aug 1)</span></td><td>60 to 65, +18%</td><td>Controlled hip-dominant lower.</td></tr>
+        <tr><td>Dumbbell Bulgarian Split Squat <span style="font-size:10px;color:#888">(squat, single-leg)</span></td><td>25 lb x 8 <span style="font-size:10px;color:#888">(Jul 21)</span></td><td>20 to 25, +24%</td><td>Unilateral, knee-safe when controlled.</td></tr>
+        <tr><td>Dumbbell Incline Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>30 lb x 12 <span style="font-size:10px;color:#888">(Aug 3)</span></td><td>flat, +0%</td><td>Primary press, load has room to climb.</td></tr>
+        <tr><td>Dumbbell Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>24 lb x 12 <span style="font-size:10px;color:#888">(Aug 2)</span></td><td>flat, +0%</td><td>Flat press, has not progressed load yet.</td></tr>
+        <tr><td>Dumbbell Standing Shoulder Press <span style="font-size:10px;color:#888">(push)</span></td><td>24 lb x 12 <span style="font-size:10px;color:#888">(Jul 31)</span></td><td>flat, +0%</td><td>Overhead press, stable.</td></tr>
+        <tr><td>Barbell Hip Thrust <span style="font-size:10px;color:#888">(hinge)</span></td><td>95 lb x 8 <span style="font-size:10px;color:#888">(Aug 1)</span></td><td>logged 215 to 95, verify</td><td>Glute hinge, the 215 entry looks like a logging error, confirm the load.</td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards, Female · 184.7 lb (long-term aspirational, dumbbell and machine dominant now)</td></tr>
+        <tr><td>Barbell Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~185 lb 1RM</span> <span style="font-size:9px;color:#888">(1.0xBW)</span></td></tr>
+        <tr><td>Barbell Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~259 lb 1RM</span> <span style="font-size:9px;color:#888">(1.4xBW)</span></td></tr>
+        <tr><td>Barbell Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~314 lb 1RM</span> <span style="font-size:9px;color:#888">(1.7xBW)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Gold Standards use the Female 20s-30s bucket on Scan 1 body weight (184.7 lb): Bench 1.0x, Squat 1.4x, Deadlift 1.7x. These are long-term aspirational, not scan-day targets. Jaya trains dumbbell, machine and cable dominant right now, so the live progress is in the pull and lower lifts above.</div>
+  </div>
+
+  <!-- 7 - Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a3d5add820115d8cb5b63e8/foodjournal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> ~150g/day</div>
+      <div><strong>Structure:</strong> fist-size protein at breakfast, lunch and dinner plus 2 shakes (with carbs). Always start meals with protein, avoid combining fat and carbs in the same meal.</div>
+      <div><strong>On travel:</strong> keep protein high and gauge carbs by activity level. Livermore tournament weekends are where drive-thru eating creeps in.</div>
+      <div><strong>The gap is logging, not knowledge:</strong> 16 meals logged over 8 of 42 days, and many meals fall short of 150g protein. Best logged meals (grilled steak with potatoes and zucchini, egg scramble with greens) show she can build a good plate.</div>
+      <div><strong>At the scan:</strong> simplify the ask, even half-eaten photos with a one-line note on travel days. Anchor protein first, 150g target, and keep it low-friction so it survives busy weeks.</div>
+    </div>
+  </div>
+
+  <!-- 8 - Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">💚 Scan-Day Focus: Re-Engagement, Renewal and Progress</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Open with the wins:</strong> Cable Row +134% and Lat Pulldown +31%, both PRs. Proof the engine works when she shows up.</div>
+      <div style="margin-bottom:8px"><strong>Read the scan honestly:</strong> strong lean base (ALMI 87th %ile) to protect, body fat 35.6% and VAT 92.5 (elevated) to trend down. Tie it to feeling high-energy for her kid.</div>
+      <div style="margin-bottom:8px"><strong>Name the barrier without judgment:</strong> consistency (33% last 30d, 0% last 7d) driven by travel and busy weeks, not capability. She asked to be kept accountable, so give her the locked Tue/Thu/Sat structure and a dead-simple food-photo ask.</div>
+      <div style="margin-bottom:8px"><strong>Renewal conversation:</strong> her 4-week membership expired Aug 9. This scan is the natural moment to talk re-enrollment and the next block, framed around holding the strength and turning the corner on fat and VAT.</div>
+      <div><strong>Set live benchmarks:</strong> pick 2-3 anchors above (Cable Row, Hack Squat, DB Incline Bench) and give her numbers to chase into the next block.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-jaya -->
 
 <!-- ── UMAR KHAN PATHAN MODAL ── -->
 <div id="modal-umar" class="modal-content"
