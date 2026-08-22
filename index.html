@@ -702,10 +702,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <a class="navlink" href="members/" title="All members dashboard">All members &rarr;</a>
   </div>
   <div class="header-stats">
-    <div class="header-stat"><div class="num">8</div><div class="lbl">Remaining</div></div>
+    <div class="header-stat"><div class="num">9</div><div class="lbl">Remaining</div></div>
     <div class="header-stat"><div class="num">10</div><div class="lbl">Scanned ✓</div></div>
     <div class="header-stat"><div class="num">5</div><div class="lbl">Fat Loss</div></div>
-    <div class="header-stat"><div class="num">4</div><div class="lbl">LBM / Recomp</div></div>
+    <div class="header-stat"><div class="num">5</div><div class="lbl">LBM / Recomp</div></div>
   </div>
 </div>
 
@@ -790,6 +790,79 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('nam')"><span> Lift targets + nutrition sent, 2-day food journal assigned (Aug 22 &amp; 23)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Night-before refresh (Aug 23) + audio briefing</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Fix kg/lb logging inconsistency in the app</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DAVID MURAKAMI ── -->
+    <div class="card" id="card-david">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('david')">David Murakami <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 41 · Second Scan (4-Week) · Lean Mass / ALMI</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Lean Mass</span>
+          <span class="badge badge-scan">1:30 PM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, August 24</strong> · Second Kalos DEXA Scan · 1:30 PM · San Jose · <strong style="color:#c2410c">CONVERSION MOMENT, the 4-week program ends this day</strong> · moved up from Aug 30, vacation Aug 25 to Sept 2</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">148.2</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Jul 26 baseline</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">23.6%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">Under the 25% marker</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">54.7</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Healthy, under 60</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">27th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">THE primary target</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">85%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:85%;background:#22c55e"></div></div>
+            <div class="cons-detail">85% last 30d · 75% last 7d · zero missed workouts through the block · trained Aug 20 and Aug 21 back to back while travelling for work</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Longevity and health. More energy, staying active for hiking and bouldering, and being healthy for his family with a first child on the way. That last one is the real engine, and it makes the ALMI number the honest headline.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('david')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-david">6/8</span>
+            <span class="checklist-chevron" id="chev-david">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-david">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Scan 1 DEXA baseline pulled (Jul 26 intro)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Iris goals, why, coaching flags pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Everfit training, lifts, nutrition reviewed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Modal built from real data</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Pre-scan opener + target scorecard sent (Aug 22)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('david')"><span> Lift guidance + nutrition sent, 2-day food journal assigned (Aug 22 &amp; 23)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('david')"><span> Night-before refresh (Aug 23) + audio briefing</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('david')"><span> Membership recommendation + vacation plan (Aug 25 to Sept 2)</span></label>
         </div>
       </div>
     </div>
@@ -1662,6 +1735,175 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 <!-- ── JAYA BANNARBIE MODAL ── -->
+<!-- ── DAVID MURAKAMI MODAL ── -->
+<div id="modal-david" class="modal-content"
+     data-name="David Murakami"
+     data-sub="Second Scan (4-Week) · August 24, 2026 · Lean Mass / ALMI · M · 41">
+
+  <script>
+  window.__scan1_david = {
+    bw: 148.2, bfPct: 23.6, bfAMpct: null,
+    lean: 108.7, fat: 35.0, vat: 54.7,
+    almiVal: null, almiAMpct: 27,
+    bmd: null, bmdZ: null,
+    scan1Date: 'Jul 26, 2026 (intro baseline)', height: 64,
+    regional: {
+      arms:  { lean: 13.8, fat: 3.7 },
+      trunk: { lean: 52.1, fat: 15.8 },
+      legs:  { lean: 34.9, fat: 12.6 }
+    }
+  };
+  </script>
+
+  <!-- 1 - Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="david-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">📊</span><span class="win-text"><strong>Zero missed workouts across the whole block.</strong> 85% last 30 days, and he moved from 2 primary days to 3 after the Aug 11 call without complaint. He trained Aug 20 and Aug 21 back to back <em>while travelling for work</em>, logging from a hotel.</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>Dumbbell Bench Press is the star: 40 lb to 90 lb in three weeks.</strong> Est 1RM 80 to 126, <strong>+58%</strong>. On Friday he was told to open at 70 and try 80 on set 2. He did 70 for 12, then <strong>90 for 12 and 90 for 11</strong>. He beat the target rather than met it.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Every major pattern moved.</strong> Leg Press 282 to 392 (+39%), Cable Seated Row 119 to 161 (+35%), Lat Pulldown 119 to 157 (+32%), Dumbbell Squat 112 to 147 (+31%) in nine days.</span></div>
+      <div class="success-win"><span class="win-icon">🤝</span><span class="win-text"><strong>He solved the vacation problem himself.</strong> Flagged the Aug 25 to Sept 2 trip, asked to move the scan, and rearranged meetings to make Monday 1:30 work. Low-maintenance, high-agency, and worth naming out loud at a conversion moment.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Scan moved up from Aug 30 to Aug 24 at his request, so the runway is <strong>one arms session today and nothing Sunday</strong>. Messages sent <strong>Aug 22</strong>:</div>
+      <div class="success-target-item"><strong>Scorecard, Dumbbell Bench:</strong> target was 70 then 80, he hit 70x12 / 90x12 / 90x11. <span style="color:#16a34a">Exceeded.</span></div>
+      <div class="success-target-item"><strong>Scorecard, Seated Shoulder Press:</strong> target was open at 60 instead of 40. He opened at <strong>45</strong> and only reached 60 on set 3. <span style="color:#c2410c">Missed the opener, est 1RM went 86 to 80.</span></div>
+      <div class="success-target-item"><strong>Today (arms, all six movements are brand new to him):</strong> clean baseline, pick a weight he could get 11 or 12 with and stop at 8 to 10, log everything. Skip the Barbell Wrist Curl if the right wrist complains.</div>
+      <div class="success-target-item"><strong>Monday before 1:30 if he trains:</strong> Leg Press 280 x 12 on all three sets (he only reached it on set 3 last time), Cable Seated Row holding 115 x 12 across all three.</div>
+    </div>
+  </div>
+
+  <!-- 2 - Goal & Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>This is a lean mass scan, full stop.</strong> Body fat is <strong>23.6%</strong>, already under the 25% marker. VAT at <strong>54.7 cm²</strong> is comfortably in the healthy band under 60. The one number that is not where it should be is <strong>ALMI at the 27th percentile</strong>, and the plan set at intro was to drive that toward the 60th to 70th for longevity, metabolism and performance. The 4-week goal was explicit: <strong>add 2 lb of lean tissue</strong>. Judge the scan against that and nothing else.</div>
+    <div class="dp-why">Longevity and health. More energy, staying active for hiking and bouldering, and being healthy for his family with a first child on the way.</div>
+  </div>
+
+  <!-- 3 - Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Conversion moment with a hard edge.</strong> The 4-week program ends <em>on scan day</em>, Aug 24, and he leaves on vacation Aug 25 through Sept 2. There is no window to decide later. The renewal conversation has to happen in the room, and it has to include what he does with the two weeks he is away.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Food logging is too thin to confirm the protein number.</strong> He is logging, but it lands at roughly two entries a day, mostly the shakes and dinner. Recent days: Aug 21 two entries, Aug 20 two entries, Aug 19 three (airport and hotel meals). A 2-day photo log was asked for on Aug 21 and never assigned as a task, now fixed for Aug 22 and 23. Without it, 130 g is an assumption rather than a measurement.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>The diet is plant-leaning against a 130 g target.</strong> Logged meals run to tofu stir fry, rice, beans, tortilla with jack cheese, plus chicken. Two shakes daily are consistent and doing a lot of the work. Worth pressure-testing whether 130 g is actually landing on the non-shake meals.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Seated Shoulder Press is the one lift that stalled.</strong> Est 1RM 86 on Aug 18 down to 80 on Aug 21, and he ignored the instruction to open at 60. It is the only pattern not compounding.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Barbell Bench has not moved.</strong> 135 x 5 on Aug 20 and 135 x 5 on Aug 21, est 1RM flat at 158. Only two sessions logged. Given the barbell work was the point of the Aug 11 program change, this is worth a direct question.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Right wrist.</strong> Cranky intermittently, no formal injury logged. Today's session has both an <strong>EZ Bar Skullcrusher</strong> and a <strong>Barbell Wrist Curl</strong> in it, which is the worst possible pairing for that. He has been told to skip the wrist curl if it talks.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Steps averaging ~4,568/day.</strong> Low, though less critical here than in a fat loss block. Bouldering and hiking are the enjoyable-activity lever he already likes.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Coaching read: specific numbers work, vague ones do not.</strong> He beat the dumbbell bench target he was given a concrete number for and ignored the shoulder press instruction that was phrased as an opener. Give him the exact load and set count.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No session notes exist for the Aug 11 10-day call.</strong> The to-dos were written and the member message went out, but the Session Notes block was never completed in Iris. Worth backfilling before the scan so the block has a record.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Foundation | 3x Week, currently <strong>Phase 2</strong>, moved from 2 to 3 primary days on Aug 11 plus an optional 4th arms day. Sessions this week: Aug 17 P2 A, Aug 20 P2 B, Aug 21 P2 A, <strong>Aug 22 Optimal P2 Arms (today, not yet logged)</strong>. Sunday is empty. Aug 24 is Foundation P2 B on scan day.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏢</span><span>Full gym at <strong>NASA Ames</strong> with free weights and machines. Home gym for ~1hr sessions with some distraction. <strong>Movement</strong> for bouldering.</span></div>
+      <div class="personal-note"><span class="note-emoji">🩹</span><span><strong>Right wrist</strong> gets cranky intermittently. No other limitations reported. Some barbell exposure but no formal coaching, so technique and confidence are still being built.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥩</span><span>130 g protein daily, including rest days. Three meals at 25-35 g each plus two shakes at 20-30 g. Greek yogurt before bed if short. <strong>Creatine 5 g daily</strong>, agreed at intro.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>Intro scan Jul 26. Membership <strong>4 Week, Jul 26 to Aug 24</strong>. 10-day call Aug 11. Week-out DM Aug 21, follow-up Aug 22. Window Jul 26 to Aug 24 = <strong>29 days</strong>. Scan pulled forward from Aug 30 because of the Aug 25 to Sept 2 vacation. Motorcycle camping trips with a work group, no dates set.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 - Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot: Scan 1 Baseline (Jul 26, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">148.2 lb</div><div class="snap-lbl">Body Weight (scale)</div></div>
+      <div class="snap-metric"><div class="snap-val">23.6%</div><div class="snap-lbl">Body Fat · under 25% marker</div></div>
+      <div class="snap-metric"><div class="snap-val">108.7 lb</div><div class="snap-lbl">Lean Mass · goal +2 lb</div></div>
+      <div class="snap-metric"><div class="snap-val">35.0 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">54.7 cm²</div><div class="snap-lbl">VAT · healthy, under 60</div></div>
+      <div class="snap-metric"><div class="snap-val">27th %ile</div><div class="snap-lbl">ALMI · THE target</div></div>
+      <div class="snap-metric"><div class="snap-val">not stated</div><div class="snap-lbl">Bone Density Z · slightly low for age</div></div>
+      <div class="snap-metric"><div class="snap-val">64"</div><div class="snap-lbl">Height (5'4") · Age 41</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Window is <strong>29 days</strong>. <strong>Do not lead with bone density</strong>, no Z-score was captured on the Scan 1 summary and 29 days is far too short for BMD to move. The conversation is <strong>lean mass against the +2 lb goal</strong> and <strong>ALMI percentile</strong>. Body fat and VAT are already fine and should be framed as "protect these", not "improve these".</div>
+  </div>
+
+  <!-- 5 - DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results: Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jul 26 baseline)</th><th>Scan 2 (Aug 24)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>148.2</td><td class="r-pending" id="david-s2-bw">—</td><td class="r-pending" id="david-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>23.6%</td><td class="r-pending" id="david-s2-bf">—</td><td class="r-pending" id="david-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>108.7</td><td class="r-pending" id="david-s2-lean">—</td><td class="r-pending" id="david-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>35.0</td><td class="r-pending" id="david-s2-fat">—</td><td class="r-pending" id="david-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>54.7</td><td class="r-pending" id="david-s2-vat">—</td><td class="r-pending" id="david-d-vat">—</td></tr>
+        <tr><td>ALMI (%ile)</td><td>27th %ile</td><td class="r-pending" id="david-s2-almi">—</td><td class="r-pending" id="david-d-almi">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 26)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Arms (both)</td><td>13.8</td><td class="r-pending" id="david-s2-arms-lean">—</td><td class="r-pending" id="david-d-arms-lean">—</td><td>3.7</td><td class="r-pending" id="david-s2-arms-fat">—</td><td class="r-pending" id="david-d-arms-fat">—</td></tr>
+        <tr><td>Trunk</td><td>52.1</td><td class="r-pending" id="david-s2-trunk-lean">—</td><td class="r-pending" id="david-d-trunk-lean">—</td><td>15.8</td><td class="r-pending" id="david-s2-trunk-fat">—</td><td class="r-pending" id="david-d-trunk-fat">—</td></tr>
+        <tr><td>Legs (both)</td><td>34.9</td><td class="r-pending" id="david-s2-legs-lean">—</td><td class="r-pending" id="david-d-legs-lean">—</td><td>12.6</td><td class="r-pending" id="david-s2-legs-fat">—</td><td class="r-pending" id="david-d-legs-fat">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:6px;font-size:11px;color:#888">Arms hold only 13.8 lb of lean, and arms plus legs together are 48.7 lb against 52.1 lb in the trunk alone. That distribution is the ALMI story, since ALMI is appendicular lean mass. The arms and legs rows are the ones to point at, not total lean.</div>
+    <button onclick="printDexaSummary('david')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 - Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a68cc27e8cf3e2e3d42bd62/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
+      <strong>🎯 Scorecard on the Aug 21 targets, plus Aug 22 guidance</strong>
+      <div style="margin-top:6px">• <strong>Dumbbell Bench Press:</strong> target 70 then 80. Result <strong>70x12, 90x12, 90x11</strong>. <span style="color:#16a34a">Exceeded.</span></div>
+      <div>• <strong>Dumbbell Seated Shoulder Press:</strong> target open at 60. Result <strong>45x12, 55x12, 60x10</strong>. <span style="color:#c2410c">Opener missed, est 1RM 86 to 80.</span></div>
+      <div style="margin-top:6px">• <strong>Today, Optimal P2 Arms:</strong> Preacher Curl Machine, EZ Bar Skullcrusher, DB Incline Seated Curl, Cable Standing Single Arm, DB Seated French Press, Barbell Wrist Curl. <strong>None have any logged history</strong>, so the ask is a clean baseline at 8 to 10 reps, not a PR.</div>
+      <div>• <strong>Monday P2 B before 1:30, if he trains:</strong> Leg Press 280 x 12 across all three, Cable Seated Row 115 x 12 across all three.</div>
+      <div style="margin-top:6px;color:#c2410c">Only one session stands between now and the scan, and it is an isolation day. Do not expect the scan to reflect anything from this weekend.</div>
+    </div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Dumbbell Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>90 lb x 12 <span style="font-size:10px;color:#888">(Aug 21, PR)</span></td><td>est 1RM 80 to 126, <strong>+58%</strong></td><td>Star lift of the block. 40 to 50 to 60 to 70 to 90 lb in three weeks, clean linear progression. Beat the Aug 21 target by a full 10 lb.</td></tr>
+        <tr><td>Leg Press <span style="font-size:10px;color:#888">(squat, machine)</span></td><td>280 lb x 12 <span style="font-size:10px;color:#888">(Aug 20)</span></td><td>est 1RM 282 to 392, <strong>+39%</strong></td><td>Big jump. Opened 180 x 12, then 230 x 15, then 280 x 12. Only two sessions logged, so plenty of room.</td></tr>
+        <tr><td>Cable Seated Row <span style="font-size:10px;color:#888">(pull, horizontal)</span></td><td>115 lb x 12 <span style="font-size:10px;color:#888">(Aug 20)</span></td><td>est 1RM 119 to 161, +35%</td><td>Steady climb from 85 lb on Jul 31. A couple of sets logged at 0 lb, so the data has small gaps.</td></tr>
+        <tr><td>Lat Pulldown <span style="font-size:10px;color:#888">(pull, vertical)</span></td><td>115 lb x 11 <span style="font-size:10px;color:#888">(Aug 21)</span></td><td>est 1RM 119 to 157, +32%</td><td>70 to 100 to 115 lb. Consistent and still moving.</td></tr>
+        <tr><td>Dumbbell Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>100 lb x 14 <span style="font-size:10px;color:#888">(Aug 21)</span></td><td>est 1RM 112 to 147, +31%</td><td>+31% in nine days. Reps at 14 are over the 8-12 range, so the load is the thing to move next.</td></tr>
+        <tr><td>Seated Hamstring Curl Machine <span style="font-size:10px;color:#888">(hinge, machine)</span></td><td>100 lb x 11 <span style="font-size:10px;color:#888">(Aug 21)</span></td><td>est 1RM 119 to 137, +15%</td><td>Slowest mover of the machine lifts and slightly down from its Aug 12 peak of 150. His only posterior chain work.</td></tr>
+        <tr><td>Dumbbell Seated Shoulder Press <span style="font-size:10px;color:#888">(push, overhead)</span></td><td>60 lb x 10 <span style="font-size:10px;color:#888">(Aug 21)</span></td><td>est 1RM 86 to 80, <strong>-7%</strong></td><td><strong>Watch.</strong> The only lift going backwards, and the one where he ignored a direct instruction to open heavier.</td></tr>
+        <tr><td>Barbell Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>135 lb x 5 <span style="font-size:10px;color:#888">(Aug 21)</span></td><td>flat, 135 both sessions</td><td>Identical 135 x 5 on Aug 20 and Aug 21. Only two sessions ever logged. Barbell work was the point of the Aug 11 change, so ask what is holding it.<br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~185 lb 1RM</span> <span style="font-size:9px;color:#888">(1.25xBW — est 158 puts him at ~85% already)</span></td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Male 40-60 · 148.2 lb · not currently programmed</td></tr>
+        <tr><td>Barbell Back Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~220 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5xBW — trains dumbbell squat and leg press instead)</span></td></tr>
+        <tr><td>Barbell Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~295 lb 1RM</span> <span style="font-size:9px;color:#888">(2.0xBW — no barbell hinge programmed, hamstring curl machine only)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Gold Standards use the <strong>Male 40-60</strong> bucket on Scan 1 body weight (148.2 lb): Bench 1.25x, Squat 1.5x, Deadlift 2.0x. Bench is the only one he trains and he is already near it. For an ALMI-driven client these are useful as the argument for a longer barbell block, which is exactly the renewal case.</div>
+  </div>
+
+  <!-- 7 - Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a68cc27e8cf3e2e3d42bd62/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 130 g/day, every day including rest days. Three meals at 25-35 g plus two shakes at 20-30 g. Greek yogurt before bed if short.</div>
+      <div><strong style="color:#c2410c">The problem:</strong> logging runs at about two entries a day, so <strong>the 130 g cannot actually be verified</strong>. Aug 21 was two entries, Aug 20 two, Aug 19 three. Mostly shakes and dinner.</div>
+      <div><strong>What is logged skews plant-forward:</strong> tofu stir fry with rice, tortilla with jack cheese and brown rice, beans and BBQ chicken, hotel eggs and potatoes, airport chicken salad. The two daily shakes are consistent and carrying a large share of the total.</div>
+      <div><strong>Creatine:</strong> 5 g daily, agreed at intro. Confirm he actually ordered it and is taking it, it was an intro action item.</div>
+      <div><strong>Assigned:</strong> 2-day photo food journal on <strong>Aug 22 and Aug 23</strong>. This was asked for verbally on Aug 21 but never assigned as a task, which is why it did not happen. Now on the calendar.</div>
+    </div>
+  </div>
+
+  <!-- 8 - Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">💚 Scan-Day Focus: A Lean Mass Case, Decided in the Room</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Open on the execution, because it was close to perfect.</strong> Zero missed workouts in 29 days, absorbed a jump from 2 to 3 primary days, and trained twice in two days from a hotel while travelling for work. Then the dumbbell bench: 40 lb to 90 lb, up 58%, and he beat Friday's target rather than met it.</div>
+      <div style="margin-bottom:8px"><strong>Judge the scan against the one number that was promised: +2 lb of lean tissue.</strong> Body fat at 23.6% and VAT at 54.7 are already healthy, so frame those as "protect", not "improve". Lead with lean mass and the ALMI percentile, and point at the arms and legs rows in the regional table, because appendicular lean is literally what ALMI measures.</div>
+      <div style="margin-bottom:8px"><strong>Do not lead with bone density.</strong> No Z-score was captured at Scan 1 and 29 days is far too short. If it comes up, note the plan is barbell loading and eventual plyometrics over months.</div>
+      <div style="margin-bottom:8px"><strong>Close the protein question honestly.</strong> He is logging, but two entries a day cannot confirm 130 g. Use the Aug 22 and 23 photo log to find out whether the number is real or aspirational, and check the creatine actually got ordered. If lean mass came in under +2 lb, this is almost certainly why.</div>
+      <div style="margin-bottom:8px"><strong>Name the two lifts that stalled and ask why.</strong> Seated Shoulder Press went backwards and he ignored the instruction to open at 60. Barbell Bench sat at 135 x 5 for two sessions running. He responds to exact loads, so leave with numbers, not principles.</div>
+      <div style="margin-bottom:8px"><strong>Handle the wrist.</strong> Today's arms day pairs an EZ bar skullcrusher with a barbell wrist curl. Ask how it went and whether the wrist needs a programming rule rather than ad hoc skipping.</div>
+      <div><strong>Conversion, and it has to land Monday.</strong> The 4-week program ends this day and he flies out Aug 25 for eight days. There is no "think about it and let me know". Two things to bring: a concrete plan for training on vacation, ideally bodyweight plus the bouldering he already loves, and the case that moving ALMI from the 27th toward the 60th percentile is a six to twelve month barbell project. The first child on the way is the honest reason that project matters, and he raised it himself at intro.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-david -->
+
 <!-- ── NAM THI MODAL ── -->
 <div id="modal-nam" class="modal-content"
      data-name="Nam Thi"
