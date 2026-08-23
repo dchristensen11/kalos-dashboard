@@ -2345,7 +2345,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="craig-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="craig-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">🏗️</span><span class="win-text"><strong>Built a gym routine from a standing start.</strong> Sedentary baseline, no recent training history. He reactivated a 24-hour membership 15 minutes from home and ran 3x/week through weeks 1, 2 and 3 at 100% while learning the machines and logging every set. <span style="color:#c2410c">Weeks 1-3 are the win. Week 4 is the problem, see the flags below.</span></span></div>
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>12 all-time PRs in four weeks.</strong> Dumbbell Bench Press went 20 lb x 10 to 50 lb x 14, a <strong>+189%</strong> estimated 1RM jump. Seated Hamstring Curl +100%, Seated Shoulder Press Machine +69%, Lat Pulldown +31%, Leg Extension +35%.</span></div>
@@ -2357,6 +2357,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-target-item"><strong>Dumbbell Bench Press (push):</strong> open at 50 x 12, then 55s for sets two and three. Anchor 50 x 12 / 50 x 14 on Aug 17. <span style="color:#c2410c">Same 55 lb target as Aug 14, not taken.</span></div>
       <div class="success-target-item"><strong>Smith Machine Back Squat (squat):</strong> start at 30 lb, not 20. He has held 20 x 12 for two sessions running. <span style="color:#c2410c">Same 30 lb target as Aug 14, not taken.</span></div>
       <div class="success-target-item"><strong>Lat Pulldown (pull):</strong> 115 lb for all three sets, beat the 7 reps on the first 115 set. Anchor 100 x 12, 115 x 7, 115 x 7, 100 x 8 on Aug 17.</div>
+    </div>
+  </div>
+
+  <div class="dp-section" style="border-left:3px solid #16a34a;background:#f2fbf5">
+    <div class="dp-title">📊 Scan 2 Results (Aug 23) — read this first</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong style="color:#16a34a">He built 2.7 lb of lean tissue in 31 days, and ALMI jumped 12th → 17th percentile, +5 points.</strong> That is the standout result and it is exactly what the under-muscled diagnosis called for. Legs lean +1.3, trunk lean +1.1, arms lean +0.3. Lead here, not with body fat.</div>
+      <div style="margin-bottom:8px"><strong>Fat down modestly while gaining lean.</strong> Fat mass 63.6 → 62.5 (-1.1 lb), body fat 34.4% → 33.5% (-0.9 pts), scale weight 185.2 → 186.7 (+1.5 lb). Weight went up because lean went up more than fat came off. That is a successful recomp and he needs to hear that framing before he sees the scale number.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">Visceral fat barely moved: 205.0 → 203.4 cm², down 1.5 (-0.7%).</strong> This is the number he came in for, and it is essentially unchanged. Still roughly double the ~100 cm² risk threshold. Trunk fat did drop 1.4 lb, so the direction is right, but VAT is the slowest-moving compartment and one month of partially-adherent nutrition with three missed sessions was never going to shift it. This is the honest case for the next block, not a disappointment to apologise for.</div>
+      <div><strong>Regional:</strong> trunk fat -1.4 (good, that is the VAT compartment) but arms fat +0.1 and legs fat +0.4. Combined with the lean gains, the picture is tissue added in the legs and trunk with a small fat increase in the limbs.</div>
     </div>
   </div>
 
@@ -2410,25 +2420,25 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1 (Jul 23 baseline)</th><th>Scan 2 (Aug 23)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>187.6</td><td class="r-pending" id="craig-s2-bw">—</td><td class="r-pending" id="craig-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>34.4%</td><td class="r-pending" id="craig-s2-bf">—</td><td class="r-pending" id="craig-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>121.6</td><td class="r-pending" id="craig-s2-lean">—</td><td class="r-pending" id="craig-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>63.6</td><td class="r-pending" id="craig-s2-fat">—</td><td class="r-pending" id="craig-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>205.0</td><td class="r-pending" id="craig-s2-vat">—</td><td class="r-pending" id="craig-d-vat">—</td></tr>
-        <tr><td>ALMI (AM %ile)</td><td>12th %ile</td><td class="r-pending" id="craig-s2-almi">—</td><td class="r-pending" id="craig-d-almi">—</td></tr>
-        <tr><td>Android / Gynoid</td><td>1.37</td><td class="r-pending" id="craig-s2-ag">—</td><td class="r-pending" id="craig-d-ag">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>185.2</td><td id="craig-s2-bw">186.7</td><td id="craig-d-bw">+1.5</td></tr>
+        <tr><td>Body Fat %</td><td>34.4%</td><td id="craig-s2-bf">33.5%</td><td id="craig-d-bf"><span style="color:#16a34a">-0.9 pts</span></td></tr>
+        <tr><td>Lean Mass (lb)</td><td>116.5</td><td id="craig-s2-lean">119.3</td><td id="craig-d-lean"><span style="color:#16a34a;font-weight:700">+2.7</span></td></tr>
+        <tr><td>Fat Mass (lb)</td><td>63.6</td><td id="craig-s2-fat">62.5</td><td id="craig-d-fat"><span style="color:#16a34a">-1.1</span></td></tr>
+        <tr><td>VAT (cm²)</td><td>205.0</td><td id="craig-s2-vat">203.4</td><td id="craig-d-vat"><span style="color:#c2410c">-1.5 (-0.7%)</span></td></tr>
+        <tr><td>ALMI (AM %ile)</td><td>12th %ile</td><td id="craig-s2-almi">17th %ile</td><td id="craig-d-almi"><span style="color:#16a34a;font-weight:700">+5</span></td></tr>
+        <tr><td>Android / Gynoid</td><td>1.37</td><td id="craig-s2-ag">1.36</td><td id="craig-d-ag">-0.01</td></tr>
       </tbody>
     </table>
     <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 23)</div>
     <table class="dexa-table" style="margin-top:4px">
       <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
       <tbody>
-        <tr><td>Arms (both)</td><td>15.5</td><td class="r-pending" id="craig-s2-arms-lean">—</td><td class="r-pending" id="craig-d-arms-lean">—</td><td>5.5</td><td class="r-pending" id="craig-s2-arms-fat">—</td><td class="r-pending" id="craig-d-arms-fat">—</td></tr>
-        <tr><td>Trunk</td><td>61.6</td><td class="r-pending" id="craig-s2-trunk-lean">—</td><td class="r-pending" id="craig-d-trunk-lean">—</td><td>31.8</td><td class="r-pending" id="craig-s2-trunk-fat">—</td><td class="r-pending" id="craig-d-trunk-fat">—</td></tr>
-        <tr><td>Legs (both)</td><td>40.1</td><td class="r-pending" id="craig-s2-legs-lean">—</td><td class="r-pending" id="craig-d-legs-lean">—</td><td>15.2</td><td class="r-pending" id="craig-s2-legs-fat">—</td><td class="r-pending" id="craig-d-legs-fat">—</td></tr>
+        <tr><td>Arms (both)</td><td>14.5</td><td id="craig-s2-arms-lean">14.8</td><td id="craig-d-arms-lean"><span style="color:#16a34a">+0.3</span></td><td>6.6</td><td id="craig-s2-arms-fat">6.7</td><td id="craig-d-arms-fat"><span style="color:#c2410c">+0.1</span></td></tr>
+        <tr><td>Trunk</td><td>57.2</td><td id="craig-s2-trunk-lean">58.3</td><td id="craig-d-trunk-lean"><span style="color:#16a34a">+1.1</span></td><td>36.2</td><td id="craig-s2-trunk-fat">34.8</td><td id="craig-d-trunk-fat"><span style="color:#16a34a">-1.4</span></td></tr>
+        <tr><td>Legs (both)</td><td>37.3</td><td id="craig-s2-legs-lean">38.6</td><td id="craig-d-legs-lean"><span style="color:#16a34a;font-weight:700">+1.3</span></td><td>18.0</td><td id="craig-s2-legs-fat">18.4</td><td id="craig-d-legs-fat"><span style="color:#c2410c">+0.4</span></td></tr>
       </tbody>
     </table>
-    <div style="margin-top:6px;font-size:11px;color:#888">Trunk holds 31.8 lb of the 63.6 lb total fat, exactly half. That is the visceral fat story in one line, and it is the regional row to point at on scan day.</div>
+    <div style="margin-top:6px;font-size:11px;color:#888">Trunk holds 36.2 lb of the 63.6 lb total fat, <strong>57%</strong> of it, and it dropped 1.4 lb while arms and legs fat both rose slightly. That is the visceral fat story in one line, and it is the regional row to point at on scan day.</div>
     <button onclick="printDexaSummary('craig')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
   </div>
 
@@ -2515,7 +2525,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="julie-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="julie-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">💯</span><span class="win-text"><strong>Perfect attendance to date. 22 of 22 primary sessions.</strong> 100% in July, 100% in August, not a single missed workout since Jul 15. Average session 1h05. Still the strongest consistency number on the board and still the first thing she should hear. <span style="color:#c2410c">Tonight is the first session at risk, so lead with the 22 and let her tell you about tonight.</span></span></div>
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>24 all-time PRs, and the hip thrust is the headline.</strong> Barbell Hip Thrust went 60 lb x 8 to 85 lb x 10, a <strong>+53%</strong> estimated 1RM jump, and she moved herself from dumbbells to a barbell after the form session. Walking Lunge +200%, Incline Bench +91%, Lat Pulldown +55%, Goblet Squat +30%, Leg Press +19%.</span></div>
@@ -2528,6 +2538,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-target-item"><strong>Dumbbell Goblet Squat (squat):</strong> 50 lb x 8 across all three sets. Anchor 45 x 8 on Aug 15, and she already handles 50s on sumo squats.</div>
       <div class="success-target-item"><strong>Seated Hamstring Curl (posterior):</strong> 35 lb across all four sets. Anchor 30 x 8 on Aug 19, and she has already done 35 on the prone machine.</div>
       <div class="success-target-item" style="color:#c2410c">Framing across all three: <strong>set one is a working set, not a warm-up.</strong> Same message she got on Aug 6 about Leg Press.</div>
+    </div>
+  </div>
+
+  <div class="dp-section" style="border-left:3px solid #16a34a;background:#f2fbf5">
+    <div class="dp-title">📊 Scan 2 Results (Aug 23) — read this first</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong style="color:#16a34a">Visceral fat is the headline: 118.5 → 103.0 cm², down 15.6 (-13.1%).</strong> That is a real, meaningful move in 48 days and it is the number tied to the post-menopause abdominal fat concern she walked in with. Lead here.</div>
+      <div style="margin-bottom:8px"><strong>Fat down, lean essentially held.</strong> Fat mass 43.5 → 42.2 (-1.3 lb), body fat 36.2% → 35.6% (-0.6 pts), scale 120.2 → 118.4 (-1.8 lb). Lean 73.8 → 73.3 (-0.5 lb), which is inside measurement noise, not real loss.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">The 2 lb lean goal was not hit.</strong> Lean is flat to marginally down and ALMI slipped 25th → 24th percentile. Say it plainly, she is data-driven and will notice. The honest read: she recomped rather than built, which at 60, post-menopause, in a 48-day window with a carb intake running 60 g under target, is a reasonable outcome and not a failure. The build needs more fuel, which is exactly the carb conversation.</div>
+      <div style="margin-bottom:8px"><strong style="color:#16a34a">⚠️ Bone density moved, against expectation: 0.859 → 0.895 g/cm², +4.2%, and the report flags it as significant at 95% confidence (LSC 0.014). Total T-score improved -3.3 → -2.8.</strong> I advised keeping BMD out of the pre-scan messaging because 48 days should not move bone, and on the data I was wrong. Treat with appropriate caution: a 4.2% gain in seven weeks is faster than bone physiology normally allows, so positioning or analysis variance is plausible even with the significance flag. Do not promise it is durable. But it is on her report, she will see it, and it points the right direction for the person whose whole why is osteopenia.</div>
+      <div><strong>Regional:</strong> fat down everywhere (trunk -0.6, legs -0.3, arms -0.2). Arms lean +0.1, trunk lean -0.5, legs lean -0.3. Nothing dramatic, consistent with a mild deficit.</div>
     </div>
   </div>
 
@@ -2584,21 +2605,21 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1 (Jul 6 baseline)</th><th>Scan 2 (Aug 23)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>120.2</td><td class="r-pending" id="julie-s2-bw">—</td><td class="r-pending" id="julie-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>36.2%</td><td class="r-pending" id="julie-s2-bf">—</td><td class="r-pending" id="julie-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>73.8</td><td class="r-pending" id="julie-s2-lean">—</td><td class="r-pending" id="julie-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>43.5</td><td class="r-pending" id="julie-s2-fat">—</td><td class="r-pending" id="julie-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>118.5</td><td class="r-pending" id="julie-s2-vat">—</td><td class="r-pending" id="julie-d-vat">—</td></tr>
-        <tr><td>ALMI (%ile)</td><td>25th %ile</td><td class="r-pending" id="julie-s2-almi">—</td><td class="r-pending" id="julie-d-almi">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>120.2</td><td id="julie-s2-bw">118.4</td><td id="julie-d-bw"><span style="color:#16a34a">-1.8</span></td></tr>
+        <tr><td>Body Fat %</td><td>36.2%</td><td id="julie-s2-bf">35.6%</td><td id="julie-d-bf"><span style="color:#16a34a">-0.6 pts</span></td></tr>
+        <tr><td>Lean Mass (lb)</td><td>73.8</td><td id="julie-s2-lean">73.3</td><td id="julie-d-lean"><span style="color:#c2410c">-0.5</span></td></tr>
+        <tr><td>Fat Mass (lb)</td><td>43.5</td><td id="julie-s2-fat">42.2</td><td id="julie-d-fat"><span style="color:#16a34a">-1.3</span></td></tr>
+        <tr><td>VAT (cm²)</td><td>118.5</td><td id="julie-s2-vat">103.0</td><td id="julie-d-vat"><span style="color:#16a34a;font-weight:700">-15.6 (-13.1%)</span></td></tr>
+        <tr><td>ALMI (%ile)</td><td>25th %ile</td><td id="julie-s2-almi">24th %ile</td><td id="julie-d-almi"><span style="color:#c2410c">-1</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 6)</div>
     <table class="dexa-table" style="margin-top:4px">
       <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
       <tbody>
-        <tr><td>Arms (both)</td><td>7.3</td><td class="r-pending" id="julie-s2-arms-lean">—</td><td class="r-pending" id="julie-d-arms-lean">—</td><td>4.3</td><td class="r-pending" id="julie-s2-arms-fat">—</td><td class="r-pending" id="julie-d-arms-fat">—</td></tr>
-        <tr><td>Trunk</td><td>37.7</td><td class="r-pending" id="julie-s2-trunk-lean">—</td><td class="r-pending" id="julie-d-trunk-lean">—</td><td>24.4</td><td class="r-pending" id="julie-s2-trunk-fat">—</td><td class="r-pending" id="julie-d-trunk-fat">—</td></tr>
-        <tr><td>Legs (both)</td><td>23.5</td><td class="r-pending" id="julie-s2-legs-lean">—</td><td class="r-pending" id="julie-d-legs-lean">—</td><td>12.7</td><td class="r-pending" id="julie-s2-legs-fat">—</td><td class="r-pending" id="julie-d-legs-fat">—</td></tr>
+        <tr><td>Arms (both)</td><td>7.3</td><td id="julie-s2-arms-lean">7.4</td><td id="julie-d-arms-lean"><span style="color:#16a34a">+0.1</span></td><td>4.3</td><td id="julie-s2-arms-fat">4.1</td><td id="julie-d-arms-fat"><span style="color:#16a34a">-0.2</span></td></tr>
+        <tr><td>Trunk</td><td>37.7</td><td id="julie-s2-trunk-lean">37.2</td><td id="julie-d-trunk-lean"><span style="color:#c2410c">-0.5</span></td><td>24.4</td><td id="julie-s2-trunk-fat">23.8</td><td id="julie-d-trunk-fat"><span style="color:#16a34a">-0.6</span></td></tr>
+        <tr><td>Legs (both)</td><td>23.5</td><td id="julie-s2-legs-lean">23.2</td><td id="julie-d-legs-lean"><span style="color:#c2410c">-0.3</span></td><td>12.7</td><td id="julie-s2-legs-fat">12.4</td><td id="julie-d-legs-fat"><span style="color:#16a34a">-0.3</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:6px;font-size:11px;color:#888">Trunk holds 24.4 lb of the 43.5 lb total fat, 56% of it. That is the visceral fat story and the regional row to point at. Legs lean at 23.5 lb is where a glute-heavy Phase 2 should show up first.</div>
