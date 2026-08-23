@@ -702,10 +702,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <a class="navlink" href="members/" title="All members dashboard">All members &rarr;</a>
   </div>
   <div class="header-stats">
-    <div class="header-stat"><div class="num">9</div><div class="lbl">Remaining</div></div>
+    <div class="header-stat"><div class="num">10</div><div class="lbl">Remaining</div></div>
     <div class="header-stat"><div class="num">10</div><div class="lbl">Scanned ✓</div></div>
     <div class="header-stat"><div class="num">5</div><div class="lbl">Fat Loss</div></div>
-    <div class="header-stat"><div class="num">5</div><div class="lbl">LBM / Recomp</div></div>
+    <div class="header-stat"><div class="num">6</div><div class="lbl">LBM / Recomp</div></div>
   </div>
 </div>
 
@@ -715,6 +715,87 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
+
+<!-- ═══════════ AUG 27 — SCOTT FANNIN ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Thursday · August 27, 2026</div>
+  <div class="cards-row">
+
+    <!-- ── SCOTT FANNIN ── -->
+    <div class="card" id="card-scott">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('scott')">Scott Fannin <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male · 46 · Second Scan (4-Week) · Lean Mass / Visceral Fat</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">Lean Mass</span>
+          <span class="badge badge-scan">8:15 AM</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, August 27</strong> · Second Kalos DEXA Scan · 8:15 AM · San Jose · <strong style="color:#c2410c">CONVERSION MOMENT, the 4-week program ends this day</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">159.0</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Jul 27 baseline</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">19.5%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">Already lean</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">82.2</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Above the 60 marker</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">35th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">THE primary target</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">100%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail">100% last 30d · 100% last 7d · zero missed sessions across the entire block · logged Full Body C this morning</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Deep Why</div>
+        <div class="why-text">Longevity and sustained energy. He wants to train consistently without re-injuring the shoulder or neck, so he can keep hiking and playing with his kids and feel capable long term. Injury-free consistency is the goal, not a number on a bar.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('scott')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-scott">6/8</span>
+            <span class="checklist-chevron" id="chev-scott">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-scott">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Scan 1 DEXA baseline pulled (Jul 27 intro)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Iris goals, why, coaching flags pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Everfit training, lifts, nutrition reviewed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Modal built from real data</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Pre-scan opener sent (Aug 22)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('scott')"><span> Lift targets + nutrition sent, 2-day food journal assigned (Aug 25 &amp; 26)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Night-before refresh (Aug 26) + audio briefing</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('scott')"><span> Membership recommendation prepared (conversion)</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- ═══════════ AUG 24 — NAM THI ═══════════ -->
 <div class="day-group">
@@ -1735,6 +1816,174 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 <!-- ── JAYA BANNARBIE MODAL ── -->
+<!-- ── SCOTT FANNIN MODAL ── -->
+<div id="modal-scott" class="modal-content"
+     data-name="Scott Fannin"
+     data-sub="Second Scan (4-Week) · August 27, 2026 · Lean Mass / Visceral Fat · M · 46">
+
+  <script>
+  window.__scan1_scott = {
+    bw: 159.0, bfPct: 19.5, bfAMpct: null,
+    lean: 122.5, fat: 30.9, vat: 82.2,
+    almiVal: null, almiAMpct: 35,
+    bmd: null, bmdZ: 1.01,
+    scan1Date: 'Jul 27, 2026 (intro baseline)', height: 67,
+    regional: {
+      arms:  { lean: 16.2, fat: 3.5 },
+      trunk: { lean: 61.0, fat: 16.2 },
+      legs:  { lean: 38.9, fat: 9.0 }
+    }
+  };
+  </script>
+
+  <!-- 1 - Pre-Scan Snapshot -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="scott-scan-badge">Scan 2 Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💯</span><span class="win-text"><strong>100% consistency, 30 days, zero missed sessions.</strong> Not one. He came in training 3x/week at home already, but by his own account the intensity was low. That is the thing that changed, and it changed because he was asked once.</span></div>
+      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Barbell Squat est 1RM 119 to 168, up 41%.</strong> 85 lb for 12 on Aug 3 to 120 lb for 12 on Aug 15, ramping cleanly within each session. Best single indicator that the intensity conversation landed.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Incline Bench 107 to 127 and he is touching 100 lb.</strong> 60 to 70 to 80 to 90 to 100 across four sessions. Step Ups at 70 x 9, Bent Over Row at 80 x 10, Push-Ups this morning at 21, 19, 18.</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>He did the food log, and the quality is genuinely good.</strong> Six entries on Aug 21: salmon and lentils, herb chicken and cauliflower, Greek yogurt and blueberries, overnight protein oats. The dark berries you asked for are showing up.</span></div>
+    </div>
+    <div class="success-targets">
+      <div class="success-targets-label">Two sessions before the scan, <strong>Mon Aug 24 (Full Body A)</strong> and <strong>Wed Aug 26 (Full Body B)</strong>. Messages sent <strong>Aug 22</strong>:</div>
+      <div class="success-target-item"><strong>Dumbbell Incline Bench (push), Mon:</strong> open at 100 and hold it for the first two sets of 10. Anchor 90, 90, 100, 90 on Aug 17, so the 100 is already in him, he just finds it too late.</div>
+      <div class="success-target-item"><strong>Alternating DB Bent Over Row (pull), Mon:</strong> start at 80 for all three sets, 85 on the last if the first two are clean. Anchor 70 x 10 then 80 x 10 x2 on Aug 17. Cue neck long, chest supported.</div>
+      <div class="success-target-item"><strong>Romanian Deadlift (hinge), Wed:</strong> 115 lb x 8 across all three. <span style="color:#c2410c">Re-issued.</span> This was given Aug 20 but Full Body B has not come around since Aug 19, so it is still untested. Hip Thrust opener at 50, not 40, same status.</div>
+    </div>
+  </div>
+
+  <!-- 2 - Goal & Why -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal"><strong>Two numbers carry this scan, and body fat is not one of them.</strong> He is already lean at <strong>19.5%</strong>. The gaps are <strong>ALMI at the 35th percentile</strong>, with a stated plan to build toward the 60th to 70th, and <strong>VAT at 82.2 cm²</strong>, above the 60 marker despite the low body fat. That combination, lean outside with elevated visceral fat and modest muscle, is exactly what a recomp is for. The 4-week goal was explicit: <strong>add about 2 lb of lean tissue</strong> while moving body fat and visceral fat the right way.</div>
+    <div class="dp-why">Longevity and sustained energy. Training consistently without re-injury so he can keep hiking and playing with his kids, and feel capable long term.</div>
+  </div>
+
+  <!-- 3 - Personal Context & Coaching Flags -->
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Conversion moment: the 4-week program ends on scan day.</strong> Jul 27 to Aug 27. The renewal case here is unusually easy to make because the trajectory is so clean, but it still has to be made in the room.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Shoulder and neck govern everything.</strong> Shoulder injury last November, six months of PT, full range of motion only restored about a month ago. Compressed cervical disc with <strong>residual numbness</strong>, chiro tune-ups every 4 to 6 months. His stated why is literally "train without getting injured", so any programming that risks the shoulder undermines the goal even if it moves a number.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>No protein shakes anywhere in the food journal.</strong> The Aug 11 call and the Aug 20 DM both asked for two shakes daily including non-gym days. What is actually logged is Barebells bars and overnight protein oats. He is also testing a new powder for GI tolerance and you sent him the gut health screening, so this may be blocked rather than ignored. <strong>Ask, do not repeat the instruction.</strong> He was asked directly in the Aug 22 message.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Two targets from Aug 20 are still untested, not missed.</strong> Hip Thrust open at 50 and RDL at 115 both live in Full Body B, which has not run since Aug 19. Wednesday is the first chance. Score them at the scan, but frame as pending.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Logging units look inconsistent between lifts.</strong> Incline Bench logs at 100 lb while Neutral Grip Bench logs at 52.5 lb, which is almost certainly total-vs-per-dumbbell rather than a real strength gap. Worth one clarifying question so the progress numbers stay comparable.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Steps averaging ~4,918/day.</strong> Modest. Less critical for a lean-mass goal, but relevant to the visceral fat side, and hiking is already something he enjoys.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Coaching read: he does exactly what he is told, once.</strong> The 10-day call asked him to push the first working sets to target RPE. The very next session was his best of the block, 52 minutes and 21 personal bests. Give him one specific instruction at a time and it gets executed.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Bone density Z +1.01, above average for age.</strong> Do not lead with it, 31 days is far too short to move, but it is a genuine reassurance point if the neck and disc history comes up.</span></div>
+    </div>
+    <div class="personal-notes" style="margin-top:10px">
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span>Recomp | Dumbbells | 3-Day, currently <strong>Phase 2</strong>. Mon / Wed / Sat rhythm. Sessions before the scan: <strong>Mon Aug 24 Full Body A</strong> and <strong>Wed Aug 26 Full Body B</strong>. Full Body C was logged this morning.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏠</span><span><strong>Home gym:</strong> adjustable dumbbells, rack, pull-up bar, bench, barbells, assault bike. He has barbells and uses them, Barbell Squat and Barbell RDL both logged.</span></div>
+      <div class="personal-note"><span class="note-emoji">🩹</span><span><strong>Shoulder</strong> injured last November, 6 months PT, full ROM restored ~1 month ago. <strong>Compressed cervical disc</strong> with residual numbness. Chiro every 4 to 6 months. Protect shoulder and neck on everything overhead or bent-over.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥩</span><span>145 g protein daily via 3 meals (25-35 g each) plus 2 shakes, including non-gym days. Dark berries, green tea and microgreens added specifically for the visceral fat side. <strong>Creatine 5 g daily, already established</strong> in his morning greens drink. Testing a new protein powder for GI tolerance.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>Intro scan Jul 27. Membership <strong>4 Week, Jul 27 to Aug 27</strong>. 10-day call Aug 11. Week-out DMs Aug 20 and Aug 22. Window Jul 27 to Aug 27 = <strong>31 days</strong>. Prior routine was 3x/week at home with low intensity; lifting background from high school, baseball, and a short coached block around 2015.</span></div>
+    </div>
+  </div>
+
+  <!-- 4 - Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot: Scan 1 Baseline (Jul 27, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">159.0 lb</div><div class="snap-lbl">Body Weight (scale)</div></div>
+      <div class="snap-metric"><div class="snap-val">19.5%</div><div class="snap-lbl">Body Fat · already lean</div></div>
+      <div class="snap-metric"><div class="snap-val">122.5 lb</div><div class="snap-lbl">Lean Mass · goal +2 lb</div></div>
+      <div class="snap-metric"><div class="snap-val">30.9 lb</div><div class="snap-lbl">Fat Mass</div></div>
+      <div class="snap-metric"><div class="snap-val">82.2 cm²</div><div class="snap-lbl">VAT · above the 60 marker</div></div>
+      <div class="snap-metric"><div class="snap-val">35th %ile</div><div class="snap-lbl">ALMI · THE target</div></div>
+      <div class="snap-metric"><div class="snap-val">Z +1.01</div><div class="snap-lbl">Bone Density · above average</div></div>
+      <div class="snap-metric"><div class="snap-val">67"</div><div class="snap-lbl">Height (5'7") · Age 46</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:#888">Window is <strong>31 days</strong>. <strong>Do not lead with bone density</strong>, Z +1.01 is already above average and 31 days is far too short for it to move. The two numbers that carry the conversation are <strong>lean mass against the +2 lb goal</strong> and <strong>VAT</strong>. Body fat at 19.5% is a "hold this" number, not an "improve this" number.</div>
+  </div>
+
+  <!-- 5 - DEXA Results Table -->
+  <div class="dp-section dexa-print-section">
+    <div class="dp-title">DEXA Results: Scan 1 vs Scan 2</div>
+    <table class="dexa-table">
+      <thead><tr><th>Metric</th><th>Scan 1 (Jul 27 baseline)</th><th>Scan 2 (Aug 27)</th><th>Delta</th></tr></thead>
+      <tbody>
+        <tr><td>Body Weight (lb)</td><td>159.0</td><td class="r-pending" id="scott-s2-bw">—</td><td class="r-pending" id="scott-d-bw">—</td></tr>
+        <tr><td>Body Fat %</td><td>19.5%</td><td class="r-pending" id="scott-s2-bf">—</td><td class="r-pending" id="scott-d-bf">—</td></tr>
+        <tr><td>Lean Mass (lb)</td><td>122.5</td><td class="r-pending" id="scott-s2-lean">—</td><td class="r-pending" id="scott-d-lean">—</td></tr>
+        <tr><td>Fat Mass (lb)</td><td>30.9</td><td class="r-pending" id="scott-s2-fat">—</td><td class="r-pending" id="scott-d-fat">—</td></tr>
+        <tr><td>VAT (cm²)</td><td>82.2</td><td class="r-pending" id="scott-s2-vat">—</td><td class="r-pending" id="scott-d-vat">—</td></tr>
+        <tr><td>ALMI (%ile)</td><td>35th %ile</td><td class="r-pending" id="scott-s2-almi">—</td><td class="r-pending" id="scott-d-almi">—</td></tr>
+        <tr><td>Bone Density (Z)</td><td>+1.01</td><td class="r-pending" id="scott-s2-bmdz">—</td><td class="r-pending" id="scott-d-bmdz">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 27)</div>
+    <table class="dexa-table" style="margin-top:4px">
+      <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
+      <tbody>
+        <tr><td>Arms (both)</td><td>16.2</td><td class="r-pending" id="scott-s2-arms-lean">—</td><td class="r-pending" id="scott-d-arms-lean">—</td><td>3.5</td><td class="r-pending" id="scott-s2-arms-fat">—</td><td class="r-pending" id="scott-d-arms-fat">—</td></tr>
+        <tr><td>Trunk</td><td>61.0</td><td class="r-pending" id="scott-s2-trunk-lean">—</td><td class="r-pending" id="scott-d-trunk-lean">—</td><td>16.2</td><td class="r-pending" id="scott-s2-trunk-fat">—</td><td class="r-pending" id="scott-d-trunk-fat">—</td></tr>
+        <tr><td>Legs (both)</td><td>38.9</td><td class="r-pending" id="scott-s2-legs-lean">—</td><td class="r-pending" id="scott-d-legs-lean">—</td><td>9.0</td><td class="r-pending" id="scott-s2-legs-fat">—</td><td class="r-pending" id="scott-d-legs-fat">—</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:6px;font-size:11px;color:#888">Trunk carries 16.2 lb of the 30.9 lb total fat, more than half, on a man who is only 19.5% body fat. That is the VAT story and it is the row to point at. Arms plus legs lean is 55.1 lb against 61.0 lb in the trunk alone, which is the ALMI story.</div>
+    <button onclick="printDexaSummary('scott')" style="margin-top:10px;padding:6px 14px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px">🖨 Print Results</button>
+  </div>
+
+  <!-- 6 - Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a68f699b491ed64bb11de21/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
+    <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
+      <strong>🎯 Week-out targets sent Aug 22.</strong> Two sessions left, balanced across push, pull and hinge.
+      <div style="margin-top:6px">• <strong>Push, DB Incline Bench (Mon):</strong> open at 100 lb, hold it for the first two sets of 10 &nbsp;<span style="color:#888">anchor 90, 90, 100, 90 on Aug 17</span></div>
+      <div>• <strong>Pull, Alternating DB Bent Over Row (Mon):</strong> 80 lb all three sets, 85 on the last if clean &nbsp;<span style="color:#888">anchor 70 x 10, 80 x 10 x2, Aug 17</span></div>
+      <div>• <strong>Hinge, Romanian Deadlift (Wed):</strong> 115 lb x 8 across all three &nbsp;<span style="color:#888">anchor 105 x 8 x3 with zero drop-off, Aug 19</span></div>
+      <div style="margin-top:6px;color:#c2410c">RDL 115 and the Hip Thrust 50 lb opener were both given on Aug 20 and are <strong>still untested</strong>, because Full Body B has not run since Aug 19. Wednesday is the first look.</div>
+    </div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Barbell Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>120 lb x 12 <span style="font-size:10px;color:#888">(Aug 15, PR)</span></td><td>est 1RM 119 to 168, <strong>+41%</strong></td><td>Star lift. 85 to 95 to 120 lb across three sessions, ramping within each. Clearest proof the intensity fix worked.<br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~240 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5xBW — at ~70%, realistic 6-month target)</span></td></tr>
+        <tr><td>Dumbbell Incline Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>100 lb x 8 <span style="font-size:10px;color:#888">(Aug 17)</span></td><td>est 1RM 107 to 127, +19%</td><td>60 to 70 to 80 to 90 to 100 across four sessions. Finds the 100 on set three rather than opening there, which is the week-out target.</td></tr>
+        <tr><td>Dumbbell Romanian Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>105 lb x 8 x3 <span style="font-size:10px;color:#888">(Aug 19)</span></td><td>est 133, flat across sets</td><td><strong>Too light.</strong> Three identical sets with no drop-off at all means it was never near failure. 115 issued Aug 20, untested.</td></tr>
+        <tr><td>Alternating DB Bent Over Row <span style="font-size:10px;color:#888">(pull, horizontal)</span></td><td>80 lb x 10 <span style="font-size:10px;color:#888">(Aug 17)</span></td><td>est 107, single session</td><td>Only one logged session. Opened at 70 then held 80 for two. Start at 80 Monday. Watch neck position given the disc history.</td></tr>
+        <tr><td>Dumbbell Step Ups <span style="font-size:10px;color:#888">(squat, unilateral)</span></td><td>70 lb x 9 <span style="font-size:10px;color:#888">(Aug 17)</span></td><td>est 91, single session</td><td>50 to 70 within the session. Room to run but only one data point.</td></tr>
+        <tr><td>Dumbbell Hip Thrust <span style="font-size:10px;color:#888">(hinge)</span></td><td>52.5 lb x 10 <span style="font-size:10px;color:#888">(Aug 19)</span></td><td>est 70</td><td>Ramped 40, 45, 50, 52.5. Set 1 at 40 gave 12 reps against an 8-10 range, so it was a warm-up. Told to open at 50, untested.</td></tr>
+        <tr><td>Dumbbell Neutral Grip Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>52.5 lb x 10 <span style="font-size:10px;color:#888">(Aug 19)</span></td><td>est 70</td><td><strong>Textbook fatigue curve:</strong> 10, 10, 9, 7. Exactly what a working set should look like. Note the load reads as per-dumbbell here vs total on Incline, worth clarifying.</td></tr>
+        <tr><td>Push-Up <span style="font-size:10px;color:#888">(push, bodyweight)</span></td><td>21 reps <span style="font-size:10px;color:#888">(Aug 22, today)</span></td><td>21 / 19 / 18</td><td>Strong volume and a clean descending curve. Shoulder is clearly tolerating pressing volume now.</td></tr>
+        <tr style="background:#1e2030"><td colspan="4" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Male 40-60 · 159.0 lb · not currently programmed</td></tr>
+        <tr><td>Barbell Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~200 lb 1RM</span> <span style="font-size:9px;color:#888">(1.25xBW — trains DB incline and neutral grip instead; barbell bench is a shoulder decision, not a strength one)</span></td></tr>
+        <tr><td>Barbell Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>—</td><td>—</td><td><span style="font-size:11px;color:#7c8aff;font-weight:600">GS: ~320 lb 1RM</span> <span style="font-size:9px;color:#888">(2.0xBW — barbell RDL logged Aug 12, no conventional pull; the cervical disc argues for keeping it that way)</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12px;color:#666">Gold Standards use the <strong>Male 40-60</strong> bucket on Scan 1 body weight (159.0 lb): Bench 1.25x, Squat 1.5x, Deadlift 2.0x. The squat at ~70% of standard after four weeks is the number to build the next block around. Bench and deadlift are shoulder and neck decisions before they are strength decisions.</div>
+  </div>
+
+  <!-- 7 - Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a68f699b491ed64bb11de21/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="nutri-protocol">
+      <div><strong>Protein target:</strong> 145 g/day via three meals at 25-35 g plus two shakes, including non-gym days. No dietary restrictions.</div>
+      <div><strong style="color:#16a34a">Food quality is a genuine strength.</strong> Logged: salmon and lentils, herb chicken and cauliflower, grilled pork chop, sun-dried tomato chicken penne, Greek yogurt with blueberries, overnight protein oats, cauliflower crust pizza with broccoli sprouts. He did the 2-day log properly on Aug 21 with six entries.</div>
+      <div><strong style="color:#c2410c">The open question: no protein shakes appear anywhere.</strong> Protein is coming from Barebells bars and oats instead. He is testing a new powder for GI tolerance and was sent the gut health screening after mentioning GI upset. This may be a tolerance block, not non-compliance. He was asked directly on Aug 22.</div>
+      <div><strong>Visceral fat protocol:</strong> dark berries, green tea and microgreens added at the 10-day call. Berries are showing up in the log, worth confirming green tea.</div>
+      <div><strong>Creatine:</strong> 5 g daily, already established in his morning greens drink before he started. One less thing to build.</div>
+      <div><strong>Assigned:</strong> 2-day photo food journal on <strong>Aug 25 and Aug 26</strong>, the two days before the scan.</div>
+    </div>
+  </div>
+
+  <!-- 8 - Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">💚 Scan-Day Focus: The Easiest Renewal Case of the Week</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Open on 100%.</strong> Thirty days, zero missed sessions. He walked in already training 3x/week, so the win is not that he showed up, it is that he changed <em>how</em> he trained. One conversation about pushing the first working sets and the very next session was 52 minutes with 21 personal bests.</div>
+      <div style="margin-bottom:8px"><strong>Then the squat.</strong> 85 lb to 120 lb for 12, est 1RM up 41%, now at roughly 70% of the Male 40-60 Gold Standard. That single number makes the case for the next block better than any argument.</div>
+      <div style="margin-bottom:8px"><strong>Judge the scan on lean mass and VAT, not body fat.</strong> The promise was +2 lb of lean tissue. At 19.5% body fat, the message on fat is "hold this". Point at the trunk row: 16.2 lb of his 30.9 lb total fat is trunk, which is where the 82.2 cm² VAT lives. Then the arms and legs lean rows for the ALMI story.</div>
+      <div style="margin-bottom:8px"><strong>Do not lead with bone density.</strong> Z +1.01 is above average and will not have moved in 31 days. Save it as reassurance if the neck and disc history comes up.</div>
+      <div style="margin-bottom:8px"><strong>Get a real answer on the protein shakes.</strong> He has been asked twice and the log still shows bars and oats. If it is the GI issue and the powder trial, the fix is finding a tolerable format, not repeating the instruction. This is the single biggest lever on whether the lean tissue actually shows up.</div>
+      <div style="margin-bottom:8px"><strong>Score Monday and Wednesday.</strong> Incline Bench opening at 100, Row at 80 for three, RDL at 115, Hip Thrust opening at 50. The last two were issued Aug 20 but Wednesday is their first real test, so treat a miss as untested rather than ignored.</div>
+      <div><strong>Renewal frame: injury-free capability, not a number.</strong> His why is training consistently without re-injuring the shoulder or neck so he can hike and keep up with his kids. He has now had four weeks of harder training with the shoulder holding and push-ups at 21 reps. That is the proof the next six months are safe to commit to, and moving ALMI from the 35th toward the 60th percentile is exactly that length of project.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-scott -->
+
 <!-- ── DAVID MURAKAMI MODAL ── -->
 <div id="modal-david" class="modal-content"
      data-name="David Murakami"
