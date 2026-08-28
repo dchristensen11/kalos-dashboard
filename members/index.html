@@ -40,6 +40,20 @@ border:1px solid var(--line);color:var(--dim);margin-right:5px}
 .b-entry{color:#8ab4ff;border-color:#2a4a80}.b-package{color:#9ad8a0;border-color:#2c5233}
 .b-unknown{color:var(--warn);border-color:#5c4a1a}
 .b-flag{color:var(--bad);border-color:#6b2b28}
+.fgroup{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+margin-bottom:11px;overflow:hidden}
+.fghead{display:flex;align-items:center;gap:9px;padding:11px 15px;
+border-bottom:1px solid var(--line);background:var(--soft)}
+.fghead h3{margin:0;font-size:14px;font-weight:600;flex:1}
+.fdot{width:8px;height:8px;border-radius:50%;flex:none}
+.fdot.f-red{background:var(--bad)}.fdot.f-orange{background:var(--warn)}
+.fcount{color:var(--dim);font-size:12.5px;flex:none}
+.frow{display:flex;gap:14px;padding:9px 15px;cursor:pointer;
+border-top:1px solid rgba(255,255,255,.03);align-items:baseline}
+.frow:hover{background:var(--soft)}
+.fname{width:180px;flex:none;font-size:13.5px;font-weight:500}
+.freason{flex:1;color:var(--dim);font-size:13px;min-width:0}
+@media(max-width:640px){.frow{display:block}.fname{width:auto}}
 .b-duo{color:#c9a0ff;border-color:#4a3a6b}
 .b-scan{color:#ffd479;border-color:#6b5a28;font-weight:600}
 .b-prep{color:#ff9d6b;border-color:#6b3f28;font-weight:600}
@@ -228,8 +242,42 @@ function matches(m){
   }
 }
 
+// Needs attention is a working list, not a browse list. Grouped by flag so one kind
+// can be taken at a time, and so a bad RULE shows up as a bad rule: five members
+// carrying the same wrong reason is one problem, not five, and that is only visible
+// when they sit side by side. Every row carries the flag's own detail text, because
+// the reason is the thing being judged, not the member.
+//
+// A member with three flags appears in three sections. That is deliberate.
+function flagBoard(ms){
+  const groups = new Map();
+  ms.forEach(m => (m.flags||[]).forEach(f => {
+    const g = groups.get(f.head) || {head:f.head, level:'orange', rows:[]};
+    if(f.level==='red') g.level='red';
+    g.rows.push({m:m, f:f});
+    groups.set(f.head, g);
+  }));
+  const order = [...groups.values()].sort((a,b)=>
+    a.level!==b.level ? (a.level==='red'?-1:1) : b.rows.length-a.rows.length);
+  const total = order.reduce((n,g)=>n+g.rows.length,0);
+  $('#app').innerHTML =
+    `<div class="count">${total} flag${total===1?'':'s'} across ${ms.length} member${
+      ms.length===1?'':'s'}, ${order.length} kind${order.length===1?'':'s'}
+     · synced ${esc(DATA.generated)}</div>` +
+    order.map(g=>`<section class="fgroup">
+      <div class="fghead"><span class="fdot f-${g.level}"></span>
+        <h3>${esc(g.head)}</h3><span class="fcount">${g.rows.length}</span></div>
+      ${g.rows.sort((a,b)=>a.m.name.localeCompare(b.m.name)).map(r=>`
+        <div class="frow" onclick="show('${r.m.slug}')">
+          <div class="fname">${esc(r.m.name)}</div>
+          <div class="freason">${esc(r.f.text||'')}</div>
+        </div>`).join('')}
+    </section>`).join('');
+}
+
 function list(){
   const ms = DATA.members.filter(matches).sort((a,b)=>a.name.localeCompare(b.name));
+  if(filter==='flags') return flagBoard(ms);
   $('#app').innerHTML = `<div class="count">${ms.length} of ${DATA.members.length} members
     · synced ${esc(DATA.generated)}</div><div class="grid">` + ms.map(m=>{
     const nx=(m.upcoming||[])[0];
