@@ -2561,7 +2561,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="amir-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="amir-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">📊</span><span class="win-text"><strong>92% consistency and the best food logging on the board.</strong> Four to five journal entries every day right through Aug 23, with pre and post workout timing written in. He weighs in most mornings too. Nothing about his adherence needs chasing.</span></div>
       <div class="success-win"><span class="win-icon">🦵</span><span class="win-text"><strong>Leg Press est 1RM 403 lb.</strong> On Aug 20 he opened at 270 for 12 then held 295 for 11 twice. That is a genuinely strong lower body and it lines up with the 74th percentile ALMI.</span></div>
@@ -2573,6 +2573,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-target-item"><strong>Barbell Squat (squat), Mon:</strong> he has one logged session, Aug 8, at 175 x 6. The program asks for 3 x 8, so 175 for 8 across all three is the clean progression.</div>
       <div class="success-target-item"><strong>Leg Press (squat, machine), Wed:</strong> 295 x 12 on all three sets. He got 11 twice on Aug 20, so this is two reps, not a new weight.</div>
       <div class="success-target-item"><strong>Pull Up (pull), Fri:</strong> 12, 12, 10. He did 12, 10, 9 on Aug 21, so the ask is holding the number rather than fading.</div>
+    </div>
+  </div>
+
+    <div class="dp-section" style="border-left:3px solid #dc2626;background:#fef2f2">
+    <div class="dp-title">📊 Scan 2 Results (Aug 30) — read this first</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong style="color:#991b1b">He lost 3.3 lb and essentially all of it was lean.</strong> Weight 238.0 to <strong>234.7</strong>, but lean soft tissue went <strong>154.1 to 150.6, down 3.4 lb</strong>, while fat mass moved <strong>78.5 to 78.5, up 0.1</strong>. Over 35 days he shed muscle and kept every pound of fat. For a burn-only member that is the exact opposite of the assignment.</div>
+      <div style="margin-bottom:8px"><strong style="color:#991b1b">Visceral fat is up 10.2 cm², from 133.8 to 144.0, a 7.6 percent rise.</strong> That was already the number to move at week-out and it moved the wrong way. Body fat percentage went 33.0 to 33.5.</div>
+      <div style="margin-bottom:8px"><strong>Where the lean went:</strong> trunk lean <strong>-3.1</strong> and legs lean <strong>-0.7</strong>. Arms were the only thing that grew, lean <strong>+0.3</strong> with arm fat <strong>-0.4</strong>. A trunk swing that size in five weeks is partly hydration and gut content rather than pure tissue, so do not present -3.1 as three pounds of muscle gone, but the direction is real and it is consistent across the whole scan.</div>
+      <div style="margin-bottom:8px"><strong>ALMI held at the 73rd percentile, down 1 point from 74.</strong> That is the one genuinely stable number and it is worth naming, because it says the muscle base he came in with is still there. He is a strong man carrying visceral fat, and that has not changed.</div>
+      <div style="margin-bottom:8px"><strong>The honest diagnosis is intake, not effort.</strong> Losing weight while gaining fat mass and dropping lean is the signature of a calorie deficit without enough protein, or an inconsistent one. Ask what the last five weeks of eating actually looked like before you touch the programme, because the training is not what produced this.</div>
     </div>
   </div>
 
@@ -2636,21 +2647,21 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1 (Jul 26 baseline)</th><th>Scan 2 (Aug 30)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>238.0</td><td class="r-pending" id="amir-s2-bw">—</td><td class="r-pending" id="amir-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>33.0%</td><td class="r-pending" id="amir-s2-bf">—</td><td class="r-pending" id="amir-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>154.1</td><td class="r-pending" id="amir-s2-lean">—</td><td class="r-pending" id="amir-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>78.5</td><td class="r-pending" id="amir-s2-fat">—</td><td class="r-pending" id="amir-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>133.8</td><td class="r-pending" id="amir-s2-vat">—</td><td class="r-pending" id="amir-d-vat">—</td></tr>
-        <tr><td>ALMI (%ile)</td><td>74th %ile</td><td class="r-pending" id="amir-s2-almi">—</td><td class="r-pending" id="amir-d-almi">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>238.0</td><td id="amir-s2-bw">234.7</td><td id="amir-d-bw"><span style="color:#16a34a">-3.3</span></td></tr>
+        <tr><td>Body Fat %</td><td>33.0%</td><td id="amir-s2-bf">33.5%</td><td id="amir-d-bf"><span style="color:#c2410c">+0.5</span></td></tr>
+        <tr><td>Lean Mass (lb)</td><td>154.1</td><td id="amir-s2-lean">150.6</td><td id="amir-d-lean"><span style="color:#c2410c;font-weight:700">-3.4</span></td></tr>
+        <tr><td>Fat Mass (lb)</td><td>78.5</td><td id="amir-s2-fat">78.5</td><td id="amir-d-fat"><span style="color:#c2410c">+0.1</span></td></tr>
+        <tr><td>VAT (cm²)</td><td>133.8</td><td id="amir-s2-vat">144.0</td><td id="amir-d-vat"><span style="color:#c2410c;font-weight:700">+10.2</span></td></tr>
+        <tr><td>ALMI (%ile)</td><td>74th %ile</td><td id="amir-s2-almi">73rd %ile</td><td id="amir-d-almi"><span style="color:#c2410c">-1</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 26)</div>
     <table class="dexa-table" style="margin-top:4px">
       <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
       <tbody>
-        <tr><td>Arms (both)</td><td>19.9</td><td class="r-pending" id="amir-s2-arms-lean">—</td><td class="r-pending" id="amir-d-arms-lean">—</td><td>8.0</td><td class="r-pending" id="amir-s2-arms-fat">—</td><td class="r-pending" id="amir-d-arms-fat">—</td></tr>
-        <tr><td>Trunk</td><td>72.3</td><td class="r-pending" id="amir-s2-trunk-lean">—</td><td class="r-pending" id="amir-d-trunk-lean">—</td><td>37.7</td><td class="r-pending" id="amir-s2-trunk-fat">—</td><td class="r-pending" id="amir-d-trunk-fat">—</td></tr>
-        <tr><td>Legs (both)</td><td>54.0</td><td class="r-pending" id="amir-s2-legs-lean">—</td><td class="r-pending" id="amir-d-legs-lean">—</td><td>29.9</td><td class="r-pending" id="amir-s2-legs-fat">—</td><td class="r-pending" id="amir-d-legs-fat">—</td></tr>
+        <tr><td>Arms (both)</td><td>19.9</td><td id="amir-s2-arms-lean">20.2</td><td id="amir-d-arms-lean"><span style="color:#16a34a">+0.3</span></td><td>8.0</td><td id="amir-s2-arms-fat">7.6</td><td id="amir-d-arms-fat"><span style="color:#16a34a">-0.4</span></td></tr>
+        <tr><td>Trunk</td><td>72.3</td><td id="amir-s2-trunk-lean">69.2</td><td id="amir-d-trunk-lean"><span style="color:#c2410c;font-weight:700">-3.1</span></td><td>37.7</td><td id="amir-s2-trunk-fat">38.2</td><td id="amir-d-trunk-fat"><span style="color:#c2410c">+0.5</span></td></tr>
+        <tr><td>Legs (both)</td><td>54.0</td><td id="amir-s2-legs-lean">53.2</td><td id="amir-d-legs-lean"><span style="color:#c2410c">-0.7</span></td><td>29.9</td><td id="amir-s2-legs-fat">30.0</td><td id="amir-d-legs-fat"><span style="color:#c2410c">+0.1</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:6px;font-size:11px;color:#888">Trunk holds <strong>37.7 lb of the 78.5 lb total fat</strong>, and that is the visceral fat story in one row. Legs lean at 54.0 lb is what a 403 lb leg press looks like. Point at the trunk fat row, not the scale.</div>
@@ -2746,7 +2757,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="megan-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="megan-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">📊</span><span class="win-text"><strong>92% training consistency over 30 days.</strong> She kept the sessions through a travel week and hotel gyms, adapting by raising reps when the load was capped rather than skipping. That is exactly the behaviour you want under disruption.</span></div>
       <div class="success-win"><span class="win-icon">🏃</span><span class="win-text"><strong>Steps averaging 9,629 a day,</strong> by far the highest on the board, on top of three strength sessions plus running and Pilates. Her activity base is excellent and it is a big part of why the Hyrox goal is realistic.</span></div>
@@ -2759,6 +2770,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-target-item"><strong>Barbell Squat (squat), Mon:</strong> 135 x 8. She did 135 x 5 twice on Aug 14 and the program now asks for 8s.</div>
       <div class="success-target-item"><strong>Pull Up (pull), Fri:</strong> 8, 7, 7. She held a flat 7, 7, 7 on Aug 18, so the ask is one more rep on the opener.</div>
       <div class="success-target-item"><strong style="color:#c2410c">Nutrition is the real ask this week,</strong> see the food journal flag below. The lifts are already trending fine.</div>
+    </div>
+  </div>
+
+    <div class="dp-section" style="border-left:3px solid #16a34a;background:#f2fbf5">
+    <div class="dp-title">📊 Scan 2 Results (Aug 30) — read this first</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong style="color:#166534">Her ALMI went from the 55th to the 60th percentile, up 5 points.</strong> That is the headline and it is a real muscle result. Lead with it.</div>
+      <div style="margin-bottom:8px"><strong>It is hiding behind a total-lean number that looks bad.</strong> Total lean reads <strong>99.0 to 96.9, down 2.0 lb</strong>, which on its own would look like muscle loss. The regional split says otherwise: <strong>legs lean +1.1</strong> and arms lean -0.1, so appendicular lean, the tissue ALMI actually measures, went <strong>up about 1 lb</strong>. The entire drop is <strong>trunk lean, -3.2</strong>, which over five weeks is largely hydration, glycogen and gut content rather than muscle.</div>
+      <div style="margin-bottom:8px"><strong>So the sentence to say out loud is:</strong> you added muscle to your legs, the scale and the total-lean number just cannot see it. Show her the legs row.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">The honest miss is visceral fat, up 5.3 cm² from 79.9 to 85.2.</strong> Fat mass also crept up 0.3 lb and body fat 34.0 to 34.6, while weight came down 1.7. Small moves, but all in the wrong direction on the fat side.</div>
+      <div style="margin-bottom:8px"><strong>Remember she is not a fat-loss case.</strong> At the 43rd percentile for body fat she carries less than most women her age, so the recomp framing still holds. The work is nutrition consistency to stop the visceral creep, while the leg training keeps doing what it is clearly already doing.</div>
     </div>
   </div>
 
@@ -2825,21 +2847,21 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <table class="dexa-table">
       <thead><tr><th>Metric</th><th>Scan 1 (Jul 26 baseline)</th><th>Scan 2 (Aug 30)</th><th>Delta</th></tr></thead>
       <tbody>
-        <tr><td>Body Weight (lb)</td><td>157.4</td><td class="r-pending" id="megan-s2-bw">—</td><td class="r-pending" id="megan-d-bw">—</td></tr>
-        <tr><td>Body Fat %</td><td>34.0%</td><td class="r-pending" id="megan-s2-bf">—</td><td class="r-pending" id="megan-d-bf">—</td></tr>
-        <tr><td>Lean Mass (lb)</td><td>99.0</td><td class="r-pending" id="megan-s2-lean">—</td><td class="r-pending" id="megan-d-lean">—</td></tr>
-        <tr><td>Fat Mass (lb)</td><td>53.6</td><td class="r-pending" id="megan-s2-fat">—</td><td class="r-pending" id="megan-d-fat">—</td></tr>
-        <tr><td>VAT (cm²)</td><td>79.9</td><td class="r-pending" id="megan-s2-vat">—</td><td class="r-pending" id="megan-d-vat">—</td></tr>
-        <tr><td>ALMI (%ile)</td><td>55th %ile</td><td class="r-pending" id="megan-s2-almi">—</td><td class="r-pending" id="megan-d-almi">—</td></tr>
+        <tr><td>Body Weight (lb)</td><td>157.4</td><td id="megan-s2-bw">155.7</td><td id="megan-d-bw"><span style="color:#16a34a">-1.7</span></td></tr>
+        <tr><td>Body Fat %</td><td>34.0%</td><td id="megan-s2-bf">34.6%</td><td id="megan-d-bf"><span style="color:#c2410c">+0.6</span></td></tr>
+        <tr><td>Lean Mass (lb)</td><td>99.0</td><td id="megan-s2-lean">96.9</td><td id="megan-d-lean"><span style="color:#c2410c">-2.0</span></td></tr>
+        <tr><td>Fat Mass (lb)</td><td>53.6</td><td id="megan-s2-fat">53.9</td><td id="megan-d-fat"><span style="color:#c2410c">+0.3</span></td></tr>
+        <tr><td>VAT (cm²)</td><td>79.9</td><td id="megan-s2-vat">85.2</td><td id="megan-d-vat"><span style="color:#c2410c;font-weight:700">+5.3</span></td></tr>
+        <tr><td>ALMI (%ile)</td><td>55th %ile</td><td id="megan-s2-almi">60th %ile</td><td id="megan-d-almi"><span style="color:#16a34a;font-weight:700">+5</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:12px;font-weight:600;font-size:12px;color:#666">Regional Composition (lb), combined, Scan 1 baseline (Jul 26)</div>
     <table class="dexa-table" style="margin-top:4px">
       <thead><tr><th>Region</th><th>Scan 1 Lean</th><th>Scan 2 Lean</th><th>Δ Lean</th><th>Scan 1 Fat</th><th>Scan 2 Fat</th><th>Δ Fat</th></tr></thead>
       <tbody>
-        <tr><td>Arms (both)</td><td>9.7</td><td class="r-pending" id="megan-s2-arms-lean">—</td><td class="r-pending" id="megan-d-arms-lean">—</td><td>6.9</td><td class="r-pending" id="megan-s2-arms-fat">—</td><td class="r-pending" id="megan-d-arms-fat">—</td></tr>
-        <tr><td>Trunk</td><td>51.9</td><td class="r-pending" id="megan-s2-trunk-lean">—</td><td class="r-pending" id="megan-d-trunk-lean">—</td><td>26.9</td><td class="r-pending" id="megan-s2-trunk-fat">—</td><td class="r-pending" id="megan-d-trunk-fat">—</td></tr>
-        <tr><td>Legs (both)</td><td>31.4</td><td class="r-pending" id="megan-s2-legs-lean">—</td><td class="r-pending" id="megan-d-legs-lean">—</td><td>17.5</td><td class="r-pending" id="megan-s2-legs-fat">—</td><td class="r-pending" id="megan-d-legs-fat">—</td></tr>
+        <tr><td>Arms (both)</td><td>9.7</td><td id="megan-s2-arms-lean">9.6</td><td id="megan-d-arms-lean"><span style="color:#c2410c">-0.1</span></td><td>6.9</td><td id="megan-s2-arms-fat">6.9</td><td id="megan-d-arms-fat"><span style="color:#16a34a">-0.0</span></td></tr>
+        <tr><td>Trunk</td><td>51.9</td><td id="megan-s2-trunk-lean">48.7</td><td id="megan-d-trunk-lean"><span style="color:#c2410c">-3.2</span></td><td>26.9</td><td id="megan-s2-trunk-fat">27.8</td><td id="megan-d-trunk-fat"><span style="color:#c2410c">+0.9</span></td></tr>
+        <tr><td>Legs (both)</td><td>31.4</td><td id="megan-s2-legs-lean">32.5</td><td id="megan-d-legs-lean"><span style="color:#16a34a;font-weight:700">+1.1</span></td><td>17.5</td><td id="megan-s2-legs-fat">17.1</td><td id="megan-d-legs-fat"><span style="color:#16a34a">-0.3</span></td></tr>
       </tbody>
     </table>
     <div style="margin-top:6px;font-size:11px;color:#888">Arms carry only <strong>9.7 lb of lean against 6.9 lb of fat</strong>, close to a one-to-one ratio and her weakest region by a distance. Legs at 31.4 lb lean reflect the running. If upper body work has landed at all, the arms lean row is where it shows.</div>
@@ -2924,7 +2946,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="beatriz-scan-badge">Scan 2 Pending</span></div>
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-complete" id="beatriz-scan-badge">Complete ✓</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Barbell Squat est 1RM 310 lb.</strong> She ran 225x7, 245x8 and 255x6 on Aug 24. Her Gold Standard is 250 lb, so <strong>she is already past it</strong>. On this board that is unique.</span></div>
       <div class="success-win"><span class="win-icon">🍑</span><span class="win-text"><strong>Barbell Hip Thrust 375 lb for 5, est 1RM 438.</strong> Up from 345 on Aug 20. The posterior chain work is moving fast.</span></div>
@@ -2937,6 +2959,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-target-item"><strong>Barbell Hip Thrust (hinge/glute), Wed Aug 26:</strong> 375 lb for 6. She hit 375 for 5 on Aug 24 and 365 for 6 on Aug 20, so this is one more rep at a weight she has already moved.</div>
       <div class="success-target-item"><strong>Cable Seated Row (pull), Fri Aug 28:</strong> start at 130 and hold it for 8 on all three sets. She ran 115, 120, 120 on Aug 23 but hit 145 for 5 on Aug 19, which is the pyramiding pattern you already flagged. Starting heavy is the actual ask here.</div>
       <div class="success-target-item"><strong>Dumbbell Incline Bench Press (push), Fri Aug 28:</strong> 40 lb for 8. She got 40 for 6 with a 1RM flag on Aug 23, so this is two more reps at her best load.</div>
+    </div>
+  </div>
+
+    <div class="dp-section" style="border-left:3px solid #16a34a;background:#f2fbf5">
+    <div class="dp-title">📊 Scan 2 Results (Aug 30) — read this first</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong style="color:#166534">Six pounds down in 31 days, and most of it was fat.</strong> Weight <strong>168.0 to 162.0</strong>, fat mass <strong>58.5 to 54.7, down 3.8 lb</strong>, body fat <strong>34.8 to 33.7</strong>. Visceral fat also came down, <strong>124.2 to 120.9</strong>. For a fat-loss goal this is a good month and she should hear that first.</div>
+      <div style="margin-bottom:8px"><strong>Judge it against Jul 30, not Jul 2.</strong> This is her third scan, so the window is 31 days and the comparison above is to her last one.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">The miss: 2.1 lb of the 6 was lean, and ALMI fell from the 87th to the 83rd percentile.</strong> Roughly 64 percent of the loss was fat, which is acceptable but not where you want it. The lean came off the limbs, arms <strong>-0.7</strong> and legs <strong>-0.8</strong>, while trunk lean barely moved at -0.4. Losing appendicular lean is what drags ALMI down.</div>
+      <div style="margin-bottom:8px"><strong>Fat came off everywhere, which is the good news:</strong> trunk fat <strong>-1.9</strong>, legs fat <strong>-1.3</strong>, arms fat <strong>-0.5</strong>. Nothing regional is lagging.</div>
+      <div style="margin-bottom:8px"><strong>The next block writes itself:</strong> she is still at the 83rd percentile so there is room, but the ratio needs fixing before the next 6 lb. Protein and hard first working sets, so the following month takes the same weight off with the lean held. Say plainly that the goal now is to lose the next six pounds without paying two of them in muscle.</div>
     </div>
   </div>
 
