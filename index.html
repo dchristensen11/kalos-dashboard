@@ -1301,7 +1301,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('claudia')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-claudia">7/8</span>
+            <span class="checklist-progress-badge" id="prog-claudia">6/8</span>
             <span class="checklist-chevron" id="chev-claudia">›</span>
           </div>
         </div>
@@ -1312,7 +1312,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Modal built from real data</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Pre-scan opener sent</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Lift targets + nutrition sent, 2-day food journal assigned</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Night-before refresh (Aug 30) + audio briefing</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('claudia')"><span> Night-before refresh done Aug 30; audio briefing FAILED, see modal</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('claudia')"><span> Argentina plan drafted (leaves ~Dec 31 for 4-5 months)</span></label>
         </div>
       </div>
@@ -2152,6 +2152,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   };
   </script>
 
+  <div style="background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #dc2626;border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:12.5px;line-height:1.55;color:#2a2a3a">
+    <strong style="color:#b91c1c">⚠ No audio brief for this scan.</strong> The modal below was fully refreshed at 8:30 PM Sun Aug 30 and every number in it is current. The 9-section Voicebox brief could not be generated: the local Voicebox service accepted all 9 requests and then stopped processing (23 jobs across three members stuck at "generating", zero CPU, no output files since 7:05 AM). It needs a restart, which was left for you rather than done automatically because two other members' briefs were queued behind the same jam. <strong>Read this modal instead of listening on the drive in.</strong>
+  </div>
+
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="claudia-scan-badge">Scan 2 Pending</span></div>
@@ -2239,9 +2243,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <tr><td>Seated Row Machine <span style="font-size:10px;color:#888">(pull, machine)</span></td><td><strong>40 lb x 12</strong> <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>est 13 &rarr; <strong>56</strong></td><td><strong>The headline.</strong> Asked for 15 lb, logged 35x12, 40x12, 40x10. That session carried 14 personal bests, 10 in the main set.</td></tr>
         <tr><td>Dumbbell Romanian Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>17.5 lb x 12 <span style="font-size:10px;color:#888">(Aug 30)</span></td><td>est 1RM 25, <strong>flat</strong></td><td><strong>Stuck.</strong> Same 17.5 on Aug 28 and Aug 30, unchanged for three weeks. Note the Aug 28 set logged as "1.5 lb" is a mis-log between two sets of 17.5, not a regression.</td></tr>
         <tr><td>Dumbbell Incline Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>5 lb x 15 <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>est 1RM 7, <strong>flat</strong></td><td><strong>Stuck and very light.</strong> 5 lb on Aug 26 and Aug 28 while her machine chest press moves 48. Lateral raise and Arnold press are also both 5 lb. The gap between machines and free weights is the tell.</td></tr>
-        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female 60+ · 146.3 lb bodyweight</td></tr>
+        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards, Female 60+ · 146.3 lb bodyweight</td></tr>
         <tr><td>Barbell Bench Press</td><td>—</td><td>~110 lb 1RM</td><td>0.75 x BW. Not currently programmed, and not a realistic near-term goal from a 64 lb machine press.</td></tr>
-        <tr><td>Back Squat</td><td>—</td><td>~185 lb 1RM</td><td>1.25 x BW. Reference only. Leg Press at 168 est is the honest proxy and it is the one that matters for her.</td></tr>
+        <tr><td>Back Squat</td><td>—</td><td>~185 lb 1RM</td><td>1.25 x BW. Reference only. Leg Press at 187 est is the honest proxy and it is the one that matters for her.</td></tr>
         <tr><td>Deadlift</td><td>—</td><td>~220 lb 1RM</td><td>1.5 x BW. Her DB RDL sits at an est 25. Direction, not a target.</td></tr>
       </tbody>
     </table>
