@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Monday, September 7</strong> &middot; Kalos Package DEXA <strong>+ in-person form assessment</strong> &middot; 2:00 PM <span style="color:#888">(3:30 offered, he has not replied)</span> &middot; <strong style="color:#16a34a">1 Year Core through Jun 2027, no sale on the line</strong></span>
+        <span><strong>Monday, September 7</strong> &middot; Kalos Package DEXA <strong>+ in-person form assessment</strong> &middot; 2:00 PM <span style="color:#888">(3:30 offered Aug 28, still no reply)</span> &middot; <strong style="color:#16a34a">1 Year Core through Jun 2027, no sale on the line</strong></span>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -905,6 +905,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="metric-sub">Up 2 &middot; THE number</div>
         </div>
       </div>
+      <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#14532d">
+        <div style="font-weight:700;margin-bottom:4px">🥗 Macro targets, live in the app since Aug 31</div>
+        <div><strong>Protein 197 every day.</strong> Carbs <strong>487</strong> training &middot; <strong>272</strong> rest &middot; <strong style="color:#c2410c">534 cycling days</strong>. Fat 63 training / 89 rest. 3303 kcal training, 2677 rest.</div>
+        <div style="margin-top:4px;color:#3f6212"><strong>The app only holds two day types</strong>, so the 534 cycling figure is not in it. He is carrying that one in his head. <strong>Check he has it right.</strong></div>
+      </div>
       <div class="consistency-section">
         <div class="cons-label">📊 Training Consistency</div>
         <div class="cons-row">
@@ -923,7 +928,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('matthew')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-matthew">5/9</span>
+            <span class="checklist-progress-badge" id="prog-matthew">8/10</span>
             <span class="checklist-chevron" id="chev-matthew">›</span>
           </div>
         </div>
@@ -933,10 +938,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Kalos app thread checked for prior pre-scan messages (Aug 31)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Everfit lifts, body metrics, sessions before scan pulled</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Modal rebuilt from real data (Sep 7 window)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Pre-scan opener sent (drafted, awaiting approval)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Lift targets + nutrition recalibration sent (drafted, awaiting approval)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> 2-day food journal task added (Sep 5 + Sep 6)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> ⚠ SET UP MACROS / MyFitnessPal connection (PROMISED JUL 30, STILL OPEN)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Macros set live in app &middot; Aug 31 &middot; 197 / 487 / 272</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Pre-scan opener sent &middot; Aug 31, 4:51 PM</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Lift targets + live macro targets sent &middot; Aug 31, 4:51 PM</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> 2 days of meal photos received (requested Aug 31, due before Mon)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Night-before refresh + audio briefing</span></label>
         </div>
       </div>
     </div>
@@ -3906,20 +3912,27 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- ── MATTHEW KEASLER MODAL ── -->
 <div id="modal-matthew" class="modal-content"
      data-name="Matthew Keasler"
-     data-sub="2nd Package Scan (4th overall) · September 7, 2026 · Lean Mass / ALMI · M · 40">
+     data-sub="2nd Package Scan (4th overall) &middot; September 7, 2026 &middot; 2:00 PM &middot; Lean Mass / ALMI &middot; M &middot; 40">
 
   <script>
   window.__scan1_matthew = { bw: 176.8, bfPct: 17.0, lean: 140.0, fat: 30.0, vat: 71.7, almiAMpct: 29, scan1Date: 'Jul 27, 2026 (3rd scan, this block\'s baseline)', height: 74, regional: { arms: {lean:17.8, fat:3.3}, trunk: {lean:67.5, fat:13.4}, legs: {lean:47.7, fat:10.9} } };
   </script>
 
-  <!-- 0 - BLOCKER -->
-  <div class="dp-section" style="border-left:3px solid #dc2626;background:#fff5f5">
-    <div class="dp-title">🚩 Open promise: nutrition visibility</div>
-    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px">On <strong>Jul 30</strong> he asked whether he still needed to log meals now that MyFitnessPal was syncing. The reply was <em>"I need to adjust a setting on my end but I will be able to see everything. no need to double track."</em></div>
-      <div style="margin-bottom:8px"><strong style="color:#dc2626">That setting was never adjusted.</strong> The Macros tab still reads "Macros tracking for this member hasn't been set up yet!" and his food journal stops on <strong>Jul 26</strong>. He has logged for 32 days believing it was visible, and there has been no nutrition data since.</div>
-      <div style="margin-bottom:8px">He did exactly what he was told, so <strong>none of this is his miss</strong>. The week-out message asks for two days of photos and states plainly that the connection is being set up now.</div>
-      <div><strong>Before the room:</strong> set up Macros, and open the nutrition part of the conversation by owning the gap.</div>
+  <!-- 0 - Live macro targets -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f0fdf4">
+    <div class="dp-title">🥗 Macro targets, live in the app since Aug 31</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#14532d">
+      <table class="lift-table" style="margin:4px 0 8px">
+        <thead><tr><th>Day type</th><th>Protein</th><th>Carbs</th><th>Fat</th><th>Calories</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Training day</strong></td><td><strong>197</strong></td><td><strong>487</strong></td><td>63</td><td>3303</td></tr>
+          <tr><td><strong>Rest day</strong></td><td><strong>197</strong></td><td><strong>272</strong></td><td>89</td><td>2677</td></tr>
+          <tr style="background:#fff7ed"><td><strong>Cycling day</strong></td><td><strong>197</strong></td><td><strong style="color:#c2410c">534</strong></td><td>&mdash;</td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">The single most useful thing to check in the room.</strong> The app only holds <strong>two</strong> day types, so only training and rest are in it. His cycling days run <strong>534 carbs, higher than a training day</strong>, and that figure exists nowhere in the app. He was told on Aug 31 to carry it himself. <strong>Confirm he has it right, and that he knows cycling beats training on carbs rather than sitting between training and rest.</strong></div>
+      <div style="margin-bottom:8px"><strong>Protein is 197 every single day</strong>, flat across all three day types. That is the number to hold him to. <span style="color:#666">Two older figures are now dead and are only listed so you recognise them if he quotes one: <s>166</s> from his onboarding sheet, and <s>175 to 185</s> which was on file until Aug 31.</span></div>
+      <div style="font-size:12px;color:#3f6212"><strong>Resolved history, not an open flag:</strong> the MyFitnessPal connection he was promised on Jul 30 sat unset until Aug 31, which is why his food journal stops on Jul 26. It is now live and syncing (last sync Aug 31, 4:48 PM, and his Aug 31 intake is already coming through). Nothing here is his miss and there is nothing to chase him about.</div>
     </div>
   </div>
 
@@ -3929,12 +3942,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">💯</span><span class="win-text"><strong>Perfect adherence. Eight consecutive weeks at 3 of 3.</strong> The only 100% on this board, held through a So Cal travel weekend and a post-flu return. Last session Aug 28.</span></div>
       <div class="success-win"><span class="win-icon">🎯</span><span class="win-text"><strong>Lean up 1.95 lb on 0.6 lb of bodyweight</strong>, with body fat down 0.8 points. Close to the theoretical best outcome for a lean-mass block, and the second consecutive scan doing it.</span></div>
-      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Deadlift established and it is strong.</strong> Aug 28: worked up 155, 185, 205, 220 then held <strong>225 for 6 across five sets</strong>, est 1RM 270, up from 260 on Aug 14. The previous prep said no full-deadlift top set existed. It does now.</span></div>
+      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Deadlift established and it is strong.</strong> Aug 28: worked up 155, 185, 205, 220 then held <strong>225 for 6 across five sets</strong>, est 1RM 270, up from 260 on Aug 14.</span></div>
       <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Bench climbing fast.</strong> Est 1RM 165 to 180 in two weeks, 150 for 6 across five sets on Aug 25 against 130 for 8 on Aug 11.</span></div>
       <div class="success-win"><span class="win-icon">🧊</span><span class="win-text"><strong>Body fat at the 12th percentile for his age.</strong> He is leaner than 88% of 40-year-old men. There is nothing here to cut, which is why this is a build-only conversation.</span></div>
     </div>
     <div class="success-targets">
-      <div class="success-targets-label"><strong>Three sessions land before the scan:</strong> <strong>Tue Sep 1 (Push B)</strong>, <strong>Thu Sep 3 (Pull B)</strong>, <strong>Fri Sep 4 (Squat Day)</strong>. Targets sent:</div>
+      <div class="success-targets-label"><strong>Three sessions land before the scan:</strong> <strong>Tue Sep 1 (Push B)</strong>, <strong>Thu Sep 3 (Pull B)</strong>, <strong>Fri Sep 4 (Squat Day)</strong>. Targets sent Aug 31:</div>
       <div class="success-target-item"><strong>Barbell Seated Shoulder Press (push), Tue Sep 1:</strong> 80 for 8. He held 75 for 8 across <strong>six</strong> straight sets on Aug 18, so the opener had plenty left.</div>
       <div class="success-target-item"><strong>Chest Supported Dumbbell Row (pull), Thu Sep 3:</strong> the 35s for 10. He has run the 30s for 12, three sets, on both Aug 20 and Aug 27. Identical twice running means move the weight.</div>
       <div class="success-target-item"><strong>Barbell Squat (squat), Fri Sep 4:</strong> 185 for 8. He sat on 175 for 8 across five sets on Aug 21, and he has previously hit 205 for 4 and 190 for 6.</div>
@@ -3952,23 +3965,23 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Macros / MyFitnessPal connection promised Jul 30 and never set up.</strong> No nutrition data since Jul 26. See the red block at the top.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Macros are live as of Aug 31.</strong> 197 protein daily, 487 carbs training, 272 rest. <strong>The cycling day sits at 534 and the app cannot hold a third day type</strong>, so he is carrying that one manually. Verify it.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>100% adherence, eight straight weeks at 3 of 3.</strong> Nobody else on this board is at 100%. Open here and mean it.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Two consecutive scans catching both rabbits.</strong> Lean up, fat down, twice in a row. The programme is working and he is executing it.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>VAT up 6.8 cm² (+10.5%) to 71.7.</strong> The single metric moving the wrong way, against his own Jul 27 goal of driving it below 60. Given the family history of hypertension and diabetes, this is the one to name.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Aggressive fuelling is the likely VAT driver.</strong> Make the trade-off explicit so he is choosing where to set the dial rather than discovering it. He is already lowering fats at lunch and dinner.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Scale weight drifting down on a build.</strong> 179.2 at the Jul 27 scan, 177.6 on Aug 27. Worth one direct question about intake.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Scale weight drifting down on a build.</strong> 179.2 at the Jul 27 scan, 177.6 on Aug 27. Worth one direct question about intake, and the new 3303 kcal training-day target speaks to it.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Right adductor</strong>, tweaked at hockey, improving with stretching and no pain at Jul 27. Keep goblet Cossack squats in. Relevant on Squat Day and Pull B.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Ball of the left foot</strong> bothering him from time on his feet (Jul 27). Not raised since, worth a check.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>In-person form assessment runs the same appointment.</strong> It was booked for Aug 10, he cancelled that morning with a cold, and it moved here. <strong>The SOP box wrongly shows it done on Aug 10.</strong></span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Celiac, gluten-free.</strong> Protein target on file conflicts: SOP says 166 g/day, member record says 175 to 185+. Confirm which is current.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Celiac, gluten-free.</strong> Protein target is now <strong>197 g/day</strong>, live in the app. The 166 on his onboarding sheet is stale.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No renewal on the line.</strong> 1 Year Core runs to Jun 2027, so no 6-to-12-month question was asked.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
       <div class="personal-note"><span class="note-emoji">🏋️</span><span><strong>DC - Power Building I</strong>, 8/10 to 10/4, powerlifting plus bodybuilding. Sessions before the scan: <strong>Tue Sep 1 Push B</strong>, <strong>Thu Sep 3 Pull B</strong>, <strong>Fri Sep 4 Squat Day</strong>. Scan day itself is Push A.</span></div>
       <div class="personal-note"><span class="note-emoji">🏠</span><span><strong>Garage home gym:</strong> dumbbells, bands, Peloton. <strong>No cable machine</strong>, bands substitute (agreed Aug 10). <strong>No chains</strong>, single band at the centre of the bar for rack pulls (agreed Aug 19).</span></div>
-      <div class="personal-note"><span class="note-emoji">🥩</span><span><strong>Gluten-free, celiac.</strong> Day-specific macros with higher carbs on lift and cycle days. Considering intra-workout EAAs, electrolytes, creatine, glutamine and HBCD. Transparent Labs intra-workout and NutraBio Leg Day already recommended.</span></div>
-      <div class="personal-note"><span class="note-emoji">🏒</span><span><strong>Hockey and HYROX</strong> are the performance context. The adductor came from hockey. <strong>Copenhagen plank moved 30s to consistent 45s</strong>, his own quality win from Jul 27.</span></div>
+      <div class="personal-note"><span class="note-emoji">🥩</span><span><strong>Gluten-free, celiac.</strong> Considering intra-workout EAAs, electrolytes, creatine, glutamine and HBCD. Transparent Labs intra-workout and NutraBio Leg Day already recommended.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏒</span><span><strong>Hockey and HYROX</strong> are the performance context, and cycling is the third leg (Peloton), which is why the 534-carb cycling day matters. The adductor came from hockey. <strong>Copenhagen plank moved 30s to consistent 45s</strong>, his own quality win from Jul 27.</span></div>
       <div class="personal-note"><span class="note-emoji">🤒</span><span><strong>Norovirus</strong> cost a full week around the Jul scan, about 1.5 weeks to feel fully back, and food was poor at the <strong>CrossFit Games</strong>. He still finished the block at 100%.</span></div>
       <div class="personal-note"><span class="note-emoji">📅</span><span>Window <strong>Jul 27 to Sep 7 = 42 days</strong>. Second package scan, fourth overall. Judge against Jul 27, not the intro.</span></div>
     </div>
@@ -3995,7 +4008,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a00f71fa5315c249bdaddd0/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
     <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
       <strong>🎯 Three sessions before the scan.</strong> Tue Sep 1 (Push B), Thu Sep 3 (Pull B), Fri Sep 4 (Squat Day).
-      <div style="margin-top:6px">The pattern running through his whole file: <strong>identical sets straight through</strong>. Six sets of 8 at 75, five of 6 at 150, five of 8 at 175, five of 6 at 225. That consistently means the opening set had more in it, and it is why every target below is a weight step rather than a rep step.</div>
+      <div style="margin-top:6px">The pattern running through his whole file: <strong>identical sets straight through</strong>. Six sets of 8 at 75, five of 6 at 150, five of 8 at 175, five of 6 at 225. That consistently means the opening set had more in it, and it is why every target is a weight step rather than a rep step.</div>
       <div style="margin-top:6px;color:#666">Program templates carry no prescribed loads, so every target is anchored on his own logged history.</div>
     </div>
     <table class="lift-table">
@@ -4019,15 +4032,15 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 6 - Nutrition -->
   <div class="dp-section">
-    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a00f71fa5315c249bdaddd0/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a00f71fa5315c249bdaddd0/macros" target="_blank" class="dp-title-link">Macros ↗</a></div>
     <div class="nutri-protocol">
-      <div><div><strong style="color:#dc2626">No nutrition data since Jul 26.</strong> Food journal empty for 36 days and Macros never connected. He was told on Jul 30 he did not need to double track, so this is on our side, not his.</div></div>
-      <div><div><strong>Protein target conflict on file:</strong> SOP says <strong>166 g/day</strong>, member record says <strong>175 to 185+ g/day</strong> with day-specific macros. The week-out message uses 175 to 185. Confirm which is current.</div></div>
+      <div><div><strong style="color:#15803d">Targets are live in the app as of Aug 31.</strong> Protein <strong>197 daily</strong>, carbs <strong>487</strong> training / <strong>272</strong> rest, fat 63 / 89, calories 3303 / 2677.</div></div>
+      <div><div><strong style="color:#c2410c">Cycling days run 534 carbs and are NOT in the app</strong>, which only holds two day types. He is carrying that number manually. Confirm he has it, because cycling is higher than a training day and that is counter-intuitive.</div></div>
+      <div><div><strong>MyFitnessPal is syncing again</strong> as of Aug 31, so intake now flows into the Macros tab. His food journal shows nothing between <strong>Jul 26</strong> and the reconnection, which is a tooling gap on our side rather than anything he did.</div></div>
+      <div><div><strong>Two days of meal photos requested Aug 31</strong>, due before Monday. That is the live ask, and it is what the carb timing conversation gets built on.</div></div>
       <div><div><strong>Aggressive fuelling for muscle gain</strong> is the strategy and it is working on lean mass. He is tightening it by lowering fats at lunch and dinner, his own call.</div></div>
       <div><div><strong style="color:#c2410c">The VAT rise is the likely cost of that fuelling.</strong> Up 10.5% to 71.7 cm². Make the trade-off explicit so he chooses it.</div></div>
       <div><div><strong>Gluten-free, celiac.</strong> Post-flu digestive comfort recovered. Daily multivitamin with probiotics, prebiotic fibre and vitamin D.</div></div>
-      <div><div><strong>Considering</strong> intra-workout EAAs and electrolytes, creatine, glutamine and HBCD. Transparent Labs intra-workout and NutraBio Leg Day already recommended.</div></div>
-      <div><div><strong>Two days of meal photos requested</strong> ahead of Sep 7. A 2-day food journal task still needs adding for Sep 5 and Sep 6.</div></div>
     </div>
   </div>
 
@@ -4035,10 +4048,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
     <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">awaiting reply</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>Asked Fri Aug 28, 06:21 AM. Seen. <span style="color:#c2410c">No reply after 3 days.</span></strong> He was asked what he has noticed since starting, with prompts on sleeves and shoulders, weights feeling lighter, the mirror, and specifically <strong>how he is moving on the ice, how the HYROX work feels, and what the adductor is doing</strong>.</div>
-      <div style="margin-bottom:8px"><strong>Also unanswered from the same morning:</strong> whether he wants 2:00 or the 3:30 slot. Both messages are marked Seen.</div>
+      <div style="margin-bottom:8px"><strong>Asked Fri Aug 28, 06:21 AM. Seen. <span style="color:#c2410c">Still no reply.</span></strong> He was asked what he has noticed since starting, with prompts on sleeves and shoulders, weights feeling lighter, the mirror, and specifically <strong>how he is moving on the ice, how the HYROX work feels, and what the adductor is doing</strong>. Nudged again Aug 31.</div>
+      <div style="margin-bottom:8px"><strong>Also unanswered since Aug 28:</strong> whether he wants 2:00 or the 3:30 slot. Both messages are marked Seen.</div>
+      <div style="margin-bottom:8px"><strong>Sent Aug 31, 4:51 PM:</strong> the macro update, the pre-scan opener, the three lift targets with the live macro numbers, and a short nudge on the Aug 28 question. Four messages, all delivered.</div>
       <div style="margin-bottom:8px"><strong>Twelve-month question:</strong> <span style="color:#888">not sent. Mid-contract on 1 Year Core through Jun 2027, no renewal cliff near this scan, so it was deliberately skipped.</span></div>
-      <div style="font-size:12px;color:#666"><strong>Read the silence.</strong> He normally replies within hours, often the same minute, on logistics and programming. Two unanswered messages in three days is out of character for him and is worth one gentle nudge rather than a re-send. The night-before refresh fills this in from the Kalos app thread.</div>
+      <div style="font-size:12px;color:#666"><strong>Read the silence.</strong> He normally replies within hours, often the same minute, on logistics and programming. Several unanswered messages since Aug 28 is out of character. If nothing lands by the night-before refresh, open the room by asking him directly rather than assuming he is disengaged, because his training log says the opposite.</div>
     </div>
   </div>
 
@@ -4051,8 +4065,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div style="margin-bottom:8px"><strong>Give him the lean-to-weight ratio properly.</strong> Roughly 2 lb of lean added on 0.6 lb of bodyweight with body fat down 0.8 points, two scans in a row. That is a rare execution record.</div>
       <div style="margin-bottom:8px"><strong>Say the body fat percentile out loud.</strong> 12th percentile age-matched, leaner than 88% of 40-year-old men. It reframes the whole conversation as building rather than cutting, and it is the reason no fat-loss talk belongs here.</div>
       <div style="margin-bottom:8px"><strong>Name the VAT rise honestly.</strong> Up 10.5% to 71.7 cm², the only metric going the wrong way, against his own goal of driving it below 60. Tie it to the family history of hypertension and diabetes, which is his own stated stake.</div>
-      <div style="margin-bottom:8px"><strong>Own the nutrition gap first, then ask.</strong> The macro connection was promised on Jul 30 and never set up. Lead with that before asking anything about his intake.</div>
-      <div style="margin-bottom:8px"><strong>Ask about the scale drift.</strong> 179.2 at the scan, 177.6 on Aug 27, on a block that is supposed to be fuelled aggressively.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">Check the cycling-day carbs.</strong> 534, higher than a training day, and the app cannot hold it. This is the easiest thing in the whole file to get wrong, and he only heard it once, in a message he has not replied to.</div>
+      <div style="margin-bottom:8px"><strong>Ask about the scale drift.</strong> 179.2 at the scan, 177.6 on Aug 27, on a block that is supposed to be fuelled aggressively. The new 3303 kcal training-day target is the answer, so check he is actually eating it.</div>
       <div style="margin-bottom:8px"><strong>Celebrate the deadlift.</strong> 225 for 6 across five sets on Aug 28 at an est 270, 76% of the gold standard, established from nothing this block.</div>
       <div style="margin-bottom:8px"><strong>The form assessment runs the same appointment</strong>, the one he lost to a cold on Aug 10. Budget the time.</div>
       <div style="margin-bottom:8px"><strong>No renewal conversation.</strong> 1 Year Core runs to Jun 2027.</div>
