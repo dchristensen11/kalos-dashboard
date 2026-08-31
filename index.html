@@ -1374,7 +1374,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('sandy')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-sandy">7/8</span>
+            <span class="checklist-progress-badge" id="prog-sandy">6/8</span>
             <span class="checklist-chevron" id="chev-sandy">›</span>
           </div>
         </div>
@@ -1385,7 +1385,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Modal built from real data</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Pre-scan opener sent</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Lift targets + nutrition sent, 2-day food journal assigned</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Night-before refresh (Aug 30) + audio briefing</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sandy')"><span> Night-before refresh (Aug 30) + audio briefing <span style="color:#c2410c;font-weight:600">· refresh DONE 8:20 PM, audio brief NOT generated, Voicebox is not processing jobs</span></span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sandy')"><span> Membership recommendation prepared (4-week ends scan day)</span></label>
         </div>
       </div>
@@ -2324,6 +2324,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="sandy-scan-badge">Scan 3 Pending</span></div>
+    <div style="background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:9px 11px;margin-bottom:10px;font-size:12px;color:#7c2d12"><strong>Night-before refresh ran 8:20 PM Sun Aug 30 and everything below is current to that moment. There is no audio brief for this scan:</strong> Voicebox accepted the nine sections but is not processing any job on the queue, so nothing was generated. Read the modal on the way in.</div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>100% consistency over 30 days and 100% over 7, 16 sessions out of 16. The only perfect record on the board.</strong> <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Aug 30</span> She has not missed a session. When she lost gym access the weekend of Aug 23 she wrote in and rearranged the week herself rather than dropping one, then ran four sessions in the final week, three of them back to back.</span></div>
       <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>ALMI went from the 7th to the 12th percentile between May and August.</strong> That is a 71% relative move on the metric she cares about most, and it happened while she also dropped 2.8 lb of fat and 1.5 points of body fat. Genuine recomposition, not just weight loss.</span></div>
