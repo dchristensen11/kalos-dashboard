@@ -716,9 +716,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
-<!-- ═══════════ SEP 7 — ESMERALDA HERNANDEZ VARGAS (ROUTINE) ═══════════ -->
+<!-- ═══════════ SEP 7 — ESMERALDA HERNANDEZ VARGAS + JAMIE LEWIS (ROUTINE) ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Monday · September 7, 2026 &mdash; Routine Package Scan</div>
+  <div class="day-label">Monday · September 7, 2026 &mdash; Routine Package Scans</div>
   <div class="cards-row">
 
     <!-- ── ESMERALDA HERNANDEZ VARGAS ── -->
@@ -790,6 +790,79 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> Pre-scan opener sent (drafted, awaiting approval)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> Lift targets + nutrition sent (drafted, awaiting approval)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> "What have you noticed" question sent (drafted Aug 31)</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── JAMIE LEWIS ── -->
+    <div class="card" id="card-jamie">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('jamie')">Jamie Lewis <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male &middot; 50 &middot; 3rd Package Scan &middot; LBM Gain</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">Time TBC</span>
+          <span class="badge badge-lbm">LBM Gain</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, September 7</strong> &middot; Kalos Package DEXA &middot; <strong style="color:#16a34a">6 Month Core runs to Jan 5, 2027 &middot; no renewal cliff</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">191.3</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Aug 5 baseline &middot; scale 194.3</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">25.7%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">53rd %ile age-matched &middot; fat 49.2 lb</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">111.2</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Up 20.3 (+22.4%) since Jul 5</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">21st %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">Up from 13th at Jul 5</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">88%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:88%;background:#22c55e"></div></div>
+            <div class="cons-detail">14 of 16 last 30d &middot; 13 of 15 since the Aug 5 baseline &middot; <strong>both missed sessions were Lower B</strong> (Aug 22 and Aug 29). Adherence is not the problem here, morale is.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Their Deep Why</div>
+        <div class="why-text">Longevity and aesthetics for his family and 4 kids; turning 50 in control, <em>"level 50"</em> and <em>"savage mode"</em>, with visible abs like Jake Gyllenhaal in Road House. why_strength band <strong>anchored</strong> (person, identity), so it is safe to reference.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('jamie')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-jamie">4/8</span>
+            <span class="checklist-chevron" id="chev-jamie">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-jamie">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jamie')"><span> Baseline DEXA pulled (Aug 5)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jamie')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jamie')"><span> Kalos app thread checked for prior pre-scan messages (Aug 31)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jamie')"><span> Modal built from real data</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jamie')"><span> Pre-scan opener sent (drafted, awaiting approval)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jamie')"><span> Lift targets + nutrition sent (drafted, awaiting approval)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jamie')"><span> "What have you noticed" question sent (drafted Aug 31)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jamie')"><span> Night-before refresh + audio briefing</span></label>
         </div>
       </div>
     </div>
@@ -4666,6 +4739,125 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-alan -->
+
+<!-- ── JAMIE LEWIS MODAL ── -->
+<div id="modal-jamie" class="modal-content"
+     data-name="Jamie Lewis"
+     data-sub="3rd Package Scan &middot; September 7, 2026 &middot; LBM Gain &middot; M &middot; 50">
+
+  <script>
+  window.__scan1_jamie = { bw: 191.29, bfPct: 25.7, lean: 136.41, fat: 49.17, vat: 111.2, almiAMpct: 21, bfAMpct: 53, scan1Date: 'Aug 5, 2026 (prior package scan, this block\'s baseline)', height: 74, regional: { arms: {lean:19.3, fat:5.4}, trunk: {lean:66.7, fat:26.0}, legs: {lean:43.4, fat:15.3} } };
+  </script>
+
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jamie-scan-badge">Scan Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>ALMI jumped from the 13th to the 21st percentile in four weeks.</strong> That is the biggest single move on his sheet, it is the metric his goal was set on, and it is the honest answer to the message he sent on Aug 24 saying he was not seeing results.</span></div>
+      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>He did both things he was asked for on Aug 24, without being chased.</strong> Chest press started at the working weight instead of warming up inside the sets (150&times;12, 150&times;10 on Aug 28), and he put 25 lb on the dips (10&times;12, 25&times;12, 25&times;12 on Aug 24). Name both out loud.</span></div>
+      <div class="success-win"><span class="win-icon">🍚</span><span class="win-text"><strong>The post-workout carb method works when it goes in.</strong> Aug 25 hit 294 g carbs and Aug 28 hit 306 g against a 300 target. It is not a knowledge gap, it is a consistency gap on the other days.</span></div>
+      <div class="success-win"><span class="win-icon">🦵</span><span class="win-text"><strong>The knee is genuinely fixed.</strong> Box jumps went 6/10/12/12 on Aug 19 and 10/12/15 on Aug 26, after years of not being able to do them at all. Leg press moved 397 to 417 in the same window.</span></div>
+    </div>
+  </div>
+
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal">Goal on file is <strong>lbm-gain</strong>, derived from his numbers rather than agreed with him (<code>path_source: almi</code>, reason "ALMI 21th, well under 60th"), so treat it as a working assumption. The arc his numbers actually put him in is <strong>BUILD, THEN LEAN OUT</strong>. ALMI at the 21st percentile age-matched is the side with room and it is moving. Body fat at the <strong>53rd percentile age-matched</strong> is unremarkable for 50, so this is not a burn. But across the last block fat rose 1.9 lb and visceral rose 22.4% while lean rose only 0.5 lb, so the build is running dirtier than it should. That is a fat-cap and carb-timing correction inside a build, not a switch to a cut.</div>
+    <div class="dp-why">why_strength band <strong>anchored</strong> (person, identity), 15 insights, so it is safe to reference. <strong>Longevity and aesthetics for his family and 4 kids; turning 50 in control</strong>, in his words <em>"level 50"</em> and <em>"savage mode"</em>, with visible abs like Jake Gyllenhaal in Road House. The abs line is why the stomach is the thing he keeps measuring himself against, and why the Aug 24 message hit as hard as it did.</div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>He told Daniel on Aug 24 that he is discouraged, and the thread has been silent for seven days since.</strong> His words: <em>"Im starting to feel disappointed and bummed out about my results right now if im being honest… when i see that my stomach is still big after tracking macros consistently and working hard on my workouts its a bummer"</em>, followed by <em>"I feel like i want to start mobbing on the cardio which ive been holding off on but i know thats not the plan."</em> Daniel answered with intensity coaching at 11:17 AM and got no reply. <strong>This is the single most important thing in the room on Monday</strong>, and it matters more if the scan shows fat up again.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Every lead lift programmed before the scan is a barbell lift he has never logged.</strong> Barbell Bench Press Sep 1, Barbell Squat Sep 2, Barbell Overhead Press Sep 5, Trap Bar Deadlift Sep 6. He substitutes a machine or dumbbell every single time: barbell bench becomes chest press machine, barbell squat becomes leg press, barbell OHP becomes seated shoulder press machine. Given recurring back issues and the knee history this may be entirely sensible, but <strong>the program and the practice have quietly diverged and nobody has named it.</strong></span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Visceral fat is up 22.4% in one block, to 111.2 cm².</strong> Daniel named the targets himself on Aug 19: below 100 first, then below 80. The <code>visceral-strategy</code> SOP box has never been ticked. Separate skill, flagged not run.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Both missed sessions in the block were Lower B</strong> (Aug 22, Aug 29). Consistency is otherwise excellent at 14/16. Worth one question about whether something specific is wrong with that day rather than treating it as general adherence.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Spin Bike is programmed 10 min &times; 2 in every session and has been since Aug 17, but completion cannot be verified from the app.</strong> The logged sets mirror the prescribed duration, so "did it" and "did not" look identical. He said on Aug 19 he had not managed to start it yet. Ask, do not assume.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Injuries:</strong> old bilateral knee tears (8&ndash;10 yrs), much improved and cleared by box jumps. <strong>Recurring back issues</strong>, poor shoulder mobility, limited hip internal rotation. He raised the back himself on Aug 19 about hoisting the 75 lb dumbbells into position. Barbell bench actually removes that setup risk, which is the one argument for the programmed version over his machine substitute.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Equipment:</strong> Scotts Valley gym membership, home dumbbells to 75 lb, pull-up bar, dip bars, Peloton. No equipment constraint is limiting him.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Membership: 6 Month Core, Jul 5 2026 to Jan 5 2027, active.</strong> No renewal cliff anywhere near this scan. Routine checkpoint, no sales content anywhere in his messages.</span></div>
+    </div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot: Baseline (Aug 5, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">191.3 lb</div><div class="snap-lbl">DEXA Total &middot; scale 194.3</div></div>
+      <div class="snap-metric"><div class="snap-val">25.7%</div><div class="snap-lbl">Body Fat &middot; 53rd %ile age-matched</div></div>
+      <div class="snap-metric"><div class="snap-val">136.4 lb</div><div class="snap-lbl">Lean Mass &middot; 142.1 with BMC</div></div>
+      <div class="snap-metric"><div class="snap-val">49.2 lb</div><div class="snap-lbl">Fat Mass &middot; up 1.9 from Jul 5</div></div>
+      <div class="snap-metric"><div class="snap-val">111.2 cm²</div><div class="snap-lbl">VAT &middot; up 22.4% &middot; 536 g</div></div>
+      <div class="snap-metric"><div class="snap-val">21st %ile</div><div class="snap-lbl">ALMI &middot; up from 13th</div></div>
+      <div class="snap-metric"><div class="snap-val">1.30</div><div class="snap-lbl">Android / Gynoid ratio</div></div>
+      <div class="snap-metric"><div class="snap-val">74"</div><div class="snap-lbl">Height 6'2" &middot; Age 50</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#2a2a3a"><strong>Regional, Jul 5 to Aug 5:</strong> the arms and legs are where the build showed up and the trunk is where the problem is. <strong>Arms lean +0.8 lb (+4.2%)</strong> and <strong>legs lean +1.8 lb (+4.3%)</strong>, while <strong>trunk lean went down 2.0 lb (&minus;2.9%)</strong> and <strong>trunk fat went up 1.4 lb (+5.9%)</strong> to 26.0 lb. Both of Jamie's own observations on Aug 24 were therefore literally correct: his arms are bigger, and his midsection did get worse. The 1.30 android/gynoid ratio and the 111.2 cm² visceral number are describing the same trunk story.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">This block is <strong>Aug 5 to Sep 7, 33 days</strong>. Judge him against Aug 5, not the Jul 5 intro. <strong>Do not mention bone density</strong>, the window is too short for BMD to move. Full numbers in the <a href="https://iris.livekalos.com/results-dashboard/1105154" target="_blank">Iris results dashboard ↗</a>.</div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a4aa2f05f124d02abcb704b/metrics?tab=exercise" target="_blank" class="dp-title-link">Kalos app ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Week-Out Target</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Cable Seated Row</td><td>125 &times; 10 (Aug 24)</td><td><strong>125 &times; 12</strong></td><td>Cleanest progression he has: 110 on Aug 17, 125 on Aug 24. Programmed Tue Sep 1.</td></tr>
+        <tr><td>Chest Press Machine</td><td>150 &times; 12, 150 &times; 10 (Aug 28)</td><td><strong>150 &times; 12 across all working sets</strong></td><td>Switched off dumbbells on Aug 21 after the 75 lb kick-up worried his back. 140 &rarr; 150 in a week. Program says <em>Barbell</em> Bench Press Sep 1; target covers both.</td></tr>
+        <tr><td>Leg Press</td><td>417 &times; 10 &times; 3 (Aug 26)</td><td><strong>430 &times; 10</strong></td><td>Three identical sets means set one had more in it, so this is a weight jump not a rep jump. Program says Barbell Squat Sep 2; he has substituted leg press every time.</td></tr>
+        <tr><td>Weighted Suspended Dip</td><td>25 &times; 12 (Aug 24)</td><td>&mdash;</td><td>Added weight on request after hitting 20 bodyweight reps against a 12&ndash;15 target. Instruction followed.</td></tr>
+        <tr><td>Pull Up</td><td>&times; 10 bodyweight (Aug 28)</td><td>&mdash;</td><td>8/8/12 on Aug 21, 8/8/10 on Aug 28. Flat, not a concern yet.</td></tr>
+        <tr><td>Seated Shoulder Press Machine</td><td>80 &times; 12 (Aug 28)</td><td>&mdash;</td><td>Substituted for the programmed Barbell Overhead Press.</td></tr>
+        <tr><td>DB 3 Point Row</td><td>60 &times; 10 (Aug 28)</td><td>&mdash;</td><td>50 &rarr; 60 in a week.</td></tr>
+        <tr><td>Box Jump</td><td>&times; 15 (Aug 26)</td><td>&mdash;</td><td>First time in years on Aug 19. The movement-quality win of the block.</td></tr>
+        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Male 40&ndash;60 &middot; 191.3 lb bodyweight &middot; long-term reference</td></tr>
+        <tr><td>Bench Press</td><td>&mdash;</td><td>~240 lb 1RM</td><td>1.25 &times; BW. No barbell bench on record; machine chest press at 150 is not comparable.</td></tr>
+        <tr><td>Back Squat</td><td>&mdash;</td><td>~285 lb 1RM</td><td>1.5 &times; BW. No barbell squat on record. Leg press 417 does not convert.</td></tr>
+        <tr><td>Deadlift</td><td>&mdash;</td><td>~385 lb 1RM</td><td>2.0 &times; BW. Trap Bar Deadlift is programmed Sep 6 and would be his first.</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 12px"><strong>Use direction, not these three figures, with him right now.</strong> He has never trained any of the barbell lifts they key off, and he is already discouraged about his results. His own numbers are the far better motivator: cable row 110 to 125 in one week, leg press 397 to 417, chest press 140 to 150, dips from bodyweight to 25 lb, and ALMI 13th to 21st percentile. The barbell versions all land in his program from Sep 1, so <strong>if he does take them, treat Monday's numbers as a baseline to build from, not a test.</strong></div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a4aa2f05f124d02abcb704b/macros" target="_blank" class="dp-title-link">Macros ↗</a></div>
+    <div class="nutri-protocol">
+      <div><div><strong>Targets are 212 g protein, 300 g carbs, under 80 g fat, 2768 kcal.</strong> These were updated in the app on Aug 19 exactly as promised on the midpoint call, verified live today. Week of Aug 10&ndash;16 still shows the old 350 C / 100 F / 3080 cal goals, so the change is dated and confirmed.</div></div>
+      <div><div><strong>Protein is finished business.</strong> 232 g average across Aug 24&ndash;30 against a 212 target. He said himself on Aug 19 that protein turned out to be the easy part. Do not spend room time on it.</div></div>
+      <div><div><strong style="color:#c2410c">Fat is the drifting number.</strong> 90 g average against the 80 cap, over on 4 of 6 logged days (93, 102, 110, 111). This is the lever most likely behind the trunk fat and visceral moves, and it is the one place the nutrition message spends its attention.</div></div>
+      <div><div><strong>Carb timing is inconsistent rather than absent.</strong> 238 g average against 300, but Aug 25 hit 294 and Aug 28 hit 306. The Rice Krispies / cream of rice post-workout shake works on the days it happens. Frame it as extending something that already works.</div></div>
+      <div><div><strong>Protocol on file:</strong> 3 fist-size protein servings per meal, 2 shakes at 1.5 scoops, 1.5 cups Greek yogurt nightly, no avocado, carbs stacked around training, green tea with lemon and a pinch of salt, blueberries. He is already doing the blueberries.</div></div>
+      <div><div><strong style="color:#c2410c">2-day food journal task NOT yet created.</strong> Intended for Sat Sep 5 and Sun Sep 6. The drafted message refers to it in future tense, so it must be added before that message sends or the line must be cut.</div></div>
+    </div>
+  </div>
+
+  <!-- In Their Own Words -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
+    <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">not yet sent</span></div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>"What have you noticed?" &mdash; drafted Aug 31, NOT yet sent.</strong> <span style="color:#c2410c;font-weight:600">Awaiting Daniel's approval.</span> The ask: sleeves and shoulders fitting tighter, looking fuller rather than smaller, weights feeling lighter in the hand, and the knee given the box jumps.</div>
+      <div style="margin-bottom:8px"><strong>It carries one extra line the standard version does not</strong>, acknowledging that the mirror has been frustrating and redirecting him from what he thinks the scan will say to what he has actually noticed. That is deliberate: he has already pre-judged this scan in writing, and asking an open question on top of that without naming it would read as though nobody read his message.</div>
+      <div style="margin-bottom:8px"><strong>Six-to-twelve-month question:</strong> <span style="color:#888">not sent, and correctly so. 6 Month Core runs to Jan 5 2027, no cliff on or before scan day, routine condensed track. No renewal or sales content appears anywhere in his three messages.</span></div>
+      <div style="font-size:12px;color:#666"><strong>He is normally a fast and honest replier</strong>, including about difficult things, so silence from him would be meaningful rather than neutral. His last inbound message was Aug 24 at 10:42 AM. If nothing lands by the night-before refresh, note the silence rather than deleting this section, and ask him in the room.</div>
+    </div>
+  </div>
+
+  <!-- Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">💚 Scan-Day Focus: Answer His Aug 24 Message Before Anything Else</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Open on how he has been feeling about it, not on the scan.</strong> He wrote something honest and slightly embarrassed a fortnight ago (<em>"Im usually not this much of a bitch haha"</em>) and then went quiet. Acknowledge it directly and early.</div>
+      <div style="margin-bottom:8px"><strong>Lead the data with ALMI, 13th to 21st percentile.</strong> It is the biggest move on his sheet, it is the metric his goal was set on, and it is the direct evidence that his instinct about his arms was right.</div>
+      <div style="margin-bottom:8px"><strong>Then the regional split, because it answers him precisely.</strong> Arms lean +0.8 lb and legs lean +1.8 lb, trunk fat +1.4 lb. He said his arms looked bigger and his stomach still looked big, and both were true. Telling him he read his own body correctly is worth more than any single number.</div>
+      <div style="margin-bottom:8px"><strong>Be straight about visceral, up 22.4% to 111.2 cm².</strong> Daniel already set the targets with him on Aug 19, below 100 then below 80, so this is a continuation and not a new alarm. Tie it to the fat cap rather than delivering a risk lecture.</div>
+      <div style="margin-bottom:8px"><strong>Give him an answer on cardio.</strong> He asked to "start mobbing on the cardio" and held off because he was told not to. He deserves a real answer, not just "stick to the plan" a second time. The Spin Bike is already programmed twice per session and he may not have registered it.</div>
+      <div style="margin-bottom:8px"><strong>Settle the barbell question.</strong> Either the program moves to the machines he actually uses, or he gets talked through why the barbell versions are worth taking. Right now the prescription and the practice disagree every week and neither of you has said so.</div>
+      <div style="margin-bottom:8px"><strong>Credit the two things he did on request:</strong> starting the chest press at working weight, and putting 25 lb on the dips. Both are specific, both are recent, and both show he acts on coaching immediately.</div>
+      <div style="margin-bottom:8px"><strong>Do not mention bone density.</strong> 33-day window, BMD does not move.</div>
+      <div style="margin-bottom:8px"><strong>No renewal content.</strong> Term runs to Jan 5 2027. This is a checkpoint.</div>
+      <div><strong>Ask the "what have you noticed" question in the room if he has not replied.</strong> Given how he left the thread, his answer matters more this time than usual.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-jamie -->
 
 
   </div><!-- end modal-window -->
