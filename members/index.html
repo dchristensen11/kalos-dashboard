@@ -55,6 +55,7 @@ border-top:1px solid rgba(255,255,255,.03);align-items:baseline}
 .freason{flex:1;color:var(--dim);font-size:13px;min-width:0}
 @media(max-width:640px){.frow{display:block}.fname{width:auto}}
 .b-duo{color:#c9a0ff;border-color:#4a3a6b}
+.b-duo-warn{color:#d29922;border-color:#6b5228;font-weight:600}
 .b-scan{color:#ffd479;border-color:#6b5a28;font-weight:600}
 .b-prep{color:#ff9d6b;border-color:#6b3f28;font-weight:600}
 .b-night{color:#8fd6ff;border-color:#2b4d6b;font-weight:600}
@@ -216,6 +217,21 @@ const nightBeforeMissed=m=>{
   const k=m.scan_next; if(!k || m.night_before_done) return null;
   return daysUntil(k.date)===0 ? k : null;
 };
+// A duo is a property of the MEMBER, not of their next scan. The badge used to be
+// rendered inside the scan block and only when the member was riding a partner's
+// booking, so five of the ten duo members showed nothing at all on their card while
+// the pairing sat in the data the whole time.
+//
+// It also compares the two programs. Duo partners usually buy the same thing, so a
+// difference is either a deliberate split worth remembering or an attribution error
+// worth fixing. Kat Sosa read as having no program at all until 30 Aug because a duo
+// purchase had been booked entirely against Jayce Azua.
+const duoOf=m=>{
+  if(!m.duo) return null;
+  const p=DATA.members.find(x=>x.slug===m.duo.slug);
+  const mine=(m.program||{}).current||null, theirs=p?((p.program||{}).current||null):null;
+  return {...m.duo, known:!!p, mine, theirs, mismatch: !!p && mine!==theirs};
+};
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const dd=(v,inv)=>v==null?'':`<span class="${(inv?-v:v)>0?'d-up':'d-dn'}">${v>0?'+':''}${v}</span>`;
 
@@ -290,12 +306,19 @@ function list(){
      }">${{'fat-loss':'fat loss','recomp':'recomp','lbm-gain':'lean mass gain'}[m.goal]||esc(m.goal)
      }${m.path_source==='almi'?' <em style="font-style:normal;opacity:.6">auto</em>':''}</span>`
      :'<span class="badge b-goal-unset">path not set</span>'}
+        ${(()=>{const d=duoOf(m); if(!d) return '';
+           const s=scanIn(m);
+           const riding = s&&s.ride ? `. Their booking, ${esc(d.name)} has no scan of their own that day` : '';
+           const prog = d.mismatch ? `. PROGRAMS DIFFER: ${esc(d.mine||'none')} vs ${esc(d.theirs||'none')}` : '';
+           return `<span class="badge ${d.mismatch?'b-duo-warn':'b-duo'}" title="Scans as a duo with ${
+             esc(d.name)}${riding}. ${d.shared_scans.length} shared scan${
+             d.shared_scans.length===1?'':'s'}, last ${esc(d.last_shared)}${prog}">duo · ${
+             esc(d.name)}${d.mismatch?' · programs differ':''}</span>`;})()}
         ${(m.flags||[]).length?`<span class="badge b-flag">${m.flags.length} flag${m.flags.length>1?'s':''}</span>`:''}
         ${(()=>{const s=scanIn(m); if(!s) return '';
            const prep = m.prep_done ? '' : ` <span class="badge b-prep" title="${esc(s.kind)} · ${s.milestone?'milestone':'routine'} prep">prep due</span>`;
-           const duo = s.ride?` <span class="badge b-duo" title="duo booking under ${esc(s.ride)}; no booking of their own">duo · ${esc(s.ride)}</span>`:'';
            return `<span class="badge b-scan" title="${esc(s.kind)} on ${esc(s.date)}, ${esc(s.moment)}${s.ride?`, scanning as a duo with ${esc(s.ride)}`:''}">${
-             s.days===0?'scan today':s.days===1?'scan tomorrow':`scan in ${s.days}d`}</span>`+duo+prep;})()}
+             s.days===0?'scan today':s.days===1?'scan tomorrow':`scan in ${s.days}d`}</span>`+prep;})()}
         ${nightBeforeDue(m)?`<span class="badge b-night" title="modal refresh for tomorrow's scan">night-before due</span>`:''}
         ${nightBeforeMissed(m)?`<span class="badge b-night-miss" title="scanning today and the night-before refresh never ran">no night-before</span>`:''}
         ${(()=>{const f=followupDue(m); if(!f) return '';
