@@ -751,12 +751,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="metric warn">
           <div class="metric-val">222.9</div>
           <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">High &middot; 7.3 below February</div>
+          <div class="metric-sub">High &middot; 7.4 below February</div>
         </div>
         <div class="metric ok">
           <div class="metric-val">63rd %ile</div>
           <div class="metric-label">ALMI</div>
-          <div class="metric-sub">Up from 58th at Jul 9</div>
+          <div class="metric-sub">Up from 58th at Jul 9 &middot; +10 since Feb</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -765,7 +765,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="cons-pct" style="color:#dc2626">Paused</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:0%;background:#dc2626"></div></div>
-            <div class="cons-detail">0 of 12 scheduled last 30d &middot; last completed session Jul 20, 41 days ago &middot; <strong>workouts deliberately paused by Daniel on Aug 10</strong> pending eye treatment. Do not read this as adherence. She is NOT on training-pauses.md, so the sync still raises it as a red "training has stopped" flag.</div>
+            <div class="cons-detail">0 of 13 scheduled in August &middot; last completed session Jul 20, <strong>42 days ago</strong> &middot; <strong>workouts deliberately paused by Daniel on Aug 10</strong> pending eye treatment. Do not read this as adherence. She is NOT on training-pauses.md, so the sync still raises it as a red "training has stopped" flag.</div>
+          </div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">🚶 Steps, the only lever we can measure</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ea580c">No data</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:0%;background:#ea580c"></div></div>
+            <div class="cons-detail"><strong>Step feed to the Kalos app stopped Aug 13</strong>, 18 days with nothing. The three full days after the Aug 9 call averaged <strong>2,344/day</strong> against <strong>3,592/day</strong> across the prior 28 days, so the agreed increase is unverified and what we can see went the other way. Ask on Sunday whether the watch is still being worn.</div>
           </div>
         </div>
       </div>
@@ -784,11 +794,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-items" id="items-janice">
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Baseline DEXA pulled (Aug 9)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Kalos app thread checked for prior pre-scan messages (Aug 30)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Modal built from real data</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Kalos app thread checked live for prior pre-scan messages (Aug 31)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('janice')"><span> Modal built and refreshed from live data (Aug 31)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('janice')"><span> Pre-scan opener sent (drafted, awaiting approval)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('janice')"><span> Nutrition + walk message sent (no lift targets, by design)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('janice')"><span> "What have you noticed" question sent (drafted Aug 30)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('janice')"><span> "What have you noticed" question sent (drafted)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('janice')"><span> Night-before refresh + audio briefing</span></label>
         </div>
       </div>
@@ -4200,29 +4210,32 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="janice-scan-badge">Scan Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>The last block moved the right way during the worst month she has had.</strong> Jul 9 to Aug 9: fat down 1.12 lb, body fat down 0.2 points, and ALMI up from the 58th to the 63rd percentile. She did that with zero completed training sessions, on food and walks alone.</span></div>
-      <div class="success-win"><span class="win-icon">🔥</span><span class="win-text"><strong>Visceral fat is 7.3 cm² below where she started</strong> in February and has held roughly flat through the whole health episode. On a pre-diabetic background that is the number that matters most, and it has not run away from her.</span></div>
-      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>The home cooking is the thing that is working.</strong> She moved to cooking at home and lower processed carbs after Aug 9 and reported it herself. That is the behaviour to name out loud on Sunday, because it is hers and it survived a month where nothing else did.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>The last block moved the right way during the worst month she has had.</strong> Jul 9 to Aug 9: fat down 1.1 lb, body fat down 0.2 points, and ALMI up from the 58th to the 63rd percentile. She did that with zero completed training sessions, on food alone.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>ALMI is up 10 percentile points since February</strong>, 53rd to 63rd across the full five-scan span. That is the single most encouraging line on her sheet and it is genuinely hers.</span></div>
+      <div class="success-win"><span class="win-icon">🔥</span><span class="win-text"><strong>Visceral fat is 7.4 cm² below where she started</strong> in February and has held roughly flat through the whole health episode. On a pre-diabetic background that is the number that matters most, and it has not run away from her.</span></div>
+      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>The home cooking is the thing that is working.</strong> She moved to cooking at home and lower processed carbs after Aug 9 and reported it herself. Name that behaviour out loud on Sunday, because it is hers and it survived a month where nothing else did.</span></div>
     </div>
   </div>
 
   <div class="dp-section dp-section-goal">
     <div class="dp-title">Goal &amp; Why</div>
     <div class="dp-goal">Goal on file is <strong>fat-loss</strong>, derived from her numbers rather than agreed with her (<code>path_source: almi</code>, reason "ALMI 63th, lean base is there"), so treat it as a working assumption and not something to assert. The arc her numbers actually put her in is <strong>BURN</strong>: body fat at the 87th percentile age-matched is the side with room, ALMI at the 63rd is fine. <strong>But the burn levers available to her are food and walking only</strong>, because training has been paused since Aug 10 pending eye treatment.</div>
-    <div class="dp-why"><strong>No underlying why is recorded</strong> (why_strength band <code>missing</code>, "no why recorded"), so nothing in her messages paraphrases one back at her. The nearest thing she has said, on Aug 9: <em>"I'm very unmotivated right now. My biggest motivation is figuring out how I can still see patients."</em> She is a clinician, her vision is failing, and her stake is her ability to work. Everything else is downstream of that. <strong>Worth capturing a real why in the room on Sunday</strong> once the eye situation is clearer.</div>
+    <div class="dp-why"><strong>No underlying why is recorded.</strong> Confirmed live on the Iris member dashboard Aug 31: the Underlying Motivation field is <strong>empty</strong> (why_strength band <code>missing</code>). Nothing in her messages paraphrases one back at her. The nearest thing she has said, on Aug 9: <em>"I'm very unmotivated right now. My biggest motivation is figuring out how I can still see patients."</em> She is a clinician, her vision is failing, and her stake is her ability to work. Everything else is downstream of that. <strong>Capture a real why in the room on Sunday</strong> once the eye situation is clearer.</div>
   </div>
 
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>OPEN CARE FLAG, carried forward from Aug 26 and still unresolved.</strong> Halos around lights plus pounding headaches, cloudy and worsening vision, lightheadedness and vertigo, on a pre-diabetic background, is the symptom cluster associated with raised intraocular pressure or angle-closure glaucoma, which is time-sensitive for vision. Her file says the eye doctor is "adjusting contacts", which does not explain those symptoms. <strong>Not a diagnosis and deliberately kept out of every DM.</strong> Flagged again so it is in front of Daniel before Sunday: has she actually had eye pressure assessed by an ophthalmologist?</span></div>
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The Aug 26 offer to move this scan is still unanswered.</strong> Verified live in the Kalos app thread on Aug 30: Daniel's four-paragraph check-in sits at 08:24 AM on Wed Aug 26 with <strong>no reply after it and no Seen marker on it</strong>. Her last inbound message in the thread is <strong>Jun 25</strong>, over two months ago. So the reschedule offer is live, not redundant, and re-offering it in the opener is correct. Treat the silence itself as information.</span></div>
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>A P1 to P2 phase change was pushed into her app on Aug 24 and she was never told.</strong> Recorded as <code>phase_change:member:134465:p2:2026-08-24</code>. It was left un-actioned on Aug 26 because a "here is your new training phase" message contradicts the paused-workouts stance she was given, and <strong>it is still sitting there</strong>. None of the three drafted messages mentions a program, a phase or a session. Before Sunday the phase either needs resetting or needs to stay silent.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>She is not on training-pauses.md, so the sync flags her red for "training has stopped".</strong> The pause was Daniel's own decision on Aug 10. Until she is added to that file by hand, every run will keep reporting a deliberate coaching decision as an adherence failure.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Her own record disagrees with itself about Sunday.</strong> <code>milestone</code> calls Sep 6 a renewal moment and she carries a red renewal-window flag; <code>scan_next</code> calls it a routine progress checkpoint with <code>is_conversion_moment: false</code>. This run was scoped routine. Her 6-month term ends <strong>Sep 20, 14 days after the scan</strong>, so a renewal decision is genuinely live even though no sales content went into the messages.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>OPEN CARE FLAG, carried from Aug 26 and still unresolved.</strong> Halos around lights plus pounding headaches, cloudy and worsening vision, lightheadedness and vertigo, on a pre-diabetic background. Her file says the eye doctor is "adjusting contacts", which does not account for that cluster. <strong>Not a diagnosis and deliberately kept out of every DM.</strong> The question to put to her on Sunday: has anyone actually measured her eye pressure, and is she seeing an ophthalmologist rather than an optometrist?</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The Aug 26 offer to move this scan is still unanswered.</strong> Re-verified live in the Kalos app thread on <strong>Aug 31</strong>: the four-paragraph check-in sits at 08:24 AM on Wed Aug 26 with nothing after it. Her last inbound message in the whole thread is <strong>Jun 25</strong>, 67 days ago. The reschedule offer is live, not redundant, so re-offering it in the opener is correct. Treat the silence itself as information.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The P1 to P2 phase change pushed into her app on Aug 24 is still sitting there, uncommunicated.</strong> Three P2 sessions fall before the scan: <strong>Aug 31, Sep 2, Sep 4</strong>. P2 contains <strong>Alternating Dumbbell Snatch, Dumbbell Single Arm Overhead Squat and Goblet Cossack Squat</strong>, dynamic and overhead loading, on a member reporting dizziness on head movement and cloudy vision. Reset the phase or keep it silent, but she must not discover it.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Her step feed to the Kalos app died on Aug 13.</strong> Eighteen days with no data. The three full days after the Aug 9 call averaged <strong>2,344/day</strong> against <strong>3,592/day</strong> across the prior 28 days, so the agreed step increase is unverified and what little is visible went down. This was the one objective feed we had while training is paused. Ask whether the watch is still on.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>She is not on training-pauses.md, so the sync flags her red for "training has stopped".</strong> The pause was Daniel's own decision on Aug 10. Until she is added by hand, every run keeps reporting a deliberate coaching decision as an adherence failure.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Her own record disagrees with itself about Sunday.</strong> <code>milestone</code> calls Sep 6 a renewal moment and she carries a red renewal-window flag; <code>scan_next</code> calls it a routine progress checkpoint with <code>is_conversion_moment: false</code>. This run was scoped routine and no sales content went into any message. Her 6-month term does end <strong>Sep 20, 14 days after the scan</strong>, verified live in Iris, so a renewal decision is genuinely live and belongs in the room.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Work and life stress are doing as much damage as the eyes.</strong> Her words on Aug 9: "Work is shit. Life is shit right now", plus low appetite from anxiety, bloating, and possible perimenopause symptoms. She had an acupuncture needle in her arm at that scan. Keep the accountability light.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>The visceral fat strategy has never been sent</strong> (SOP box <code>visceral-strategy</code> unticked) even though VAT has been an explicit topic at the last two scans and sits at 222.9 cm². Separate skill, separate decision, flagged not run. Nutrition strategy, gut health form and neurotyping form are also unticked.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Equipment and constraints:</strong> home adjustable dumbbells to about 50 lb; hotel gym, bands or TRX when travelling. <strong>France trip Sep 17 to Oct 3</strong>, so Sunday is the last touchpoint before she is away for two weeks and three days before her term ends.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>The visceral fat strategy has never been sent</strong> (SOP box <code>visceral-strategy</code> unticked) even though VAT has been an explicit topic at the last two scans and sits at 222.9 cm². Nutrition strategy, gut health form and neurotyping form are also unticked. Separate skills, separate decisions, flagged not run.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Equipment and constraints:</strong> home adjustable dumbbells to about 50 lb; hotel gym, bands or TRX when travelling. <strong>France trip Sep 17 to Oct 3</strong>, so Sunday is the last touchpoint before she is away for two weeks and eleven days before her term ends.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Nothing of hers is sitting unanswered outside the DM thread.</strong> Verified live Aug 31: the Iris member dashboard shows no open workout comments, no COACHING / INBOX items and "No action needed" under to-dos.</span></div>
     </div>
   </div>
 
@@ -4232,31 +4245,36 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="snap-metric"><div class="snap-val">190.9 lb</div><div class="snap-lbl">DEXA Total &middot; scale 192.8</div></div>
       <div class="snap-metric"><div class="snap-val">44.0%</div><div class="snap-lbl">Body Fat &middot; 87th %ile age-matched</div></div>
       <div class="snap-metric"><div class="snap-val">102.6 lb</div><div class="snap-lbl">Lean Mass &middot; 107.0 with BMC</div></div>
-      <div class="snap-metric"><div class="snap-val">83.9 lb</div><div class="snap-lbl">Fat Mass &middot; down 1.12 from Jul 9</div></div>
+      <div class="snap-metric"><div class="snap-val">83.9 lb</div><div class="snap-lbl">Fat Mass &middot; down 1.1 from Jul 9</div></div>
       <div class="snap-metric"><div class="snap-val">222.9 cm²</div><div class="snap-lbl">VAT &middot; high &middot; 1075 g</div></div>
-      <div class="snap-metric"><div class="snap-val">63rd %ile</div><div class="snap-lbl">ALMI &middot; up from 58th</div></div>
+      <div class="snap-metric"><div class="snap-val">63rd %ile</div><div class="snap-lbl">ALMI &middot; up from 58th, +10 since Feb</div></div>
       <div class="snap-metric"><div class="snap-val">1.12</div><div class="snap-lbl">Android / Gynoid ratio</div></div>
       <div class="snap-metric"><div class="snap-val">66"</div><div class="snap-lbl">Height 5'6" &middot; Age 42</div></div>
     </div>
-    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#2a2a3a"><strong>Regional, Aug 9:</strong> the trunk is where her fat lives. Trunk carries <strong>40.0 lb of fat against 52.2 lb of lean</strong>, which is 48% of her total fat mass in one region, and that is what the 222.9 cm² visceral number and the 1.12 android/gynoid ratio are both describing. Legs are 25.9 lb fat to 35.7 lb lean, arms 10.7 to 11.9. Right leg lean runs about 9% above left, mild and most likely positioning rather than anything to chase. <strong>Bone density is not in the current extract and is deliberately not a topic anyway</strong>, since the scan-to-scan window is 28 days and BMD does not move on that timescale.</div>
-    <div style="margin-top:8px;font-size:12px;color:#888">This block is <strong>Aug 9 to Sep 6, 28 days</strong>. Judge her against Aug 9, not against the February intro. Full numbers in the <a href="https://iris.livekalos.com/results-dashboard/134465" target="_blank">Iris results dashboard ↗</a>.</div>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#2a2a3a"><strong>Regional, Aug 9:</strong> the trunk is where her fat lives. Trunk carries <strong>40.0 lb of fat against 52.2 lb of lean</strong>, which is 48% of her total fat mass in one region, and that is what the 222.9 cm² visceral number and the 1.12 android/gynoid ratio are both describing. Legs are 25.9 lb fat to 35.7 lb lean, arms 10.7 to 11.9. Across the last block the limbs moved the right way while the trunk did not: <strong>legs lean +0.7 lb and arms lean +0.3 lb against trunk lean -1.2 lb</strong>, with arms fat -0.4 lb and legs fat -0.5 lb against trunk fat flat. <strong>Bone density is not a topic</strong>, since the scan-to-scan window is 28 days and BMD does not move on that timescale.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">This block is <strong>Aug 9 to Sep 6, 28 days</strong>. Judge her against Aug 9, not against the February intro. Full numbers in the <a href="https://iris.livekalos.com/results-dashboard/96230" target="_blank">Iris results dashboard ↗</a>.</div>
   </div>
 
   <div class="dp-section">
     <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/699b4fcfaee47db1c29def54/metrics?tab=exercise" target="_blank" class="dp-title-link">Kalos app ↗</a></div>
     <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
-      <strong>⚠️ No lift targets were set for this scan, on purpose.</strong> Daniel gave no exercise prescription on Aug 9 and told her plainly: "Normally, I would ask you to log your food for a few days, but I think I don't wanna add anything to your plate right now." Her week-out messages carry nutrition and one walk, nothing else. <strong>Do not go looking for lift numbers on Sunday.</strong> Her last completed session was Jul 20.
+      <strong>⚠️ No lift targets were set for this scan, on purpose.</strong> No exercise prescription was given on Aug 9 and she was told plainly: "Normally, I would ask you to log your food for a few days, but I think I don't wanna add anything to your plate right now." Her week-out messages carry nutrition and one walk, nothing else. <strong>Do not go looking for lift numbers on Sunday.</strong> Her last completed session was <strong>Jul 20, 42 days ago</strong>; August ran 0 of 13 scheduled.
     </div>
     <table class="lift-table">
-      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Exercise</th><th>Last logged (Jul 20)</th><th>Progress</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female under 60 &middot; 190.9 lb bodyweight &middot; reference only, NOT for her eyes right now</td></tr>
+        <tr><td>DB Incline Bench Press</td><td>40 &times; 8, 40 &times; 10, 40 &times; 10</td><td>&mdash;</td><td>Reference only. Unit is not exposed by the app, so quote the bare numbers if she asks.</td></tr>
+        <tr><td>DB Single Arm Row</td><td>40 &times; 14, 40 &times; 12, 40 &times; 10</td><td>&mdash;</td><td>Her strongest movement on the day, 14 reps on the opener.</td></tr>
+        <tr><td>DB Seated OH Tricep Ext</td><td>30 &times; 10, 30 &times; 10, 30 &times; 10</td><td>&mdash;</td><td>Three identical sets, so the opener had more in it.</td></tr>
+        <tr><td>DB Push Press</td><td>30 &times; 8, 30 &times; 7</td><td>&mdash;</td><td>Third set abandoned. Overhead work while symptomatic.</td></tr>
+        <tr><td>Modified Push Up</td><td>10, 10, 9 bodyweight</td><td>&mdash;</td><td><strong>She swapped this in herself</strong> for the programmed Plyometric Push Up. Sensible self-modification, worth crediting.</td></tr>
+        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female under 60 &middot; 190.9 lb bodyweight &middot; reference only, NOT for her right now</td></tr>
         <tr><td>Bench Press</td><td>&mdash;</td><td>~190 lb 1RM</td><td>1.0 &times; BW. She is dumbbell-only at home, so this is a barbell target she has never trained.</td></tr>
         <tr><td>Back Squat</td><td>&mdash;</td><td>~285 lb 1RM</td><td>1.5 &times; BW. Vertigo and dizziness on head movement rule out loaded spinal work entirely for now.</td></tr>
         <tr><td>Deadlift</td><td>&mdash;</td><td>~380 lb 1RM</td><td>2.0 &times; BW. Years away and not a useful frame today.</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 12px"><strong>Do not put these numbers in front of her.</strong> The multipliers key off bodyweight, so at 190.9 lb her targets are inflated and will fall as she leans out, and she has not completed a session in 41 days for medical reasons. Use direction, not the figure. Her own percentage gains and the ALMI percentile moving from 58th to 63rd during a month with no training is a far better motivator than a barbell number she has never attempted.</div>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 12px"><strong>Do not put the Gold Standard numbers in front of her.</strong> The multipliers key off bodyweight, so at 190.9 lb her targets are inflated and will fall as she leans out, and she has not completed a session in 42 days for medical reasons. Use direction, not the figure. <strong>ALMI moving 58th to 63rd during a month with no training, and 53rd to 63rd since February, is a far better motivator</strong> than a barbell number she has never attempted.</div>
   </div>
 
   <div class="dp-section">
@@ -4266,7 +4284,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div><div><strong style="color:#c2410c">Pre-diabetic.</strong> Lower processed carbs is the single nutrition lever that moves the visceral number, and it is also the one that does not depend on her eyes.</div></div>
       <div><div><strong>Eating less overall since Aug 9</strong> on a low appetite driven by anxiety and stress, cooking at home more, reporting bloating. The home cooking is a genuine win and is named as one.</div></div>
       <div><div><strong>Enjoys desserts and Asian cooking</strong> (beef and pork). Be selective rather than eliminating, per the strategy already on file.</div></div>
-      <div><div><strong style="color:#c2410c">NO food journal task and no 2-day food log ask this cycle.</strong> Daniel took logging off her plate on Aug 9 and re-asking a week later would reverse him. This is a deliberate divergence from the standard week-out cadence.</div></div>
+      <div><div><strong style="color:#c2410c">NO food journal task and no 2-day food log ask this cycle.</strong> Logging was taken off her plate on Aug 9 and re-asking a week later would reverse it. Deliberate divergence from the standard week-out cadence. <strong>Her last food journal entry was Jul 13</strong> (steamed rockfish, Napa cabbage stir fry, chicken soup), which is expected, not non-adherence.</div></div>
     </div>
   </div>
 
@@ -4274,10 +4292,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
     <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">not yet sent</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>"What have you noticed?" &mdash; drafted Aug 30, NOT yet sent.</strong> <span style="color:#c2410c;font-weight:600">Awaiting Daniel's approval.</span> The ask: what she has actually noticed in herself since February. How clothes and the waistband are sitting, energy in the back half of a clinic day, whether food feels different now more of the cooking is at home.</div>
-      <div style="margin-bottom:8px"><strong>The mirror prompt was deliberately dropped.</strong> The skill's fat-loss prompt set includes "the face in the mirror", and asking a woman with cloudy vision and rainbow halos what she sees in the mirror is the one prompt that could land badly.</div>
-      <div style="margin-bottom:8px"><strong>Six-to-twelve-month question:</strong> <span style="color:#888">not sent. Long-term member on 6-month-core, no 4-week cliff on or before scan day, and the run was scoped routine, so the renewal gate says skip. Her term does end Sep 20, 14 days after the scan, so Daniel may want to override and ask it in the room instead of as a fourth DM.</span></div>
-      <div style="font-size:12px;color:#666">Set expectations low on a written reply. Her last inbound message in the app was Jun 25 and the Aug 26 check-in shows no Seen marker. If nothing lands by the night-before refresh, that silence is itself worth reading, so note it rather than deleting this section, and plan to ask her face to face on Sunday.</div>
+      <div style="margin-bottom:8px"><strong>"What have you noticed?" &mdash; drafted, NOT yet sent.</strong> <span style="color:#c2410c;font-weight:600">Awaiting Daniel's approval.</span> The ask: what she has actually noticed in herself since February. How clothes and the waistband are sitting, energy in the back half of a clinic day, whether food feels different now more of the cooking is at home.</div>
+      <div style="margin-bottom:8px"><strong>The mirror prompt was deliberately dropped.</strong> The fat-loss prompt set includes "the face in the mirror", and asking a woman with cloudy vision and rainbow halos what she sees in the mirror is the one prompt that could land badly.</div>
+      <div style="margin-bottom:8px"><strong>Six-to-twelve-month question: drafted, recommendation is to HOLD as a DM and ask it in the room.</strong> <span style="color:#888">The renewal gate genuinely fires, her 6 Month Core ends Sep 20, 20 days out, and Sunday is the last touchpoint before both the term end and her France trip. But five days ago she was told in writing "no agenda here and nothing for you to action", and she has not replied to anything since Jun 25. A fourth message asking her to picture a year ahead is the one most likely to read as pressure. Examples are arc-matched to BURN: how clothes sit, energy at the end of a clinic day, health markers, moving without thinking about it.</span></div>
+      <div style="font-size:12px;color:#666">Set expectations low on a written reply. Her last inbound message in the app was Jun 25, 67 days ago. If nothing lands by the night-before refresh, that silence is itself worth reading, so note it rather than deleting this section, and plan to ask her face to face on Sunday.</div>
     </div>
   </div>
 
@@ -4285,15 +4303,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
     <div class="dp-title">💚 Scan-Day Focus: Her Health Comes First, The Numbers Are Better Than She Thinks</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>Open on the eyes, not the scan.</strong> Ask what the appointment gave her and whether anyone has actually measured her eye pressure. She has had no reply read from us in months and is walking in from the hardest stretch of her membership.</div>
-      <div style="margin-bottom:8px"><strong>Lead the data with ALMI, 58th to 63rd.</strong> She gained percentile rank with zero completed sessions. That is the most encouraging thing on her sheet and it is genuinely hers.</div>
-      <div style="margin-bottom:8px"><strong>Then fat down 1.12 lb across the last block.</strong> Frame it as what food alone did, which sets up the next block honestly: food and walking are the only levers she has until her eyes are handled.</div>
+      <div style="margin-bottom:8px"><strong>Open on the eyes, not the scan.</strong> Ask what the appointment gave her and whether anyone has actually measured her eye pressure. She has sent nothing in the app since Jun 25 and is walking in from the hardest stretch of her membership.</div>
+      <div style="margin-bottom:8px"><strong>Lead the data with ALMI: 58th to 63rd this block, 53rd to 63rd since February.</strong> She gained percentile rank with zero completed sessions. Most encouraging thing on her sheet and it is genuinely hers.</div>
+      <div style="margin-bottom:8px"><strong>Then fat down 1.1 lb across the last block, and visceral 7.4 cm² below February.</strong> Frame it as what food alone did, which sets up the next block honestly: food and walking are the only levers she has until her eyes are handled.</div>
       <div style="margin-bottom:8px"><strong>Name the home cooking out loud.</strong> It is the one behaviour she started herself and kept. Credit it specifically rather than generally.</div>
-      <div style="margin-bottom:8px"><strong>Do not lead with body fat percent or the visceral number.</strong> 44.0% and 222.9 cm² are the two numbers that will land hardest on someone already saying "work is shit, life is shit". Give the age-matched context if she asks, and keep the visceral conversation to the carb lever rather than the risk lecture.</div>
+      <div style="margin-bottom:8px"><strong>Do not lead with body fat percent or the visceral number.</strong> 44.0% and 222.9 cm² are the two figures that land hardest on someone already saying "work is shit, life is shit". Give the age-matched context if she asks, and keep the visceral conversation to the carb lever rather than the risk lecture.</div>
       <div style="margin-bottom:8px"><strong>Do not mention bone density.</strong> 28-day window, BMD does not move, it reads as noise.</div>
+      <div style="margin-bottom:8px"><strong>Ask about the watch.</strong> Her step feed stopped Aug 13. It is the only objective signal available while training is paused, and it is a practical question rather than an accountability one.</div>
       <div style="margin-bottom:8px"><strong>Ask the "what have you noticed" question in the room if she has not answered it.</strong> She almost certainly will not have.</div>
-      <div style="margin-bottom:8px"><strong>Resolve the phase change before or during the appointment.</strong> P1 to P2 went into her app on Aug 24 and contradicts the paused stance she was given. Either reset it or say nothing, but do not let her discover it.</div>
-      <div style="margin-bottom:8px"><strong>Renewal: her term ends Sep 20 and she flies to France on the 17th.</strong> Sunday is realistically the last conversation before both. No sales content went into the messages, so if that conversation is going to happen it happens in the room, and it should follow the health conversation rather than lead it.</div>
+      <div style="margin-bottom:8px"><strong>Resolve the phase change before or during the appointment.</strong> P1 to P2 went into her app on Aug 24, contradicts the paused stance she was given, and the P2 sessions include overhead and dynamic work that is wrong for her symptoms. Either reset it or say nothing, but do not let her discover it.</div>
+      <div style="margin-bottom:8px"><strong>Renewal: her term ends Sep 20 and she flies to France on the 17th.</strong> Sunday is realistically the last conversation before both. No sales content went into the messages, so if that conversation happens it happens in the room, and it follows the health conversation rather than leading it.</div>
     </div>
   </div>
 
@@ -4302,7 +4321,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">👥 They Scan Together</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:8px"><strong>Janice and Alan Yang scan together on Sep 6, 9:45 to 10:45, in a 60-minute duo block booked under Janice's name.</strong> Alan rides it and has no booking of his own in Iris or on the calendar. Prior shared scans: Jun 11, Jul 9, Aug 9.</div>
-      <div style="margin-bottom:8px"><strong>They are a couple and they compare messages.</strong> Their three drafts were written to differ in shape as well as content: hers carry no lift targets and no food log ask at all, his carry a food photo ask plus the steps and sleep numbers from his own call.</div>
+      <div style="margin-bottom:8px"><strong>They are a couple and they compare messages.</strong> Their drafts were written to differ in shape as well as content: hers carry no lift targets and no food log ask at all, his carry a food photo ask plus the steps and sleep numbers from his own call.</div>
       <div><strong>Their situations are not comparable and should not be pitched as a unit.</strong> His last block was the best of his membership; hers happened during a health crisis. Same term end date, Sep 20, and same France trip from Sep 17.</div>
     </div>
   </div>
