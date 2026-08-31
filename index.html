@@ -1255,7 +1255,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge-lbm">LBM</span>
           <span class="badge badge-scan">8:15 AM</span>
-        </div>
+        
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html" target="_blank">🎧 Audio Brief ↗</a></div></div>
       </div>
       <div class="scan-row">
         <span>📅</span>
@@ -1301,7 +1302,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('claudia')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-claudia">6/8</span>
+            <span class="checklist-progress-badge" id="prog-claudia">7/8</span>
             <span class="checklist-chevron" id="chev-claudia">›</span>
           </div>
         </div>
@@ -1312,7 +1313,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Modal built from real data</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Pre-scan opener sent</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Lift targets + nutrition sent, 2-day food journal assigned</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('claudia')"><span> Night-before refresh done Aug 30; audio briefing FAILED, see modal</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('claudia')"><span> Night-before refresh (Aug 30) + audio briefing</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('claudia')"><span> Argentina plan drafted (leaves ~Dec 31 for 4-5 months)</span></label>
         </div>
       </div>
@@ -1328,7 +1329,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge-lbm">Recomp</span>
           <span class="badge badge-scan">10:30 AM</span>
-        </div>
+        
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html" target="_blank">🎧 Audio Brief ↗</a></div></div>
       </div>
       <div class="scan-row">
         <span>📅</span>
@@ -1374,7 +1376,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('sandy')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-sandy">6/8</span>
+            <span class="checklist-progress-badge" id="prog-sandy">7/8</span>
             <span class="checklist-chevron" id="chev-sandy">›</span>
           </div>
         </div>
@@ -1385,7 +1387,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Modal built from real data</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Pre-scan opener sent</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Lift targets + nutrition sent, 2-day food journal assigned</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sandy')"><span> Night-before refresh (Aug 30) + audio briefing <span style="color:#c2410c;font-weight:600">· refresh DONE 8:20 PM, audio brief NOT generated, Voicebox is not processing jobs</span></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('sandy')"><span> Night-before refresh (Aug 30) + audio briefing</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('sandy')"><span> Membership recommendation prepared (4-week ends scan day)</span></label>
         </div>
       </div>
@@ -1401,7 +1403,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge badge-scan">Aug 31</span>
           <span class="badge badge badge-lbm">FAT LOSS</span>
-        </div>
+        
+          <div class="card-audio-brief-btn"><a href="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html" target="_blank">🎧 Audio Brief ↗</a></div></div>
       </div>
       <div class="scan-row">
         <span>📅</span>
@@ -2134,6 +2137,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ── CLAUDIA SAGGESE MODAL ── -->
 <div id="modal-claudia" class="modal-content"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html"
      data-name="Claudia Saggese"
      data-sub="Package Scan · August 31, 2026 · Sarcopenia / Visceral Fat · F · 61">
 
@@ -2152,9 +2156,6 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   };
   </script>
 
-  <div style="background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #dc2626;border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:12.5px;line-height:1.55;color:#2a2a3a">
-    <strong style="color:#b91c1c">⚠ No audio brief for this scan.</strong> The modal below was fully refreshed at 8:30 PM Sun Aug 30 and every number in it is current. The 9-section Voicebox brief could not be generated: the local Voicebox service accepted all 9 requests and then stopped processing (23 jobs across three members stuck at "generating", zero CPU, no output files since 7:05 AM). It needs a restart, which was left for you rather than done automatically because two other members' briefs were queued behind the same jam. <strong>Read this modal instead of listening on the drive in.</strong>
-  </div>
 
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
@@ -2303,6 +2304,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div><!-- end modal-claudia -->
 <!-- ── SANDY NGO MODAL ── -->
 <div id="modal-sandy" class="modal-content"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html"
      data-name="Sandy Ngo"
      data-sub="Second Scan · August 31, 2026 · Recomp / Pre-Pregnancy · F · 33">
 
@@ -2324,7 +2326,6 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <!-- 1 - Pre-Scan Snapshot -->
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="sandy-scan-badge">Scan 3 Pending</span></div>
-    <div style="background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:9px 11px;margin-bottom:10px;font-size:12px;color:#7c2d12"><strong>Night-before refresh ran 8:20 PM Sun Aug 30 and everything below is current to that moment. There is no audio brief for this scan:</strong> Voicebox accepted the nine sections but is not processing any job on the queue, so nothing was generated. Read the modal on the way in.</div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>100% consistency over 30 days and 100% over 7, 16 sessions out of 16. The only perfect record on the board.</strong> <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Aug 30</span> She has not missed a session. When she lost gym access the weekend of Aug 23 she wrote in and rearranged the week herself rather than dropping one, then ran four sessions in the final week, three of them back to back.</span></div>
       <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>ALMI went from the 7th to the 12th percentile between May and August.</strong> That is a 71% relative move on the metric she cares about most, and it happened while she also dropped 2.8 lb of fat and 1.5 points of body fat. Genuine recomposition, not just weight loss.</span></div>
@@ -3157,6 +3158,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ── MAHMOUD ELBALAWY MODAL ── -->
 <div id="modal-mahmoud" class="modal-content"
+     data-audio-brief="https://dchristensen11.github.io/kalos-briefs/audio-briefs/scan-day-briefing-aug31.html"
      data-name="Mahmoud Elbalawy"
      data-sub="Package Scan · August 31, 2026 · 1:30 PM · Fat Loss toward 15% · M · 43">
 
