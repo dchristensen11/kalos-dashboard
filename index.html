@@ -716,6 +716,87 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
+<!-- ═══════════ SEP 7 — ESMERALDA HERNANDEZ VARGAS (ROUTINE) ═══════════ -->
+<div class="day-group">
+  <div class="day-label">Monday · September 7, 2026 &mdash; Routine Package Scan</div>
+  <div class="cards-row">
+
+    <!-- ── ESMERALDA HERNANDEZ VARGAS ── -->
+    <div class="card" id="card-esmeralda">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('esmeralda')">Esmeralda Hernandez Vargas <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Female &middot; 28 &middot; 2nd Package Scan &middot; Fat Loss / Visceral Fat</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">Time TBC</span>
+          <span class="badge badge-fat">Fat Loss</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Monday, September 7</strong> &middot; Kalos Package DEXA &middot; <strong>time not published in Iris or on the calendar</strong> &middot; <strong style="color:#16a34a">1 Year Virtual active through Jul 6, 2027, no renewal cliff</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">199.8</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Aug 6 baseline &middot; scale 203.3 &middot; 201 in app Aug 30</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">39.4%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">67th %ile age-matched, down from 81st &middot; fat 78.7 lb</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">87.5</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Down 58.5 from Jul 6, a 40% drop</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">86th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">Strong lean base &middot; 88th at Jul 6</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">100%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail">17 of 17 scheduled last 30d &middot; every session since the Aug 6 scan &middot; holding it on a <strong>new 6-day work week</strong>. Consistency is not the problem here, fuel and cardio volume are.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Their Deep Why</div>
+        <div class="why-text">Aesthetics and longevity, anchored on a person: preserving muscle and curves, less belly fat, independence with age, and <strong>a leaner body before having kids</strong>. why_strength band <strong>anchored</strong> (score 2, anchor "person"), so it is safe to lean on lightly, but the kids line is hers and should be handled with care rather than quoted back.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('esmeralda')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-esmeralda">4/8</span>
+            <span class="checklist-chevron" id="chev-esmeralda">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-esmeralda">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('esmeralda')"><span> Baseline DEXA pulled (Aug 6, live results dashboard)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('esmeralda')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('esmeralda')"><span> Kalos app thread checked for prior pre-scan messages (Aug 31)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('esmeralda')"><span> Modal built from real data</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> ⛔ 20 min LISS added to her app (promised Aug 24, still missing)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> Pre-scan opener sent (drafted, awaiting approval)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> Lift targets + nutrition sent (drafted, awaiting approval)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('esmeralda')"><span> "What have you noticed" question sent (drafted Aug 31)</span></label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- ═══════════ SEP 6 — JANICE CHOU + ALAN YANG (DUO, ROUTINE) ═══════════ -->
 <div class="day-group">
   <div class="day-label">Sunday · September 6, 2026 &mdash; Duo Routine Package Scans · 9:45&ndash;10:45 AM</div>
@@ -4197,6 +4278,127 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-valerie -->
+
+<!-- ── ESMERALDA HERNANDEZ VARGAS MODAL ── -->
+<div id="modal-esmeralda" class="modal-content"
+     data-name="Esmeralda Hernandez Vargas"
+     data-sub="2nd Package Scan &middot; September 7, 2026, time TBC &middot; Fat Loss / Visceral Fat &middot; F &middot; 28">
+
+  <script>
+  window.__scan1_esmeralda = { bw: 199.76, bfPct: 39.4, lean: 115.89, fat: 78.71, vat: 87.5, almiAMpct: 86, bfAMpct: 67, scan1Date: 'Aug 6, 2026 (prior package scan, this block\'s baseline)', height: 66, regional: { arms: {lean:11.5, fat:8.5}, trunk: {lean:56.9, fat:44.0}, legs: {lean:40.5, fat:23.7} } };
+  </script>
+
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="esmeralda-scan-badge">Scan Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🔥</span><span class="win-text"><strong>Visceral fat fell 40% in one block.</strong> 146.0 to 87.5 cm² between Jul 6 and Aug 6. On a 28-year-old planning children in the next few years, that is the single most valuable number on her sheet and it is worth leading with.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Perfect attendance, on a harder schedule than she had.</strong> 17 of 17 scheduled sessions completed in August, pulled live from the app, including the Saturday core and glutes days after moving to a 6-day work week in mid-August.</span></div>
+      <div class="success-win"><span class="win-icon">🥩</span><span class="win-text"><strong>Protein is climbing three weeks running: 72 g, 106 g, 133 g against a 170 g target,</strong> with 7 of 7 days logged in every one of those weeks. This was the flagged limiting factor at the Aug 19 midpoint and she has moved it 61 g without being nagged.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Body fat percentile moved 81st to 67th age-matched</strong> while the raw number moved 2.5 points. Quote the percentile, it tells the honest story.</span></div>
+    </div>
+  </div>
+
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">Goal &amp; Why</div>
+    <div class="dp-goal">Goal on file is <strong>fat-loss</strong>, derived from her numbers rather than agreed in the room (<code>path_source: almi</code>, reason "ALMI 86th, lean base is there"), so treat it as a working assumption. The arc her numbers put her in is <strong>BURN</strong>: ALMI at the <strong>86th percentile age-matched</strong> means the lean base is genuinely strong, and body fat at the <strong>67th percentile</strong> is the side with room. <strong>This is a routine progress checkpoint, not a renewal moment</strong> (<code>scan_next.milestone: false</code>, 1 Year Virtual runs to Jul 6 2027), so no sales content went into any message and no Slack brief is due.</div>
+    <div class="dp-why">why_strength band <strong>anchored</strong> (score 2, anchored on person). In her words: aesthetics and longevity, preserving muscle and curves, less belly fat, better independence with age, and <em>a leaner body before having kids</em>, all while managing an exhausting work and training schedule. <strong>The kids line is the real anchor and it is not something to quote back at her in a DM.</strong> It is the right thing to build the next block around in the room.</div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>⛔ The 20 minutes of LISS promised on Aug 24 is not in her app.</strong> Daniel's message that evening read "Add. 20 min LISS at end of workout? Make sure to also get a protein shake before the workout." Verified live on Aug 31 across every assignment from Aug 22 to Sep 12: <strong>no LISS or steady-state finisher exists in any session</strong>, before or after that message. The only cardio is inside warm-ups, 5 min Stairmaster or 5 to 10 min treadmill incline walk. Her Iris Current Focus already records the LISS as agreed, so the vault and the app disagree. <strong>Add it before the opener sends</strong>, because Draft 1 commits to it.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>She raised a real problem on Aug 24 and has had no answer since.</strong> Her words: cardio volume is well down on the last few months, the scale has not budged in 2 to 3 weeks, and she is now working 6 days. The only reply was the LISS line, which was never actioned, and she has not written since. <strong>Seven days of silence from someone who normally answers the same day.</strong> The opener closes that loop deliberately.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Lean mass is down 1.0 lb across the last block</strong> (116.85 to 115.89 lb, Jul 6 to Aug 6) against 9.2 lb of fat loss. The member record carries this as a red flag. Protein at 133 g and rising is the counter-story, but <strong>Monday's lean number is the one to read first</strong>, before the fat number.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>She is on retatrutide,</strong> plus tesamorelin, glutathione and B12 mentioned. Daniel already sent the FDA and provider caution on Aug 9. Nothing new was added and nothing about it went into any message. Her file also notes to avoid missed meals on it to prevent dizziness, which matters given calories are averaging 1452 against a 1735 goal.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Right shoulder discomfort, possibly from swimming.</strong> Keep pressing and pulling shoulder-friendly. Her swim class has ended. The lift targets deliberately avoid overhead work and the row target carries a shoulder cue.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Barbell Hip Thrust appears for the first time on Sat Sep 5</strong> with no logged history. She has been on the Machine Hip Thrust at 50 lb x 12, 12, 12 for two sessions running. No target was invented for it. If Daniel wants a fourth item, the right ask is "report the number back", not a PR.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Four SOP boxes are unticked:</strong> pre/post workout nutrition strategy, gut health form, neurotyping form, and <strong>visceral fat strategy</strong>. The last one stands out, since visceral fat is an explicit focus and moved 40% in one block. Separate skills, separate decisions, flagged not run.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Equipment and setup:</strong> Gold's Gym full access, barbells, StairMaster, plus running. No travel on file. Sleep last logged Aug 16 at 5h23m, so sleep data is stale rather than bad.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Recovered from the late-July seafood illness.</strong> The Aug 10 to 16 macro week (72 g protein, 894 cal average, with a 138 cal day on Aug 10) is the tail of that, not a compliance story. Do not read it as a slip.</span></div>
+    </div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Body Snapshot: Baseline (Aug 6, 2026)</div>
+    <div class="snap-metrics">
+      <div class="snap-metric"><div class="snap-val">199.8 lb</div><div class="snap-lbl">DEXA Total &middot; scale 203.3</div></div>
+      <div class="snap-metric"><div class="snap-val">39.4%</div><div class="snap-lbl">Body Fat &middot; 67th %ile age-matched</div></div>
+      <div class="snap-metric"><div class="snap-val">115.9 lb</div><div class="snap-lbl">Lean Mass &middot; 121.0 with BMC</div></div>
+      <div class="snap-metric"><div class="snap-val">78.7 lb</div><div class="snap-lbl">Fat Mass &middot; down 9.2 from Jul 6</div></div>
+      <div class="snap-metric"><div class="snap-val">87.5 cm²</div><div class="snap-lbl">VAT &middot; down 58.5 &middot; 422 g</div></div>
+      <div class="snap-metric"><div class="snap-val">86th %ile</div><div class="snap-lbl">ALMI &middot; 88th at Jul 6</div></div>
+      <div class="snap-metric"><div class="snap-val">201 lb</div><div class="snap-lbl">App weight, Aug 30</div></div>
+      <div class="snap-metric"><div class="snap-val">66"</div><div class="snap-lbl">Height 5'6" &middot; Age 28</div></div>
+    </div>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#2a2a3a"><strong>Regional, Aug 6:</strong> the trunk is where her fat sits. Trunk carries <strong>44.0 lb of fat against 56.9 lb of lean</strong>, which is 56% of her total fat mass in one region, and that is the same story the 87.5 cm² visceral number tells. Legs are 23.7 lb fat to 40.5 lb lean, arms 8.5 to 11.5. <strong>Every region lost fat in the last block</strong>, arms -16.7%, trunk -10.3%, legs -8.6%, and trunk lean actually went up 0.1 lb while arms and legs each gave back a little. <strong>Bone density is not a topic</strong> on a 32-day window.</div>
+    <div style="margin-top:8px;font-size:12px;color:#888">This block is <strong>Aug 6 to Sep 7, 32 days</strong>. Judge her against Aug 6, not the Jul 6 intro. Full numbers in the <a href="https://iris.livekalos.com/results-dashboard/1115877" target="_blank">Iris results dashboard ↗</a>.</div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a4d77ccf8748bc2f97b9ce7/metrics?tab=exercise" target="_blank" class="dp-title-link">Kalos app ↗</a></div>
+    <table class="lift-table">
+      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Week-Out Target</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Barbell Squat</td><td>70 lb &times; 10, 10, 10 (Aug 26)</td><td><strong>75 lb &times; 10, 10, 10</strong> (Wed Sep 2)</td><td>Identical three sets at 70 on both Aug 18 and Aug 26. Set one had more in it twice over, so this is a load increase not a rep increase.</td></tr>
+        <tr><td>Barbell Romanian Deadlift</td><td>75 lb &times; 10, 10, 10 (Aug 29)</td><td><strong>80 lb &times; 10, 10, 10</strong> (Wed Sep 2)</td><td>65 on Aug 18, 75 on Aug 26 and again Aug 29, all three sets matched each time. Ready to move.</td></tr>
+        <tr><td>Seated Row Machine</td><td>88 lb &times; 10, 10, 10 (Aug 24)</td><td><strong>95 lb &times; 10, 10, 10</strong> (Thu Sep 3)</td><td>Chest tall, pull to the ribs. Chosen over pressing because of the right shoulder. Note Aug 27 used the Cable Seated Row at 77, a different station, so do not compare the two directly.</td></tr>
+        <tr><td>Wide Stance Leg Press</td><td>230 lb &times; 12, 12 (Aug 26)</td><td>&mdash;</td><td><strong>Delivered.</strong> Jul 29 ask was to nudge it up from 180. It went 180 &rarr; 230 by Aug 26. Worth naming out loud.</td></tr>
+        <tr><td>Machine Hip Thrust</td><td>50 lb &times; 12, 12, 12 (Aug 22 and Aug 29)</td><td>&mdash;</td><td>Flat at 50 for two sessions with all three sets matching. <strong>Barbell Hip Thrust replaces it on Sep 5 with no history</strong>, so ask her to report the number rather than setting a target.</td></tr>
+        <tr><td>Barbell Incline Bench Press</td><td>55 lb &times; 10, 10, 10 (Aug 24 and Aug 27)</td><td>&mdash;</td><td>Flat at 55, three matched sets twice. Left out of targets on purpose given the right shoulder, but it is the obvious next one to move once the shoulder settles.</td></tr>
+        <tr><td>Neutral Grip Lat Pulldown</td><td>70 &times; 12, 12 then 85 &times; 2, 70 &times; 9 (Aug 24)</td><td>&mdash;</td><td>She tried 85 mid-set and it stopped at 2 reps. Aug 27 came back down to 60 &times; 12, 12, 12. <strong>One direct question, not a target:</strong> did 85 feel like a shoulder issue or a strength ceiling?</td></tr>
+        <tr><td>Prone Lying Hamstring Curl</td><td>77 &times; 10, 77 &times; 9, 66 &times; 12 (Aug 29)</td><td>&mdash;</td><td>Genuine fatigue drop-off, which is the right shape for a finisher. No note needed.</td></tr>
+        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Female under 60 &middot; 199.8 lb bodyweight &middot; reference only, NOT for her eyes</td></tr>
+        <tr><td>Bench Press</td><td>&mdash;</td><td>~200 lb 1RM</td><td>1.0 &times; BW. She trains barbell incline at 55 lb for reps, so this is a long way out.</td></tr>
+        <tr><td>Back Squat</td><td>&mdash;</td><td>~300 lb 1RM</td><td>1.5 &times; BW. Working sets are 70 lb &times; 10.</td></tr>
+        <tr><td>Deadlift</td><td>&mdash;</td><td>~400 lb 1RM</td><td>2.0 &times; BW. She trains RDLs, not conventional pulls, so there is no like-for-like anchor.</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:12.5px;line-height:1.6;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 12px"><strong>Do not put the Gold Standard figures in front of her.</strong> The multipliers key off bodyweight, so at 199.8 lb they are inflated and they will fall as she leans out, which makes them a moving and demoralising target in a fat-loss block. <strong>Use direction instead.</strong> Her own percentage gains are the better frame: Leg Press up 28% in eight days, RDL up 15% in eleven, and the 86th percentile ALMI says her lean base is already better than most 28-year-old women's. That is the motivating number on her sheet.</div>
+  </div>
+
+  <div class="dp-section">
+    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a4d77ccf8748bc2f97b9ce7/macros" target="_blank" class="dp-title-link">Macros ↗</a></div>
+    <div class="nutri-protocol">
+      <div><div><strong>Targets in the app: 170 g protein, 95 g carbs, 75 g fat, 1735 cal.</strong> Pulled live Aug 31.</div></div>
+      <div><div><strong style="color:#16a34a">Protein is climbing and she is doing it herself.</strong> Week of Aug 10: 72 g average. Week of Aug 17: 106 g. Week of Aug 24: <strong>133 g</strong>. Seven of seven days logged in all three weeks. Best single day Aug 24 at 198 g. Softest days Aug 28 (93 g) and Aug 29 (92 g), both weekend-adjacent.</div></div>
+      <div><div><strong>Calories are the quieter gap.</strong> 1452 average last week against a 1735 goal, and 894 the week before. On retatrutide, with her file warning about dizziness from missed meals, <strong>under-eating is a live risk, not a virtue.</strong> The Aug 19 midpoint already named low fuel as the reason sessions feel harder than they should.</div></div>
+      <div><div><strong>Her own solutions, in her words on Aug 24:</strong> jerky sticks, Greek yogurt bowls, Kirkland meatballs, and peanut butter and jelly toast before training. The messages reinforce these rather than replacing them.</div></div>
+      <div><div><strong>Carbs around training, lighter elsewhere.</strong> Already established since Jul 23 and she reported it helped with feeling faint during cardio. Nothing new added.</div></div>
+      <div><div><strong style="color:#c2410c">No food journal calendar task was created this run</strong> (queue policy). The 2-day log ask is in the written message only. Add the task manually if you want it on her calendar for Sep 5 and Sep 6.</div></div>
+    </div>
+  </div>
+
+  <!-- In Their Own Words -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
+    <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">not yet sent</span></div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>"What have you noticed?" &mdash; drafted Aug 31, NOT yet sent.</strong> <span style="color:#c2410c;font-weight:600">Awaiting Daniel's approval.</span> The ask: what she has noticed since July. The waistband, how her shirts sit, <strong>her back in the mirror</strong> (Daniel's own Aug 19 note said back definition is starting to show, so this is the personal prompt), and energy in the back half of a six day week.</div>
+      <div style="margin-bottom:8px"><strong>The draft addresses her scale comment head on.</strong> She wrote on Aug 24 that the weight has not budged in 2 to 3 weeks, which pre-judges Monday. One line redirects it: the scale is late and often the least honest signal, what she notices is closer to the truth.</div>
+      <div style="margin-bottom:8px"><strong>Six-to-twelve-month question:</strong> <span style="color:#888">deliberately skipped. 1 Year Virtual active through Jul 6 2027, mid-contract, no cliff on or before scan day, and this run was scoped routine. The renewal gate says skip and there is no renewal conversation to open.</span></div>
+      <div style="font-size:12px;color:#666"><strong>Read her silence carefully.</strong> She normally replies the same day, and she has not written since Aug 24, after an unanswered question about her cardio and a coaching instruction that was never put into her app. If nothing lands before the scan, that is about the seven quiet days, not about her engagement.</div>
+    </div>
+  </div>
+
+  <!-- Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">💚 Scan-Day Focus: Perfect Attendance, Rising Protein, and a Cardio Gap She Named Herself</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Open on the visceral fat, 146 to 87.5 cm² in one block.</strong> A 40% drop in a 28-year-old who wants to be leaner before having kids is the most meaningful thing on her sheet, and it is a health number rather than a vanity one.</div>
+      <div style="margin-bottom:8px"><strong>Then the attendance: 17 of 17 in August, on a new 6-day work week.</strong> Name it plainly. Almost nobody holds that through a schedule change.</div>
+      <div style="margin-bottom:8px"><strong>Then the protein trend, 72 to 106 to 133 g, seven of seven days logged for three weeks.</strong> She fixed the exact thing the Aug 19 midpoint flagged, without being chased.</div>
+      <div style="margin-bottom:8px"><strong>Read the lean number first, before the fat number.</strong> Lean was down 1.0 lb last block. If it held or climbed this time, that is the headline and it is the direct payoff of the protein work. If it fell again, protein and fuel are the conversation, not more deficit.</div>
+      <div style="margin-bottom:8px"><strong>Quote ALMI and body fat as percentiles.</strong> 86th for ALMI, 67th for body fat down from 81st. The raw 39.4% will land harder than it deserves.</div>
+      <div style="margin-bottom:8px"><strong>Own the cardio gap out loud.</strong> She raised it on Aug 24, the answer she got was never put into her app, and she has been quiet since. Whether or not the LISS is in by Monday, say what happened and what is now in the plan. That repairs more than any number on the sheet.</div>
+      <div style="margin-bottom:8px"><strong>Address the flat scale before she does.</strong> Weight was 199.8 at the Aug 6 scan and 201 in the app on Aug 30. If body fat and visceral are down again on a flat scale, that is the recomp conversation and it is a good one.</div>
+      <div style="margin-bottom:8px"><strong>Calories, not just protein.</strong> 1452 average against a 1735 goal, on retatrutide, with dizziness from missed meals on file. Eating more, not less, is likely the next lever.</div>
+      <div style="margin-bottom:8px"><strong>Do not mention bone density.</strong> 32-day window, it does not move, it reads as noise.</div>
+      <div style="margin-bottom:8px"><strong>No renewal content.</strong> 1 Year Virtual runs to Jul 6 2027. This is a checkpoint on a commitment she has already made.</div>
+      <div><strong>Ask the "what have you noticed" question in the room if she has not answered it.</strong> Given the seven quiet days, plan for that.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-esmeralda -->
 
 <!-- ── JANICE CHOU MODAL ── -->
 <div id="modal-janice" class="modal-content"
