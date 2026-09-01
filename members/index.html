@@ -222,7 +222,7 @@ const hoursSinceAdded=m=>{
 // clock runs out. A hard 24-hour window would drop anyone whose onboarding was
 // unfinished by the next morning, silently and for good, which is the one failure
 // this list exists to prevent. ONBOARD_TO caps it so it cannot become a graveyard.
-const ONBOARD_NEW_H=24, ONBOARD_TO=7;
+const ONBOARD_NEW_H=24, ONBOARD_TO=3;   // Daniel's cap: past 3 days it is a miss
 const onboardingDue=m=>{
   const o=m.onboarding; if(!o || !m.added) return null;
   const h=hoursSinceAdded(m); if(h==null || h<0) return null;
