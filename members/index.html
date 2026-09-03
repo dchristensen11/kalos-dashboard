@@ -189,7 +189,6 @@ const FILTERS = [
   // The one-on-one in-house assessment. Long-term members only: a four-week member
   // does not get one, so they are not missing anything.
   ['needs11','Needs 1:1 booked'],       // on a package, none booked and none held
-  ['booked11','Booked'],                // one-on-one on the calendar, not yet held
 ];
 // The full name Daniel gave each filter, where the rail is too narrow to show it.
 // The chips are one line each at 154px with an ellipsis, so the label has to be
@@ -295,7 +294,6 @@ function matches(m){
     case 'followup': return followupDue(m)!=null;
     case 'onboarding': return onboardingDue(m)!=null;
     case 'needs11':  return m.program.type==='package' && !m.assessment.past && !m.assessment.booked;
-    case 'booked11': return m.program.type==='package' && !!m.assessment.booked;
     case 'flags':    return (m.flags||[]).length>0;
     default: return true;
   }
@@ -334,12 +332,10 @@ function flagBoard(ms){
     </section>`).join('');
 }
 
-// Alphabetical by default, because most filters are a set to browse. Two are a
-// queue to work through, and for those the order IS the information: longest-waiting
-// first for the members owed a one-on-one, soonest first for the ones already booked.
+// Alphabetical by default, because most filters are a set to browse. One is a queue
+// to work through, and there the order IS the information: longest-waiting first.
 const ORDER = {
-  needs11:  (a,b)=>(a.program.package_start||'').localeCompare(b.program.package_start||''),
-  booked11: (a,b)=>(a.assessment.booked||'').localeCompare(b.assessment.booked||''),
+  needs11: (a,b)=>(a.program.package_start||'').localeCompare(b.program.package_start||''),
 };
 function list(){
   const ms = DATA.members.filter(matches).sort(ORDER[filter] || ((a,b)=>a.name.localeCompare(b.name)));
