@@ -334,8 +334,15 @@ function flagBoard(ms){
     </section>`).join('');
 }
 
+// Alphabetical by default, because most filters are a set to browse. Two are a
+// queue to work through, and for those the order IS the information: longest-waiting
+// first for the members owed a one-on-one, soonest first for the ones already booked.
+const ORDER = {
+  needs11:  (a,b)=>(a.program.package_start||'').localeCompare(b.program.package_start||''),
+  booked11: (a,b)=>(a.assessment.booked||'').localeCompare(b.assessment.booked||''),
+};
 function list(){
-  const ms = DATA.members.filter(matches).sort((a,b)=>a.name.localeCompare(b.name));
+  const ms = DATA.members.filter(matches).sort(ORDER[filter] || ((a,b)=>a.name.localeCompare(b.name)));
   if(filter==='flags') return flagBoard(ms);
   $('#app').innerHTML = `<div class="count">${ms.length} of ${DATA.members.length} members
     · synced ${esc(DATA.generated)}</div><div class="grid">` + ms.map(m=>{
