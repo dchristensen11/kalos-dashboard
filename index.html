@@ -716,9 +716,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
-<!-- ═══════════ SEP 10 — ADAM MAYER (2ND PACKAGE SCAN, ROUTINE) ═══════════ -->
+<!-- ═══════════ SEP 10 — ADAM MAYER + BLAKE CAPELLA (2ND PACKAGE SCANS, ROUTINE) ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Thursday · September 10, 2026 &mdash; Routine Package Scan</div>
+  <div class="day-label">Thursday · September 10, 2026 &mdash; Routine Package Scans</div>
   <div class="cards-row">
 
 
@@ -804,11 +804,96 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     </div>
 
 
+    <!-- ── BLAKE CAPELLA ── -->
+    <div class="card" id="card-blake">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('blake')">Blake Capella <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male &middot; 27 &middot; 2nd Package Scan (4th DEXA) &middot; Lean Mass Gain / ALMI</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">Time TBC</span>
+          <span class="badge badge-lbm">LBM Gain</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Thursday, September 10</strong> &middot; Kalos Package DEXA &middot; <strong style="color:#dc2626">time not confirmed</strong> &middot; <strong style="color:#16a34a">6 Month Core to Feb 8, 2027, no renewal cliff</strong></span>
+      </div>
+      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#7f1d1d">
+        <div style="font-weight:700;margin-bottom:4px">⚠️ Three things open on our side</div>
+        <div><strong>1.</strong> <strong>He moved the scan to Thursday himself and no time has been confirmed back to him.</strong> On Sep 4 he was told the scan had shifted to Wed Sep 9 at 9:00 AM and replied <em>"Thanks! Rescheduled for Thursday"</em>. Iris now shows Package Scan &middot; Sep 10. The three messages he holds from Sep 2 still say <strong>the 9th at 9:00 AM</strong>, said twice. Nobody has told him the Thursday time.</div>
+        <div style="margin-top:3px"><strong>2.</strong> Primary programme <strong>ends Mon Sep 7</strong>, now three days before the scan.</div>
+        <div style="margin-top:3px"><strong>3.</strong> His Aug 13 scan notes in the app still end <em>"Next Scan (in person): September 15, 2026, 8:30 AM."</em> Third wrong date in his written record. Still not edited.</div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">146.5</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Aug 13 baseline &middot; scale 147.4 &middot; up 3.2</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">18.5%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">33rd %ile age-matched, was 20th &middot; fat 27.1 lb</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">55.1</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">Up 12.6 (+29.8%) since Jul 8</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">6th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">Down 1 from 7th &middot; THE number</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#f59e0b">70%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:70%;background:#f59e0b"></div></div>
+            <div class="cons-detail">7 of 10 tracked last 30d, and <strong>3 of 3 in the last 7 days</strong> (Everfit, pulled Sep 5). Up from 56% at the Sep 2 prep. The three misses are all Aug 14 to Aug 17, the old pre-injury workouts he could not do and chased us to replace. <strong>Since the wrist-safe block went live on Aug 18 he is 7 of 8</strong>, seven sessions Aug 20 to Sep 4 with no gap.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Their Deep Why</div>
+        <div class="why-text">Functional capability and longevity for <strong>climbing, surfing, running, biking and tennis</strong>. why_strength band <strong>anchored</strong> (score 2, anchor "pursuit"), so it is safe to reference lightly. The sharpest version of it is behavioural rather than stated: he trained around a broken scaphoid rather than waiting a month out.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('blake')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-blake">11/13</span>
+            <span class="checklist-chevron" id="chev-blake">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-blake">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Baseline DEXA pulled (Aug 13, PDF extract + Iris results dash)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Kalos app thread checked for prior pre-scan messages (Sep 2)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Everfit lifts, sessions before scan, food journal pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Modal built from real data</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')"><span> ⛔ Thursday Sep 10 scan time confirmed with him (he rescheduled himself Sep 4)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')"><span> ⛔ Next training block loaded (primary ends Sep 7)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Tuff Wraps link sent (Sep 3, 9:00 AM)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Sep 2 targets scored against the Sep 2 and Sep 4 sessions (Sep 5)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> Pre-scan opener sent Sep 2</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> Lift targets + nutrition sent Sep 2</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> "What have you noticed" question sent Sep 2</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')"><span> Night-before refresh + audio briefing</span></label>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
 
-<!-- ═══════════ SEP 9 — MARISSA GRAY (SECOND) + TAMMI HALL (FIRST PACKAGE) + BLAKE CAPELLA + JUSTIN VIDAMO + VICTORIA TREECE ═══════════ -->
+<!-- ═══════════ SEP 9 — MARISSA GRAY (SECOND) + TAMMI HALL (FIRST PACKAGE) + JUSTIN VIDAMO + VICTORIA TREECE ═══════════ -->
 <div class="day-group">
   <div class="day-label">Wednesday · September 9, 2026 &mdash; Second Scan, First Package Scan &amp; Routine Package Scans</div>
   <div class="cards-row">
@@ -956,87 +1041,6 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tammi')"><span> Pre-scan opener sent</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tammi')"><span> Lift targets + nutrition sent, 2-day food log added (Sep 7 + 8)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tammi')"><span> Night-before refresh + audio briefing</span></label>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- ── BLAKE CAPELLA ── -->
-    <div class="card" id="card-blake">
-      <div class="card-header">
-        <div>
-          <div class="card-name clickable" onclick="openModal('blake')">Blake Capella <span class="expand-chevron">↗</span></div>
-          <div class="card-sub">Male &middot; 27 &middot; 2nd Package Scan (4th DEXA) &middot; Lean Mass Gain / ALMI</div>
-        </div>
-        <div class="card-badges">
-          <span class="badge badge-scan">9:00 AM</span>
-          <span class="badge badge-lbm">LBM Gain</span>
-        </div>
-      </div>
-      <div class="scan-row">
-        <span>📅</span>
-        <span><strong>Wednesday, September 9</strong> &middot; Kalos Package DEXA &middot; <strong>9:00 AM</strong> &middot; <strong style="color:#16a34a">6 Month Core to Feb 8, 2027, no renewal cliff</strong></span>
-      </div>
-      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#7f1d1d">
-        <div style="font-weight:700;margin-bottom:4px">⚠️ One thing open on our side</div>
-        <div><strong>1.</strong> Primary programme <strong>ends Sep 7</strong>, two days before the scan.</div>
-      </div>
-      <div class="metrics-grid">
-        <div class="metric note">
-          <div class="metric-val">146.5</div>
-          <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Aug 13 baseline &middot; scale 147.4 &middot; up 3.2</div>
-        </div>
-        <div class="metric warn">
-          <div class="metric-val">18.5%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">33rd %ile age-matched, was 20th &middot; fat 27.1 lb</div>
-        </div>
-        <div class="metric warn">
-          <div class="metric-val">55.1</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">Up 12.6 (+29.8%) since Jul 8</div>
-        </div>
-        <div class="metric warn">
-          <div class="metric-val">6th %ile</div>
-          <div class="metric-label">ALMI</div>
-          <div class="metric-sub">Down 1 from 7th &middot; THE number</div>
-        </div>
-      </div>
-      <div class="consistency-section">
-        <div class="cons-label">📊 Training Consistency</div>
-        <div class="cons-row">
-          <div class="cons-pct" style="color:#f97316">56%</div>
-          <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:56%;background:#f97316"></div></div>
-            <div class="cons-detail">5 of 9 tracked last 30d. <strong>Do not read this to him as a failure.</strong> Aug 14 and Aug 17 were the old pre-injury workouts he could not do, and he chased us for the new block on the 17th. <strong>Since the wrist-safe programme went live on Aug 18 he is 5 of 6 (83%)</strong>, five straight sessions Aug 20 to Aug 31.</div>
-          </div>
-        </div>
-      </div>
-      <div class="why-section">
-        <div class="why-tag">⭐ Their Deep Why</div>
-        <div class="why-text">Functional capability and longevity for <strong>climbing, surfing, running, biking and tennis</strong>. why_strength band <strong>anchored</strong> (score 2, anchor "pursuit"), so it is safe to reference lightly. The sharpest version of it is behavioural rather than stated: he trained around a broken scaphoid rather than waiting a month out.</div>
-      </div>
-      <div class="checklist-section">
-        <div class="checklist-header" onclick="toggleChecklist('blake')">
-          <span class="checklist-title">✅ Pre-Scan Prep</span>
-          <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-blake">10/11</span>
-            <span class="checklist-chevron" id="chev-blake">›</span>
-          </div>
-        </div>
-        <div class="checklist-items" id="items-blake">
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Baseline DEXA pulled (Aug 13, PDF extract + Iris results dash)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Kalos app thread checked for prior pre-scan messages (Sep 2)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Everfit lifts, sessions before scan, food journal pulled</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Modal built from real data</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('blake')"><span> Scan date and 9:00 AM time confirmed with him (Sep 2)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')"><span> ⛔ Next training block loaded (primary ends Sep 7)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> Pre-scan opener sent Sep 2</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> Lift targets + nutrition sent Sep 2</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')" checked><span> "What have you noticed" question sent Sep 2</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('blake')"><span> Night-before refresh + audio briefing</span></label>
         </div>
       </div>
     </div>
@@ -2905,7 +2909,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <div id="modal-blake" class="modal-content"
      data-name="Blake Capella"
-     data-sub="2nd Package Scan (4th DEXA) &middot; September 9, 2026 &middot; 9:00 AM &middot; Lean Mass / ALMI &middot; M &middot; 27">
+     data-sub="2nd Package Scan (4th DEXA) &middot; September 10, 2026 &middot; time not confirmed &middot; Lean Mass / ALMI &middot; M &middot; 27">
 
   <script>
   window.__scan1_blake = { bw: 146.5, bfPct: 18.5, lean: 114.75, fat: 27.11, vat: 55.1, almiAMpct: 6, scan1Date: 'Aug 13, 2026 (3rd scan, this block\'s baseline)', height: 71, regional: { arms: {lean:12.8, fat:2.6}, trunk: {lean:55.8, fat:12.2}, legs: {lean:39.1, fat:9.8} } };
@@ -2913,9 +2917,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 0 - Open items on our side -->
   <div class="dp-section" style="border-left:3px solid #dc2626;background:#fef2f2">
-    <div class="dp-title">⚠️ One open item</div>
+    <div class="dp-title">⚠️ Three open items, all ours</div>
     <div style="font-size:12.5px;line-height:1.6;color:#7f1d1d">
-      <div><strong>1. His programme runs out on Sep 7</strong>, two days before the scan. Iris coaching flag: <em>"Ends in 5 days, primary ends Sep 7."</em> Precedent worth remembering: the last time a block lapsed he messaged <em>"Looks like they're still the old ones?"</em> and lost two sessions to it.</div>
+      <div><strong>1. The scan is now Thursday Sep 10 and he has never been given a time for it.</strong> Sequence, straight from his Kalos app thread: Sep 2, the week-out messages told him <em>"Wednesday September 9 at 9:00 AM"</em> and then repeated <em>"It is the 9th, at 9:00 AM"</em>, deliberately, because his written notes said Sep 15. Sep 4 09:43, he was told the scan had moved to Wed Sep 9 at 9:00 AM with a reschedule link. Sep 4 10:36, he replied <strong><em>"Thanks! Rescheduled for Thursday"</em></strong>. Sep 4 13:05, the reply was <em>"cool"</em>. Iris now reads <strong>Package Scan &middot; Sep 10</strong>. So he knows it is Thursday and he chose it, but <strong>the only time in writing anywhere in his thread is 9:00 AM on the 9th</strong>. Get the Acuity time and confirm it back to him in one line.</div>
+      <div style="margin-top:6px"><strong>2. His programme runs out on Mon Sep 7</strong>, now three days before the scan, and there is nothing assigned after it. Everfit shows 1 assigned next week. Precedent: the last time a block lapsed he messaged <em>"Looks like they're still the old ones?"</em> and lost two sessions to it.</div>
+      <div style="margin-top:6px"><strong>3. The Aug 13 scan notes on his Everfit Overview still end</strong> <em>"Next Scan (in person): September 15, 2026, 8:30 AM."</em> That has now been wrong through two reschedules. If he scrolls back he finds it. Not edited.</div>
     </div>
   </div>
 
@@ -2923,7 +2929,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="blake-scan-badge">Scan Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🔁</span><span class="win-text"><strong>Five straight sessions since Aug 20</strong> after a month in a cast. He rebuilt the habit himself, moving the Monday he missed to the Wednesday rather than dropping it.</span></div>
+      <div class="success-win"><span class="win-icon">🔁</span><span class="win-text"><strong>Seven straight sessions since Aug 20</strong> after a month in a cast, with no gap. 3 of 3 in the last 7 days, 7 of 10 across 30. He rebuilt the habit himself, moving the Monday he missed to the Wednesday rather than dropping it.</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text"><strong>He beat every target he was given on Sep 2.</strong> Sumo squat 75 x 12, 12, 12 as asked plus a fourth set. RDL asked for 85, he put up <strong>90 x 12</strong> and asked for 95 next time. Third target set in a row that he has overshot.</span></div>
       <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Sumo squat 50 to 75 in eight days.</strong> 50 x 12,12,12,11 on Aug 23, then 65, then 70, then 75 on Aug 31. He was asked for 55 and delivered 75.</span></div>
       <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Romanian deadlift 70 to 80</strong>, and Aug 31 was 80 for 12, 12, 12, three identical clean sets at the top of the range. He was asked for 75.</span></div>
       <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>He logged food on Aug 25 and Aug 26</strong>, the exact two days asked for, after seven weeks of an empty journal. Do not ask again as though he missed it.</span></div>
@@ -2931,11 +2938,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="success-win"><span class="win-icon">🎒</span><span class="win-text"><strong>Farmer carry 80 to 100</strong> across 45-second sets on Aug 26, and calf raise 40 to 60, split squat 40 to 50, glute bridge 12 to 20. Everything in the lower body is moving.</span></div>
     </div>
     <div class="success-targets">
-      <div class="success-targets-label"><strong>Three sessions land before the scan:</strong> <strong>Wed Sep 2 (P1 Lower A)</strong>, <strong>Fri Sep 4 (P1 Lower B)</strong>, <strong>Mon Sep 7 (P2 Lower B)</strong>. Nothing on Sep 8 or 9. Targets sent Sep 2:</div>
-      <div class="success-target-item"><strong>Sumo squat (squat), Mon Sep 7:</strong> hold 75, get all three sets to a clean 12. Aug 31 was 75 for 12, 10, 9, so the reps faded and the load is not the thing to move yet.</div>
-      <div class="success-target-item"><strong>Romanian deadlift (hinge), Fri Sep 4:</strong> 85 for 10 to 12. Three identical sets of 12 at 80 on Aug 31 means the opener had more in it.</div>
-      <div class="success-target-item"><strong>Hip thrust (glute), Fri Sep 4:</strong> back to 35 for three sets of 10, ribs tucked and tailbone up. He jumped 15 straight to 50 on Aug 28 and the reps went 10, 7, 5, the same collapse pattern he had at 15.</div>
-      <div class="success-target-item" style="color:#666"><strong>Optional fourth, in today's session:</strong> farmer carry at 100 across all three 45-second sets. Left out of the DM to keep the three targets clean.</div>
+      <div class="success-targets-label"><strong>Sep 2 targets, scored against what he actually logged</strong> (Everfit, pulled Sep 5). <strong>Wed Sep 2 and Fri Sep 4 are both complete</strong>; <strong>Mon Sep 7</strong> is the last session before the scan:</div>
+      <div class="success-target-item"><strong>✅ Sumo squat, asked to hold 75 for a clean 12, 12, 12.</strong> Sep 4 delivered <strong>75 for 12, 12, 12 and a fourth set at 11</strong>. Exactly the ask, plus a set. Sep 2 was 75 for 10, 10, 10, 10.</div>
+      <div class="success-target-item"><strong>✅ Romanian deadlift, asked for 85 for 10 to 12 on Fri Sep 4.</strong> He did <strong>80 x 12, 80 x 12, 80 x 12, then 90 x 12</strong>, beat the target by 5 on the top set, and left the comment <strong><em>"Start at 95 next time"</em></strong> (with a follow-up <em>"90*"</em>) on the exercise. That comment is <strong>still unread in Iris</strong>.</div>
+      <div class="success-target-item"><strong>⚠️ Hip thrust, asked to come back to 35 for three sets of 10.</strong> He went the other way: <strong>50 x 10, 60 x 10, 60 x 9</strong>. He did not deload, and the reps held this time where they collapsed at 50 the week before (10, 7, 5). The instruction was wrong rather than ignored, so score it as a win and say so.</div>
+      <div class="success-target-item"><strong>✅ Copenhagen plank hit 45 s.</strong> Sep 2 logged <strong>45, 45, 45</strong> against the prescribed 45 s, after 40, 30, 30 on Aug 26. The one thing he was short on is now closed.</div>
+      <div class="success-target-item" style="color:#666"><strong>Farmer carry</strong> went to <strong>100 across all three 45-second sets</strong> on Sep 2, which was the optional fourth target and was never asked for out loud.</div>
+      <div class="success-target-item" style="color:#666"><strong>One session left before the scan:</strong> Mon Sep 7 (P2 Lower B): RDL 3 x 12, step ups 2 x 8, pause goblet squat 3 x 8-12, B-stance deadlift 3 x 10, sissy squat 2 x 6, tibialis wall raise 2 x 15. Nothing on Sep 8, 9 or 10.</div>
     </div>
   </div>
 
@@ -2950,10 +2959,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Primary programme ends Sep 7.</strong> New block needed, and he will notice if it is not there.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>He beat both targets he was set on Aug 24.</strong> Sumo squat asked 55, delivered 75. RDL asked 75, delivered 80. Open here.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Hip thrust overshot.</strong> Told to hold 15 on Aug 24, told to load up on the Aug 25 call, went to 50 and the reps collapsed 10, 7, 5. Two instructions pointed opposite ways. 35 is the fix.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Copenhagen plank is the one thing under target.</strong> Prescribed 45 s, logged 40, 30, 30 on Aug 26. It is directly on the scoliosis support work.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Scan moved to Thu Sep 10 and he has no time for it.</strong> He rescheduled himself on Sep 4. Everything in writing still says the 9th at 9:00 AM.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Primary programme ends Mon Sep 7</strong>, three days before the scan. New block needed, and he will notice if it is not there.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Unread workout comment, Sep 4.</strong> <em>"Start at 95 next time"</em> then <em>"90*"</em> on the Dumbbell Romanian Deadlift. Sep 7 programmes that lift, so it needs an answer before Monday.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Three target sets, three overshoots.</strong> Aug 24: asked 55 sumo, delivered 75; asked 75 RDL, delivered 80. Sep 2: asked for 75 x 12, 12, 12, delivered that plus a fourth set; asked 85 RDL, delivered <strong>90 x 12</strong>. Open here.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Hip thrust resolved itself.</strong> Told to hold 15 on Aug 24, told to load up on the Aug 25 call, went to 50 and collapsed 10, 7, 5, told on Sep 2 to come back to 35, and instead ran 50 x 10, 60 x 10, 60 x 9 on Sep 4 with the reps holding. He was right, we were wrong. Build from 60.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Copenhagen plank now at target.</strong> Prescribed 45 s, was 40, 30, 30 on Aug 26, logged <strong>45, 45, 45</strong> on Sep 2. Directly on the scoliosis support work.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Right wrist, broken scaphoid</strong> from a bike crash on Jul 17. Cast off Aug 12, brace for activities, MRI done, no surgery. Thumb was still painful in late July. Old left-wrist ligament damage from Jiu-Jitsu on top.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Idiopathic scoliosis limits axial loading</strong>, and lower-back sensitivity shows on heavy RDLs without precise breathing. Farmer carries were prescribed specifically as anti-flexion core support for it.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Zero upper body programmed since Aug 17.</strong> Every session in the block is lower body, dumbbells only. He said on Aug 25 that pulling is coming back faster than pushing, which is the natural place to reintroduce.</span></div>
@@ -2961,11 +2972,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No renewal on the line.</strong> 6 Month Core to Feb 8, 2027 per Iris (marked Adjusted; the vault record still says Jan 8, worth reconciling). No 6-to-12-month question asked.</span></div>
     </div>
     <div class="personal-notes" style="margin-top:10px">
-      <div class="personal-note"><span class="note-emoji">🏋️</span><span><strong>Prime P1/P2 Lower, dumbbells only.</strong> Sessions before the scan: <strong>Wed Sep 2 P1 Lower A</strong>, <strong>Fri Sep 4 P1 Lower B</strong>, <strong>Mon Sep 7 P2 Lower B</strong>. Nothing on Sep 8 or 9. No loads are prescribed in the templates, so every target is anchored on his own logged history.</span></div>
+      <div class="personal-note"><span class="note-emoji">🏋️</span><span><strong>Prime P1/P2 Lower, dumbbells only.</strong> <strong>Wed Sep 2 and Fri Sep 4 are done</strong>; <strong>Mon Sep 7 P2 Lower B</strong> is the only session left before the scan, and nothing is assigned on Sep 8, 9 or 10. No loads are prescribed in the templates, so every target is anchored on his own logged history.</span></div>
       <div class="personal-note"><span class="note-emoji">🏠</span><span><strong>Office gym (dumbbells) plus a climbing gym</strong> with cables, racks, machines, leg press, Smith and barbells. He used the Smith machine back squat on Aug 20 (50 x 10, 10 then 60 x 10, 7), so the second gym is real and available.</span></div>
       <div class="personal-note"><span class="note-emoji">🥬</span><span><strong>Mostly plant-based</strong>, no dairy, whey or eggs. 126 g protein daily via meals plus two pea/rice shakes. Creatine 5 g daily is the target and he admitted on Aug 25 he is not daily on it.</span></div>
       <div class="personal-note"><span class="note-emoji">🧗</span><span><strong>Climbing, surfing, running, biking, tennis</strong>, and a handstand progression goal that is parked until the wrist takes load. The bike crash that broke the scaphoid was on the commute.</span></div>
-      <div class="personal-note"><span class="note-emoji">📅</span><span>Window <strong>Aug 13 to Sep 9 = 27 days</strong>. Second package scan, fourth DEXA. <strong>Judge against Aug 13, not the intro.</strong> Intro-to-now is 94 days and spans a completely different situation.</span></div>
+      <div class="personal-note"><span class="note-emoji">📅</span><span>Window <strong>Aug 13 to Sep 10 = 28 days</strong>. Second package scan, fourth DEXA. <strong>Judge against Aug 13, not the intro.</strong> Intro-to-now is 95 days and spans a completely different situation.</span></div>
     </div>
   </div>
 
@@ -2989,24 +3000,26 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/6a25a9a588b09bbccfd76fb5/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
     <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
-      <strong>🎯 Three sessions before the scan.</strong> Wed Sep 2 (P1 Lower A), Fri Sep 4 (P1 Lower B), Mon Sep 7 (P2 Lower B).
+      <strong>🎯 One session left before the scan.</strong> Wed Sep 2 and Fri Sep 4 are complete; <strong>Mon Sep 7 (P2 Lower B)</strong> is the last.
       <div style="margin-top:6px">The pattern in his file is the mirror of Matthew's: <strong>his reps fade across sets</strong> (12, 10, 9 on the sumo squat), which means the opener is honest and the load is right, so those get held. Where the sets are <strong>identical</strong> (80 for 12, 12, 12 on the RDL) the weight moves. He climbs fast when given a number.</div>
       <div style="margin-top:6px;color:#666">Templates carry no prescribed loads, so every target is anchored on his own logged history. Everything is lower body until the wrist clears.</div>
     </div>
     <table class="lift-table">
       <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td>DB Sumo Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>75 x 12, 10, 9 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>50 → <strong>75</strong> in 8 days</td><td>Reps faded, so hold the load. <strong>Target Mon Sep 7: 75 for a clean 12, 12, 12.</strong> He was asked for 55 on Aug 24.</td></tr>
-        <tr><td>DB Romanian Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>80 x 12, 12, 12 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>70 → <strong>80</strong></td><td>Three identical sets at the top of the range. <strong>Target Fri Sep 4: 85 for 10 to 12.</strong> He was asked for 75.</td></tr>
-        <tr><td>DB Hip Thrust <span style="font-size:10px;color:#888">(glute)</span></td><td>50 x 10, 7, 5 <span style="font-size:10px;color:#888">(Aug 28)</span></td><td>15 → 50, too far</td><td>Was 15 x 10, 9, 6 on Aug 23. Same collapse at both loads. <strong>Target Fri Sep 4: 35 for 3 x 10</strong>, ribs tucked, tailbone up.</td></tr>
+        <tr><td>DB Sumo Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>75 x 12, 12, 12, 11 <span style="font-size:10px;color:#888">(Sep 4)</span></td><td>50 → <strong>75</strong>, reps now full</td><td><strong>Target hit exactly.</strong> Was 75 x 12, 10, 9 on Aug 31, then 75 x 10, 10, 10, 10 on Sep 2. The load has earned its jump. He runs this instead of the programmed goblet and front squats because of wrist pressure.</td></tr>
+        <tr><td>DB Romanian Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>80, 80, 80, <strong>90</strong> x 12 <span style="font-size:10px;color:#888">(Sep 4)</span></td><td>70 → 80 → <strong>90</strong></td><td><strong>Asked for 85, delivered 90 for 12.</strong> Comment on the exercise: <em>"Start at 95 next time"</em>. Sep 7 programmes RDL 3 x 12, so 95 is the live decision. <strong>This comment is unread.</strong></td></tr>
+        <tr><td>DB Hip Thrust <span style="font-size:10px;color:#888">(glute)</span></td><td>50 x 10, 60 x 10, 60 x 9 <span style="font-size:10px;color:#888">(Sep 4)</span></td><td>15 → 50 → <strong>60</strong></td><td><strong>He ignored the deload to 35 and was right.</strong> Reps held at 60 where they collapsed at 50 a week earlier (10, 7, 5). The rib-tuck cue from the Aug 25 call is the likely difference. Say so rather than glossing it.</td></tr>
         <tr><td>DB Step Ups</td><td>80 x 8, 6 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>new</td><td><strong>He commented "grip failing" on this one.</strong> Straps or a lighter load, and it is the wrist reporting in.</td></tr>
         <tr><td>DB B-Stance Deadlift</td><td>60 x 10, 8, 8 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>new</td><td>Commented <strong>"left side weaker"</strong>. Matches what he raised on the Aug 25 call about lateral core asymmetry. Weaker side leads.</td></tr>
         <tr><td>DB Single-Leg RDL</td><td>50 x 7, 6 <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>15 → <strong>50</strong></td><td>Huge jump from 15 x 10, 9 on Aug 20. Reps dropped hard, so this one is also over-loaded.</td></tr>
         <tr><td>DB Split Squat</td><td>50 x 12, 11 <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>40 → <strong>50</strong></td><td>Clean progression.</td></tr>
         <tr><td>DB Bulgarian Split Squat</td><td>30 x 10, 10 <span style="font-size:10px;color:#888">(Aug 28)</span></td><td>flat</td><td>30 x 10, 8 on Aug 23, then 10, 10. Both sets now complete, ready for 35.</td></tr>
         <tr><td>DB Standing Calf Raise</td><td>60 x 15, 15 <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>40 → <strong>60</strong></td><td>Both sets to the top of the range twice.</td></tr>
-        <tr><td>Farmers Walk <span style="font-size:10px;color:#888">(carry)</span></td><td>100 x 45 s, two sets <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>80 → <strong>100</strong></td><td>Prescribed 3 x 45 s / 30 s rest, in today's session. Anti-flexion work for the scoliosis. Next step is 100 across all three.</td></tr>
-        <tr><td>Copenhagen Plank <span style="font-size:10px;color:#888">(core)</span></td><td>40 s, 30 s, 30 s <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>under target</td><td>Prescribed <strong>45 s</strong>. The only prescribed item he is short on. In today's session again.</td></tr>
+        <tr><td>Farmers Walk <span style="font-size:10px;color:#888">(carry)</span></td><td>100 x 45 s, all three sets <span style="font-size:10px;color:#888">(Sep 2)</span></td><td>80 → <strong>100</strong></td><td>Prescribed 3 x 45 s / 30 s rest. Anti-flexion work for the scoliosis, prescribed on the Aug 25 call at 100 ft or 30 s. Now full at 100 across all three. Weight moves next.</td></tr>
+        <tr><td>Copenhagen Plank <span style="font-size:10px;color:#888">(core)</span></td><td>45 s, 45 s, 45 s <span style="font-size:10px;color:#888">(Sep 2)</span></td><td><strong>target hit</strong></td><td>Was 40, 30, 30 on Aug 26 against a prescribed <strong>45 s</strong>. Now three clean sets at the target. The only item he was short on is closed.</td></tr>
+        <tr><td>DB Bulgarian Split Squat <span style="font-size:10px;color:#888">(unilateral)</span></td><td>35 x 10, 10 <span style="font-size:10px;color:#888">(Sep 4)</span></td><td>30 → <strong>35</strong></td><td>The 35 flagged as ready on Aug 28 was taken and both sets completed.</td></tr>
+        <tr><td>DB Standing Calf Raise</td><td>70 x 15, 80 x 15 <span style="font-size:10px;color:#888">(Sep 2)</span></td><td>40 → 60 → <strong>80</strong></td><td>Doubled in two weeks, both sets at the top of the range.</td></tr>
         <tr><td>Smith Machine Back Squat</td><td>60 x 10, 7 <span style="font-size:10px;color:#888">(Aug 20)</span></td><td>—</td><td>Only axial-loaded lift in the block, and only once. Scoliosis note says keep Smith work early in the session while the spinal support muscles are fresh.</td></tr>
         <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Male 20s-30s · 146.5 lb bodyweight · long-term direction only</td></tr>
         <tr><td>Barbell Bench Press</td><td>&mdash;</td><td>~220 lb 1RM</td><td>1.5 x BW. <strong>No barbell pressing exists in this file</strong>, and none is possible until the scaphoid clears.</td></tr>
@@ -3022,7 +3035,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/6a25a9a588b09bbccfd76fb5/macros" target="_blank" class="dp-title-link">Macros ↗</a></div>
     <div class="nutri-protocol">
       <div><div><strong style="color:#15803d">He delivered the two days of logging.</strong> Asked on Aug 24 and again on the Aug 25 call, posted <strong>Aug 25 and Aug 26</strong>. The journal had been empty since <strong>Jul 6</strong>. Open by acknowledging it, not by asking again.</div></div>
-      <div><div><strong style="color:#c2410c">But the entries carry no portions.</strong> In July he wrote grams and calories on every item. The August entries are descriptions only (overnight oats with blueberries and PB, Koia shake, brown rice and madras lentils, protein shake and bar, frozen pizza; then oats and shake, protein bar, post-workout shake, evening shake). <strong>Protein cannot be totalled from them</strong>, which is why the ask is two more days with rough amounts.</div></div>
+      <div><div><strong style="color:#c2410c">Nothing new has landed since Aug 26.</strong> The Sep 2 message asked for two more days with rough amounts. As of Sep 5 the journal still ends at Aug 26. The two Food Journal prompts sit on his calendar for <strong>Sep 7 and Sep 8</strong>, which is still before the Thursday scan, so this is pending rather than missed.</div></div>
+      <div><div><strong style="color:#c2410c">The Aug entries carry no portions.</strong> In July he wrote grams and calories on every item. The August entries are descriptions only (overnight oats with blueberries and PB, Koia shake, brown rice and madras lentils, protein shake and bar, frozen pizza; then oats and shake, protein bar, post-workout shake, evening shake). <strong>Protein cannot be totalled from them</strong>, which is why the ask is two more days with rough amounts.</div></div>
       <div><div><strong style="color:#c2410c">The Everfit Macros tab is empty.</strong> <code>get-macro-goal</code> returns no entries. The 126 g protein target exists only in his notes and in messages, never in the app. Nothing was promised to him about macros, so this is a gap rather than a broken promise, but it is worth closing.</div></div>
       <div><div><strong>Mostly plant-based</strong>, no dairy, whey or eggs. 126 g protein daily via meals plus two pea/rice shakes. Four of the nine August entries are shakes or bars, which is consistent with the protocol.</div></div>
       <div><div><strong>Creatine 5 g daily</strong> is the standing ask and he said plainly on Aug 25 that he is not daily on it. He agreed to a reminder or a counter-top routine. Unverifiable from any system, so ask.</div></div>
@@ -3032,13 +3046,14 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">not yet asked</span></div>
+    <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">asked Sep 2, no reply yet</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>"What have you noticed" was sent Sep 2</strong> (drafted Sep 2, held for approval). It asks about sleeves and shoulders, whether the dumbbells feel lighter in the hand, how the wrist holds under load now against his first session back, and whether climbing or the bike feel different yet.</div>
+      <div style="margin-bottom:8px"><strong>"What have you noticed" was sent Sep 2 at 6:52 AM. Three days on, no reply.</strong> It asks about sleeves and shoulders, whether the dumbbells feel lighter in the hand, how the wrist holds under load now against his first session back, and whether climbing or the bike feel different yet.</div>
+      <div style="margin-bottom:8px"><strong>He has replied in the thread since, just not to that.</strong> On Sep 4 he answered the reschedule note within an hour (<em>"Thanks! Rescheduled for Thursday"</em>), and on Sep 4 evening he left two comments on his RDL. So he is engaged and reading; the reflective question is the one thing he has skipped. <strong>Worth asking him for one line in the room rather than chasing it in writing.</strong></div>
       <div style="margin-bottom:8px"><strong>He has never been asked this on any scan arc.</strong> The Jul 3 week-out was targets and nutrition only. So there is no prior answer to open from.</div>
       <div style="margin-bottom:8px"><strong>Twelve-month question:</strong> <span style="color:#888">not sent. Routine package scan, 6 Month Core to Feb 8, 2027, no renewal cliff. Deliberately skipped per the Draft 4 gate.</span></div>
       <div style="margin-bottom:8px"><strong>What he volunteered unprompted on Aug 25</strong>, which is the closest thing to an answer already on file: <em>"pleasantly surprised by the amount of like weight that I can... hold"</em> on vertical loading and pulling, and on the wraps, <em>"worth it."</em> He also flagged the lateral core asymmetry himself before anyone measured it.</div>
-      <div style="font-size:12px;color:#666"><strong>Read his silence correctly.</strong> He is a fast, low-friction replier and he chases things he is owed (the workouts on Aug 17, the wraps on Aug 28). If he goes quiet after these messages it will be because the wraps question is still hanging, not because he is disengaged.</div>
+      <div style="font-size:12px;color:#666"><strong>Read his silence correctly.</strong> He is a fast, low-friction replier and he chases what he is owed (the workouts on Aug 17, the wraps on Aug 28). The wraps were sent Sep 3 and he did not acknowledge them either. His pattern is to answer logistics instantly and skip open questions, not to disengage.</div>
     </div>
   </div>
 
@@ -3047,16 +3062,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">💚 Scan-Day Focus: A Rebuild Checkpoint, Not a Verdict</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:8px"><strong>Open on the restart, not the numbers.</strong> Five straight sessions since Aug 20, self-rescheduled around a missed Monday, after a month in a cast. That behaviour is the whole story of this block.</div>
-      <div style="margin-bottom:8px"><strong>Then score the Aug 24 targets, because he beat both.</strong> Sumo squat asked for 55, he got to 75. RDL asked for 75, he got to 80. Say the numbers out loud; he responds to being given one and clearly chases it.</div>
+      <div style="margin-bottom:8px"><strong>Then score the targets, because he has now beaten three sets of them in a row.</strong> Aug 24: asked 55 sumo, got 75; asked 75 RDL, got 80. Sep 2: asked for a clean 75 x 12, 12, 12, got exactly that plus a fourth set; asked for 85 RDL, got <strong>90 x 12</strong>. Say the numbers out loud; he responds to being given one and clearly chases it.</div>
       <div style="margin-bottom:8px"><strong>Explain the Aug 13 scan before he interprets it himself.</strong> Fat up 4.1 lb, lean down 1.0, VAT up 29.8%, body-fat percentile 20th to 33rd. It is a month of immobilisation with expenditure gone and intake held, and it was already explained to him on the day. The point to land is that <strong>movement returning is the treatment</strong>, and it started three weeks ago.</div>
       <div style="margin-bottom:8px"><strong>Lead the data with ALMI, 6th percentile.</strong> It is his goal and it is the number that has not moved. Pair it with what he did in the first four weeks, 3rd to 7th and 5.5 lb of lean, so the target reads as demonstrated rather than theoretical.</div>
       <div style="margin-bottom:8px"><strong>Say the body-fat percentile out loud.</strong> 33rd percentile age-matched, leaner than about two thirds of 27-year-old men. <strong>There is nothing to cut and no fat-loss talk belongs in this room.</strong></div>
       <div style="margin-bottom:8px"><strong>Name VAT honestly and put it in the movement column.</strong> Up 29.8% to 55.1 cm² in five weeks. He trains for longevity, so this is his metric, but it is a consequence of a cast, not of eating.</div>
-      <div style="margin-bottom:8px"><strong style="color:#c2410c">Answer the wrist wrap question first.</strong> Promised Aug 25, chased Aug 28, still open. It is small and it is the only thing he has asked us for.</div>
+      <div style="margin-bottom:8px"><strong>Ask whether the Tuff Wraps arrived and whether they help.</strong> The link went out Sep 3 at 9:00 AM after he chased it on Aug 28, along with the Versa Gripp alternative and the reason Tuff Wraps suit him better. He never acknowledged it. Closing that loop out loud matters because it was the only thing he had asked us for.</div>
+      <div style="margin-bottom:8px"><strong style="color:#c2410c">Give him the RDL answer.</strong> He put 90 x 12 up on Sep 4 and wrote <em>"Start at 95 next time"</em>. The comment is still unread and Sep 7 programmes RDL 3 x 12, so a yes or no on 95 is worth more than anything else you could say to him this week.</div>
       <div style="margin-bottom:8px"><strong>Ask about grip.</strong> He wrote "grip failing" on step-ups at 80 on Aug 31, and grip is the wrist. That plus his own read that pulling is coming back before pushing is the decision point for reintroducing upper body.</div>
-      <div style="margin-bottom:8px"><strong>Fix the hip thrust in the room.</strong> 15 to 50 in one jump with the reps collapsing both times. 35 with the rib tuck, and say plainly why 50 was too far, since he only did it because we told him to load up.</div>
-      <div style="margin-bottom:8px"><strong>Bring the new block with you.</strong> His programme ends Sep 7. He has chased a lapsed block before.</div>
-      <div style="margin-bottom:8px"><strong>Creatine and food logging.</strong> He posted the two days asked for, so thank him for it and ask for portions next time. Creatine is still not daily by his own admission.</div>
+      <div style="margin-bottom:8px"><strong>Concede the hip thrust.</strong> He was told on Sep 2 to come back to 35 and instead ran 50 x 10, 60 x 10, 60 x 9, and the reps held where they collapsed at 50 the week before. The deload call was wrong. Say so, credit the rib tuck from the Aug 25 call, and build from 60.</div>
+      <div style="margin-bottom:8px"><strong>Bring the new block with you.</strong> His programme ends Mon Sep 7, three days before the scan, with nothing assigned after it. He has chased a lapsed block before. Pulling comes back before pushing, by his own read on Aug 25, and no upper body has been programmed since Aug 17.</div>
+      <div style="margin-bottom:8px"><strong>Creatine and food logging.</strong> He posted the two days asked for on Aug 25 and 26, so thank him for it. The two extra days with portions asked for on Sep 2 have <strong>not landed</strong>; the journal is still empty after Aug 26 and the prompts sit on his calendar for Sep 7 and Sep 8. His July entries carried grams and calories, so he can do it. Creatine is still not daily by his own admission.</div>
       <div style="margin-bottom:8px"><strong>No renewal conversation.</strong> 6 Month Core runs to Feb 8, 2027.</div>
     </div>
   </div>
