@@ -716,10 +716,83 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
 
-<!-- ═══════════ SEP 16 — JAYCE AZUA (SECOND SCAN, MILESTONE) ═══════════ -->
+<!-- ═══════════ SEP 16 — TIM BEVINS (3RD PACKAGE, ROUTINE) + JAYCE AZUA & KAT SOSA (SECOND SCAN, MILESTONE) ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Wednesday · September 16, 2026 &mdash; Second Scan · Campbell · 12:30 PM</div>
+  <div class="day-label">Wednesday · September 16, 2026 &mdash; Package Scan + Second Scans · Campbell · 8:15 AM &amp; 12:30 PM</div>
   <div class="cards-row">
+
+    <!-- ── TIM BEVINS ── -->
+    <div class="card" id="card-tim">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('tim')">Tim Bevins <span class="expand-chevron">↗</span></div>
+          <div class="card-sub">Male &middot; 38 &middot; 3rd Package Scan (5th DEXA) &middot; 1 Year Lite &middot; Lean Mass Gain / BUILD</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">8:15 AM</span>
+          <span class="badge badge-lbm">LBM Gain</span>
+        </div>
+      </div>
+      <div class="scan-row">
+        <span>📅</span>
+        <span><strong>Wednesday, September 16</strong> &middot; Kalos Package DEXA &middot; Campbell &middot; <strong>8:15 AM</strong> &middot; 3rd package scan (5th overall) &middot; baseline Jul 15 &middot; <strong style="color:#16a34a">1 Year Lite active to Apr 2027 &middot; routine checkpoint, no conversion</strong></span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">159.0</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Jul 15 baseline &middot; lean 132.9, up 2.2 lb</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">12.9%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">3rd %ile age-matched &middot; fat 20.5 lb</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">35.8</div>
+          <div class="metric-label">VAT cm²</div>
+          <div class="metric-sub">28.4 → 35.8 since February &middot; the one drift</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">22nd %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">20th → 22nd Jun to Jul &middot; the driver</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">35%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:35%;background:#ef4444"></div></div>
+            <div class="cons-detail">35% last 30d &middot; training stopped after Aug 23, 11 sessions missed, quiet since Aug 18. <strong>Computed from the Everfit assignment API (6 of 17, Aug 11 to Sep 9), not Everfit's own Last 30d Training % column, which would not render this run.</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Their Deep Why</div>
+        <div class="why-text">Longevity and functionality first: staying self-sufficient and <strong>"hard to kill"</strong> long term, with no health insurance. Strong pride in consistency under disruption, and an identity shifting toward yoga instruction. why_strength band <strong>anchored</strong> (identity, pursuit, 11 insights), so it is safe to build on. Goal is <code>lbm-gain</code> with <code>path_source: almi</code> and <code>path_reason: "ALMI 22th, well under 60th"</code>, so it was derived from the numbers rather than agreed with him in those words.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('tim')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-tim">2/8</span>
+            <span class="checklist-chevron" id="chev-tim">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-tim">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Card built from live data (Sep 9)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Modal built from live data (Sep 9, condensed routine track)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 9, not yet sent</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 9, not yet sent &middot; only one lifting session left, Thu Sep 10</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> "What have you noticed" question sent &middot; never asked of him before</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> 6-to-12-month question &middot; <strong>n/a on the routine track</strong>, 1 Year Lite active to 2027, no cliff</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>needed, Macros Journal dead since Apr 30</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
+        </div>
+      </div>
+    </div>
 
     <!-- ── JAYCE AZUA ── -->
     <div class="card" id="card-jayce">
@@ -3512,6 +3585,151 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-yasmin -->
+  <!-- ── TIM BEVINS MODAL (condensed routine track) ── -->
+<div id="modal-tim" class="modal-content"
+     data-name="Tim Bevins"
+     data-sub="3rd Package Scan (5th DEXA) &middot; September 16, 2026 &middot; 8:15 AM &middot; Campbell &middot; Routine track &middot; Lean Mass Gain / BUILD &middot; M &middot; 38">
+
+  <script>
+  window.__scan1_tim = {
+    bw: 159.0, bfPct: 12.9, bfAMpct: 3,
+    lean: 132.9, fat: 20.5, vat: 35.8,
+    almiVal: null, almiAMpct: 22,
+    scan1Date: 'Jul 15, 2026 (4th scan, baseline for this block)',
+    regional: {
+      arms:  { lean: 17.6, fat: 2.5 },
+      trunk: { lean: 65.1, fat: 9.0 },
+      legs:  { lean: 42.5, fat: 6.3 }
+    }
+  };
+  </script>
+
+  <!-- 1 - Goals & Motivation -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">🎯 Goals &amp; Motivation</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Goal:</strong> lean mass gain, set from his numbers (<code>path_source: almi</code>, <em>"ALMI 22th, well under 60th"</em>) rather than agreed with him in those words. Treat it as a working assumption in the room.</div>
+      <div style="margin-bottom:8px"><strong>Underlying motivation:</strong> longevity and functionality first, staying self-sufficient and "hard to kill" long term, with no health insurance. Strong pride in consistency under disruption. Identity shifting toward yoga instruction.</div>
+      <div style="margin-bottom:8px"><strong>Current focus:</strong> clean muscle gain, 4 lifting days from 8/10 then back to a 3-day rotation with supersets and mace work to protect adherence. CorePower 200-hour yoga teacher training started September.</div>
+      <div><strong>Why strength: anchored</strong> (identity, pursuit), 11 insights. Safe to build on.</div>
+    </div>
+  </div>
+
+  <!-- 2 - Wins to Open With -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">🏆 Wins to Open With <span class="badge-pending" id="tim-scan-badge">Scan Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Lean mass 132.9 lb at the Jul 15 scan, up 2.2 lb in five weeks and up 9.5 lb since February, with body fat essentially flat</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">ALMI moved 20th to 22nd percentile between June and July, the muscle is landing where it counts</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Body fat at the 3rd percentile for a 38-year-old man. He is leaner than 97% of his peers and has been the whole way through</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Barbell Squat top set 165x8 on Aug 12, up from 165x6 on Jul 29, and he asked for the 3-day rotation himself rather than being sold it</span></div>
+    </div>
+  </div>
+
+  <!-- 3 - Personal Context -->
+  <div class="dp-section">
+    <div class="dp-title">🧍 Personal Context</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Equipment:</strong> home outdoor gym, squat rack plus 190 lb of plates, dumbbells incoming. Chasing a membership at <strong>The Club in Los Gatos</strong> and interviewing for a front-desk role there to support the yoga teaching. Mountain gym secondary.</div>
+      <div style="margin-bottom:8px"><strong>Injuries:</strong> shoulder (infraspinatus / external rotator) strain from dips, improving, easing back about 5 lb lighter, <strong>avoid painful external rotation and pressing</strong>. Back leg and elbow acting up as of Aug 16, sled skipped for that reason.</div>
+      <div style="margin-bottom:8px"><strong>Nutrition:</strong> no restrictions. High protein is non-negotiable for him, activity-specific macros, higher on lift days, timed around workouts. Planning batch prep, protein pancakes and slow-cooker chicken and rice.</div>
+      <div><strong>Life:</strong> CorePower 200-hour teacher training started this month. Recent 5-day Texas family trip, kept training through it on $27 weekly gym access.</div>
+    </div>
+  </div>
+
+  <!-- 4 - Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">📊 Body Snapshot: Baseline For This Block (Jul 15, 2026)</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px">Weight <strong>159.0 lb</strong> &middot; Lean <strong>132.9 lb</strong> &middot; Fat <strong>20.5 lb</strong> &middot; Body fat <strong>12.9%</strong> at the <strong>3rd percentile</strong> age-matched &middot; ALMI at the <strong>22nd percentile</strong> &middot; Visceral fat <strong>35.8 cm²</strong>.</div>
+      <div style="margin-bottom:8px">Regionally the lean gain since June is almost entirely trunk (<strong>+1.7 lb</strong>) with arms up 0.3 and legs flat, while fat sat still in the arms (-0.1) and crept in the legs (+0.4) and trunk (+0.2). Regional totals: arms 17.6 lean / 2.5 fat, trunk 65.1 / 9.0, legs 42.5 / 6.3.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0f9ff;border-left:3px solid #0ea5e9;border-radius:4px">Across the whole year the picture is a clean build with one drift: from February, lean is up <strong>9.5 lb</strong> and fat is up 3.8 lb, but visceral fat has gone <strong>28.4 to 35.8 cm²</strong>. That last number is the one worth a conversation, and it is a health conversation, not a leanness one.</div>
+      <div style="margin-bottom:8px"><strong>Scan series:</strong> Feb 16 145.8 lb / 123.4 lean / 11.5% BF / VAT 28.4 → Mar 16 151.3 / 128.2 / 11.5% / 27.8 → Jun 10 156.3 / 130.7 / 12.8% / 33.9 → Jul 15 159.0 / 132.9 / 12.9% / 35.8. <strong>Arc: BUILD ONLY.</strong> There is nothing to lose.</div>
+      <div>Full history: <a href="https://iris.livekalos.com/results-dashboard/60997" target="_blank">Tim's results dashboard ↗</a></div>
+    </div>
+  </div>
+
+  <!-- 5 - Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">🏋️ Lifting Metrics</div>
+    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>Only ONE lifting session sits between now and the scan</strong>, Thu Sep 10, Immortal Squat Day. All three week-out targets therefore come from that single session, so the pattern spread is squat, single leg and carry rather than the usual push / pull / legs. <code>weight.unit</code> is null on every set in the API, so every number below is the bare number as it appears in Tim's own app.</div>
+    <table class="dp-table">
+      <thead><tr><th>Lift</th><th>Anchor pulled Sep 9</th><th>Week-out target drafted Sep 9</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Barbell Squat</strong></td><td>165x8 top set on Aug 12, after 165x6 and 165x5 on Jul 29</td><td><strong>165 for a clean 5 to 7 on the top two sets</strong>, then 175 on the last one if it moves like August did. If it does not, stay at 165 and bank the quality.</td></tr>
+        <tr><td><strong>DB Bulgarian Split Squat</strong></td><td>35 x 8, 10, 10 on Aug 12</td><td><strong>35s for 10 on all three sets</strong>, same weight, same control on the way down.</td></tr>
+        <tr><td><strong>Farmers Walk</strong></td><td>140, 140, 140 on Aug 23</td><td><strong>Same 140, further or longer</strong> before setting them down. Straight functionality, which is the whole point of what he is building.</td></tr>
+        <tr><td>Hack Squat Machine</td><td>180 x 10, 10, 10 on Aug 12 (up from 180 x 8, 8, 8 on Jul 29)</td><td>Also programmed Thu Sep 10. Held back, three targets is the rule.</td></tr>
+        <tr><td>Barbell Deadlift</td><td>Aug 23: 135x10, 155x10, 185x8, 185x7. Aug 6: 135x7, 185x7, 185x8, <strong>205x4</strong></td><td>No deadlift session before the scan. Programme ends Sep 12.</td></tr>
+        <tr><td>Pressing</td><td>Incline BB 135x7/5/6 and DB Bench 100x12 on Aug 17; DB Seated Shoulder Press 70x12/9/9; BB Seated Shoulder Press 95x5-6 on Aug 10</td><td>Limited by the infraspinatus issue. <strong>No flat barbell bench appears anywhere in his history.</strong></td></tr>
+        <tr><td>Pulling</td><td>Weighted Pull Up BW x7 then +5 x 5/7/5/4 on Aug 11; Cable Seated Row to 130x8; BB Bent Over Row 135x6 on Aug 22</td><td>No pull session before the scan.</td></tr>
+        <tr><td>Sessions left</td><td colspan="2"><strong>Thu Sep 10</strong> Immortal Squat Day, then <strong>Sat Sep 12</strong> "The one that takes your Soul" metcon. <strong>Nothing assigned Sep 13 to 30.</strong></td></tr>
+        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; TWO readings disagree &middot; BW 159.0 lb &middot; see the warning below before saying any of this out loud</td></tr>
+        <tr><td>Bench</td><td>Bucket used with Tim (Male 40-60): <strong>1.25x = ~200 lb</strong></td><td>Skill table for age 38 (Male 20s-30s): 1.5x = ~240 lb. No flat barbell bench in his history, so this is directional only.</td></tr>
+        <tr><td>Back Squat</td><td>Bucket used with Tim (Male 40-60): <strong>1.5x = ~240 lb</strong></td><td>Skill table for age 38 (Male 20s-30s): 2.0x = ~320 lb. He is at a 165x8 top set, an Epley estimate of ~210 lb 1RM, computed and never tested.</td></tr>
+        <tr><td>Deadlift</td><td>Bucket used with Tim (Male 40-60): <strong>2.0x = ~320 lb</strong></td><td>Skill table for age 38 (Male 20s-30s): 2.5x = ~400 lb. Top sets 205x4 and 185x8, an Epley estimate of ~232 lb, computed.</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>⚠️ Do not quote a different multiplier at him than the one he already has.</strong> On <strong>Jul 23 Daniel told Tim in writing</strong>: <em>"Deadlift &rarr; 30 lbs up on the top sets from previous top load... projecting a 266lb 1 RM. that closing in on the 2x Gold Standard DL target. so close, great work Tim."</em> <strong>The 2x deadlift figure is the one already in the member's hands</strong>, and it comes from the Male 40-60 bucket. The skill's own table would put a 38-year-old in the 20s-30s bucket at 2.5x, which is a different number for the same lift. <strong>The 2x figure is the only Gold Standard multiplier that may be repeated to Tim.</strong> He is a cautious lifter by choice (<em>"I would rather leave 4 in the tank on those heavy lifts like that. No thank you injury."</em>), so lead with direction and his own percentage gains rather than the raw target number.</div>
+  </div>
+
+  <!-- 6 - Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">🥗 Nutrition</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Protein target 120 g/day</strong>, ticked as sent, and he treats protein as non-negotiable himself.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>The Macros Journal has nothing since Apr 30, 2026</strong> (179 entries all-time, then a four-month gap), so there is no recent food data on him at all. A 2-day photo log is asked for in Draft 2 and needs assigning for <strong>Mon Sep 14 and Tue Sep 15</strong> as two separate one-off tasks. His Everfit task calendar for Sep 7 to 20 is empty, so there is nothing to duplicate. <strong>The message promises this task, so it has to exist.</strong></div>
+      <div style="margin-bottom:8px">Batch prep (protein pancakes, slow-cooker chicken and rice) was his own plan on Aug 6 and there is no evidence either way on whether it happened.</div>
+      <div><strong>Never sent:</strong> the pre/post workout nutrition strategy, and the visceral fat strategy. Given VAT 28.4 &rarr; 35.8 cm² since February, the visceral fat strategy is the one worth considering, but it is Daniel's call.</div>
+    </div>
+  </div>
+
+  <!-- 7 - Coaching Points -->
+  <div class="dp-section">
+    <div class="dp-title">🚩 Coaching Points</div>
+    <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span>Training stopped after Aug 23. 11 assigned sessions missed, 0 of 4 in the last week. He has not messaged since Aug 18 and has not answered the Sep 4 reschedule DM. Find out why before prescribing anything.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span>Programme ends Sep 12 with nothing assigned after it. Iris has "Extend programming" open. A new block is owed at or before this scan.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span>Visceral fat 28.4 to 35.8 cm² since February, the only number moving the wrong way in an otherwise clean build. Health frame, not a leanness frame. The Visceral Fat Strategy has never been sent to him.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span>Shoulder (infraspinatus) still on the avoid-list for painful external rotation and pressing, plus back leg and elbow flaring on Aug 16. No update since. The sled is still not set up.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span>The weekend metcon is skipped almost every week, 1 of 7 since Jul 24, even when lifting was on track. Worth deciding whether to keep programming it.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span>Membership end date disagrees between systems. Iris member dashboard says 1 Year Lite, Active, Mar 17 2026 to <strong>Apr 17 2027</strong>; the vault <code>term_end</code> says <strong>2027-03-17</strong>. No renewal cliff either way, but one of them is wrong.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span>He asked for the 3-day rotation himself on Aug 5 and it was built and assigned from Aug 17. That promise was kept.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span>Genuinely bought in. "Im loving the immortal program... i paid for what I'm doing now" and "That mace rock was SUPER FUN." No membership risk here, only a schedule problem.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No open workout comments.</strong> <code>total_comment</code> was 0 on every session detail pulled, and the Iris member dashboard carries no member question. Nothing is sitting unanswered.</span></div>
+    </div>
+  </div>
+
+  <!-- 8 - Coaching Review (replaces "In Their Own Words" on the routine track) -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
+    <div class="dp-title">🗒️ Coaching Review</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:10px">
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Since last scan <span style="font-weight:400;text-transform:none">&middot; Jul 15, 2026</span></div>
+        <div style="margin-top:4px">Trained 12 of 13 lifting sessions from Jul 20 to Aug 23, took the deadlift top set up 30 lb in July, and solved his own equipment problem by chasing a membership at The Club in Los Gatos. Then it stopped: last completed session Aug 23, 11 assigned sessions missed since, and no message from him since Aug 18. The weekend metcon has been skipped 6 of 7 times all block, and his programme runs out Sep 12.</div>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Since last check-in <span style="font-weight:400;text-transform:none">&middot; Aug 5, 2026</span></div>
+        <div style="margin-top:4px">The 3-day rotating setup he asked for was built and assigned from Aug 17, and he trained it properly for one week. On Aug 16 he worked out he had been under-doing the metcon rounds, did everything bar the sled, and called the mace work "SUPER FUN". Everything stopped a week later. Back leg and elbow were flaring on Aug 16, the sled is still not set up, the shoulder has no update, and the impact of CorePower 200-hour teacher training on his schedule is unconfirmed.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 - Scan-Day Focus -->
+  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
+    <div class="dp-title">🎯 Scan-Day Focus: Open On The Build, Steer The Visceral Fat, Leave With A Block</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>1. Open on the build, because it is real.</strong> Lean 132.9 lb, up 9.5 lb since February with body fat flat at the 3rd percentile. That is what he came for.</div>
+      <div style="margin-bottom:8px"><strong>2. Lead the numbers with lean mass and ALMI</strong>, then put visceral fat next to them as the one thing to steer, framed as health and longevity, which is his stated why. Not as fat to lose. He has none to lose.</div>
+      <div style="margin-bottom:8px"><strong>3. Do not open with the missed sessions.</strong> Ask what September has looked like and let him tell you about the teacher training. He takes real pride in consistency under disruption, so a three-week gap is likely to be a sore point he raises himself.</div>
+      <div style="margin-bottom:8px"><strong>4. Leave out:</strong> any fat-loss framing, any renewal or package talk, and <strong>any Gold Standard multiplier other than the 2x deadlift figure he was already given.</strong></div>
+      <div style="margin-bottom:8px"><strong>5. Walk out of the room with the next block agreed and assigned</strong>, built around the teacher training schedule rather than around the old one. His programme ends Sep 12 with nothing behind it.</div>
+      <div><strong>6. No renewal question and no close.</strong> Routine 3rd package scan inside a 1 Year Lite term running to 2027. Draft 4 is skipped and there is no night-before Slack post for this member.</div>
+    </div>
+  </div>
+
+</div><!-- end modal-tim -->
+
   <!-- ── JAYCE AZUA MODAL ── -->
 <div id="modal-jayce" class="modal-content"
      data-name="Jayce Azua"
