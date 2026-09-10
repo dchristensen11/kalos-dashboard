@@ -789,90 +789,92 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     </div>
 
     <!-- ── JAYCE AZUA ── -->
-    <div class="card" id="card-jayce">
-      <div class="card-header">
-        <div>
-          <div class="card-name clickable" onclick="openModal('jayce')">Jayce Azua <span class="expand-chevron">↗</span></div>
-          <div class="card-sub">Male &middot; 34 &middot; Second Scan &middot; Fat Loss / BURN</div>
-        </div>
-        <div class="card-badges">
-          <span class="badge badge-scan">12:30 PM</span>
-          <span class="badge badge-fat-loss">Fat Loss</span>
-          <span class="badge badge-duo">Duo &middot; Kat Sosa</span>
-        </div>
-      </div>
-      <div class="scan-row">
-        <span>📅</span>
-        <span><strong>Wednesday, September 16</strong> &middot; Kalos Second Scan DEXA &middot; Campbell &middot; <strong>12:30 PM</strong> &middot; Duo with Kat Sosa, booked under his name &middot; <strong style="color:#dc2626">4-week ends Sep 12, LAPSED 4 days before scan &mdash; CONVERSION MOMENT</strong></span>
-      </div>
-      <div class="metrics-grid">
-        <div class="metric note">
-          <div class="metric-val">237.3</div>
-          <div class="metric-label">Weight lb</div>
-          <div class="metric-sub">Aug 12 baseline &middot; DEXA 233.8</div>
-        </div>
-        <div class="metric warn">
-          <div class="metric-val">30.5%</div>
-          <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">88th %ile age-matched &middot; fat 71.4 lb</div>
-        </div>
-        <div class="metric warn">
-          <div class="metric-val">132.7</div>
-          <div class="metric-label">VAT cm²</div>
-          <div class="metric-sub">640 g &middot; trunk holds 47% of total fat</div>
-        </div>
-        <div class="metric ok">
-          <div class="metric-val">61st %ile</div>
-          <div class="metric-label">ALMI</div>
-          <div class="metric-sub">The asset &middot; lean base already there</div>
-        </div>
-      </div>
-      <div class="consistency-section">
-        <div class="cons-label">📊 Training Consistency</div>
-        <div class="cons-row">
-          <div class="cons-pct" style="color:#f59e0b">80%</div>
-          <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:80%;background:#f59e0b"></div></div>
-            <div class="cons-detail">80% last 30d &middot; 8 of 10 logged &middot; 4 Sep lower never opened, 7 Sep full body opened but not finished</div>
-          </div>
-        </div>
-      </div>
-      <div class="consistency-section">
-        <div class="cons-label">🍽️ Nutrition Flag</div>
-        <div class="cons-row">
-          <div class="cons-pct" style="color:#dc2626">⚠️</div>
-          <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#dc2626"></div></div>
-            <div class="cons-detail"><strong>He told Daniel on 5 Sep he has been running "a big massive calorie deficit."</strong> Daniel warned about muscle loss. Macros Journal is empty (total 0), photo Food Journal has 24 entries with the last on 5 Sep. An aggressive deficit on top of a thin training week is exactly the recipe for a lean-mass drop that will surprise him on the 16th.</div>
-          </div>
-        </div>
-      </div>
-      <div class="why-section">
-        <div class="why-tag">⭐ Their Deep Why</div>
-        <div class="why-text">Re-enlist as an Army officer, model health for his kids, restore the Marine and swimmer identity and raw dad strength. Iris rates the why <strong>anchored</strong> (score 2, on person / identity / pursuit), so it is safe to reference. Goal is <code>fat-loss</code> with <code>path_source: almi</code> and <code>path_reason: "ALMI 61th, lean base is there"</code>, so it was derived from the numbers rather than agreed with him. His own stated target: roughly 15% body fat, about a 12 lb drop, on a healthy deficit rather than an extreme one.</div>
-      </div>
-      <div class="checklist-section">
-        <div class="checklist-header" onclick="toggleChecklist('jayce')">
-          <span class="checklist-title">✅ Pre-Scan Prep</span>
-          <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-jayce">2/8</span>
-            <span class="checklist-chevron" id="chev-jayce">›</span>
-          </div>
-        </div>
-        <div class="checklist-items" id="items-jayce">
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Card built from live data (Sep 9)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Modal built from live data (Sep 9)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 9, not yet sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 9, not yet sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> "What have you noticed" question sent</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> 6-to-12-month question sent &middot; <strong>renewal IS in play, membership lapses before the scan</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>needed, Macros Journal empty</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
-        </div>
+    <!-- ── JAYCE AZUA ── -->
+<div class="card" id="card-jayce">
+  <div class="card-header">
+    <div>
+      <div class="card-name clickable" onclick="openModal('jayce')">Jayce Azua <span class="expand-chevron">↗</span></div>
+      <div class="card-sub">Male &middot; 34 &middot; Second Scan &middot; Fat Loss / BURN</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-scan">12:30 PM</span>
+      <span class="badge badge-fat-loss">Fat Loss</span>
+      <span class="badge badge-duo">Duo &middot; Kat Sosa</span>
+    </div>
+  </div>
+  <div class="scan-row">
+    <span>📅</span>
+    <span><strong>Wednesday, September 16</strong> &middot; Second Kalos Duo DEXA Scan &middot; Campbell &middot; <strong>12:30 PM</strong> &middot; 60-min duo block with Kat Sosa, booked under his name &middot; <strong style="color:#dc2626">4-week closes on or before scan day &mdash; CONVERSION MOMENT</strong></span>
+  </div>
+  <div class="metrics-grid">
+    <div class="metric note">
+      <div class="metric-val">237.3</div>
+      <div class="metric-label">Weight lb</div>
+      <div class="metric-sub">Aug 12 baseline &middot; DEXA 233.8</div>
+    </div>
+    <div class="metric warn">
+      <div class="metric-val">30.5%</div>
+      <div class="metric-label">Body Fat</div>
+      <div class="metric-sub">88th %ile age-matched &middot; fat 71.4 lb</div>
+    </div>
+    <div class="metric warn">
+      <div class="metric-val">132.7</div>
+      <div class="metric-label">VAT cm²</div>
+      <div class="metric-sub">640 g &middot; trunk holds ~53% of total fat</div>
+    </div>
+    <div class="metric ok">
+      <div class="metric-val">61st %ile</div>
+      <div class="metric-label">ALMI</div>
+      <div class="metric-sub">The asset &middot; lean base already there</div>
+    </div>
+  </div>
+  <div class="consistency-section">
+    <div class="cons-label">📊 Training Consistency</div>
+    <div class="cons-row">
+      <div class="cons-pct" style="color:#f59e0b">73%</div>
+      <div class="cons-right">
+        <div class="cons-track"><div class="cons-fill" style="width:73%;background:#f59e0b"></div></div>
+        <div class="cons-detail">73% last 30d &middot; 8 of 11 logged &middot; <strong>three straight now unlogged</strong>: 4 Sep never opened, 7 Sep opened with nothing recorded, 9 Sep never opened. Last session with numbers in it was 2 Sep, eight days ago.</div>
       </div>
     </div>
+  </div>
+  <div class="consistency-section">
+    <div class="cons-label">🍽️ Nutrition Flag</div>
+    <div class="cons-row">
+      <div class="cons-pct" style="color:#dc2626">⚠️</div>
+      <div class="cons-right">
+        <div class="cons-track"><div class="cons-fill" style="width:100%;background:#dc2626"></div></div>
+        <div class="cons-detail"><strong>He told Daniel on 5 Sep he has been running "a big massive calorie deficit."</strong> Daniel warned about muscle loss. Macros Journal is empty (<code>total: 0</code>), photo Food Journal last entry 5 Sep. An aggressive deficit sitting on top of eight days with no logged training is exactly the recipe for a lean-mass drop that will surprise him on the 16th.</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-section">
+    <div class="why-tag">⭐ Their Deep Why</div>
+    <div class="why-text">Re-enlist as an Army officer, model health for his kids, restore the Marine and swimmer identity and raw dad strength. Iris rates the why <strong>anchored</strong> (score 2, on person / identity / pursuit), so it is safe to reference. Goal is <code>fat-loss</code> with <code>path_source: almi</code> and <code>path_reason: "ALMI 61th, lean base is there"</code>, so it was derived from the numbers rather than agreed with him. His own stated target: roughly 15% body fat, about a 12 lb drop, on a healthy deficit rather than an extreme one.</div>
+  </div>
+  <div class="checklist-section">
+    <div class="checklist-header" onclick="toggleChecklist('jayce')">
+      <span class="checklist-title">✅ Pre-Scan Prep</span>
+      <div class="checklist-right">
+        <span class="checklist-progress-badge" id="prog-jayce">2/8</span>
+        <span class="checklist-chevron" id="chev-jayce">›</span>
+      </div>
+    </div>
+    <div class="checklist-items" id="items-jayce">
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Card built from live data (refreshed Sep 10)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Modal built from live data (refreshed Sep 10)</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Pre-scan opener sent &middot; <strong>redrafted Sep 10, not yet sent</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Lift targets + nutrition sent &middot; <strong>redrafted Sep 10 onto Fri 11 + Mon 14, not yet sent</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> "What have you noticed" question sent &middot; <strong>never asked of him before</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> 6-to-12-month question sent &middot; <strong>renewal IS in play, 4-week closes on or before scan day</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>needed, Macros Journal empty</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
+    </div>
+  </div>
+</div>
 
     <!-- ── KAT SOSA ── -->
+        <!-- ── KAT SOSA ── -->
     <div class="card" id="card-kat">
       <div class="card-header">
         <div>
@@ -887,7 +889,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Wednesday, September 16</strong> &middot; Kalos Second Scan DEXA &middot; Campbell &middot; <strong>12:30 PM</strong> &middot; Duo with Jayce Azua, booked under his name &middot; <strong style="color:#dc2626">4-week ended Sep 9 (Iris search row says Sep 12), LAPSED before scan, CONVERSION MOMENT</strong></span>
+        <span><strong>Wednesday, September 16</strong> &middot; Kalos Second Scan DEXA &middot; Campbell &middot; <strong>12:30 PM</strong> &middot; 60-min duo block booked under Jayce Azua (Acuity 1754426236) &middot; <strong style="color:#dc2626">4-week ended Sep 9 (Iris search row says Sep 12), LAPSED before scan, CONVERSION MOMENT</strong></span>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -914,26 +916,36 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="consistency-section">
         <div class="cons-label">📊 Training Consistency</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#22c55e">90%</div>
+          <div class="cons-pct" style="color:#22c55e">91%</div>
           <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:90%;background:#22c55e"></div></div>
-            <div class="cons-detail">9 of 10 assigned sessions since 17 Aug &middot; the one miss, 28 Aug, falls inside the two-week lower-body hold &middot; doctor clearance 3 Sep, back under the bar 4 Sep &middot; P1 to P2 on 7 Sep</div>
+            <div class="cons-track"><div class="cons-fill" style="width:91%;background:#22c55e"></div></div>
+            <div class="cons-detail">10 of 11 assigned sessions since 17 Aug, Everfit's own <code>percent_completed_30d</code> read 10 Sep &middot; last 7d 100% (3 of 3) &middot; the one miss, 28 Aug, falls inside the two-week lower-body hold &middot; doctor clearance 3 Sep, back under the bar 4 Sep &middot; P1 to P2 on 7 Sep</div>
           </div>
         </div>
       </div>
       <div class="consistency-section">
         <div class="cons-label">❓ Open Question Flag</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#f59e0b">8d</div>
+          <div class="cons-pct" style="color:#f59e0b">9d</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:100%;background:#f59e0b"></div></div>
-            <div class="cons-detail"><strong>She asked on 1 Sep whether she should stay under a calorie or carb number and was never answered.</strong> Her one reported day: 1882 kcal, 131 g carbs, 170 g protein against a 135 g target. Macros Journal is empty (total 0), so there is no data behind an answer yet. Sending four week-out messages on top of an eight-day-old unanswered question needs handling first.</div>
+            <div class="cons-detail"><strong>She asked on 1 Sep whether she should stay under a calorie or carb number and has still not been answered.</strong> Her reported day: 1882 kcal, 131 g carbs, 170 g protein against a 135 g target. Draft 0 answers it with Daniel's own figures (~1,650 to 1,700, framed as a guess, with protein / carb timing / fats as the real levers) and goes first, before the four week-out messages.</div>
+          </div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">🍽️ Food Logging</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">28d</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail"><strong>66 photo entries across 28 distinct days, unbroken 21 Aug to 9 Sep.</strong> Macros Journal is separately empty (<code>total: 0</code>), so the SOP check reads "task needed", but a photo-log task on top of 28 straight days would read as though nobody looked. <strong>No task added.</strong> What is missing is the macro numbers, which she calculates outside the app. Draft 2 asks for those instead.</div>
           </div>
         </div>
       </div>
       <div class="why-section">
         <div class="why-tag">⭐ Their Deep Why</div>
-        <div class="why-text"><strong>There is none on file.</strong> <code>why_strength</code> comes back band <code>missing</code>, score 0, <em>"no why recorded"</em>, and the Iris Underlying Motivation field renders empty. Do not paraphrase a why back at her. What is real and specific is her current focus: building lower body weights back up gradually, 10 lb start with 5 lb a week, nutrition swaps, and recovery through electrolytes, hydration and creatine. Goal is <code>lbm-gain</code> with <code>path_source: almi</code> and <code>path_reason: "ALMI 20th, well under 60th"</code>, so it was derived from her numbers rather than agreed with her. <strong>Capture a real why in writing at this scan.</strong></div>
+        <div class="why-text"><strong>There is none on file.</strong> <code>why_strength</code> comes back band <code>missing</code>, score 0, <em>"no why recorded"</em>, and the Iris Underlying Motivation field renders empty. Do not paraphrase a why back at her, and no draft does. What is real and specific is her current focus: building lower body weights back up gradually, 10 lb start with 5 lb a week, nutrition swaps, and recovery through electrolytes, hydration and creatine. Goal is <code>lbm-gain</code> with <code>path_source: almi</code> and <code>path_reason: "ALMI 20th, well under 60th"</code>, so it was derived from her numbers rather than agreed with her. <strong>Capture a real why in writing at this scan.</strong></div>
       </div>
       <div class="checklist-section">
         <div class="checklist-header" onclick="toggleChecklist('kat')">
@@ -944,13 +956,14 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           </div>
         </div>
         <div class="checklist-items" id="items-kat">
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Card built from live data (Sep 9)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Modal built from live data (Sep 9)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 9, not yet sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 9, not yet sent</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Card built from live data (rebuilt Sep 10)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Modal built from live data (rebuilt Sep 10)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Calorie answer sent (Draft 0) &middot; <strong style="color:#dc2626">9 days open, goes FIRST</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 9, refreshed Sep 10, not yet sent</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 9, food-log paragraph rewritten Sep 10, not yet sent</strong></span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> "What have you noticed" question sent &middot; never asked of her before</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> 6-to-12-month question sent &middot; <strong>renewal IS in play, 4-week term ended before scan day</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>needed, Macros Journal empty</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Food journal task &middot; <strong>not needed, 28 straight days already logged</strong></span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
         </div>
       </div>
@@ -1426,6 +1439,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 
     <!-- ── ADAM MAYER ── -->
+        <!-- ── ADAM MAYER ── -->
     <div class="card" id="card-adam">
       <div class="card-header">
         <div>
@@ -1441,13 +1455,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <span>📅</span>
         <span><strong>Thursday, September 17</strong> &middot; Kalos Package DEXA &middot; <strong>9:45 AM</strong> &middot; <strong style="color:#16a34a">6 Month Lite to Nov 12, 2026, no renewal cliff</strong></span>
       </div>
-      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#7f1d1d">
-        <div style="font-weight:700;margin-bottom:4px">⚠️ Moved from Sep 10 to Sep 17, found tonight (Sep 9)</div>
-        <div>Double-booking forced a reschedule this morning; confirmed on the Google Calendar, Iris, and the live Everfit thread (he agreed to 9:45 AM). The rescheduled calendar event has no location set on a "Virtual" type &mdash; worth checking it's flagged in-person before the day. <strong>Everything below this card was built for the old Sep 10 date and needs a real re-run the evening of Sep 16.</strong></div>
+      <div style="background:#ecfdf5;border:1px solid #6ee7b7;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#065f46">
+        <div style="font-weight:700;margin-bottom:4px">✅ Sep 17, 9:45 AM re-verified on the work calendar (Sep 10)</div>
+        <div>Event sits on <strong>daniel@livekalos.com</strong>, 9:45 to 10:15 AM, AcuityID 1746436058, last updated Sep 9. Matches the live thread exactly, where he wrote "9:45 next Thursday is good". One oddity, unchanged: the event is on the <strong>"Daniel Christensen | Virtual"</strong> calendar with no street address, while its own title reads "Kalos Package DEXA Scan San Jose" and every other in-person scan that week carries 1875 S Bascom Ave. Worth a look before the day; the time itself is not in doubt.</div>
       </div>
-      <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#78350f">
-        <div style="font-weight:700;margin-bottom:4px">Aug 24 exercise swaps, corrected tonight</div>
-        <div>Both now look delivered, not open. Pull B row swap to T-bar/chest-supported is confirmed live (Sep 9 session). Push A skull crusher swap to dumbbells is likely delivered (load dropped 50→35 lb on Aug 31, consistent with a barbell→dumbbell change) but not conclusively confirmed since the exercise name was never renamed in the app; re-check next time Push A runs.</div>
+      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#7f1d1d">
+        <div style="font-weight:700;margin-bottom:4px">⚠️ The elbow has moved again, and Wednesday's session still has the lift that hurt</div>
+        <div>Sep 9, on Immortal Pull B: <em>"The curls hurt too much. Did low cable row and lat pulldown machine instead to work back."</em> All three Alternating Dumbbell Hammer Curl sets logged Missed. <strong>Immortal Pull A on Wed Sep 16, the last session before the scan, still carries Dumbbell Incline Bicep Curl</strong>, and his curl load there has already fallen 45 → 40 → 30 across Aug 5, Aug 20 and Sep 2. Separately, the Aug 24 promise to switch skull crushers to dumbbells is <strong>still not visible in the app</strong>: Push A on Mon Sep 14 carries the same unnamed "Lying Tricep skull crusher mechanical drop set" instance it carried on Aug 17 and Aug 31. <strong>Do not thank him for either in the past tense.</strong></div>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -1477,35 +1491,36 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="cons-pct" style="color:#22c55e">100%</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
-            <div class="cons-detail">13 of 13 tracked last 30d, 3 of 3 last 7d. <strong>Eight straight weeks at full attendance</strong> since Jul 6, through a backyard remodel he is project-managing. Iris all-time: 70 workouts, 100%. Last session Immortal Pull A on Sep 2. <strong>Consistency is not the lever here, intensity and the elbow are.</strong></div>
+            <div class="cons-detail"><strong>13 of 13 tracked last 30d, 3 of 3 last 7d</strong> (Everfit Overview, Sep 10). Last session Immortal Pull B on Wed Sep 9, logged 12:21 to 1:12 PM. Nine straight weeks at full attendance while project-managing a backyard remodel. <strong>Consistency is not the lever here, the elbow is.</strong></div>
           </div>
         </div>
       </div>
       <div class="why-section">
         <div class="why-tag">⭐ Their Deep Why</div>
-        <div class="why-text">Longevity and aesthetics: <strong>lean out the midsection, reduce middle-aged belly fat and VAT for health, stay strong and capable for family demands.</strong> why_strength band <strong>anchored</strong> (score 2, anchors "person" and "identity"), so it is safe to reference. Note the tension he will feel: VAT is the thing he named, and VAT went <strong>up 10.4%</strong> during a build block that worked.</div>
+        <div class="why-text">Longevity and aesthetics: <strong>lean out the midsection, reduce middle-aged belly fat and VAT for health, stay strong and capable for family demands.</strong> why_strength band <strong>anchored</strong> (score 2, anchors "person" and "identity"), so it is safe to reference. Note the tension he will feel: VAT is the thing he named, and VAT went <strong>up 10.4%</strong> during a build block that worked. His own read, in the thread on Sep 3: <em>"Scale seems to be roughly the same as does waist but feeling s bit bulkier."</em></div>
       </div>
       <div class="checklist-section">
         <div class="checklist-header" onclick="toggleChecklist('adam')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-adam">6/12</span>
+            <span class="checklist-progress-badge" id="prog-adam">9/13</span>
             <span class="checklist-chevron" id="chev-adam">›</span>
           </div>
         </div>
         <div class="checklist-items" id="items-adam">
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Baseline DEXA pulled (Jul 30, PDF extract + Iris results dash)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Sep 17, 9:45 AM re-verified on the daniel@livekalos.com calendar (AcuityID 1746436058)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Baseline DEXA pulled (Jul 30, PDF extract + four-scan trend)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Member record (why, injuries, coaching flags) pulled</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Kalos app thread checked for prior pre-scan messages (Sep 3)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Everfit lifts, sessions before scan, food journal pulled</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Modal built from real data</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> ⚠️ Scan date needs re-verifying for Sep 17 (was confirmed for Sep 10, since rescheduled)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Pull B barbell row swapped to T-bar / chest-supported &mdash; confirmed live Sep 9</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> Skull crusher swap to dumbbells on Push A &mdash; likely done (load drop consistent), not conclusively confirmed</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Pre-scan opener sent (confirmed live in Sep 3 thread, not just drafted)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Lift targets + nutrition sent (confirmed live in Sep 3 thread, not just drafted)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> "What have you noticed" question sent and answered ("scale roughly the same, feeling a bit bulkier")</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Macros/food journal: not needed, he logs daily in the photo Food Journal (30/30 days)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Kalos app thread re-read: Sep 3 week-out sequence, Sep 9 reschedule, Sep 9 workout comment</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Everfit lifts, the three sessions before the scan, tasks and Macros Journal pulled</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> The three Sep 3 targets scored against his logged sets (2 of 3 met)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Pull B barbell row swap to T-bar confirmed live and now trained twice</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> ⚠️ Skull crusher swap to dumbbells still NOT visible on Push A (Mon Sep 14)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> ⚠️ Bicep curls need an elbow-friendly swap on Pull A before Wed Sep 16</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> Opener + target scorecard drafted, awaiting approval, NOT sent</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('adam')"><span> New lift targets + nutrition drafted, awaiting approval, NOT sent</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> "What have you noticed" asked Sep 3 and answered the same morning</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('adam')"><span> Macros Journal checked: empty all-time. He logs in the photo Food Journal; Sep 8 + Sep 9 tasks both completed</span></label>
         </div>
       </div>
     </div>
@@ -2093,170 +2108,191 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <div id="modal-adam" class="modal-content"
      data-name="Adam Mayer"
-     data-sub="2nd Package Scan (5th DEXA) &middot; RESCHEDULED to September 17, 2026 &middot; 9:45 AM &middot; Routine track &middot; Recomp / ALMI &amp; Visceral &middot; M &middot; 43">
-
-  <div class="dp-section" style="border-left:3px solid #c2410c;background:#fef2f2;margin-bottom:12px">
-    <div class="dp-title" style="color:#7f1d1d">⚠️ Rescheduled to Sep 17, found the evening of Sep 9</div>
-    <div style="font-size:12.5px;line-height:1.6;color:#7f1d1d">A double-booking moved this scan from Sep 10 to <strong>Thursday, September 17, 9:45 AM</strong>, confirmed on the Google Calendar, Iris, and the live Everfit thread. Everything below still reflects the old Sep 10 build; a real Phase 1 re-run is due the evening of Sep 16.</div>
-  </div>
+     data-sub="2nd Package Scan (5th DEXA) &middot; Thursday September 17, 2026 &middot; 9:45 AM &middot; Routine track &middot; Recomp / ALMI &amp; Visceral &middot; M &middot; 43">
 
   <script>
   window.__scan1_adam = { bw: 160.62, bfPct: 22.3, lean: 119.72, fat: 35.75, vat: 73.1, almiAMpct: 18, scan1Date: 'Jul 30, 2026 (4th scan, this block\'s baseline)', height: 67.5, regional: { arms: {lean:15.5, fat:3.5}, trunk: {lean:59.9, fat:17.6}, legs: {lean:36.3, fat:11.8} } };
   </script>
 
-  <!-- 0 - Open items on our side -->
+  <!-- 0 - What this run is -->
+  <div class="dp-section" style="border-left:3px solid #0369a1;background:#f0f9ff;margin-bottom:12px">
+    <div class="dp-title" style="color:#075985">📌 Week-out re-run, Sep 10, for the moved date</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#075985">The original week-out sequence went out on <strong>Thu Sep 3</strong> for a scan then booked for Sep 10. A double-booking moved it, and on Sep 9 he agreed to <strong>Thursday Sep 17 at 9:45 AM</strong>. Re-verified on the <strong>daniel@livekalos.com</strong> calendar today, 9:45 to 10:15, AcuityID 1746436058. Everything below is rebuilt on data pulled Sep 10, including the three sessions he has run since Sep 3. <strong>This is not a fresh week-out. It is the second one, and he has already answered the reflection question.</strong> Frame the opener as a scorecard, not an introduction.<br><br>Calendar oddity, unchanged from Sep 9 and non-blocking: the event sits on the <strong>"Daniel Christensen | Virtual"</strong> calendar with no street address, while its own title reads "Kalos Package DEXA Scan San Jose". Every other in-person scan that week carries 1875 S Bascom Ave. Flagged once. The time is not in doubt.</div>
+  </div>
+
+  <!-- 1 - Open items on our side -->
   <div class="dp-section" style="border-left:3px solid #dc2626;background:#fef2f2">
-    <div class="dp-title">⚠️ Promised on Aug 24, still open</div>
+    <div class="dp-title">⚠️ Two programme items open, one of them in the last session before the scan</div>
     <div style="font-size:12.5px;line-height:1.6;color:#7f1d1d">
-      <div style="margin-bottom:8px"><strong>1. The dumbbell skull crusher swap is not visible in the app.</strong> Iris logged three action items from the Aug 24 midpoint. The row swap is now done: <code>Barbell Pendlay Row</code> is out of Pull B, <code>T Bar Chest Supported Row</code> is in, confirmed live for Wed Sep 9. But the second line, <em>"Switch barbell skull crushers to dumbbell skull crushers with elbows angled slightly toward the eyes,"</em> is not. Push A still carries the identical exercise instance, <code>Lying Tricep skull crusher mechanical drop set</code>, on Aug 17, Aug 31 and the upcoming Sep 14, with no equipment field and no coaching note attached. It may have been handled verbally on the call. <strong>Do not thank him for it in the past tense.</strong> It does not appear in any session before the scan.</div>
-      <div><strong style="color:#15803d">2. What WAS delivered.</strong> The Pull B row swap, confirmed live in Everfit. The weighted vest movement is gone from every assignment between Aug 4 and Sep 17, exactly as agreed. The five-day follow-up went out on Sat Aug 29, on time. He delivered the two days of food tracking, plus three more. And his Sep 2 comment about the elbow, which needed no reply, was acknowledged directly in the Sep 3 week-out opener.</div>
+      <p style="margin:0 0 8px"><strong>1. The curls are the new elbow problem, and they are still in Wednesday's session.</strong> On <strong>Wed Sep 9</strong> he commented on Immortal Pull B: <em>"The curls hurt too much. Did low cable row and lat pulldown machine instead to work back."</em> All three Alternating Dumbbell Hammer Curl sets are logged <strong>Missed</strong>. The load had already been falling on the other curl too: Dumbbell Incline Bicep Curl went <strong>45 (Aug 5) → 40 (Aug 20) → 30 with the third set missed (Sep 2)</strong>. <strong>Immortal Pull A on Wed Sep 16 is his last session before the scan and it still carries Dumbbell Incline Bicep Curl.</strong> If nothing changes he will hit the same wall the day before he walks in. The drafted Draft 2 says this swap is coming, in the future tense, so it needs actually building before Wednesday.</p>
+      <p style="margin:0 0 8px"><strong>2. The dumbbell skull crusher swap is still not visible in the app.</strong> Iris logged it from the Aug 24 midpoint, and the Aug 26 notes DM told him it was coming: "dumbbell skull crushers instead of the barbell version". Push A carries the identical exercise instance, <em>Lying Tricep skull crusher mechanical drop set</em>, on <strong>Aug 17, Aug 31 and the upcoming Mon Sep 14</strong>, with no equipment field, no note, and no rename. The library does hold a distinct "Dumbbell Skull Crusher", which his earlier Solidify block used, and it was not substituted in. The only supporting evidence is the load dropping <strong>50 → 35</strong> between Aug 17 and Aug 31, which is consistent with a change of implement but is equally consistent with the elbow. <strong>Unresolved. Do not put it in a message in the past tense.</strong></p>
+      <p style="margin:0"><strong>What IS delivered, confirmed today.</strong> The row swap held and has now been trained twice: T Bar Chest Supported Row ran in Pull A on <strong>Sep 2</strong> at 100 x 7, 105 x 6, 105 x 6, 100 x 5, and in Pull B on <strong>Sep 9</strong> at 100 x 8, 100 x 6, 90 x 8, with no pain logged against it either time. Barbell Pendlay Row and Barbell Bent Over Row are gone from every assignment from Sep 2 to Sep 25. The weighted-vest movement is absent from every session in the same window. Both are safe to reference in the past tense.</p>
     </div>
   </div>
 
-  <!-- 1 - Pre-Scan Snapshot -->
-  <div class="success-section">
-    <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="adam-scan-badge">Scan Pending</span></div>
-    <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🔁</span><span class="win-text"><strong>Eight straight weeks at full attendance.</strong> 4/4, 3/3, 3/3, 2/2, 3/3, 3/3, 3/3, 3/3 from Jul 6. 13 of 13 last 30 days. He did this while project-managing a backyard remodel, which is the same stretch that used to cost him blocks.</span></div>
-      <div class="success-win"><span class="win-icon">🏋️</span><span class="win-text"><strong>Squat 165 to 175 on Aug 28.</strong> Aug 14 was 165 x 6, 5, 5. Aug 28 was 165 x 6, 6 then <strong>175 x 5</strong>. The middle sets filled out before the top set moved, which is exactly the right order.</span></div>
-      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Seated shoulder press 100 to 120 in two weeks.</strong> Aug 10 topped at 100 x 5. Aug 24 was 100 x 10, 110 x 8, <strong>120 x 7, 120 x 6</strong>. The biggest single jump anywhere in his file.</span></div>
-      <div class="success-win"><span class="win-icon">🪝</span><span class="win-text"><strong>Deadlift 200 to 205, and the volume underneath it grew.</strong> Aug 6 was 185 x 6, 6 then 200 x 5. Aug 22 was 185 x 6, <strong>185 x 8</strong>, 195 x 7, <strong>205 x 5</strong>. More work at every rung, not just a heavier single.</span></div>
-      <div class="success-win"><span class="win-icon">🥗</span><span class="win-text"><strong>He logged five consecutive days of food</strong> (Aug 28, 29, 30, 31 and Sep 1) when two were asked for. Whole-food, Mediterranean, protein-forward: yogurt with protein powder, ahi with rice, shredded chicken on toast, cottage cheese on sourdough. <strong>Open by acknowledging it. Do not ask as though he missed it.</strong></span></div>
-      <div class="success-win"><span class="win-icon">🧠</span><span class="win-text"><strong>He self-manages the elbow and tells us.</strong> Rather than skipping the row on Sep 2 he moved to a machine, logged it, and attached the exercise it replaced. He did the same thing on the Aug 24 call, owning the split he had asked for: <em>"it's not your fault at all. This was my request."</em></span></div>
-    </div>
-    <div class="success-targets">
-      <div class="success-targets-label"><strong>Three sessions land before the scan:</strong> <strong>Fri Sep 4 (Immortal Deadlift Day)</strong>, <strong>Mon Sep 7 (Immortal Push B)</strong>, <strong>Wed Sep 9 (Immortal Pull B)</strong>. Nothing on Sep 8 or 10. Squat Day sits on Fri Sep 11, after the scan. Targets drafted Sep 3, awaiting approval:</div>
-      <div class="success-target-item"><strong>Barbell deadlift (hinge), Fri Sep 4:</strong> 205 for 6. He finished on 205 x 5 on Aug 22 and had 185 x 8 underneath it, so the rep is there.</div>
-      <div class="success-target-item"><strong>Barbell seated shoulder press (push), Mon Sep 7:</strong> 120 for 7 on both heavy sets. Aug 24 was 120 x 7 then 120 x 6, so this is finishing the job rather than adding load after a 20 lb jump.</div>
-      <div class="success-target-item"><strong>Weighted pull up (pull), Wed Sep 9:</strong> 8 on the first set, 22+ total. Aug 12 was 7, 6, 5, 4 and Aug 26 was 7, 5, 5, 4. <strong>This is the one lift going backwards</strong>, and it is elbow-safe, which is why it gets the target instead of any row.</div>
-      <div class="success-target-item" style="color:#666"><strong>The Pendlay row is out of Wednesday's session.</strong> Confirmed live as <code>T Bar Chest Supported Row</code>. The Sep 3 draft told him the swap was coming; both are now true.</div>
+  <!-- 2 - Scorecard -->
+  <div class="dp-section" style="border-left:3px solid #16a34a;background:#f0fdf4">
+    <div class="dp-title" style="color:#14532d">🎯 The Sep 3 targets, scored (all three sessions have now run)</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#14532d">
+      <p style="margin:0 0 6px"><strong>✅ Barbell deadlift, Fri Sep 4. Asked for 205 for 6. He gave 205 x 6, 205 x 6, 205 x 5, then 215 x 5.</strong> Two sets at the number, then a rung he had not touched in the block. Aug 22 finished on 205 x 5.</p>
+      <p style="margin:0 0 6px"><strong>⚠️ Barbell seated shoulder press, Mon Sep 7. Asked for 120 for 7 on both heavy sets. He gave 110 x 7, 110 x 7, 120 x 6, 120 x 6.</strong> He built the 110s up instead of finishing the 120s, so the top sets read the same as Aug 24 (120 x 7, 120 x 6) rather than better. The rep is still owed. This is the one to mention lightly, not to hammer, because it followed a 20 lb jump in a fortnight.</p>
+      <p style="margin:0 0 6px"><strong>◐ Weighted pull up, Wed Sep 9. Asked for 8 on the first set and 22+ total. He gave 7, 6, 5, 5 = 23 total.</strong> Total cleared, first set did not. But the lift that was going backwards has turned: <strong>22 (Aug 12) → 21 (Aug 26) → 23 (Sep 9)</strong>, and he did it in the same session in which he had to bail on the curls. Worth naming.</p>
+      <p style="margin:0"><strong>Read on the whole thing:</strong> two of three met, the third improved on the trend, and full attendance through the week. Do not open Draft 1 as though nothing has happened since Sep 3.</p>
     </div>
   </div>
 
-  <!-- 2 - Goal & Why -->
-  <div class="dp-section dp-section-goal">
-    <div class="dp-title">Goal &amp; Why</div>
-    <div class="dp-goal"><strong>Recomp, and ALMI at the 18th percentile age-matched is the number that matters.</strong> The goal is set from Daniel's own notes (<code>path_source: notes</code>), not derived, so it is agreed rather than assumed. ALMI ran 17th → 14th → 13th → <strong>18th</strong>, so the last block is the first one that moved it, and it moved 5 points. Body fat is 22.3%, the <strong>37th percentile age-matched</strong>, which is middling for a 43-year-old man rather than high. <strong>This is a build-first conversation with the midsection as the follow-on, not a cut.</strong> The honest complication is that <strong>VAT rose 6.9 cm² (+10.4%) to 73.1</strong> across the same block, back toward where it started, and VAT is the exact thing he named in his why. That is the carb increase doing what a build does, and it is worth saying out loud before he reads it himself.</div>
-    <div class="dp-why">Longevity and aesthetics: lean out the midsection, reduce middle-aged belly fat and VAT for health, stay strong and capable for family demands. why_strength band <strong>anchored</strong>, score 2, anchors "person" and "identity", so it is safe to reference directly rather than skirt. Current focus in his own record: muscle gain and recomp, the big three lifts back in, and fasted morning walks. He asked for the big three himself in July and Daniel put them back on Aug 2.</div>
-  </div>
-
-  <!-- 3 - Personal Context & Coaching Flags -->
+  <!-- 3 - Wins -->
   <div class="dp-section">
-    <div class="dp-title">Personal Context &amp; Coaching Flags</div>
-    <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The dumbbell skull crusher swap is not in the app.</strong> Push A carries the same exercise instance before and after the call. The row swap is done, T-bar row is confirmed live in Pull B.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>The elbow has escalated.</strong> Aug 24 it was barbell rows only, and single-arm dumbbell rows were fine. Sep 2 he wrote that <em>dumbbell</em> rows hurt too much and used a machine. VersaGrips helped but not enough.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>The Aug 29 elbow question was never answered in the thread.</strong> He was asked how the T-bar and dumbbell skull crusher swaps felt against the barbell versions. Marked Seen, no reply, then he answered in a workout comment four days later. <strong>Ask it in the room.</strong></span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Iris's own prep page overstates the problem.</strong> It says <em>"Intensity stalled despite consistency, est-1RMs flat or down on key movements."</em> The raw sets disagree on three of five: deadlift 200 → 205, shoulder press 100 → 120, squat 165 → 175, all in the last three weeks. <strong>Flat</strong>: weighted pull-up and incline bench. Do not read the Iris line to him.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Pull-ups are the one thing going backwards.</strong> 22 total reps on Aug 12, 21 on Aug 26. Everything else climbed. Worth one direct question about whether the elbow is quietly costing him grip on these too.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>He beat nothing he was asked for, because he was never given numbers.</strong> The Aug 29 DM set three focuses but no lift targets. These are his first explicit targets of the block, so frame them as new rather than as a scorecard.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Supersets: permission already given.</strong> He found the four-movement circuits impractical in a busy gym. Daniel told him on Aug 24 to split them into two, and he had already been doing that. Not a compliance issue.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Food logging is a win, not a gap.</strong> Five consecutive days when two were asked for. Last entry Sep 1.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No renewal conversation.</strong> 6 Month Lite, active, May 12 to <strong>Nov 12, 2026</strong>, 71 days left per Iris. Routine track. The 6-to-12-month question was drafted and held under the Draft 4 gate.</span></div>
-    </div>
-    <div class="personal-notes" style="margin-top:10px">
-      <div class="personal-note"><span class="note-emoji">🏋️</span><span><strong><code>DC - Immortal SOULdier P1 | PPL + Metcon | 3x + 1</code></strong>, six-session rotation: Deadlift Day, Push A/B, Pull A/B, Squat Day. Each session is a warm-up pair, one heavy strength lift at 5-7, a four-movement hypertrophy circuit ending in a 2-minute erg or Assault Bike, then a Met Con block. Before the scan: <strong>Fri Sep 4 Deadlift</strong>, <strong>Mon Sep 7 Push B</strong>, <strong>Wed Sep 9 Pull B</strong>.</span></div>
-      <div class="personal-note"><span class="note-emoji">🩹</span><span><strong>Left forearm soreness below the elbow</strong>, most likely tennis elbow from a tight grip on pulls. VersaGrips help. Tolerated: T-bar row, chest-supported machine rows, lat pulldowns, cable rows. Not tolerated: barbell bent-over and Pendlay rows, barbell skull crushers, and as of Sep 2 dumbbell rows as well. Push and legs are unaffected.</span></div>
-      <div class="personal-note"><span class="note-emoji">🏠</span><span><strong>Club LG Los Gatos, full gym</strong>, free weights plus machines. T-bar, hack squat, Smith, Assault Bike and row erg are all confirmed in his logged sessions. The one thing he does not have is weighted-vest kit, which is why that movement came off.</span></div>
-      <div class="personal-note"><span class="note-emoji">👟</span><span><strong>Around 8,000 steps a day</strong> by his Google health tracker, self-reported. Nothing syncs to the app: Steps, Sleep and Heart Rate all read "No data available" on his Everfit Overview. Fasted morning walks are on his current-focus list.</span></div>
-      <div class="personal-note"><span class="note-emoji">🏡</span><span><strong>Backyard remodel in progress</strong>, coordinating rather than labouring. He raised it himself at the Jul 30 scan and said it has been easier to stay consistent now that he is not travelling. That is the context for eight perfect weeks.</span></div>
-      <div class="personal-note"><span class="note-emoji">📅</span><span>Window <strong>Jul 30 to Sep 10 = 42 days</strong>. Second package scan, fifth DEXA. <strong>Judge against Jul 30, not the Feb intro.</strong> Intro-to-now is 196 days and spans a delayed start, a travel block and a move.</span></div>
-      <div class="personal-note"><span class="note-emoji">🎓</span><span><strong>VIP course active since Jun 12.</strong> He was pointed at the drop-set and rest-pause material on Jul 21 for burning out the last sets. Worth asking whether he has used any of it.</span></div>
+    <div class="dp-title">🏆 Pre-Scan Snapshot <span style="font-size:10px;font-weight:600;color:#888">Scan Pending</span></div>
+    <ul style="font-size:12.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><strong>🔁 Nine straight weeks at full attendance.</strong> 13 of 13 last 30 days, 3 of 3 last 7 days, read off the Everfit Overview today. He has done it through a backyard remodel he is project-managing, which is the same kind of stretch that used to cost him blocks.</li>
+      <li><strong>🪝 Deadlift 205 to 215.</strong> Aug 6 topped at 200 x 5. Aug 22 was 185 x 6, 185 x 8, 195 x 7, 205 x 5. Sep 4 was <strong>205 x 6, 205 x 6, 205 x 5, 215 x 5</strong>. The volume underneath moved before the top set did, which is the shape his whole file has.</li>
+      <li><strong>🏋️ Squat 165 to 175 on Aug 28.</strong> Aug 14 was 165 x 6, 5, 5. Aug 28 was 135 x 10, 165 x 6, 165 x 6, <strong>175 x 5</strong>. Squat Day now falls on <strong>Fri Sep 11</strong>, before the scan, so this one gets a target this time.</li>
+      <li><strong>📈 Seated shoulder press 100 to 120 in two weeks, and holding.</strong> Aug 10 topped at 100 x 5, Aug 24 hit 120 x 7, Sep 7 held 120 x 6 twice with 110 x 7 twice underneath it. The biggest single jump anywhere in his file, and it has not slid back.</li>
+      <li><strong>🤸 The pull-up trend turned.</strong> 22 total on Aug 12, 21 on Aug 26, <strong>23 on Sep 9</strong>. It was the only lift going backwards and it is now the lift he fixed himself while his elbow was actively stopping him doing curls in the same session.</li>
+      <li><strong>🥗 He logged the two days he was asked for and completed both tasks.</strong> Food Journal tasks placed on <strong>Tue Sep 8 and Wed Sep 9</strong>, both marked complete, with meals logged across Sep 6, 7, 8 and 9. He did the same in August, Aug 24 and Aug 25, both completed. <strong>Open by acknowledging it. There is nothing to chase here.</strong></li>
+      <li><strong>🧠 He self-manages the elbow and tells us, every time.</strong> Sep 2 he moved off dumbbell rows to a machine and logged it. Sep 9 he did the same with the curls, named the substitutes he chose, and still finished the back work. On Aug 24 he owned the split he had asked for: <em>"it's not your fault at all. This was my request."</em></li>
+    </ul>
+  </div>
+
+  <!-- 4 - Sessions before the scan -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f5f6ff">
+    <div class="dp-title" style="color:#3730a3">📆 Three sessions land before the scan, and they are a clean push / pull / squat set</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#312e81">
+      <p style="margin:0 0 6px"><strong>Fri Sep 11, Immortal Squat Day.</strong> Strength slot: Barbell Squat, 5-7 x 4. Then Hack Squat Machine, DB Bulgarian Split Squat, Heels Elevated Goblet Squat, Assault Bike. <strong>Target drafted: 175 for 6</strong>, off 175 x 5 on Aug 28.</p>
+      <p style="margin:0 0 6px"><strong>Mon Sep 14, Immortal Push A.</strong> Strength slot: Barbell Incline Bench Press, 5-7 x 4. Then DB Bench Press, DB Seated Back Supported Shoulder Press, the skull crusher, Assault Bike. <strong>Target drafted: 125 for 6 on both middle sets</strong>, off 115 x 8, 125 x 6, 125 x 5, 115 x 7 on Aug 31. <strong>This is the session carrying the unresolved skull crusher.</strong></p>
+      <p style="margin:0 0 6px"><strong>Wed Sep 16, Immortal Pull A.</strong> Strength slot: T Bar Chest Supported Row, 5-7 x 4. Then DC Chest Supported Dumbbell Row, DC 1-Arm DB Row, <strong>Dumbbell Incline Bicep Curl</strong>, Row Erg. <strong>Target drafted: 105 for 7</strong>, off 105 x 6 twice on Sep 2. <strong>This is the session carrying the curl that hurt him on Sep 9.</strong></p>
+      <p style="margin:0">Nothing is assigned on Sep 12, 13, 15 or on scan day. Sep 18 is Deadlift Day, after the scan, so no deadlift target this time even though it is his strongest lift. Templates prescribe rep ranges only, never loads, so every target above is anchored on his own logged sets.</p>
     </div>
   </div>
 
-  <!-- 4 - Body Snapshot -->
+  <!-- 5 - Goal and why -->
   <div class="dp-section">
-    <div class="dp-title">Body Snapshot: Baseline (Jul 30, 2026)</div>
-    <div class="snap-metrics">
-      <div class="snap-metric"><div class="snap-val">160.6 lb</div><div class="snap-lbl">Body Weight · up 1.3</div></div>
-      <div class="snap-metric"><div class="snap-val">22.3%</div><div class="snap-lbl">Body Fat · 37th %ile</div></div>
-      <div class="snap-metric"><div class="snap-val">119.7 lb</div><div class="snap-lbl">Lean Mass · up 1.7</div></div>
-      <div class="snap-metric"><div class="snap-val">35.8 lb</div><div class="snap-lbl">Fat Mass · down 0.3</div></div>
-      <div class="snap-metric"><div class="snap-val">73.1 cm²</div><div class="snap-lbl">VAT · up 10.4%</div></div>
-      <div class="snap-metric"><div class="snap-val">18th %ile</div><div class="snap-lbl">ALMI · up 5, THE number</div></div>
-      <div class="snap-metric"><div class="snap-val">36.3 lb</div><div class="snap-lbl">Legs lean · up 1.2</div></div>
-      <div class="snap-metric"><div class="snap-val">67.5"</div><div class="snap-lbl">Height 5'8" · Age 43</div></div>
+    <div class="dp-title">🎯 Goal &amp; Why</div>
+    <div style="font-size:12.5px;line-height:1.7">
+      <p style="margin:0 0 8px"><strong>Recomp, and ALMI at the 18th percentile age-matched is the number that matters.</strong> The goal comes from Daniel's own notes (<code>path_source: notes</code>), not derived from the numbers, so it is agreed rather than assumed. ALMI percentile ran <strong>17 → 14 → 13 → 18</strong> across the four scans, so the last block is the first one that moved it, and it moved 5 points. Body fat is 22.3%, the <strong>37th percentile age-matched</strong>, which is middling for a 43-year-old man rather than high. <strong>This is a build-first conversation with the midsection as the follow-on, not a cut.</strong> The honest complication: VAT rose <strong>6.9 cm² (+10.4%) to 73.1</strong> across the same block, back toward where it started, and VAT is the exact thing he named in his why. That is the carb increase doing what a build does. Say it before he reads it himself.</p>
+      <p style="margin:0"><strong>His why, verbatim:</strong> longevity and aesthetics, lean out the midsection, reduce middle-aged belly fat and VAT for health, stay strong and capable for family demands. why_strength band <strong>anchored</strong>, score 2, anchors "person" and "identity", so it is safe to reference directly rather than skirt. <strong>Current focus in his own record:</strong> muscle gain and recomp, the big three lifts back in, an optional brutal fourth day, and fasted morning walks. He asked for the big three himself in July and Daniel put them back on Aug 2.</p>
     </div>
-    <div style="margin-top:8px;font-size:12px;color:#888">Regional baseline: arms <strong>15.5 lean / 3.5 fat</strong>, trunk <strong>59.9 / 17.6</strong>, legs <strong>36.3 / 11.8</strong>. The legs carried the block: <strong>legs lean up 1.2 lb of the 1.7 lb total</strong>, with trunk lean up 0.7 and arms up 0.3, which matches a squat-and-deadlift-led build. Trunk fat up 0.2 lb while VAT rose 6.9 cm², so the visceral move is not visible in subcutaneous trunk fat. Trend across four scans: body fat 24.3 → 25.1 → 22.6 → <strong>22.3%</strong>, ALMI percentile 17 → 14 → 13 → <strong>18</strong>, VAT 82 → 79 → 66 → <strong>73</strong>, lean 118.4 → 118.8 → 118.0 → <strong>119.7</strong>. Read left to right that is a cut that held muscle, then a build that added it. ALMI raw 8.0 kg/m², 22nd percentile against young adults. Scale weight on the day 162.9. Android/gynoid 1.07. Full numbers in the <a href="https://iris.livekalos.com/results-dashboard/125590" target="_blank">Iris results dashboard ↗</a>.</div>
   </div>
 
-  <!-- 5 - Lifting Metrics -->
+  <!-- 6 - Personal context and coaching flags -->
   <div class="dp-section">
-    <div class="dp-title">Lifting Metrics <a href="https://app.everfit.io/home/client/69c43b87125547ac7695c128/metrics?tab=exercise" target="_blank" class="dp-title-link">Everfit ↗</a></div>
-    <div style="background:#eef1ff;border:1px solid #c7d0ff;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:12.5px;color:#2a2a3a">
-      <strong>🎯 Three sessions before the scan.</strong> Fri Sep 4 (Deadlift Day), Mon Sep 7 (Push B), Wed Sep 9 (Pull B).
-      <div style="margin-top:6px">The pattern in his file: <strong>he builds the middle sets before he moves the top set.</strong> Squat went 165 x 6, 5, 5 then 165 x 6, 6 and 175 x 5. Deadlift went 185 x 6, 6, 200 x 5 then 185 x 6, <strong>185 x 8</strong>, 195 x 7, 205 x 5. Give him the rep before you give him the plate.</div>
-      <div style="margin-top:6px;color:#666">Templates prescribe rep ranges only (5-7 strength, 6-8 / 8-12 / 12-15 hypertrophy), no loads, so every target is anchored on his own logged history.</div>
+    <div class="dp-title">🧭 Personal Context &amp; Coaching Flags</div>
+    <ul style="font-size:12.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><strong>🔴 The elbow has escalated twice in three weeks.</strong> Aug 24: barbell rows only, single-arm dumbbell rows fine. Sep 2: dumbbell rows now hurt too, moved to a machine. Sep 9: <strong>curls now hurt too, all three sets abandoned.</strong> The pattern is that anything with a fixed supinated or neutral grip under load is going. What still works, on his own evidence: T-bar chest-supported row at 105, machine rows, lat pulldowns, low cable rows, and every push and leg movement.</li>
+      <li><strong>🔴 Wednesday Sep 16 still has Dumbbell Incline Bicep Curl in it.</strong> Last session before the scan. Needs building, not just drafting.</li>
+      <li><strong>🟠 The skull crusher swap is unresolved and Push A is Mon Sep 14.</strong> See the red block above.</li>
+      <li><strong>🟠 The Aug 29 elbow question was never answered in the thread</strong>, and he answered a different one four days later in a workout comment. He has now done that twice. <strong>If a reflection question goes quiet in the app, check his workout comments before assuming silence.</strong></li>
+      <li><strong>🟠 Farmers Walk is grip-heavy and he holds it for three sets a session</strong> (100 on Aug 28, 80 on Sep 4). Worth one question about whether it feeds the elbow, given curls now do.</li>
+      <li><strong>🟢 Supersets: permission already given.</strong> He found the four-movement circuits impractical in a busy gym, Daniel told him on Aug 24 to split them, and he was already doing it. Not a compliance issue and not worth raising.</li>
+      <li><strong>🟢 Food logging is a win, not a gap.</strong> Both assigned days completed, meals across four consecutive days. Never frame tracking as a shortfall with him.</li>
+      <li><strong>🟢 No renewal conversation and no sales content.</strong> 6 Month Lite, May 12 to <strong>Nov 12, 2026</strong>, which is 56 days past the scan. Routine track, progress checkpoint on a commitment he has already made. The 6-to-12-month question is deliberately not being asked, see In Their Own Words.</li>
+      <li><strong>🏋️ Programme:</strong> DC - Immortal SOULdier, PPL + Metcon, six-session rotation (Deadlift Day, Push A/B, Pull A/B, Squat Day). Each session is a warm-up pair, one heavy strength lift at 5-7, a four-movement hypertrophy circuit ending on an erg or Assault Bike, then a Met Con block.</li>
+      <li><strong>🏠 Club LG Los Gatos, full gym.</strong> T-bar, hack squat, Smith, Assault Bike, row erg and cable stations all confirmed in his own logged sessions. No weighted-vest kit, which is why that movement came off.</li>
+      <li><strong>👟 Around 8,000 steps a day</strong> by his own Google health tracker, self-reported on Aug 24. Nothing syncs: Steps, Sleep and Heart Rate all read "No data available" on his Everfit Overview today. Fasted morning walks are on his current-focus list.</li>
+      <li><strong>📅 Window Jul 30 to Sep 17 = 49 days.</strong> Second package scan, fifth DEXA. <strong>Judge against Jul 30, not the Feb intro.</strong> Intro-to-now is 203 days and spans a delayed start, a travel block and a house move.</li>
+      <li><strong>🎓 VIP course active.</strong> He was pointed at the drop-set and rest-pause material on Jul 21 for burning out the last sets, and at an optional quarter-mile challenge day on Aug 2. Neither has ever been followed up.</li>
+    </ul>
+  </div>
+
+  <!-- 7 - Body snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">📊 Body Snapshot: Baseline (Jul 30, 2026)</div>
+    <div class="dp-metrics" style="font-size:12px">
+      <div><strong>160.6 lb</strong> Body Weight &middot; up 1.3</div>
+      <div><strong>22.3%</strong> Body Fat &middot; 37th %ile age-matched</div>
+      <div><strong>119.7 lb</strong> Lean Mass &middot; up 1.7</div>
+      <div><strong>35.8 lb</strong> Fat Mass &middot; down 0.3</div>
+      <div><strong>73.1 cm²</strong> VAT &middot; up 10.4%</div>
+      <div><strong>18th %ile</strong> ALMI &middot; up 5, THE number</div>
+      <div><strong>36.3 lb</strong> Legs lean &middot; up 1.2</div>
+      <div><strong>67.5"</strong> Height 5'8" &middot; Age 43</div>
     </div>
-    <table class="lift-table">
-      <thead><tr><th>Exercise</th><th>Recent Top Set</th><th>Progress</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr><td>Barbell Deadlift <span style="font-size:10px;color:#888">(hinge)</span></td><td>205 x 5 <span style="font-size:10px;color:#888">(Aug 22)</span></td><td>200 → <strong>205</strong></td><td>Aug 6: 135 x 10, 185 x 6, 185 x 6, 200 x 5. Aug 22: 185 x 6, 185 x 8, 195 x 7, 205 x 5. <strong>Target Fri Sep 4: 205 for 6.</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~320 lb 1RM</span> <span style="font-size:9px;color:#888">(2.0×BW · est 240 from 205x5, about 75%)</span></td></tr>
-        <tr><td>Barbell Seated Shoulder Press <span style="font-size:10px;color:#888">(push)</span></td><td>120 x 7, 120 x 6 <span style="font-size:10px;color:#888">(Aug 24)</span></td><td>100 → <strong>120</strong> in 2 wks</td><td>Aug 10 topped at 100 x 5. Biggest jump in the file. <strong>Target Mon Sep 7: 120 for 7 on both heavy sets</strong>, load stays put until the reps are level.</td></tr>
-        <tr><td>Weighted Pull Up <span style="font-size:10px;color:#888">(pull)</span></td><td>7, 5, 5, 4 bodyweight <span style="font-size:10px;color:#888">(Aug 26)</span></td><td>going backwards</td><td>Aug 12 was 7, 6, 5, 4 (22 total), Aug 26 was 21. The only lift trending down. <strong>Target Wed Sep 9: 8 on the first set, 22+ total.</strong> Elbow-safe, which is why it gets the target.</td></tr>
-        <tr><td>Barbell Squat <span style="font-size:10px;color:#888">(squat)</span></td><td>175 x 5 <span style="font-size:10px;color:#888">(Aug 28)</span></td><td>165 → <strong>175</strong></td><td>Aug 14: 115 x 10, 165 x 6, 5, 5. Aug 28: 135 x 10, 165 x 6, 6, 175 x 5. Squat Day is Sep 11, <strong>after</strong> the scan, so no target. This is the PR Daniel named in the Aug 29 DM.<br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~240 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5×BW · est 205 from 175x5, about 85%)</span></td></tr>
-        <tr><td>Barbell Incline Bench Press <span style="font-size:10px;color:#888">(push)</span></td><td>125 x 6 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>flat</td><td>Aug 17: 115 x 8, 125 x 5, 125 x 5, 115 x 7. Aug 31: 115 x 8, 125 x 6, 125 x 5, 115 x 7. One extra rep in a fortnight. Push A is Sep 14, after the scan.<br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~200 lb 1RM (flat bench)</span> <span style="font-size:9px;color:#888">(1.25×BW · no flat barbell bench logged, incline is the only proxy)</span></td></tr>
-        <tr><td>T Bar Chest Supported Row <span style="font-size:10px;color:#888">(pull, the swap)</span></td><td>105 x 6, 105 x 6 <span style="font-size:10px;color:#888">(Sep 2)</span></td><td><strong>new, works</strong></td><td>100 x 7, 105 x 6, 105 x 6, 100 x 5. <strong>Straight into a heavier load than the barbell row it replaced</strong> (100 x 6 on Aug 20) with no pain reported. Evidence the swap is right, and the argument for finishing it on Pull B.</td></tr>
-        <tr><td>Barbell Pendlay Row <span style="font-size:10px;color:#888">(pull, retired Sep 3)</span></td><td>90 x 7, 90 x 6 <span style="font-size:10px;color:#888">(Aug 26, last logged)</span></td><td>80 → 90</td><td><strong style="color:#15803d">Confirmed out of Pull B.</strong> Replaced by T Bar Chest Supported Row, live for Wed Sep 9. Last instance was Aug 26; he cannot tolerate this pattern.</td></tr>
-        <tr><td>DC - 1-Arm DB Row</td><td>45 x 10, 45 x 10 <span style="font-size:10px;color:#888">(Sep 2)</span></td><td>40 → <strong>45</strong></td><td>Was 40 x 12, 10, 10 on Aug 26. He told us on Aug 24 that single-arm dumbbell rows were fine. <strong>Sep 2 says that is no longer true</strong>, and he moved to a machine.</td></tr>
-        <tr><td>Dumbbell Bench Press</td><td>110 x 9, 8, 7 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>100 → <strong>110</strong></td><td>Aug 17 was 100 x 10, 110 x 8, 110 x 7. Reps fading across sets, so the load is honest.</td></tr>
-        <tr><td>DB Seated Shoulder Press</td><td>90 x 8 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>80 → <strong>90</strong></td><td>Aug 17 was 80 x 8, 80 x 8, 70 x 9. Opened at 90 then dropped to 80, which is the right shape.</td></tr>
-        <tr><td>Hack Squat Machine</td><td>215 x 8, 7, 6 <span style="font-size:10px;color:#888">(Aug 28)</span></td><td>steady</td><td>Reps fade cleanly. Machine-based, so unaffected by the elbow.</td></tr>
-        <tr><td>DB Bulgarian Split Squat</td><td>70 x 10, 10, 9 <span style="font-size:10px;color:#888">(Aug 28)</span></td><td>strong</td><td>Added on Jul 21 (originally Smith machine) for unilateral stability. Nearly three complete sets at the top of the range, ready for more.</td></tr>
-        <tr><td>Parallel Bar Dip</td><td>11, 9, 8 bodyweight <span style="font-size:10px;color:#888">(Aug 24)</span></td><td>10, 8, 8 → 11, 9, 8</td><td>Above the prescribed 6-8 on every set. Loadable when he wants it. In Monday's Push B session.</td></tr>
-        <tr><td>Farmers Walk <span style="font-size:10px;color:#888">(carry)</span></td><td>100 x 45 s, three sets <span style="font-size:10px;color:#888">(Aug 22 and 28)</span></td><td>steady</td><td>Grip-heavy. Worth checking whether it feeds the elbow, since he holds it for 135 seconds a session.</td></tr>
-        <tr><td>Lying Tricep Skull Crusher <span style="font-size:10px;color:#888">(mechanical drop set)</span></td><td>35 x 12, 12, 10 <span style="font-size:10px;color:#888">(Aug 31)</span></td><td>50 → 35</td><td>Aug 17 was 50 x 15, 14, 13. <strong>Load dropped by 30% with no instruction to do so</strong>, which reads like the elbow. This is the lift the dumbbell swap was for, and the swap is not visible in the app.</td></tr>
-        <tr><td colspan="4" style="background:#1e2030;color:#7c8aff;font-size:10px;font-weight:700;padding:6px 10px;letter-spacing:0.05em">Gold Standards — Male 40-60 · 160.6 lb bodyweight (Jul 30 DEXA total) · bench 1.25× · squat 1.5× · deadlift 2.0×</td></tr>
-      </tbody>
+    <div style="font-size:12px;line-height:1.7;margin-top:8px">
+      <strong>Regional baseline:</strong> arms 15.5 lean / 3.5 fat, trunk 59.9 / 17.6, legs 36.3 / 11.8. <strong>The legs carried the block:</strong> legs lean up 1.2 lb of the 1.7 lb total, trunk lean up 0.7, arms up 0.3, which matches a squat-and-deadlift-led build. Trunk fat up 0.2 lb while VAT rose 6.9 cm², so the visceral move does not show in subcutaneous trunk fat.
+      <br><br><strong>Trend across four scans:</strong> body fat <strong>24.3 → 25.1 → 22.6 → 22.3%</strong>, ALMI percentile <strong>17 → 14 → 13 → 18</strong>, VAT area <strong>82.5 → 78.5 → 66.2 → 73.1 cm²</strong>, lean <strong>118.4 → 118.8 → 118.0 → 119.7 lb</strong>. Read left to right that is a cut that held muscle, then a build that added it. Scale weight on the day 162.9. Android/gynoid 1.07. <em>ALMI is quoted as the age-matched percentile only, never the raw value.</em>
+    </div>
+  </div>
+
+  <!-- 8 - Lifting metrics -->
+  <div class="dp-section">
+    <div class="dp-title">🏋️ Lifting Metrics</div>
+    <div style="font-size:12px;line-height:1.7;margin-bottom:8px">
+      <strong>The pattern in his file: he builds the middle sets before he moves the top set.</strong> Squat went 165 x 6, 5, 5 then 165 x 6, 6 and 175 x 5. Deadlift went 185 x 6, 6, 200 x 5 then 185 x 6, 185 x 8, 195 x 7, 205 x 5 then 205 x 6, 6, 5 and 215 x 5. He did the same thing on Sep 7 with the shoulder press, filling in the 110s rather than finishing the 120s, which is why that target reads as missed. <strong>Give him the rep before you give him the plate.</strong>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="dp-table" style="font-size:11.5px">
+      <tr><th>Exercise</th><th>Recent Top Set</th><th>Notes</th></tr>
+      <tr><td><strong>Barbell Squat</strong> (squat)</td><td>175 x 5 (Aug 28)</td><td>Aug 14: 115 x 10, 165 x 6, 5, 5. Aug 28: 135 x 10, 165 x 6, 165 x 6, 175 x 5. <strong>Target Fri Sep 11: 175 for 6.</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~245 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5&times;BW on 162.9 lb scale weight &middot; directional, see note below)</span></td></tr>
+      <tr><td><strong>Barbell Incline Bench Press</strong> (push)</td><td>125 x 6 (Aug 31)</td><td>Aug 3: 115 x 7, 6, 6, 5. Aug 17: 115 x 8, 125 x 5, 125 x 5, 115 x 7. Aug 31: 115 x 8, 125 x 6, 125 x 5, 115 x 7. One extra rep in a month. <strong>Target Mon Sep 14: 125 for 6 on both middle sets.</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~205 lb 1RM (flat bench)</span> <span style="font-size:9px;color:#888">(1.25&times;BW &middot; he has never logged a flat barbell bench, so this is a reference, not a shortfall)</span></td></tr>
+      <tr><td><strong>T Bar Chest Supported Row</strong> (pull, the swap)</td><td>105 x 6, 105 x 6 (Sep 2)</td><td>Sep 2, strength slot: 100 x 7, 105 x 6, 105 x 6, 100 x 5. Sep 9, hypertrophy slot: 100 x 8, 100 x 6, 90 x 8. Straight into a heavier load than the barbell row it replaced (100 x 6 on Aug 20) with no pain logged either time. <strong>Target Wed Sep 16: 105 for 7.</strong> Kalos has no Gold Standard for rows.</td></tr>
+      <tr><td><strong>Barbell Deadlift</strong> (hinge)</td><td>215 x 5 (Sep 4)</td><td>Aug 6: 135 x 10, 185 x 6, 185 x 6, 200 x 5. Aug 22: 185 x 6, 185 x 8, 195 x 7, 205 x 5. <strong>Sep 4: 205 x 6, 205 x 6, 205 x 5, 215 x 5.</strong> Target met and exceeded. Deadlift Day is Sep 18, after the scan, so no target this time.<br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~325 lb 1RM</span> <span style="font-size:9px;color:#888">(2.0&times;BW &middot; directional)</span></td></tr>
+      <tr><td><strong>Barbell Seated Shoulder Press</strong> (push)</td><td>120 x 6, 120 x 6 (Sep 7)</td><td>Aug 10: 90 x 7, 95 x 6, 100 x 6, 100 x 5. Aug 24: 100 x 10, 110 x 8, 120 x 7, 120 x 6. Sep 7: 110 x 7, 110 x 7, 120 x 6, 120 x 6. Target was 7 on both 120s. <strong>He built the 110s instead.</strong> Push B is Sep 21, after the scan.</td></tr>
+      <tr><td><strong>Weighted Pull Up</strong> (pull)</td><td>7, 6, 5, 5 bodyweight (Sep 9)</td><td>Aug 12: 7, 6, 5, 4 = 22. Aug 26: 7, 5, 5, 4 = 21. <strong>Sep 9: 7, 6, 5, 5 = 23.</strong> Total target cleared, first-set target missed. The lift that was going backwards has turned. Pull B is Sep 23, after the scan.</td></tr>
+      <tr><td><strong>DC - 1-Arm DB Row</strong></td><td>45 x 10, 45 x 10 (Sep 2 and Sep 9)</td><td>Was 40 x 12, 10, 10 on Aug 26. Load up and holding, but he told us on Aug 24 that single-arm dumbbell rows were fine and on Sep 2 that they are not. Watch it.</td></tr>
+      <tr><td><strong>Dumbbell Incline Bicep Curl</strong></td><td>40 x 12 (Sep 2), third set missed</td><td>Aug 5: 45 x 12, 45 x 12, 40 x 12. Aug 20: 40 x 12, 40 x 10, 40 x 10. Sep 2: 30 x 12, 40 x 12, third set Missed. <strong>Falling, and it is in the Sep 16 session.</strong></td></tr>
+      <tr><td><strong>Alternating Dumbbell Hammer Curl</strong></td><td>all three sets Missed (Sep 9)</td><td>Aug 12: 25 x 12, 20 x 12, 20 x 12. Aug 26: 20 x 12, 15 x 15, 15 x 12. Sep 9: <strong>Missed, Missed, Missed</strong>, with his comment attached. This is the clearest single signal in his file right now.</td></tr>
+      <tr><td><strong>Lying Tricep Skull Crusher</strong> (mechanical drop set)</td><td>35 x 12, 12, 10 (Aug 31)</td><td>Aug 3: 40 x 15, 50 x 13, 50 x 13. Aug 17: 50 x 15, 14, 13. Aug 31: 35 x 12, 12, 10. <strong>Load down 30% with no instruction to do so.</strong> This is the lift the dumbbell swap was for, and the swap is still not visible. In Mon Sep 14's session.</td></tr>
+      <tr><td><strong>Dumbbell Bench Press</strong></td><td>110 x 9, 8, 7 (Aug 31)</td><td>Aug 3: 110 x 8, 8, 9. Aug 17: 100 x 10, 110 x 8, 110 x 7. Reps fading across sets, so the load is honest. In Mon Sep 14's session.</td></tr>
+      <tr><td><strong>DB Seated Back Supported Shoulder Press</strong></td><td>90 x 8 (Aug 31)</td><td>Aug 17: 80 x 8, 80 x 8, 70 x 9. Aug 31: 90 x 8, 80 x 9, 80 x 8. Opened at 90 then dropped, which is the right shape.</td></tr>
+      <tr><td><strong>Hack Squat Machine</strong></td><td>215 x 8, 7, 6 (Aug 28)</td><td>Aug 14: 195 x 8, 215 x 7, 215 x 6. Reps fade cleanly. Machine-based, so unaffected by the elbow. In Fri Sep 11's session.</td></tr>
+      <tr><td><strong>DB Bulgarian Split Squat</strong></td><td>70 x 10, 10, 9 (Aug 28)</td><td>Aug 14: 60 x 12, 60 x 10, 70 x 9. Nearly three complete sets at the top of the range, ready for more. In Fri Sep 11's session.</td></tr>
+      <tr><td><strong>Parallel Bar Dip</strong></td><td>8, 8, 8 bodyweight (Sep 7)</td><td>Prescribed 6-8, hitting the top of the range on every set. Loadable when he wants it.</td></tr>
+      <tr><td><strong>Farmers Walk</strong> (carry)</td><td>100 (Aug 28), 80 (Sep 4)</td><td>Three sets a session. Grip-heavy. Worth asking whether it feeds the elbow now that curls do.</td></tr>
+      <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Male 40-60 &middot; 162.9 lb scale weight (Jul 30 DEXA) &middot; bench 1.25&times; &middot; squat 1.5&times; &middot; deadlift 2.0&times;</td></tr>
     </table>
-    <div style="margin-top:8px;font-size:12px;color:#666"><strong>Gold Standards are directional for Adam, not a scoreboard.</strong> He is the closest of the routine-track members to them, at roughly <strong>85% of the squat standard</strong> and <strong>75% of the deadlift</strong> off estimated 1RMs from his own top sets, which is genuinely good for 43 and worth saying. The bench number is the soft one: <strong>he has never logged a flat barbell bench</strong>, only incline, so ~200 is inferred rather than measured and should be framed as "we do not have this number yet" rather than as a shortfall. Note that ALMI at the 18th percentile and a bodyweight-scaled standard pull in opposite directions, so lead with his own percentage gains, squat +6%, press +20%, deadlift +2.5% in three weeks. <strong>Unit caveat:</strong> the Everfit API carries no unit on <code>weight</code> and does not distinguish per-hand from combined on dumbbells, so every figure above is quoted bare, exactly as it appears in his app.</div>
+    </div>
+    <div style="font-size:11.5px;line-height:1.7;margin-top:8px;background:#fffbeb;border:1px solid #fcd34d;border-radius:6px;padding:8px 10px;color:#78350f">
+      <strong>Gold Standards are directional for Adam, not a scoreboard.</strong> The multipliers key off bodyweight while ALMI sits at the 18th percentile age-matched, so the two pull in opposite directions and the raw gap will read as further away than his progress deserves. <strong>Lead with his own percentage gains instead:</strong> squat +6% in a fortnight, deadlift +5% in three weeks, press +20% in a month. The bench number is the softest of the three because he has never logged a flat barbell bench, only incline, so treat it as "we do not have this number yet" rather than as a shortfall.
+      <br><br><strong>Unit caveat:</strong> the Everfit API carries no unit on <code>training_sets[].weight</code> and does not distinguish per-hand from combined on dumbbells, so every figure above is quoted bare, exactly as it appears in his app.
+    </div>
   </div>
 
-  <!-- 6 - Nutrition -->
+  <!-- 9 - Nutrition -->
   <div class="dp-section">
-    <div class="dp-title">Nutrition <a href="https://app.everfit.io/home/client/69c43b87125547ac7695c128/food-journal" target="_blank" class="dp-title-link">Food Journal ↗</a></div>
-    <div class="nutri-protocol">
-      <div><div><strong style="color:#15803d">He over-delivered on the logging ask.</strong> Two days were asked for on Aug 24 and again on Aug 26. He logged <strong>five consecutive days</strong>, Aug 28 through Sep 1, three to six entries each. <strong>Open by thanking him for it.</strong> Never frame the food journal as a shortfall with him, there is nothing to chase.</div></div>
-      <div><div><strong>Protein target 140-150 g/day</strong>, recorded as sent and in place since onboarding. Entries are protein-forward and consistent with hitting it: Greek yogurt with protein powder and berries, shredded chicken on toast, ahi tuna with rice, Brami protein pasta with ground chicken, cottage cheese on sourdough, post-workout shakes. He told Daniel on Aug 24 he feels <em>"perfect"</em>, neither hungry nor overly full.</div></div>
-      <div><div><strong>Food quality is genuinely good and needs no correction.</strong> Mediterranean-leaning whole foods across the whole logged week. The only low-quality entry in five days is a single "chicken nuggets" on Sep 1. Not worth raising.</div></div>
-      <div><div><strong style="color:#c2410c">Carb timing is the live thread, and it is where the room time should go.</strong> Protocol from Jul 21: pre-workout shake plus a banana or rice cake, post-workout shake plus about 50 g carbs and peanut butter, then a larger meal 1 to 2 hours later. Iris flags it as applied inconsistently. The logged days show a post-workout shake on Aug 31 but no pre-workout entry on any training day, so either it is not happening or it is not being logged.</div></div>
-      <div><div><strong>No macro targets exist in the app.</strong> The 140-150 g figure lives in his member record and in messages only. Same gap Matthew has. Nothing was promised to him about it, so this is a gap rather than a broken promise.</div></div>
-      <div><div><strong>A 2-day photo log for Tue Sep 8 and Wed Sep 9 is drafted but NOT yet on his calendar.</strong> The previous one covered Aug 24 and Aug 25. Ordering rule for this member: protein first, then food quality, then carb timing.</div></div>
+    <div class="dp-title">🥗 Nutrition</div>
+    <ul style="font-size:12.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><strong>He delivered the logging ask, again.</strong> Food Journal tasks were placed for <strong>Tue Sep 8 and Wed Sep 9</strong> and both are marked complete, with meals logged across Sep 6, 7, 8 and 9. The August pair, Aug 24 and Aug 25, were also both completed. <strong>Open by thanking him. Never frame tracking as a shortfall with this member.</strong></li>
+      <li><strong>He is NOT on the Macros Journal.</strong> Checked directly today: <code>GET /api/macro/journals?client=69c43b87125547ac7695c128</code> returns <code>total: 0</code> all-time, empty on every paging and date variant. He logs in the <strong>photo Food Journal</strong>, which is a different feature. So by the standing rule a 2-day photo task before the scan <em>is</em> the right tool for him. <strong>Judgement call for Daniel:</strong> he only just finished one on Sep 8 and 9, so there is already fresh two-day data in hand for the room. A second pair on Sep 15 and 16 is optional, not required. <strong>Nothing was added by this run.</strong></li>
+      <li><strong>Protein target 140-150 g/day</strong>, recorded as sent and in place since onboarding. He told Daniel on Aug 24 he feels <em>"perfect"</em>, neither hungry nor overly full, and that protein is on point. <strong>Protein first in any message.</strong></li>
+      <li><strong>Food quality needs no correction.</strong> Mediterranean-leaning whole foods, protein-forward, consistently. This is second in the ordering, and it is a compliment rather than an instruction.</li>
+      <li><strong>Carb timing is the live thread and where the room time should go.</strong> Protocol from Jul 21: pre-workout shake plus a banana or rice cake, post-workout shake with about 50 g carbs and peanut butter, then a larger meal 1 to 2 hours later. That is the piece the Sep 3 message asked him to tighten in the last week, and it is what the Sep 8 and Sep 9 logs exist to show. <strong>Ordering rule for this member: protein, then food quality, then carb timing.</strong></li>
+      <li><strong>No macro targets exist in the app.</strong> The 140-150 g figure lives in his member record and in messages only. Nothing was promised to him about it, so this is a gap rather than a broken promise.</li>
+    </ul>
+  </div>
+
+  <!-- 10 - In their own words -->
+  <div class="dp-section" style="border-left:3px solid #16a34a;background:#f0fdf4">
+    <div class="dp-title" style="color:#14532d">🗣️ In Their Own Words <span style="font-size:10px;font-weight:600;color:#16a34a">asked Sep 3, answered Sep 3</span></div>
+    <div style="font-size:12.5px;line-height:1.7;color:#14532d">
+      <p style="margin:0 0 8px"><strong>Asked Thu Sep 3, 6:56 AM:</strong> "Quick one before Thursday. What have you actually noticed these six weeks? Shirts and waistband, where you look fuller and where you look leaner, the scale barely moving while things fit differently, and how the big three feel now compared to when we put them back in at the start of August."</p>
+      <p style="margin:0 0 8px"><strong>He answered the same morning, 10:21 AM, in full:</strong></p>
+      <blockquote style="margin:0 0 8px;padding:8px 12px;border-left:3px solid #16a34a;background:#fff;font-size:13.5px;font-style:italic;color:#14532d">"Scale seems to be roughly the same as does waist but feeling s bit bulkier"</blockquote>
+      <p style="margin:0 0 8px"><strong>Read it carefully, because it is doing three things at once.</strong> He is describing textbook recomp and he does not have a word for it: weight flat, waist flat, more of him. He is also, gently, telling you he cannot see a result yet, which means the numbers on Thursday have to do the work his mirror is not doing. And "bulkier" is ambiguous, it can mean bigger in a way he wanted or bigger in a way he did not, and he named belly fat in his why. <strong>Find out which one he means before you show him VAT.</strong></p>
+      <p style="margin:0 0 8px"><strong>Follow-up drafted for this run</strong> (Draft 3 below), building on his own word rather than asking the same question twice: where the bulkier shows up, sleeves and shoulders against the waistband, and how the big three feel now against when they went back in on Aug 2. He asked for those lifts himself, so it is the prompt only he would recognise.</p>
+      <p style="margin:0 0 8px"><strong>The 6-to-12-month question is deliberately NOT being asked.</strong> Routine track, 6 Month Lite running to Nov 12, 2026, which is 56 days past this scan, so there is no cliff at the scan and no renewal in play. On the current cadence another package scan lands before the term ends and that is the renewal moment, not this one.</p>
+      <p style="margin:0"><strong>Read his reply pattern correctly.</strong> He answers direct, concrete asks fast and briefly. He does not answer open questions in the thread: the Aug 29 elbow question was marked Seen and never replied to, and he answered it four days later in a workout comment instead. He did the same thing again on Sep 9. <strong>If a question goes quiet, check his workout comments before assuming silence.</strong></p>
     </div>
   </div>
 
-  <!-- In Their Own Words -->
-  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">🗣️ In Their Own Words <span class="badge-pending">not yet asked</span></div>
-    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>"What have you noticed" was drafted Sep 3</strong> and is awaiting approval, not yet sent. Recomp-matched prompts: shirts and waistband, where he looks fuller and where he looks leaner, the scale barely moving while things fit differently, and the personal one, <strong>how the big three feel now against when they went back in on Aug 2</strong>. He asked for those lifts himself, so it is the prompt only he would recognise.</div>
-      <div style="margin-bottom:8px"><strong>He has never been asked this on any scan arc.</strong> The Jul 21 midpoint and the Jul 30 scan were both numbers and programming. There is no prior answer to open from.</div>
-      <div style="margin-bottom:8px"><strong>Twelve-month question: drafted and HELD.</strong> <span style="color:#888">The Draft 4 gate says skip. 6 Month Lite runs to Nov 12, 2026, 63 days past the scan, and on the current six-week cadence one more package scan lands around Oct 22, before the term ends. That later scan is the renewal moment, not this one. Held rather than dropped because the next scan is not actually booked, and if it slips there is no touchpoint left. Daniel's call, the draft is ready and arc-matched.</span></div>
-      <div style="margin-bottom:8px"><strong>What he has volunteered unprompted</strong>, the closest thing to an answer already on file. Jul 30, on why this block worked: <em>"it's been much easier to stay consistent now that I haven't been running around everywhere."</em> Aug 24, on the programme he had asked for and then found impractical: <em>"it's not your fault at all. This was my request."</em> And on the deadlift session: <em>"the deadlift day was really good. That was a good one."</em></div>
-      <div style="font-size:12px;color:#666"><strong>Read his reply pattern correctly.</strong> He answers direct asks fast and briefly, usually "Thanks!" or one line. He does <strong>not</strong> answer open questions in the thread: the Aug 29 elbow question was Seen and never replied to, and he answered it four days later in a workout comment instead. <strong>If the reflection questions go unanswered in the app, check his workout comments before assuming silence.</strong></div>
-    </div>
+  <!-- 11 - Scan-day focus -->
+  <div class="dp-section" style="border-left:3px solid #16a34a;background:#f0fdf4">
+    <div class="dp-title" style="color:#14532d">💚 Scan-Day Focus: The First Block That Moved ALMI</div>
+    <ul style="font-size:12.5px;line-height:1.7;margin:0;padding-left:18px;color:#14532d">
+      <li><strong>Open on his own words, not on ours.</strong> He wrote "scale roughly the same, waist roughly the same, feeling a bit bulkier". That is recomp described from the inside by someone who does not yet know it is working. Confirm it with the numbers rather than announcing them cold.</li>
+      <li><strong>Then the consistency, because it is genuinely exceptional.</strong> Nine straight weeks at full attendance, 13 of 13 in the last 30 days, through a backyard remodel he is running. He named that himself on Jul 30 as the reason it got easier.</li>
+      <li><strong>Then the lifts, by name and number.</strong> Deadlift to 215 on Sep 4 with two sets of 205 x 6 underneath it. Squat 165 to 175 on Aug 28. Shoulder press 100 to 120 in a fortnight and still holding 120 for two sets. Pull-ups 21 to 23 in the same session he had to bail on the curls.</li>
+      <li><strong>Lead the data with ALMI, 18th percentile, up 5 points.</strong> It ran 17 → 14 → 13 across three scans then moved for the first time. That is the number his goal is built on, and it is the one that responded to the carb increase and the big three coming back.</li>
+      <li><strong>Say the body-fat percentile out loud.</strong> 22.3% is the 37th percentile age-matched for a 43-year-old man. He is not in trouble on fat, and a raw-number reading would send him toward a cut that would cost him the ALMI progress. This matters more than usual because "bulkier" plus a raw 22.3% is exactly how a member talks himself into cutting.</li>
+      <li><strong>Name VAT before he finds it.</strong> Up 6.9 cm² to 73.1, +10.4%, in the block where lean went up 1.7. He wrote his why around belly fat and VAT, so this lands as a contradiction unless it is framed first: you cannot build and strip visceral fat in the same block, and the build is what the last four months were for. Legs lean took 1.2 lb of the 1.7, which is the honest evidence the calories went where they were meant to.</li>
+      <li><strong>The elbow is the real programming conversation, and it needs a decision, not sympathy.</strong> It has gone barbell rows → dumbbell rows → curls in three weeks. Establish what is left that works, decide whether Farmers Walk and pull-ups are quietly feeding it, and close the loop on the skull crusher whose load dropped from 50 to 35 with no instruction. Consider whether this warrants a referral rather than another substitution.</li>
+      <li><strong>Carb timing is the nutrition ask, not protein and not food quality.</strong> Protein is on target and the food is good. Thank him for the Sep 8 and Sep 9 logs first, then look at what went in around training.</li>
+      <li><strong>Ask whether he tried the fourth day</strong>, the optional quarter-mile challenge from Aug 2, and the drop-set and rest-pause material in the VIP course from Jul 21. Neither has ever been followed up.</li>
+      <li><strong>No renewal conversation and no sales content.</strong> Routine track, 6 Month Lite to Nov 12. This is a progress checkpoint on a commitment he has already made.</li>
+    </ul>
   </div>
 
-  <!-- 7 - Scan-Day Focus -->
-  <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
-    <div class="dp-title">💚 Scan-Day Focus: The First Block That Moved ALMI</div>
-    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>Open on the consistency, because it is genuinely exceptional.</strong> Eight straight weeks at full attendance, 13 of 13 in the last 30 days, through a backyard remodel he is running. He named that himself on Jul 30 as the reason it got easier.</div>
-      <div style="margin-bottom:8px"><strong>Then the three strength moves, by name and number.</strong> Squat 165 to 175 on Aug 28, shoulder press 100 to 120 in a fortnight, deadlift to 205 with 185 for 8 underneath it. He has never been given lift targets in this block, so these are the first numbers he has been handed.</div>
-      <div style="margin-bottom:8px"><strong>Lead the data with ALMI, 18th percentile, up 5 points.</strong> It ran 17 → 14 → 13 across three scans and then moved for the first time. That is the number his goal is built on and it is the one that finally responded to the carb increase and the big three coming back.</div>
-      <div style="margin-bottom:8px"><strong>Say the body-fat percentile out loud.</strong> 22.3% is the <strong>37th percentile age-matched</strong> for a 43-year-old man. He is not in trouble on fat, and a raw-number reading would send him toward a cut that would cost him the ALMI progress.</div>
-      <div style="margin-bottom:8px"><strong style="color:#c2410c">Name VAT before he finds it.</strong> Up 6.9 cm² to 73.1, +10.4%, in the block where lean went up 1.7. He wrote his why around belly fat and VAT, so this will land as a contradiction unless it is framed first: <strong>you cannot build and strip visceral fat in the same block, and the build is what the last four months were for.</strong> Legs lean took 1.2 lb of the 1.7, which is the honest evidence the calories went where they were meant to.</div>
-      <div style="margin-bottom:8px"><strong style="color:#15803d">The row swap held.</strong> Confirmed live in the Sep 9 Pull B session as T-bar chest-supported row, no barbell row remaining, no pain reported.</div>
-      <div style="margin-bottom:8px"><strong>Ask about the elbow, properly.</strong> It has moved from barbell-only to dumbbells too. Confirm what still works, the T-bar at 105 clearly does, and decide whether the farmers walk and the pull-ups are quietly feeding it. Then close the loop on the skull crusher, whose load dropped from 50 to 35 with no instruction.</div>
-      <div style="margin-bottom:8px"><strong>Ask about the pull-ups.</strong> The one lift going backwards, 22 reps to 21, while everything else climbed. A direct question beats a target here.</div>
-      <div style="margin-bottom:8px"><strong>Carb timing is the nutrition ask, not protein and not food quality.</strong> Protein is on target and the food quality is excellent. Nothing in five logged days shows a pre-workout entry. Thank him for the five days first.</div>
-      <div style="margin-bottom:8px"><strong>Ask whether he tried the fourth day.</strong> The optional quarter-mile challenge from Aug 2, and the drop-set and rest-pause material in the VIP course from Jul 21. Neither has ever been followed up.</div>
-      <div style="margin-bottom:8px"><strong>No renewal conversation and no sales content.</strong> Routine track, 6 Month Lite to Nov 12, 71 days left. This is a progress checkpoint on a commitment he has already made.</div>
-    </div>
-  </div>
-
-</div><!-- end modal-adam -->
+</div><!-- end modal-adam --><!-- end modal-adam -->
 
   <!-- ── RACHEL GEORGE MODAL ── -->
 <!-- ── RACHEL GEORGE MODAL ── -->
@@ -3001,15 +3037,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <script>
   window.__scan1_jayce = {
     bw: 233.79, bfPct: 30.5, bfAMpct: 88,
-    lean: 164.2, fat: 71.35, vat: 132.7,
+    lean: 164.2, leanSubtotal: 156.0, fat: 71.35, vat: 132.7,
     almiVal: null, almiAMpct: 61,
     bmd: null, bmdZ: null,
     scan1Date: 'Aug 12, 2026 (intro scan, no 4-week baseline exists)', height: 73.5,
     regional: {
-      arms:  { lean: 22.22, fat: 6.98 },
-      trunk: { lean: 79.83, fat: 33.70 },
-      legs:  { lean: 53.52, fat: 20.13 }
-    }
+      arms:  { lean: 21.1, fat: 8.1 },
+      trunk: { lean: 76.0, fat: 37.6 },
+      legs:  { lean: 50.8, fat: 22.8 }
+    },
+    regionalSource: 'Iris results dashboard /results-dashboard/1540721, read live 2026-09-10'
   };
   </script>
 
@@ -3017,18 +3054,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jayce-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>He told Daniel on 5 Sep he has been running "a big massive calorie deficit."</strong> Daniel warned about muscle loss and got no reply on it. That statement sitting on top of a thin training week is the single most important thing to hold in mind when the lean-mass number comes up.</span></div>
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>The last week ran thin.</strong> Fri 4 Sep lower was <strong>never opened</strong>, Mon 7 Sep full body was <strong>opened with nothing logged</strong>. Last completed session was 2 Sep, seven days ago. 8 of 10 over 30 days is still 80%, and the weeks read 3/3, 3/3, 2/3.</span></div>
-      <div class="success-win"><span class="win-icon">🔴</span><span class="win-text"><strong>His membership lapses before the scan.</strong> Iris reads 4 week, ends <strong>Sep 12</strong>. The scan is <strong>Sep 16</strong>, so he walks into the room four days off contract. Conversion moment, with the runway already behind him.</span></div>
-      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>He went back and finished the Fri 28 Aug lower session</strong> that was sitting open at the last check-in, with real sets logged. That is the follow-through most people never do, and it is the right thing to open on.</span></div>
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Bent over row 100, 100, 55 on 2 Sep</strong> is exactly the heavy-first-then-back-off shape Daniel asked for on the 26 Aug call. He found it himself after swapping off the machine, so his judgement was right and he should hear that.</span></div>
-      <div class="success-win"><span class="win-icon">📸</span><span class="win-text"><strong>Food logging genuinely landed.</strong> 24 photo entries all time, including back-filled days, and he asks real questions in the captions rather than just posting. Last entry 5 Sep, four days quiet since.</span></div>
+      <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>He told Daniel on 5 Sep he has been running "a big massive calorie deficit."</strong> Daniel warned about muscle loss. That statement sitting on top of a training week that has stopped is the single most important thing to hold in mind when the lean-mass number comes up.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Three assigned sessions in a row are now unlogged.</strong> Fri 4 Sep <strong>never opened</strong>, Mon 7 Sep <strong>opened with nothing recorded</strong>, Wed 9 Sep <strong>never opened</strong>. Last session with numbers in it was <strong>2 Sep, eight days ago</strong>. 8 of 11 over 30 days is <strong>73%</strong>, and the weeks read 3/3, 3/3, 2/3, then 0 of 2 this week.</span></div>
+      <div class="success-win"><span class="win-icon">🔴</span><span class="win-text"><strong>His 4-week closes on or before scan day.</strong> Iris disagrees with itself: the global search row reads <strong>ends Sep 12</strong>, the member dashboard reads <strong>End Date Sep 16</strong>. Either way he is at the edge or just past it when he walks in. Conversion moment, with the runway already behind him. Settle which date is real before quoting one to him.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Bent over row 100, 100, 55 on 2 Sep</strong> is exactly the heavy-first-then-back-off shape Daniel asked for on the 26 Aug call. He found it himself after swapping off the machine, so his judgement was right and he should hear that. It is the best thing to open on.</span></div>
+      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>He went back and finished the Fri 28 Aug lower session</strong> that was sitting open at the last check-in, with real sets logged, and he substituted his way around four machines his gym does not have to do it. That is the follow-through most people never do.</span></div>
+      <div class="success-win"><span class="win-icon">📸</span><span class="win-text"><strong>Food logging genuinely landed when asked.</strong> He delivered all three days Daniel asked for on the 26 Aug call and back-filled the ones he had not photographed. He asks real questions in the captions rather than just posting. Last entry 5 Sep, five days quiet.</span></div>
     </div>
     <div class="success-targets">
       <div class="success-targets-label"><strong>Three things to settle before or at the scan:</strong></div>
-      <div class="success-target-item"><strong>An open request has been unanswered since 5 Sep.</strong> He asked: <em>"I also want Kat and I to do our bio markers and blood work."</em> Daniel answered the cheese and soursop questions in the same message and did not answer this one. The drafted opener closes it with one line, and if that line is cut the request is still open.</div>
-      <div class="success-target-item"><strong>The 2-day photo food journal task does not exist yet.</strong> Macros Journal returns <code>total: 0</code>, so the task is needed. It belongs on <strong>Mon 14 Sep and Tue 15 Sep</strong> as two separate one-off tasks. The drafted nutrition message promises it, so create the tasks before or alongside that send, or cut the last sentence.</div>
-      <div class="success-target-item"><strong style="color:#ea580c">Iris Member 2 is unset on meeting 125966.</strong> The page reads <em>(second member not set)</em> even though a "Kat Actions" button exists. Kat will not generate prep until Member 2 is set to Kat Sosa and saved.</div>
+      <div class="success-target-item"><strong>The 2-day photo food journal task does not exist yet.</strong> Macros Journal returns <code>total: 0</code>, checked twice on 10 Sep, so the task is needed and is not noise. It belongs on <strong>Mon 14 Sep and Tue 15 Sep</strong> as two separate one-off tasks. The drafted nutrition message asks him for the two days directly and makes no claim that a calendar task exists, so it stays truthful either way.</div>
+      <div class="success-target-item"><strong style="color:#ea580c">Friday 11 Sep leads with equipment he does not have.</strong> P2 Lower opens with Leg Press 3&times;12 and Leg Press Calf Raises 3&times;15, plus a Prone Lying Hamstring Curl Machine. On the 26 Aug call he said <em>"we don't have leg presses, which I need to find which gym that Google has has leg presses"</em>, and he substituted every machine out of the 28 Aug lower session. The drafted message gives him swaps, but the programme is worth editing.</div>
+      <div class="success-target-item"><strong style="color:#ea580c">His Wed 16 Sep upper session is programmed on scan day</strong>, and the scan is at 12:30. Tell him to train after the scan, not before.</div>
     </div>
   </div>
 
@@ -3038,7 +3075,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:8px"><strong>Goal:</strong> fat loss. <strong>Source is ALMI, not notes</strong> (<code>path_source: almi</code>, <em>"ALMI 61th, lean base is there"</em>), so it was set from his numbers rather than agreed with him. Treat it as a working assumption in the room. His own stated target is roughly <strong>15% body fat, about a 12 lb drop</strong>, on a healthy deficit that preserves muscle rather than an extreme one.</div>
       <div style="margin-bottom:8px"><strong>Current focus:</strong> minimum 3 full-body sessions a week to RPE 8+, heavier opening set with the later sets scaled back, lower body on Friday, no filler work in rest periods, photo-log every meal.</div>
-      <div style="margin-bottom:8px"><strong>Why:</strong> re-enlist as an Army officer, model health for his kids, restore the Marine and swimmer identity and raw dad strength. Pride in capability and muscle memory is what drives him to push. Iris rates the why <strong>anchored</strong> (score 2, on person / identity / pursuit).</div>
+      <div style="margin-bottom:8px"><strong>Why:</strong> re-enlist as an Army officer, model health for his kids, restore the Marine and swimmer identity and raw dad strength. Pride in capability and muscle memory is what drives him to push. Iris rates the why <strong>anchored</strong> (score 2, on person / identity / pursuit). On the 26 Aug call: <em>"I do feel guilty of the workouts because, like, I know I can go harder."</em></div>
       <div style="padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:6px"><strong>His why and his deficit are pulling against each other, and that is the conversation.</strong> Capability and muscle memory are the whole point of the Army goal, and an extreme deficit is the fastest way to spend exactly that. The fat loss is right, the size of the deficit is not, and framing it that way keeps the goal intact instead of arguing with it.</div>
     </div>
   </div>
@@ -3047,16 +3084,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Membership lapses 12 Sep, four days before the scan.</strong> He is off-contract in the room. Conversion moment.</span></div>
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Self-reported extreme deficit plus two unlogged sessions in a row.</strong> Prepare for a lean-mass reading that needs framing, and for the conversation about why the deficit has to come up rather than down.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Last completed session 2 Sep, seven days ago.</strong> 80% over 30 days, weeks running 3/3, 3/3, 2/3. Fri 4 Sep was never opened; Mon 7 Sep was opened with nothing logged. Those are different behaviours and the adherence line counts them the same.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Open request unanswered since 5 Sep:</strong> biomarkers and blood work for himself and Kat.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Old left-shoulder injury.</strong> Measured this scan as <strong>7.7% less lean mass in the left arm than the right</strong> (4,836.7 g vs 5,242.4 g); his notes recorded it as roughly 10%. No current mobility limits, but do not let him grind to failure on pressing or pull ups.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Recovering from a prior lower-body issue</strong>, ongoing soreness through biceps, triceps and legs, and a recent hamstring cramp. The plan for that is hydration, electrolytes and potassium, and Friday's lower is heavy on the legs.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Iris Member 2 is unset on meeting 125966</strong>, so Kat Sosa will not generate prep. Their memberships and histories are separate, so check hers independently before pitching anything to the pair as a unit.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Phase 2 started Mon 7 Sep with a hard rep-bracket jump</strong> (squat and bench 5s to 8s, incline press 8s to 12s, leg press 12s, calf raises 15s). He has not yet trained a full P2 session, so nothing in P2 has a logged number.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No open workout comments.</strong> Iris Comments tab filtered to Jayce reads "All caught up!"</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Context:</strong> app-based progressive barbell plus bodyweight, full body. Avoids pork. Covering for his boss at work as of late Aug. Scans as a duo with Kat Sosa and they eat many of the same meals, which shows up all through his food log.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>4-week closes on or before scan day.</strong> Iris search row says Sep 12, member dashboard says Sep 16. Conversion moment either way, and he may be off contract in the room.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Self-reported extreme deficit plus three unlogged sessions in a row.</strong> Prepare for a lean-mass reading that needs framing, and for the conversation about why the deficit has to come up rather than down.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Last completed session 2 Sep, eight days ago.</strong> 73% over 30 days. Fri 4 Sep and Wed 9 Sep were never opened; Mon 7 Sep was opened with nothing logged. Those are different behaviours and the adherence line counts them the same.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Old left-shoulder injury.</strong> Measured on this scan as <strong>7.7% less lean mass in the left arm than the right</strong> (4,836.7 g vs 5,242.4 g); his notes recorded it as roughly 10%. No current mobility limits, but do not let him grind to failure on pressing.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Recovering from a prior lower-body issue</strong>, ongoing soreness through biceps, triceps and legs, and a recent hamstring cramp. The plan for that is hydration, electrolytes and potassium, and Friday's session is heavy on the legs.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Equipment gap, and it is programmed against him.</strong> No leg press at his gym, by his own account. Friday 11 Sep opens with two leg press movements plus a machine hamstring curl, and he substituted four machines out of the 28 Aug lower session. Worth a programme edit for future Lower days.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Duo with Kat Sosa, booked under his name.</strong> Their memberships and histories are separate, so check hers independently before pitching anything to the pair as a unit. They eat many of the same meals, which shows up all through his food log.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Phase 2 started Mon 7 Sep with a hard rep-bracket jump</strong> (squat and bench 5s to 8s, incline press 8s to 12s, leg press 12s, calf raises 15s). <strong>He has never logged a single P2 set</strong>, so nothing in P2 has a number to anchor from.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Nothing open to answer before sending.</strong> The 5 Sep blood work request was answered in the thread on 9 Sep at 7:41 AM. Iris Comments scanned back to 6 Sep shows no Jayce entries; the two workout comments on the 17 Aug session are from August and are closed.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Context:</strong> app-based progressive barbell plus bodyweight, full body. Avoids pork. Covering for an injured boss and working nights as of late Aug. Swims with his son, who he put into swim class.</span></div>
     </div>
   </div>
 
@@ -3064,36 +3101,38 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Body Snapshot: Baseline (Aug 12, 2026)</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px">DXA total mass <strong>233.8 lb</strong> (scale 237.3) &middot; Body fat <strong>30.5%</strong> &middot; Lean mass <strong>164.2 lb</strong> &middot; Fat mass <strong>71.4 lb</strong> &middot; BMC <strong>6.4 lb</strong> &middot; VAT <strong>132.7 cm²</strong> (640 g) &middot; ALMI <strong>61st percentile</strong> &middot; 6'1.5", 34.</div>
-      <div style="margin-bottom:8px">Regional fat: arms <strong>7.0</strong> (L 3.46 / R 3.52), legs <strong>20.1</strong> (L 10.07 / R 10.06), trunk <strong>33.7</strong>. Regional lean: arms <strong>22.2</strong> (L 10.66 / R 11.56), legs <strong>53.5</strong> (L 27.24 / R 26.28), trunk <strong>79.8</strong>.</div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#f0f9ff;border-left:3px solid #0ea5e9;border-radius:4px"><strong>ALMI at the 61st percentile is the good news and it should lead.</strong> The lean base is already there, 164.2 lb of it, which is why the path is fat loss rather than build: the job is uncovering the muscle, not adding to it. <strong>Body fat 30.5% is the 88th percentile for a 34-year-old man</strong>, so he carries more fat than 88% of his peers, and it sits centrally. The trunk alone holds <strong>33.7 lb of his 71.4 lb of fat</strong>, just under half, and VAT is 132.7 cm².</div>
+      <div style="margin-bottom:8px">DXA total mass <strong>233.8 lb</strong> (scale 237.3) &middot; Body fat <strong>30.5%</strong> &middot; Lean mass <strong>156.0 lb</strong> on the results dashboard, <strong>164.2 lb</strong> whole-body in the vault &middot; Fat mass <strong>71.4 lb</strong> &middot; BMC <strong>6.4 lb</strong> &middot; VAT <strong>132.7 cm²</strong> (640 g) &middot; ALMI <strong>61st percentile</strong> &middot; 6'2", 34.</div>
+      <div style="margin-bottom:8px">Regional, from the live results dashboard. Fat: arms <strong>8.1</strong>, legs <strong>22.8</strong>, trunk <strong>37.6</strong>. Lean: arms <strong>21.1</strong>, legs <strong>50.8</strong>, trunk <strong>76.0</strong>.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0f9ff;border-left:3px solid #0ea5e9;border-radius:4px"><strong>ALMI at the 61st percentile is the good news and it should lead.</strong> The lean base is already there, which is why the path is fat loss rather than build: the job is uncovering the muscle, not adding to it. <strong>Body fat 30.5% is the 88th percentile for a 34-year-old man</strong>, so he carries more fat than 88% of his peers, and it sits centrally. <strong>The trunk alone holds 37.6 lb of his 71.4 lb of fat, about 53%</strong>, and VAT is 132.7 cm².</div>
       <div style="margin-bottom:8px"><strong>The left arm carries 7.7% less lean than the right</strong>, consistent with the old shoulder, and it is a good concrete thing to show him on the regional readout. Legs are the reverse and near level, left 3.7% ahead.</div>
-      <div><strong>The arc is BURN.</strong> Only one scan on file, so there is no trend and nothing to compare against until the 16th. Baseline span to the second scan is <strong>28 days</strong>.</div>
-      <div style="margin-top:10px"><strong>Results dashboard:</strong> open via Iris global search → Jayce Azua → chevron → Results Dash. The <code>member-dashboard/469943</code> URL does <strong>not</strong> resolve; 469943 is the Iris member id, not the dashboard id.</div>
+      <div style="margin-bottom:8px"><strong>The arc is BURN.</strong> Only one scan on file, so there is no trend and nothing to compare against until the 16th. Baseline span to the second scan is <strong>28 days</strong> by the vault, 35 calendar days from 12 Aug to 16 Sep.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f8f8fb;border-left:3px solid #aaa;border-radius:4px;font-size:11.5px"><strong>Data note.</strong> The scan JSON's per-region <em>fat</em> values sum to 63.2 lb against a reported total of 71.35, while its per-region <em>lean</em> values reconcile cleanly at 164.15. The results dashboard regionals do reconcile with 71.4. <strong>Use the results dashboard for regional fat.</strong> A previous build of this modal said the trunk held 47% of his fat; that divided a regional-only numerator by whole-body total fat. The figure is ~53%.</div>
+      <div><strong>Results dashboard:</strong> <a href="https://iris.livekalos.com/results-dashboard/1540721" target="_blank">iris.livekalos.com/results-dashboard/1540721</a>. Member dashboard: <a href="https://iris.livekalos.com/member-dashboard/29810" target="_blank">/member-dashboard/29810</a>. The vault's <code>iris_member_id: 469943</code> is <strong>not</strong> a dashboard id and returns "Failed to load member".</div>
     </div>
   </div>
 
   <!-- 5 - Lifting Metrics -->
   <div class="dp-section">
     <div class="dp-title">Lifting Metrics</div>
-    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>P2 began 7 Sep and every rep bracket jumped.</strong> Nothing in P2 has a logged number yet, so the targets below are set off P1 anchors with the load adjusted down for the higher reps. <code>training_sets[].weight.unit</code> is null on every set, so the API does not say lb vs kg or per-hand vs combined. Every number is the bare number as it appears in his app.</div>
+    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>P2 began 7 Sep and every rep bracket jumped, and he has not logged a single P2 set.</strong> The targets below are set off P1 anchors with the load adjusted down for the higher reps. The API does not say lb vs kg or per-hand vs combined, so every number is the bare number as it appears in his app. <strong>Only two sessions remain before the scan: Fri 11 Sep and Mon 14 Sep.</strong></div>
     <table class="dp-table">
-      <thead><tr><th>Lift</th><th>Anchor pulled Sep 9</th><th>Week-out target drafted Sep 9</th></tr></thead>
+      <thead><tr><th>Lift</th><th>Anchor pulled Sep 10</th><th>Week-out target drafted Sep 10</th></tr></thead>
       <tbody>
-        <tr><td><strong>DB Incline Bench Press</strong></td><td>40 x 8 x 3 on both 26 Aug and 2 Sep, flat for three upper sessions running</td><td><strong>30 x 12</strong> on Wed Sep 9, then 35 on sets 2 and 3 if it moves clean. Reps went 8 to 12, so the load comes down, not up.</td></tr>
-        <tr><td><strong>Pull Up</strong></td><td>&mdash; no logged history anywhere in the block</td><td>Wed Sep 9, 3 x 6-12. Set one establishes the number, sets two and three match it. Quality emphasis, no grinding to failure on the left shoulder.</td></tr>
-        <tr><td><strong>Barbell Squat</strong></td><td>145 x 5 x 4 on 17 Aug, the last time he had the bar. He swapped to DB Squat 100 x 5 on 31 Aug</td><td><strong>125 x 8 x 3</strong> on Mon Sep 14, with DB Squat at 80 as the fallback if the rack is busy.</td></tr>
-        <tr><td><strong>Sessions left</strong></td><td colspan="2">Wed Sep 9 P2 Upper (today), Fri Sep 11 P2 Lower, Mon Sep 14 P2 A Full Body. A fourth is assigned on scan day itself, Wed Sep 16, but the scan is at 12:30. Nothing is set on Fri Sep 11 because no lift in that session has logged history.</td></tr>
-        <tr><td>Barbell Bench Press</td><td>145 x 5 (17 &amp; 31 Aug), est 1RM ~170</td><td>Programmed 3 x 8 on Mon Sep 14</td></tr>
+        <tr><td><strong>Barbell Split Squat</strong><br><span style="font-size:10px;color:#888">Fri 11 Sep &middot; squat, unilateral</span></td><td>Everything on that pattern has been <strong>bodyweight</strong> DB Bulgarian Split Squat (21, 28, 31 Aug). Nearest loaded leg work is DB Sumo Squat 35 x 8 x 3</td><td><strong>Bar only for 10 each side</strong>, add a plate a side on set two if it moves clean. New movement, so establish a number and report it rather than chase a PR.</td></tr>
+        <tr><td><strong>Barbell Bench Press</strong><br><span style="font-size:10px;color:#888">Mon 14 Sep &middot; push</span></td><td><strong>145 x 5 x 4 on 17 Aug</strong>, <strong>145 x 5 x 3 on 31 Aug</strong>. Epley est 1RM ~170</td><td><strong>125 x 8 x 3.</strong> Reps went 5 to 8, so the load comes down, not up. Left shoulder: controlled reps, no grinding to failure.</td></tr>
+        <tr><td><strong>Barbell Squat</strong><br><span style="font-size:10px;color:#888">Mon 14 Sep &middot; squat</span></td><td><strong>145 x 5 x 4 on 17 Aug</strong>, the last time he had the bar. He swapped to DB Squat 100 x 5 x 4 on 31 Aug</td><td><strong>125 x 8 x 3</strong>, with DB Squat at 80 as the fallback if the rack is busy.</td></tr>
+        <tr><td colspan="3" style="background:#fff7ed;font-size:11.5px;padding:8px 10px"><strong>Movement balance is a compromise, stated plainly.</strong> That is 1 push and 2 squat-pattern, with no pull and no hinge, because <strong>none is programmed before the scan</strong> other than a machine hamstring curl he probably cannot do. The only real pull work is Pull Up and DB Renegade Row on <strong>scan day itself</strong>. If a pull is wanted in the set, drop the split squat and target the 16 Sep pull ups, told to him as an after-the-scan session.</td></tr>
+        <tr><td>DB Bent Over Row</td><td><strong>100 / 100 / 55 x 8 on 2 Sep</strong>, self-swapped off the machine</td><td>No target. This is the <strong>win to open the opener with</strong>: heavy first, backed off on set three, exactly as asked on the 26 Aug call.</td></tr>
+        <tr><td>DB Incline Bench Press</td><td>25 x 8 (19 Aug) then <strong>40 x 8 x 3 on both 26 Aug and 2 Sep</strong>, flat</td><td>No target. The 31 Aug ask to take it to 45 was not met, and the rep bracket has since moved to 12, so 45 is now the wrong instruction. Not raised with him.</td></tr>
         <tr><td>Barbell Deadlift</td><td>145 x 5 x 4 (24 Aug), est 1RM ~170</td><td>Programmed 3 x 10 in P2 B, the session he opened and did not log</td></tr>
-        <tr><td>DB Bent Over Row</td><td>100 / 100 / 55 x 8 on 2 Sep, self-swapped off the machine</td><td>Heavy-first shape, exactly as asked on the 26 Aug call</td></tr>
-        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Male, young (20s-30s) &middot; 237 lb</td></tr>
+        <tr><td>Wide Grip Lat Pulldown</td><td>35 / 40 / 45 x 8 (24 Aug), ascending</td><td>Good shape, unprompted. Worth naming in the room</td></tr>
+        <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Male, young (20s-30s) &middot; 237 lb Scan 1 body weight</td></tr>
         <tr><td>BB Bench</td><td>~170 est 1RM</td><td>355 lb (1.5x BW) &middot; ~48%</td></tr>
         <tr><td>BB Squat</td><td>~170 est 1RM</td><td>475 lb (2.0x BW) &middot; ~36%</td></tr>
         <tr><td>BB Deadlift</td><td>~170 est 1RM</td><td>595 lb (2.5x BW) &middot; ~28%</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>Do not put these numbers in front of him.</strong> They key off bodyweight, and at 237 lb with 30.5% body fat they are inflated by the very fat he is trying to lose. Even at his own 15% target he would sit near 200 lb and the bench standard would still be around 300 lb. Use direction, not the number: his own percentage gains off 145, and the fact that every pound of fat he drops lowers all three targets. The better frame for him is the <strong>Army physical standard he is actually training toward</strong>, which is a live goal rather than an abstraction. No Kalos standard exists for OHP, rows, goblet squat, leg press or lat pulldown, so those stay &mdash;.</div>
+    <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>Do not put these numbers in front of him.</strong> They key off bodyweight, and at 237 lb with 30.5% body fat they are inflated by the very fat he is trying to lose. Even at his own 15% target he would sit near 200 lb and the bench standard would still be around 300 lb. Use direction, not the number: his own percentage gains off 145, and the fact that every pound of fat he drops lowers all three targets. The better frame for him is the <strong>Army physical standard he is actually training toward</strong>, which is a live goal rather than an abstraction. No Kalos standard exists for OHP, rows, split squat, goblet squat, leg press or lat pulldown, so those stay &mdash;.</div>
   </div>
 
   <!-- 6 - Nutrition -->
@@ -3102,26 +3141,26 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:8px"><strong>200 g protein daily</strong>, structured as three fist-size real-food portions plus two shakes plus 1.5 cups Greek yogurt with dark berries. Avoids pork. Carbs only around training.</div>
       <div style="margin-bottom:8px"><strong>Pre/post protocol, already sent</strong> (14 Aug and re-sent 1 Sep, both verified in the live thread): pre-workout 45 to 60 min out, 25 g protein shake plus 25 g easy carbs plus 1 tbsp PB. Immediately post, 25 g protein shake with no carbs, the <strong>1:1 protein-only</strong> version. Post-workout meal 60 to 90 min later, 25 g protein plus 25 g starch carbs.</div>
-      <div style="margin-bottom:8px"><strong>No macro tracker connected and the Macros Journal is empty</strong> (<code>total: 0</code>). He is a manual photo logger only: 24 entries all time, last on 5 Sep, four days quiet. <strong>No macro numbers exist to quote</strong>, so 200 g is a target, never a measured figure. The 2-day photo log for Mon 14 and Tue 15 Sep is therefore needed and has not been created.</div>
-      <div style="margin-bottom:8px"><strong>Recent captions, his words:</strong> <em>"Roasted Brussels sprouts and mushrooms and steak"</em> (5 Sep), <em>"Basically an omelette… I do have a question I'm confused with cheese"</em> (5 Sep), <em>"Chicken pesto with veggies and potatoes"</em> (3 Sep), <em>"Last night for dinner I ate rice, beans and salmon.. same thing as Kat."</em> (3 Sep). The steak and brussels plate is the shape to ask for more of.</div>
+      <div style="margin-bottom:8px"><strong>No macro tracker connected and the Macros Journal is empty</strong> (<code>total: 0</code>, checked twice on 10 Sep). He is a manual photo logger only, last entry 5 Sep. <strong>No macro numbers exist to quote</strong>, so 200 g is a target, never a measured figure. The 2-day photo log for Mon 14 and Tue 15 Sep is therefore needed and has not been created.</div>
+      <div style="margin-bottom:8px"><strong>Recent captions, his words:</strong> <em>"Roasted Brussels sprouts and mushrooms and steak"</em> (5 Sep), <em>"Basically an omelette… I do have a question I'm confused with cheese"</em> (5 Sep, answered same day), <em>"Chicken pesto with veggies and potatoes"</em> (3 Sep), <em>"Last night for dinner I ate rice, beans and salmon.. same thing as Kat."</em> (3 Sep). The steak and brussels plate is the shape to ask for more of.</div>
       <div style="padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>The deficit is the live issue, not the protein.</strong> A big deficit is exactly the situation where protein is the thing keeping muscle on him while the fat comes off, and he has no measured intake at all. Whatever the lean number does on the 16th, the deficit has to come up rather than down.</div>
-      <div style="margin-top:8px;font-size:11.5px;color:#666">SOP note: <code>nutrition-strategy</code> reads done in the vault and not done in Iris. Cosmetic divergence carried over from the 31 Aug run, no action taken.</div>
+      <div style="margin-top:8px;font-size:11.5px;color:#666">SOP note: <code>nutrition-strategy</code> reads done in the vault and not done in Iris. Cosmetic divergence, no action taken.</div>
     </div>
   </div>
 
   <!-- 7 - In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted Sep 9, not yet sent</span></div>
+    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted Sep 10, not yet sent</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 9, not yet sent &middot; never asked of him before</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered: waistband, how his work shirts sit, his face in the mirror, whether the late evening cravings are easier to walk past, how the afternoons feel.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 10, not yet sent &middot; never asked of him before</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered, matched to a fat-loss goal: waistband, how his work shirts sit, his face in the mirror, whether the late night cravings are easier to walk past, and how he feels in the pool with his son.</div>
       </div>
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 9, not yet sent &middot; renewal IS in play, 4-week ends Sep 12 and he is lapsed by scan day</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BURN arc: a waistband he has stopped thinking about, passing a physical standard without training up for it first, keeping up with the kids without paying for it the next day, blood work that reads the way he wants it to read.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 10, not yet sent &middot; renewal IS in play, 4-week closes on or before scan day</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BURN arc and anchored on his why: a waistband he has stopped thinking about, walking into an Army physical without having to train up for it first, swimming a real set with his son instead of two laps, energy that holds through the late nights at work.</div>
       </div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in his own words:</strong><br><em>"I've been doing a big massive calorie deficit btw."</em> (5 Sep)<br><em>"It's been hard fighting late night cravings but I have been eating sleep. So no Taco Bell."</em> (2 Sep)<br><em>"I also want Kat and I to do our bio markers and blood work."</em> (5 Sep)<br>On the 26 Aug call he said he put two plates on the bench and moved it clean after a long time away.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in his own words:</strong><br><em>"I've been doing a big massive calorie deficit btw."</em> (5 Sep)<br><em>"It's been hard fighting late night cravings but I have been eating sleep. So no Taco Bell."</em> (2 Sep)<br><em>"I do feel guilty of the workouts because, like, I know I can go harder."</em> (26 Aug call)<br>On the 26 Aug call he also said he put two plates on the bench and moved it clean after a long time away, and that he swims with his son, who he put into swim class.</div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> he replies short and late but he does reply, "Understood", "Will do", "No worries". <strong>Silence from him would be a change, not his baseline</strong>, so treat no answer to either question as a signal worth asking about in the room rather than as normal.</div>
     </div>
   </div>
@@ -3130,18 +3169,19 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
     <div class="dp-title">💚 Scan-Day Focus: Lead With ALMI, Then Have The Deficit Conversation</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>1. Open on the Friday session he went back and finished, and the row he fixed himself on 2 Sep.</strong> He responds to being told his judgement was right, and both of those are his own decisions rather than compliance.</div>
+      <div style="margin-bottom:8px"><strong>1. Open on the row he fixed himself on 2 Sep, and the Friday session he went back and finished.</strong> He responds to being told his judgement was right, and both of those were his own decisions rather than compliance.</div>
       <div style="margin-bottom:8px"><strong>2. Lead the numbers with ALMI at the 61st percentile.</strong> The lean base is there, that is the asset, and it reframes the whole scan from "you are 30.5% body fat" to "you already own the muscle, we are uncovering it." Then bring in trunk fat and VAT as the specific thing being worked on, not the whole-body number.</div>
-      <div style="margin-bottom:8px"><strong>3. The conversation this scan has to have is the deficit.</strong> Whatever the lean number does, the message is the same. An extreme deficit costs him the exact thing his why depends on, capability and muscle memory. If lean held, that is luck plus his protein habit and it will not hold for another four weeks at that intake. If lean dropped, it is the evidence.</div>
-      <div style="margin-bottom:8px"><strong>4. Answer the blood work question.</strong> He asked for biomarkers for himself and Kat on 5 Sep and has had no reply. The drafted opener promises to map it out on the day, so come with an answer.</div>
-      <div style="margin-bottom:8px"><strong>5. Leave out bone density, T-score and Z-score entirely.</strong> The window is 28 days and BMD does not move on that timescale.</div>
-      <div style="margin-bottom:8px"><strong>6. Do not lead with Gold Standard numbers.</strong> They are inflated by his bodyweight. Use the Army physical standard he is training toward instead, which is a live goal he already owns.</div>
-      <div style="margin-bottom:8px"><strong>7. The renewal is live and he is already lapsed.</strong> The 4-week closed Sep 12, four days before he walks in. Get his 6-to-12-month picture on the record before any offer.</div>
-      <div><strong>8. Duo with Kat, but their memberships and histories are separate.</strong> Check hers independently before pitching anything to the pair as a unit.</div>
+      <div style="margin-bottom:8px"><strong>3. The conversation this scan has to have is the deficit.</strong> Whatever the lean number does, the message is the same. An extreme deficit costs him the exact thing his why depends on, capability and muscle memory. If lean held, that is his protein habit plus luck and it will not hold for another four weeks at that intake. If lean dropped, it is the evidence.</div>
+      <div style="margin-bottom:8px"><strong>4. Do not scold the missed sessions, ask what changed.</strong> He went 3/3, 3/3 for three weeks and then stopped dead on 4 Sep. He is covering for an injured boss and working nights. Something happened, and finding out what is worth more than the adherence number.</div>
+      <div style="margin-bottom:8px"><strong>5. Fix the Lower programme while he is in the room.</strong> His gym has no leg press and P2 Lower opens with two leg press movements plus a machine hamstring curl. He has been quietly substituting his way around this since August.</div>
+      <div style="margin-bottom:8px"><strong>6. Leave out bone density, T-score and Z-score entirely.</strong> The window is four to five weeks and BMD does not move on that timescale.</div>
+      <div style="margin-bottom:8px"><strong>7. Do not lead with Gold Standard numbers.</strong> They are inflated by his bodyweight. Use the Army physical standard he is training toward instead, which is a live goal he already owns.</div>
+      <div style="margin-bottom:8px"><strong>8. The renewal is live and the runway is behind him.</strong> The 4-week closes on or before the 16th. Get his 6-to-12-month picture on the record before any offer.</div>
+      <div><strong>9. Duo with Kat, but their memberships and histories are separate.</strong> Check hers independently before pitching anything to the pair as a unit.</div>
     </div>
   </div>
 
-</div><!-- end modal-jayce -->
+</div><!-- end modal-jayce --><!-- end modal-jayce -->
 
   <!-- ── KAT SOSA MODAL ── -->
 <div id="modal-kat" class="modal-content"
@@ -3167,17 +3207,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="kat-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>9 of 10 assigned sessions in five weeks, 90%.</strong> The only miss, 28 Aug, sits inside the two weeks her lower body was deliberately held. Weeks read 3/3, 2/3, 3/3.</span></div>
-      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>She handled the interruption exactly right.</strong> She flagged the bruising instead of training through it, saw a doctor, was cleared on 3 Sep and was back under the bar on 4 Sep. Then she hit the exact ladder she predicted for herself: 10 on Friday, 15 on Monday.</span></div>
-      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Upper body has climbed with no plateau.</strong> Lat pulldown 25 to 35, cable seated row 25/30 to 35, DB incline bench 10 to 15 with a 20 on the last set, tricep pushdown 20 to 35. She made the pushdown jump on her own initiative on 26 Aug before being asked.</span></div>
-      <div class="success-win"><span class="win-icon">🍽️</span><span class="win-text"><strong>Nutrition is genuinely moving.</strong> Protein from roughly 50 g a day at intro to a logged 170 g day on 31 Aug against a 135 g target, and the breakfast habit (two eggs, cottage cheese, feta, avocado, protein shake) has stuck almost every morning.</span></div>
-      <div class="success-win"><span class="win-icon">🔴</span><span class="win-text"><strong>Her membership has already ended.</strong> The Iris member dashboard reads End Date <strong>Sep 9, 2026</strong> with 0 days left; the Iris global search row reads <strong>ends Sep 12, 2026</strong>. Either way she walks in off contract. Conversion moment.</span></div>
-      <div class="success-win"><span class="win-icon">🆕</span><span class="win-text"><strong>This is her only scan on file.</strong> The 16th produces her first delta and the first honest projection she has ever had. Phase 2 went live 7 Sep with new movements (hack squat, stiff-leg RDL, sumo squat, hamstring curl, pull up, single arm row, rope hammer curl).</span></div>
+      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>10 of 11 assigned sessions in five weeks, 91%,</strong> and 3 of 3 in the last seven days. The only miss, 28 Aug, sits inside the two weeks her lower body was deliberately held.</span></div>
+      <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>She handled the interruption exactly right.</strong> She flagged the bruising instead of training through it, saw a doctor, was cleared on 3 Sep and was back under the bar on 4 Sep. Then she hit the exact ladder she predicted for herself in writing: <em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> Barbell squat 10 on Friday 4 Sep, hack squat 15 on Monday 7 Sep.</span></div>
+      <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Upper body has climbed with no plateau.</strong> Lat pulldown 25 to 35 (+40%), cable seated row 30 to 35, DB incline bench 10 to 20 on the top set (+100%), tricep pushdown 20 to 35 (+75%), DB bench 12.5 to 20 on the top set (+60%). She made the pushdown jump on her own initiative on 26 Aug before being asked.</span></div>
+      <div class="success-win"><span class="win-icon">🍽️</span><span class="win-text"><strong>Her food logging is one of the best on the roster.</strong> 66 photo entries across 28 distinct days, unbroken 21 Aug to 9 Sep, described meal by meal. On 3 Sep she logged <em>"Protein pasta, ground beef, red sauce with cottage cheese, protein Caesar salad 21g"</em>, which is the exact swap asked for on 26 and 31 Aug, made without being chased.</span></div>
+      <div class="success-win"><span class="win-icon">🔴</span><span class="win-text"><strong>Her membership has already ended.</strong> The Iris member dashboard reads End Date <strong>Sep 9, 2026</strong>, status <strong>Expired</strong>; the Iris global search row reads <strong>ends Sep 12, 2026</strong>. Either way she walks in off contract. Her sale note reads <strong>"Josecarlos paid"</strong>, so Jayce is the payer, which matters for how the renewal conversation is framed.</span></div>
+      <div class="success-win"><span class="win-icon">🆕</span><span class="win-text"><strong>This is her only scan on file.</strong> The 16th produces her first delta and the first honest projection she has ever had. Phase 2 went live 7 Sep with new movements (hack squat, stiff-leg RDL, sumo squat, hamstring curl, pull up, single arm row, rope hammer curl), and every P2 target set has a blank prescribed weight.</span></div>
     </div>
     <div class="success-targets">
       <div class="success-targets-label"><strong>Three things to settle before or at the scan:</strong></div>
-      <div class="success-target-item"><strong>Her 1 Sep question has been open for eight days.</strong> She asked, in her words, <em>"my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> No reply exists. Either answer it with a number before the week-out messages go, or answer it in the room, but do not send four new messages on top of it silently.</div>
-      <div class="success-target-item"><strong>The 2-day photo food journal task does not exist yet.</strong> Macros Journal returns <code>total: 0</code> and her Everfit task calendar for 7 to 20 Sep is empty, so the task is needed. It belongs on <strong>Mon 14 Sep and Tue 15 Sep</strong> as two separate one-off tasks, never the weekly repeat.</div>
+      <div class="success-target-item"><strong>Her 1 Sep question has now been open nine days.</strong> She asked, in her words, <em>"my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> No reply exists. Draft 0 is written with Daniel's own figures and should go before the four week-out messages, not after them.</div>
+      <div class="success-target-item"><strong>Do NOT add a photo food journal task.</strong> The Macros Journal check returns <code>total: 0</code>, which is what the SOP reads, but the photo Food Journal holds 28 unbroken days. What is actually missing is the macro numbers, which she calculates outside the Kalos app. Draft 2 asks her to add protein, carbs and calories under her existing entries on Mon 14 and Tue 15 Sep instead.</div>
       <div class="success-target-item"><strong style="color:#ea580c">There is no underlying motivation on file at all.</strong> <code>why_strength</code> band is <code>missing</code>, score 0. Get a real why in writing at this scan; every other workflow is running blind without it.</div>
     </div>
   </div>
@@ -3187,9 +3227,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">Goal &amp; Why</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:8px"><strong>Goal:</strong> lean mass gain. <strong>Source is ALMI, not notes</strong> (<code>path_source: almi</code>, <em>"ALMI 20th, well under 60th"</em>), so it was set from her numbers rather than agreed with her. Treat it as a working assumption in the room.</div>
-      <div style="margin-bottom:8px"><strong>Current focus:</strong> building lower body weights back up gradually, 10 lb start with 5 lb a week; nutrition swaps; recovery through electrolytes, hydration and creatine. This is concrete and it is what the week-out drafts lean on.</div>
-      <div style="margin-bottom:8px"><strong>Why: NONE RECORDED.</strong> <code>why_strength</code> returns band <code>missing</code>, score 0, <em>"no why recorded"</em>, and the Iris Underlying Motivation field is blank. <strong>Do not paraphrase a why back at her.</strong> From the 12 Aug intro record, for the room only and not for a DM: drop scale weight toward 130 to 140, build upper-body strength, reduce lower-body heaviness while keeping glutes, and model a healthier lifestyle for her two kids after cancer treatment.</div>
-      <div style="padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:6px"><strong>The arc is BUILD FIRST, BURN SECOND, and it needs saying out loud.</strong> Body fat is high (41.2%, 78th percentile for her age) <em>and</em> ALMI is low (20th percentile), which is the row where muscle comes first and the leaning out follows. That matches what was set at the intro scan on 12 Aug: +4 to 5 lb lean first, then recomp toward under 30% body fat, ideally 20 to 25%, over roughly 12 months. She is five weeks into a 12-month plan, so give her the timeline explicitly.</div>
+      <div style="margin-bottom:8px"><strong>Current focus:</strong> building lower body weights back up gradually, 10 lb start with 5 lb a week; nutrition swaps; recovery through electrolytes, hydration and creatine. This is concrete and it is what every week-out draft leans on.</div>
+      <div style="margin-bottom:8px"><strong>Why: NONE RECORDED.</strong> <code>why_strength</code> returns band <code>missing</code>, score 0, and the Iris Underlying Motivation field is blank. <strong>Do not paraphrase a why back at her.</strong> From the 12 Aug intro record, for the room only and not for a DM: drop scale weight toward 130 to 140, build upper-body strength, reduce lower-body heaviness while keeping glutes, and model a healthier lifestyle for her two kids after cancer treatment.</div>
+      <div style="padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:6px"><strong>The arc is BUILD FIRST, BURN SECOND, and it needs saying out loud.</strong> Body fat is high (41.2%, 78th percentile for her age) <em>and</em> ALMI is low (20th percentile), which is the row where muscle comes first and the leaning out follows. That matches what was set at the intro scan on 12 Aug: +4 to 5 lb lean first, then recomp toward under 30% body fat over roughly 12 months. She is five weeks into a 12-month plan, so give her the timeline explicitly.</div>
     </div>
   </div>
 
@@ -3197,17 +3237,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Iris says Kat is not linked to an Everfit account</strong>, which is false. Her Everfit client record <code>6a7e3ec281a830cb6e59b77e</code> exists, is titled Kat Sosa, and carries five weeks of logged training. The consequence is that Iris-side program edits and Iris-driven prep silently do nothing for her.</span></div>
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Duo meeting 125966 has Member 2 unset</strong>, even though a "Kat Actions" button renders in the header. No Iris prep will generate for her until Member 2 is set to Kat Sosa and saved.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Her 1 Sep calorie and carb question is still unanswered</strong>, eight days open. The thread then ends on 3 Sep with her doctor-clearance message and Daniel's "Yay! 😀".</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Duo meeting 125966 has Member 2 unset.</strong> No Iris prep will generate for Kat until Member 2 is set to Kat Sosa and saved. Carried over from the 9 Sep run, not re-verified today.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Her 1 Sep calorie and carb question is still unanswered</strong>, nine days open. The thread then ends on 3 Sep with her doctor-clearance message and Daniel's "Yay! 😀". Nothing has been sent to her since.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>A complete week-out draft set was written on 9 Sep and never sent.</strong> The refreshed set lives at <code>Deliverables/daily-run/2026-09-10/kat-sosa--prep-milestone.md</code>. Send that one, not the 9 Sep one: two lines in the older Draft 2 are now wrong.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>No underlying motivation on file.</strong> Capture one in the room and write it down.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Membership ended Sep 9, or Sep 12, the two Iris fields disagree.</strong> Both are before scan day, so the renewal conversation is live and she is currently outside her term.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Membership ended Sep 9, or Sep 12, the two Iris fields disagree.</strong> Both are before scan day, so the renewal conversation is live and she is currently outside her term. <strong>Jayce is the payer</strong> per the sale note.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Gut Health and Neurotyping links were promised at the 12 Aug intro scan and are still unsent.</strong> Both SOP boxes unticked five weeks later. An outstanding promise, not an omission.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Bruising is resolved and doctor-cleared (3 Sep):</strong> normal for a body new to training, circulation is fine, she is sensitive to cold only, cleared for weights. <strong>The lower-body hold can come off in full.</strong> Nothing has been said to her yet formally lifting it, so phrase it forward, not as already agreed.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Seizure history means she needs higher sodium.</strong> Never give her generic "cut the salt" advice. Electrolytes were added after the 25 Aug call, low-sugar Liquid IV plus 2 to 3 L water a day.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Glutes are an explicit aesthetic priority for her.</strong> Barbell Hip Thrust is in the 11 Sep session at 15. Worth naming in the room as the lift that protects what she cares about while she leans out later.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Context:</strong> stay-at-home mother of two young children; partner is Jayce Azua, scanning in the same block. History of stage 3 cervical cancer (cleared), PCOS, birth-control weight gain, and a November car accident leaving lower-back and neck issues that limit her pole fitness. Non-fasting blood panel normal except high cholesterol, which she raised herself on 1 Sep. Trains at Jayce's workplace gym, which also provides lunch on training days. Cooks separately for the kids, which is where the food-quality work sits.</span></div>
-      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No open workout comments.</strong> Iris Comments tab filtered to Kat reads "All caught up!"</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>She is already rebuilding the lower body herself, on the existing programming.</strong> The 31 Aug line <em>"once you have been seen we will build the lower body back up properly"</em> was an instruction to her, not a programme change: lay off while the bruising is checked, then ramp back up on the exercises already in there. Cleared 3 Sep, back under the bar that Friday. Her Iris Current focus reads <em>"Building lower body weights back up gradually (start 10 lb, +5 lb/week)."</em> Hack squat 15 x 12 x 3 on 7 Sep is the ramp in progress. Blank P2 target weights are expected, hers to fill. <strong>Speak to it in the present tense.</strong></span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Bruising is resolved and doctor-cleared (3 Sep):</strong> normal for a body new to training, circulation is fine, she is sensitive to cold only, cleared for weights. The hold can come off in full.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Seizure history means she needs higher sodium.</strong> Never give her generic "cut the salt" advice. She raised this herself on the 25 Aug call. Electrolytes added after that call, low-sugar Liquid IV plus 2 to 3 L water a day.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Glutes are an explicit aesthetic priority for her.</strong> Barbell Hip Thrust is in the 11 Sep session, last logged at 15 x 8 x 3 on 4 Sep. Worth naming in the room as the lift that protects what she cares about while she leans out later.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Context:</strong> mother of two young children; partner is Jayce Azua, scanning in the same block and paying for her 4-week. History of stage 3 cervical cancer (cleared), PCOS, and a November car accident leaving lower-back and neck issues that limit her pole fitness. Non-fasting blood panel normal except high cholesterol, which she raised herself on 1 Sep. Trains at Jayce's workplace gym, which also provides lunch on training days. Cooks separately for the kids, which is where the food-quality work sits, and the kids are the ones pushing for steak.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>No open workout comments.</strong> The Iris COACHING block carries only two Iris to-dos: "Prime the second scan" and "Message about the new phase" (P1 to P2). This prep covers both.</span></div>
     </div>
   </div>
 
@@ -3215,63 +3256,68 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Body Snapshot: Baseline (Aug 12, 2026)</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px">Scan weight <strong>168.7 lb</strong> (scale 170.4) &middot; Body fat <strong>41.2%</strong> &middot; Lean mass <strong>93.4 lb</strong> on the Iris results dashboard (98.1 lb on the DEXA PDF extract, which uses a different lean definition) &middot; Fat mass <strong>69.6 lb</strong> &middot; VAT <strong>90.0 cm²</strong> (434 g) &middot; ALMI <strong>20th percentile</strong> age-matched &middot; 5'6", 27.</div>
-      <div style="margin-bottom:8px">Regional fat: legs <strong>34.1</strong>, trunk <strong>27.0</strong>, arms <strong>6.1</strong>. Regional lean: legs <strong>29.2</strong>, trunk <strong>49.2</strong>, arms <strong>8.2</strong>.</div>
+      <div style="margin-bottom:8px">Scan weight <strong>168.7 lb</strong> (scale 170.4) &middot; Body fat <strong>41.2%</strong> &middot; Lean mass <strong>93.4 lb</strong> &middot; Fat mass <strong>69.6 lb</strong> &middot; VAT <strong>90.0 cm²</strong> (434 g) &middot; ALMI <strong>20th percentile</strong> age-matched &middot; 5'6", 27.</div>
+      <div style="margin-bottom:8px">Regional fat lb: legs <strong>34.1</strong>, trunk <strong>27.0</strong>, arms <strong>6.1</strong>. Regional lean lb: legs <strong>29.2</strong>, trunk <strong>49.2</strong>, arms <strong>8.2</strong>.</div>
       <div style="margin-bottom:8px;padding:8px 10px;background:#f0f9ff;border-left:3px solid #0ea5e9;border-radius:4px"><strong>ALMI at the 20th percentile is the number the whole plan turns on, and it should lead.</strong> She carries less lean mass than 80% of women her age, which is why the order is muscle first and leaning out second rather than the other way round. <strong>Body fat 41.2% is the 78th percentile for a 27-year-old woman</strong>, so it is high for her peer group, but it is the second thing she hears, not the first.</div>
       <div style="margin-bottom:8px"><strong>The regional distribution matches exactly what she came in worried about.</strong> Her legs carry <strong>34.1 lb of fat against 29.2 lb of lean</strong>, the only region where fat outweighs lean. That is room content, not DM content, and <strong>do not lead with the legs.</strong></div>
       <div><strong>The arc is BUILD.</strong> This is her only scan on file, so there is no trend and nothing to compare against until the 16th. Baseline span to the second scan is <strong>35 days</strong>, five weeks to the day.</div>
-      <div style="margin-top:10px"><strong>Results dashboard:</strong> <code>https://iris.livekalos.com/results-dashboard/1540723</code>. The working <strong>member</strong> dashboard is <code>member-dashboard/29935</code>. The vault's <code>iris_member_id: 469944</code> does <strong>not</strong> resolve as a member-dashboard id, it returns "Failed to load member".</div>
+      <div style="margin-top:10px"><strong>Results dashboard:</strong> <code>https://iris.livekalos.com/results-dashboard/1540723</code>. The working <strong>member</strong> dashboard is <code>member-dashboard/29935</code>. The vault's <code>iris_member_id: 469944</code> does <strong>not</strong> resolve as a member-dashboard id, it returns "Failed to load member". Both confirmed again 10 Sep.</div>
     </div>
   </div>
 
   <!-- 5 - Lifting Metrics -->
   <div class="dp-section">
     <div class="dp-title">Lifting Metrics</div>
-    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>P2 began 7 Sep and the prescribed weights are blank on every P2 target set</strong> (<code>weight: ""</code>), so all three targets are anchored on her own most recent actuals rather than on a program prescription. <code>weight.unit</code> is null on every set, so the API does not say lb vs kg or per-hand vs combined. Every number below is the bare number as it appears in her app.</div>
+    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>P2 began 7 Sep and the prescribed weights are blank on every P2 target set</strong> (<code>weight: ""</code>), so all targets are anchored on her own most recent actuals rather than on a program prescription. <code>weight.unit</code> is null on every set, so the API does not say lb vs kg or per-hand vs combined. <strong>Every number below is the bare number as it appears in her app.</strong></div>
     <table class="dp-table">
-      <thead><tr><th>Lift</th><th>Anchor pulled Sep 9</th><th>Week-out target drafted Sep 9</th></tr></thead>
+      <thead><tr><th>Lift</th><th>Anchor, pulled 10 Sep</th><th>Week-out target</th></tr></thead>
       <tbody>
-        <tr><td><strong>Hack Squat Machine</strong></td><td>15 x 12, 12, 12 on 7 Sep, and it clearly had more in it</td><td><strong>20 for all three sets</strong> on Fri Sep 11. If that moves clean, <strong>25</strong> on Mon Sep 14. That is the 5 a week she told Daniel she would do.</td></tr>
-        <tr><td><strong>DB Incline Bench Press</strong></td><td>15, 15, 15, 20 x 12 on 7 Sep</td><td><strong>Open at 20 and hold it for all four sets of 12</strong> on Mon Sep 14, instead of climbing into it.</td></tr>
-        <tr><td><strong>Lat Pulldown</strong></td><td>35 x 12, 10, 10 on 7 Sep. Ladder 25 to 30 to 35 in three weeks with no wobble</td><td><strong>40 for the first set of 12</strong> on Mon Sep 14, then back to 35 for the last two if 40 is heavy. One set at 40 on the board before the scan is the point.</td></tr>
-        <tr><td><strong>Sessions left</strong></td><td colspan="2">Wed Sep 9 P2 Upper (today, deliberately not used for targets because the message may land after she has trained it), Fri Sep 11 P2 Lower, Mon Sep 14 P2 Full Body. A fourth is assigned on scan day itself, Wed Sep 16, but the scan is at 12:30.</td></tr>
-        <tr><td>Barbell Hip Thrust</td><td>15 x 8 x 3 on 4 Sep</td><td>Programmed again Fri Sep 11. Fourth candidate for a target, held back because three is the rule, but it is the glute lift she cares about.</td></tr>
-        <tr><td>Cable Seated Row</td><td>35 x 12 x 4 on 2 Sep, up from 30, exactly the jump asked for on 31 Aug</td><td>Programmed Mon Sep 14. Promise kept on both sides.</td></tr>
-        <tr><td>Lower body history</td><td colspan="2">35 too heavy on 17 Aug, 0 on 21 Aug, held at 10 through the hold, 10 to 20 back on 4 Sep after clearance, hack squat 15 on 7 Sep.</td></tr>
+        <tr><td><strong>Hack Squat Machine</strong></td><td>15 x 12, 12, 12 on 7 Sep. Three identical sets, so the opening set had more in it</td><td><strong>20 for all three sets</strong> on Fri Sep 11. If that moves clean, <strong>25</strong> on Mon Sep 14. That is the 5 a week she told Daniel she would do.</td></tr>
+        <tr><td><strong>DB Incline Bench Press</strong></td><td>15, 15, 15, 20 x 12 on 7 Sep. Ladder 10 to 15 to 20 on the top set in three weeks</td><td><strong>Open at 20 and hold it for all four sets of 12</strong> on Mon Sep 14, instead of climbing into it.</td></tr>
+        <tr><td><strong>Lat Pulldown</strong></td><td>35 x 12, 10, 10 on both 2 Sep and 7 Sep. Ladder 25 (19 Aug) to 30 (26 Aug) to 35 (2 Sep), flat for two sessions since</td><td><strong>40 for the first set of 12</strong> on Mon Sep 14, then back to 35 for the last two if 40 is heavy. One set at 40 on the board before the scan is the point.</td></tr>
+        <tr><td><strong>Sessions left</strong></td><td colspan="2">Fri Sep 11 P2 Lower, Mon Sep 14 P2 Full Body. A third is assigned on scan day itself, Wed Sep 16 P2 Upper, but the scan is at 12:30, so it is not used for targets.</td></tr>
+        <tr><td>Barbell Stiff Leg RDL</td><td><strong>10 x 8, 8, 8, 8 on 7 Sep. Four identical sets, un-progressed.</strong></td><td>Programmed again Mon Sep 14. <strong>The best swap candidate</strong> if a hinge is wanted in place of the pulldown: 15 for four sets of 8.</td></tr>
+        <tr><td>Barbell Hip Thrust</td><td>15 x 8 x 3 on 4 Sep</td><td>Programmed again Fri Sep 11. Fourth candidate, held back because three is the rule, but it is the glute lift she cares about.</td></tr>
+        <tr><td>Cable Seated Row</td><td>35 x 12, 12, 12, 12 on 2 Sep, up from 30 x 12 x 4 on 26 Aug, exactly the jump asked for on 31 Aug</td><td>Programmed Mon Sep 14. Promise kept on both sides, safe to name in the past tense.</td></tr>
+        <tr><td>Cable Rope Tricep Pushdown</td><td>20 (19 Aug) to 30, 30, 35 (26 Aug) to 35 x 12 x 3 (2 and 9 Sep). She made the 35 jump herself before being asked</td><td>No target. Cited as evidence she self-progresses.</td></tr>
+        <tr><td>Pull Up</td><td>12, 10, 10, 8 bodyweight on 9 Sep</td><td>No target. Programmed again on scan day.</td></tr>
+        <tr><td>DB Sumo Squat, Seated Hamstring Curl</td><td>brand new in P2, no history</td><td>No target. If one is wanted it should be a baseline-and-report ask, never a PR.</td></tr>
+        <tr><td>Lower body history</td><td colspan="2">Goblet squat 20 on 17 Aug and 35 on the barbell that week, too heavy, she could not walk. Dropped to 10 on 24 Aug and held there through the bruising hold. 28 Aug lower missed. Barbell squat 10 x 12 x 3 on 4 Sep after clearance. Hack squat 15 on 7 Sep.</td></tr>
         <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Female, under 60 &middot; 168.7 lb</td></tr>
-        <tr><td>BB Bench Press</td><td>no barbell bench logged</td><td>~170 lb 1RM (1.0x BW)</td></tr>
-        <tr><td>Back Squat</td><td>10 x 12 x 3 on 4 Sep</td><td>~255 lb 1RM (1.5x BW)</td></tr>
-        <tr><td>Deadlift</td><td>stiff-leg RDL 10 x 8 x 4 on 7 Sep</td><td>~335 lb 1RM (2.0x BW)</td></tr>
+        <tr><td>BB Bench Press</td><td>&mdash;</td><td>~170 lb 1RM (1.0x BW) &middot; no barbell bench logged; DB bench top set 20</td></tr>
+        <tr><td>Back Squat</td><td>&mdash;</td><td>~255 lb 1RM (1.5x BW) &middot; she is at 10 x 12 x 3</td></tr>
+        <tr><td>Deadlift</td><td>&mdash;</td><td>~335 lb 1RM (2.0x BW) &middot; stiff-leg RDL at 10 x 8 x 4</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>Do not put these numbers in front of her, and do not inline them on her rows.</strong> She does touch a barbell (squat at 10, hip thrust at 15, stiff-leg RDL at 10) but her working lifts are dumbbells and machines, and a 255 lb squat standard next to a 10 lb working set reads as mockery. Two reasons this table is the wrong motivator for Kat today: the multipliers key off bodyweight, so hers are inflated and will fall as she leans out, and at the 20th ALMI percentile she is years from these, not months. <strong>Say the direction, not the number.</strong> Better frames for the room: her own percentage gains, lat pulldown up 60% in three weeks, seated row up 40%, incline press up 100%, and machine proxies she can chase week over week.</div>
+    <div style="margin-top:10px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>Do not put these numbers in front of her, and do not inline them on her rows.</strong> She does touch a barbell (squat at 10, hip thrust at 15, stiff-leg RDL at 10) but her working lifts are dumbbells and machines, and a 255 lb squat standard next to a 10 lb working set reads as mockery. Two reasons this table is the wrong motivator for Kat today: the multipliers key off bodyweight, so hers are inflated by her current body fat and will fall as she leans out, and at the 20th ALMI percentile she is years from these, not months. <strong>Say the direction, not the number.</strong> Better frames for the room, all verified this run: incline press <strong>+100%</strong>, tricep pushdown <strong>+75%</strong>, DB bench <strong>+60%</strong>, lat pulldown <strong>+40%</strong>, seated row up to <strong>+40%</strong>, in three to four weeks. Plus machine proxies she can chase week over week.</div>
   </div>
 
   <!-- 6 - Nutrition -->
   <div class="dp-section">
     <div class="dp-title">Nutrition</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>Protein target 135 g/day</strong>, set 12 Aug. She reported <strong>170 g on 31 Aug</strong> and asked whether overshooting was a problem; Daniel confirmed it is not.</div>
+      <div style="margin-bottom:8px"><strong>Protein target 135 g/day</strong>, set 12 Aug. She reported <strong>170 g</strong> on 1 Sep and asked whether overshooting was a problem; Daniel confirmed it is not.</div>
       <div style="margin-bottom:8px"><strong>Pre/post protocol 1:1, sent 14 Aug:</strong> 25 g protein plus 25 g carbs plus 1 tbsp peanut butter pre, the same immediately post, then a 25 g protein / 25 g carb meal 60 to 90 min later. Daily creatine, confirmed on the 25 Aug call and again in the thread. Electrolytes added after the 25 Aug call, low-sugar Liquid IV, plus 2 to 3 L water a day.</div>
-      <div style="margin-bottom:8px"><strong>Breakfast is the anchor habit and should not be touched:</strong> two eggs, cottage cheese, feta, avocado, protein shake, near daily. The one open food-quality swap is the weekly pasta night, to protein pasta or Goodles with cottage cheese blended into the sauce.</div>
-      <div style="margin-bottom:8px"><strong>Macros Journal is empty</strong> (<code>total: 0</code>), so there is no measured intake at all. Her one reported day, 31 Aug: <strong>1882 kcal, 131 g carbs, 170 g protein</strong>. The 2-day photo food log for Mon 14 and Tue 15 Sep is therefore required and has <strong>not</strong> been created.</div>
-      <div style="padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>Open question from 1 Sep, still unanswered:</strong> whether she should stay under a calorie or carb number. At her bodyweight and on a build, going too low is what stalls muscle, so the number that matters is a floor rather than a cap. The two-day log is exactly how to set it with real data instead of a guess.</div>
+      <div style="margin-bottom:8px"><strong>Breakfast is the anchor habit and should not be touched:</strong> two eggs, cottage cheese, feta, half avocado, protein shake. It appears on essentially every logged day.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>Food logging is a strength, not a gap.</strong> <code>food_journal/list</code> returns <strong>66 entries across 28 distinct days, unbroken 21 Aug to 9 Sep</strong>, each described meal by meal. The <strong>Macros Journal is separately empty</strong> (<code>total: 0</code>), which is the field the SOP checks, so the automated read says "photo task needed". It is not. <strong>Do not add a photo food journal task.</strong> What is missing is the macro numbers, which she calculates outside the Kalos app. Draft 2 asks her to add protein, carbs and calories under her existing entries on Mon 14 and Tue 15 Sep.</div>
+      <div style="margin-bottom:8px"><strong>The food-quality swap has already landed.</strong> 3 Sep entry: <em>"Protein pasta, ground beef, red sauce with cottage cheese, protein Caesar salad 21g"</em>. That is exactly what was asked for on 26 and 31 Aug. Reinforce it, do not ask again.</div>
+      <div style="padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>Open question from 1 Sep, nine days unanswered:</strong> whether she should stay under a calorie or carb number. Her reported day was <strong>1882 kcal, 131 g carbs, 170 g protein</strong>. Draft 0 answers it with Daniel's own numbers: roughly <strong>1,650 to 1,700</strong> framed explicitly as an educated guess, with the real levers being protein at 135, carbs around training, and fats in the 50 to 70 g range, and the close <em>"if the weight is not moving up the way we want it to, we just add to it."</em></div>
     </div>
   </div>
 
   <!-- 7 - In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted Sep 9, not yet sent</span></div>
+    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted 9 Sep, refreshed 10 Sep, still not sent</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 9, not yet sent &middot; never asked of her before</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered: sleeves and shoulders sitting tighter, looking fuller rather than smaller, weights feeling lighter in her hand, and how leg day feels now compared with that first week when she could not get in and out of the car.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; not sent &middot; never asked of her before</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered: sleeves and shoulders sitting tighter, looking fuller rather than smaller, weights feeling lighter in her hand, and how leg day feels now compared with that first week when she and Jayce were helping each other into the car.</div>
       </div>
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 9, not yet sent &middot; renewal IS in play, her 4-week term ended before scan day</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BUILD arc: a number on a lift she would not have believed in August, leg day being the session she looks forward to instead of the one she survives, clothes sitting differently as the shape changes even while the scale barely moves, being the one who carries everything for the kids without thinking about it.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; not sent &middot; renewal IS in play, her 4-week term ended before scan day</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BUILD FIRST, BURN SECOND arc: a number on a lift she would not have believed in August, leg day being the session she looks forward to instead of the one she survives, clothes sitting differently as the shape changes even while the scale barely moves, being the one who carries everything for the kids without thinking about it. Closes by naming the order plainly, muscle first and the leaning out after.</div>
       </div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in her own words:</strong><br><em>"Ok gotcha, my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> (1 Sep, unanswered)<br><em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> (3 Sep, and she did exactly that)</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in her own words:</strong><br><em>"Ok gotcha, my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> (1 Sep, unanswered)<br><em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> (3 Sep, and she did exactly that)<br><em>"After those squats with 35lb I can't even walk I think I'll do half the weight."</em> (17 Aug, the moment the lower body reset began)</div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> <strong>Kat replies quickly and in detail, usually the same day</strong>, so silence from her on either question would mean something and is worth asking about in the room rather than treated as normal.</div>
     </div>
   </div>
@@ -3283,17 +3329,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div style="margin-bottom:8px"><strong>1. Open on the interruption she handled well, not on the numbers.</strong> She flagged something, got it checked, got cleared, and lost one session doing it. Most people go quiet for a month. Then name the ladder she called for herself, 10 on Friday and 15 on Monday, because she did exactly what she said she would.</div>
       <div style="margin-bottom:8px"><strong>2. Lead the numbers with ALMI at the 20th percentile and lean mass.</strong> That is the axis the whole plan turns on. Let body fat be the second thing she hears rather than the first, and <strong>do not lead with the legs.</strong></div>
       <div style="margin-bottom:8px"><strong>3. Be explicit about the order and the timeline.</strong> Muscle first, leaning out second. She was told roughly 12 months at intro and she is five weeks in, so say where five weeks sits inside that.</div>
-      <div style="margin-bottom:8px"><strong>4. Answer the calorie question.</strong> Eight days open as of the scan week. Come with a floor, not a cap, and use the two-day log if it exists by then.</div>
-      <div style="margin-bottom:8px"><strong>5. Get a real why on the record.</strong> There is nothing on file. This is the single most valuable thing to leave the room with.</div>
-      <div style="margin-bottom:8px"><strong>6. Leave out bone density, T-score and Z-score entirely.</strong> The window is five weeks and it will read as noise.</div>
-      <div style="margin-bottom:8px"><strong>7. Say out loud that this is her first delta.</strong> One scan on file, so this is the first honest projection she has ever had.</div>
-      <div style="margin-bottom:8px"><strong>8. Do not lead with Gold Standard numbers.</strong> Use her own percentage gains instead: lat pulldown up 60%, seated row up 40%, incline press up 100%.</div>
-      <div style="margin-bottom:8px"><strong>9. The renewal is live and her term has already closed.</strong> Get her 6-to-12-month picture on the record before any offer.</div>
-      <div><strong>10. Duo with Jayce, but they are on different arcs.</strong> He is on direct fat loss, she is build first. Their memberships and scan histories are separate. Do not pitch them as one unit.</div>
+      <div style="margin-bottom:8px"><strong>4. Answer the calorie question before the scan, not at it.</strong> Nine days open. Draft 0 has the answer written and goes first.</div>
+      <div style="margin-bottom:8px"><strong>5. Praise the food log specifically and by number.</strong> 28 unbroken days is exceptional and almost certainly unremarked so far. Then ask only for the macro numbers, which is the one thing missing.</div>
+      <div style="margin-bottom:8px"><strong>6. Get a real why on the record.</strong> There is nothing on file. This is the single most valuable thing to leave the room with.</div>
+      <div style="margin-bottom:8px"><strong>7. Leave out bone density, T-score and Z-score entirely.</strong> The window is five weeks and it will read as noise.</div>
+      <div style="margin-bottom:8px"><strong>8. Say out loud that this is her first delta.</strong> One scan on file, so this is the first honest projection she has ever had.</div>
+      <div style="margin-bottom:8px"><strong>9. Do not lead with Gold Standard numbers.</strong> Use her own percentage gains instead: incline press +100%, tricep pushdown +75%, DB bench +60%, lat pulldown +40%.</div>
+      <div style="margin-bottom:8px"><strong>10. The renewal is live and her term has already closed.</strong> Get her 6-to-12-month picture on the record before any offer. Note that <strong>Jayce paid for her 4-week</strong>, so the decision may not be hers alone.</div>
+      <div><strong>11. Duo with Jayce, but they are on different arcs.</strong> He is on direct fat loss, she is build first. Their memberships and scan histories are separate. Do not pitch them as one unit.</div>
     </div>
   </div>
 
-</div><!-- end modal-kat -->
+</div><!-- end modal-kat --><!-- end modal-kat -->
 
   <!-- ── ANUJ CHAKARAPANI MODAL ── -->
 <div id="modal-anuj" class="modal-content"
