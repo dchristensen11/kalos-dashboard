@@ -710,9 +710,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div>
 
 
-<!-- ═══════════ SEP 20 — LILY LEE (SECOND · DUO) ═══════════ -->
+<!-- ═══════════ SEP 20 — LILY LEE (SECOND · SOLO) ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Sunday · September 20, 2026 &mdash; Second Scan (Duo) · San Jose · 12:30 PM</div>
+  <div class="day-label">Sunday · September 20, 2026 &mdash; Second Scan · San Jose · 12:30 PM</div>
   <div class="cards-row">
 
     <!-- ── LILY LEE ── -->
@@ -724,12 +724,12 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         </div>
         <div class="card-badges">
           <span class="badge badge-lbm">Lean Mass</span>
-          <span class="badge" style="background:#f59e0b22;border:1px solid #f59e0b55;color:#fbbf24">Duo · partner unset</span>
+          <span class="badge badge-scan">12:30 PM</span>
         </div>
       </div>
       <div class="scan-row">
         <span>📅</span>
-        <span><strong>Sunday, September 20 &middot; 12:30&ndash;1:30 PM</strong> (Google Calendar, work cal) &middot; Second Kalos <strong>Duo</strong> DEXA, 60-min block &middot; <strong style="color:#f59e0b">Member 2 is NOT SET in Iris and there is no second action button on the meeting record. The partner is unknown and their prep will not generate.</strong> &middot; <strong style="color:#c2410c">CONVERSION MOMENT, the 4-week closes here. Iris member dash: 4 Week, Active, Aug 22 &rarr; end date Sep 20, scan day itself. (Search row says Sep 22; either way the cliff is on the scan.)</strong></span>
+        <span><strong>Sunday, September 20 &middot; 12:30 PM</strong> (Google Calendar, work cal) &middot; Second Kalos DEXA, <strong>solo</strong> &middot; <em>Acuity has the event titled "Second Kalos Duo DEXA Scan" on a 60-minute block; Daniel confirmed 13 Sep it is a single, so the title and block length are wrong in Acuity, not the booking.</em> &middot; <strong style="color:#c2410c">CONVERSION MOMENT, the 4-week closes here. Iris member dash: 4 Week, Active, Aug 22 &rarr; end date Sep 20, scan day itself. (Search row says Sep 22; either way the cliff is on the scan.)</strong></span>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -777,11 +777,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         </div>
         <div class="checklist-items" id="items-lily">
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Baseline DEXA pulled (Aug 22, whole-body, PDF + Iris results dash agree)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Scan date + time confirmed from work calendar (Sep 20, 12:30 PM, duo block)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Scan date + time confirmed from work calendar (Sep 20, 12:30 PM)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Iris membership, why, injuries, coaching queue pulled</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Everfit consistency, lift history, assignments, food journal, full thread read</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lily')"><span> Modal built from real data (Sep 13 week-out)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lily')"><span> ⚠️ Duo partner identified and Member 2 set in Iris</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lily')"><span> Pre-scan opener sent (scorecard on the Sep 8 goblet target)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lily')"><span> Lift targets + nutrition sent (RDL / DB Bench / Single Arm Row + P2 phase note)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lily')"><span> "What have you noticed" + "6 to 12 months" questions sent</span></label>
@@ -4117,7 +4116,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- ── LILY LEE MODAL ── -->
 <div id="modal-lily" class="modal-content"
      data-name="Lily Lee"
-     data-sub="Second Scan (Duo) · Sunday, September 20, 2026 · 12:30 PM · Lean Mass / Longevity · F · 58">
+     data-sub="Second Scan · Sunday, September 20, 2026 · 12:30 PM · Lean Mass / Longevity · F · 58">
 
   <script>
   window.__scan1_lily = {
@@ -4134,11 +4133,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   };
   </script>
 
-  <!-- 0 - Duo blocker -->
-  <div class="dp-section" style="border-left:4px solid #f59e0b;background:#fffbeb">
-    <div class="dp-title" style="color:#92400e">⚠️ This is a DUO and the second person is unknown</div>
+  <!-- 0 - Booking note -->
+  <div class="dp-section" style="border-left:4px solid #22c55e;background:#f0fdf4">
+    <div class="dp-title" style="color:#166534">✅ Solo second scan, resolved</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      Google Calendar has it as <strong>"Lily Lee: Second Kalos Duo DEXA Scan San Jose"</strong>, Sun Sep 20, <strong>12:30&ndash;1:30 PM</strong>, a 60-minute duo block. Acuity names only one person on a duo, so that is expected. But the Iris meeting record (<code>/meetings/127742</code>) does not carry the partner either: <strong>Member 1 Lily Lee, Member 2 "Select member..." &mdash; "(second member not set)"</strong>, and there is <strong>no second action button</strong>, which is the point at which we ask rather than guess. Iris will not generate prep for Member 2 until it is set. Her 10-day transcript mentions a significant other whose protein powder she borrowed, but that is an inference and has not been treated as a booking. <strong>Ask Daniel who she is scanning with, then set Member 2.</strong> Nothing in the four week-out DMs depends on it.
+      <strong>Daniel confirmed 13 Sep: this was never a duo. It is a single, for a second scan.</strong>
+      Worth knowing where the confusion came from, because it is still wrong at source: Google Calendar carries the
+      event as <strong>"Lily Lee: Second Kalos Duo DEXA Scan San Jose"</strong> on a <strong>60-minute</strong>
+      block (12:30&ndash;1:30 PM), and the Iris meeting record (<code>/meetings/127742</code>) shows
+      Member 2 as "(second member not set)" with no second action button. Both read exactly like a duo whose
+      partner was never filled in. <strong>The Acuity appointment type and the 60-minute block are mistyped and
+      hold a slot that could take a second single.</strong> Nothing in her four week-out DMs referenced a partner,
+      so none of them needed changing.
     </div>
   </div>
 
