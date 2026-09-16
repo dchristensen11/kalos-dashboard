@@ -774,7 +774,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('marissa')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-marissa">4/9</span>
+            <span class="checklist-progress-badge badge-partial" id="prog-marissa">7/8</span>
             <span class="checklist-chevron" id="chev-marissa">›</span>
           </div>
         </div>
@@ -782,11 +782,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Baseline DEXA pulled (Aug 3 duo intro)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Iris membership, why, injuries, coaching queue pulled</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Everfit consistency, assignments, food journal, full thread read</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Modal built from real data (week-out, Sep 2)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('marissa')"><span> Home programme swapped from bands to dumbbells (done Sep 2)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('marissa')"><span> Pre-scan opener + lift targets sent</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('marissa')"><span> Reflection questions sent (noticed + 6-to-12-month)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('marissa')"><span> Night-before refresh + audio briefing + Slack post to Joshua</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Modal built from real data (refreshed Sep 15)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Home programme swapped from bands to dumbbells (done Sep 2)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Pre-scan opener + lift targets sent &middot; sent Sep 2</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('marissa')"><span> Reflection questions sent (noticed + 6-to-12-month) &middot; sent Sep 2, still no reply 13 days later</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('marissa')"><span> Night-before refresh + audio briefing + Slack post to Joshua &middot; refresh + audio done, Slack pending Daniel's confidence numbers</span></label>
         </div>
       </div>
     </div>
@@ -858,19 +858,19 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="checklist-header" onclick="toggleChecklist('jayce')">
       <span class="checklist-title">✅ Pre-Scan Prep</span>
       <div class="checklist-right">
-        <span class="checklist-progress-badge" id="prog-jayce">2/8</span>
+        <span class="checklist-progress-badge badge-partial" id="prog-jayce">6/8</span>
         <span class="checklist-chevron" id="chev-jayce">›</span>
       </div>
     </div>
     <div class="checklist-items" id="items-jayce">
       <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Card built from live data (refreshed Sep 10)</span></label>
-      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Modal built from live data (refreshed Sep 10)</span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Pre-scan opener sent &middot; <strong>redrafted Sep 10, not yet sent</strong></span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Lift targets + nutrition sent &middot; <strong>redrafted Sep 10 onto Fri 11 + Mon 14, not yet sent</strong></span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> "What have you noticed" question sent &middot; <strong>never asked of him before</strong></span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> 6-to-12-month question sent &middot; <strong>renewal IS in play, 4-week closes on or before scan day</strong></span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>needed, Macros Journal empty</strong></span></label>
-      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Modal built from live data (refreshed Sep 15)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Pre-scan opener sent &middot; <strong>sent 10 Sep, 1:00 PM</strong></span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Lift targets + nutrition sent &middot; <strong>sent 10 Sep &middot; neither target session happened</strong></span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> "What have you noticed" question sent &middot; <strong>sent 10 Sep, no reply</strong></span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> 6-to-12-month question sent &middot; <strong>sent 10 Sep, no reply &middot; renewal IS in play</strong></span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('jayce')"><span> Food journal task added (Mon Sep 14 + Tue Sep 15) &middot; <strong>asked for in the week-out message; no photos landed, window has passed</strong></span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('jayce')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>) &middot; <strong>already recorded</strong></span></label>
     </div>
   </div>
 </div>
@@ -952,20 +952,20 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('kat')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-kat">2/8</span>
+            <span class="checklist-progress-badge badge-done" id="prog-kat">8/8</span>
             <span class="checklist-chevron" id="chev-kat">›</span>
           </div>
         </div>
         <div class="checklist-items" id="items-kat">
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Card built from live data (rebuilt Sep 10)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Modal built from live data (rebuilt Sep 10)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Calorie answer sent (Draft 0) &middot; <strong style="color:#dc2626">9 days open, goes FIRST</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 9, refreshed Sep 10, not yet sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 9, food-log paragraph rewritten Sep 10, not yet sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> "What have you noticed" question sent &middot; never asked of her before</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> 6-to-12-month question sent &middot; <strong>renewal IS in play, 4-week term ended before scan day</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Calorie answer sent (Draft 0) &middot; <strong style="color:#16a34a">sent 10 Sep</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Pre-scan opener sent &middot; <strong>sent 10 Sep</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Lift targets + nutrition sent &middot; <strong>sent 10 Sep</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> "What have you noticed" question sent &middot; <strong>sent and answered 10 Sep</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> 6-to-12-month question sent &middot; <strong>sent and answered 10 Sep &middot; renewal IS in play</strong></span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Food journal task &middot; <strong>not needed, 28 straight days already logged</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kat')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kat')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>) &middot; <strong>already recorded</strong></span></label>
         </div>
       </div>
     </div>
@@ -1965,7 +1965,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- ── MARISSA GRAY MODAL ── -->
 <div id="modal-marissa" class="modal-content"
      data-name="Marissa Gray"
-     data-sub="Second Scan · RESCHEDULED to September 16, 2026 (time unconfirmed) · Lean Mass / Longevity · F · 49">
+     data-sub="Second Scan · September 16, 2026 · 11:15 AM per calendar (Daniel's Sep 8 reply referenced the old 12:30 PM slot; unconfirmed with her since) · Lean Mass / Longevity · F · 49">
 
   <script>
   window.__scan1_marissa = {
@@ -1983,9 +1983,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </script>
 
   <div class="dp-section" style="border-left:4px solid #f59e0b;background:#fffbeb">
-    <div class="dp-title" style="color:#92400e">📅 Rescheduled to Sep 16 <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">UPDATED Sep 8, 8:15 PM</span></div>
+    <div class="dp-title" style="color:#92400e">📅 Scan time: confirm before tomorrow <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">UPDATED Sep 15, night-before</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      Daniel: "We just rescheduled Marissa for 1 week from tomorrow. It is now on the 16th instead of tomorrow." Told after the Sep 9 night-before brief below had already been built (she had messaged at 1:33 PM that she was still out of town, nobody had replied at that point). <strong>Google Calendar has not picked up the change as of this note</strong>, still showing the old Sep 9 12:30 PM Acuity event, last touched Sep 4, likely just sync lag. The new date is set on Daniel's word; the exact new time is unconfirmed. Everything below (consistency, reflection status, coaching corrections) was gathered fresh tonight and is still a useful starting point, but needs a proper re-sweep the evening before Sep 16.
+      Google Calendar (<code>daniel@livekalos.com</code>, the authoritative source per SOP, event last updated Sep 9) has the scan at <strong>11:15&ndash;11:45 AM</strong>. Daniel's Everfit reply the evening of the reschedule (Sep 8, 7:37 PM) said "I kept it at the same time," referring back to the prior 12:30 PM slot. <strong>She has not replied since to confirm which time she is expecting</strong>, 7 days of silence as of tonight. Calendar wins per SOP, so this brief runs on 11:15 AM, but this is worth a quick text tonight or morning-of to avoid a wrong-time no-show.
     </div>
   </div>
 
@@ -2021,7 +2021,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>She may not show tomorrow.</strong> At 1:33 PM Sep 8 she messaged that she is still out of town and wants to reschedule to next Wed or Fri. As of this refresh nobody has replied and the calendar still shows the appointment confirmed. Building this brief on the calendar per SOP, but budget for a possible no-show.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Scan time is genuinely unresolved.</strong> Daniel replied the same evening (Sep 8, 7:37 PM) confirming the move to Sep 16 and referencing the old 12:30 PM slot; the calendar independently shows 11:15 AM. She has not replied since, 7 days of silence as of tonight. Building this brief on the calendar per SOP, but a quick confirmation text avoids a wrong-time no-show.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Zero completed sessions survived the fix.</strong> All 22+ assigned sessions since Aug 9 show Missed, including Mon Sep 7, the corrected dumbbell session the week-out targets were built around and her only realistic pre-scan session. The Sep 2 programme swap (bands to dumbbells) removed the equipment excuse but did not change the pattern. <strong>The number is real. The interpretation is not settled.</strong></span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Home programme is fixed, one leftover is not.</strong> The bands-only sessions became <code>RECOMP | DUMBBELLS</code> on Sep 2. Still in there: a <strong>Band Pull Apart 4x12</strong> inside the new dumbbell session for a member who owns no bands. She was given a rear delt fly substitution in her message. <strong>The workout assigned on scan day itself, Sep 9, is now <code>RECOMP | DUMBBELLS | FULLBODY A | P2</code></strong> per Iris's live calendar (updated with the Sep 2 swap), still worth moving off scan day.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>P1 → P2 fired Sep 4</strong>, adding load and volume, off zero completed P1 sessions. Iris's own prompt said review the phase before it starts.</span></div>
@@ -2078,17 +2078,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 7 - In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Sep 8</span></div>
+    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Sep 15</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">· sent Sep 2, seen Sep 4, not answered as of Sep 8</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Seen and not answered. Prompts offered: sleeves and shoulders tighter, looking fuller rather than smaller, the 10 lb dumbbells feeling lighter, and whether the morning lower-back stiffness has changed.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">· sent Sep 2, seen Sep 4 (unverified this session, carried forward), still not answered &mdash; 13 days</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Not answered. Prompts offered: sleeves and shoulders tighter, looking fuller rather than smaller, the 10 lb dumbbells feeling lighter, and whether the morning lower-back stiffness has changed.</div>
       </div>
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">· sent Sep 2, seen Sep 4, not answered as of Sep 8 · renewal IS in play</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Seen and not answered. Examples offered were matched to a BUILD FIRST arc: carrying real muscle so the shape changes without the scale being the story, knowing what to do with the machines, getting back to something physical from her athletic past, arriving at 50 feeling solid.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">· sent Sep 2, still not answered &mdash; 13 days · renewal IS in play</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Not answered. Examples offered were matched to a BUILD FIRST arc: carrying real muscle so the shape changes without the scale being the story, knowing what to do with the machines, getting back to something physical from her athletic past, arriving at 50 feeling solid.</div>
       </div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>What she has volunteered instead, unprompted:</strong><br><em>"I've actually been very good about my work outs and diet just not so good about uploading and reporting on the info."</em> (Aug 18)<br><em>"Let's just connect at the next scan. I'm rolling with your guidance and being good."</em> (Aug 26)<br><em>"Okay so I did the full arm work out at the gym tonight!"</em> (Aug 11)<br><em>"Hey there. I am still oot. I will need to schedule for next week sometime. Next Wednesday or Friday would be best."</em> (Sep 8, 1:33 PM, unanswered as of this refresh)</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>What she has volunteered instead, unprompted:</strong><br><em>"I've actually been very good about my work outs and diet just not so good about uploading and reporting on the info."</em> (Aug 18)<br><em>"Let's just connect at the next scan. I'm rolling with your guidance and being good."</em> (Aug 26)<br><em>"Okay so I did the full arm work out at the gym tonight!"</em> (Aug 11)<br><em>"Hey there. I am still oot. I will need to schedule for next week sometime. Next Wednesday or Friday would be best."</em> (Sep 8, 1:33 PM)<br><strong>Daniel's reply</strong> (Sep 8, 7:37 PM): confirmed the move to Sep 16, "I kept it at the same time." <strong>She has not replied since &mdash; 7 days of silence.</strong></div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> if she shows and the reflection questions are still unanswered, ask both out loud in the room before showing a single number. She has already told us she believes she has been doing the work; the scan is about to confirm or contradict her own account of herself. Get her version on the record first, then reveal.</div>
     </div>
   </div>
@@ -2834,7 +2834,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="jayce-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
       <div class="success-win"><span class="win-icon">⚠️</span><span class="win-text"><strong>He told Daniel on 5 Sep he has been running "a big massive calorie deficit."</strong> Daniel warned about muscle loss. That statement sitting on top of a training week that has stopped is the single most important thing to hold in mind when the lean-mass number comes up.</span></div>
-      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Three assigned sessions in a row are now unlogged.</strong> Fri 4 Sep <strong>never opened</strong>, Mon 7 Sep <strong>opened with nothing recorded</strong>, Wed 9 Sep <strong>never opened</strong>. Last session with numbers in it was <strong>2 Sep, eight days ago</strong>. 8 of 11 over 30 days is <strong>73%</strong>, and the weeks read 3/3, 3/3, 2/3, then 0 of 2 this week.</span></div>
+      <div class="success-win"><span class="win-icon">📉</span><span class="win-text"><strong>Five assigned sessions in a row are now missed.</strong> Fri 9/4, Mon 9/7, Wed 9/9, Fri 9/11, Mon 9/14, all confirmed "Missed" on the Everfit calendar. Last completed session with numbers in it is still <strong>Sep 2, thirteen days ago</strong>. Last food-journal entry is <strong>Sep 5</strong>, ten days ago; Everfit's own activity feed confirms nothing logged of any kind, workout, meal or task, since then.</span></div>
       <div class="success-win"><span class="win-icon">🔴</span><span class="win-text"><strong>His 4-week closes on or before scan day.</strong> Iris disagrees with itself: the global search row reads <strong>ends Sep 12</strong>, the member dashboard reads <strong>End Date Sep 16</strong>. Either way he is at the edge or just past it when he walks in. Conversion moment, with the runway already behind him. Settle which date is real before quoting one to him.</span></div>
       <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>Bent over row 100, 100, 55 on 2 Sep</strong> is exactly the heavy-first-then-back-off shape Daniel asked for on the 26 Aug call. He found it himself after swapping off the machine, so his judgement was right and he should hear that. It is the best thing to open on.</span></div>
       <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>He went back and finished the Fri 28 Aug lower session</strong> that was sitting open at the last check-in, with real sets logged, and he substituted his way around four machines his gym does not have to do it. That is the follow-through most people never do.</span></div>
@@ -2842,8 +2842,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     </div>
     <div class="success-targets">
       <div class="success-targets-label"><strong>Three things to settle before or at the scan:</strong></div>
-      <div class="success-target-item"><strong>The 2-day photo food journal task does not exist yet.</strong> Macros Journal returns <code>total: 0</code>, checked twice on 10 Sep, so the task is needed and is not noise. It belongs on <strong>Mon 14 Sep and Tue 15 Sep</strong> as two separate one-off tasks. The drafted nutrition message asks him for the two days directly and makes no claim that a calendar task exists, so it stays truthful either way.</div>
-      <div class="success-target-item"><strong style="color:#ea580c">Friday 11 Sep leads with equipment he does not have.</strong> P2 Lower opens with Leg Press 3&times;12 and Leg Press Calf Raises 3&times;15, plus a Prone Lying Hamstring Curl Machine. On the 26 Aug call he said <em>"we don't have leg presses, which I need to find which gym that Google has has leg presses"</em>, and he substituted every machine out of the 28 Aug lower session. The drafted message gives him swaps, but the programme is worth editing.</div>
+      <div class="success-target-item"><strong style="color:#dc2626">The week-out message was sent 10 Sep, 1:00 PM, and neither target landed.</strong> It named the training silence to him directly, set Friday's barbell split squat and Monday's squat/bench (125&times;8&times;3) as concrete pre-scan targets, and asked for Mon+Tue food photos plus both reflection questions. Neither session happened, no food photos landed, no reply to either reflection question. That gap, not a missing message, is what the room needs to open on.</div>
+      <div class="success-target-item"><strong style="color:#ea580c">Friday 11 Sep led with equipment he does not have</strong> and he did not train it anyway. P2 Lower opens with Leg Press 3&times;12 and Leg Press Calf Raises 3&times;15, plus a Prone Lying Hamstring Curl Machine. On the 26 Aug call he said <em>"we don't have leg presses, which I need to find which gym that Google has has leg presses"</em>, and he substituted every machine out of the 28 Aug lower session. Still worth a programme edit for future Lower days.</div>
       <div class="success-target-item"><strong style="color:#ea580c">His Wed 16 Sep upper session is programmed on scan day</strong>, and the scan is at 12:30. Tell him to train after the scan, not before.</div>
     </div>
   </div>
@@ -2865,7 +2865,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="coaching-points">
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>4-week closes on or before scan day.</strong> Iris search row says Sep 12, member dashboard says Sep 16. Conversion moment either way, and he may be off contract in the room.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Self-reported extreme deficit plus three unlogged sessions in a row.</strong> Prepare for a lean-mass reading that needs framing, and for the conversation about why the deficit has to come up rather than down.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Last completed session 2 Sep, eight days ago.</strong> 73% over 30 days. Fri 4 Sep and Wed 9 Sep were never opened; Mon 7 Sep was opened with nothing logged. Those are different behaviours and the adherence line counts them the same.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Last completed session 2 Sep, thirteen days ago, and it is now five straight misses.</strong> Fri 9/4, Mon 9/7, Wed 9/9, Fri 9/11, Mon 9/14 all show "Missed." Food journal has been silent the same length of time, last entry 5 Sep. Daniel named this to him directly in writing on 9/10 with two concrete pre-scan targets; neither happened.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Context for the drop-off: made "second in command" covering for an injured boss</strong> (confirmed in the 26 Aug call transcript and a 5 Sep DM), timing lines up almost exactly with when training stopped. Open the room by asking directly whether this is now a structural conflict with 3x/week training or a two-week dip, not by assuming either answer.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Old left-shoulder injury.</strong> Measured on this scan as <strong>7.7% less lean mass in the left arm than the right</strong> (4,836.7 g vs 5,242.4 g); his notes recorded it as roughly 10%. No current mobility limits, but do not let him grind to failure on pressing.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Recovering from a prior lower-body issue</strong>, ongoing soreness through biceps, triceps and legs, and a recent hamstring cramp. The plan for that is hydration, electrolytes and potassium, and Friday's session is heavy on the legs.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Equipment gap, and it is programmed against him.</strong> No leg press at his gym, by his own account. Friday 11 Sep opens with two leg press movements plus a machine hamstring curl, and he substituted four machines out of the 28 Aug lower session. Worth a programme edit for future Lower days.</span></div>
@@ -2929,29 +2930,29 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 7 - In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted Sep 10, not yet sent</span></div>
+    <div class="dp-title">💬 In Their Own Words <span style="background:#fee2e2;color:#991b1b;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">SENT Sep 10, NO REPLY</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 10, not yet sent &middot; never asked of him before</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered, matched to a fat-loss goal: waistband, how his work shirts sit, his face in the mirror, whether the late night cravings are easier to walk past, and how he feels in the pool with his son.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; sent Sep 10, 1:00 PM &middot; no reply</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Sent, not answered. A "seen" avatar marker appears under Daniel's messages, but no reply text exists anywhere after that timestamp &mdash; weak evidence of engagement, not proof. Prompts offered, matched to a fat-loss goal: waistband, how his work shirts sit, his face in the mirror, whether the late night cravings are easier to walk past, and how he feels in the pool with his son.</div>
       </div>
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 10, not yet sent &middot; renewal IS in play, 4-week closes on or before scan day</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BURN arc and anchored on his why: a waistband he has stopped thinking about, walking into an Army physical without having to train up for it first, swimming a real set with his son instead of two laps, energy that holds through the late nights at work.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; sent Sep 10, 1:00 PM &middot; no reply &middot; renewal IS in play, 4-week closes on or before scan day</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Sent, not answered anywhere in the app. Since it never got an answer, open it live in the room. Examples matched to a BURN arc and anchored on his why: a waistband he has stopped thinking about, walking into an Army physical without having to train up for it first, swimming a real set with his son instead of two laps, energy that holds through the late nights at work.</div>
       </div>
       <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in his own words:</strong><br><em>"I've been doing a big massive calorie deficit btw."</em> (5 Sep)<br><em>"It's been hard fighting late night cravings but I have been eating sleep. So no Taco Bell."</em> (2 Sep)<br><em>"I do feel guilty of the workouts because, like, I know I can go harder."</em> (26 Aug call)<br>On the 26 Aug call he also said he put two plates on the bench and moved it clean after a long time away, and that he swims with his son, who he put into swim class.</div>
-      <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> he replies short and late but he does reply, "Understood", "Will do", "No worries". <strong>Silence from him would be a change, not his baseline</strong>, so treat no answer to either question as a signal worth asking about in the room rather than as normal.</div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> he replies short and late but he does reply, "Understood", "Will do", "No worries". <strong>Ten days of total silence is a real change from his baseline</strong>, not just an unanswered question &mdash; open the 12-month question live in the room since it never landed anywhere else.</div>
     </div>
   </div>
 
   <!-- 8 - Scan-Day Focus -->
   <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
-    <div class="dp-title">💚 Scan-Day Focus: Lead With ALMI, Then Have The Deficit Conversation</div>
+    <div class="dp-title">💚 Scan-Day Focus: A Bandwidth Conversation, Not A Capability One</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>1. Open on the row he fixed himself on 2 Sep, and the Friday session he went back and finished.</strong> He responds to being told his judgement was right, and both of those were his own decisions rather than compliance.</div>
-      <div style="margin-bottom:8px"><strong>2. Lead the numbers with ALMI at the 61st percentile.</strong> The lean base is there, that is the asset, and it reframes the whole scan from "you are 30.5% body fat" to "you already own the muscle, we are uncovering it." Then bring in trunk fat and VAT as the specific thing being worked on, not the whole-body number.</div>
-      <div style="margin-bottom:8px"><strong>3. The conversation this scan has to have is the deficit.</strong> Whatever the lean number does, the message is the same. An extreme deficit costs him the exact thing his why depends on, capability and muscle memory. If lean held, that is his protein habit plus luck and it will not hold for another four weeks at that intake. If lean dropped, it is the evidence.</div>
-      <div style="margin-bottom:8px"><strong>4. Do not scold the missed sessions, ask what changed.</strong> He went 3/3, 3/3 for three weeks and then stopped dead on 4 Sep. He is covering for an injured boss and working nights. Something happened, and finding out what is worth more than the adherence number.</div>
+      <div style="margin-bottom:8px"><strong>1. Name the silence directly, then connect it to the workload, not his character.</strong> Ten days of total app silence and five straight missed sessions, walking into the conversion scan. He was told this in writing on 9/10 with two concrete, achievable targets and neither happened. Do not repeat any "training's going well" framing tonight.</div>
+      <div style="margin-bottom:8px"><strong>2. Lead the numbers with the 2 Sep session, the best data point in the file.</strong> Three personal bests that day (incline bench, lateral raise, bent-over row split 100/100/55), exactly the heavy-then-back-off shape asked for on the 26 Aug call, and he adjusted the load himself. That proves the system works the moment he shows up, so this is a consistency conversation, not a capability one.</div>
+      <div style="margin-bottom:8px"><strong>3. Then bring in ALMI (61st percentile) and VAT (132.7, over double the target) as the health stakes.</strong> The lean base is there; the job is uncovering it, and VAT ties directly to the things he says he cares about, being around for his kids and passing the physical.</div>
+      <div style="margin-bottom:8px"><strong>4. Ask directly whether the new "second in command" workload is a real, ongoing conflict with 3x/week training or a two-week dip.</strong> This is a live question for the room, not something the data can answer. His own answer should drive the next block, not an assumption either way.</div>
       <div style="margin-bottom:8px"><strong>5. Fix the Lower programme while he is in the room.</strong> His gym has no leg press and P2 Lower opens with two leg press movements plus a machine hamstring curl. He has been quietly substituting his way around this since August.</div>
       <div style="margin-bottom:8px"><strong>6. Leave out bone density, T-score and Z-score entirely.</strong> The window is four to five weeks and BMD does not move on that timescale.</div>
       <div style="margin-bottom:8px"><strong>7. Do not lead with Gold Standard numbers.</strong> They are inflated by his bodyweight. Use the Army physical standard he is training toward instead, which is a live goal he already owns.</div>
@@ -2986,7 +2987,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">Pre-Scan Snapshot <span class="badge-pending" id="kat-scan-badge">Scan 2 Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>10 of 11 assigned sessions in five weeks, 91%,</strong> and 3 of 3 in the last seven days. The only miss, 28 Aug, sits inside the two weeks her lower body was deliberately held.</span></div>
+      <div class="success-win"><span class="win-icon">✅</span><span class="win-text"><strong>10 of 11 assigned sessions in five weeks, 91%,</strong> and 3 of 3 in the last seven days. The only miss, 28 Aug, sits inside the two weeks her lower body was deliberately held. <strong>She trained again today</strong> (Tue 9/15, ~1:20 PM, Full Body, logged the day before the scan) &mdash; the day-before session is in the bank.</span></div>
       <div class="success-win"><span class="win-icon">💪</span><span class="win-text"><strong>She handled the interruption exactly right.</strong> She flagged the bruising instead of training through it, saw a doctor, was cleared on 3 Sep and was back under the bar on 4 Sep. Then she hit the exact ladder she predicted for herself in writing: <em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> Barbell squat 10 on Friday 4 Sep, hack squat 15 on Monday 7 Sep.</span></div>
       <div class="success-win"><span class="win-icon">📈</span><span class="win-text"><strong>Upper body has climbed with no plateau.</strong> Lat pulldown 25 to 35 (+40%), cable seated row 30 to 35, DB incline bench 10 to 20 on the top set (+100%), tricep pushdown 20 to 35 (+75%), DB bench 12.5 to 20 on the top set (+60%). She made the pushdown jump on her own initiative on 26 Aug before being asked.</span></div>
       <div class="success-win"><span class="win-icon">🍽️</span><span class="win-text"><strong>Her food logging is one of the best on the roster.</strong> 66 photo entries across 28 distinct days, unbroken 21 Aug to 9 Sep, described meal by meal. On 3 Sep she logged <em>"Protein pasta, ground beef, red sauce with cottage cheese, protein Caesar salad 21g"</em>, which is the exact swap asked for on 26 and 31 Aug, made without being chased.</span></div>
@@ -2995,9 +2996,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     </div>
     <div class="success-targets">
       <div class="success-targets-label"><strong>Three things to settle before or at the scan:</strong></div>
-      <div class="success-target-item"><strong>Her 1 Sep question has now been open nine days.</strong> She asked, in her words, <em>"my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> No reply exists. Draft 0 is written with Daniel's own figures and should go before the four week-out messages, not after them.</div>
-      <div class="success-target-item"><strong>Do NOT add a photo food journal task.</strong> The Macros Journal check returns <code>total: 0</code>, which is what the SOP reads, but the photo Food Journal holds 28 unbroken days. What is actually missing is the macro numbers, which she calculates outside the Kalos app. Draft 2 asks her to add protein, carbs and calories under her existing entries on Mon 14 and Tue 15 Sep instead.</div>
-      <div class="success-target-item"><strong style="color:#ea580c">There is no underlying motivation on file at all.</strong> <code>why_strength</code> band is <code>missing</code>, score 0. Get a real why in writing at this scan; every other workflow is running blind without it.</div>
+      <div class="success-target-item"><strong style="color:#16a34a">✅ Her 1 Sep calorie question was answered 10 Sep.</strong> She asked, in her words, <em>"my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> Daniel answered in full via Everfit DM on 10 Sep &mdash; not still open.</div>
+      <div class="success-target-item"><strong>Do NOT add a photo food journal task.</strong> The Macros Journal check returns <code>total: 0</code>, which is what the SOP reads, but the photo Food Journal holds 28 unbroken days. What is actually missing is the macro numbers, which she calculates outside the Kalos app.</div>
+      <div class="success-target-item"><strong style="color:#16a34a">✅ Underlying motivation is now on file.</strong> Populated verbatim from her own 10 Sep reflection reply (Iris Underlying Motivation field now matches the vault record) &mdash; see In Their Own Words below for the exact quotes.</div>
     </div>
   </div>
 
@@ -3017,9 +3018,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="dp-title">Personal Context &amp; Coaching Flags</div>
     <div class="coaching-points">
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Duo meeting 125966 has Member 2 unset.</strong> No Iris prep will generate for Kat until Member 2 is set to Kat Sosa and saved. Carried over from the 9 Sep run, not re-verified today.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Her 1 Sep calorie and carb question is still unanswered</strong>, nine days open. The thread then ends on 3 Sep with her doctor-clearance message and Daniel's "Yay! 😀". Nothing has been sent to her since.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>A complete week-out draft set was written on 9 Sep and never sent.</strong> The refreshed set lives at <code>Deliverables/daily-run/2026-09-10/kat-sosa--prep-milestone.md</code>. Send that one, not the 9 Sep one: two lines in the older Draft 2 are now wrong.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>No underlying motivation on file.</strong> Capture one in the room and write it down.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Her 1 Sep calorie and carb question was answered 10 Sep.</strong> Daniel replied in full via Everfit DM. Not open.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>The week-out set was sent 10 Sep:</strong> opener plus all three lift targets (hack squat, incline DB press, lat pulldown) plus both reflection questions, both answered same day. See In Their Own Words below.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>Underlying motivation is now on file</strong>, captured from her own 10 Sep reply.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Membership ended Sep 9, or Sep 12, the two Iris fields disagree.</strong> Both are before scan day, so the renewal conversation is live and she is currently outside her term. <strong>Jayce is the payer</strong> per the sale note.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Gut Health and Neurotyping links were promised at the 12 Aug intro scan and are still unsent.</strong> Both SOP boxes unticked five weeks later. An outstanding promise, not an omission.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>She is already rebuilding the lower body herself, on the existing programming.</strong> The 31 Aug line <em>"once you have been seen we will build the lower body back up properly"</em> was an instruction to her, not a programme change: lay off while the bruising is checked, then ramp back up on the exercises already in there. Cleared 3 Sep, back under the bar that Friday. Her Iris Current focus reads <em>"Building lower body weights back up gradually (start 10 lb, +5 lb/week)."</em> Hack squat 15 x 12 x 3 on 7 Sep is the ramp in progress. Blank P2 target weights are expected, hers to fill. <strong>Speak to it in the present tense.</strong></span></div>
@@ -3086,18 +3087,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 7 - In Their Own Words -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">💬 In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; drafted 9 Sep, refreshed 10 Sep, still not sent</span></div>
+    <div class="dp-title">💬 In Their Own Words <span style="background:#dcfce7;color:#166534;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">SENT AND ANSWERED 10 Sep, same day</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; not sent &middot; never asked of her before</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Prompts offered: sleeves and shoulders sitting tighter, looking fuller rather than smaller, weights feeling lighter in her hand, and how leg day feels now compared with that first week when she and Jayce were helping each other into the car.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; sent and answered 10 Sep, 1:19 PM</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#2a2a3a"><em>"I started at 10lb and now can lift 20lb which I've never been able to do in reps which is honestly my biggest accomplishment here... to me finishing the workout isn't my mission it's being able to do the reps without failure or giving up mid way."</em></div>
       </div>
       <div style="margin-bottom:10px">
-        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; not sent &middot; renewal IS in play, her 4-week term ended before scan day</span></div>
-        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;font-style:italic;color:#888">Not sent. Examples matched to a BUILD FIRST, BURN SECOND arc: a number on a lift she would not have believed in August, leg day being the session she looks forward to instead of the one she survives, clothes sitting differently as the shape changes even while the scale barely moves, being the one who carries everything for the kids without thinking about it. Closes by naming the order plainly, muscle first and the leaning out after.</div>
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; sent and answered 10 Sep, 1:19 PM &middot; renewal IS in play, her 4-week term ended before scan day</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#2a2a3a"><em>"I want to be lean but muscular... flatter stomach without the baby weight pouch... I want to get to 40lb for upper body, and same for lower body and still be able to move the next day... I'm right now a size 15 in pants and would love to lower that number to feel better about myself."</em></div>
       </div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Already on record in her own words:</strong><br><em>"Ok gotcha, my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> (1 Sep, unanswered)<br><em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> (3 Sep, and she did exactly that)<br><em>"After those squats with 35lb I can't even walk I think I'll do half the weight."</em> (17 Aug, the moment the lower body reset began)</div>
-      <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> <strong>Kat replies quickly and in detail, usually the same day</strong>, so silence from her on either question would mean something and is worth asking about in the room rather than treated as normal.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>Mirror-back phrase for the room:</strong> "40 lb, and still able to move the next day." Also already on record: <em>"Ok gotcha, my total carbs for yesterday was 131g and calories for the full day was 1882cals. Should I stay under a certain number?"</em> (1 Sep, answered 10 Sep)<br><em>"I'll start with 10 and move up to 15 next week Monday for full body."</em> (3 Sep, and she did exactly that)<br><em>"After those squats with 35lb I can't even walk I think I'll do half the weight."</em> (17 Aug, the moment the lower body reset began)</div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> both answers are in hand and unusually specific &mdash; open the room with the 10 lb to 20 lb line as the win, then close on the 40 lb / still-able-to-move-the-next-day phrase as the shared target for the next block.</div>
     </div>
   </div>
 
