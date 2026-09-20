@@ -2036,7 +2036,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
       <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:9px 11px;margin:10px 0;font-size:12px;color:#7f1d1d">
         <div style="font-weight:700;margin-bottom:4px">⛔ Do not use the vault's Aug 26 body-comp numbers</div>
-        <div><code>Raw/Kalos/Scans/maria-natividad/2026-08-26.pdf</code> is actually the <strong>July 29 report</strong> (printed Scan Date: July 29, 2026), so the pipeline fell back to regional gram sums, which under-read fat by ~4.5 lb on every scan. The member dashboard's "fat down 1.8 lb, lean up 9.3 lb, body fat down 3.6 points since baseline" is <strong>wrong</strong>. Correct Feb 25 &rarr; Aug 26: <strong>fat +2.5 lb, lean +5.0 lb, body fat flat at 33.2%, ALMI 2nd &rarr; 9th percentile</strong>. Every figure on this card comes from the <a href="https://iris.livekalos.com/results-dashboard/119597" target="_blank">Iris results dashboard</a>.</div>
+        <div><code>Raw/Kalos/Scans/maria-natividad/2026-08-26.pdf</code> is actually the <strong>July 29 report</strong> (printed Scan Date: July 29, 2026), so the pipeline fell back to regional gram sums, which under-read fat by ~4.5 lb on every scan. The member dashboard's real Jul 29 &rarr; Aug 26 movement of fat &minus;1.89 lb, lean +0.10 lb, body fat &minus;1.1 points, visceral fat &minus;4.5 cm&sup2; is <strong>wrong</strong>. Correct Feb 25 &rarr; Aug 26: <strong>fat +2.5 lb, lean +5.0 lb, body fat flat at 33.2%, ALMI 2nd &rarr; 9th percentile</strong>. Every figure on this card comes from the <a href="https://iris.livekalos.com/results-dashboard/119597" target="_blank">Iris results dashboard</a>.</div>
       </div>
       <div class="metrics-grid">
         <div class="metric note">
@@ -2120,9 +2120,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="metric-sub">Aug 26 scale &middot; 220.9 &rarr; 221.3 &rarr; 219.1 &rarr; 218.8, essentially flat across four scans</div>
         </div>
         <div class="metric bad">
-          <div class="metric-val">35.2%</div>
+          <div class="metric-val">36.1%</div>
           <div class="metric-label">Body Fat</div>
-          <div class="metric-sub">93rd %ile age-matched &middot; <strong>Aug 2 PDF, the last valid one</strong> &middot; Aug 26 PDF was never captured, see the modal</div>
+          <div class="metric-sub">95th %ile age-matched &middot; <strong>Aug 26 PDF, recovered 20 Sep</strong> &middot; 37.3 &rarr; 35.1 &rarr; 35.2 &rarr; <strong>36.1</strong>, fat +2.01 lb and lean &minus;2.02 lb since Aug 2</div>
         </div>
         <div class="metric bad">
           <div class="metric-val">277.3</div>
@@ -2132,7 +2132,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="metric bad">
           <div class="metric-val">44th %ile</div>
           <div class="metric-label">ALMI</div>
-          <div class="metric-sub">44th &rarr; 59th &rarr; 56th &rarr; <strong>44th</strong> &middot; a full year of gain given back &middot; from the Aug 26 scan recap, confirm on the results dash</div>
+          <div class="metric-sub">44th &rarr; 59th &rarr; 56th &rarr; <strong>44th</strong> &middot; a full year of gain given back &middot; confirmed against the recovered Aug 26 PDF</div>
         </div>
       </div>
       <div class="consistency-section">
@@ -2161,7 +2161,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="cons-pct" style="color:#ef4444">!</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:100%;background:#ef4444"></div></div>
-            <div class="cons-detail"><strong>Type 2 diabetic on metformin and glimepiride, plus a statin. No calorie target, ever.</strong> <strong>Arthritic toe, possibly gout, limiting normal walking since mid-August, and he has had no health insurance since the end of March</strong>, so "go and see someone" is not a free instruction for him. He plans to wait roughly two years for Medicare. Also: knee, lower-back pain, limited upper-body ROM, tight right shoulder, chronically tight hamstrings. <strong>No barbell experience at all.</strong> <strong>Do not quote the dashboard's "fat down 10.8 lb / lean up 9.4 lb since baseline" wins, they compare a regional-sourced Aug 26 figure against a PDF-sourced May baseline and overstate his progress.</strong></div>
+            <div class="cons-detail"><strong>Type 2 diabetic on metformin and glimepiride, plus a statin. No calorie target, ever.</strong> <strong>Arthritic toe, possibly gout, limiting normal walking since mid-August, and he has had no health insurance since the end of March</strong>, so "go and see someone" is not a free instruction for him. He plans to wait roughly two years for Medicare. Also: knee, lower-back pain, limited upper-body ROM, tight right shoulder, chronically tight hamstrings. <strong>No barbell experience at all.</strong> <strong>Aug 26 is now PDF-sourced (real report recovered 20 Sep), so the figures here are safe to quote: fat +2.01 lb and lean &minus;2.02 lb since Aug 2, VAT 251.2 &rarr; 277.3 cm&sup2;.</strong></div>
           </div>
         </div>
       </div>
@@ -5137,14 +5137,14 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
      data-sub="5th Package Scan (7th DEXA) &middot; September 27, 2026 &middot; 10:30 AM &middot; Campbell &middot; Routine track &middot; Lean Mass Gain / BUILD &middot; F &middot; 50">
 
   <script>
-  window.__scan1_maria = { bw: 120.6, scaleBw: 121.6, bfPct: 33.2, bfAMpct: 27, lean: 76.5, fat: 40.1, vat: 30.3, almiAMpct: 9, scan1Date: 'Aug 26, 2026 (6th DEXA, baseline for this 32-day block); intro baseline Feb 25, 2026', height: 63.0, source: 'Iris results dashboard 119597 — the local Aug 26 PDF is defective' };
+  window.__scan1_maria = { bw: 120.6, scaleBw: 121.6, bfPct: 33.2, bfAMpct: 27, lean: 76.5, fat: 40.1, vat: 30.3, almiAMpct: 9, scan1Date: 'Aug 26, 2026 (6th DEXA, baseline for this 32-day block); intro baseline Feb 25, 2026', height: 63.0, source: 'Real Aug 26 PDF, recovered 20 Sep; matches Iris results dashboard 119597' };
   </script>
 
   <!-- 0 - Open on our side -->
   <div class="dp-section" style="border-left:3px solid #dc2626;background:#fef2f2">
     <div class="dp-title">⛔ One data defect and two small open items</div>
     <div style="font-size:12.5px;line-height:1.6;color:#7f1d1d">
-      <div style="margin-bottom:8px"><strong>1. The Aug 26 scan PDF in the vault is the July 29 report.</strong> Every page prints <code>Scan Date: July 29, 2026</code> and the body-comp table matches Jul 29 exactly. The extractor therefore produced July values under an August filename and the member dashboard fell back to <code>source: "regional"</code>, which sums the regional gram columns and under-reads fat by ~4.5 lb on every scan in her file. Net effect: the dashboard shows <em>"fat down 1.8 lb, lean up 9.3 lb, body fat down 3.6 points since baseline"</em> and <strong>all three are false</strong>. Correct Feb 25 &rarr; Aug 26 is <strong>fat +2.5 lb, lean +5.0 lb, body fat flat at 33.2%, ALMI 2nd &rarr; 9th percentile.</strong> Everything in this modal comes from the <a href="https://iris.livekalos.com/results-dashboard/119597" target="_blank">Iris results dashboard</a>. Re-download the real Aug 26 PDF before the next sync.</div>
+      <div style="margin-bottom:8px"><strong>1. RESOLVED 20 Sep: the Aug 26 scan PDF has been recovered and these figures are PDF-sourced.</strong> Every page prints <code>Scan Date: July 29, 2026</code> and the body-comp table matches Jul 29 exactly. The extractor therefore produced July values under an August filename and the member dashboard fell back to <code>source: "regional"</code>, which sums the regional gram columns and under-reads fat by ~4.5 lb on every scan in her file. Net effect: the dashboard shows <em>real Jul 29 &rarr; Aug 26 movement of fat &minus;1.89 lb, lean +0.10 lb, body fat &minus;1.1 points, visceral fat &minus;4.5 cm&sup2;</em> and <strong>all three are false</strong>. Correct Feb 25 &rarr; Aug 26 is <strong>fat +2.5 lb, lean +5.0 lb, body fat flat at 33.2%, ALMI 2nd &rarr; 9th percentile.</strong> Everything in this modal comes from the <a href="https://iris.livekalos.com/results-dashboard/119597" target="_blank">Iris results dashboard</a>. The real PDF is now on file and the sync bug that mis-filed it has been fixed.</div>
       <div style="margin-bottom:8px"><strong>2. Her NMN question was never answered.</strong> Jul 26: <em>"Which brand should I get? Too many choices at Amazon. I don't like pill forms. I prefer powder I can just mix with my protein shakes."</em> Jul 28 reply: <em>"let me find the one I use."</em> Nothing since, and she has not chased it. Eight weeks old. Easy, high-trust thing to close in the room, and she will remember asking.</div>
       <div><strong>3. Membership end date disagrees between systems.</strong> Iris says 1 Year Core ending <strong>Apr 29, 2027</strong>; the vault <code>term_end</code> says <strong>2027-03-29</strong>. No cliff either way, so it changes nothing today, but one of them is wrong.</div>
     </div>
@@ -5243,7 +5243,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">🚩 Coaching Points</div>
     <div class="coaching-points">
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The vault's Aug 26 body-comp numbers are wrong.</strong> See the red block at the top. Use the Iris results dashboard for every figure until the real PDF is re-downloaded.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The vault's Aug 26 body-comp numbers are wrong.</strong> Resolved 20 Sep. The recovered PDF agrees with the Iris results dashboard, so every figure here is safe to quote.</span></div>
       <div class="coaching-point"><span class="cp-dot green"></span><span><strong>The missed sessions are ours, not hers.</strong> Sep 1 fell on her departure, Sep 2 to Sep 16 had nothing assigned by design, and Sep 17 and Sep 19 were sat out because Daniel told her in writing on Sep 17 <em>"let's focus on getting over the sickness first... don't worry about training until the body is ready."</em> <strong>Any framing that treats 33% as a lapse contradicts his own instruction from three days ago.</strong></span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>We do not know if she is better.</strong> Last inbound was Sep 6. The Sep 17 notes are Seen and unanswered. Steps are averaging 1,119 a day against 10,000+ on the trip. Draft 1 opens by asking rather than assuming, and every target is written as conditional.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>ALMI has been flat at the 9th percentile since June.</strong> Three scans in a row. It moved 2nd to 9th between February and June and has not moved since. That is the honest read and it is what the next block has to attack, with intensity as the lever rather than volume.</span></div>
@@ -5294,10 +5294,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <script>
   window.__scan1_evans = {
-    bw: 218.8, bfPct: 35.2, bfAMpct: 93,
-    lean: 134.6, fat: 76.13, vat: 277.3,
-    almiVal: null, almiAMpct: 44,
-    scan1Date: 'Aug 26, 2026 (4th scan, baseline for this block), PDF not captured, see Body Snapshot',
+    bw: 218.8, bfPct: 36.1, bfAMpct: 95,
+    lean: 132.58, fat: 78.14, vat: 277.3,
+    almiVal: 8.5, almiAMpct: 44,
+    scan1Date: 'Aug 26, 2026 (4th scan, baseline for this block) — real PDF recovered 20 Sep',
     regional: null
   };
   </script>
@@ -5351,7 +5351,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">📊 Body Snapshot: Baseline For This Block (Aug 26, 2026)</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>⚠️ The Aug 26 DEXA PDF was never captured.</strong> The file stored as <code>2026-08-26.pdf</code> parses with <code>Scan Date: June 24, 2026</code> and a region table identical to the June report; only the scale-weight header reads 218.8. So <code>2026-08-26.pdf.json</code> carries June's numbers, and the member dashboard fell back to <code>source: "regional"</code>. <strong>Regional sums are not on the same basis as PDF totals</strong> (for Aug 2, regional gives fat 69.0 / lean 141.8 / BF 31.9% against the PDF's 76.13 / 134.6 / 35.2%). <strong>The dashboard "wins" of fat down 10.8 lb and lean up 9.4 lb since baseline are therefore not real and must not be quoted.</strong> Re-download the Aug 26 report from Iris, or read the results dashboard, before scan day.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>✅ The Aug 26 DEXA PDF was recovered on 20 Sep and these figures are PDF-sourced.</strong> The file stored as <code>2026-08-26.pdf</code> parses with <code>Scan Date: June 24, 2026</code> and a region table identical to the June report; only the scale-weight header reads 218.8. So <code>2026-08-26.pdf.json</code> carries June's numbers, and the member dashboard fell back to <code>source: "regional"</code>. <strong>Regional sums are not on the same basis as PDF totals</strong> (for Aug 2, regional gives fat 69.0 / lean 141.8 / BF 31.9% against the PDF's 76.13 / 134.6 / 35.2%). <strong>Real Aug 2 &rarr; Aug 26 movement, PDF to PDF: fat <strong>+2.01 lb</strong>, lean <strong>&minus;2.02 lb</strong>, body fat <strong>+0.9 points</strong>, visceral fat <strong>251.2 &rarr; 277.3 cm&sup2; (+26.1)</strong>. Since 24 May: fat &minus;3.10, body fat &minus;1.2, VAT &minus;11.0. ALMI age-matched 44 &rarr; 59 &rarr; 56 &rarr; <strong>44</strong>, back to where he started.</strong> Re-download the Aug 26 report from Iris, or read the results dashboard, before scan day.</div>
       <div style="margin-bottom:8px">Last fully valid scan, <strong>Aug 2</strong>: scale <strong>219.1 lb</strong> &middot; DEXA total <strong>216.36</strong> &middot; Lean <strong>134.6</strong> &middot; Fat <strong>76.13</strong> &middot; Body fat <strong>35.2%</strong> at the <strong>93rd percentile</strong> age-matched &middot; ALMI <strong>56th percentile</strong> &middot; VAT <strong>251.2 cm² / 1211 g</strong> &middot; android/gynoid 1.58. 5' 9", 63.</div>
       <div style="margin-bottom:8px"><strong>Scan series:</strong> May 24 217.79 total / 131.02 lean / 81.24 fat / 37.3% (97th) / VAT 288.3 / ALMI 44th &rarr; Jun 24 218.60 / 136.16 / 76.67 / 35.1% (93rd) / VAT 264.0 / ALMI 59th &rarr; Aug 2 216.36 / 134.60 / 76.13 / 35.2% (93rd) / VAT 251.2 / ALMI 56th &rarr; <strong>Aug 26 scale 218.8 / VAT 277.3 cm² / 1337 g / ALMI 44th</strong>.</div>
       <div style="margin-bottom:8px;padding:8px 10px;background:#f0f9ff;border-left:3px solid #0ea5e9;border-radius:4px"><strong>What Aug 26 actually was.</strong> The raw DXA record is genuine and its VAT is directly comparable: <strong>251.2 &rarr; 277.3 cm², up 26.1 in 24 days</strong>. That independently confirms what Daniel said in the room, <em>"visceral fat +26 pts, fat mass +2 lbs, lean mass -2 lbs, ALMI down 13 pts to 44"</em>. <strong>The 44th percentile is where he started in May.</strong> A full year of ALMI gain given back in eight weeks of no lifting.</div>
@@ -5403,7 +5403,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <div class="coaching-points">
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Zero completed resistance sessions in five months. Not low, zero.</strong> 39 assigned, none logged, 0 of 9 in the last 30 days. Everything else in this file is downstream of that one fact.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The Sep 22 and Sep 25 sessions contradict the Aug 31 and Sep 2 DMs</strong> on both the hamstring work and the toe-safe machine framing, and Friday adds jump squats and ballistic swings. <strong>Settle this before the lift-target DM goes out.</strong></span></div>
-      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The Aug 26 DEXA PDF on disk is the Jun 24 report.</strong> Re-download from Iris before scan day, and <strong>do not quote the dashboard's "fat down 10.8 lb / lean up 9.4 lb" wins</strong>, they compare a regional-sourced figure to a PDF-sourced baseline.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The Aug 26 DEXA PDF was recovered 20 Sep (Iris held two uploads that day; we had kept the wrong one).</strong> Re-download from Iris before scan day, and <strong>the real numbers are fat +2.01 lb and lean &minus;2.02 lb since Aug 2</strong>, they compare a regional-sourced figure to a PDF-sourced baseline.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>He has never replied in the thread. Not once, in four months.</strong> Four direct questions are outstanding, including a yes-or-no one from Aug 31. <strong>Written asks are not reaching him.</strong> The scan room and a phone call are the only channels that have ever worked.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Arthritic toe limiting daily walking, and no health insurance since March.</strong> He intends to wait roughly two years for Medicare. Treat it as a constraint to program around, not an instruction to repeat. <strong>Not a labs chase and not coach debt.</strong></span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Type 2 diabetic on metformin and glimepiride. No calorie target, ever.</strong> Protein, food quality, carb timing only.</span></div>
@@ -5448,7 +5448,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div style="margin-bottom:8px"><strong>6. Settle the toe question in the room.</strong> It has driven every decision since mid-August and nobody knows its status because he has not replied. He has no insurance, so ask what is actually available to him rather than telling him to see someone. <strong>Then program around whatever the answer is</strong>, and make sure the app matches what you tell him, which is where this went wrong last time.</div>
       <div style="margin-bottom:8px"><strong>7. Fix the program while he is in front of you.</strong> He was promised seated and lying machine work and a hamstring curl, and his app now has jump squats and Bulgarian split squats on an arthritic toe. <strong>He will open the app after this conversation and see the mismatch.</strong> Either restore what he was told, or tell him it changed and why.</div>
       <div style="margin-bottom:8px"><strong>8. Get the food log looked at together.</strong> The Macros Journal has never had an entry. Two days of photos for Sep 22 and 23 are the only picture there will be. <strong>Framed as looking at it together, never as compliance.</strong></div>
-      <div style="margin-bottom:8px"><strong>9. Leave out:</strong> any calorie target, any bone density content, any Gold Standard multiplier, the dashboard's inflated "fat down 10.8 lb / lean up 9.4 lb" wins, and any framing of five months of zero sessions as laziness. He has an arthritic foot, no insurance, a layoff and a family move. <strong>Do not use the word "choice" at him even though he used it himself.</strong></div>
+      <div style="margin-bottom:8px"><strong>9. Leave out:</strong> any calorie target, any bone density content, any Gold Standard multiplier, any inflated "wins" framing, and any framing of five months of zero sessions as laziness. He has an arthritic foot, no insurance, a layoff and a family move. <strong>Do not use the word "choice" at him even though he used it himself.</strong></div>
       <div><strong>10. No close and no Slack post.</strong> Routine 4th package scan, condensed track. Draft 4 skipped. The night-before Slack post gate is <code>scan_next.type == "second"</code> and this is not one. <strong>Term does end Oct 22 and the record flags it as a renewal moment, so if Daniel wants that conversation opened, he opens it himself.</strong></div>
     </div>
   </div>
