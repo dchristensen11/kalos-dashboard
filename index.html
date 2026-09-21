@@ -1165,10 +1165,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="consistency-section">
         <div class="cons-label">📊 Training Consistency</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#22c55e">93%</div>
+          <div class="cons-pct" style="color:#22c55e">86%</div>
           <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:93%;background:#22c55e"></div></div>
-            <div class="cons-detail">93% last 30d &middot; Everfit reads 14/15 Tracked, and the one open session is <strong>today's</strong> Full Body A. <strong>Every session due before today is completed: 9 for 9 since the Aug 24 scan, 14 for 14 over 30 days, eight straight weeks at 100%.</strong> Travelling San Diego Thu Sep 17 to Sun Sep 20.</div>
+            <div class="cons-track"><div class="cons-fill" style="width:86%;background:#22c55e"></div></div>
+            <div class="cons-detail"><strong>86% last 30d, down from 93% on Sep 14</strong> &middot; the eight-week 100% streak broke on Wed Sep 16, Full Body B went Missed, then nothing was logged through the whole San Diego trip and today &middot; last 7d 33% &middot; back from travel as of today, no makeup session yet</div>
           </div>
         </div>
       </div>
@@ -1180,16 +1180,16 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('nam')">
           <span class="checklist-title">✅ Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-nam">2/8</span>
+            <span class="checklist-progress-badge" id="prog-nam">4/8</span>
             <span class="checklist-chevron" id="chev-nam">›</span>
           </div>
         </div>
         <div class="checklist-items" id="items-nam">
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('nam')"><span> Card built from live data (Sep 14)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('nam')"><span> Modal built from live data (Sep 14, condensed routine track)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Pre-scan opener sent &middot; <strong>drafted Sep 14, not yet sent</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('nam')"><span> Pre-scan opener sent Sep 14, 6:40 AM &mdash; answered same morning 7:09 AM</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Lift targets + nutrition sent &middot; <strong>drafted Sep 14, not yet sent &middot; targets sit in Mon Sep 14 and Wed Sep 16 only, he flies Thursday</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> "What have you noticed" question sent &middot; never asked of him before</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('nam')"><span> "What have you noticed" question sent Sep 14 (unusual for routine track, but sent and answered same morning)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> 6-to-12-month question &middot; <strong>n/a on the routine track</strong>, 6 Month Core active to Jan 20 2027, no cliff</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Food journal task &middot; <strong>not needed</strong>, Macros Journal logged every single day through Sep 13</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('nam')"><span> Week-out prep recorded (<code>workflows.py done week-out</code>) &middot; <strong>not run</strong></span></label>
@@ -2647,11 +2647,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="success-section">
     <div class="dp-title" style="margin-bottom:10px">🏆 Wins to Open With <span class="badge-pending" id="nam-scan-badge">Scan Pending</span></div>
     <div class="success-wins">
-      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Nine for nine on training since the Aug 24 scan and 14 for 14 across the last 30 days. Eight straight weeks at 100% of what was assigned</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Steps averaging 5088 over the last 7 days, well clear of the 3500 ask and up from 3767 on Sep 14</span></div>
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Visceral fat 73.8 to 67.8 cm² and 356 to 327 g between the July and August scans, with android body fat 32.3% down to 29.6%</span></div>
       <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Barbell Squat 255 lb tested 1RM, about 94% of the 270 lb gold standard for his bodyweight, and the lift he is proudest of</span></div>
-      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">He closed the protein gap himself without being chased again: Sep 12 finished at 196 g and Sep 13 at 195 g against the 200 g target, after 146, 128 and 142 earlier that week</span></div>
-      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Steps now averaging 3767 over the last 7 days, above the 3500 ask, up from 3421 when it was raised on Sep 13</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">He answered an unprompted "what have you noticed" question the same morning it was sent, Sep 14, volunteering that the calorie drop "haven't really impacted the lift"</span></div>
+      <div class="success-win"><span class="win-icon">🏆</span><span class="win-text">Still logging every single day in the Macros Journal, including all four days of the San Diego trip</span></div>
     </div>
   </div>
 
@@ -2712,7 +2712,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div style="margin-bottom:8px"><strong>Protein target 200 g/day on training days</strong>, raised from 183 at the Aug 24 scan. Fat 64 g, carbs 153 g. Pre/post 1:1 protein-only strategy sent Sep 1.</div>
       <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>He logs in the Macros Journal every single day.</strong> Fifteen consecutive days pulled today, Aug 30 through Sep 13, 4 to 15 entries a day. <strong>No photo food journal task is needed or has been added</strong>, per the Sep 6 rule.</div>
       <div style="margin-bottom:8px"><strong>Daily protein, pulled Sep 14:</strong> Sep 13 <strong>195</strong> &middot; Sep 12 <strong>196</strong> &middot; Sep 11 128 &middot; Sep 10 146 &middot; Sep 9 <strong>199</strong> &middot; Sep 8 <strong>204</strong> &middot; Sep 7 156 &middot; Sep 6 72 &middot; Sep 5 185 &middot; Sep 4 <strong>243</strong> &middot; Sep 3 <strong>203</strong> &middot; Sep 2 186 &middot; Sep 1 168 &middot; Aug 31 174 &middot; Aug 30 40. On training days specifically: Sep 2 186, Sep 4 243, Sep 5 185, Sep 9 199, Sep 11 128, Sep 12 196.</div>
-      <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>The dip he was pulled up on has already corrected.</strong> The Sep 13 DM quoted 146, 128 and 142 for Sep 10 to 12. Sep 12 has since been topped up to 196 and Sep 13 came in at 195. <strong>Lead with that, do not re-raise the dip.</strong></div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>NIGHT-BEFORE UPDATE Sep 20: the dip reopened, worse, during San Diego.</strong> Sep 12/13 had corrected to 196/195, but Sep 17 to 19 (the trip) read 117, 110 and 56 g against the 200 g target, the lowest single day anywhere in the block. He is still logging every day, so this is a compliance gap during travel, not a tracking gap. Do not say the dip is corrected.</div>
       <div><strong>Rest days are the harder ones for him, in his own words.</strong> Sep 8 call: hitting protein on a rest day without going over on the other macros is the piece he is still solving. The agreed lever is a Premier shake or 1.5 scoops in a smoothie. Sep 6 (72 g) and Aug 30 (40 g) are the two thin days and both look like partial logs rather than thin eating.</div>
     </div>
   </div>
@@ -2721,8 +2721,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section">
     <div class="dp-title">🚩 Coaching Points</div>
     <div class="coaching-points">
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>The "move workouts before flying" plan did not happen.</strong> Full Body B (Wed Sep 16), carrying both numeric lift targets, went Missed, then nothing was logged Thu Sep 17 through today. Six days, zero sessions, after eight straight weeks at 100%. Consistency dropped 93% to 86%.</span></div>
+      <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Protein cratered during San Diego</strong>, in exactly the window he was told to prioritize it. 117 g Sep 17, 110 g Sep 18, 56 g Sep 19, against a 200 g target. Worse than the dip flagged Sep 13, and it did not self-correct this time.</span></div>
+      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>An Iris "win" claim does not hold up.</strong> Iris (regenerated tonight) credits him with keeping protein close via ready-to-drink shakes during travel. Everfit's own Macros Journal for the same days shows 117/110/56 g. Do not repeat that Iris line to him.</span></div>
       <div class="coaching-point"><span class="cp-dot red"></span><span><strong>Barbell pressing switch is incomplete.</strong> Full Body C still has dumbbell pressing and was never touched on Sep 13. He was told in writing "leave that with me". Finish it before he sees Full Body C, or be ready to say it is coming.</span></div>
-      <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Travelling San Diego Thu Sep 17 to Sun Sep 20</strong>, landing the day before the scan. He said he would move all his workouts before he flies, but the calendar still has Full Body C on Sunday the 20th. Either move it or accept two sessions this week.</span></div>
+      <div class="coaching-point"><span class="cp-dot green"></span><span><strong>He did land back on schedule.</strong> San Diego Thu Sep 17 to Sun Sep 20, food-journal activity resumed today confirming the return. The training side of the plan did not hold (see red flags above), but the trip itself went as scheduled.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>He asked on Aug 25 for single rep numbers rather than ranges</strong> ("just pick a higher rep number instead of a range") and got "will do today". P3 ships 6 to 8 ranges, which was a deliberate decision on the Sep 8 call, not an oversight. He may raise it. Have the answer ready.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>No suggested weights are loaded on any P3 set.</strong> Every <code>training_sets[].weight</code> is blank across all six P3 sessions. That was the other half of his Aug 25 ask. The week-out DM covers three lifts; the rest are unguided.</span></div>
       <div class="coaching-point"><span class="cp-dot orange"></span><span><strong>Left side lags right and the arm gap widened</strong> from 1.13 to 1.48 lb of lean+BMC between the two scans. Left knee still limits unilateral work. This is the case for the Oct 7 in-person assessment.</span></div>
@@ -2737,15 +2740,15 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   <!-- 8 - Coaching Review (replaces "In Their Own Words" on the routine track) -->
   <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
-    <div class="dp-title">🗒️ Coaching Review</div>
+    <div class="dp-title">🗒️ Coaching Review <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Sep 20</span></div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
       <div style="margin-bottom:10px">
         <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Since last scan <span style="font-weight:400;text-transform:none">&middot; Aug 24, 2026</span></div>
-        <div style="margin-top:4px">Nine assigned sessions, nine completed, nothing missed. Protein target was raised 183 to 200 g on the day of that scan and he has moved himself onto it, hitting 204, 199, 196 and 195 on four of the last six days. The pre/post 1:1 protein-only strategy went out Sep 1. DB Neutral Grip Bench went from 50 x 8, 8, 6, 6 on Aug 29 to 50 x 12, 12, 12, 10 on Sep 11, same load, which is the bench gap visibly closing. Steps came back over the 3500 ask. The Aug 25 request for single rep numbers and suggested weights was answered with "will do today" and P3 still ships ranges with no loaded weights.</div>
+        <div style="margin-top:4px">Training held at 100% for three weeks, then broke Wed Sep 16: Full Body B, the session carrying both numeric lift targets (bench top triple at 150, RDL 170x8), was logged Missed, and nothing has been logged since, through today. Consistency is now 86%, down from 93% on Sep 14, the first drop after eight straight weeks at 100%. Protein followed the same arc: 204/199/196/195 g on four of six days through Sep 13, then 117/110/56 g Sep 17 to 19 in San Diego against the 200 g target, the lowest single day anywhere in the block. He is still logging every day in the Macros Journal, including through travel, so this is a compliance gap, not a tracking gap. Steps are the one clean win, averaging 5088 over the last 7 days versus a 3500 ask. The barbell pressing switch patched into Full Body A and B on Sep 13 never reached Full Body C, unchanged and still open.</div>
       </div>
       <div>
         <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Since last check-in <span style="font-weight:400;text-transform:none">&middot; Sep 8, 2026 midpoint</span></div>
-        <div style="margin-top:4px">Three things were agreed on that call and two have landed. P3 moved the big compounds to barbell: squat and RDL were already in, and pressing was patched into Full Body A and B on Sep 13, but <strong>Full Body C was missed</strong>. The incline technique cues (elbows down, touch lower, control the descent) went out Sep 13 and he has not trained an incline since, so there is nothing to score yet. Travel guidance and the protein pack links went out the same day as the call. The one item still open is the pressing in Full Body C. Note the Everfit call note says protein is "averaging close to the 170g target": 170 was his <em>average</em>, not the target. The target is 200.</div>
+        <div style="margin-top:4px">Three things were set on that call: move all workouts before flying, stack protein early while traveling, keep incline pressing light and technique-only. None held through the room. Full Body B, the day before he flew, was missed rather than moved earlier as planned, and no session has landed since, spanning the whole trip and today. Protein cratered in exactly the window he was told to prioritize it. He did answer the "what have you noticed" question sent the morning of Sep 14 at 6:40 AM within half an hour: chest feels tighter in shirts, waist unchanged, energy flat and possibly heat-related, and he volunteered that the calorie drop "haven't really impacted the lift" so far. Nothing further from him since that reply. Note: the Sep 8 coach note read "protein averaging close to the 170g target", but 170 was his average, not the target; the target is 200, and the gap has since reopened rather than closed.</div>
       </div>
     </div>
   </div>
@@ -2754,13 +2757,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-section" style="border-left:3px solid #22c55e;background:#f4fbf6">
     <div class="dp-title">🎯 Scan-Day Focus: Reward The Consistency, Steer The Visceral Fat, Own The Pressing Gap</div>
     <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
-      <div style="margin-bottom:8px"><strong>1. Open on the consistency, because nobody else is doing this.</strong> Eight straight weeks at 100%, nine for nine since the last scan, and a food log every single day. That is the behaviour that produced the numbers.</div>
+      <div style="margin-bottom:8px"><strong>1. Do not open on an unbroken streak, it broke.</strong> Eight straight weeks at 100% held right up to Sep 16, then Full Body B went missed and nothing has landed since, six days through today. Open instead on the food log, which never stopped, including through the whole trip, and on the fact that he is honest about it rather than hiding it.</div>
       <div style="margin-bottom:8px"><strong>2. Lead the numbers with visceral fat and the middle.</strong> VAT 73.8 to 67.8 cm², android body fat 32.3% to 29.6%, android/gynoid 1.22 to 1.14. Fat came off the trunk while ALMI held at the 63rd percentile. That is textbook fat loss with the lean base protected, and it is a far better story than the 1.35 lb headline.</div>
       <div style="margin-bottom:8px"><strong>3. Say the pressing thing first, before he finds it.</strong> He was told on Sep 13 the pressing was being moved across. Two of three sessions are done, Full Body C is not. Owning that in the room is a two-second fix; being caught on it is not.</div>
       <div style="margin-bottom:8px"><strong>4. Bench is the bridge to the next block.</strong> Squat is at ~94% of standard, bench at ~71%. The Sep 11 neutral grip session (same 50s, four more reps than Aug 29) is the concrete proof it is moving. Use it to sell the barbell block rather than re-explaining the gap.</div>
-      <div style="margin-bottom:8px"><strong>5. Expect the travel caveat and get in front of it.</strong> He predicted this himself on the call: <em>"I'm seeing you that Monday, right? So you'll be seeing like the effect of it pretty much."</em> He lands from San Diego the day before. If water weight is up, name it before he does.</div>
+      <div style="margin-bottom:8px"><strong>5. He called this himself on the Sep 8 call</strong>, <em>"I'm seeing you that Monday, right? So you'll be seeing like the effect of it pretty much."</em> He was right, and it went further than water weight: zero training and protein down to 56 g on the worst day. Name it before he does, and note he kept logging honestly the whole time, that is worth saying out loud.</div>
       <div style="margin-bottom:8px"><strong>6. Leave with two things:</strong> the Full Body C pressing swap agreed, and the <strong>Oct 7 in-person assessment</strong> framed around the left/right asymmetry and the left knee on unilateral work, which is now visible in the scan data rather than just in his self-report.</div>
-      <div style="margin-bottom:8px"><strong>7. Leave out:</strong> bone density (28-day window, -0.7% is noise), any calorie target, and the Sep 10 to 12 protein dip, which has already corrected.</div>
+      <div style="margin-bottom:8px"><strong>7. Leave out:</strong> bone density (28-day window, -0.7% is noise), and any calorie target. Do NOT leave out the training gap or the travel protein dip, both need to be named, see points 1 and 5.</div>
       <div><strong>8. No renewal question and no close.</strong> Routine 2nd package scan inside a 6 Month Core term running to Jan 20 2027. Draft 4 is skipped and there is no night-before Slack post for this member.</div>
     </div>
   </div>
