@@ -94,7 +94,12 @@
   }
   .card-name { font-size: 15px; font-weight: 700; color: #0f3460; }
   .card-sub { font-size: 11px; color: #aaa; margin-top: 2px; }
-  .card-badges { display: flex; gap: 5px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .card-badges { display: flex; gap: 5px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; max-width: 46%; }
+  /* The name block must take the space that is left. Without flex and min-width:0 it
+     collapses to nothing when the badges are wide, which wrapped "Yue Min Wong" onto
+     three lines and squeezed the sub-line into a column. Fixed 22 Sep 2026. */
+  .card-header > div:first-child { flex: 1 1 auto; min-width: 0; }
+  .card-name { overflow-wrap: break-word; }
 
   .badge {
     font-size: 10px; font-weight: 700; padding: 3px 8px;
