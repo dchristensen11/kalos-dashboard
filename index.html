@@ -77,6 +77,11 @@
     overflow: hidden;
     border: 1px solid #e8eaee;
   }
+  /* Conversion point: the member's package ends at this scan. Red outline so the
+     card is picked out of the grid at a glance. Carries the "4-week ends ..." badge. */
+  .card.conversion {
+    border: 2px solid #ef4444;
+  }
 
   .duo-label {
     display: flex; align-items: center; gap: 6px;
@@ -917,7 +922,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     </div>
 
     <!-- ── YUE MIN WONG · 2:00 PM ── -->
-<div class="card" id="card-yue">
+<div class="card conversion" id="card-yue">
       <div class="card-header">
         <div>
           <div class="card-name clickable" onclick="openModal('yue')">Yue Min Wong <span class="expand-chevron">↗</span></div>
@@ -1863,7 +1868,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
     </div>
 
-<div class="card" id="card-indira">
+<div class="card conversion" id="card-indira">
       <div class="card-header">
         <div>
           <div class="card-name clickable" onclick="openModal('indira')">Indira Singh <span class="expand-chevron">&#8599;</span></div>
