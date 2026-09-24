@@ -2160,7 +2160,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 </div>
 <div class="day-group">
-  <div class="day-label">Thursday &middot; October 1, 2026 &mdash; 4 scans</div>
+  <div class="day-label">Thursday &middot; October 1, 2026 &mdash; 5 scans</div>
   <div class="cards-row">
 
 <div class="card" id="card-doreen">
@@ -2300,6 +2300,74 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('rigo')"><span> Warmth + scan confirmation sent &middot; DRAFTED, awaiting approval</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('rigo')"><span> Protein + carb timing + food log days sent &middot; DRAFTED &middot; LIFT TARGETS DELIBERATELY OMITTED, no data exists and it would reverse the Sep 20 DM</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('rigo')"><span> "What have you noticed" sent &middot; DRAFTED &middot; "6 to 12 months" SKIPPED, 1 Year Core to Aug 24 2027, no cliff</span></label>
+        </div>
+      </div>
+    </div>
+
+<div class="card" id="card-valerie">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('valerie')">Valerie Schiebel <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Female &middot; 30 &middot; 5th Package Scan (7th DEXA) &middot; <span style="color:#22c55e;font-weight:600">6 Month Core to Nov 11 2026, no cliff</span> &middot; LBM gain / ALMI</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">10:30 AM</span>
+          <span class="badge badge-lbm">Build</span>
+        </div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">84.8</div>
+          <div class="metric-label">Lean lb</div>
+          <div class="metric-sub">85.2 &rarr; 84.8 &middot; +3.7 since Apr</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">10th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">12th &rarr; 10th &middot; 5th in Apr</div>
+        </div>
+        <div class="metric good">
+          <div class="metric-val">32.2%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">42nd %ile age-matched</div>
+        </div>
+        <div class="metric good">
+          <div class="metric-val">37.2</div>
+          <div class="metric-label">VAT cm&sup2;</div>
+          <div class="metric-sub">42.0 &rarr; 37.2 &middot; well under 60</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">&#128202; Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">100%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+            <div class="cons-detail">9 of 9 in the last 30 days &middot; every assigned session since Aug 31 &middot; front-loads her own week around travel</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">&#11088; Her Deep Why</div>
+        <div class="why-text">Getting stronger for herself, for running and hiking. One lifelong goal sits above the rest: a single unassisted pull-up. "I've never in my life been able to do 1."</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('valerie')">
+          <span class="checklist-title">&#9989; Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-valerie">5/8</span>
+            <span class="checklist-chevron" id="chev-valerie">&#8250;</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-valerie">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('valerie')"><span> Card built from live data &middot; Sep 24</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('valerie')"><span> Modal built from live data (condensed routine track) &middot; Sep 24</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('valerie')"><span> Scan time verified on the work calendar &middot; <strong>Thu Oct 1, 10:30 AM, Acuity 1765553083</strong> &middot; 30-min solo block</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('valerie')"><span> <strong>Eccentric pull-up promise verified in the app</strong> &middot; BUILT as the note on the Weighted Pull Up slot, live on her A day since ~Sep 11 &middot; <strong>not coach debt</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('valerie')"><span> Food journal task &middot; <strong>CREATED for Sep 29 and Sep 30</strong>, verified server-side &middot; Macros Journal empty</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('valerie')"><span> Pre-scan opener &middot; <strong>drafted Sep 24, NOT SENT</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('valerie')"><span> Lift targets + nutrition (Bench / Lat Pulldown / Deadlift) &middot; <strong>drafted Sep 24, NOT SENT</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('valerie')"><span> "What have you noticed" &middot; <strong>drafted Sep 24, NOT SENT</strong> &middot; 6-to-12-month question <strong>SKIPPED, 6 Month Core to Nov 11, no cliff, routine track</strong></span></label>
         </div>
       </div>
     </div>
@@ -6509,6 +6577,190 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
 
 </div><!-- end modal-burcu -->
+
+<div id="modal-valerie" class="modal-content"
+     data-name="Valerie Schiebel"
+     data-sub="5th Package Scan (7th DEXA) &middot; October 1, 2026 &middot; 10:30 AM &middot; Campbell &middot; Routine track &middot; LBM gain / ALMI &middot; F &middot; 30">
+
+  <script>
+  window.__scan1_valerie = {
+    bw: 131.28, bfPct: 32.2, bfAMpct: 42,
+    lean: 84.78, fat: 42.29, vat: 37.2,
+    almiVal: null, almiAMpct: 10,
+    scan1Date: 'Sep 3, 2026 (6th scan, baseline for this block) — parsed from the DEXA PDF',
+    regional: true
+  };
+  </script>
+
+  <!-- 0 - Detail from the card -->
+  <div class="dp-section">
+    <div class="dp-title">&#128203; Detail from the card</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><span><strong>Thursday, October 1</strong> &middot; Kalos Package DEXA San Jose &middot; Campbell &middot; <strong>10:30 AM</strong>, 30-minute solo block &middot; Acuity 1765553083 &middot; 5th package scan (7th overall) &middot; <strong>baseline Sep 3, 28 days</strong> &middot; <strong style="color:#16a34a">6 Month Core runs to Nov 11, 2026 &middot; no renewal cliff &middot; condensed routine track, no renewal content, no Slack post</strong></span></div>
+      <div style="padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>&#9989; The eccentric pull-up promise was KEPT.</strong> There is no discrete "Eccentric Pull Up" exercise anywhere in 32 assignments checked, but the instruction is written into the <strong>note on her <code>Weighted Pull Up</code> slot</strong> and has been live on every A day since roughly Sep 11: <em>"Do essentric pull ups as part of this at the end. As many as possible to butn out."</em> Daniel told her so in the thread on Sep 23. <strong>Not coach debt. Do not raise it as owed.</strong></div>
+    </div>
+  </div>
+
+  <!-- 1 - Changed since the last touchpoint -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
+    <div class="dp-title">&#128260; Changed since the last touchpoint (Sep 15 call, Sep 23 DM)</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border-left:3px solid #22c55e;border-radius:4px"><strong>&#128994; She acted on the Sep 23 DM the same morning.</strong> You told her the barbell sets were all coming out identical and to start the deadlift at 120. On Sep 23 she ran <strong>115, 120, 125, 125</strong>, climbing past the ask, and wrote back <em>"Thanks for calling out the deadlifts, presses, etc. You're right. I increased the weights today and was still feeling strong."</em> <strong>Open Send 2 by crediting that, it is the behavior you want repeated.</strong></div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border-left:3px solid #22c55e;border-radius:4px"><strong>&#128994; The left-arm instruction is being followed exactly.</strong> DB Single Arm Row on Sep 23 logged <strong>25 for 8 then 25 for 8</strong>, matched. The session before had been 30 then 25, which is the imbalance you flagged. <strong>She let the left side set the number.</strong></div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border-left:3px solid #f59e0b;border-radius:4px"><strong>&#128992; Two flat-set lifts have not been corrected yet, because the sessions have not run.</strong> Bench is still <strong>85 for 8, 8, 8, 8</strong> (Sep 15) and lat pulldown <strong>65 for 10, 10, 10</strong> (Sep 16). Those are <strong>pending, not missed</strong>. Send 2 re-issues them rather than scoring them.</div>
+      <div style="padding:8px 10px;background:#fff;border-left:3px solid #94a3b8;border-radius:4px"><strong>&#9898; Overhead press opened at 55, not the 60 you asked for</strong> (Sep 23: 55x8, 60x7, 60x6). It then topped out honestly, so this is a small opener issue rather than a pattern. Not worth a message of its own.</div>
+    </div>
+  </div>
+
+  <!-- 2 - Goals & Motivation -->
+  <div class="dp-section dp-section-goal">
+    <div class="dp-title">&#127919; Goals &amp; Motivation</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Goal:</strong> <code>lbm-gain</code>, source <code>almi</code>, reason <em>"ALMI 10th, well under 60th"</em>. <strong>Derived from her numbers, not agreed with her</strong>, so treat it as a working assumption rather than something to assert.</div>
+      <div style="margin-bottom:8px"><strong>Underlying motivation:</strong> doing it for herself, to get stronger and to improve running and hiking. <code>why_strength</code> reads <strong>anchored</strong> (identity + pursuit, 13 insights), so it is safe to reference directly.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px"><strong>&#11088; The pull-up is the whole thing.</strong> <em>"I've never in my life been able to do 1."</em> She traces it to school fitness tests: <em>"I hated that test day because they would make you do it in front of everyone. I literally could never do it, and I wanted to do it so bad."</em> And she has already told you what getting one will mean: <em>"I feel like that's how I'm going to be once I can do my first pull-up for sure"</em>, said straight after you described strength as the thing you never want to give back. <strong>This is identity-level, not a training preference. Every pull-up data point is worth more to her than any body composition number on the screen.</strong></div>
+      <div><strong>Current focus:</strong> Phase 4 block, lean mass and ALMI, 120 g protein, lower-body intensity near failure, shoulder mobility and glute activation, and closing the left-arm gap with unilateral work started on the left.</div>
+    </div>
+  </div>
+
+  <!-- 3 - Wins to Open With -->
+  <div class="success-section">
+    <div class="dp-title" style="margin-bottom:10px">&#127942; Wins to Open With <span class="badge-pending" id="valerie-scan-badge">Scan Pending</span></div>
+    <div class="success-wins">
+      <div class="success-win"><span class="win-icon">&#127942;</span><span class="win-text"><strong>9 of 9 sessions in the last 30 days. 100%.</strong> Every assigned session since Aug 31, through a Texas trip, and she rearranged her own week to protect them rather than dropping any</span></div>
+      <div class="success-win"><span class="win-icon">&#127942;</span><span class="win-text"><strong>ALMI 5th &rarr; 10th percentile since April, lean +3.7 lb</strong>, while body fat came <em>down</em> 32.8% to 32.2%. That is lean mass added without adding fat, which is the hard version</span></div>
+      <div class="success-win"><span class="win-icon">&#127942;</span><span class="win-text"><strong>VAT 44.7 &rarr; 37.2 cm&sup2; across the six scans.</strong> Down again last block and comfortably in the range where nobody needs to think about it</span></div>
+      <div class="success-win"><span class="win-icon">&#127942;</span><span class="win-text"><strong>She took coaching and applied it the same morning.</strong> Sep 23 DM about flat sets, Sep 23 deadlift climbed 115 to 125. <strong>Say this out loud</strong></span></div>
+      <div class="success-win"><span class="win-icon">&#127942;</span><span class="win-text"><strong>120 miles and 40,000 feet of elevation in the Alps, feeling strong the whole way.</strong> Her own words. That is the training showing up as capability, which is exactly her stated why</span></div>
+    </div>
+  </div>
+
+  <!-- 4 - Personal Context -->
+  <div class="dp-section">
+    <div class="dp-title">&#129485; Personal Context</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Equipment:</strong> small apartment gym, dumbbells, Smith machine, kettlebells. Hotel gyms when travelling, banded and bodyweight plan for no-gym trips. <strong>Dumbbell increments are a real constraint</strong>, in her words <em>"there's nothing in between the 50lbs and 60lbs which is why I'm struggling here"</em>. <strong>Prefer a rep or tempo target over a load jump on dumbbell lifts.</strong></div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fef2f2;border-left:3px solid #ef4444;border-radius:4px"><strong>Injuries (minor).</strong> Post-ACL rehab from frisbee. Mild low-back soreness after weighted squats, form checked and good. Left glute activation improving. <strong>Left arm noticeably weaker: start every unilateral move on the left and match the right to it exactly.</strong> <strong>No calorie target, ever.</strong></div>
+      <div style="margin-bottom:8px"><strong>Travel and life:</strong> frequent work travel, CT and WI with no gym. Texas trip done, noted Sep 23. <strong>Next trip lands roughly Oct 3, after the scan</strong> (her own <em>"next week and a half"</em> on Sep 23), so the scan week itself is clear.</div>
+      <div><strong>How she works:</strong> self-managing and honest. She front-loads her own training week around travel without being asked, she reports when she has substituted an exercise, and she asks direct questions when a rule confuses her (<em>"I struggle with knowing when to increase because you also told me not to just sit at the same weight forever"</em>). <strong>Give her the rule and the reason and she runs it.</strong></div>
+    </div>
+  </div>
+
+  <!-- 5 - Body Snapshot -->
+  <div class="dp-section">
+    <div class="dp-title">&#128202; Body Snapshot: Baseline For This Block (Sep 3, 2026)</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px;padding:8px 10px;background:#eef2ff;border-left:3px solid #7c8aff;border-radius:4px"><strong>The baseline for this scan is Sep 3, not April. Window is 28 days.</strong> She has had six scans already, so do not quote the April-to-now delta as this block's result.</div>
+      <div style="margin-bottom:8px"><strong>Sep 3, 2026:</strong> total <strong>131.28 lb</strong> (scale 132.3) &middot; body fat <strong>32.2%</strong>, <strong>42nd percentile age-matched</strong> &middot; lean <strong>84.78 lb</strong> &middot; fat <strong>42.29 lb</strong> &middot; BMC 4.2 lb &middot; <strong>VAT 37.2 cm&sup2;</strong> (179 g) &middot; <strong>ALMI 10th percentile age-matched</strong>.</div>
+      <div style="margin-bottom:8px"><strong>Versus Aug 6:</strong> body fat <strong>32.4% &rarr; 32.2%</strong>, lean <strong>85.23 &rarr; 84.78 lb</strong> (&minus;0.45), fat <strong>42.80 &rarr; 42.29 lb</strong>, <strong>VAT 42.0 &rarr; 37.2 cm&sup2;</strong>, ALMI <strong>12th &rarr; 10th</strong>. That block was the Alps trip, a large energy deficit with protein she could not find.</div>
+      <div style="margin-bottom:8px"><strong>Since the Apr 6 baseline:</strong> lean <strong>+3.73 lb</strong>, fat <strong>+0.69 lb</strong>, body fat <strong>&minus;0.6 points</strong>, <strong>VAT &minus;7.5 cm&sup2;</strong>, <strong>ALMI 5th &rarr; 10th percentile</strong>.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px"><strong>&#11088; Regional, and this is the best thing on the scan for her.</strong> Left arm lean <strong>1748.2 g</strong> against right arm lean <strong>2111.8 g</strong>. <strong>The right arm carries 363.6 g more lean than the left</strong>, and the gap was 341.2 g on Aug 6, so it widened slightly. <strong>She raised this herself on Sep 15</strong> (<em>"there's definitely a clear difference in the left arm being a bit weaker"</em>) and the DEXA now measures it. <strong>Show her the number.</strong> It validates what she has been feeling, explains exactly why the unilateral work exists, and gives her something concrete to watch. Legs run the other way, left leg lean 6422.6 g against right 6008.3 g.</div>
+      <div style="margin-bottom:8px"><strong>Body fat percentile is the thing to say out loud.</strong> 32.2% sounds high to her and is the <strong>42nd percentile for a 30-year-old woman</strong>, so she is slightly leaner than average for her age. <strong>There is nothing here to cut.</strong> The whole job is lean mass, which is what the 10th-percentile ALMI says.</div>
+      <div><a href="https://iris.livekalos.com/results-dashboard/384876" target="_blank" style="color:#4f46e5;font-weight:600;text-decoration:none">&#128202; Open her Iris results dashboard &#8599;</a></div>
+    </div>
+  </div>
+
+  <!-- 6 - Lifting Metrics -->
+  <div class="dp-section">
+    <div class="dp-title">&#127947; Lifting Metrics</div>
+    <div style="margin-bottom:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a">Program <code>Growth</code>, A / B / C split, roughly 3x per week, she schedules her own days. <strong>P3 &rarr; P4 on Sep 14</strong> (not communicated, per the standing rule). <strong>Everfit logs no unit on any set</strong>, so every number below is quoted bare exactly as it appears in her app, and nothing is asserted about lb vs kg. The same applies to the week-out targets.</div>
+    <table class="dp-table">
+      <thead><tr><th>Lift</th><th>Most recent (date)</th><th>Week-out target sent Sep 24</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Barbell Bench Press</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~130 lb 1RM</span> <span style="font-size:9px;color:#888">(1.0&times;BW &middot; est. 1RM today ~108, closest of the three)</span></td><td>Sep 15 &mdash; <strong>85 for 8, 8, 8, 8</strong>. Four identical at the rep cap.</td><td><strong>Fri Sep 25 (P4 B), again Wed Sep 30.</strong> <strong>Open at 90, hold 8 for sets 1 and 2.</strong></td></tr>
+        <tr><td><strong>Wide Grip Lat Pulldown</strong></td><td>Sep 16 &mdash; <strong>65 for 10, 10, 10</strong>. Three identical at the cap.</td><td><strong>Sun Sep 27 (P4 C).</strong> <strong>70 for 10 on sets 1 and 2.</strong> Chosen partly because pulldown strength feeds the pull-up.</td></tr>
+        <tr><td><strong>Barbell Deadlift</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~265 lb 1RM</span> <span style="font-size:9px;color:#888">(2.0&times;BW &middot; est. 1RM today ~158)</span></td><td>Sep 23 &mdash; <strong>115 for 8, 120 for 8, 125 for 8, 125 for 8</strong>. Climbed on the Sep 23 instruction.</td><td><strong>Mon Sep 28 (P4 A).</strong> <strong>Start at 125, finish at 130.</strong></td></tr>
+        <tr><td><strong>Barbell Squat</strong><br><span style="font-size:10px;color:#7c8aff;font-weight:600">GS: ~195 lb 1RM</span> <span style="font-size:9px;color:#888">(1.5&times;BW &middot; est. 1RM today ~114)</span></td><td>Sep 15 &mdash; <strong>90 for 8, 8, 8, 8</strong>. Same flat shape as bench.</td><td>&mdash; (not targeted, three is the cap. Same correction applies if it comes up in the room.)</td></tr>
+        <tr><td><strong>Weighted Pull Up</strong> (programmed 6&ndash;10)<br><span style="font-size:9px;color:#888">carries the eccentric burnout note</span></td><td>Sep 23 &mdash; logged as <strong>Band Assisted Pull Up, 9, 9, 8, 7</strong> at weight 0. Sep 14 the same, 9, 9, 8, 6. Sep 11 9, 9, 8.</td><td>&mdash; (deliberately no number. <strong>Reps on an assisted variation are not the metric</strong>, the amount of assistance is.)</td></tr>
+        <tr><td><strong>Barbell Overhead Press</strong></td><td>Sep 23 &mdash; <strong>55 for 8, 60 for 7, 60 for 6</strong>. Honest top-out, opened below the ask.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Dumbbell Single Arm Row</strong></td><td>Sep 23 &mdash; <strong>25 for 8, 25 for 8</strong>. <span style="color:#16a34a;font-weight:600">Matched left to right as instructed.</span></td><td>&mdash;</td></tr>
+        <tr><td><strong>Parallel Bar Dip</strong></td><td>Sep 16 &mdash; bodyweight 8, 8, 8, 6. Honest last set.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Dumbbell Single Leg RDL</strong></td><td>Sep 23 &mdash; 40 for 9, 40 for 9.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Dumbbell Incline Bench Press</strong></td><td>Sep 15 &mdash; 40 for 8, 50 for 7.</td><td>&mdash; (the 50/60 increment gap lives here)</td></tr>
+        <tr><td><strong>Dumbbell High Box Step Up</strong></td><td>Sep 23 &mdash; 20 for 8, 30 for 8.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Standing Calf Raise Machine</strong></td><td>Sep 16 &mdash; 80 for 12, 10, 9. Honest.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Leg Press</strong></td><td>Sep 15 &mdash; 105 for 8, 8.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Alternating DB Bicep Curl</strong></td><td>Sep 23 &mdash; 30 for 8, 8.</td><td>&mdash;</td></tr>
+        <tr><td><strong>Prone Lying Hamstring Curl Machine</strong></td><td>Sep 23 &mdash; 0 for 8, 8. Substituted for the programmed Nordic.</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#2a2a3a"><strong>&#9888;&#65039; Use the Gold Standards selectively with her.</strong> Female under 60, 131.28 lb: bench 1.0&times;, squat 1.5&times;, deadlift 2.0&times;. <strong>Bench is the encouraging one</strong>, her estimated 1RM is already about 83% of the standard. <strong>Squat and deadlift are not</strong>, she sits around 58 to 60% and at the 10th ALMI percentile that is years rather than months. <strong>Show her the bench line, use direction on the other two</strong>, and remember the multipliers key off bodyweight. 1RM estimates are Epley off her logged top sets and are approximations, not tested maxes.</div>
+  </div>
+
+  <!-- 7 - Nutrition -->
+  <div class="dp-section">
+    <div class="dp-title">&#129367; Nutrition</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>Protein target 120 g/day</strong>, via <strong>3 fist-sized protein meals plus 2 shakes</strong>. Pre and post workout <strong>25 to 30 g protein with 50 to 60 g carbs plus peanut butter</strong>. Premade shakes for travel. No allergies.</div>
+      <div style="margin-bottom:8px"><strong>Mornings are already excellent and should be praised, not coached.</strong> Overnight oats protein drink, shake with creatine, then a bar with coffee. Three feedings before 9:15 every day. <strong>Lunch is where the 120 is won or lost</strong>, and the Sep 14 salad with grilled chicken, hard boiled egg and hummus is the template to point back at.</div>
+      <div style="margin-bottom:8px"><strong>Food journal:</strong> <strong>Macros Journal is empty, <code>total: 0</code> all-time</strong>, checked directly on Sep 24. <strong>A 2-day photo task WAS created for Tue Sep 29 and Wed Sep 30 and verified server-side.</strong> <strong>Frame it as two days of photos so the two of you look at the real picture together, never as a compliance check.</strong></div>
+      <div style="margin-bottom:8px"><strong>Trigger food: ice cream</strong>, and she manages it herself by not keeping it in the house. <em>"I'll eat like three in a row."</em> She links it to feeling like a kid, so it reads as comfort rather than habit. <strong>Do not make this a correction, she already solved it.</strong></div>
+      <div style="padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>She has already said she is back on track</strong>, Sep 23: <em>"Back to my routine eating though at home for the next week and a half before my next trip."</em> So reinforce, do not re-instruct. <strong>No calorie target, ever.</strong></div>
+    </div>
+  </div>
+
+  <!-- 8 - Coaching Points -->
+  <div class="dp-section">
+    <div class="dp-title">&#128681; Coaching Points</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>&#128994; Nothing is outstanding in the thread.</strong> The last message is Daniel's (<em>"great work"</em>, Seen). All 42 rows read with speaker labels, none unlabeled. <strong>No pre-scan message has gone for Oct 1</strong>, so none of the three sends duplicates anything.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>&#128994; The eccentric pull-up build is DONE.</strong> See section 0. <strong>Do not raise it as owed.</strong> The only open question is <em>placement</em>: the note says "at the end, burn out", while the original Jul 8 coaching was to do them fresh at the start. One sentence on the day, not a task.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px"><strong>&#128992; She is still on band-assisted pull-ups.</strong> Sep 11, 14 and 23 all logged Band Assisted Pull Up at 9, 9, 8, 7. The Sep 3 conversation was moving her toward <em>bodyweight</em> eccentrics. <strong>Reps on an assisted variation are the wrong metric</strong>, the assistance level is the one to track. Worth agreeing a way to log it.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:4px"><strong>&#128992; Flat sets at the rep cap, on the barbell lifts.</strong> Bench 85&times;8 four times, squat 90&times;8 four times, pulldown 65&times;10 three times. She fixed the deadlift the day she was told. <strong>The rule she needs restated is: beat last time on sets 1 and 2, back off on the last one</strong>, and she has asked directly for help knowing when to move up.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#eef2ff;border-left:3px solid #7c8aff;border-radius:4px"><strong>&#128309; Left arm, now measurable.</strong> 363.6 g less lean than the right on Sep 3, up from 341.2 g on Aug 6. <strong>Suggest the variable, never drop the movement class.</strong> She is already starting unilateral work on the left and matching reps, which is the right protocol, so this is about patience and one more block, not a program change.</div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#f0fdf4;border-left:3px solid #22c55e;border-radius:4px"><strong>&#128994; Visceral fat is silent.</strong> VAT 37.2 cm&sup2;, well under the 60 floor and falling. <strong>Nothing to send, nothing to recommend, nothing to ask.</strong> The unticked box is not evidence anything is owed.</div>
+      <div><strong>&#128994; No bone density content.</strong> 28-day window, BMD does not move on that timescale.</div>
+    </div>
+  </div>
+
+  <!-- 9 - In Their Own Words -->
+  <div class="dp-section" style="border-left:3px solid #7c8aff;background:#f6f7ff">
+    <div class="dp-title">&#128172; In Their Own Words <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">PENDING &mdash; WEEK-OUT Sep 24</span></div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:10px">
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">What have you noticed? <span style="font-weight:400;text-transform:none">&middot; drafted Sep 24, awaiting Daniel's approval to send</span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888">Pending. Prompts matched to a <strong>BUILD-ONLY</strong> arc: sleeves and shoulders, whether the weights feel lighter in her hand, and whether the left arm has closed any of the gap. <strong>The left arm is the personal one</strong>, off her own Sep 15 complaint, and it is now measurable on the DEXA. No waistband or fat-loss prompts, there is nothing for her to cut at the 42nd percentile. <strong>The send opens by quoting her last answer back</strong>, because she was already asked this on the Sep 3 arc.</div>
+      </div>
+      <div style="margin-bottom:10px">
+        <div style="font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#666">Where do you see yourself in 6 to 12 months? <span style="font-weight:400;text-transform:none">&middot; <strong>SKIPPED</strong></span></div>
+        <div style="margin-top:4px;padding-left:10px;border-left:2px solid #d6d9f5;color:#888"><strong>Not sent, and deliberately.</strong> 6 Month Core runs to Nov 11, 2026, 41 days after the scan, so there is no renewal cliff here, and this is a condensed routine track with no renewal content. <strong>She has also effectively answered it already</strong>, and the answer is one unassisted pull-up.</div>
+      </div>
+      <div style="margin-bottom:8px;padding:8px 10px;background:#fff;border:1px solid #e2e5f7;border-radius:6px"><strong>What she has volunteered so far, unprompted:</strong><br><em>"Pull-up eccentric feels like I'm getting stronger - less and less assistance needed. Still can't do a normal one yet."</em> (Iris, Sep 2)<br><em>"Felt super strong the whole 120 miles and 40,000 feet elevation gain and loss throughout the trip."</em> (Iris, Sep 2)<br><em>"Phase 4 block feels good! Haven't experienced any issues... Trip to Texas went well!"</em> (Iris, Sep 23)<br><em>"Thanks for calling out the deadlifts, presses, etc. You're right. I increased the weights today and was still feeling strong."</em> (Iris, Sep 23)<br><em>"I struggle with knowing when to increase because you also told me not to just sit at the same weight forever."</em> (Iris, Sep)<br><em>"I feel like that's how I'm going to be once I can do my first pull-up for sure."</em> (Sep 15 call)</div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e5f7"><strong>How to use it:</strong> <strong>she answers, and she answers with detail.</strong> Every direct question in the thread has come back with specifics, usually within a day, and she volunteers substitutions and schedule changes without being asked. <strong>So an empty reply by Thursday would be unusual for her and worth a direct ask in the room.</strong> She also answers capability questions more readily than appearance ones, which is why the prompts lead with how the weights feel rather than how she looks.</div>
+    </div>
+  </div>
+
+  <!-- 10 - Scan-Day Focus -->
+  <div class="dp-section">
+    <div class="dp-title">&#127919; Scan-Day Focus: Open On 9 Of 9, Lead With The Arm Gap, Leave With The Pull-Up Plan</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>1. Open on the training.</strong> <strong>9 of 9 in 30 days, 100%</strong>, through a Texas trip, with her rearranging her own week to protect the sessions. <strong>That is the headline and it goes in before a single number.</strong></div>
+      <div style="margin-bottom:8px"><strong>2. Set the window.</strong> <strong>28 days from Sep 3</strong>, her seventh DEXA and fifth on the package. Say it first so the numbers read as one block, and so the Alps dip stays where it belongs.</div>
+      <div style="margin-bottom:8px"><strong>3. Say the body fat percentile out loud before the percentage.</strong> 32.2% is the <strong>42nd percentile for a 30-year-old woman</strong>. <strong>There is nothing here to cut</strong>, and she needs to hear that plainly or she will read the raw number as a problem. <strong>ALMI as the age-matched percentile only, never kg/m&sup2;. No bone density.</strong></div>
+      <div style="margin-bottom:8px"><strong>4. Lead the numbers with the arm gap, it is the most useful thing on this scan.</strong> Right arm lean is <strong>363.6 g ahead of the left</strong>, and it was 341.2 g in August. She has been telling you the left feels weaker since Sep 15 and now it is measured. <strong>Showing her this validates what she has been feeling and makes the unilateral work make sense.</strong> Then say plainly that it takes a long time and the protocol is already right.</div>
+      <div style="margin-bottom:8px"><strong>5. The pull-up is what she will remember from the room.</strong> She is on band-assisted 9, 9, 8, 7 and still cannot do one unassisted. <strong>Give her a way to measure the assistance coming down</strong>, because reps on an assisted variation hide the progress she is actually making. Her grip and hang time is the other lever you already named. <strong>This one number is worth more to her than the whole body composition screen.</strong></div>
+      <div style="margin-bottom:8px"><strong>6. Restate the set rule, she has asked for it directly.</strong> Beat last time on sets 1 and 2, back off on the last. She applied it to the deadlift the same morning you sent it. <strong>Praise that first</strong>, then point at bench and pulldown, and remember her dumbbell increments jump 50 to 60 with nothing between, so a tempo or rep target beats a load jump on those.</div>
+      <div style="margin-bottom:8px"><strong>7. Two days of food photos land Sep 29 and 30.</strong> The Macros Journal has never had an entry, so those photos are the only picture there will be. <strong>Mornings are already excellent, so praise them and put the whole conversation on lunch.</strong></div>
+      <div style="margin-bottom:8px"><strong>8. Leave out:</strong> any calorie target, any bone density content, <strong>any visceral fat content</strong> (37.2 cm&sup2;, below the floor), any fat-loss framing, and the squat and deadlift Gold Standard numbers.</div>
+      <div><strong>9. No close and no Slack post.</strong> Routine 5th package scan, condensed track, Draft 4 skipped. <strong>6 Month Core runs to Nov 11, so there is no renewal conversation at this scan at all.</strong></div>
+    </div>
+  </div>
+
+  <!-- 11 - Audio Brief, 5 sections -->
+  <div class="dp-section" style="border-left:3px solid #0ea5e9;background:#f0f9ff">
+    <div class="dp-title">&#127911; Audio Brief Script (condensed, 5 sections)</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#2a2a3a">
+      <div style="margin-bottom:8px"><strong>1. Who and when.</strong> Valerie Schiebel, thirty, fifth package scan, seventh DEXA, Thursday the first of October at ten thirty in Campbell. Thirty minute solo block. On six month core through the eleventh of November, so no renewal conversation and no close. Baseline for this block is the third of September, twenty eight days.</div>
+      <div style="margin-bottom:8px"><strong>2. What she has done.</strong> Nine of nine sessions in thirty days. A hundred percent, through a trip to Texas, and she rearranged her own week to protect them. Since April, lean up three point seven pounds, body fat down slightly, and ALMI from the fifth to the tenth percentile. Visceral fat down from forty four point seven to thirty seven point two across the six scans.</div>
+      <div style="margin-bottom:8px"><strong>3. The number that matters.</strong> Her right arm carries three hundred and sixty grams more lean tissue than her left. In August that gap was three forty one, so it widened. She told you on the fifteenth of September that the left arm feels weaker in everything, and now the scan measures it. Lead with that. Also say her body fat percentile out loud, thirty two point two percent is the forty second percentile for her age, so there is nothing to cut here and the whole job is muscle.</div>
+      <div style="margin-bottom:8px"><strong>4. The coaching item.</strong> The eccentric pull-up you promised is built. It is the note on her weighted pull-up slot, live since around the eleventh of September, and you told her so in the thread on the twenty third. Nothing is owed. What is still open is that she is running band assisted pull-ups at nine, nine, eight, seven, and reps on an assisted variation hide her real progress. Give her a way to measure the assistance coming down. The pull-up is the thing she will remember from this room, she has never done one in her life and she has said out loud what getting one will mean.</div>
+      <div><strong>5. How to run the room.</strong> She is self-managing and honest, she reports her own substitutions and reschedules, and she applied your flat-set correction the same morning you sent it. Praise that before you correct anything else. She asked you directly how to know when to move the weight up, so restate the rule: beat it on sets one and two, back off on the last. Her dumbbells jump fifty to sixty with nothing in between, so give her tempo or reps rather than load there. Food photos land Tuesday and Wednesday, her mornings are excellent, put the whole nutrition conversation on lunch. No calorie target, no bone density, no visceral fat.</div>
+    </div>
+  </div>
+
+</div>
+  <!-- end modal-valerie -->
+
 
 
 
