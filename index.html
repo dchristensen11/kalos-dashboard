@@ -2485,7 +2485,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <div class="day-group">
   <div class="day-label">Wednesday &middot; October 7, 2026 &mdash; 4 scans</div>
   <div class="cards-row">
-<!-- OCT7-CARDS-INSERT-HERE: Victoria Treece 10:30 AM goes between Neel and Justin -->
+<!-- OCT 7: all 4 cards placed 2026-09-30 -->
 
 <!-- ── NEEL DESAI · 9:00 AM · second scan, conversion ── -->
 <div class="card" id="card-neel">
@@ -2559,6 +2559,79 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> Lift targets + nutrition &middot; <strong>DRAFTED 30 Sep, NOT SENT</strong> (deadlift / overhead press / squat)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> "What have you noticed" &middot; <strong>DRAFTED 30 Sep, NOT SENT</strong> (asked cold, first scan arc)</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> "Where do you see yourself 6 to 12 months from now" &middot; <strong>DRAFTED 30 Sep, NOT SENT</strong> (gate says SEND, conversion moment)</span></label>
+        </div>
+      </div>
+    </div>
+
+<!-- ── VICTORIA TREECE · 10:30 AM · 3rd package scan, routine ── -->
+<div class="card" id="card-victoria">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('victoria')">Victoria Treece <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Female &middot; 58 &middot; 3rd Package Scan (4th DEXA) &middot; 6 Month Core &middot; LBM gain / BUILD ONLY</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">10:30 AM</span>
+          <span class="badge badge-lbm-gain">LBM Gain</span>
+        </div>
+      </div>
+      <div class="scan-row">6 Month Core &middot; Jun 17 to <strong>Dec 17, 2026</strong> &middot; <span style="color:#22c55e">no renewal cliff at this scan</span> &middot; routine checkpoint, no close, no Slack post</div>
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">118.6</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">DXA total &middot; scale 120.5 &middot; 5&#39;3&quot;</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">33.8%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">21st %ile age-matched &middot; 32.4% &rarr; 33.8%</div>
+        </div>
+        <div class="metric note">
+          <div class="metric-val">93.2</div>
+          <div class="metric-label">VAT cm&sup2;</div>
+          <div class="metric-sub">94.8 &rarr; 93.2 &middot; falling &middot; box closed Sep 27</div>
+        </div>
+        <div class="metric warn">
+          <div class="metric-val">14th %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">27th &rarr; 14th &middot; the whole point of this block</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">&#128202; Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#f59e0b">79%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:79%;background:#f59e0b"></div></div>
+            <div class="cons-detail">79% last 30d, 75% last 7d (Everfit columns, pulled Sep 30). 11 of 14 since the Sep 8 return, misses Sep 13, 17 and 26. The Aug 19 to Sep 7 travel block was cleared from the calendar as promised, so this figure covers active time only. Four sessions before the scan: Fri Oct 2, Sat Oct 3, Mon Oct 5, Tue Oct 6.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">&#11088; Their Deep Why</div>
+        <div class="why-text">Aesthetics and strength. Fighting the limits of age and menopause, and looking good in a bikini in Hawaii. Trains entirely at home, four days a week, two of them over FaceTime with a friend.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('victoria')">
+          <span class="checklist-title">&#9989; Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-victoria">8/11</span>
+            <span class="checklist-chevron" id="chev-victoria">&#8250;</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-victoria">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Scan time confirmed from Google Calendar <code>daniel@livekalos.com</code> (Acuity 1768687999, 10:30&ndash;11:00 AM, solo, Campbell). She picked 10:30 herself on the Sep 9 call</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> DEXA pulled from the scan JSONs plus the live Iris results dashboard (patient 880583). <strong>Comparison point is Sep 9, a 28-day window</strong>, not the Jul 20 first package scan that <code>scans.package</code> points at</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Member record, all six transcripts and the regenerated Iris member details read (why, nutrition, injuries, equipment, program, membership state)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Live Iris DM thread read end to end Sep 30, <strong>40 messages sender-labelled, 0 unlabelled</strong>, both sides present. Last message is Daniel's (Sep 27 visceral strategy), so nothing is outstanding from him</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Set-level lift data pulled for Sep 16, 18, 22, 23, 27, 28 and 29, and the programmed targets read for Fri Oct 2, Sat Oct 3, Mon Oct 5 and Tue Oct 6</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> <strong>2-day Food Journal task CREATED</strong> on Oct 5 and Oct 6, verified server-side. Photo journal 55 all-time but <strong>task-driven in bursts</strong> with a 15-day gap Sep 13 to Sep 28. <code>macro/journals</code> returned an empty array, treated as UNVERIFIED per the wave-1 trap, not as zero</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Every commitment from the Sep 9 scan call and the Sep 22 midpoint verified delivered. <strong>The Aug 19 to Sep 7 travel workouts were cleared exactly as promised.</strong> No coach debt</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('victoria')"><span> Arc classified <strong>BUILD ONLY</strong> from BF 33.8% at the <strong>21st percentile age-matched</strong> and ALMI at the 14th. No fat-loss framing anywhere</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('victoria')"><span> Pre-scan opener &middot; <strong>DRAFTED Sep 30, NOT SENT</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('victoria')"><span> Lift targets + nutrition &middot; <strong>DRAFTED Sep 30, NOT SENT</strong> (Arnold press / bent over row / box squat)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('victoria')"><span> "What have you noticed" &middot; <strong>DRAFTED Sep 30, NOT SENT</strong> &middot; opens on what she said in the room on Sep 9, since the written version went unanswered last time</span></label>
         </div>
       </div>
     </div>
@@ -3931,6 +4004,205 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
 <!-- end modal-neel -->
+
+<div id="modal-victoria" class="modal-content"
+     data-name="Victoria Treece"
+     data-sub="3rd Package Scan (4th DEXA) &middot; October 7, 2026 &middot; 10:30&ndash;11:00 AM PDT (Google Calendar, Acuity 1768687999) &middot; Routine track &middot; LBM Gain / BUILD ONLY &middot; F &middot; 58">
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Wed Oct 7 &middot; 10:30 AM &middot; Campbell &middot; solo 30 min</span>
+    <span class="g-chip">4th DEXA &middot; 3rd package scan</span>
+    <span class="g-chip">F &middot; 58 &middot; 5&#39; 3&quot;</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-warn">11 / 14 sessions &middot; 79% last 30d</span>
+    <span class="g-chip g-info">28 days since the Sep 9 scan</span>
+    <span class="g-chip g-mute">No renewal, no close, no Slack post</span>
+  </div>
+</div>
+
+<!-- ═══ 1 - GOALS &amp; MOTIVATION ═══ -->
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">&#127919; Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Put the lean tissue back on.</strong> She lost 5.62 lb of it across the Jul 20 to Sep 9 window and ALMI fell from the 27th percentile to the 14th. Everything this block is doing points at reversing that, and Wednesday is the first read on whether it worked.</li>
+    <li><strong>Why:</strong> aesthetics and strength. Fighting the limits of age and menopause, and looking good in a bikini in Hawaii. Specific and anchored, safe to use.</li>
+    <li><strong>This block, set in the room on Sep 9:</strong> restart the same program, first two sessions controlled then push, protein back to 110 with 30 to 40 g per meal starting at breakfast, and creatine daily again. <em>"No need to tweak it because it was working before."</em></li>
+    <li><strong>Trains entirely at home.</strong> Barbell, squat rack, free weights, leg extension and hamstring curl machines, a dip station and cables. No sled. Four days a week, two of them over FaceTime with a friend, and she prefers 10 to 11 AM solo sessions.</li>
+    <li><strong>Goal source is her stated focus, not derived from numbers.</strong> <span class="t-mute">goal <code>lbm-gain</code>, set in the SOP block and consistent across every scan narrative.</span></li>
+  </ul>
+</div>
+
+<!-- ═══ 2 - WINS TO OPEN WITH ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#127942; Wins to Open With <span class="badge-pending">Scan 4 Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>She took the set-intensity instruction and executed it in the very next session.</strong> Sep 27 he wrote that every set was landing on the same number and that sets 1 and 2 are where the work goes. On Sep 28 the bent over row went <strong>85 for 10, 8 and 8</strong> against 85 for 8, 8, 8 six days earlier, and the barbell overhead press went <strong>35 for 10, 8 and 8</strong> against 35 for 8, 8, 8. Set one up two reps on both. <strong>Open here.</strong></li>
+    <li><strong>Tuesday's single leg RDL is the pattern done perfectly.</strong> 25 for 10, 25 for 8, then back to 20 for 8. Beat it on 1 and 2, back off on 3, no pyramiding. She was at 20 for 8, 8, 8 on Sep 23.</li>
+    <li><strong>Visceral fat has fallen at every single scan.</strong> 112.7 to 94.8 to 93.2 cm&sup2;, down <strong>19.5 cm&sup2; all time</strong>, and it kept falling straight through a three-week cruise. Daniel already called this in the room: <em>"your visceral fats are moving in the right direction. So your food choices are good."</em></li>
+    <li><strong>Fat mass has barely moved in four months.</strong> 40.21 to 40.27 to 40.13 lb. Through a medical procedure, a cruise and two separate travel blocks she has held fat flat. That is the platform the muscle gets built on.</li>
+    <li><strong>She logged both days of the food task without being chased.</strong> Sep 28 and Sep 29, eight entries, with real anchors in them: tuna, chicken nuggets with buffalo sauce, blueberries, a Barebell bar at 20 g. She did the Sep 11 to 13 log too, three days against a two-day ask.</li>
+    <li><strong>Her arms grew during the block she lost lean in.</strong> Arms lean 8.5 to 8.8 lb, +3.4%, while legs and trunk fell. She noticed it herself on Sep 9: <em>"I can see a little more muscles on my upper body."</em></li>
+  </ul>
+</div>
+
+<!-- ═══ 3 - THE NUMBERS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#128202; The Numbers <span class="t-mute">comparison point Sep 9, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/880583" target="_blank" class="dp-title-link">Results Dashboard &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">118.58 lb</div><div class="snap-lbl">DXA total &middot; scale 120.5</div></div>
+    <div class="snap-metric"><div class="snap-val">33.8%</div><div class="snap-lbl">Body fat &middot; 21st %ile</div></div>
+    <div class="snap-metric"><div class="snap-val warn">74.59 lb</div><div class="snap-lbl">Lean &middot; down 5.62</div></div>
+    <div class="snap-metric"><div class="snap-val ok">40.13 lb</div><div class="snap-lbl">Fat mass &middot; down 0.14</div></div>
+    <div class="snap-metric"><div class="snap-val ok">93.2 cm&sup2;</div><div class="snap-lbl">Visceral fat &middot; down 1.6</div></div>
+    <div class="snap-metric"><div class="snap-val warn">14th %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Jun 13</strong><br><span class="t-mute">intro = baseline</span></td><td>121.70</td><td>77.60</td><td>40.21</td><td>33.0% (18th)</td><td>112.7</td><td>14th</td></tr>
+      <tr><td><strong>Jul 20</strong><br><span class="t-mute">1st package scan</span></td><td>124.38</td><td>80.21</td><td>40.27</td><td>32.4% (15th)</td><td>94.8</td><td>27th</td></tr>
+      <tr class="now"><td><strong>Sep 9</strong><br><span class="t-mute">comparison point</span></td><td>118.58</td><td>74.59</td><td>40.13</td><td>33.8% (21st)</td><td>93.2</td><td>14th</td></tr>
+      <tr class="t-delta"><td><strong>Last block</strong><br><span class="t-mute">Jul 20 to Sep 9</span></td><td>&minus;5.80</td><td class="t-bad">&minus;5.62</td><td class="t-ok">&minus;0.14</td><td class="t-bad">+1.4 pts</td><td class="t-ok">&minus;1.6</td><td class="t-bad">&minus;13</td></tr>
+      <tr class="t-delta"><td><strong>Whole run</strong><br><span class="t-mute">Jun 13 to Sep 9</span></td><td>&minus;3.12</td><td class="t-bad">&minus;3.01</td><td class="t-ok">&minus;0.08</td><td class="t-bad">+0.8 pts</td><td class="t-ok">&minus;19.5</td><td>0</td></tr>
+      <tr class="t-pending"><td><strong>Oct 7</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info">
+    <strong>Arc: BUILD ONLY. Do not offer fat loss in any form.</strong> 33.8% body fat sounds high and is the <strong>21st percentile for a 58-year-old woman</strong>, which means she is leaner than roughly four out of five of her peers. ALMI at the 14th percentile is the actual problem. Daniel already framed this correctly on Sep 9: <em>"that's hard to do with a low ALMI. That's why we're focused on getting the muscle up. That's your metabolism&hellip; then we'll burn the fat off."</em>
+  </div>
+  <div class="box-warn">
+    <strong>All of the lean loss came out of the legs and trunk. The arms grew.</strong> Regional, Jul 20 to Sep 9: trunk lean 37.4 lb (&minus;3.0), legs lean 23.1 lb (&minus;2.7), <strong>arms lean 8.8 lb (+0.3)</strong>. Fat moved almost nowhere: trunk &minus;0.3, legs &minus;0.2, arms +0.3. Daniel read this out loud at the Sep 9 scan and she confirmed it from the mirror. Give her the regional read again on Wednesday, because it is the honest version of "you lost muscle".
+  </div>
+  <div class="box-info">
+    <strong>Three weeks off, and the cause is fully understood.</strong> Zero sessions Aug 19 to Sep 7 (cruise, Savannah, Florida, DC), protein by her own account <em>"terrible"</em>, croissant breakfasts, and no creatine for the whole trip. Weight 124.38 to 118.58 while fat held flat. Nothing about this scan is mysterious and she already knows why.
+  </div>
+  <div class="box-info">
+    <strong>Do not raise bone density.</strong> The window is 28 days and BMD does not move on that timescale.
+  </div>
+  <div class="box-mute">
+    <strong>Two record notes, neither needs action in the room.</strong> The roster frontmatter reads <code>intro_scan: 2026-06-17</code>, but the scan file, the PDF and the Iris results dashboard all date the intro scan <strong>Jun 13</strong>. Jun 17 is her purchase and program start. Everything above uses Jun 13. Separately, <code>scans.package</code> reads <code>2026-07-20</code> because it holds the FIRST package scan, not the most recent one.
+  </div>
+</div>
+
+<!-- ═══ 4 - THE PLAN SO FAR ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#128203; The Plan So Far <span class="t-mute">two anchors: the Sep 9 package scan, and the Sep 22 midpoint, her last touchpoint</span></div>
+  <ul class="dp-list">
+    <li><strong>Delivered, since the Sep 9 scan:</strong> the travel-period workouts were cleared exactly as promised. <strong>Zero assignments sit between Aug 19 and Sep 7</strong>, so the adherence percentage now covers active time only. <em>"That way you don't get dinged for that."</em></li>
+    <li><strong>Delivered, since the Sep 9 scan:</strong> the travel protein packs. Both Amazon links are in the thread, with creatine and plant based, plus the food-while-away rules. She replied <em>"Thanks. I will stick to this plan."</em></li>
+    <li><strong>Delivered, since the Sep 9 scan:</strong> post-call notes, and the two-day food log for Sep 28 and 29, announced in writing and completed by her.</li>
+    <li><strong>Delivered, since the Sep 22 midpoint:</strong> post-call notes carrying the agreed shoulder plan, plus a five-day follow-up on Sep 27 with lift-by-lift set intensity coaching.</li>
+    <li><strong>Member-executed, not owed:</strong> higher reps on the shoulder press before the next weight jump, the heavy-then-light mixed set technique at home, micro-plates or half weights, and getting a spot from her husband on heavier dumbbell chest press days. All of it is hers to do. <span class="t-mute">None of it requires a program change, and none of it is coach debt.</span></li>
+    <li><strong>Open, and worth ten seconds in the room rather than a DM:</strong> he asked on Sep 27 <em>"I don't see Friday or Saturday logged from Arizona though. Did those happen?"</em> and she has not answered. The app answers it: Sep 26 Lower B was assigned and not started, Sep 27 Upper B was completed. She trained Sunday, not Saturday.</li>
+    <li><strong>No material coaching changes</strong> to injuries, schedule or nutrition since the Sep 22 check-in beyond what is listed above.</li>
+  </ul>
+</div>
+
+<!-- ═══ 5 - LIFTING METRICS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#127947; Lifting Metrics <a href="https://app.everfit.io/home/client/6a34806e747abcc8192f925c/calendar?tab=history" target="_blank" class="dp-title-link">Training &#8599;</a></div>
+  <div class="box-info"><strong>Movement balance:</strong> one push, one pull, one squat, spread across three of the four sessions before the scan. No hinge target by design, the sumo deadlift on Sat Oct 3 is a brand new movement for her with no history to anchor to.</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Week-out target</th><th>Where it came from</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Alternating DB Seated Arnold Press</strong><br><span class="t-mute">Fri Oct 2</span></td><td>20 for 10 on sets 1 and 2</td><td>Sep 27: 20 &times; 8, 7, 7. <strong>This is the exact lift she raised on Sep 22:</strong> <em>"going from military press, 20 to 25, I can't really push a 25, but I can do more 20."</em> Reps before weight, as agreed</td></tr>
+      <tr><td><strong>Supinated Barbell Bent Over Row</strong><br><span class="t-mute">Mon Oct 5</span></td><td>85 for 10 on sets 1 and 2, let set 3 land</td><td>Sep 28: 85 &times; 10, 8, 8, already up two reps on set 1 after the Sep 27 message. Was 85 &times; 8, 8, 8 on Sep 22</td></tr>
+      <tr><td><strong>Barbell Box Squat</strong><br><span class="t-mute">Tue Oct 6</span></td><td>Put it up on sets 1 and 2</td><td>Sep 29: 30 &times; 6, 6, 6. Three identical completed sets means set 1 had more in it. New movement in P4, first logged Sep 29</td></tr>
+      <tr><td>Barbell Overhead Press<br><span class="t-mute">Mon Oct 5</span></td><td>&mdash;</td><td>Sep 28: 35 &times; 10, 8, 8 &middot; Sep 22: 35 &times; 8, 8, 8 &middot; <strong>Sep 18 in P3: 40 &times; 12, 10, 10.</strong> No target set, see the note below</td></tr>
+      <tr><td>DB Single Leg Romanian Deadlift<br><span class="t-mute">Tue Oct 6</span></td><td>&mdash;</td><td>Sep 29: 25 &times; 10, 25 &times; 8, 20 &times; 8 &middot; Sep 23: 20 &times; 8, 8, 8. Textbook shape, praise it</td></tr>
+      <tr><td>DB Alternating Chest Press<br><span class="t-mute">Fri Oct 2, if she swaps again</span></td><td>&mdash;</td><td>Sep 27: 50 &times; 8, 7, 6, 6. Reps falling across sets, so it is properly hard. Do not push the load, she has already said she can feel it drift</td></tr>
+      <tr><td>Barbell Deadlift Sumo<br><span class="t-mute">Sat Oct 3</span></td><td>&mdash; <span class="t-mute">baseline, report the number</span></td><td>No history at this lift. Closest is Trap Bar Deadlift 30 &times; 5, 7, 7, 7 on Sep 16. It was also programmed on Sep 26, which she missed</td></tr>
+      <tr><td>Preacher Curl</td><td>&mdash;</td><td>Sep 28: 30 &times; 10, 10, 10 &middot; Sep 22: 30 &times; 10, then 35 &times; 7 and 35 &times; 8. <strong>She went backwards here</strong></td></tr>
+      <tr><td>Cable Lateral Raise</td><td>&mdash;</td><td>Sep 28: 8 &times; 12, 12 &middot; Sep 22: 10 &times; 12, 12. Also down. Shoulder-adjacent, so possibly deliberate</td></tr>
+      <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Female, under 60 bucket &middot; 118.58 lb Sep 9 bodyweight</td></tr>
+      <tr><td>BB Bench Press</td><td>&mdash;</td><td>~120 lb 1RM (1.0&times;BW)</td></tr>
+      <tr><td>BB Back Squat</td><td>&mdash;</td><td>~180 lb 1RM (1.5&times;BW)</td></tr>
+      <tr><td>BB Deadlift</td><td>&mdash;</td><td>~235 lb 1RM (2.0&times;BW)</td></tr>
+    </tbody>
+  </table>
+  <div class="box-bad"><strong>Do not quote the Gold Standards to her.</strong> At ALMI 14th percentile, box squatting 30 and with no barbell bench in her program at all, these numbers are years away and would land as discouragement on a member who has just watched her lean mass fall. <strong>Use direction instead.</strong> Her own numbers are the honest frame: the row holding 85 while reps climb, the single leg RDL 20 to 25 in six days, and ALMI climbing back off the 14th percentile, which is the benchmark that actually applies to her.</div>
+  <div class="box-info"><strong>Set intensity is the live conversation and she is already winning it.</strong> Beat it on sets 1 and 2, back off on set 3. A completed flat third set means sets 1 and 2 were too easy. No pyramiding. She did exactly this on Sep 28 and Sep 29 after one message, which is worth saying out loud.</div>
+  <div class="box-warn"><strong>Read the overhead press carefully before you say anything about it.</strong> She pressed <strong>40 for 12</strong> on Sep 18 in P3, then 35 from Sep 22 in P4. That is the phase rep prescription going from 12 down to 8, <strong>not a regression</strong>. No target was set on it in the drafts for exactly this reason. Worth one sentence in the room, nothing in writing.</div>
+  <div class="box-warn"><strong>Suggestion for Daniel, not for Victoria, and not a mandate.</strong> Fri Oct 2 programs a <strong>Barbell Close Grip Bench Press</strong> and she has substituted a dumbbell alternating chest press for it before. She flagged the risk herself on Sep 22: <em>"I kind of could feel this going to the side a little, and I'm like, no, all I need is to throw my shoulder out."</em> The variable is the <strong>setup</strong>, not the movement class: she has a squat rack at home, so safety pins at chest height make the barbell version the safer of the two without a spotter. Worth asking whether she knows that. No exercise dropped, no target set on it.</div>
+  <div class="box-info"><strong>She substitutes at home and tells him so.</strong> Sep 22: <em>"I don't have like a sled pull, I'm just doing like deadlifts or hip thrusts&hellip; If you see something with no weights, it's probably because I just pushed through, used the timer, and did something else."</em> Nothing in the four sessions before the scan needs equipment she lacks, and there are no sled pushes left, which he confirmed to her on the call.</div>
+  <div class="box-warn"><strong>Weight units are null in the Everfit API on every set.</strong> Every number above is quoted bare, exactly as it appears in her app. Do not assert lb or kg, or per-hand versus combined. The week-out targets are quoted bare too.</div>
+</div>
+
+<!-- ═══ 6 - NUTRITION ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#129367; Nutrition <a href="https://app.everfit.io/home/client/6a34806e747abcc8192f925c/macros" target="_blank" class="dp-title-link">Macros &#8599;</a> <a href="https://app.everfit.io/home/client/6a34806e747abcc8192f925c/food-journal" target="_blank" class="dp-title-link">Food Journal &#8599;</a></div>
+  <ul class="dp-list">
+    <li><strong>Protein 110 g/day</strong>, fist-sized portions at three meals plus two shakes at 25 to 30 g each, and creatine 5 g daily. Set in the room, recorded in the SOP block, repeated in the thread. This is the number that decides whether the lean tissue comes back.</li>
+    <li><strong>Front of the day is the gap.</strong> Sep 9: 30 to 40 g per meal, leucine threshold every three hours, skip the carbs at breakfast and eat protein and fat instead. Her breakfasts on the cruise were croissants, which is the one combination he explicitly told her to avoid.</li>
+    <li><strong>What she actually eats, in her own words:</strong> tuna, Greek yogurt, ground turkey with white rice, and Oikos Pro strawberry banana drinks at 23 g from Costco. Eating out she picks poke bowls, fish or meat over pasta and pizza. She eats alone most nights because her husband eats at the NVIDIA cafeteria, so simple repeatable meals are the default.</li>
+    <li><strong>Visceral fat levers already sent Sep 27</strong>, short-form DM plus the full email: minimize ultra-processed, 1 tbsp ACV before the two biggest meals, 3 to 5 cups green tea, fatty fish, probiotics and berries.</li>
+  </ul>
+  <div class="box-warn"><strong>Food logging is task-driven, not continuous, and that is the thing to solve.</strong> Photo Food Journal 55 entries all-time across only 12 distinct days, clustered where a task or an ask existed: Jun 22-23, Jun 30 to Jul 2, Jul 9-10, Sep 11-13, Sep 28-29. <strong>Fifteen silent days between Sep 13 and Sep 28.</strong> Iris agrees independently: "19 meals over 5 of 30 days". A fresh 2-day task was created Sep 30 on <strong>Oct 5 and Oct 6</strong> and verified server-side. <span class="t-bad">Never quote her a calorie number.</span> Protein first, then food quality, then carb timing. <strong>Never frame the log as a compliance check</strong>, it is how her numbers get set.</div>
+  <div class="box-info"><strong>Macros Journal returned an empty array and was treated as UNVERIFIED, not as zero.</strong> Per the wave-1 finding that <code>macro/journals</code> can answer about a different client, the result carried no <code>data[0].client</code> to check, so the decision rested entirely on the photo journal, whose 40 returned rows all carry her own author id.</div>
+  <div class="box-mute"><strong>Room context only, not an action, and not owed.</strong> Her <code>nutrition-strategy</code> box has never been ticked and her 10-day call was Jun 30, three months past the window, so she has <strong>no pre/post workout protocol on record</strong>. That is being surfaced to Daniel separately and is deliberately absent from every draft here.</div>
+</div>
+
+<!-- ═══ 7 - IN THEIR OWN WORDS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#128172; In Their Own Words</div>
+  <div class="box-warn">
+    <strong>&ldquo;What have you noticed?&rdquo;</strong> &mdash; <strong>drafted Sep 30, NOT YET SENT.</strong> <span class="badge-pending">Pending</span><br>
+    <em>Asked: legs and glutes, sleeves and shoulders, whether the weights feel lighter in her hand. Opened on what she said in the room on Sep 9 rather than cold.</em>
+  </div>
+  <div class="box-info">
+    <strong>She has already answered this question once, just not in writing.</strong> The same question went out before the Sep 9 scan and got no reply in the thread. She answered it out loud at the scan instead, and apologized for the silence:<br>
+    <em>&ldquo;I know I didn't get back to you. Sorry. But, like, I do feel like my body has changed, and, like, I can see a little more muscles on my upper body&hellip; I do feel like this part in my back is good, but, like, from here down, it's&hellip;&rdquo;</em> (Sep 9)<br>
+    <strong>That is the frame for Wednesday.</strong> Upper body is visibly working and she can see it. The lower half is where she feels nothing, and the scan says her legs are exactly where the lean went. Give her the regional read against her own sentence.
+  </div>
+  <div class="box-mute">
+    <strong>&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</strong> &mdash; <strong>SKIPPED, not applicable.</strong><br>
+    6 Month Core runs Jun 17 2026 to <strong>Dec 17 2026</strong>. Mid-contract, no renewal cliff at or near this scan, so the gate says skip. Routine track: no sales content, no close, no Slack post. <span class="t-mute">The term does end about ten weeks after this scan. That is a note for Daniel, not a Wednesday conversation, and nothing in the drafts gestures at it.</span>
+  </div>
+  <div class="box-info">
+    <strong>What she has volunteered recently, unprompted, quoted verbatim:</strong><br>
+    &bull; <em>&ldquo;Thanks for all the info. I will work on more protein out the gate. I leave for the next trip on the 24th. They have a nice gym there so I already told Eric we will be working out.&rdquo;</em> (thread)<br>
+    &bull; <em>&ldquo;Interesting. I ate worse on vacation and it went down. Maybe I just need more vacations. But eat more protein on them.&rdquo;</em> (on the liver result)<br>
+    &bull; <em>&ldquo;It's hard to get to that next weight for me&hellip; all I need is to throw my shoulder out.&rdquo;</em> (Sep 22)<br>
+    &bull; <em>&ldquo;I at least do three, so.&rdquo;</em> (Sep 22, on a four-day week during a busy stretch)<br>
+    &bull; <em>&ldquo;I'm not gonna obsess over it.&rdquo;</em> (Sep 9, on the weight drop)
+  </div>
+</div>
+
+<!-- ═══ 8 - COACHING POINTS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#128681; Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-red"><strong>ALMI 27th percentile back down to the 14th in one block.</strong> This is the single number the whole plan exists to move and it gave back everything it gained. Lean 80.21 to 74.59 lb. Wednesday is the read on whether three weeks of consistent work put it back.</li>
+    <li class="f-amber"><strong>Travel is the repeating pattern, and she knows it.</strong> Her own words on Sep 9: she uses trips as explicit permission to dig in, partly because <em>"my one daughter hates me talking about dieting&hellip; so when I'm with her, it's really, really hard."</em> That is a value, not a failure, and the lever is the protein packs and a protein-first breakfast, not asking her to track around her daughter.</li>
+    <li class="f-amber"><strong>Bilateral frozen shoulder history</strong> (left ~2010, right ~4 years ago), tight lats and pecs, scapular mobility deficits. Shoulder press progression is capped by it. She will not jump 20 to 25 on the dumbbell press and should not be pushed to. Also limited hip external rotation and tight calves.</li>
+    <li class="f-amber"><strong>Food logging only happens when a task is on the board.</strong> Fifteen silent days between clusters. The Oct 5 and Oct 6 tasks are placed, but the durable version of this is worth a minute in the room.</li>
+    <li class="f-amber"><strong>Hormone therapy side effects affecting her mental state</strong> and recent medical procedure recovery causing weakness are both on file. Frame intensity as smart scaling rather than pushing volume.</li>
+    <li class="f-green"><strong>She acts on coaching immediately.</strong> One message on Sep 27 about set intensity and both of the next two sessions changed shape. That is the most useful thing in this file.</li>
+    <li class="f-green"><strong>Visceral fat is her proof point and it has never gone the wrong way.</strong> 112.7 to 93.2 cm&sup2;. <strong>The strategy box is ticked Sep 27 with the short-form DM plus the full email, so the question is closed.</strong> Do not offer it, do not recommend it, do not offer a resend. Use the number as context only.</li>
+    <li class="f-green"><strong>Trains with a friend over FaceTime two days a week</strong> and prefers 10 to 11 AM solo on the others. The social half is what carries the weeks when life gets busy, and she protects it herself.</li>
+    <li class="f-green"><strong>Liver enzymes came back 64 to 30 and she told him unprompted.</strong> Already resolved and already on file. <span class="t-mute">Medical results are out of scope. Do not chase, do not file, do not raise unless she does.</span></li>
+  </ul>
+</div>
+
+<!-- ═══ 9 - SCAN-DAY FOCUS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">&#127919; Scan-Day Focus</div>
+  <ul class="dp-list">
+    <li><strong>Open on the last two sessions, not on the last scan.</strong> Row 85 for 10 and overhead press 35 for 10 on Monday, single leg RDL 25, 25, 20 on Tuesday. She changed how she trains off one message and it is visible in the data four days later.</li>
+    <li><strong>Lead the numbers with where the lean sits, not how much moved.</strong> Legs &minus;2.7 and trunk &minus;3.0 while arms went +0.3. That maps exactly onto her own sentence from Sep 9 about seeing muscle up top and nothing below, so let her connect it rather than telling her.</li>
+    <li><strong>Then ALMI, framed as the metabolism conversation he already had with her.</strong> Get the muscle up, the body fat follows. She repeated it back herself on Sep 9: <em>"This will be below 30 if we get this up."</em></li>
+    <li><strong>Then visceral fat as the win that never broke.</strong> 112.7 to 93.2 all time, still falling through a cruise. Number only, no strategy talk.</li>
+    <li><strong>Then the food log.</strong> Two days will be sitting there from Oct 5 and 6. Read them with her and set the protein distribution off what is actually in there, front of the day first.</li>
+    <li><strong>Leave out:</strong> bone density, T-score and Z-score (28-day window). The visceral fat strategy (box closed Sep 27, a ticked box ends the question). Any calorie number, ever. Renewal, package or membership talk of any kind. The P3 to P4 phase change as an announcement. Fat loss as a goal in any form, she is at the 21st percentile for her age.</li>
+    <li><strong>Ten seconds on Arizona.</strong> He asked on Sep 27 whether Friday and Saturday happened and never got an answer. Sunday was logged, Saturday was not. Ask it in the room, do not send another DM.</li>
+  </ul>
+</div>
+
+</div>
+<!-- end modal-victoria -->
 
 <div id="modal-justin" class="modal-content"
      data-name="Justin Vidamo"
