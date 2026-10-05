@@ -2173,6 +2173,85 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
   </div>
 </div>
+
+<div class="day-group">
+  <div class="day-label">Monday &middot; October 12, 2026 &mdash; 1 scan</div>
+<div class="cards-row">
+<div class="card" id="card-burcu">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('burcu')">Burcu Dora <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Female &middot; 50 &middot; 3rd Package Scan (5th DEXA) &middot; <span style="color:#22c55e;font-weight:600">1 Year Lite to Apr 13 2027, no cliff</span> &middot; LBM gain &middot; solo today</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">1:15 PM</span>
+          <span class="badge badge-lbm">Build</span>
+        </div>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric note">
+          <div class="metric-val">134.9</div>
+          <div class="metric-label">Weight lb</div>
+          <div class="metric-sub">Aug 3 &middot; scale 135.8 Oct 4</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">24.3%</div>
+          <div class="metric-label">Body Fat</div>
+          <div class="metric-sub">4th %ile age-matched</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">31.5</div>
+          <div class="metric-label">VAT cm&sup2;</div>
+          <div class="metric-sub">29.3 &rarr; 31.5 &middot; far under 60</div>
+        </div>
+        <div class="metric ok">
+          <div class="metric-val">51st %ile</div>
+          <div class="metric-label">ALMI</div>
+          <div class="metric-sub">42nd &rarr; 51st &middot; target 60-70th</div>
+        </div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">&#128202; Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#f59e0b">82%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:82%;background:#f59e0b"></div></div>
+            <div class="cons-detail">82% last 30d, 75% last 7d &middot; 10 of 12 sessions since Sep 15 marked complete &middot; Sep 27 and Oct 3 sessions show missed</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">&#11088; Her Deep Why</div>
+        <div class="why-text">Longevity and aesthetics. Protect and build muscle through peri-menopause and stay strong and capable as she ages. Her line at the Aug 3 scan: "I'm muscle heavier every time I come."</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('burcu')">
+          <span class="checklist-title">&#9989; Pre-Scan Prep &middot; routine</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge" id="prog-burcu">8/13</span>
+            <span class="checklist-chevron" id="chev-burcu">&#8250;</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-burcu">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Scan time confirmed <strong>1:15 PM Mon Oct 12</strong>, 30-minute solo booking (work calendar, Acuity 1782281225, verified Oct 5)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Aug 3 baseline pulled live from the Iris results dashboard</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Member record, Everfit sessions and lift history, live Iris thread (42 rows, sender-labelled) read Oct 5</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Aug 3 duo transcript re-read, speakers separated</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Card + modal built (routine track, no sales content, no Slack post)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> 2-day photo food log created <strong>Sat Oct 10 + Sun Oct 11</strong>, visible on her task calendar</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Opener, lift targets, and a short "what have you noticed" reminder drafted for Daniel</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> First week-out round (opener, targets, "what have you noticed") sent Sep 24 for the old Oct 1 slot</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Pre-scan opener &middot; <strong>drafted Oct 5, not sent</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Lift targets + nutrition &middot; <strong>drafted Oct 5, not sent</strong> (DB bench / single arm row / RDL)</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> "What have you noticed" reminder &middot; <strong>optional, drafted Oct 5</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> 6-to-12-month question &middot; <strong>n/a</strong>, 1 Year Lite runs to Apr 13 2027</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Night-before refresh</span></label>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 <!-- end OCT 11 day-group -->
 
 
@@ -7022,6 +7101,263 @@ window.__scan1_jamie = { bw: 190.63, bfPct: 25.0, bfAMpct: 48, lean: 137.37, fat
 
 </div>
   <!-- end modal-joanna -->
+<div id="modal-burcu" class="modal-content"
+     data-name="Burcu Dora"
+     data-sub="3rd Package Scan (5th DEXA) &middot; Monday, October 12, 2026 &middot; 1:15 PM &middot; Campbell &middot; solo booking &middot; ROUTINE track, no close, no Slack post &middot; record LBM gain / plan BUILD ONLY &middot; F &middot; 50">
+
+  <script>
+  window.__scan1_burcu = {
+    bw: 134.9, bfPct: 24.3, bfAMpct: 4,
+    lean: 97.8, fat: 32.7, vat: 31.5,
+    almiAMpct: 51,
+    scan1Date: 'Aug 3, 2026 (4th DEXA, baseline for this block)',
+    regional: {
+      arms:  { lean: 10.4, fat: 3.5 },
+      trunk: { lean: 49.6, fat: 12.0 },
+      legs:  { lean: 30.9, fat: 14.9 }
+    }
+  };
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Mon Oct 12 &middot; 1:15 PM</span>
+    <span class="g-chip">5th DEXA &middot; 3rd package &middot; routine, no close</span>
+    <span class="g-chip">F &middot; 50 &middot; 5' 5&quot;</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-warn">82% last 30d, 75% last 7d</span>
+    <span class="g-chip g-info">70 days since Aug 3 &middot; ALMI 42nd to 51st</span>
+    <span class="g-chip g-mute">Solo. Bahadir scans Oct 5, separate file</span>
+  </div>
+</div>
+
+<!-- ═══ 1 - GOALS & MOTIVATION ═══ -->
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Lean mass gain, build only.</strong> 24.3% body fat is the 4th percentile for her age, so ALMI is the whole game. Target you set Aug 3: 60th to 70th.</li>
+    <li><strong>Why:</strong> longevity and aesthetics, protect and build muscle through peri-menopause.</li>
+    <li><strong>This block:</strong> modified 4x/week dumbbell training around the left shoulder, protein 110 g/day.</li>
+  </ul>
+</div>
+
+<!-- ═══ 2 - WINS TO OPEN WITH ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="burcu-scan-badge">Scan Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>Split squat 52 to 65</strong> (Sep 20 to Oct 4).</li>
+    <li><strong>Romanian deadlift 40 to 65 on all four sets</strong> (Sep 13 to Oct 4).</li>
+    <li><strong>Single arm row 35 &times; 10 on all three sets</strong> (Oct 3), the target you set.</li>
+    <li><strong>Chest supported row at 40 &times; 10</strong> (Oct 2) in place of the upright row, no new comments since the swap.</li>
+    <li><strong>ALMI 42nd to 51st and lean +3.2 lb</strong> on the Aug 3 scan, fat +0.3 lb.</li>
+  </ul>
+</div>
+
+<!-- ═══ 3 - THE NUMBERS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline Aug 3, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/232908" target="_blank" class="dp-title-link">Results Dashboard &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">134.9 lb</div><div class="snap-lbl">DXA total &middot; scale 135.8 Oct 4</div></div>
+    <div class="snap-metric"><div class="snap-val ok">4th %ile</div><div class="snap-lbl">Body fat 24.3% &middot; age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">97.8 lb</div><div class="snap-lbl">Lean mass</div></div>
+    <div class="snap-metric"><div class="snap-val">32.7 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val ok">31.5 cm&sup2;</div><div class="snap-lbl">Visceral &middot; under 60 floor</div></div>
+    <div class="snap-metric"><div class="snap-val warn">51st %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mar 16</strong><br><span class="t-mute">intro</span></td><td></td><td></td><td></td><td>(5th)</td><td>15.5</td><td>40th</td></tr>
+      <tr><td><strong>Jun 25</strong></td><td></td><td></td><td></td><td>(4th)</td><td>29.3</td><td>42nd</td></tr>
+      <tr class="t-delta"><td>Change Jun 25 to Aug 3</td><td>+3.5</td><td class="t-ok">+3.2</td><td>+0.3</td><td>&minus;0.4 pts</td><td>+2.3</td><td class="t-ok">+9</td></tr>
+      <tr class="now"><td><strong>Aug 3</strong><br><span class="t-mute">baseline</span></td><td>134.9</td><td>97.8</td><td>32.7</td><td>24.3% (4th)</td><td>31.5</td><td>51st</td></tr>
+      <tr class="t-pending"><td><strong>Oct 12</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>Visceral 15.5 to 31.5 across the year and it does not matter.</strong> The rule floors at 60 and you told her Aug 3 you were not concerned. Do not raise it.</div>
+  <p class="dp-sub">Compare Oct 12 against Aug 3 (70 days). Apr 13 values are not in this table.</p>
+</div>
+
+<!-- ═══ 4 - THE PLAN SO FAR ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Aug 3 scan</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Aug 3</strong></td><td>Chest press setup with dumbbells</td><td class="t-ok">Delivered live that day; hers to execute</td></tr>
+      <tr><td><strong>Sep 13</strong></td><td>Book the midpoint call</td><td class="t-warn">"I will look for time." Not booked</td></tr>
+      <tr><td><strong>Sep 13</strong></td><td>"Is the shoulder work still going okay?"</td><td class="t-warn">Unanswered. Ask in the room</td></tr>
+      <tr><td><strong>Sep 21</strong></td><td>Swap the upright row</td><td class="t-ok">Chest supported row logged Oct 2</td></tr>
+      <tr><td><strong>Sep 24</strong></td><td>Bench 42 or 45 on sets 2 and 3</td><td class="t-warn">Missed: 32.5, 35, 35 (Oct 3)</td></tr>
+      <tr><td><strong>Sep 24</strong></td><td>Single arm row 35 on all three sets</td><td class="t-ok">Done: 35 &times; 10 on all three (Oct 3)</td></tr>
+      <tr><td><strong>Sep 24</strong></td><td>Front squat to 45</td><td class="t-warn">Missed: 40 &times; 10 on all three (Oct 2)</td></tr>
+      <tr><td><strong>Sep 24</strong></td><td>2-day photo food log, Sep 29 and 30</td><td class="t-warn">Not done</td></tr>
+      <tr><td><strong>Oct 5</strong></td><td>New 2-day photo food log, Oct 10 and 11</td><td class="t-mute">Assigned</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5 - LIFTING METRICS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://app.everfit.io/home/client/69b831c6befb5b346c2f7e0d/calendar?tab=history" target="_blank" class="dp-title-link">Training &#8599;</a></div>
+  <div class="dp-head">Targets for Tue Oct 6 and Sun Oct 11</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>DB Bench Press</strong><br><span class="t-mute">Tue Oct 6 Upper A</span></td><td>Oct 3: 32.5, 35, 35 &times; 10<br><span class="t-mute">Sep 21: 36, 40, 40 &times; 10</span></td><td>40 on the last two sets. Setup is what hurts the shoulder, not the press</td></tr>
+      <tr><td><strong>DB Single Arm Row</strong><br><span class="t-mute">Tue Oct 6 Upper A</span></td><td>Oct 3: 35 &times; 10, 10, 10</td><td>40 on the last set</td></tr>
+      <tr><td><strong>DB Romanian Deadlift</strong><br><span class="t-mute">Sun Oct 11 Lower B</span></td><td>Oct 4: 65 &times; 8 on four sets<br><span class="t-mute">Sep 20: 60, 60, 72, 72</span></td><td>70 on the last two sets</td></tr>
+    </tbody>
+  </table>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Moving up</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 4</td><td>Split squat</td><td><strong>65 &times; 10, 8</strong></td></tr>
+        <tr><td>Sep 20</td><td>Split squat</td><td><strong>52 &times; 10, 10</strong></td></tr>
+        <tr><td>Oct 4</td><td>Walking lunge</td><td><strong>65 &times; 10, 10</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat or backwards</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 2</td><td>Front squat</td><td><strong>40 &times; 10, 10, 10</strong></td></tr>
+        <tr><td>Sep 12</td><td>Front squat</td><td><strong>50 &times; 10, 10, 10</strong></td></tr>
+        <tr><td>Oct 3</td><td>Bench press</td><td><strong>32.5, 35, 35 &times; 10</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">Three identical sets means the opening set had more in it. Front squat went 50 to 40 over three weeks, bench 40 to 35, and no reason is on file. Ask once before prescribing.</p>
+  <table class="dp-table">
+    <thead><tr><th>Gold Standard, female under 60, 134.9 lb</th><th>Target</th><th>Nearest logged</th></tr></thead>
+    <tbody>
+      <tr><td>Bench press (1.0&times; BW)</td><td>~135 lb 1RM</td><td>DB bench 40 &times; 10</td></tr>
+      <tr><td>Back squat (1.5&times; BW)</td><td>~200 lb 1RM</td><td>DB front squat 50 &times; 10</td></tr>
+      <tr><td>Deadlift (2.0&times; BW)</td><td>~270 lb 1RM</td><td>DB RDL 72 &times; 8</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info">Do not put these in front of her. Home dumbbells only, no barbell or rack. Her own ALMI percentile is the better frame.</div>
+</div>
+
+<!-- ═══ 6 - NUTRITION ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://app.everfit.io/home/client/69b831c6befb5b346c2f7e0d/macros" target="_blank" class="dp-title-link">Macros &#8599;</a> <a href="https://app.everfit.io/home/client/69b831c6befb5b346c2f7e0d/food-journal" target="_blank" class="dp-title-link">Food Journal &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What she logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 110 g/day</strong><br><span class="t-mute">3 fist-sized protein meals + 2 shakes</span></td><td>Nothing logged at meal level</td><td class="t-mute">No data</td></tr>
+      <tr><td><strong>Easy carbs before and after lifting</strong></td><td>Nothing logged</td><td class="t-mute">No data</td></tr>
+      <tr><td><strong>2-day photo log</strong></td><td>Sep 29 and 30 not done. New days: Sat Oct 10 and Sun Oct 11</td><td class="t-warn">Check Oct 12 before 1:15 PM</td></tr>
+    </tbody>
+  </table>
+  <div class="box-warn"><strong>Set intake in the room off the Oct 10 and 11 photo log.</strong> No calorie number in front of her. The Apr 13 scan note in her file flags low calories and carbs despite perfect consistency; it was never resolved and the duo transcript does not say which partner it was about.</div>
+  <div class="box-info"><strong>Pre/post workout strategy never sent.</strong> Goal is lean mass gain so the standing table reads 2:1. The ratio is Daniel's call.</div>
+</div>
+
+<!-- ═══ 7 - IN THEIR OWN WORDS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words</div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
+    <div class="say-ev"><strong>No answer. Ask in the room.</strong> Asked Sep 24, seen the same afternoon.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 1 Year Lite runs to Apr 13, 2027.</div>
+  </div>
+  <div class="dp-head">What she has volunteered</div>
+  <ul class="dp-list dp-sub">
+    <li>Sep 13: <em>"yes I was not feeling well. I am trying to get back to normal routine."</em></li>
+    <li>Sep 19, workout comment: <em>"I can't do this exercise it hits my shoulder and also my right elbow."</em></li>
+    <li>Aug 3, chest press: <em>"It's more getting it into the position. When I'm trying to get in, then it hurts my shoulder."</em></li>
+    <li>Aug 3, on sleep: <em>"There are days that I feel 3 more hours."</em></li>
+  </ul>
+</div>
+
+<!-- ═══ 8 - COACHING POINTS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-amber"><strong>Bench and front squat are both below their September best</strong> (bench 40 to 35, front squat 50 to 40) while split squat and RDL climbed. No reason on file.</li>
+    <li class="f-amber"><strong>One of three targets landed.</strong> Row hit, bench and front squat did not. Nothing was said about the misses.</li>
+    <li class="f-amber"><strong>The Sep 13 shoulder question is still unanswered</strong>, and no midpoint call was held after Jul 21.</li>
+    <li class="f-amber"><strong>Overhead contradiction.</strong> Her record says avoid overhead push, the program writes shoulder press and push press and she completes both at 32 &times; 10.</li>
+    <li class="f-green"><strong>She reports pain instead of grinding through it</strong> (Sep 19). Reinforce it.</li>
+    <li class="f-green"><strong>The upright row swap is done</strong> and nothing is owed in the app.</li>
+    <li class="f-blue"><strong>Sessions read missed on Sep 27 and Oct 3</strong> but the same lifts were logged Oct 2 to 4. She trains late, not less. Check History.</li>
+  </ul>
+</div>
+
+<!-- ═══ 9 - SCAN-DAY FOCUS ═══ -->
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the lower body.</strong> Split squat 52 to 65, RDL 40 to 65 on four sets, and the row held 35 on all three.</li>
+    <li><strong>Lead the numbers with ALMI as the percentile,</strong> 42nd to 51st on Aug 3 against the 60 to 70 you set.</li>
+    <li><strong>Ask about the bench and front squat.</strong> Both dropped from September. Shoulder, elbow or just a bad week, then wait through her pause.</li>
+    <li><strong>Ask "what have you noticed" out loud.</strong> Nothing came back in writing.</li>
+    <li><strong>Close the shoulder question</strong> from Sep 13 and settle overhead work, record versus program.</li>
+    <li><strong>Set nutrition off the Oct 10 and 11 photo log.</strong> Protein first, then easy carbs around training, no calorie number.</li>
+    <li><strong>Plan the next block off today's ALMI.</strong> She is solo, so do not frame it alongside Bahadir.</li>
+    <li class="f-out"><strong>Leave out:</strong> bone density (70-day window), any calorie number, visceral fat, the kg/m&sup2; ALMI, Gold Standards, the renewal, and her smart scale body fat figure (a different device).</li>
+  </ol>
+</div>
+
+<!-- ═══ 10 - REFERENCE (collapsed) ═══ -->
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, program, regional, equipment and injuries, supplements</summary>
+    <div class="ref-body">
+
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+        <li>Mon Oct 12, 1:15 to 1:45 PM, one 30-minute solo booking (Acuity 1782281225), created Oct 4. 1875 S Bascom Ave Unit 2550, Campbell. She moved here from the Thu Oct 1 duo slot with Bahadir, then could not make his Oct 5 slot.</li>
+        <li>1 Year Lite, Apr 13, 2026 to Apr 13, 2027. Routine track: no sales content, no Slack post.</li>
+        <li>Last real touchpoint was the Aug 3 scan. Your Sep 13 DM: <em>"We never actually got the midpoint call locked in."</em></li>
+      </ul>
+
+      <div class="ref-h">Program and sessions (pulled Oct 5)</div>
+      <ul class="dp-list">
+        <li>Everfit shows 82% last 30d and 75% last 7d. Sep 15 to Oct 4: 12 sessions assigned, 10 marked complete.</li>
+        <li>Before the scan: Tue Oct 6 Upper A, Wed Oct 7 Lower A, Sat Oct 10 Upper B, Sun Oct 11 Lower B. Nothing on scan day.</li>
+        <li>The scale logged 135.8 lb Oct 4. Its body fat reading is a smart-scale estimate, not comparable to DEXA.</li>
+      </ul>
+
+      <div class="ref-h">Regional, Aug 3 (lb)</div>
+      <ul class="dp-list">
+        <li>Arms 10.4 lean / 3.5 fat. Trunk 49.6 / 12.0. Legs 30.9 / 14.9. Arms lean +0.5, legs lean +1.1, trunk lean +1.6 since Jun 25.</li>
+      </ul>
+
+      <div class="ref-h">More lifts, latest log</div>
+      <table class="dp-table">
+        <thead><tr><th>Lift</th><th>Logged</th></tr></thead>
+        <tbody>
+          <tr><td>DB Walking Lunge</td><td>Oct 4: 65 &times; 10 &times; 2</td></tr>
+          <tr><td>DB Standing Shoulder Press</td><td>Oct 2: 32 &times; 10 &times; 3. No target, overhead</td></tr>
+          <tr><td>DB Push Press</td><td>Oct 3: 32 &times; 10 &times; 3. Sep 21 was 40 &times; 10 &times; 3. No target, overhead</td></tr>
+          <tr><td>DB Single Arm Bench Press</td><td>Oct 2: 32 then 40 &times; 10</td></tr>
+          <tr><td>DC Chest Supported DB Row</td><td>Oct 2: 40 &times; 10 &times; 3</td></tr>
+        </tbody>
+      </table>
+
+      <div class="ref-h">Equipment, injuries, personal</div>
+      <ul class="dp-list">
+        <li>Left shoulder limiting, bilateral pain, only certain movements. Record: avoid overhead push and pull, favor pain-free pulling and lighter loads. Home adjustable dumbbells, Peloton, treadmill.</li>
+        <li>The record's "15-25 lb" dumbbell note is stale, she logs 40 on bench and 72 on RDL. Flagged, not corrected without a source.</li>
+        <li>Supplements: creatine, omega 3, multivitamin. Work very busy, short sleep some nights.</li>
+        <li>Typical replies are one line: <em>"Same"</em>, <em>"Tentatively"</em>, <em>"Does not look like it"</em>.</li>
+        <li>Aug 3 framing from you: <em>"The range that we wanna be 60th and above above 60 to 70 percentile."</em></li>
+      </ul>
+
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-burcu -->
+
   </div><!-- end modal-window -->
 </div><!-- end modal-backdrop -->
 
