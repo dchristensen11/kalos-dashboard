@@ -1700,7 +1700,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <div class="cons-pct" style="color:#f59e0b">82%</div>
           <div class="cons-right">
             <div class="cons-track"><div class="cons-fill" style="width:82%;background:#f59e0b"></div></div>
-            <div class="cons-detail">75% last 7d &middot; 10 of 12 since Sep 15</div>
+            <div class="cons-detail">50% last 7d &middot; 10 of 12 since Sep 15</div>
           </div>
         </div>
       </div>
@@ -1712,7 +1712,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('burcu')">
           <span class="checklist-title">&#9989; Pre-Scan Prep &middot; routine</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-burcu">8/13</span>
+            <span class="checklist-progress-badge" id="prog-burcu">9/13</span>
             <span class="checklist-chevron" id="chev-burcu">&#8250;</span>
           </div>
         </div>
@@ -1725,9 +1725,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> 2-day photo food log created <strong>Sat Oct 10 + Sun Oct 11</strong>, visible on her task calendar</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Opener, lift targets, and a short "what have you noticed" reminder drafted for Daniel</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> First week-out round (opener, targets, "what have you noticed") sent Sep 24, before the date moved. No scan took place Oct 1</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Pre-scan opener &middot; <strong>drafted Oct 5, not sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Lift targets + nutrition &middot; <strong>drafted Oct 5, not sent</strong> (DB bench / single arm row / RDL)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> "What have you noticed" reminder &middot; <strong>optional, drafted Oct 5</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('burcu')"><span> Pre-scan opener &middot; <strong>sent Oct 5, 6:34 AM</strong> (seen), no date line, she knows the date</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Lift targets + nutrition &middot; <strong>drafted, not sent</strong> (DB bench / single arm row / RDL), refreshed Oct 6</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> "What have you noticed" reminder &middot; <strong>optional, drafted, not sent</strong></span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> 6-to-12-month question &middot; <strong>n/a</strong>, 1 Year Lite runs to Apr 13 2027</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('burcu')"><span> Night-before refresh</span></label>
         </div>
@@ -4587,9 +4587,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <span class="g-chip">F &middot; 50 &middot; 5' 5&quot;</span>
   </div>
   <div class="glance-row">
-    <span class="g-chip g-warn">82% last 30d, 75% last 7d</span>
+    <span class="g-chip g-warn">82% last 30d, 50% last 7d</span>
     <span class="g-chip g-info">70 days since Aug 3 &middot; ALMI 42nd to 51st</span>
-    <span class="g-chip g-mute">Solo. Bahadir scans Oct 5, separate file</span>
+    <span class="g-chip g-mute">Solo (calendar and Iris). Bahadir scanned Oct 5</span>
   </div>
 </div>
 
@@ -4654,7 +4654,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <tr><td><strong>Sep 24</strong></td><td>Single arm row 35 on all three sets</td><td class="t-ok">Done: 35 &times; 10 on all three (Oct 3)</td></tr>
       <tr><td><strong>Sep 24</strong></td><td>Front squat to 45</td><td class="t-warn">Missed: 40 &times; 10 on all three (Oct 2)</td></tr>
       <tr><td><strong>Sep 24</strong></td><td>2-day photo food log, Sep 29 and 30</td><td class="t-warn">Not done</td></tr>
-      <tr><td><strong>Oct 5</strong></td><td>New 2-day photo food log, Oct 10 and 11</td><td class="t-mute">Assigned</td></tr>
+      <tr><td><strong>Oct 5</strong></td><td>New 2-day photo food log, Oct 10 and 11</td><td class="t-mute">Assigned, on her calendar (rechecked Oct 6)</td></tr>
+      <tr><td><strong>Oct 5</strong></td><td>Opener: lower body moving, split squat 52 to 65, row held 35</td><td class="t-ok">Sent 6:34 AM, seen. Targets DM not sent yet</td></tr>
     </tbody>
   </table>
 </div>
@@ -4707,12 +4708,15 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <table class="dp-table">
     <thead><tr><th>Target</th><th>What she logged</th><th></th></tr></thead>
     <tbody>
-      <tr><td><strong>Protein 110 g/day</strong><br><span class="t-mute">3 fist-sized protein meals + 2 shakes</span></td><td>Nothing logged at meal level</td><td class="t-mute">No data</td></tr>
-      <tr><td><strong>Easy carbs before and after lifting</strong></td><td>Nothing logged</td><td class="t-mute">No data</td></tr>
+      <tr><td><strong>Protein 110 g/day</strong><br><span class="t-mute">3 fist-sized protein meals + 2 shakes</span></td><td>No data in either journal</td><td class="t-mute">No data</td></tr>
+      <tr><td><strong>Easy carbs before and after lifting</strong></td><td>No data</td><td class="t-mute">No data</td></tr>
       <tr><td><strong>2-day photo log</strong></td><td>Sep 29 and 30 not done. New days: Sat Oct 10 and Sun Oct 11</td><td class="t-warn">Check Oct 12 before 1:15 PM</td></tr>
     </tbody>
   </table>
-  <div class="box-warn"><strong>Set intake in the room off the Oct 10 and 11 photo log.</strong> No calorie number in front of her. The Apr 13 scan note in her file flags low calories and carbs despite perfect consistency; it was never resolved and the duo transcript does not say which partner it was about.</div>
+  <div class="box-warn"><ul class="dp-list">
+    <li><strong>Set intake in the room off the Oct 10 and 11 photo log.</strong> No calorie number in front of her.</li>
+    <li>The Apr 13 scan note in her file flags low calories and carbs despite perfect consistency. It was never resolved and the duo transcript does not say which partner it was about.</li>
+  </ul></div>
   <div class="box-info"><strong>Pre/post workout strategy never sent.</strong> Goal is lean mass gain so the standing table reads 2:1. The ratio is Daniel's call.</div>
 </div>
 
