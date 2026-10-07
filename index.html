@@ -843,14 +843,14 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <div class="header">
   <div class="header-left">
     <h1>⚡ Second Scan Week</h1>
-    <p>Kalos &middot; Next scan: <strong>tomorrow</strong>, Sunday, September 27, 2026 &mdash; Beatriz Velez 8:15 AM, Janette Degas 9:00 AM, Kimberly Colliss 9:45 AM, Maria Natividad 10:30 AM, Evans Wuu 11:15 AM, Amir Ahmari 12:30 PM, Megan Ahmari 12:30 PM</p>
+    <p id="next-scan-line">Kalos</p>
     <a class="navlink" href="members/" title="All members dashboard">All members &rarr;</a>
   </div>
   <div class="header-stats">
-    <div class="header-stat"><div class="num">20</div><div class="lbl">Remaining</div></div>
-    <div class="header-stat"><div class="num">12</div><div class="lbl">Scanned ✓</div></div>
-    <div class="header-stat"><div class="num">4</div><div class="lbl">Fat Loss</div></div>
-    <div class="header-stat"><div class="num">12</div><div class="lbl">LBM / Recomp</div></div>
+    <div class="header-stat"><div class="num" id="stat-remaining">&middot;</div><div class="lbl">Remaining</div></div>
+    <div class="header-stat"><div class="num" id="stat-scanned">&middot;</div><div class="lbl">Scanned &#10003;</div></div>
+    <div class="header-stat"><div class="num" id="stat-fatloss">&middot;</div><div class="lbl">Fat Loss</div></div>
+    <div class="header-stat"><div class="num" id="stat-lbm">&middot;</div><div class="lbl">LBM / Recomp</div></div>
   </div>
 </div>
 
@@ -5275,5 +5275,132 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end modal-window -->
 </div><!-- end modal-backdrop -->
 
+
+<script>
+/* ──────────────────────────────────────────────────────────────────────────
+   The header line and the four counters are DERIVED FROM THE CARDS at load.
+
+   They used to be typed by hand, and they were always wrong. On 7 Oct 2026 the
+   line still read "Next scan: tomorrow, Sunday, September 27" while the first
+   group on the board was 1 October, and every counter disagreed with the cards:
+   it claimed 20 remaining against 12 cards, 12 scanned against zero completed,
+   4 fat loss against 2 badges and 12 LBM/Recomp against 10.
+
+   Deriving them in-page means there is nothing to remember and nothing to go
+   stale: whatever the night-before run leaves on the board is what the header
+   says the next morning. `modal_lint.py` keeps its header-date check as a
+   backstop, but it should now never fire.
+   ────────────────────────────────────────────────────────────────────────── */
+(function () {
+  var MONTHS = {january:0,february:1,march:2,april:3,may:4,june:5,july:6,
+                august:7,september:8,october:9,november:10,december:11};
+
+  function midnight(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+
+  function parseDayLabel(txt) {
+    // "Thursday · October 1, 2026 — 1 scan"
+    var m = /([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})/.exec(txt);
+    if (!m) return null;
+    var mo = MONTHS[m[1].toLowerCase()];
+    if (mo === undefined) return null;
+    return new Date(+m[3], mo, +m[2]);
+  }
+
+  function phaseOf(card) {
+    var b = card.querySelector('.badge[class*="badge-fat-loss"]');
+    if (b) return 'fat';
+    if (card.querySelector('.badge[class*="badge-lbm"], .badge[class*="badge-recomp"], .badge[class*="badge-lean"]'))
+      return 'lbm';
+    return null;
+  }
+
+  function scanned(card) {
+    // A card already scanned but not yet archived carries a Complete BADGE
+    // (`class="card-badge">Complete \u2713`). Usually zero, because scan-cleanup
+    // moves them to the archive the next morning.
+    //
+    // Match the badge element, never the card's text. The first version tested
+    // /Complete/i against card.textContent and reported 2 scanned on a board with
+    // none, because a coaching note read "a man with no completed session". Loose
+    // matching over prose is how the hand-typed numbers lost their credibility in
+    // the first place; a counter that is confidently wrong is worse than absent.
+    var badges = card.querySelectorAll('[class*="badge"]');
+    for (var i = 0; i < badges.length; i++) {
+      if (/^complete\b/i.test((badges[i].textContent || '').trim())) return true;
+    }
+    return false;
+  }
+
+  var today = midnight(new Date());
+  var groups = [];
+  document.querySelectorAll('.day-group').forEach(function (g) {
+    var lbl = g.querySelector('.day-label');
+    if (!lbl) return;
+    var when = parseDayLabel(lbl.textContent || '');
+    if (!when) return;
+    var cards = [].slice.call(g.querySelectorAll('.card'));
+    if (!cards.length) return;
+    groups.push({ when: when, cards: cards });
+  });
+  groups.sort(function (a, b) { return a.when - b.when; });
+
+  /* ---- the counters, over cards still ahead of us ---- */
+  var ahead = groups.filter(function (g) { return g.when >= today; });
+  var aheadCards = ahead.reduce(function (acc, g) { return acc.concat(g.cards); }, []);
+  var all = groups.reduce(function (acc, g) { return acc.concat(g.cards); }, []);
+
+  var n = {
+    remaining: aheadCards.length,
+    scanned:   all.filter(scanned).length,
+    fat:       aheadCards.filter(function (c) { return phaseOf(c) === 'fat'; }).length,
+    lbm:       aheadCards.filter(function (c) { return phaseOf(c) === 'lbm'; }).length
+  };
+  var put = function (id, v) { var e = document.getElementById(id); if (e) e.textContent = v; };
+  put('stat-remaining', n.remaining);
+  put('stat-scanned', n.scanned);
+  put('stat-fatloss', n.fat);
+  put('stat-lbm', n.lbm);
+
+  /* ---- the next-scan line ---- */
+  var line = document.getElementById('next-scan-line');
+  if (!line) return;
+  var next = ahead[0];
+  if (!next) {
+    line.innerHTML = 'Kalos \u00b7 No scans on the board';
+    return;
+  }
+  var days = Math.round((next.when - today) / 86400000);
+  var rel = days === 0 ? '<strong>today</strong>'
+          : days === 1 ? '<strong>tomorrow</strong>'
+          : days > 1 && days < 7 ? '<strong>in ' + days + ' days</strong>'
+          : null;
+  var full = next.when.toLocaleDateString(undefined,
+               { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+  var who = next.cards.map(function (c) {
+    var nm = c.querySelector('.card-name');
+    var tm = c.querySelector('.badge-scan');
+    nm = nm ? nm.textContent.replace('\u2197', '').trim() : '';
+    tm = tm ? tm.textContent.trim() : '';
+    return (nm + ' ' + tm).trim();
+  }).filter(Boolean).join(', ');
+
+  line.innerHTML = 'Kalos \u00b7 Next scan: ' + (rel ? rel + ', ' : '') + full
+                 + (who ? ' \u2014 ' + who : '');
+
+  /* A group dated before today is still sitting on the board, which means the
+     morning scan-cleanup did not finish. Say so rather than hiding it. */
+  var past = groups.length - ahead.length;
+  if (past > 0) {
+    var warn = document.createElement('span');
+    warn.style.cssText = 'margin-left:8px;padding:1px 6px;border-radius:8px;'
+      + 'background:#fef2f2;border:1px solid #fca5a5;color:#991b1b;font-size:11px;font-weight:700';
+    warn.textContent = past + ' past-dated ' + (past === 1 ? 'group' : 'groups')
+      + ' still on the board';
+    line.appendChild(document.createTextNode(' '));
+    line.appendChild(warn);
+  }
+})();
+</script>
 </body>
 </html>
