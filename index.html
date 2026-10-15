@@ -82,6 +82,12 @@
   .card.conversion {
     border: 2px solid #ef4444;
   }
+  /* Seed point: the scan BEFORE the member's final package scan. Purple outline. The
+     renewal conversation is planted here and finished on the red final scan. Carries
+     the "Renewal seed" badge. Added 15 Oct 2026. */
+  .card.pre-renewal {
+    border: 2px solid #8b5cf6;
+  }
 
   .duo-label {
     display: flex; align-items: center; gap: 6px;
@@ -1805,7 +1811,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       </div>
     </div>
 <!-- ── ANDREA LEWIS · 9:00 AM · routine package scan ── -->
-<div class="card" id="card-andrea">
+<div class="card conversion" id="card-andrea">
       <div class="card-header">
         <div>
           <div class="card-name clickable" onclick="openModal('andrea')">Andrea Lewis <span class="expand-chevron">&#8599;</span></div>
@@ -1814,6 +1820,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="card-badges">
           <span class="badge badge-scan">9:00 AM</span>
           <span class="badge badge-fat-loss">Fat Loss</span>
+          <span class="badge" style="background:#ef444422;border:1px solid #ef444455;color:#b91c1c">Final scan &middot; renewal talk</span>
         </div>
       </div>
       <div class="metrics-grid">
