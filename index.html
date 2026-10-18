@@ -1240,10 +1240,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="consistency-section">
         <div class="cons-label">&#128202; Training Consistency</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#f97316">69%</div>
+          <div class="cons-pct" style="color:#ef4444">38%</div>
           <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:69%;background:#f97316"></div></div>
-            <div class="cons-detail">9 of 13 last 30d, <strong>1 of 3 last 7</strong>. Nothing logged Sep 29 to Oct 9, back on Oct 10.</div>
+            <div class="cons-track"><div class="cons-fill" style="width:38%;background:#ef4444"></div></div>
+            <div class="cons-detail">5 of 13 last 30d in the app, <strong>Oct 13 and 15 missed</strong>. Last app session Sep 28, 6:02 PM. One Oct 10 session is in Everfit only.</div>
           </div>
         </div>
       </div>
@@ -1255,7 +1255,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('xi')">
           <span class="checklist-title">&#9989; Pre-Scan Prep</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge badge-partial" id="prog-xi">8/12</span>
+            <span class="checklist-progress-badge badge-done" id="prog-xi">12/12</span>
             <span class="checklist-chevron" id="chev-xi">&#8250;</span>
           </div>
         </div>
@@ -1265,13 +1265,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Member record, stored goal, why and protein target read &middot; <strong>120 g/day</strong>, from the record and the Sep 15 call</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Live Iris thread read with speaker labels &middot; <strong>every message labelled, both sides present</strong>. Last message hers (a status line), nothing owed</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Scan numbers pulled for May 18, Jun 18 and Aug 20 (baseline for this scan)</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Set-level actuals pulled Aug 20 to Oct 10, and the Oct 12 to Oct 17 calendar read</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Set-level actuals and calendar re-pulled from the app, Oct 17 evening</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Both food journals checked &middot; <strong>latest photo log Sep 30, so the 2-day task was created for Fri Oct 16 and Sat Oct 17</strong></span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Card and modal built Oct 11</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('xi')"><span> Pre-scan opener sent &middot; drafted, awaiting approval</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('xi')"><span> Lift targets + nutrition sent &middot; drafted, awaiting approval</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('xi')"><span> &ldquo;What have you noticed&rdquo; question &middot; drafted. 6-to-12-month question <strong>gated out</strong>: 1 Year Lite to Jun 2027, no cliff</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('xi')"><span> Night-before refresh + audio briefing (<strong>no Slack post</strong>: routine package checkpoint)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Pre-scan opener sent &middot; <strong>landed Oct 11, 6:30 AM</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Lift targets + nutrition sent &middot; <strong>landed Oct 11, 6:30 AM</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> &ldquo;What have you noticed&rdquo; question &middot; <strong>landed Oct 11, no reply</strong>. 6-to-12-month question <strong>gated out</strong>: 1 Year Lite to Jun 2027, no cliff</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('xi')"><span> Night-before refresh + audio briefing, Oct 17 (<strong>no Slack post</strong>: routine package checkpoint)</span></label>
         </div>
       </div>
     </div>
@@ -3352,8 +3352,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <span class="g-chip">F &middot; 52 &middot; 5'3&quot;</span>
   </div>
   <div class="glance-row">
-    <span class="g-chip g-warn">9 of 13 sessions last 30 days</span>
-    <span class="g-chip g-bad">12 days with no session, Sep 28 to Oct 10</span>
+    <span class="g-chip g-warn">5 of 13 sessions in the app, last 30 days</span>
+    <span class="g-chip g-bad">Last app session Sep 28, 6:02 PM</span>
+    <span class="g-chip g-bad">No app login on file</span>
     <span class="g-chip g-info">1 Year Lite to Jun 2027: no close, no Slack post</span>
     <span class="g-chip g-mute">59 days since the Aug 20 baseline</span>
   </div>
@@ -3373,12 +3374,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <div class="dp-section">
   <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="xi-scan-badge">Scan 4 Pending</span></div>
   <ul class="dp-list win-list">
-    <li><strong>ALMI 8th percentile at intro to 14th now,</strong> May 18 to Aug 20, and lean up 3.4 lb over that stretch (76.86 to 80.28).</li>
-    <li><strong>Goblet split squat went 15 to 22 lb,</strong> 15&times;8, 12, 12 on Sep 26 to 22&times;10, 10, 10 on Oct 10. She took the dumbbell Daniel asked for.</li>
-    <li><strong>Bench held at 28 lb for 20, 15, 13</strong> on Sep 28, up from 18, 18, 18 on Sep 22.</li>
-    <li><strong>Two full weeks, 3 of 3 sessions,</strong> weeks of Sep 14 and Sep 21.</li>
-    <li><strong>Back restarted under control.</strong> Paused a week before the Sep 15 call, then PT and acupuncture, and she asked for the plan to change rather than quitting.</li>
-    <li><strong>Back in on Oct 10</strong> after 12 days away, 11 exercises logged.</li>
+    <li><strong>ALMI went from the 8th percentile at intro to the 14th on Aug 20,</strong> and lean is up 3.4 lb over May 18 to Aug 20 (76.86 to 80.28).</li>
+    <li><strong>Goblet split squat went 15 to 22 lb,</strong> 15&times;8, 12, 12 on Sep 26 to 22&times;10, 10, 10 on Oct 10. She took the dumbbell Daniel asked for. <span class="t-mute">The Oct 10 session is from Everfit and is not in the app.</span> <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></li>
+    <li><strong>Bench at 28 lb for 20, 15, 13</strong> on Sep 28. Set 1 was 18 on Sep 22.</li>
+    <li><strong>Two straight weeks of 3 of 3 sessions,</strong> the weeks of Sep 14 and Sep 21.</li>
+    <li><strong>Back restarted under control.</strong> Paused a week, then PT and acupuncture, and by Sep 6 she asked for the plan to change rather than quitting.</li>
   </ul>
 </div>
 
@@ -3404,7 +3404,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <tr class="t-pending"><td><strong>Oct 18</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
     </tbody>
   </table>
-  <div class="box-warn"><strong>Lean mass fell 4.3 lb between Jun 18 and Aug 20.</strong> Daniel&rsquo;s read on the Aug 20 call: low protein plus poor sleep after she stopped HRT. This window is 59 days with 13 of 22 sessions.</div>
+  <div class="box-warn"><strong>Lean mass fell 4.3 lb between Jun 18 and Aug 20.</strong> Daniel&rsquo;s read on the Aug 20 call: low protein plus poor sleep after she stopped HRT. This window is 59 days. Last 30 days: 5 of 13 sessions in the app. <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
 </div>
 
 <!-- ═══ 4 - THE PLAN SO FAR ═══ -->
@@ -3414,27 +3414,27 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
     <tbody>
       <tr><td><strong>Aug 20</strong><br><span class="t-mute">scan</span></td><td>Daily protein shake, creatine regularly, two genuinely hard working sets on the main lifts, food photos</td><td class="t-warn">Shake logged Aug 24 (26 g) and Sep 28 (20 g). She reports creatine daily. Few photos</td></tr>
-      <tr><td><strong>Before Sep 15</strong></td><td>Back flared and she paused a week. Daniel took the spine-loading work out of the next several weeks and kept the light sumo deadlift</td><td class="t-ok">In the app: no RDL, sumo deadlift and kickstand squat kept</td></tr>
-      <tr><td><strong>Sep 15</strong><br><span class="t-mute">midpoint call</span></td><td>Clean hinges, weak side first, shake right after training. Daniel to send a clinic contact for a posture and strength assessment</td><td class="t-ok">Contact (John Bellicitti, chiropractic) sent in the thread. She said she would call the next week</td></tr>
-      <tr><td><strong>Sep 20</strong></td><td>Goblet split squat up a dumbbell. Log two days in the app, one a training day</td><td class="t-ok">22 lb on Oct 10. Photos Sep 28 and Sep 30</td></tr>
-      <tr><td><strong>Sep 28 to Oct 9</strong></td><td>Nothing decided</td><td class="t-warn">No sessions for 12 days. No reason in the thread</td></tr>
-      <tr><td><strong>Oct</strong></td><td>Scan moved to Sun Oct 18, 12:30, as part of the schedule change across locations</td><td class="t-ok">She confirmed it works</td></tr>
+      <tr><td><strong>Sep 8</strong></td><td>Back flared and she paused a week. Daniel took the spine-loading work out of the next several weeks and kept the light sumo deadlift</td><td class="t-ok">In the app: no RDL in any session. Sumo deadlift and kickstand squat kept</td></tr>
+      <tr><td><strong>Sep 15</strong><br><span class="t-mute">midpoint call</span></td><td>Clean hinges, weak side first, shake right after training. Daniel to send a clinic contact for a posture and strength assessment</td><td class="t-warn">Contact (John Bellicitti, chiropractic) sent Sep 24. On Sep 26 she said she would call the next week. No booking in the thread</td></tr>
+      <tr><td><strong>Sep 20</strong></td><td>Goblet split squat up a dumbbell. Log two days in the app, one a training day</td><td class="t-ok">22 lb on Oct 10 (Everfit). Photos Sep 28 and Sep 30</td></tr>
+      <tr><td><strong>Oct 11</strong><br><span class="t-mute">week out</span></td><td>Three lift targets, a 2-day photo log for Oct 16 and 17, and the question on what she has noticed</td><td class="t-bad">No reply. No sessions in the app since. Photo tasks not done as of 6:20 PM Oct 17 <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></td></tr>
     </tbody>
   </table>
 </div>
 
 <!-- ═══ 5 - LIFTING METRICS ═══ -->
 <div class="dp-section">
-  <div class="dp-title">🏋 Lifting Metrics <a href="https://app.everfit.io/home/client/6a0b700c26e8f40e5430ff98/calendar?tab=history" target="_blank" class="dp-title-link">Training &#8599;</a></div>
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/280861?tab=calendar" target="_blank" class="dp-title-link">Training &#8599;</a></div>
   <div class="dp-head">Three targets, one per session before the scan. Dumbbells only, no hinge loading</div>
   <table class="dp-table">
     <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
     <tbody>
       <tr><td><strong>DB Bench Press</strong><br><span class="t-mute">Tue Oct 13</span></td><td>Sep 28: 28&times;20, 15, 13 (prescribed 6 to 8)</td><td class="t-ok">Next dumbbell up, 10 on sets 1 and 2</td></tr>
       <tr><td><strong>Single Leg Glute Bridge</strong><br><span class="t-mute">Thu Oct 15, each side</span></td><td>Sep 24: 11&times;12, 16&times;8, 16&times;10</td><td class="t-ok">20 for 8 to 10, weak side first</td></tr>
-      <tr><td><strong>Goblet Split Squat</strong><br><span class="t-mute">Sat Oct 17, each side</span></td><td>Oct 10: 22&times;10, 10, 10 (prescribed 8)</td><td class="t-ok">Next dumbbell up, 8 that feel hard</td></tr>
+      <tr><td><strong>Goblet Split Squat</strong><br><span class="t-mute">Sat Oct 17, each side</span></td><td>Oct 10 (Everfit): 22&times;10, 10, 10 (prescribed 8). In the app: Sep 26, 15&times;8, 12, 12</td><td class="t-ok">Next dumbbell up, 8 that feel hard</td></tr>
     </tbody>
   </table>
+  <div class="box-warn"><strong>As of 6:20 PM Oct 17:</strong> Tue bench and Thu glute bridge are not logged in the app. Today&rsquo;s session is not logged yet, and most of hers start between 5 and 9 PM. <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   <div class="pat-grid">
     <div class="pat pat-good">
       <div class="pat-h">&#10003; Good pattern: reps fall across sets</div>
@@ -3448,18 +3448,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="pat-h">&#10007; Flat sets, or lighter than last time</div>
       <table class="dp-table"><tbody>
         <tr><td>Sep 22</td><td>DB Bench Press</td><td><strong>28&times;18, 18, 18</strong></td></tr>
-        <tr><td>Oct 10</td><td>Goblet Split Squat</td><td><strong>22&times;10, 10, 10</strong></td></tr>
-        <tr><td>Oct 10</td><td>Gorilla Row</td><td><strong>8&times;12, 12 (was 16&times;10 &times;3 on Sep 26)</strong></td></tr>
-        <tr><td>Oct 10</td><td>DB Sumo Deadlift</td><td><strong>16&times;15 &times;3 (was 20&times;15 &times;3)</strong></td></tr>
+        <tr><td>Oct 10 (Everfit)</td><td>Goblet Split Squat</td><td><strong>22&times;10, 10, 10</strong></td></tr>
+        <tr><td>Oct 10 (Everfit)</td><td>Gorilla Row</td><td><strong>8&times;12, 12 (was 16&times;10 &times;3 on Sep 26)</strong></td></tr>
+        <tr><td>Oct 10 (Everfit)</td><td>DB Sumo Deadlift</td><td><strong>16&times;15 &times;3 (was 20&times;15 &times;3)</strong></td></tr>
       </tbody></table>
     </div>
   </div>
-  <p class="dp-sub">Reps run well above the prescribed 6 to 8 on bench and 8 on squats, so the loads are light. The lighter row and deadlift on Oct 10 fit a cautious return after the break.</p>
+  <p class="dp-sub">The Oct 10 row and deadlift were lighter than Sep 26. No reason is logged.</p>
   <table class="dp-table">
-    <thead><tr><th>Gold Standard, female under 60</th><th>Target at 129.0 lb</th><th>Her nearest logged</th></tr></thead>
+    <thead><tr><th>Gold Standard, female under 60</th><th>Target at 129.7 lb</th><th>Her nearest logged</th></tr></thead>
     <tbody>
       <tr><td>BB Bench Press</td><td>~130 lb 1RM (1.0&times;BW)</td><td>DB bench 28 &times; 20, Sep 28</td></tr>
-      <tr><td>BB Back Squat</td><td>~195 lb 1RM (1.5&times;BW)</td><td>DB goblet split squat 22 &times; 10, Oct 10</td></tr>
+      <tr><td>BB Back Squat</td><td>~195 lb 1RM (1.5&times;BW)</td><td>DB goblet split squat 22 &times; 10, Oct 10 (Everfit)</td></tr>
       <tr><td>BB Deadlift</td><td>~260 lb 1RM (2.0&times;BW)</td><td>DB sumo deadlift 20 &times; 15, Sep 26</td></tr>
     </tbody>
   </table>
@@ -3468,7 +3468,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══ 6 - NUTRITION ═══ -->
 <div class="dp-section">
-  <div class="dp-title">🥗 Nutrition <a href="https://app.everfit.io/home/client/6a0b700c26e8f40e5430ff98/macros" target="_blank" class="dp-title-link">Macros &#8599;</a> <a href="https://app.everfit.io/home/client/6a0b700c26e8f40e5430ff98/food-journal" target="_blank" class="dp-title-link">Food Journal &#8599;</a></div>
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/280861?tab=calendar" target="_blank" class="dp-title-link">Food Journal &#8599;</a></div>
   <table class="dp-table">
     <thead><tr><th>Target</th><th>What she logged</th><th></th></tr></thead>
     <tbody>
@@ -3476,7 +3476,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <tr><td><strong>Shake right after training</strong></td><td>Aug 24: Greek yogurt and protein powder, 26 g. Sep 28: yogurt, banana, blueberries, 20 g. Sep 15 call: <em>"I'm still trying to find a good tasting one."</em></td><td class="t-warn">Partly</td></tr>
       <tr><td><strong>Creatine</strong></td><td>Thread, before the Sep 15 call: <em>"taking creatine every day and at least one addition protein power supplement a day"</em></td><td class="t-ok">Matches, self-reported</td></tr>
       <tr><td><strong>Two days of photos</strong><br><span class="t-mute">asked Sep 20</span></td><td>Sep 28 and Sep 30</td><td class="t-ok">Matches</td></tr>
-      <tr><td><strong>2-day photo log before the scan</strong><br><span class="t-mute">assigned Oct 11</span></td><td>Tasks on Fri Oct 16 and Sat Oct 17</td><td class="t-mute">Pending</td></tr>
+      <tr><td><strong>2-day photo log before the scan</strong><br><span class="t-mute">assigned Oct 11</span></td><td>Tasks on Fri Oct 16 and Sat Oct 17. Neither done as of 6:20 PM Oct 17. Last photos Sep 30 <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></td><td class="t-warn">Not done</td></tr>
     </tbody>
   </table>
 </div>
@@ -3486,7 +3486,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-title">💬 In Their Own Words</div>
   <div class="box-info">
     <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
-    <div class="say-ev"><strong>Not asked yet.</strong> Goes out with the week-out messages. No answer. Ask in the room.</div>
+    <div class="say-ev"><strong>Asked Oct 11.</strong> No answer. Ask in the room. <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   </div>
   <div class="box-info">
     <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
@@ -3495,8 +3495,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-head">Her words</div>
   <ul class="dp-list dp-sub">
     <li>Sep 26, thread: <em>"Back so far is okay, some tightness round lower right back but manageable."</em></li>
-    <li>Thread, before the Sep 15 call: <em>"I'm a bit frustrated that I still triggered the back problem and couldn't continue as I have wished."</em> And <em>"I feel I need some systemic adjustment in the training plan to avoid the lower back problem becoming a long term obstacle."</em></li>
-    <li>Thread, before the Sep 15 call, on imbalances: <em>"I have anterior pelvic tilt, and the right side of my pelvic is higher than the left."</em> She asked for a clinic that can assess strength and posture.</li>
+    <li>Sep 6, thread: <em>"I'm a bit frustrated that I still triggered the back problem and couldn't continue as I have wished."</em> And <em>"I feel I need some systemic adjustment in the training plan to avoid the lower back problem becoming a long term obstacle."</em></li>
+    <li>Sep 6, thread, on imbalances: <em>"I have anterior pelvic tilt, and the right side of my pelvic is higher than the left."</em> She asked for a clinic that can assess strength and posture.</li>
     <li>Sep 15, call: <em>"I'm not persistent about taking additional shakes."</em></li>
   </ul>
 </div>
@@ -3505,11 +3505,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <div class="dp-section">
   <div class="dp-title">🚩 Coaching Points</div>
   <ul class="dp-list flag-list">
+    <li class="f-red"><strong>She may not be in the Kalos app.</strong> No app login or push notification is on her account. Her last session in the app is Sep 28, 6:02 PM, and she has not replied to anything since Sep 26. The Oct 10 session went into Everfit. There is no read receipt, so whether the Oct 11 messages reached her is unknown. <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></li>
     <li class="f-red"><strong>Visceral fat is rising.</strong> 78.6, then 81.3, then 86.9 cm&sup2;. The strategy box is not ticked, and at 80 or above that is Daniel&rsquo;s call.</li>
-    <li class="f-amber"><strong>12 days with no session,</strong> Sep 28 to Oct 10, and no food photos after Sep 30. No reason in the thread. Her last message (Sep 26) was about the back.</li>
     <li class="f-amber"><strong>Back is the limiter.</strong> Flares have paused her before. Lower right tightness on Sep 26, with PT, acupuncture and a clinic contact in hand.</li>
     <li class="f-amber"><strong>Loads run light against the prescription.</strong> Bench 13 to 20 reps against 6 to 8, and three equal sets on the goblet split squat.</li>
-    <li class="f-amber"><strong>Shakes are the weak habit.</strong> She has not found one she likes.</li>
     <li class="f-green"><strong>She adjusts herself.</strong> She moved up in load when asked, and asked for a plan change when the back flared.</li>
     <li class="f-blue"><strong>Sleep and menopause.</strong> Stopped HRT before the Aug 20 scan and sleep got worse, per the call summary.</li>
   </ul>
@@ -3519,13 +3518,13 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <div class="dp-section focus">
   <div class="dp-title">🎯 Scan-Day Focus</div>
   <ol class="focus-list">
-    <li><strong>Ask how the back is and what the 12 days were.</strong> Sep 28 to Oct 10 has no explanation. Ask before any number, and ask whether she booked John Bellicitti.</li>
+    <li><strong>Ask about the app first.</strong> Is she logging in the Kalos app or still in the old one? Have her open the calendar on her phone. Then ask how the back is, what happened after Sep 28, and whether she booked John Bellicitti.</li>
     <li><strong>Lead with ALMI as the percentile.</strong> 8th at intro, 20th in June, 14th in August. Say where the lean mass dip came from, then ask what changed since.</li>
     <li><strong>Protein first, then the picks, then the timing.</strong> 120 g a day, shake right after training. Ask what shake she could tolerate. Her meals are good.</li>
-    <li><strong>Check the three targets.</strong> Bench next dumbbell up on Oct 13, glute bridge at 20 on Oct 15, goblet split squat up a dumbbell on Oct 17. What did she hit?</li>
+    <li><strong>Check the three targets.</strong> Bench on Oct 13, glute bridge at 20 on Oct 15, goblet split squat up a dumbbell on Oct 17. What did she hit, and where did she log it?</li>
     <li><strong>Visceral fat: decide on the strategy.</strong> 86.9 and climbing. If the scan confirms it, Daniel decides whether to send it. Do not resend if it already went.</li>
     <li><strong>Plan the next block around the back.</strong> Core, lats and glutes, weak side first, loads up where the back is quiet. Ask about the posture assessment.</li>
-    <li><strong>Sleep and energy.</strong> One question on how sleep is going since HRT stopped.</li>
+    <li><strong>Ask what she has noticed since August,</strong> and one question on sleep and energy since HRT stopped.</li>
     <li class="f-out"><strong>Leave out:</strong> bone density, a calorie number, renewal or package talk, the Gold Standard numbers, and heavy hinge loading.</li>
   </ol>
 </div>
@@ -3543,7 +3542,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <li>Onboarding call box and assessment link box are not ticked in the record.</li>
       </ul>
 
-      <div class="ref-h">Lift history, Sep 22 to Oct 10</div>
+      <div class="ref-h">Lift history, Sep 22 to Oct 10 <span class="t-mute">(Oct 10 rows are from Everfit)</span></div>
       <table class="dp-table">
         <thead><tr><th>Lift</th><th>Sets</th></tr></thead>
         <tbody>
@@ -3563,7 +3562,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <tr><td>DB Zottman Curl</td><td>Sep 26: 16&times;10 &times;2. Oct 10: 16&times;10 &times;2</td></tr>
         </tbody>
       </table>
-      <p class="dp-sub">Program Prime, Phase 3, full body, dumbbells only. Sessions A, B, C are scheduled Mon, Wed and Fri or Sat. Next three: A Tue Oct 13, B Thu Oct 15, C Sat Oct 17. No workout comments, no completion notes.</p>
+      <p class="dp-sub">Program Prime, Phase 3, full body, dumbbells only. Sessions A, B, C are scheduled Mon, Wed and Fri or Sat. A Tue Oct 13, B Thu Oct 15 and C Sat Oct 17 are scheduled and not logged in the app as of 6:20 PM Oct 17. One workout comment, Sep 26: <em>"Floor push-up: can only do 6 and not fully lowered. Countertop push-ups, can do 15."</em></p>
 
       <div class="ref-h">Injuries and equipment</div>
       <ul class="dp-list">
@@ -3573,9 +3572,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
       <div class="ref-h">Data caveats</div>
       <ul class="dp-list">
-        <li>The member record still says &ldquo;missed the last 5 assigned sessions.&rdquo; She completed the Oct 10 session after that was written.</li>
-        <li>The member dashboard wins count from the May 18 intro (94 days). This modal counts from Aug 20.</li>
-        <li>Consistency is counted from assigned and completed sessions, Sep 11 to Oct 10: 9 of 13.</li>
+        <li>The Oct 10 session (7:05 to 9:11 PM) was logged in Everfit after her account moved to the app on Oct 10, and never reached the app. It comes from the Oct 11 Everfit read and was not re-checked tonight. Counting it, sessions in the last 30 days would be 6 of 13.</li>
+        <li>There is no read receipt in the Kalos app, so whether any message was seen is unknown. No app login or push notification is on her account.</li>
+        <li>Food: photos Sep 28 and Sep 30 only. No MyFitnessPal or Cronometer connected.</li>
         <li>The body fat percentile is the age-matched percentile, not a body fat percentage.</li>
       </ul>
 
