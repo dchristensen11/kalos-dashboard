@@ -1312,10 +1312,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
       <div class="consistency-section">
         <div class="cons-label">&#128202; Training Consistency</div>
         <div class="cons-row">
-          <div class="cons-pct" style="color:#ef4444">33%</div>
+          <div class="cons-pct" style="color:#ef4444">30%</div>
           <div class="cons-right">
-            <div class="cons-track"><div class="cons-fill" style="width:33%;background:#ef4444"></div></div>
-            <div class="cons-detail">3 of 9 last 30d &middot; none since Sep 26 (Yellowstone Sep 29 to Oct 6)</div>
+            <div class="cons-track"><div class="cons-fill" style="width:30%;background:#ef4444"></div></div>
+            <div class="cons-detail">3 of 10 last 30d &middot; none since Sep 26 (Yellowstone Sep 29 to Oct 6), 0 of 5 since Oct 11</div>
           </div>
         </div>
       </div>
@@ -1327,23 +1327,23 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <div class="checklist-header" onclick="toggleChecklist('craig')">
           <span class="checklist-title">&#9989; Pre-Scan Prep &middot; routine</span>
           <div class="checklist-right">
-            <span class="checklist-progress-badge" id="prog-craig">7/12</span>
+            <span class="checklist-progress-badge" id="prog-craig">12/12</span>
             <span class="checklist-chevron" id="chev-craig">&#8250;</span>
           </div>
         </div>
         <div class="checklist-items" id="items-craig">
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Scan time confirmed <strong>1:15 PM Sun Oct 18</strong>, 30-minute solo booking (work calendar, Acuity 1774440989). In-person form assessment 2:45 PM same day</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Sep 20 baseline pulled live from the Iris results dashboard</span></label>
-          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Member record, Everfit sessions and lift history, live Iris thread (36 rows, sender-labelled) read Oct 11</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Member record, sessions, lift history and thread read from the Kalos app, refreshed Oct 17</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Sep 20 and Oct 8 call transcripts re-read</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Card + modal built (routine track, no sales content, no Slack post)</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Food log: no new task needed. He is on the Macros Journal and Oct 9 and 10 tasks already exist from the Oct 8 call</span></label>
           <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Opener, lift targets and "what have you noticed" drafted for Daniel</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('craig')"><span> Pre-scan opener &middot; <strong>drafted, not sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('craig')"><span> Lift targets + nutrition &middot; <strong>drafted, not sent</strong> (lat pulldown / leg press / incline DB press)</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('craig')"><span> "What have you noticed" &middot; <strong>drafted, not sent</strong></span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('craig')"><span> 6-to-12-month question &middot; <strong>n/a</strong>, 6 Month Core runs to Jan 23 2027</span></label>
-          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('craig')"><span> Night-before refresh</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Pre-scan opener &middot; <strong>sent Oct 11</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Lift targets + nutrition &middot; <strong>sent Oct 11</strong> (lat pulldown / leg press / incline DB press), none tested</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> "What have you noticed" &middot; <strong>sent Oct 11</strong>, no reply</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> 6-to-12-month question &middot; <strong>n/a</strong>, 6 Month Core runs to Jan 23 2027</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('craig')"><span> Night-before refresh Oct 17</span></label>
         </div>
       </div>
     </div>
@@ -3611,8 +3611,9 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <span class="g-chip">M &middot; 53 &middot; 5' 9&quot;</span>
   </div>
   <div class="glance-row">
-    <span class="g-chip g-bad">33% last 30d, 0 of 2 last 7d</span>
+    <span class="g-chip g-bad">30% last 30d (3 of 10), 0 of 5 last 7d</span>
     <span class="g-chip g-info">28 days since Sep 20 &middot; VAT 203.4 to 185.0</span>
+    <span class="g-chip g-bad">Last session Sep 26, 4:47 to 5:44 PM</span>
     <span class="g-chip g-mute">Form assessment 2:45 PM same day</span>
   </div>
 </div>
@@ -3666,17 +3667,18 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══ 4 - THE PLAN SO FAR ═══ -->
 <div class="dp-section">
-  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Sep 20 scan</span></div>
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Sep 20 scan</span> <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   <table class="dp-table">
     <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
     <tbody>
       <tr><td><strong>Sep 8</strong></td><td>Greek yogurt, protein, blueberries and psyllium in place of whole milk</td><td class="t-ok">Photo log Sep 13, 21 and 22 shows it</td></tr>
-      <tr><td><strong>Sep 20</strong></td><td>Protein 186 g/day, carbs around training</td><td class="t-warn">Sent Sep 21. Best logged day since: Sep 22, 161 g protein. Macros log stops Sep 30</td></tr>
+      <tr><td><strong>Sep 20</strong></td><td>Protein 186 g/day, carbs around training</td><td class="t-warn">Sent Sep 21. Photo log runs to Sep 30, then one entry Oct 5. No gram totals in the app to check against 186</td></tr>
       <tr><td><strong>Sep 20</strong></td><td>Compounds to lower reps, heavier</td><td class="t-ok">Evolve block assigned, main sets 8 to 10 from Oct 10</td></tr>
       <tr><td><strong>Sep 20</strong></td><td>Open leg press at 225 after warm-ups</td><td class="t-warn">Not tried. No leg press session logged since Sep 20</td></tr>
-      <tr><td><strong>Sep 20</strong></td><td>Restart the gym rhythm</td><td class="t-bad">Sep 22 and 26 done, Sep 27 not. Nothing logged since, trip Sep 29 to Oct 6</td></tr>
-      <tr><td><strong>Oct 8</strong></td><td>Sessions Thu, Fri, Sun, Mon</td><td class="t-warn">App has Sat Oct 10, Sun 11, Mon 12. Nothing on Oct 8 or 9. Oct 10 not done as of 4 AM Oct 11</td></tr>
-      <tr><td><strong>Oct 8</strong></td><td>Log food Fri and Sat, you review Sunday</td><td class="t-warn">Tasks exist for Oct 9 and 10. Nothing logged after Sep 30 (Macros) or Oct 5 (photos)</td></tr>
+      <tr><td><strong>Sep 20</strong></td><td>Restart the gym rhythm</td><td class="t-bad">Sep 22 and 26 done, Sep 27 not. No session since Sep 26 through Oct 17, trip Sep 29 to Oct 6</td></tr>
+      <tr><td><strong>Oct 8</strong></td><td>Sessions Thu, Fri, Sun, Mon</td><td class="t-bad">App has sessions Oct 10, 11, 12, 13, 14 and 16. None logged as of Oct 17 evening</td></tr>
+      <tr><td><strong>Oct 8</strong></td><td>Log food Fri and Sat, you review Sunday</td><td class="t-bad">Food tasks for Oct 9 and 10 not completed. Last photo entry Oct 5</td></tr>
+      <tr><td><strong>Oct 11</strong></td><td>Lat pulldown, leg press and incline DB press targets, plus a "what have you noticed" question (all sent Oct 11)</td><td class="t-bad">No targets tested, no reply as of Oct 17. Kalos 2.0 shows no read receipt</td></tr>
       <tr><td><strong>Oct 8</strong></td><td>Blood sugar tactics next call</td><td class="t-mute">Open. Lipid panel end of October</td></tr>
     </tbody>
   </table>
@@ -3684,8 +3686,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══ 5 - LIFTING METRICS ═══ -->
 <div class="dp-section">
-  <div class="dp-title">🏋 Lifting Metrics <a href="https://app.everfit.io/home/client/6a666f19a761e5269a38c74e/calendar?tab=history" target="_blank" class="dp-title-link">Training &#8599;</a></div>
-  <div class="dp-head">Targets for the sessions before the scan (pulled Oct 11)</div>
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/427486?tab=calendar" target="_blank" class="dp-title-link">Training &#8599;</a></div>
+  <div class="dp-head">Targets sent Oct 11, none tested as of Oct 17 evening <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   <table class="dp-table">
     <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
     <tbody>
@@ -3726,17 +3728,17 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══ 6 - NUTRITION ═══ -->
 <div class="dp-section">
-  <div class="dp-title">🥗 Nutrition <a href="https://app.everfit.io/home/client/6a666f19a761e5269a38c74e/macros" target="_blank" class="dp-title-link">Macros &#8599;</a> <a href="https://app.everfit.io/home/client/6a666f19a761e5269a38c74e/food-journal" target="_blank" class="dp-title-link">Food Journal &#8599;</a></div>
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/427486?tab=calendar" target="_blank" class="dp-title-link">Food Log &#8599;</a> <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   <table class="dp-table">
     <thead><tr><th>Target</th><th>What he logged</th><th></th></tr></thead>
     <tbody>
-      <tr><td><strong>Protein 186 g/day</strong><br><span class="t-mute">3 protein meals + shakes</span></td><td>Macros: Sep 22 161 g, Sep 26 79, Sep 27 60, Sep 28 67, Sep 29 88. Partial days</td><td class="t-warn">Partly</td></tr>
-      <tr><td><strong>Carbs 280 training / 200 rest</strong><br><span class="t-mute">around workouts</span></td><td>Macros carbs on those days: 75, 46, 13, 27, 27. Likely under-logged</td><td class="t-warn">No full day to judge</td></tr>
-      <tr><td><strong>Log Fri Oct 9 and Sat Oct 10</strong></td><td>Nothing in Macros after Sep 30. Last photo Oct 5, elk bolognese</td><td class="t-warn">Not yet</td></tr>
+      <tr><td><strong>Protein 186 g/day</strong><br><span class="t-mute">3 protein meals + shakes</span></td><td>Photo log with no gram totals. Protein shakes and meat on most days Sep 20 to 30, last entry Oct 5</td><td class="t-warn">No totals to judge</td></tr>
+      <tr><td><strong>Carbs 280 training / 200 rest</strong><br><span class="t-mute">around workouts</span></td><td>Nothing since Oct 5 to judge carb timing against</td><td class="t-warn">No data</td></tr>
+      <tr><td><strong>Log Fri Oct 9 and Sat Oct 10</strong></td><td>Nothing on either day. Last photo Oct 5, elk bolognese</td><td class="t-bad">Not done</td></tr>
     </tbody>
   </table>
   <div class="box-warn"><ul class="dp-list">
-    <li><strong>Set pre and post workout carbs in the room</strong> off whatever he logs Oct 11 to 17. Protein first, no calorie number.</li>
+    <li><strong>Set pre and post workout carbs in the room</strong> off what he tells you he has been eating, since nothing is logged after Oct 5. Protein first, no calorie number.</li>
     <li>Greek yogurt, protein powder, blueberries and psyllium is his steady breakfast (photo log Sep 8 to 22).</li>
   </ul></div>
 </div>
@@ -3746,7 +3748,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   <div class="dp-title">💬 In Their Own Words</div>
   <div class="box-warn">
     <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
-    <div class="say-ev"><strong>No answer. Ask in the room.</strong> Asked before the Sep 20 scan, no reply in the thread. Asked again Oct 11 (pending).</div>
+    <div class="say-ev"><strong>No answer. Ask in the room.</strong> Asked Sep 13 and again Oct 11, no reply to either as of Oct 17. Kalos 2.0 shows no read receipt.</div>
   </div>
   <div class="box-info">
     <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
@@ -3754,6 +3756,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
   </div>
   <div class="dp-head">What he has volunteered</div>
   <ul class="dp-list dp-sub">
+    <li>Oct 6: <em>"Step tracker shows I did around 15,000 steps per day, so lots of hiking"</em></li>
     <li>Oct 8: <em>"I can walk flat for like really long time. But for any elevation where there's, you know, climbing, I do get tired and I have to take breaks."</em></li>
     <li>Oct 8: <em>"If I can use what I'm doing in this program to reduce my need for those things, that would be great."</em></li>
     <li>Oct 8: <em>"I actually like being outside and getting the sun and walking."</em></li>
@@ -3762,11 +3765,11 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 <!-- ═══ 8 - COACHING POINTS ═══ -->
 <div class="dp-section">
-  <div class="dp-title">🚩 Coaching Points</div>
+  <div class="dp-title">🚩 Coaching Points <span style="background:#fde68a;color:#78350f;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">NIGHT-BEFORE UPDATE Oct 17</span></div>
   <ul class="dp-list flag-list">
-    <li class="f-red"><strong>No lifting since Sep 26.</strong> Everfit reads 3 of 9 over 30 days and 0 of 2 over 7. Sep 27 was missed before the trip started.</li>
-    <li class="f-amber"><strong>Logging has faded.</strong> Macros stop Sep 30 and photos stop Oct 5. The Oct 9 and 10 log you asked for is empty as of Oct 11.</li>
-    <li class="f-amber"><strong>The Thu/Fri sessions you named on Oct 8 are not in the app.</strong> The first session is Sat Oct 10 and it was not done.</li>
+    <li class="f-red"><strong>No lifting since Sep 26</strong> (last session 4:47 to 5:44 PM). 3 of 10 over 30 days, 0 of 5 this past week. Six sessions scheduled Oct 10 to 16, none started. Sep 27 was missed before the trip.</li>
+    <li class="f-amber"><strong>Logging has stopped.</strong> Last photo entry Oct 5. The Oct 9 and 10 log you asked for was not done.</li>
+    <li class="f-amber"><strong>He has gone quiet.</strong> His last message was Oct 6. Nothing back on the three Oct 11 messages, and no read receipt to tell if he saw them.</li>
     <li class="f-amber"><strong>Late-day training and poor sleep</strong> were the pattern behind the Sep 12 to 18 gap and the Sep 20 call.</li>
     <li class="f-green"><strong>Visceral fat and ALMI both moved the right way</strong> through the last scan with a patchy training month.</li>
     <li class="f-blue"><strong>Medical context.</strong> Cholesterol and blood pressure meds plus metformin 500 mg (A1C 6.8, per the Sep 8 call). Lipid panel at the end of October.</li>
@@ -3780,8 +3783,8 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
     <li><strong>Open on visceral fat.</strong> 203.4 to 185.0 last time. He asked on Sep 8 when it would start to move, so show him where it is now.</li>
     <li><strong>Give ALMI as the percentile.</strong> 12th to 17th to 19th against the 60th you named on Sep 20.</li>
     <li><strong>Ask "what have you noticed" out loud.</strong> Belt, the tape at his belly button, how the climbs at Yellowstone felt.</li>
-    <li><strong>Ask what kept him out after Sep 26</strong> beyond the trip. Sleep and late sessions came up before. Keep the restart light: suit up and show up.</li>
-    <li><strong>Read what he logged Oct 9 to 17, then set pre and post workout carbs.</strong> Protein first at 186, no calorie number.</li>
+    <li><strong>Ask why none of the six sessions since he got home (Oct 10 to 16) happened.</strong> Sleep and late sessions came up before. Keep the restart light: suit up and show up.</li>
+    <li><strong>Ask what he has been eating since Oct 5, then set pre and post workout carbs.</strong> Nothing is logged. Protein first at 186, no calorie number.</li>
     <li><strong>Blood sugar and the lipid panel.</strong> You told him Oct 8 you would cover tactics next time. Muscle and walking are the levers.</li>
     <li><strong>Plan the next block off today's ALMI</strong> and run the form assessment at 2:45 PM.</li>
     <li class="f-out"><strong>Leave out:</strong> bone density (28-day window), any calorie number, the kg/m&sup2; ALMI, Gold Standards, and the renewal.</li>
@@ -3800,10 +3803,10 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         <li>6 Month Core, Jul 23, 2026 to Jan 23, 2027. Routine track: no sales content, no Slack post.</li>
       </ul>
 
-      <div class="ref-h">Program and sessions (pulled Oct 11)</div>
+      <div class="ref-h">Program and sessions (checked Oct 17)</div>
       <ul class="dp-list">
         <li>Evolve P1: A Sat Oct 10, B Sun Oct 11, C Mon Oct 12, A Tue Oct 13, B Wed Oct 14, C Fri Oct 16, A Mon Oct 19. Main sets 8 to 10 reps, accessories 10 to 15.</li>
-        <li>Last completed: Foundation P3 A, Sep 26. Everfit steps average 7,970 over the last 7 days.</li>
+        <li>Last completed: Foundation P3 A, Sep 26, 4:47 to 5:44 PM. Prior sessions started Sep 22 at 9:13 PM and Sep 20 at 10:23 PM.</li>
       </ul>
 
       <div class="ref-h">Regional, Sep 20 (lb)</div>
