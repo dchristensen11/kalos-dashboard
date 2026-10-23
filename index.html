@@ -2251,7 +2251,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end OCT 28 day-group -->
 <!-- ═══════════ OCT 29 day-group, Robert Malone built by the 2026-10-22 morning run ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Thursday &middot; October 29, 2026 &mdash; 2 scans</div>
+  <div class="day-label">Thursday &middot; October 29, 2026 &mdash; 3 scans</div>
 <div class="cards-row">
 <div class="card" id="card-blake">
       <div class="card-header">
@@ -2326,6 +2326,56 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
         </div>
       </div>
     </div>
+<!-- ── CHARLIE LEE · 9:45 AM · milestone first package scan (2nd DEXA) ── -->
+<div class="card" id="card-charlie">
+  <div class="card-header">
+    <div>
+      <div class="card-name clickable" onclick="openModal('charlie')">Charlie Lee <span class="expand-chevron">&#8599;</span></div>
+      <div class="card-sub">Male &middot; 49 &middot; 2nd DEXA, first package scan &middot; 1 Year Core &middot; Fat Loss &middot; Kalos app</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-scan">9:45 AM</span>
+      <span class="badge badge-fat-loss">Fat Loss</span>
+    </div>
+  </div>
+  <div class="metrics-grid">
+    <div class="metric note"><div class="metric-val">161.2</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 163.8</div></div>
+    <div class="metric note"><div class="metric-val">30.1%</div><div class="metric-label">Body Fat</div><div class="metric-sub">82nd %ile</div></div>
+    <div class="metric warn"><div class="metric-val">183.9</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">baseline Sep 23</div></div>
+    <div class="metric warn"><div class="metric-val">19th %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">baseline Sep 23</div></div>
+  </div>
+  <div class="consistency-section">
+    <div class="cons-label">&#128202; Training Consistency</div>
+    <div class="cons-row">
+      <div class="cons-pct" style="color:#f59e0b">76%</div>
+      <div class="cons-right">
+        <div class="cons-track"><div class="cons-fill" style="width:76%;background:#f59e0b"></div></div>
+        <div class="cons-detail">13 of 17 last 30d, today&rsquo;s Upper A still open. Misses Sep 26, Oct 2, Oct 4.</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-section">
+    <div class="why-tag">&#11088; His Why</div>
+    <div class="why-text">Stay healthy and live longer: keep the muscle on tirzepatide, get under 160 lb and lose the gut.</div>
+  </div>
+  <div class="checklist-section">
+    <div class="checklist-header" onclick="toggleChecklist('charlie')">
+      <span class="checklist-title">&#9989; Pre-Scan Prep</span>
+      <div class="checklist-right"><span class="checklist-progress-badge" id="prog-charlie">5/9</span><span class="checklist-chevron" id="chev-charlie">&#8250;</span></div>
+    </div>
+    <div class="checklist-items" id="items-charlie">
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('charlie')"><span> Scan time from daniel@livekalos.com calendar: <strong>Thu Oct 29, 9:45 AM</strong>, San Jose. Daniel&rsquo;s Oct 23 DM says &ldquo;0:45am&rdquo;, corrected in the opener</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('charlie')"><span> Member record, Sep 23 baseline, call transcripts and set-level lifts read Oct 23 (Kalos 2.0 member)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('charlie')"><span> Live thread read, sender-labelled; <strong>last message is Daniel&rsquo;s</strong> (Oct 23, scan booked), nothing owed</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('charlie')"><span> Card + modal built (milestone track, first package scan, no sales content, no Slack post)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('charlie')"><span> Food task <strong>not created</strong>: photo-logged Oct 21, 22 and 23 as asked</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('charlie')"><span> Pre-scan opener &middot; drafted</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('charlie')"><span> Lift targets + food log ask &middot; drafted (barbell squat, bench, bent-over row)</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('charlie')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted (6-to-12-month question n/a, term runs to Oct 23, 2027)</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('charlie')"><span> Night-before refresh + audio (<strong>no Slack post</strong>)</span></label>
+    </div>
+  </div>
+</div>
 <!-- ── ROBERT MALONE · 10:30 AM · routine 2nd package scan (3rd DEXA) ── -->
 <div class="card" id="card-robert">
   <div class="card-header">
@@ -8643,6 +8693,266 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 </div>
   <!-- end modal-robert -->
 
+<div id="modal-charlie" class="modal-content"
+     data-name="Charlie Lee"
+     data-sub="1st Package Scan (2nd DEXA) &middot; October 29, 2026 &middot; 9:45 AM PDT (Google Calendar) &middot; Milestone track, first progress &middot; Fat Loss &middot; M &middot; 49"
+     data-audio-brief="">
+
+  <script>
+  window.__scan1_charlie = {
+    bw: 161.16, scaleBw: 163.8, bfPct: 30.1, bfAMpct: 82,
+    lean: 112.62, fat: 48.53, vat: 183.9,
+    almiAMpct: 19,
+    bmd: null, bmdZ: null,
+    scan1Date: 'Sep 23, 2026 (intro baseline)', height: 65,
+    regional: {
+      arms:  { lean: null, fat: null },
+      trunk: { lean: null, fat: null },
+      legs:  { lean: null, fat: null }
+    },
+    sourceNote: 'Iris scan record and PDF, read Oct 23.'
+  };
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Thu Oct 29 &middot; 9:45 AM &middot; San Jose</span>
+    <span class="g-chip">2nd DEXA &middot; first progress check</span>
+    <span class="g-chip">M &middot; 49 &middot; 5'5&quot;</span>
+    <span class="g-chip"><span style="background:#dbeafe;color:#1e3a8a;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">WEEK-OUT BUILD Oct 23</span></span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-warn">76% &middot; 13 of 17 sessions</span>
+    <span class="g-chip g-info">1 Year Core to Oct 23, 2027: no close</span>
+    <span class="g-chip g-info">On tirzepatide</span>
+    <span class="g-chip g-info">In-person form session Sun Nov 8, 3:30 PM</span>
+    <span class="g-chip g-warn">Right toe still healing</span>
+    <span class="g-chip g-mute">Training pulled Oct 23</span>
+  </div>
+</div>
+
+<!-- ═══ 1 - GOALS & MOTIVATION ═══ -->
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Fat loss while keeping the muscle.</strong> He is on tirzepatide, so lean mass is the thing to protect. Visceral fat (183.9 cm&sup2;) and the gut come down, target under 160 lb. Switched from lean mass gain at his request on Sep 25.</li>
+    <li><strong>Why:</strong> stay healthy and live longer, and looks. He wants to get rid of his gut.</li>
+    <li><strong>This block's focus:</strong> four Tonal sessions a week (30 to 40 minutes) close to failure, 135 g protein with a second Core Power on two-meal days.</li>
+  </ul>
+</div>
+
+<!-- ═══ 2 - WINS TO OPEN WITH ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="charlie-scan-badge">Scan 2 Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>Front squat 22, 22, 24 &times; 12 (Sep 29) became 31, 34, 34 (Oct 22)</strong>, with 15 reps on set 1.</li>
+    <li><strong>Deadlift 37, 37, 39 &times; 12 (Sep 29) became 47, 52, 52 (Oct 22).</strong></li>
+    <li><strong>Lat pulldown 23, 28, 28 (Oct 11) became 30, 40, 40 (Oct 19)</strong>, and rope curl went from 9, 8, 7 to 20 &times; 15, 15, 15.</li>
+    <li><strong>Bench 36 &times; 12 (Oct 1) became 40 &times; 12, 12, 12 (Oct 14)</strong>, row 36, 36, 38 became 48, 48, 50.</li>
+    <li><strong>Back on it straight after the East Coast trip:</strong> Lower B Oct 18, Upper B Oct 19, Lower A Oct 22.</li>
+    <li><strong>Logged food Oct 21 and Oct 22 as asked</strong>, plus hockey on Oct 6 and Oct 13.</li>
+  </ul>
+</div>
+
+<!-- ═══ 3 - THE NUMBERS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline Sep 23, 2026</span> <a href="https://iris.livekalos.com/members/574838" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">161.16 lb</div><div class="snap-lbl">DXA total &middot; scale 163.8</div></div>
+    <div class="snap-metric"><div class="snap-val">30.1%</div><div class="snap-lbl">Body fat &middot; 82nd %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">112.62 lb</div><div class="snap-lbl">Lean mass &middot; incl. bone</div></div>
+    <div class="snap-metric"><div class="snap-val">48.53 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val warn">183.9 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 886 g</div></div>
+    <div class="snap-metric"><div class="snap-val warn">19th %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">1.46</div><div class="snap-lbl">Android / Gynoid</div></div>
+    <div class="snap-metric"><div class="snap-val">5' 5&quot;</div><div class="snap-lbl">Age 49</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr class="now"><td><strong>Sep 23</strong><br><span class="t-mute">intro, baseline</span></td><td>161.16</td><td>112.62</td><td>48.53</td><td>30.1% (82nd)</td><td>183.9</td><td>19th</td></tr>
+      <tr class="t-pending"><td><strong>Oct 29</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>On tirzepatide, the question is whether lean mass held.</strong> ALMI was the 19th percentile and visceral was 183.9, so those are the two to read first. A 36-day gap moves muscle slowly, so judge lean mass on direction. No scale weights are logged in the app.</div>
+</div>
+
+<!-- ═══ 4 - THE PLAN SO FAR ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Sep 23 scan</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sep 24</strong><br><span class="t-mute">onboarding</span></td><td>Fat loss on tirzepatide, protect the muscle. Protein 135 g/day</td><td class="t-warn">Partly. Two meals a day plus Core Power shakes, no breakfast</td></tr>
+      <tr><td><strong>Sep 29</strong><br><span class="t-mute">first week</span></td><td>Protein first, a third meal, four training days a week</td><td class="t-warn">13 of 17 sessions. Third meal not clear in the logs</td></tr>
+      <tr><td><strong>Sep 30 to Oct 5</strong></td><td>No lunges or planks for the toe, workouts shortened to 30 to 40 minutes</td><td class="t-warn">Reverse lunge gone Oct 18. Bulgarian split squat still in every Lower B</td></tr>
+      <tr><td><strong>Oct 6</strong><br><span class="t-mute">10-day call</span></td><td>Last reps close to failure, second Core Power on two-meal days, log Wed and Thu only</td><td class="t-ok">Two Core Powers Oct 22. Wed and Thu logged Oct 21 and 22</td></tr>
+      <tr><td><strong>Oct 7</strong></td><td>Pre/post workout 1:1, no post carbs. Visceral fat strategy</td><td class="t-ok">Post-workout Core Power Oct 23, 16 minutes after Lower A</td></tr>
+      <tr><td><strong>Oct 11, Oct 21</strong></td><td>Start set 1 heavier: front squat 33, bench 42</td><td class="t-warn">Front squat Oct 22 set 1 was 31 &times; 15. Bench 42 is today&rsquo;s session</td></tr>
+      <tr><td><strong>Oct 23</strong></td><td>Scan booked Thu Oct 29, 9:45 AM (it was missing from the calendar)</td><td class="t-ok">Opener corrects the &ldquo;0:45am&rdquo; typo</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5 - LIFTING METRICS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/574838" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged (pulled Oct 23)</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Barbell Squat</strong></td><td class="t-mute">Never logged. Front squat Oct 22: 31 &times; 15, 34 &times; 12, 12</td><td>Mon Oct 26 (new in phase 2): a weight for 8 clean, last two hard, tell us the number</td></tr>
+      <tr><td><strong>Barbell Bench Press</strong></td><td class="t-warn">Oct 14: 40 &times; 12, 12, 12</td><td>Fri Oct 23: 42 on set 1 (sent Oct 21). Tue Oct 27: 45 &times; 8 on set 1</td></tr>
+      <tr><td><strong>Bent-Over Barbell Row</strong></td><td class="t-warn">Oct 14: 48, 48, 50 &times; 12</td><td>Tue Oct 27: 55 &times; 8 on set 1, back off set 3</td></tr>
+    </tbody>
+  </table>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Good pattern &mdash; heaviest first, back off</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 11</td><td>Rope curl</td><td><strong>9 &times; 13, 8 &times; 13, 7 &times; 10</strong></td></tr>
+        <tr><td>Oct 11</td><td>Tricep pushdown</td><td><strong>19 &times; 15, 19 &times; 15, 20 &times; 11</strong></td></tr>
+        <tr><td>Oct 18</td><td>Bodyweight squat</td><td><strong>20, 20, 15</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat or climbing sets</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 22</td><td>Deadlift</td><td><strong>47 &times; 16, 52 &times; 12, 52 &times; 12</strong></td></tr>
+        <tr><td>Oct 22</td><td>Front squat</td><td><strong>31 &times; 15, 34 &times; 12, 34 &times; 12</strong></td></tr>
+        <tr><td>Oct 14</td><td>Bench</td><td><strong>40 &times; 12, 12, 12</strong></td></tr>
+        <tr><td>Oct 14</td><td>Bent-over row</td><td><strong>48, 48, 50 &times; 12</strong></td></tr>
+        <tr><td>Oct 19</td><td>Rope curl</td><td><strong>20 &times; 15, 15, 15</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">Heaviest set first, then back off. Flat 12, 12, 12 and a lighter set 1 mean set 1 was too light. He lifts on a Tonal, so weights are set by the machine and logged by hand. No workout comments in the last 21 days beyond &ldquo;I actually played hockey. No way to log that&rdquo; (Oct 13).</p>
+  <div class="dp-head">Gold Standards</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Target at 161.2 lb</th><th>Nearest logged</th></tr></thead>
+    <tbody>
+      <tr><td>Bench</td><td>~200 lb 1RM</td><td>40 &times; 12, Oct 14 (about 56 lb estimated)</td></tr>
+      <tr><td>Back squat</td><td>~240 lb</td><td>Front squat 34 &times; 12, Oct 22. No barbell back squat yet</td></tr>
+      <tr><td>Deadlift</td><td>~320 lb</td><td>52 &times; 12, Oct 22 (about 73 lb estimated)</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">Tonal loads are not iron loads and he started from near zero five weeks ago. Use his own percentage gains (deadlift 39 to 52, lat pulldown 28 to 40), not these numbers.</p>
+</div>
+
+<!-- ═══ 6 - NUTRITION ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/574838" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What he logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 135 g/day</strong><br><span class="t-mute">3 fist-sized meals, shakes</span></td><td>Oct 22: two Core Powers, turkey sandwich and two more meal photos. Oct 21: 42 g Core Power, lunch photo, clam chowder and 8 oz filet mignon</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Second Core Power on two-meal days</strong></td><td>Oct 22: Core Power at 12:48 AM and 7:18 AM</td><td class="t-ok">Matches</td></tr>
+      <tr><td><strong>Pre/post workout 1:1, no post carbs</strong></td><td>Oct 23: Core Power at 12:34 AM, 16 minutes after Lower A. No pre-workout shake logged</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Visceral strategy (sent Oct 7)</strong></td><td>Not mentioned since</td><td class="t-mute">Ask</td></tr>
+      <tr><td><strong>Calories</strong></td><td>Never given a target</td><td class="t-mute">Keep it that way</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>On tirzepatide, appetite is the risk to protein, not calories.</strong> He eats two meals a day and skips breakfast. Photo and note logs are in the app, none from MyFitnessPal. No coach comments on the Oct 21 to 23 entries yet.</div>
+</div>
+
+<!-- ═══ 7 - IN THEIR OWN WORDS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words <span class="t-mute">pending</span></div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo; <span class="t-mute">not yet sent</span></div>
+    <div class="say-ev"><strong>No answer yet.</strong> The night-before refresh fills this. If still blank, ask in the room.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 1 Year Core runs to Oct 23, 2027.</div>
+  </div>
+  <div class="dp-head">What he volunteered</div>
+  <ul class="dp-list dp-sub">
+    <li>Sep 23: <em>"Kind of lose weight, build some muscles, get rid of my gut."</em></li>
+    <li>Oct 5: <em>"How come the workouts are still an hour long?"</em></li>
+    <li>Oct 13: <em>"I actually played hockey. No way to log that."</em></li>
+    <li>Oct 21: <em>"Toe is still not fully healed. I might need to get another X-ray done."</em></li>
+    <li>Oct 23: <em>"Should I get another scan done soon?"</em></li>
+  </ul>
+</div>
+
+<!-- ═══ 8 - COACHING POINTS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-amber"><strong>Daniel's Oct 23 scan message says &ldquo;0:45am&rdquo;.</strong> The booking is 9:45 AM. The opener corrects it.</li>
+    <li class="f-amber"><strong>Toe is not healed and his doctor's month ends about scan day.</strong> He may need another X-ray. Bulgarian split squat is still in Lower B on Oct 24 and Oct 29, and a Modified Copenhagen Plank is in the Oct 29 Lower B. Suggest swaps, his call.</li>
+    <li class="f-amber"><strong>Set 1 keeps coming in light.</strong> Oct 22 front squat 31 &times; 15 and deadlift 47 &times; 16 against a target of 12, then heavier on sets 2 and 3.</li>
+    <li class="f-amber"><strong>Tonal custom workouts still showed the exercises Daniel removed</strong> (his Oct 9 report). The thread ends with &ldquo;let me see what I can find&rdquo;.</li>
+    <li class="f-blue"><strong>Visceral 183.9 cm&sup2;, strategy already sent Oct 7.</strong> Do not resend.</li>
+    <li class="f-blue"><strong>Two meals a day, no breakfast, on tirzepatide.</strong> Protein lands through the shakes.</li>
+    <li class="f-green"><strong>He asks and engages.</strong> He raised the scan himself on Oct 23, and logs when asked.</li>
+  </ul>
+</div>
+
+<!-- ═══ 9 - SCAN-DAY FOCUS ═══ -->
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the lifts, before any number.</strong> Front squat 22 to 34, deadlift 37 to 52, lat pulldown 23 to 40, rope curl 9 to 20, all inside five weeks.</li>
+    <li><strong>Ask what he has noticed before the screen comes on.</strong> Waistband, how shirts sit, his face, how he feels on the ice.</li>
+    <li><strong>Lead with lean mass and ALMI</strong> (19th percentile at baseline). On tirzepatide, did the muscle hold? Frame body fat as the 82nd percentile before 30.1% appears.</li>
+    <li><strong>Visceral 183.9:</strong> the number to move. The strategy went Oct 7, so ask which of the levers he is actually using.</li>
+    <li><strong>Settle protein:</strong> two meals, shakes, the third meal. Fist-sized servings, not a gram total.</li>
+    <li><strong>Toe:</strong> where the X-ray stands, then pick lower-body work that spares it for the next block.</li>
+    <li><strong>Set the next block off the numbers:</strong> beat last time on sets 1 and 2, back off set 3, 8-rep phase 2 loads.</li>
+    <li class="f-out"><strong>Leave out:</strong> renewal talk or a Slack post, bone density, a calorie number, the Gold Standards as targets.</li>
+  </ol>
+</div>
+
+<!-- ═══ 10 - REFERENCE (collapsed) ═══ -->
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, lift history, background</summary>
+    <div class="ref-body">
+
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+        <li>Thu Oct 29, 9:45 AM PDT, calendar title &ldquo;Charlie Lee: Kalos Package DEXA Scan San Jose&rdquo; (daniel@livekalos.com calendar). Solo.</li>
+        <li>In-person form assessment Sun Nov 8, 3:30 PM. 10-day call Oct 6.</li>
+        <li>1 Year Core started Sep 23, ends Oct 23, 2027. VIP membership and assessment link sent Sep 25.</li>
+      </ul>
+
+      <div class="ref-h">Other lift history (as logged)</div>
+      <table class="dp-table">
+        <thead><tr><th>Lift</th><th>Earlier</th><th>Latest</th></tr></thead>
+        <tbody>
+          <tr><td>Hip thrust</td><td>Oct 8: 24, 24, 26 &times; 16, 15, 15</td><td>Oct 18: 25 &times; 15, 15, 15</td></tr>
+          <tr><td>Seated cable row</td><td>Oct 1: 21, 21, 22 &times; 12, 14, 12</td><td>Oct 14: 26, 26, 27 &times; 12</td></tr>
+          <tr><td>Standing military press (cable)</td><td>Oct 1: 17 &times; 12, 12, 7</td><td>Oct 14: 15 &times; 12, 12, 12</td></tr>
+          <tr><td>Single-arm shoulder press</td><td>Oct 11: 9 &times; 12, 12, 12</td><td>Oct 19: 10 &times; 12, 12, 12</td></tr>
+          <tr><td>Cable Romanian deadlift</td><td>Sep 29: 16, 18, 18 &times; 20, 15, 16</td><td>Oct 22: 23, 24, 24 &times; 16, 15, 15</td></tr>
+          <tr><td>Kneeling cable crunch</td><td>Sep 29: 16, 20, 25 &times; 25, 25, 18</td><td>Oct 22: 33, 37, 37 &times; 20, 15, 15</td></tr>
+          <tr><td>Cable Bulgarian split squat</td><td>Oct 8: 8, 8, 9 &times; 12</td><td>Oct 18: 9 &times; 12, 12, 12</td></tr>
+        </tbody>
+      </table>
+      <p class="dp-sub">Phase 2 starts Oct 26 at 8-rep loads: barbell squat, barbell Romanian deadlift, bench, rows.</p>
+
+      <div class="ref-h">Nutrition protocols</div>
+      <ul class="dp-list">
+        <li>Protein 135 g/day, set Sep 24. Second Core Power on two-meal days, Greek yogurt before bed as backup.</li>
+        <li>Pre/post 1:1 sent Oct 7: shake plus 25 g carbs before, protein-only shake right after, then a 25 g and 25 g meal.</li>
+      </ul>
+
+      <div class="ref-h">Background</div>
+      <ul class="dp-list">
+        <li>On tirzepatide. Plays hockey once or twice a week, an hour to an hour and a half. Trained with a personal trainer about five years ago.</li>
+        <li>Owns a Tonal at home. Tonal links in the workout text upload to the machine, but it is one way: weights are logged by hand.</li>
+        <li>Minor fracture, right big toe (kicked the stairs). Doctor said to avoid toe-bending work for about a month from Sep 29.</li>
+        <li>Meal kit pasta with 5 to 6 oz ground beef is a regular. East Coast trip Oct 15 to 20.</li>
+      </ul>
+
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-charlie -->
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
 
