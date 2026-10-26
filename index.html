@@ -2367,7 +2367,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end NOV 1 day-group -->
 <!-- ═══════════ NOV 2 day-group, Shelly Butcher moved from Oct 19 on 2026-10-21 ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Monday &middot; November 2, 2026 &mdash; 3 scans</div>
+  <div class="day-label">Monday &middot; November 2, 2026 &mdash; 4 scans</div>
 <div class="cards-row">
 <div class="card" id="card-shelly">
       <div class="card-header">
@@ -2549,6 +2549,61 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mariah')"><span> Lift targets + nutrition &middot; drafted</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mariah')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('mariah')"><span> Night-before refresh + audio</span></label>
+        </div>
+      </div>
+    </div>
+<div class="card" id="card-matthew">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('matthew')">Matthew Keasler <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Male &middot; 40 &middot; 4th Package Scan (6th DEXA) &middot; 1 Year Core &middot; LBM Gain &middot; Kalos app</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">Time TBC</span>
+          <span class="badge badge-lbm">LBM Gain</span>
+        </div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note"><div class="metric-val">176.92</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 178.5</div></div>
+        <div class="metric"><div class="metric-val">16.4%</div><div class="metric-label">Body Fat</div><div class="metric-sub">10th %ile</div></div>
+        <div class="metric"><div class="metric-val">82.5</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">80.4 &rarr; 82.5</div></div>
+        <div class="metric"><div class="metric-val">36th %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">30th &rarr; 36th</div></div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">92%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:92%;background:#22c55e"></div></div>
+            <div class="cons-detail">92% last 30d &middot; 12 for 12 completed, Push B due today</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Why</div>
+        <div class="why-text">Best shape ever at 40. Health over PRs, beating a family history of hypertension, obesity and diabetes.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('matthew')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-matthew">7/12</span>
+            <span class="checklist-chevron" id="chev-matthew">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-matthew">
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Scan time confirmed &middot; <strong>not yet verified</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Baseline DEXA pulled &middot; <strong>Oct 5, last scan</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Member record read</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Thread read, <strong>nothing owed</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Set-level lifts pulled &middot; <strong>last session Oct 23</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Food log task added &middot; <strong>Sat Oct 31 and Sun Nov 1</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> Gold Standards computed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('matthew')"><span> 6&ndash;12 month question <strong>skipped</strong>, 1 Year Core to Jul 14, 2027</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Pre-scan opener &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Lift targets + nutrition &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('matthew')"><span> Night-before refresh + audio</span></label>
         </div>
       </div>
     </div>
@@ -8956,6 +9011,239 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
   <!-- end modal-mariah -->
+
+<div id="modal-matthew" class="modal-content"
+     data-name="Matthew Keasler"
+     data-sub="Package Scan &middot; November 2, 2026 &middot; Time TBC &middot; Routine checkpoint &middot; LBM Gain &middot; M &middot; 40">
+
+  <script>
+  window.__scan1_matthew = {
+  bw: 176.92,
+  scaleBw: 178.5,
+  bfPct: 16.4,
+  bfAMpct: 10,
+  lean: 141.05,
+  fat: 28.98,
+  vat: 82.5,
+  almiAMpct: 36,
+  bmd: null,
+  bmdZ: null,
+  scan1Date: "Oct 5, 2026 (last scan, the comparison baseline for this one). Intro May 10, 2026.",
+  androidGynoid: null,
+  sourceNote: "Figures from the member scan history (PDF extracts). Lean is soft tissue; lean plus BMC was 147.93 lb on Oct 5."
+};
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Mon Nov 2 &middot; time not confirmed</span>
+    <span class="g-chip">4th package scan, 6th DEXA &middot; routine checkpoint</span>
+    <span class="g-chip">M &middot; 40 &middot; 6'2"</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-good">92% last 30d, 12 for 12</span>
+    <span class="g-chip g-warn">No food data in the app</span>
+    <span class="g-chip g-info">1 Year Core to Jul 14, 2027: no close, no Slack post</span>
+    <span class="g-chip g-mute">28 days since the Oct 5 scan</span>
+  </div>
+</div>
+
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Gain lean mass.</strong> Body fat 16.4% is the 10th percentile for his age, ALMI the 36th. Build only, nothing to cut. He wants 15% body fat, in no rush.</li>
+    <li><strong>Why:</strong> best shape ever at 40, health over PRs. Family history of hypertension, obesity and diabetes. Hockey (Saturday ice session) and cycling; HYROX is paused.</li>
+    <li><strong>Focus this block:</strong> protein consistency at 197 g amid stress, three strength sessions a week, hockey and cycling (noted Oct 5).</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="matthew-scan-badge">Scan Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>12 for 12 sessions in 30 days.</strong> Every session from Sep 28 through Oct 23 done.</li>
+    <li><strong>Deadlift 280 lb (Sep 25) and back squat 240 lb (Oct 2)</strong> are on file. Deadlift Day Oct 23: 225 for 6 on all five working sets.</li>
+    <li><strong>Bench 145 for 8 (Oct 5) to 155 for 6 on all five sets</strong> on Oct 19.</li>
+    <li><strong>Fat mass 33.78 to 28.98 lb</strong> since May 10, down 4.8 lb. ALMI 33rd to 36th percentile.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline for this scan: Oct 5, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/568081" target="_blank" class="dp-title-link">Results &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">176.92 lb</div><div class="snap-lbl">DXA total &middot; scale 178.5</div></div>
+    <div class="snap-metric"><div class="snap-val">16.4%</div><div class="snap-lbl">Body fat &middot; 10th %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">141.05 lb</div><div class="snap-lbl">Lean mass &middot; 147.93 w/ BMC</div></div>
+    <div class="snap-metric"><div class="snap-val">28.98 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val warn">82.5 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 398 g</div></div>
+    <div class="snap-metric"><div class="snap-val">36th %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">6' 2"</div><div class="snap-lbl">Age 40</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>May 10</strong><br><span class="t-mute">intro</span></td><td>182.6</td><td>141.88</td><td>33.78</td><td>18.5% (19th)</td><td>78.3</td><td>33rd</td></tr>
+      <tr><td><strong>Jun 14</strong></td><td>176.23</td><td>138.01</td><td>31.39</td><td>17.8% (16th)</td><td>64.9</td><td>27th</td></tr>
+      <tr><td><strong>Jul 27</strong></td><td>176.8</td><td>139.96</td><td>29.97</td><td>17.0% (12th)</td><td>71.7</td><td>29th</td></tr>
+      <tr><td><strong>Sep 7</strong></td><td>177.87</td><td>142.55</td><td>28.41</td><td>16.0% (9th)</td><td>80.4</td><td>30th</td></tr>
+      <tr class="now"><td><strong>Oct 5</strong><br><span class="t-mute">baseline</span></td><td>176.92</td><td>141.05</td><td>28.98</td><td>16.4% (10th)</td><td>82.5</td><td>36th</td></tr>
+      <tr class="t-delta"><td><strong>Change</strong><br><span class="t-mute">Sep 7 to Oct 5</span></td><td class="t-flat">&minus;0.95</td><td class="t-warn">&minus;1.50</td><td class="t-warn">+0.57</td><td class="t-warn">+0.4 pts</td><td class="t-warn">+2.1</td><td class="t-ok">+6</td></tr>
+      <tr class="t-pending"><td><strong>Nov 2</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-warn"><strong>ALMI went 30th to 36th while lean mass went 142.55 to 141.05 lb.</strong> Read lean mass carefully. App weight Oct 25: 177.6 lb (Oct 24 178.7, Oct 23 177.7, Oct 22 179.2).</div>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Sep 25 call</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sep 26</strong><br><span class="t-mute">deload</span></td><td>Deload week Sep 28</td><td class="t-ok">Built. Deload weights on Sep 28, back to regular workouts Oct 5</td></tr>
+      <tr><td><strong>Oct 5</strong><br><span class="t-mute">in the room</span></td><td>Training as the anchor, three strength sessions, lean protein dialed back in, move toward 15%</td><td class="t-warn">12 for 12 sessions since. No food data to check protein against</td></tr>
+      <tr><td><strong>Oct 10</strong><br><span class="t-mute">Daniel DM</span></td><td>Deficit deadlift 165 for 6 to 8. Lean protein at every meal, two shakes, Greek yogurt before bed</td><td class="t-warn">Deficit deadlift Oct 23 was 155&times;8 &times;4, the 165 was not taken</td></tr>
+      <tr><td><strong>Oct 11</strong><br><span class="t-mute">platform</span></td><td>Moved to the Kalos app</td><td class="t-ok">Done</td></tr>
+      <tr><td><strong>Oct 20</strong><br><span class="t-mute">food log</span></td><td>Food-log ask, and an appetite-later-in-the-day question</td><td class="t-warn">No answer to either. Food-log days set for Oct 31 and Nov 1</td></tr>
+      <tr><td><strong>Oct 26</strong><br><span class="t-mute">week-out</span></td><td>Three lift targets below</td><td class="t-warn">Pending, sessions are Oct 26, 28 and 30</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/265802?tab=calendar" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <div class="dp-head">Week-out targets. Dumbbell bench is left out because the app and Everfit log it differently</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Seated Barbell Overhead Press</strong><br><span class="t-mute">Push B, Mon Oct 26</span></td><td>Oct 12: 75&times;8, six working sets</td><td class="t-ok">80 for 6 on sets 1 and 2, then 75 on sets 3 and 4</td></tr>
+      <tr><td><strong>Rack Pull with Chains</strong><br><span class="t-mute">Pull B, Wed Oct 28</span></td><td>Oct 16: 155&times;8, 155&times;8, 125&times;20</td><td class="t-ok">165 for 6 on both heavy sets, then the 15s as programmed</td></tr>
+      <tr><td><strong>Back Squat</strong><br><span class="t-mute">Squat Day, Fri Oct 30</span></td><td>Oct 14: 185&times;8, five working sets</td><td class="t-ok">195 for 6 on sets 1 and 2, then 185 for the rest</td></tr>
+      <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards &mdash; Male 40 to 60 &middot; 185 lb</td></tr>
+      <tr><td>BB Bench Press</td><td>~230 lb 1RM (1.25&times;BW)</td><td>&mdash; 155&times;6 on Oct 19, about 186</td></tr>
+      <tr><td>BB Back Squat</td><td>~280 lb 1RM (1.5&times;BW)</td><td>&mdash; 240&times;1 on Oct 2</td></tr>
+      <tr><td>BB Deadlift</td><td>~370 lb 1RM (2.0&times;BW)</td><td>&mdash; 280&times;1 on Sep 25</td></tr>
+    </tbody>
+  </table>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Good pattern: load climbed</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 1 to Oct 16</td><td>Rack Pull</td><td><strong>145&times;8, 8, 115&times;15 to 155&times;8, 8, 125&times;20</strong></td></tr>
+        <tr><td>Oct 5 to Oct 19</td><td>Bench</td><td><strong>145&times;8 &times;5 to 155&times;6 &times;5</strong></td></tr>
+        <tr><td>Oct 8 to Oct 23</td><td>Deadlift</td><td><strong>205&times;8 &times;5 to 225&times;6 &times;5</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat sets: same weight, same reps</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 12</td><td>Overhead Press</td><td><strong>75&times;8, six sets</strong></td></tr>
+        <tr><td>Oct 14</td><td>Back Squat</td><td><strong>185&times;8 &times;5</strong></td></tr>
+        <tr><td>Sep 25 to Oct 23</td><td>Deficit Deadlift</td><td><strong>155&times;8 &times;4, the 165 not taken</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">Identical working sets mean the first set had more in it. Beat last time on sets 1 and 2, back off the rest.</p>
+  <div class="box-warn"><strong>Direction only on the deadlift.</strong> Squat 240 and deadlift 280 are already near the standard. Bench is the gap, about 186 against 230.</div>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/265802" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What he logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 197 g</strong><br><span class="t-mute">197 P / 272 C / 89 F, effective Aug 31</span></td><td>No food or nutrition days in the app. His own account: lactose-free Greek yogurt breakfast works, lunch and dinner are the gap</td><td class="t-warn">No data</td></tr>
+      <tr><td><strong>2-day food log</strong><br><span class="t-mute">Sat Oct 31 and Sun Nov 1</span></td><td>Set Oct 26, so numbers can be built with him at the scan</td><td class="t-warn">Pending</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words</div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
+    <div class="say-ev"><strong>No answer. Ask in the room.</strong></div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 1 Year Core runs to Jul 14, 2027, so there is no conversion moment at this scan.</div>
+  </div>
+  <div class="dp-head">His words</div>
+  <ul class="dp-list dp-sub">
+    <li>Sep 28, reply to the same question: a recomp feel, shirts tighter through the back, larger shirts looser.</li>
+    <li>Sep 25, to Daniel: protein at 197 g is hit-or-miss.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-green"><strong>Consistency and strength are climbing.</strong> 12 for 12 sessions, deadlift and bench both up.</li>
+    <li class="f-amber"><strong>No food data at all.</strong> Protein is the thing to read first. The Oct 20 ask is unanswered.</li>
+    <li class="f-amber"><strong>Stress and sleep.</strong> Dog and divorce, burnout flagged Sep 25.</li>
+    <li class="f-amber"><strong>Dumbbell bench logging is unclear.</strong> Oct 12 logged 100&times;12 &times;3, total versus per hand, so it is out of the targets.</li>
+    <li class="f-amber"><strong>Mobility discipline.</strong> Knee and hip depth at the bottom of the squat and front-rack range are his stated limiters.</li>
+    <li class="f-blue"><strong>Deficit deadlift 165 was not taken on Oct 23.</strong> Nothing was promised. One line in the room.</li>
+  </ul>
+</div>
+
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the 280 pull and 12 for 12.</strong></li>
+    <li><strong>Read the food log first.</strong> Oct 31 and Nov 1, then set his numbers from real days.</li>
+    <li><strong>Read lean mass carefully.</strong> ALMI 30th to 36th while lean went 142.55 to 141.05 lb.</li>
+    <li><strong>Ask about knee and hip mobility</strong> and front-rack range.</li>
+    <li><strong>Ask about sleep.</strong></li>
+    <li><strong>Confirm the hockey and cycling load</strong> alongside three strength sessions.</li>
+    <li class="f-out"><strong>Leave out:</strong> HYROX, a calorie number, renewal or package talk.</li>
+  </ol>
+</div>
+
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, lift history, sessions, equipment</summary>
+    <div class="ref-body">
+
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+    <li>Mon Nov 2, time not confirmed. Scan day is Push A.</li>
+    <li>1 Year Core, Jun 14, 2026 to Jul 14, 2027. Four-week program began May 10. On the Kalos app since Oct 11.</li>
+    <li>Sessions before the scan: Push B Mon Oct 26, Pull B Wed Oct 28, Squat Day Fri Oct 30.</li>
+  </ul>
+
+      <div class="ref-h">Lift history</div>
+      <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Sets</th></tr></thead>
+    <tbody>
+      <tr><td>Seated Barbell OHP</td><td>Sep 28 (deload): 45&times;8, 45&times;8, 80&times;6, 80&times;6, 70&times;13. Oct 12: 45&times;10, 65&times;5, 75&times;8 &times;6</td></tr>
+      <tr><td>Rack Pull with Chains</td><td>Oct 1: 145&times;8, 145&times;8, 115&times;15. Oct 16: 155&times;8, 155&times;8, 125&times;20</td></tr>
+      <tr><td>Back Squat</td><td>Oct 2: top singles 230, 240 (PR), then 200&times;2. Oct 14: 185&times;8 &times;5</td></tr>
+      <tr><td>Barbell Deadlift</td><td>Sep 25: up to 280&times;1. Oct 8: 205&times;8 &times;5. Oct 23: 135&times;8, 185&times;5, 205&times;3, 215&times;2, 225&times;6 &times;5</td></tr>
+      <tr><td>Deficit Barbell Deadlift</td><td>Sep 25: 145&times;8 &times;4. Oct 8: 155&times;8 &times;4. Oct 23: 155&times;8 &times;4</td></tr>
+      <tr><td>Barbell Bench</td><td>Oct 5: 145&times;8 &times;5. Oct 19: 155&times;6 &times;5</td></tr>
+      <tr><td>Incline DB Row</td><td>Oct 7: 35&times;10, 30&times;10, 30&times;10. Oct 16: 35&times;12 &times;3. Oct 21: 40&times;12, 10, 10</td></tr>
+      <tr><td>DB Bench</td><td>Sep 28: 50&times;12 &times;3. Oct 12: logged 100&times;12 &times;3 (total or per hand unclear)</td></tr>
+    </tbody>
+  </table>
+
+      <div class="ref-h">Equipment and notes</div>
+      <ul class="dp-list">
+    <li>Garage home gym with dumbbells, bands and a Peloton; no cable machine, no chains (per his record).</li>
+    <li>Vegas trip Fri to Sun noted Oct 5. Adductor improved. Supplements under review.</li>
+  </ul>
+
+      <div class="ref-h">Data caveats</div>
+      <ul class="dp-list">
+    <li>Pull-ups and dips log no weight or reps. Scale at the Oct 5 scan 178.5 lb.</li>
+    <li>Thread: last message is Daniel's on Oct 20, nothing unanswered. No workout comments in 14 days.</li>
+  </ul>
+
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-matthew -->
 
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
