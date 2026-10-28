@@ -2369,8 +2369,64 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end NOV 2 day-group -->
 <!-- ═══════════ NOVEMBER 4, 2026 day-group ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Wednesday &middot; November 4, 2026 &mdash; 2 scans</div>
+  <div class="day-label">Wednesday &middot; November 4, 2026 &mdash; 3 scans</div>
   <div class="cards-row">
+<!-- ── KIM CELESTRE · 8:15 AM · 4th package scan, 6 Month Core ── -->
+<div class="card" id="card-kim">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('kim')">Kim Celestre <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Female &middot; 57 &middot; 4th Package Scan (6th DEXA) &middot; 6 Month Core &middot; Recomp &middot; Kalos app</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">8:15 AM</span>
+          <span class="badge badge-recomp">Recomp</span>
+        </div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note"><div class="metric-val">130.37</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 132.4</div></div>
+        <div class="metric"><div class="metric-val">31.6%</div><div class="metric-label">Body Fat</div><div class="metric-sub">14th %ile</div></div>
+        <div class="metric"><div class="metric-val">75.2</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">88.0 &rarr; 75.2</div></div>
+        <div class="metric"><div class="metric-val">34th %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">31st &rarr; 34th</div></div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#22c55e">92%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:92%;background:#22c55e"></div></div>
+            <div class="cons-detail">92% last 30d &middot; 12 of 13 due before today, Oct 10 A session missed</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Why</div>
+        <div class="why-text">Protect muscle on Zepbound and never repeat a disc herniation.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('kim')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-kim">7/12</span>
+            <span class="checklist-chevron" id="chev-kim">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-kim">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Scan time confirmed · <strong>Wed Nov 4, 8:15 AM, Campbell</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Baseline DEXA pulled · <strong>Oct 5, last scan</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Member record read</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Thread read · <strong>equipment comment unanswered</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Set-level lifts pulled · <strong>last session Oct 26</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Food journal · <strong>Oct 29 and 30</strong> tasks already on her calendar, no new pair</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> Gold Standards computed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('kim')"><span> 6&ndash;12 month question <strong>skipped</strong>, 6 Month Core to Dec 29</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Pre-scan opener · drafted, <strong>corrects the scan date</strong></span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Lift targets + nutrition · drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> &ldquo;What have you noticed&rdquo; · drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('kim')"><span> Night-before refresh + audio</span></label>
+        </div>
+      </div>
+    </div>
 <!-- ── DOREEN CADIEUX · 9:00 AM · 2nd package scan, 6 Month Core ── -->
 <div class="card" id="card-doreen">
       <div class="card-header">
@@ -9417,6 +9473,243 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
   <!-- end modal-esmeralda -->
+
+<div id="modal-kim" class="modal-content"
+     data-name="Kim Celestre"
+     data-sub="Package Scan &middot; November 4, 2026 &middot; 8:15 AM &middot; Routine checkpoint &middot; Recomp &middot; F &middot; 57">
+
+  <script>
+  window.__scan1_kim = {
+  bw: 130.37,
+  scaleBw: 132.4,
+  bfPct: 31.6,
+  bfAMpct: 14,
+  lean: 85.39,
+  fat: 41.24,
+  vat: 75.2,
+  almiAMpct: 34,
+  bmd: null,
+  bmdZ: null,
+  scan1Date: "Oct 5, 2026 (last scan, the comparison baseline for this one). First scan May 28, 2026.",
+  androidGynoid: null,
+  sourceNote: "Figures from the member scan history (PDF extracts). Lean excludes bone and head."
+};
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Wed Nov 4 &middot; 8:15 AM &middot; Campbell</span>
+    <span class="g-chip">4th package scan, 6th DEXA &middot; routine checkpoint</span>
+    <span class="g-chip">F &middot; 57 &middot; 5'3"</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-good">92% last 30d, 12 of 13</span>
+    <span class="g-chip g-bad">Lean mass down 7.47 lb since May 28</span>
+    <span class="g-chip g-warn">Told the wrong date: Monday the 2nd</span>
+    <span class="g-chip g-info">6 Month Core to Dec 29: no close, no Slack post</span>
+  </div>
+</div>
+
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Recomp at maintenance, build only.</strong> Body fat 31.6% is the 14th percentile for her age (lean for age) and ALMI the 34th. The member record says LBM gain and the call notes say recomp.</li>
+    <li><strong>Why:</strong> longevity and health. Keep muscle on Zepbound and never repeat a disc herniation (25% re-herniation risk, &lt;em&gt;"I never want to go through that again"&lt;/em&gt;). She values data and education on mechanics and perimenopause levers.</li>
+    <li><strong>Focus this block:</strong> 132 g protein in small feedings about every 3 hours plus EAAs and collagen, and 3 full-body sessions a week with rest-pause, drop sets and back-off sets. Weight is not her metric, body composition is.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="kim-scan-badge">Scan Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>Fat down 16.2 lb</strong> since May 28 (57.47 to 41.24).</li>
+    <li><strong>Visceral down 37.8 cm&sup2;</strong> (113.0 to 75.2), lower at every scan.</li>
+    <li><strong>Body fat 37.3% to 31.6%,</strong> down 2.0 points on Oct 5 alone.</li>
+    <li><strong>First lean gain on Oct 5:</strong> lean +1.04 and fat down 3.36 after three losing scans.</li>
+    <li><strong>RDL 70 to 75 on Oct 22,</strong> glute bridge 12 to 20 in two weeks, reverse lunge 24 to 30.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline for this scan: Oct 5, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/717805" target="_blank" class="dp-title-link">Results &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">130.37 lb</div><div class="snap-lbl">DXA total &middot; scale 132.4</div></div>
+    <div class="snap-metric"><div class="snap-val">31.6%</div><div class="snap-lbl">Body fat &middot; 14th %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">85.39 lb</div><div class="snap-lbl">Lean mass</div></div>
+    <div class="snap-metric"><div class="snap-val">41.24 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val">75.2 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 363 g</div></div>
+    <div class="snap-metric"><div class="snap-val warn">34th %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">128.6 lb</div><div class="snap-lbl">Home weight &middot; Oct 25, other scale</div></div>
+    <div class="snap-metric"><div class="snap-val">5' 3"</div><div class="snap-lbl">Age 57</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF %</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>May 28</strong><br><span class="t-mute">intro</span></td><td>154.18</td><td>92.86</td><td>57.47</td><td>37.3%</td><td>113.0</td><td>59th</td></tr>
+      <tr><td><strong>Jun 29</strong></td><td>148.85</td><td>91.29</td><td>53.81</td><td>36.1%</td><td>109.9</td><td>54th</td></tr>
+      <tr><td><strong>Jul 30</strong></td><td>140.45</td><td>88.31</td><td>48.32</td><td>34.4%</td><td>91.6</td><td>46th</td></tr>
+      <tr><td><strong>Sep 3</strong></td><td>132.66</td><td>84.35</td><td>44.60</td><td>33.6%</td><td>88.0</td><td>31st</td></tr>
+      <tr class="now"><td><strong>Oct 5</strong><br><span class="t-mute">baseline</span></td><td>130.37</td><td>85.39</td><td>41.24</td><td>31.6%</td><td>75.2</td><td>34th</td></tr>
+      <tr class="t-delta"><td><strong>Change</strong><br><span class="t-mute">Sep 3 to Oct 5</span></td><td class="t-ok">&minus;2.29</td><td class="t-ok">+1.04</td><td class="t-ok">&minus;3.36</td><td class="t-ok">&minus;2.0 pts</td><td class="t-ok">&minus;12.8</td><td class="t-ok">+3</td></tr>
+      <tr class="t-pending"><td><strong>Nov 4</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-bad"><strong>Lean mass is down 7.47 lb since May 28</strong> (92.86 to 85.39), even with the +1.04 on Oct 5. Home scale 128.5 (Oct 12) and 128.6 (Oct 25) is a different scale from the gym scale, so do not compare.</div>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the May 28 intro</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>May 28 to Jul 30</strong></td><td>GLP-1 start, 6-month commitment, workouts trimmed with rotational and unilateral work, protein toward 120+</td><td class="t-warn">Lean fell at every scan through Sep 3, 92.86 to 84.35</td></tr>
+      <tr><td><strong>Sep 3</strong><br><span class="t-mute">restart after travel</span></td><td>EAA and leucine strategy, protein 120 to 125</td><td class="t-ok">Fat 48.32 to 44.60 by Sep 3, then 41.24 on Oct 5</td></tr>
+      <tr><td><strong>Sep 17</strong></td><td>Rest pauses, quad activation (hers to do), one full day of photos</td><td class="t-warn">One food entry in the last 14 days (Oct 26)</td></tr>
+      <tr><td><strong>Oct 5</strong><br><span class="t-mute">scan</span></td><td>Maintenance, protein 132, squat-to-shoulder-press replaces the single-arm overhead squat, two-day spot check</td><td class="t-ok">Swap in the app (30&times;8 on Oct 8). Protein 132 live from Oct 5</td></tr>
+      <tr><td><strong>Oct 20</strong><br><span class="t-mute">DM</span></td><td>RDL up one notch, same three targets until the scan</td><td class="t-ok">RDL 75&times;8, 8, 4 on Oct 22</td></tr>
+      <tr><td><strong>Oct 28</strong><br><span class="t-mute">week-out</span></td><td>Gorilla row, RDL and goblet squat targets below</td><td class="t-warn">Pending</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/300386?tab=calendar" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <div class="dp-head">Week-out targets. RDL is held on purpose, the rack is the limit</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Gorilla Row</strong> (C)<br><span class="t-mute">next C session</span></td><td>Oct 22: 20&times;10, 10, 10</td><td class="t-ok">25 for 8 to 10 on sets 1 and 2. Identical sets mean set 1 had more</td></tr>
+      <tr><td><strong>Romanian Deadlift</strong> (C)<br><span class="t-mute">next C session</span></td><td>Oct 22: 75&times;8, 8, 4</td><td class="t-ok">75, all 8 on sets 1 and 2, set 3 above 4</td></tr>
+      <tr><td><strong>Goblet Squat</strong> (A)<br><span class="t-mute">next A session, no date in the app</span></td><td>Oct 16 and Oct 24: 45&times;8, 8, 6</td><td class="t-ok">50 on sets 1 and 2, set 3 backs off</td></tr>
+      <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards: Female under 60 &middot; 132.4 lb</td></tr>
+      <tr><td>BB Bench Press</td><td>~130 lb 1RM (1.0&times;BW)</td><td>dumbbell bench 50&times;8, 8, 3, Oct 24 (at the Bowflex ceiling)</td></tr>
+      <tr><td>BB Back Squat</td><td>~200 lb 1RM (1.5&times;BW)</td><td>goblet squat 45&times;8, Oct 24</td></tr>
+      <tr><td>BB Deadlift</td><td>~265 lb 1RM (2.0&times;BW)</td><td>dumbbell RDL 75&times;8, Oct 22</td></tr>
+    </tbody>
+  </table>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Good pattern: load or reps climbed</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 5 to Oct 22</td><td>DB RDL</td><td><strong>70&times;10, 10, 5 to 75&times;8, 8, 4</strong></td></tr>
+        <tr><td>Oct 12 to Oct 26</td><td>Single-leg glute bridge</td><td><strong>12, 15, 20</strong></td></tr>
+        <tr><td>Oct 19 to Oct 26</td><td>Reverse lunge</td><td><strong>24 to 30, held at 30</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat sets: same weight, same reps</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 14, Oct 22</td><td>Gorilla row</td><td><strong>15&times;10 &times;3, then 20&times;10 &times;3</strong></td></tr>
+        <tr><td>Oct 14, Oct 22</td><td>Seated DB shoulder press</td><td><strong>40&times;8, 8 then 30 drop, both days</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">Identical sets mean the first set had more in it. Beat last time on sets 1 and 2, back off set 3.</p>
+  <div class="box-warn"><strong>Direction only, do not read the Gold Standard numbers to her.</strong> ALMI is the 34th percentile, she has a disc history and avoids the barbell. Use her own percentage gains. The app does not say whether a logged dumbbell weight is per hand, so no barbell equivalent is computed.</div>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/300386" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What she logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 132 g</strong><br><span class="t-mute">set Oct 5. App target 133 carbs, 51 fat. Plant-based pescatarian</span></td><td>Oct 26 (the one entry in 14 days): No Cow, collagen coffee, tofu and black bean quesadilla, amino acids during, Koia pre, 35 g protein smoothie plus toast post</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Small feedings about every 3 hours</strong><br><span class="t-mute">EAAs, collagen in coffee</span></td><td>Last tracked full day on the Oct 5 call was about 116 g</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Logging days</strong></td><td>Oct 29 and Oct 30 already on her calendar, no new pair</td><td class="t-warn">Pending</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words</div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
+    <div class="say-ev"><strong>No answer. Ask in the room.</strong> Her replies are short, so silence is ordinary for her, not a signal.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 6 Month Core runs to Dec 29. The series is Nov 4, Dec 2, Dec 30, so there is no cliff at this scan.</div>
+  </div>
+  <div class="dp-head">Her words</div>
+  <ul class="dp-list dp-sub">
+    <li>Oct 20: <em>"Energy is good"</em>, and her Seattle hotel workout was <em>"one of my better workouts"</em>.</li>
+    <li>Oct 20, on equipment: RDL only +5, and <em>"it's getting very difficult removing (and returning) the Bowflex from the rack. May have to look at other options."</em></li>
+    <li>Oct 14, workout comment: <em>"Failing at 12"</em>.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-red"><strong>Told the wrong scan date.</strong> Daniel's Oct 20 DM says Monday the 2nd. She is booked Wednesday Nov 4, 8:15 AM and Nov 2 has no Kim event. Send 1 corrects it.</li>
+    <li class="f-red"><strong>Lean mass down 7.47 lb since May 28.</strong> 92.86 to 85.39, even with the +1.04 on Oct 5.</li>
+    <li class="f-amber"><strong>Bowflex ceiling and rack difficulty were never answered.</strong> Bench 50 is at the ceiling and RDL can only go up 5 lb. The thread's last message is ours, but nobody replied to the equipment point.</li>
+    <li class="f-amber"><strong>Zepbound next step is unknown.</strong> She said on Oct 5 she was finishing her second round at 10 mg and had to decide the next step. Nothing since.</li>
+    <li class="f-amber"><strong>Only today's session (Oct 28, C) is loaded in the app.</strong> Nothing is scheduled after it, so the goblet squat target has no date.</li>
+    <li class="f-green"><strong>92% adherence,</strong> intensifiers in use, loads moving on RDL, glute bridge and lunge.</li>
+    <li class="f-blue"><strong>Back: L3-L5 herniation history.</strong> No barbell or low-back arching, lunges modified, left quad settling, wrist irritation.</li>
+  </ul>
+</div>
+
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the lean mass reversal on Oct 5 (+1.04),</strong> then ask what changed since: RDL 75, glute bridge 20, more protein per feeding.</li>
+    <li><strong>Lead with the lean versus fat split.</strong> She wants body composition, not scale weight. Home scale reads 128.5 to 128.6, the gym scale was 132.4.</li>
+    <li><strong>Ask where Zepbound landed:</strong> dose, maintenance plan, appetite. It drives the protein plan.</li>
+    <li><strong>Resolve the Bowflex problem.</strong> She is capped at 50 per hand on bench and goblet and struggles with the rack on RDL. Offer an equipment option.</li>
+    <li><strong>Decide the next block.</strong> 12 of 13 sessions done, ask if she wants more load or more intensifiers.</li>
+    <li><strong>Food photos Oct 29 and 30:</strong> confirm protein spread across the day, aim 132.</li>
+    <li><strong>Check the date mix-up landed.</strong> She may have planned Monday Nov 2.</li>
+    <li class="f-out"><strong>Leave out:</strong> renewal, packages, billing, bone density (30-day window). Her term has two more scans after this one.</li>
+  </ol>
+</div>
+
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, other lifts, equipment, schedule, data caveats</summary>
+    <div class="ref-body">
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+    <li>Wed Nov 4, 8:15 to 8:45 AM, 1875 S Bascom Ave Unit 2550, Campbell. Booked, calendar and Acuity agree.</li>
+    <li>6 Month Core, term ends Dec 29. Series Nov 4, Dec 2, Dec 30. Kalos app since Oct 10.</li>
+  </ul>
+
+      <div class="ref-h">Other lifts</div>
+      <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Sets</th></tr></thead>
+    <tbody>
+      <tr><td>DB Bench Press</td><td>Oct 16: 50&times;7, 7, 5. Oct 24: 50&times;8, 8, 3</td></tr>
+      <tr><td>Seated DB Shoulder Press</td><td>Oct 14, Oct 22: 40&times;8, 8 then 30 drop</td></tr>
+      <tr><td>Single-Leg Glute Bridge</td><td>Oct 26: 20&times;8 &times;3</td></tr>
+      <tr><td>Reverse Lunge</td><td>30&times;10</td></tr>
+      <tr><td>Pullover</td><td>25&times;12 &times;3</td></tr>
+      <tr><td>Goblet Squat</td><td>Oct 2: 45&times;10, 8, 6. Oct 16 and 24: 45&times;8, 8, 6</td></tr>
+      <tr><td>Gorilla Row</td><td>Oct 14: 15&times;10 &times;3. Oct 22: 20&times;10 &times;3</td></tr>
+    </tbody>
+  </table>
+
+      <div class="ref-h">Equipment, schedule and life</div>
+      <ul class="dp-list">
+    <li>Home gym: Bowflex to 50 lb, bench, bands. Sessions Mon, Wed, Fri. Travel kit: mini-bands, door anchor.</li>
+    <li>Seattle conference done early Oct. A large remote client onboarding for 3 months from early Oct, she is "completely married" to it.</li>
+    <li>Sleep about 7 h with trazodone, steps about 8k a day.</li>
+  </ul>
+
+      <div class="ref-h">Data caveats</div>
+      <ul class="dp-list">
+    <li>The app's 86% adherence counts today's unstarted session. 12 of 13 due before today is 92%.</li>
+    <li>Sessions done since Oct 5: Oct 8, 12, 14, 16, 19, 22, 24, 26. The Oct 10 A session was not done (migration day).</li>
+    <li>On the Oct 5 call Daniel said he "might" do a kickstand deadlift video. Nothing in the app, but it was conditional.</li>
+    <li>Current Zepbound dose and next-step plan unknown.</li>
+  </ul>
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-kim -->
 
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
