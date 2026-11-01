@@ -2042,7 +2042,7 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end NOV 5 day-group -->
 <!-- ═══════════ NOV 8 day-group, Indira Singh moved from Oct 26 on 2026-10-26 ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Sunday &middot; November 8, 2026 &mdash; 1 scan</div>
+  <div class="day-label">Sunday &middot; November 8, 2026 &mdash; 2 scans</div>
   <div class="cards-row">
 <!-- ── INDIRA SINGH · 9:45 AM · 1st package scan, milestone, 6 Month Core ── -->
 <div class="card" id="card-indira">
@@ -2113,6 +2113,63 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('indira')"><span> Lift targets + nutrition &middot; drafted</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('indira')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted</span></label>
           <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('indira')"><span> Night-before refresh + audio (<strong>no Slack post</strong>)</span></label>
+        </div>
+      </div>
+    </div>
+
+<!-- ── LEKHANA GADDE · 2:45 PM · 1st package scan (2nd DEXA), milestone, 6 Month Core, Kalos app ── -->
+<div class="card" id="card-lekhana">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('lekhana')">Lekhana Gadde <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Female &middot; 26 &middot; 1st Package Scan (2nd DEXA) &middot; 6 Month Core &middot; LBM Gain &middot; Kalos app</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-lbm">LBM Gain</span>
+          <span class="badge badge-scan">2:45 PM</span>
+        </div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note"><div class="metric-val">135.3</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 134.0</div></div>
+        <div class="metric bad"><div class="metric-val">41.5%</div><div class="metric-label">Body Fat</div><div class="metric-sub">86th %ile</div></div>
+        <div class="metric note"><div class="metric-val">69.0</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">Oct 5 baseline</div></div>
+        <div class="metric bad"><div class="metric-val">10th %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">Oct 5 baseline</div></div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">45%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:45%;background:#ef4444"></div></div>
+            <div class="cons-detail">5 of 11 last 30d &middot; back pause Oct 21 to 25</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ Her Why</div>
+        <div class="why-text">Longevity and general fitness, feeling fitter for hiking.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('lekhana')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-lekhana">8/12</span>
+            <span class="checklist-chevron" id="chev-lekhana">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-lekhana">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Scan time confirmed &middot; <strong>Sun Nov 8, 2:45 PM, Campbell</strong> (Acuity, checked Nov 1)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Baseline DEXA pulled &middot; <strong>Oct 5, the only scan</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Member record read</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Thread read &middot; <strong>nothing owed</strong>, last message is hers</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Set-level lifts pulled &middot; <strong>Oct 14 to Oct 31</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Food journal &middot; <strong>task not needed</strong>, photos 20 of 20 days</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> Gold Standards computed &middot; <strong>do not quote</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('lekhana')"><span> 6&ndash;12 month question <strong>skipped</strong>, 6 Month Core to Apr 6, 2027</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lekhana')"><span> Pre-scan opener &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lekhana')"><span> Lift targets + nutrition &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lekhana')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('lekhana')"><span> Night-before refresh + audio (<strong>no Slack post</strong>)</span></label>
         </div>
       </div>
     </div>
@@ -7611,6 +7668,262 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
   <!-- end modal-jamie -->
+
+<div id="modal-lekhana" class="modal-content"
+     data-name="Lekhana Gadde"
+     data-sub="1st Package Scan (2nd DEXA) &middot; November 8, 2026 &middot; 2:45&ndash;3:15 PM PST (Google Calendar, Acuity 1785267961) &middot; Milestone track, first progress &middot; LBM Gain &middot; F &middot; 26"
+     data-audio-brief="">
+
+  <script>
+  window.__scan1_lekhana = {
+    bw: 135.31, scaleBw: 134.0, bfPct: 41.5, bfAMpct: 86,
+    lean: 79.14, fat: 56.17, vat: 69.0,
+    almiAMpct: 10,
+    bmd: null, bmdZ: null,
+    scan1Date: 'Oct 5, 2026 (intro baseline, started straight away)', height: 65,
+    regional: null,
+    sourceNote: 'Iris scan record and PDF, read Nov 1. Lean includes bone mineral content.'
+  };
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Sun Nov 8 &middot; 2:45 PM &middot; Campbell</span>
+    <span class="g-chip">2nd DEXA &middot; first progress check</span>
+    <span class="g-chip">F &middot; 26 &middot; 5'5&quot;</span>
+    <span class="g-chip"><span style="background:#dbeafe;color:#1e3a8a;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:.04em">WEEK-OUT BUILD Nov 1</span></span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-warn">45% &middot; 5 of 11 sessions &middot; last Oct 31</span>
+    <span class="g-chip g-info">6 Month Core to Apr 6, 2027: no close</span>
+    <span class="g-chip g-info">Assessment Mon Nov 9, 3:30 PM</span>
+    <span class="g-chip g-warn">Lower back sprain Oct 20</span>
+    <span class="g-chip g-mute">Training pulled Nov 1</span>
+  </div>
+</div>
+
+<!-- ═══ 1 - GOALS & MOTIVATION ═══ -->
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Lean mass gain: build first.</strong> ALMI is the 10th percentile, so muscle comes before any fat loss. Plan on record is about eight months of building, body fat under 30% and a higher ALMI after that.</li>
+    <li><strong>Why:</strong> longevity and general fitness, undoing a sedentary desk job, feeling fitter on hikes. She said on Oct 8 that she has no specific target yet and will clarify it once she starts.</li>
+    <li><strong>This block's focus:</strong> three full-body workouts a week with every weight logged, protein first at 105 g a day, and the lower back settling.</li>
+  </ul>
+</div>
+
+<!-- ═══ 2 - WINS TO OPEN WITH ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="lekhana-scan-badge">Scan 2 Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>Food photos every day from Oct 12 to Oct 31:</strong> 80 entries over 20 days, two to six a day.</li>
+    <li><strong>Shoulder press went from 5 lb (Oct 27) to 10 lb (Oct 31).</strong></li>
+    <li><strong>Face pull 10 lb (Oct 27) became 15 lb &times; 15, 15, 15 (Oct 31).</strong></li>
+    <li><strong>Glute kickback 5 lb (Oct 27) became 10 lb &times; 15, 15, 15 (Oct 31).</strong></li>
+    <li><strong>Two workouts back to back after the back pause</strong> (Oct 27 and Oct 31), plus an unassigned lateral raise and curl session on Oct 15.</li>
+    <li><strong>Oct 20:</strong> <em>"Yes, I'm pretty happy."</em></li>
+  </ul>
+</div>
+
+<!-- ═══ 3 - THE NUMBERS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline Oct 5, 2026</span> <a href="https://iris.livekalos.com/members/606059" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">135.31 lb</div><div class="snap-lbl">DXA total &middot; scale 134.0</div></div>
+    <div class="snap-metric"><div class="snap-val warn">41.5%</div><div class="snap-lbl">Body fat &middot; 86th %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">79.14 lb</div><div class="snap-lbl">Lean mass &middot; with BMC</div></div>
+    <div class="snap-metric"><div class="snap-val">56.17 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val note">69.0 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 333 g</div></div>
+    <div class="snap-metric"><div class="snap-val warn">10th %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">0.74</div><div class="snap-lbl">Android / Gynoid</div></div>
+    <div class="snap-metric"><div class="snap-val">5' 5&quot;</div><div class="snap-lbl">Age 26</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr class="now"><td><strong>Oct 5</strong><br><span class="t-mute">intro, baseline</span></td><td>135.31</td><td>79.14</td><td>56.17</td><td>41.5% (86th)</td><td>69.0</td><td>10th</td></tr>
+      <tr class="t-pending"><td><strong>Nov 8</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>ALMI 10th is the finding</strong> and the reason this is a build. The gap is 34 days, so judge lean mass on direction. Frame the build before body fat 41.5% shows.</div>
+</div>
+
+<!-- ═══ 4 - THE PLAN SO FAR ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Oct 5 baseline</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Oct 8</strong><br><span class="t-mute">onboarding</span></td><td>Three full-body workouts a week, weights logged, first week at about 70% effort</td><td class="t-warn">5 of 11 done in 30 days. Oct 14, 16, 27 and 31 logged</td></tr>
+      <tr><td><strong>Oct 8</strong></td><td>Protein 105 g a day: fist-sized portion at three meals, two shakes, Greek yogurt at night</td><td class="t-warn">About 53 g a day on Oct 20. No newer figure</td></tr>
+      <tr><td><strong>Oct 8</strong></td><td>Photos of the office and community gyms</td><td class="t-ok">Sent Oct 13</td></tr>
+      <tr><td><strong>Oct 9</strong></td><td>Book the in-house assessment</td><td class="t-ok">Booked Mon Nov 9, 3:30 PM</td></tr>
+      <tr><td><strong>Oct 20</strong></td><td>Full scoop of protein in the morning oats, Fairlife shake daily including rest days, light warm-up then hard working sets</td><td class="t-warn">Chicken and egg lunch with shakes on Oct 29. No grams logged</td></tr>
+      <tr><td><strong>Oct 20 to 25</strong></td><td>Back pause, workouts moved. Daniel on Oct 21: pause a day or two, stretch at 5 or 6 out of 10</td><td class="t-ok">Back to training Oct 27</td></tr>
+      <tr><td><strong>Oct 21</strong></td><td>Pre/post workout 2:1 sheet sent</td><td class="t-mute">Ask whether she is using it</td></tr>
+      <tr><td><strong>Oct 25</strong></td><td>Chest press: sets 1 and 2 heavier, set 3 easier</td><td class="t-warn">Still 5 lb &times; 15, 15, 15 on Oct 27 and Oct 31</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5 - LIFTING METRICS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/606059" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged (pulled Nov 1)</th><th>Target before Nov 8</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dumbbell Romanian Deadlift</strong></td><td class="t-warn">Oct 14: 5 lb &times; 10, 10, 10</td><td>12 on sets 1 and 2, set 3 easier</td></tr>
+      <tr><td><strong>Seated Cable Row</strong></td><td class="t-ok">Oct 14: 12.5 lb &times; 15, 15, 15</td><td>A little heavier on sets 1 and 2 for 12, set 3 easier</td></tr>
+      <tr><td><strong>Machine Chest Press</strong></td><td class="t-warn">Oct 31: 5 lb &times; 15, 15, 15</td><td>Heavier on sets 1 and 2, set 3 easier</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">Next block is 12 reps, so the load has to rise. The A workout has not been done since Oct 14, and the Nov 1 session is not finished at the time of the pull. Her days lately are Tuesday and Saturday evenings.</p>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Good pattern: load climbing</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 31</td><td>Dumbbell shoulder press</td><td><strong>10 lb &times; 10, 10, 10</strong></td></tr>
+        <tr><td>Oct 31</td><td>Cable face pull</td><td><strong>15 lb &times; 15, 15, 15</strong></td></tr>
+        <tr><td>Oct 31</td><td>Glute kickback</td><td><strong>10 lb &times; 15, 15, 15</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat sets: same weight, same reps</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Oct 31</td><td>Machine chest press</td><td><strong>5 lb &times; 15, 15, 15</strong></td></tr>
+        <tr><td>Oct 31</td><td>Assisted pull-up</td><td><strong>30 lb &times; 15, 15, 15</strong></td></tr>
+        <tr><td>Oct 14</td><td>Seated cable row</td><td><strong>12.5 lb &times; 15, 15, 15</strong></td></tr>
+        <tr><td>Oct 14</td><td>Lateral raise</td><td><strong>5 lb &times; 15, 15, 15</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">A flat completed third set means sets 1 and 2 were too light. Weights are as she logged them, dumbbell pairs combined.</p>
+  <div class="dp-head">Gold Standards</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Target at 134 lb</th><th>Nearest logged</th></tr></thead>
+    <tbody>
+      <tr><td>Bench</td><td>~135 lb 1RM</td><td>Machine chest press 5 lb &times; 15, Oct 31</td></tr>
+      <tr><td>Back squat</td><td>~200 lb</td><td>Goblet squat 5 lb &times; 15, Oct 14</td></tr>
+      <tr><td>Deadlift</td><td>~270 lb</td><td>Dumbbell RDL 5 lb &times; 10, Oct 14</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">She trains on machines and dumbbells and her ALMI is the 10th percentile, so the barbell standards are far off. Use direction and her own gains, not the number.</p>
+</div>
+
+<!-- ═══ 6 - NUTRITION ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/606059" target="_blank" class="dp-title-link">Kalos 2.0 &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What she logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 105 g/day</strong><br><span class="t-mute">protein first, 3 meals, shakes</span></td><td>Photos every day Oct 12 to Oct 31, 80 entries. Oct 29 chicken and egg lunch with Fairlife shakes</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Fairlife shake daily</strong></td><td>Shakes seen with the Oct 29 lunch</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Scoop of protein in the morning oats</strong></td><td>Oats in the first photos; scoop not confirmed</td><td class="t-mute">Ask</td></tr>
+      <tr><td><strong>Pre/post workout 2:1</strong></td><td>No meal or shake entry tied to a workout read</td><td class="t-mute">Ask</td></tr>
+      <tr><td><strong>Calories</strong></td><td>Never given a target</td><td class="t-mute">Keep it that way</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>Breakfast is the gap.</strong> She skips it often and went dizzy after a workout without fuel (Oct 20). Likes oats, rice, paneer, Greek yogurt and Fairlife. Photo log already daily, so no new food task.</div>
+</div>
+
+<!-- ═══ 7 - IN THEIR OWN WORDS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words <span class="t-mute">pending</span></div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo; <span class="t-mute">not yet sent</span></div>
+    <div class="say-ev"><strong>No answer yet.</strong> The night-before refresh fills this. If still blank, ask in the room.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 6 Month Core runs to Apr 6, 2027. On Oct 8 she said she has no particular goal yet.</div>
+  </div>
+  <div class="dp-head">What she volunteered</div>
+  <ul class="dp-list dp-sub">
+    <li>Oct 9: <em>"thanks I have scheduled for nov 9th for the in house assessment"</em></li>
+    <li>Oct 13: <em>"I generally tend to skip breakfasts"</em></li>
+    <li>Oct 13: <em>"In my office and i prefer to do it here"</em></li>
+    <li>Oct 25: <em>"its alot better , it still was there after stretching but now it seems better"</em></li>
+  </ul>
+</div>
+
+<!-- ═══ 8 - COACHING POINTS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-red"><strong>Lower back status unknown.</strong> Sprained Oct 20 carrying a water bottle upstairs, center of the back. Her last word was Oct 25 and she has trained twice since without a complaint in the thread.</li>
+    <li class="f-amber"><strong>45% consistency, 5 of 11 in 30 days.</strong> Misses were Oct 9, 12, 21, 23, 25, with the Oct 21 to 25 gap from the back pause.</li>
+    <li class="f-amber"><strong>Chest press and assisted pull-up are flat</strong> at 15, 15, 15 on the same load. The Oct 25 ask to go heavier on sets 1 and 2 has not been acted on.</li>
+    <li class="f-amber"><strong>Protein was about 53 g a day on Oct 20</strong> against 105. No newer figure exists.</li>
+    <li class="f-amber"><strong>Some weights are not logged:</strong> the Oct 27 pull-up is blank and Oct 31 reverse lunge set 3 is blank.</li>
+    <li class="f-blue"><strong>Last message in the thread is hers</strong> (Oct 25, an acknowledgement). Nothing owed from Daniel.</li>
+    <li class="f-blue"><strong>Bone density Z-score &minus;2.4</strong> is on record, near osteopenia: weight-bearing lifts first. Not for the screen or the message.</li>
+    <li class="f-blue"><strong>Visceral is 69.0.</strong> Under 80 and a single scan, so no strategy unless it rises 10 or more.</li>
+    <li class="f-green"><strong>Responds to education and simple rules</strong> ("three meals is the easiest way"). Photo log is daily.</li>
+  </ul>
+</div>
+
+<!-- ═══ 9 - SCAN-DAY FOCUS ═══ -->
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the Oct 31 loads before any number.</strong> Shoulder press 5 to 10 lb, face pull 10 to 15 lb, glute kickback 5 to 10 lb.</li>
+    <li><strong>Ask how the lower back is</strong> before talking training, then what she has noticed: clothes, hikes, evening energy.</li>
+    <li><strong>Lead with ALMI as the percentile</strong> (10th on Oct 5) and frame the build first. Then show body fat 41.5%, 86th age-matched.</li>
+    <li><strong>Settle protein:</strong> breakfast, the scoop in the oats, the Fairlife shake, and what she eats before and after a workout.</li>
+    <li><strong>Chest press and pull-up:</strong> sets 1 and 2 heavier, set 3 easier. Flat 15, 15, 15 means the first sets were too light.</li>
+    <li><strong>Reconnect to her why:</strong> longevity and keeping up on hikes. Ask what a good hike looks like in six months.</li>
+    <li><strong>Set the next block off the numbers:</strong> 12 reps, beat last time on sets 1 and 2, back off set 3, log every weight.</li>
+    <li><strong>Point to the assessment</strong> Mon Nov 9, 3:30 PM, the next afternoon.</li>
+    <li class="f-out"><strong>Leave out:</strong> renewal talk or a Slack post, a calorie number, the bone density figure, the Gold Standards as targets.</li>
+  </ol>
+</div>
+
+<!-- ═══ 10 - REFERENCE (collapsed) ═══ -->
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, lift history, nutrition protocols, background</summary>
+    <div class="ref-body">
+
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+        <li>Sun Nov 8, 2:45 to 3:15 PM PST (Google Calendar, Acuity 1785267961), 1875 S Bascom Ave Unit 2550, Campbell. The calendar title says San Jose.</li>
+        <li>In-person form assessment Mon Nov 9, 3:30 to 4:00 PM (Acuity 1785787762). She booked it on Oct 9.</li>
+        <li>6 Month Core started Oct 6, ends Apr 6, 2027. Onboarding call Oct 8, 10-day call Oct 20.</li>
+      </ul>
+
+      <div class="ref-h">Workout history (as logged)</div>
+      <table class="dp-table">
+        <thead><tr><th>Lift</th><th>Earlier</th><th>Latest</th></tr></thead>
+        <tbody>
+          <tr><td>Goblet squat</td><td>Oct 14: 5 lb &times; 10, 15, 10</td><td>Not since</td></tr>
+          <tr><td>Alternating reverse lunge</td><td>Oct 16: 5 lb &times; 10, 10, 6</td><td>Oct 31: 5 lb &times; 10, 7</td></tr>
+          <tr><td>Seated dumbbell shoulder press</td><td>Oct 16: 5 lb &times; 15, 15, 15</td><td>Oct 31: 10 lb &times; 10, 10, 10</td></tr>
+          <tr><td>Single-arm cable lat pulldown</td><td>Oct 14: 12.5 lb &times; 15, 15, 15</td><td>Not since</td></tr>
+          <tr><td>Lying leg raise</td><td>Oct 16: 10, 10, 10</td><td>Oct 31: 10, 10, 10</td></tr>
+        </tbody>
+      </table>
+      <p class="dp-sub">Office and community gym: dumbbells, machines, bodyweight. Evenings. Oct 15 she added a lateral raise and curl session on her own.</p>
+
+      <div class="ref-h">Nutrition protocols</div>
+      <ul class="dp-list">
+        <li>Protein 105 g/day. Three meals at a fist-sized portion, shakes on top, Greek yogurt before bed.</li>
+        <li>Pre/post 2:1 sent Oct 21: 25 g protein with 50 g carbs and 1 tbsp peanut butter, then a post meal at 25 g and 50 g starch.</li>
+      </ul>
+
+      <div class="ref-h">Background</div>
+      <ul class="dp-list">
+        <li>Low training experience at the start. Motivated by getting out of desk-job inertia; likes hiking, anime, Korean dramas, new foods.</li>
+        <li>VIP membership and the assessment link sent Oct 9. No gut health or neurotyping form requested.</li>
+        <li>Moved to the Kalos app Oct 10. She said she missed the first messages in the old app.</li>
+      </ul>
+
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-lekhana -->
 
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
