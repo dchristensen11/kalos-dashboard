@@ -1786,8 +1786,60 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end NOV 11 day-group -->
 <!-- ═══════════ NOV 12 day-group, week-out cards built 2026-11-05 ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Thursday &middot; November 12, 2026 &mdash; 3 scans</div>
+  <div class="day-label">Thursday &middot; November 12, 2026 &mdash; 4 scans</div>
 <div class="cards-row">
+
+<!-- ── NEEL DESAI · 9:00 AM · routine 1st package scan (4th DEXA) ── -->
+<div class="card" id="card-neel">
+  <div class="card-header">
+    <div>
+      <div class="card-name clickable" onclick="openModal('neel')">Neel Desai <span class="expand-chevron">&#8599;</span></div>
+      <div class="card-sub">Male &middot; 28 &middot; 1st Package Scan (4th DEXA) &middot; 1 Year Lite &middot; LBM Gain</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-scan">9:00 AM</span>
+      <span class="badge badge-lbm">LBM Gain</span>
+    </div>
+  </div>
+  <div class="metrics-grid">
+    <div class="metric"><div class="metric-val">209.4</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 210.9 &middot; Oct 7</div></div>
+    <div class="metric"><div class="metric-val">36.8%</div><div class="metric-label">Body Fat</div><div class="metric-sub">98th %ile &middot; 37.7 &rarr; 36.8</div></div>
+    <div class="metric"><div class="metric-val">147.9</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">174.8 &rarr; 147.9</div></div>
+    <div class="metric"><div class="metric-val">41st %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">29th &rarr; 41st</div></div>
+  </div>
+  <div class="consistency-section">
+    <div class="cons-label">&#128202; Training Consistency</div>
+    <div class="cons-row">
+      <div class="cons-pct" style="color:#22c55e">100%</div>
+      <div class="cons-right">
+        <div class="cons-track"><div class="cons-fill" style="width:100%;background:#22c55e"></div></div>
+        <div class="cons-detail">13 of 13 due in 30 days, last one Tue Nov 3. Today&rsquo;s session not yet logged.</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-section">
+    <div class="why-tag">&#11088; His Why</div>
+    <div class="why-text">Performance and longevity: fewer injuries and better speed on the court, and proud that he is finally lifting real weight.</div>
+  </div>
+  <div class="checklist-section">
+    <div class="checklist-header" onclick="toggleChecklist('neel')">
+      <span class="checklist-title">&#9989; Pre-Scan Prep</span>
+      <div class="checklist-right"><span class="checklist-progress-badge" id="prog-neel">6/10</span><span class="checklist-chevron" id="chev-neel">&#8250;</span></div>
+    </div>
+    <div class="checklist-items" id="items-neel">
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> Scan time confirmed from the work calendar Nov 5: <strong>Thu Nov 12, 9:00 AM</strong>, Campbell (1784378871). Movement assessment 8:15 AM (1786897218)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> Member record, DEXA history and set-level lifts re-read Nov 5 (Kalos 2.0 member)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> Live thread read, sender-labelled; last message is his (Nov 2), a food question not yet answered</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> Card + modal built for Nov 12 (routine track, no sales content, no Slack post)</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> Food task <strong>not created</strong>: 42 photo entries in the app, one or more every day Oct 28 to Nov 4</span></label>
+      <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('neel')"><span> 6-to-12-month question not asked: term runs to Nov 7, 2027, and he answered it Sep 30</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> Pre-scan opener &middot; drafted Nov 5, not sent</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> Lift targets + food note &middot; drafted Nov 5 (bench, squat, cable row), not sent</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted Nov 5 as a follow-up to his Sep 30 answer, not sent</span></label>
+      <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('neel')"><span> Night-before refresh + audio (<strong>no Slack post</strong>)</span></label>
+    </div>
+  </div>
+</div>
 
 <!-- ── ADAM MAYER · 9:45 AM · 3rd package scan (6th DEXA), final of term, renewal talk ── -->
 <div class="card conversion" id="card-adam">
@@ -6615,6 +6667,207 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
   <!-- end modal-jamie -->
+
+<div id="modal-neel" class="modal-content"
+     data-name="Neel Desai"
+     data-sub="1st Package Scan (4th DEXA) &middot; November 12, 2026 &middot; 9:00 AM (Acuity 1784378871, read from the work calendar Nov 5) &middot; Routine track &middot; LBM Gain &middot; M &middot; 28">
+
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Thu Nov 12 &middot; 9:00 AM &middot; Campbell</span>
+    <span class="g-chip">4th DEXA &middot; 1st package scan &middot; routine, no close</span>
+    <span class="g-chip">M &middot; 28 &middot; 5'9&quot;</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip" style="background:#22c55e22;color:#15803d">Last scan: lean +2.61, ALMI 29th to 41st, VAT &minus;26.9</span>
+    <span class="g-chip g-info">1 Year Lite to Nov 7, 2027</span>
+    <span class="g-chip g-mute">Form assessment 8:15 AM &middot; flies Nov 14</span>
+  </div>
+</div>
+
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">&#127919; Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Build muscle first, burn fat second.</strong> Goal on file is LBM gain (derived from ALMI 41st, not agreed with him). His own target is 25% body fat in about a year; the Oct 7 plan was build through the winter, cut from spring.</li>
+    <li><strong>Why:</strong> performance and longevity. Fewer injuries, better speed and movement for badminton and soccer, and pride in finally lifting real weight (Oct 27: &ldquo;the first time I feel like I&rsquo;m actually lifting stuff&rdquo;).</li>
+    <li><strong>This block:</strong> 11-exercise program since Oct 26. Compounds first, two hard sets beat three moderate ones (Oct 27 call). Window since Oct 7 is 36 days.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#127942; Wins to Open With <span class="badge-pending" id="neel-scan-badge">Scan 4 Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>Last scan (Oct 7): ALMI 29th to 41st, visceral 174.8 to 147.9 cm&sup2;, fat &minus;1.37 lb, lean +2.61 lb</strong> in 28 days.</li>
+    <li><strong>13 of 13 due sessions</strong> in the last 30 days, the last on Tue Nov 3.</li>
+    <li><strong>Deadlift 155 &times; 10 (Oct 8) to 205 &times; 6 (Oct 29).</strong> Squat 120 &times; 12 (Oct 6) to 155 &times; 12 (Nov 3).</li>
+    <li><strong>Seated dumbbell shoulder press 40 &times; 12 (Oct 26) to 50 &times; 12, 12, 12 (Nov 3).</strong> Incline barbell bench 75 &times; 12 (Oct 6) to 95 &times; 12 (Nov 3).</li>
+    <li><strong>Food photos every day Oct 28 to Nov 4</strong> (42 entries), after a gap Oct 21 to 27.</li>
+    <li><strong>Carb timing done as asked</strong> Oct 31 and Nov 3: rice cakes and a shake before, a shake after.</li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#128202; The Numbers <span class="t-mute">last scan Oct 7, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/536244" target="_blank" class="dp-title-link">Results &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">209.40 lb</div><div class="snap-lbl">DXA total &middot; scale 210.9</div></div>
+    <div class="snap-metric"><div class="snap-val">36.8%</div><div class="snap-lbl">Body fat &middot; 98th %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">127.32 lb</div><div class="snap-lbl">Lean &middot; up 2.61</div></div>
+    <div class="snap-metric"><div class="snap-val">77.10 lb</div><div class="snap-lbl">Fat mass &middot; down 1.37</div></div>
+    <div class="snap-metric"><div class="snap-val">147.9 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 713 g &middot; down 26.9</div></div>
+    <div class="snap-metric"><div class="snap-val">41st %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">5' 9&quot;</div><div class="snap-lbl">Age 28</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Aug 26</strong><br><span class="t-mute">intro</span></td><td>204.31</td><td>120.31</td><td>79.22</td><td>38.8% (99th)</td><td>167.4</td><td>25th</td></tr>
+      <tr><td><strong>Sep 9</strong><br><span class="t-mute">baseline</span></td><td>208.13</td><td>124.71</td><td>78.47</td><td>37.7% (98th)</td><td>174.8</td><td>29th</td></tr>
+      <tr class="now"><td><strong>Oct 7</strong><br><span class="t-mute">last scan</span></td><td>209.40</td><td>127.32</td><td>77.10</td><td>36.8% (98th)</td><td>147.9</td><td>41st</td></tr>
+      <tr class="t-delta"><td><strong>Change</strong></td><td class="t-flat">+1.27</td><td class="t-good">+2.61</td><td class="t-good">&minus;1.37</td><td class="t-good">&minus;0.9 pts</td><td class="t-good">&minus;26.9</td><td class="t-good">+12</td></tr>
+      <tr class="t-pending"><td><strong>Nov 12</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">Compare Nov 12 against Oct 7 (36 days). Lean is the dashboard split (excludes bone). App scale weight Nov 3 was 210.4 and 210.9; the Oct 7 scale was 210.9.</p>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#128203; The Plan So Far <span class="t-mute">since the Oct 7 scan</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Oct 7</strong></td><td>Weekly rep targets that change, more core, keep the heavier lifting; push close to failure and send lift videos</td><td class="t-good">Reps stepped 12, 10, 8 through October, 11-exercise block from Oct 26. Videos sent Oct 13, 19 and 28</td></tr>
+      <tr><td><strong>Oct 7</strong></td><td>Restart detailed food photos before carbs and fats are set</td><td class="t-warn">Partly. None Oct 21 to 27; daily from Oct 28. Carbs and fats not set in the app yet</td></tr>
+      <tr><td><strong>Oct 7</strong></td><td>Grips for the forearm limit</td><td class="t-warn">Forearms still gave out first Oct 26 and Nov 3. Daniel suggested apron straps Nov 4</td></tr>
+      <tr><td><strong>Oct 12</strong></td><td>Open deadlift at 165, squat at 130</td><td class="t-good">Landed: deadlift 185 &times; 8 (Oct 13), squat 135, 135, 145 &times; 10 (Oct 15)</td></tr>
+      <tr><td><strong>Oct 27</strong></td><td>Compounds first, protein about every 3 hours, carbs around training, knee raises instead of hanging</td><td class="t-good">Landed: knee raises 12, 12, 10, 10 (Nov 3), carb timing Oct 31 and Nov 3</td></tr>
+      <tr><td><strong>Nov 1</strong></td><td>Leg press and lat pulldown above last time on Saturday; whole-food protein in a shake or bar slot</td><td class="t-warn">Saturday Nov 7 is next. He asked Nov 2 whether yogurt and cottage cheese replace bars or shakes; unanswered</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#127947; Lifting Metrics <a href="https://iris.livekalos.com/members/536244?tab=calendar" target="_blank" class="dp-title-link">Training &#8599;</a></div>
+  <div class="dp-head">Week-out targets (drafted Nov 5, Sat Nov 7 and Tue Nov 10)</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Barbell Bench Press</strong><br><span class="t-mute">C day, Sat Nov 7</span></td><td>100, 105, 110 &times; 12, 12, 10 (Oct 31)</td><td>All 12 on the 110</td></tr>
+      <tr><td><strong>Barbell Back Squat</strong><br><span class="t-mute">A day, Tue Nov 10</span></td><td>155 &times; 12, 145 &times; 12, 145 &times; 10 (Nov 3)</td><td>160 &times; 12 on sets 1 and 2, back off on 3 (160 is an estimate)</td></tr>
+      <tr><td><strong>Seated Cable Row</strong><br><span class="t-mute">C day, Sat Nov 7</span></td><td>70, 85, 85 &times; 12 (Oct 31)</td><td>Start at 85 on set 1</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">Still open from Nov 1 for Sat Nov 7: leg press above 270 (270 &times; 12, 12, 12 on Oct 31) and lat pulldown above 85 (85 &times; 15, 15 on Oct 31, target 12).</p>
+  <div class="pat-grid">
+    <div class="pat pat-good"><div class="pat-h">&#10003; Good pattern, reps fall across sets</div><table class="dp-table"><tbody>
+      <tr><td>Nov 3</td><td>Incline Barbell Bench</td><td><strong>95&times;12, 10, 9</strong></td></tr>
+      <tr><td>Nov 3</td><td>Dumbbell Romanian Deadlift</td><td><strong>90&times;12, 12, 10</strong></td></tr>
+      <tr><td>Oct 29</td><td>Barbell Deadlift</td><td><strong>205&times;6 top set</strong></td></tr>
+    </tbody></table></div>
+    <div class="pat pat-bad"><div class="pat-h">&#10007; Flat sets, same reps every set</div><table class="dp-table"><tbody>
+      <tr><td>Oct 31</td><td>Leg Press</td><td><strong>270&times;12, 12, 12</strong></td></tr>
+      <tr><td>Nov 3</td><td>Seated Dumbbell Shoulder Press</td><td><strong>50&times;12, 12, 12</strong></td></tr>
+      <tr><td>Nov 3</td><td>Neutral-Grip Lat Pulldown</td><td><strong>130, 130, 135&times;12, 12, 12</strong></td></tr>
+    </tbody></table></div>
+  </div>
+  <p class="dp-sub">A third set that matches the first means the first two had more in them. Bench (100 to 110) and row (70 to 85) open light and climb; open at the top weight.</p>
+  <div class="dp-head">Gold Standards (male 20s to 30s, 210.9 lb)</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Target</th><th>His nearest logged</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Bench</strong></td><td>315 lb</td><td>Barbell 110 &times; 10 (Oct 31), est 1RM about 147</td></tr>
+      <tr><td><strong>Back Squat</strong></td><td>420 lb</td><td>155 &times; 12 (Nov 3), est 1RM about 217</td></tr>
+      <tr><td><strong>Deadlift</strong></td><td>525 lb</td><td>205 &times; 6 (Oct 29), est 1RM about 246</td></tr>
+    </tbody>
+  </table>
+  <p class="dp-sub">Do not quote these. Body weight inflates them and he is years from them. Use his own gains: deadlift 155 to 205 since Oct 8, squat 120 to 155 since Oct 6.</p>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#129367; Nutrition <a href="https://iris.livekalos.com/members/536244" target="_blank" class="dp-title-link">Food in Iris &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What he logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 169 g/day</strong><br><span class="t-mute">app target from Oct 27, about every 3 hours</span></td><td>Oct 28 to Nov 4, 4 to 6 photos a day: shakes, eggs, grilled chicken, Greek yogurt, cottage cheese, dal. No daily gram total in the app</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Whole food in a shake or bar slot</strong><br><span class="t-mute">Nov 1</span></td><td>Nov 2 chicken lunch and yogurt with nuts; Nov 3 eggs and chicken. Shakes still most mornings</td><td class="t-warn">Partly</td></tr>
+      <tr><td><strong>Shake and rice cakes before, shake after</strong><br><span class="t-mute">Nov 1</span></td><td>Oct 31: shake and 2 rice cakes 18:09, session 18:30, shake 20:00. Nov 3: 4 rice cakes 17:30, session 18:17, shake 20:00</td><td class="t-good">Yes</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info">Carbs and fats are not set in the app yet; the plan is to set them with him at the scan. His Nov 2 question is unanswered: are yogurt and cottage cheese instead of the bars, and not the shakes? No food task was created because he logs daily.</div>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#128172; In Their Own Words</div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
+    <div class="say-ev"><strong>Answered Sep 30 08:44:</strong> <em>&ldquo;for clothes perspective, so far i have noticed anything different, the weighing scales reads i an 3lbs heavier then when i started. But from the muscle point of view , my arms have gottena nice shape, legs have gotten hard , chest has gotten hard. Another thing i noticed is the puffiness around my face has gone&rdquo;</em> A follow-up on what has changed since is drafted for Nov 5, no answer yet.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Answered Sep 30 16:49:</strong> <em>&ldquo;I think hitting 25% body fat in 1 year would be really nice. I am hoping to look a bit more shaped , like a smaller chest and waist&rdquo;</em> Not asked again; 1 Year Lite runs to Nov 7, 2027.</div>
+  </div>
+  <div class="dp-head">His words</div>
+  <ul class="dp-list dp-sub">
+    <li>Oct 26 and Nov 3, workout comments: <em>&ldquo;forearms gave out before others&rdquo;</em> and <em>&ldquo;forearms gave out before anything else&rdquo;</em></li>
+    <li>Oct 28, with a video: <em>&ldquo;cant do this, did this instead&rdquo;</em></li>
+    <li>Nov 2: <em>&ldquo;so to confirm these meals are there as an alternative to protein bars and not protein shakes ?&rdquo;</em></li>
+  </ul>
+</div>
+
+<div class="dp-section">
+  <div class="dp-title">&#128681; Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-amber"><strong>Nov 2 food question still unanswered.</strong> His message is the last one in the thread, three days old.</li>
+    <li class="f-amber"><strong>Grip is the limiter.</strong> Forearms gave out first on Oct 26 and Nov 3. Grips were sent Oct 7 and apron straps suggested Nov 4; ask if he has ordered them.</li>
+    <li class="f-amber"><strong>Sets climb instead of opening hard:</strong> bench 100 to 110, cable row 70 to 85, incline bench 65 to 85 (Oct 26). Flat sets on leg press, shoulder press and lat pulldown.</li>
+    <li class="f-amber"><strong>Logged weights do not hold together on some lifts:</strong> squat 230, 230, 250 on Oct 11 against 120 to 155 either side; neutral-grip lat pulldown 80 to 90 on Oct 26 and 130 to 135 on Nov 3; chin-up and dip loads swing. Check before quoting any of them.</li>
+    <li class="f-amber"><strong>Session timing drifts:</strong> Oct 26 began 21:09 and Nov 3 at 18:17, against the morning plan. Oct 29 was 08:07.</li>
+    <li class="f-green"><strong>Visceral fat is falling</strong> (174.8 to 147.9). The strategy was sent Sep 10; do not resend.</li>
+    <li class="f-blue"><strong>Travel:</strong> flies Nov 14 for Vietnam and India to about Jan 1 or 2. Nov 12 has a deadlift day (B) and Nov 14 a C day in the app. Travel workouts are planned at this visit, not owed.</li>
+  </ul>
+</div>
+
+<div class="dp-section focus">
+  <div class="dp-title">&#127919; Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the form assessment (8:15)</strong> and ask what he feels in the deadlift and squat, then go to the scan.</li>
+    <li><strong>Frame Oct 7 to Nov 12</strong> as 36 days, and lead with the lifts: deadlift 155 to 205, squat 120 to 155.</li>
+    <li><strong>Read lean and ALMI first</strong> (29th to 41st last time), then body fat and visceral. Build through the winter, cut from spring.</li>
+    <li><strong>Sets:</strong> show the flat leg press and shoulder press. Open at the top weight, back off on the last set.</li>
+    <li><strong>Grip:</strong> ask about the apron straps and what gives out first.</li>
+    <li><strong>Food:</strong> protein first, then quality, then carb timing. Set carbs and fats with him from the photos and answer his yogurt question.</li>
+    <li><strong>Vietnam and India:</strong> build the travel workouts around bodyweight in Vietnam and a gym in India, and set check-in points while he is away.</li>
+    <li class="f-out"><strong>Leave out:</strong> renewal or close talk, any calorie number, bone density, the visceral fat strategy (already sent), phase changes.</li>
+  </ol>
+</div>
+
+<div class="dp-section">
+  <details class="ref">
+    <summary>&#128206; Reference: booking, equipment, lift history, background</summary>
+    <div class="ref-body">
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+        <li>Thu Nov 12, 9:00 AM, 1875 S Bascom Ave Unit 2550, Campbell (Acuity 1784378871, work calendar Nov 5; the calendar title says San Jose, the address is Campbell). In-person form assessment 8:15 AM same address (Acuity 1786897218). 1 Year Lite started Oct 7, 2026, ends Nov 7, 2027. Routine track: no close, no Slack post.</li>
+      </ul>
+      <div class="ref-h">Equipment and schedule</div>
+      <ul class="dp-list">
+        <li>Full commercial gym with barbells. In the app: Full Body B Thu Nov 5, C Sat Nov 7, A Tue Nov 10, B Thu Nov 12 (scan day), C Sat Nov 14.</li>
+      </ul>
+      <div class="ref-h">Lifts, Oct 29 to Nov 3 (app weights)</div>
+      <ul class="dp-list">
+        <li>Nov 3 A: squat 155, 145, 145 &times; 12, 12, 10; incline bench 95 &times; 12, 10, 9; neutral-grip lat pulldown 130, 130, 135 &times; 12; Romanian deadlift 90 &times; 12, 12, 10; seated press 50 &times; 12; 3-point row 45, 50, 50 &times; 12; cable crossover 40, 46 &times; 15; calf raise 70 &times; 12; curl 50 &times; 12, 8; overhead extension 32.5 &times; 15, 12; knee raise 12, 12, 10, 10.</li>
+        <li>Oct 31 C: bench 100, 105, 110 &times; 12, 12, 10; leg press 270 &times; 12; cable row 70, 85, 85 &times; 12; shoulder press 65, 70 &times; 12, 11; chest press 45 &times; 12; lat pulldown 85 &times; 15, 15; hamstring curl 70, 80 &times; 12, 15.</li>
+        <li>Oct 29 B: deadlift 185 &times; 10, 195 &times; 8, 205 &times; 6, 195 &times; 8; chin-up 115, 130, 145, 145 &times; 12, 10, 10, 10; dumbbell bench 75 &times; 12, 12, 10; shrug 95 to 125 &times; 15, 12, 12, 10; Arnold press 40 &times; 12, 10, 12.</li>
+      </ul>
+      <div class="ref-h">Background</div>
+      <ul class="dp-list">
+        <li>Mostly vegetarian (Indian-based); chicken, eggs, yogurt and dairy are fine. Low bone density (Z-score &minus;2.3) and a right ankle sprain at intake. Hanging leg raises too hard (dead hang about 20 s), uses knee raises. Takes the initiative on form videos. Counted plates wrong on an early-morning deadlift (Oct 13).</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-neel -->
 
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
