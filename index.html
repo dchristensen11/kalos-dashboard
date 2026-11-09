@@ -1983,8 +1983,63 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 <!-- end NOV 15 day-group -->
 <!-- ═══════════ NOV 16 day-group, week-out cards built 2026-11-09 ═══════════ -->
 <div class="day-group">
-  <div class="day-label">Monday &middot; November 16, 2026 &mdash; 2 scans</div>
+  <div class="day-label">Monday &middot; November 16, 2026 &mdash; 3 scans</div>
 <div class="cards-row">
+<!-- ── TIM BEVINS · 8:15 AM · 4th package scan (6th DEXA), routine, 1-Year Lite, Kalos app ── -->
+<div class="card" id="card-tim">
+      <div class="card-header">
+        <div>
+          <div class="card-name clickable" onclick="openModal('tim')">Tim Bevins <span class="expand-chevron">&#8599;</span></div>
+          <div class="card-sub">Male &middot; 38 &middot; 4th Package Scan (6th DEXA) &middot; 1-Year Lite &middot; LBM Gain &middot; Kalos app</div>
+        </div>
+        <div class="card-badges">
+          <span class="badge badge-scan">8:15 AM</span>
+          <span class="badge badge-lbm">LBM Gain</span>
+        </div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric note"><div class="metric-val">159.39</div><div class="metric-label">Weight lb</div><div class="metric-sub">scale 161.8 &middot; Sep 21</div></div>
+        <div class="metric good"><div class="metric-val">13.1%</div><div class="metric-label">Body Fat</div><div class="metric-sub">3rd %ile</div></div>
+        <div class="metric note"><div class="metric-val">41.8</div><div class="metric-label">VAT cm&sup2;</div><div class="metric-sub">35.8 &rarr; 41.8</div></div>
+        <div class="metric note"><div class="metric-val">23rd %ile</div><div class="metric-label">ALMI</div><div class="metric-sub">22nd &rarr; 23rd</div></div>
+      </div>
+      <div class="consistency-section">
+        <div class="cons-label">📊 Training Consistency</div>
+        <div class="cons-row">
+          <div class="cons-pct" style="color:#ef4444">23%</div>
+          <div class="cons-right">
+            <div class="cons-track"><div class="cons-fill" style="width:23%;background:#ef4444"></div></div>
+            <div class="cons-detail">3 of 13 last 30d &middot; last session Oct 19 &middot; toe injury, yoga teacher training ends Nov 12 &middot; as of Nov 9</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-section">
+        <div class="why-tag">⭐ His Why</div>
+        <div class="why-text">Longevity and functionality: stay self-sufficient and hard to kill with no health insurance. Pride in consistency under disruption; identity shifting toward yoga instruction.</div>
+      </div>
+      <div class="checklist-section">
+        <div class="checklist-header" onclick="toggleChecklist('tim')">
+          <span class="checklist-title">✅ Pre-Scan Prep</span>
+          <div class="checklist-right">
+            <span class="checklist-progress-badge badge-partial" id="prog-tim">7/11</span>
+            <span class="checklist-chevron" id="chev-tim">›</span>
+          </div>
+        </div>
+        <div class="checklist-items" id="items-tim">
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Scan time confirmed &middot; <strong>Mon Nov 16, 8:15 AM, Campbell</strong> (Acuity 1774905868, checked Nov 9)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Baseline DEXA pulled &middot; <strong>Sep 21, last scan</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Member record read</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Thread read &middot; <strong>mom passed ~Nov 6</strong>, last message his (Nov 8 &ldquo;Exactly.&rdquo;), nothing owed</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Set-level lifts pulled &middot; <strong>last session Oct 19</strong></span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> Food journal &middot; <strong>no task added</strong>, Nov 7 and 8 tasks open, logging adds stress (Oct 5)</span></label>
+          <label class="checklist-item checked"><input type="checkbox" checked onchange="saveChecklist('tim')"><span> 6&ndash;12 month question <strong>skipped</strong>, term to Apr 17, 2027</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Pre-scan opener &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Squat Day on scan day &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> &ldquo;What have you noticed&rdquo; &middot; drafted</span></label>
+          <label class="checklist-item"><input type="checkbox" onchange="saveChecklist('tim')"><span> Night-before refresh + audio</span></label>
+        </div>
+      </div>
+    </div>
 <!-- ── DANIEL SWARTZ · 9:00 AM · 4th package scan (6th DEXA), routine, 1 Year Core, Kalos app ── -->
 <div class="card" id="card-swartz">
       <div class="card-header">
@@ -7451,6 +7506,267 @@ document.addEventListener('DOMContentLoaded', loadChecklists);
 
 </div>
   <!-- end modal-swartz -->
+
+<div id="modal-tim" class="modal-content"
+     data-name="Tim Bevins"
+     data-sub="Package Scan &middot; November 16, 2026 &middot; 8:15 AM &middot; Routine checkpoint &middot; LBM Gain &middot; M &middot; 38">
+
+  <script>
+  window.__scan1_tim = {
+  bw: 159.39,
+  scaleBw: 161.8,
+  bfPct: 13.1,
+  bfAMpct: 3,
+  lean: 138.58,
+  fat: 20.81,
+  vat: 41.8,
+  vatG: 202,
+  almiAMpct: 23,
+  bmd: null,
+  bmdZ: null,
+  scan1Date: "Sep 21, 2026 (last scan, the comparison baseline for this one). First scan Feb 16, 2026.",
+  androidGynoid: 0.92,
+  sourceNote: "Figures from the member scan history (PDF extracts). Lean figure is lean plus bone."
+};
+  </script>
+
+<!-- ═══ GLANCE STRIP ═══ -->
+<div class="glance">
+  <div class="glance-row">
+    <span class="g-chip g-dark">Mon Nov 16 &middot; 8:15 AM &middot; Campbell</span>
+    <span class="g-chip">4th package scan, 6th DEXA &middot; routine checkpoint</span>
+    <span class="g-chip">M &middot; 38 &middot; 6'0&quot;</span>
+  </div>
+  <div class="glance-row">
+    <span class="g-chip g-bad">23% last 30d, 3 of 13</span>
+    <span class="g-chip g-bad">Last session Oct 19</span>
+    <span class="g-chip g-good">ALMI 20th, 22nd, 23rd percentile</span>
+    <span class="g-chip g-warn">Mom passed ~Nov 6</span>
+    <span class="g-chip g-warn">Squat Day is scheduled on scan day</span>
+    <span class="g-chip g-warn">Toe injury Oct 19, no food logged</span>
+    <span class="g-chip g-info">Yoga teacher training ends Nov 12</span>
+    <span class="g-chip g-info">1-Year Lite to Apr 17, 2027: no close, no Slack post</span>
+  </div>
+</div>
+
+<!-- ═══ 1 - GOALS & MOTIVATION ═══ -->
+<div class="dp-section dp-section-goal">
+  <div class="dp-title">🎯 Goals &amp; Motivation</div>
+  <ul class="dp-list">
+    <li><strong>Build only.</strong> Body fat 13.1% is the 3rd percentile for his age and ALMI the 23rd, so there is nothing to cut. The job is food and consistent lifting.</li>
+    <li><strong>Goal weight 175 lb</strong> from about 162 to 165 (his figure on Nov 3, not a weigh-in; scale was 161.8 on Sep 21).</li>
+    <li><strong>Why:</strong> longevity and function, stay self-sufficient and hard to kill with no health insurance. Proud of consistency under disruption. Moving toward yoga instruction.</li>
+    <li><strong>Focus until the scan:</strong> one or two full body sessions a week, protein 120 g and more on lift days, then the 3-day split returns after Nov 12.</li>
+  </ul>
+</div>
+
+<!-- ═══ 2 - WINS TO OPEN WITH ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏆 Wins to Open With <span class="badge-pending" id="tim-scan-badge">Scan Pending</span></div>
+  <ul class="dp-list win-list">
+    <li><strong>ALMI 20th, 22nd, 23rd percentile</strong> across Jun, Jul and Sep. Three scans in a row up.</li>
+    <li><strong>Lean mass 123.42 lb on Feb 16 to 132.95 on Sep 21</strong> (+9.53), body weight 145.83 to 159.39.</li>
+    <li><strong>Deadlift 205&times;4 on Aug 6 to 225&times;5 on Oct 17.</strong></li>
+    <li><strong>Weighted pull-up 20 lb for 5 and Pendlay row 135&times;5</strong> on Oct 19, up from 10 lb and 115.</li>
+    <li><strong>Overhead press 100&times;6 on Oct 14</strong>, up from 95.</li>
+    <li><strong>Cold plunge, sauna and yoga all in</strong> through the layoff (Nov 3 call), plus a Burning Man break and a heavy family stretch without losing lean mass.</li>
+  </ul>
+</div>
+
+<!-- ═══ 3 - THE NUMBERS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📊 The Numbers <span class="t-mute">baseline for this scan: Sep 21, 2026</span> <a href="https://iris.livekalos.com/results-dashboard/125647" target="_blank" class="dp-title-link">Results &#8599;</a></div>
+  <div class="snap-metrics">
+    <div class="snap-metric"><div class="snap-val">159.39 lb</div><div class="snap-lbl">DXA total &middot; scale 161.8</div></div>
+    <div class="snap-metric"><div class="snap-val">13.1%</div><div class="snap-lbl">Body fat &middot; 3rd %ile age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">138.58 lb</div><div class="snap-lbl">Lean plus bone</div></div>
+    <div class="snap-metric"><div class="snap-val">20.81 lb</div><div class="snap-lbl">Fat mass</div></div>
+    <div class="snap-metric"><div class="snap-val">41.8 cm&sup2;</div><div class="snap-lbl">Visceral &middot; 202 g</div></div>
+    <div class="snap-metric"><div class="snap-val">23rd %ile</div><div class="snap-lbl">ALMI age-matched</div></div>
+    <div class="snap-metric"><div class="snap-val">0.92</div><div class="snap-lbl">Android / Gynoid</div></div>
+    <div class="snap-metric"><div class="snap-val">6' 0"</div><div class="snap-lbl">Age 38</div></div>
+  </div>
+  <table class="dp-table">
+    <thead><tr><th>Scan</th><th>Weight</th><th>Lean</th><th>Fat</th><th>BF % (%ile)</th><th>VAT</th><th>ALMI</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Feb 16</strong><br><span class="t-mute">intro</span></td><td>145.83</td><td>123.42</td><td>16.74</td><td>11.5%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td><strong>Mar 16</strong></td><td>151.31</td><td>128.21</td><td>17.41</td><td>11.5%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td><strong>Jun 10</strong></td><td>156.31</td><td>130.66</td><td>20.03</td><td>12.8% (3rd)</td><td>33.9</td><td>20th</td></tr>
+      <tr><td><strong>Jul 15</strong></td><td>159.02</td><td>132.89</td><td>20.54</td><td>12.9% (3rd)</td><td>35.8</td><td>22nd</td></tr>
+      <tr class="now"><td><strong>Sep 21</strong><br><span class="t-mute">baseline</span></td><td>159.39</td><td>132.95</td><td>20.81</td><td>13.1% (3rd)</td><td>41.8</td><td>23rd</td></tr>
+      <tr class="t-delta"><td><strong>Change</strong><br><span class="t-mute">Jul 15 to Sep 21</span></td><td class="t-ok">+0.37</td><td class="t-ok">+0.06</td><td class="t-warn">+0.27</td><td class="t-warn">+0.2 pts</td><td class="t-warn">+6.0</td><td class="t-ok">+1</td></tr>
+      <tr class="t-pending"><td><strong>Nov 16</strong><br><span class="t-mute">this scan</span></td><td colspan="6">Pending</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>Lean here is lean without bone</strong> (from the scan trend), so it reads lower than the lean-plus-bone tile. Visceral is low at 41.8 but has climbed 33.9, 35.8, 41.8 across three scans.</div>
+</div>
+
+<!-- ═══ 4 - THE PLAN SO FAR ═══ -->
+<div class="dp-section">
+  <div class="dp-title">📋 The Plan So Far <span class="t-mute">since the Sep 21 scan</span></div>
+  <table class="dp-table">
+    <thead><tr><th>Set</th><th>What was decided</th><th>Where it landed</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sep 21</strong><br><span class="t-mute">scan</span></td><td>3 strength sessions, protein daily, 3 days of food journal, warm up then open hard and back off</td><td class="t-ok">Sep 22, 24, 28, 29, Oct 1 and 5 all done</td></tr>
+      <tr><td><strong>Sep 27</strong><br><span class="t-mute">DM</span></td><td>Opening numbers: incline 145, row 140, deadlift 225, squat 175</td><td class="t-warn">Incline 120, row 155 and 140, deadlift 205, squat Oct 8 not done</td></tr>
+      <tr><td><strong>Oct 13</strong><br><span class="t-mute">midpoint</span></td><td>Workouts checking off again, two food log days, watch the elbow</td><td class="t-warn">Oct 14 and 17 done, food not logged</td></tr>
+      <tr><td><strong>Oct 19</strong><br><span class="t-mute">toe</span></td><td>Dropped a machine handle on his toe, purple and swollen by evening</td><td class="t-bad">No session since Oct 19</td></tr>
+      <tr><td><strong>Oct 28</strong><br><span class="t-mute">DM</span></td><td>Squat Day and next two sessions left open, food log Oct 29 and 30</td><td class="t-bad">None done. He chose yoga while it healed</td></tr>
+      <tr><td><strong>Nov 3</strong><br><span class="t-mute">midpoint</span></td><td>Full body workouts, one or two a week, until yoga training ends Nov 12; Immortal split pushed back; goal 175 lb</td><td class="t-ok">Full Body A/B in the app Nov 6 to 12, Immortal resumes Nov 16</td></tr>
+      <tr><td><strong>Nov 5 to 8</strong><br><span class="t-mute">DMs</span></td><td>Call notes, food log Nov 7 and 8, Full Body A/B plan, squat opener 165, protein 120</td><td class="t-warn">Nov 6 and 8 sessions missed. Nov 8 he told Daniel his mother passed</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5 - LIFTING METRICS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🏋 Lifting Metrics <a href="https://iris.livekalos.com/members/125647?tab=calendar" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <div class="dp-head">No new targets this week. The Nov 8 DM set the squat opener at 165, and Full Body A and B carry rep targets only</div>
+  <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Last logged</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Barbell Back Squat</strong><br><span class="t-mute">Full Body A, 6 to 8 reps</span></td><td>Sep 24: 145&times;5, 7, 155&times;10, 10<br><span class="t-mute">Aug 12: 165&times;8</span></td><td class="t-ok">Open at 165, told Nov 8. Squat Day on Nov 16 is scan day</td></tr>
+      <tr><td><strong>Barbell Deadlift</strong></td><td>Oct 17: 225&times;5, 205&times;5, 5, 5<br><span class="t-mute">Oct 1: 205&times;6, 7, 6, 5</span></td><td class="t-mute">Next one Nov 20, after the scan</td></tr>
+      <tr><td><strong>Seated Overhead Press</strong></td><td>Oct 14: 95&times;7, 8, 100&times;6, 6</td><td class="t-mute">Open at 100 for 5 to 7, told Oct 18</td></tr>
+      <tr><td><strong>Weighted Pull-Up</strong></td><td>Oct 19: 20&times;5, 20&times;4, 10&times;6</td><td class="t-mute">None this week</td></tr>
+      <tr><td><strong>Incline Barbell Bench</strong></td><td>Sep 28: 105&times;7, 120&times;7, 6, 8, 7</td><td class="t-mute">None this week</td></tr>
+      <tr style="background:#1e2030"><td colspan="3" style="font-size:10px;font-weight:700;color:#7c8aff;padding:6px 10px;letter-spacing:0.05em">Gold Standards: Male 40 to 60 bucket (age 38, nearest) &middot; 161.8 lb</td></tr>
+      <tr><td>BB Bench Press</td><td>~200 lb 1RM (1.25&times;BW)</td><td class="t-mute">Incline 120&times;8 is about 150</td></tr>
+      <tr><td>BB Back Squat</td><td>~245 lb 1RM (1.5&times;BW)</td><td class="t-mute">155&times;10 is about 205</td></tr>
+      <tr><td>BB Deadlift</td><td>~325 lb 1RM (2.0&times;BW)</td><td class="t-mute">225&times;5 is about 262</td></tr>
+    </tbody>
+  </table>
+  <div class="pat-grid">
+    <div class="pat pat-good">
+      <div class="pat-h">&#10003; Good pattern: load climbed</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Aug 6 to Oct 17</td><td>Deadlift</td><td><strong>205&times;4 to 225&times;5</strong></td></tr>
+        <tr><td>Oct 14</td><td>Overhead press</td><td><strong>95&times;7, 8 to 100&times;6, 6</strong></td></tr>
+        <tr><td>Oct 19</td><td>Pendlay row</td><td><strong>135&times;5, 5, then 115&times;8</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div class="pat pat-bad">
+      <div class="pat-h">&#10007; Flat sets: same weight, same reps</div>
+      <table class="dp-table"><tbody>
+        <tr><td>Sep 24</td><td>Squat</td><td><strong>155&times;10, 10</strong> (target 5 to 7)</td></tr>
+        <tr><td>Sep 28</td><td>Incline bench</td><td><strong>120&times;7, 6, 8, 7</strong></td></tr>
+        <tr><td>Oct 1</td><td>Deadlift</td><td><strong>205&times;6, 7, 6, 5</strong></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p class="dp-sub">Identical sets mean the first set had more in it. Open hard on sets 1 and 2, back off set 3.</p>
+  <div class="box-warn"><strong>Do not quote the Gold Standards.</strong> He is at the 23rd percentile ALMI at 161.8 lb, so the multipliers read as far off. In July Daniel told him he was close to the 2x deadlift target; use his own deadlift gain, 205 to 225, as the frame. Age 38 sits just under the 40 to 60 bucket, the younger bucket would be 1.5x, 2.0x, 2.5x.</div>
+</div>
+
+<!-- ═══ 6 - NUTRITION ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🥗 Nutrition <a href="https://iris.livekalos.com/members/125647" target="_blank" class="dp-title-link">Iris &#8599;</a></div>
+  <table class="dp-table">
+    <thead><tr><th>Target</th><th>What he logged</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><strong>Protein 120 g</strong><br><span class="t-mute">non-negotiable, more on lift days. Oatmeal with protein, shakes, creatine</span></td><td>No food entries and no tracked nutrition days in 14 days</td><td class="t-warn">No data</td></tr>
+      <tr><td><strong>More food to reach 175 lb</strong><br><span class="t-mute">from about 162 to 165</span></td><td>Supplement stack lost, restock planned end of October</td><td class="t-warn">Unknown</td></tr>
+      <tr><td><strong>Logging</strong><br><span class="t-mute">Oct 5: adds stress, eating is the win</span></td><td>Tasks open for Oct 19, 20, 29, 30 and Nov 7, 8</td><td class="t-warn">Not done</td></tr>
+    </tbody>
+  </table>
+  <div class="box-info"><strong>No new food log task.</strong> Daniel told him Oct 5 to skip logging if that keeps him eating, and the Nov 7 and 8 tasks are already open. Ask what a normal day looks like in the room.</div>
+</div>
+
+<!-- ═══ 7 - IN THEIR OWN WORDS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">💬 In Their Own Words</div>
+  <div class="box-warn">
+    <div class="dp-head">&ldquo;What have you noticed?&rdquo;</div>
+    <div class="say-ev"><span class="badge-pending">pending</span> <strong>Drafted, not sent.</strong> Daniel to decide whether it goes this week. He answered the Sep 9 version in detail.</div>
+  </div>
+  <div class="box-info">
+    <div class="dp-head">&ldquo;Where do you see yourself 6 to 12 months from now?&rdquo;</div>
+    <div class="say-ev"><strong>Not asked.</strong> 1-Year Lite runs to Apr 17, 2027, later scans remain after this one, no cliff.</div>
+  </div>
+  <div class="dp-head">His words</div>
+  <ul class="dp-list dp-sub">
+    <li>Sep 9: <em>"Shoulders feel and look amazing."</em></li>
+    <li>Sep 9: <em>"Im feeling refresh, strong, healthy, and hungry."</em></li>
+    <li>Sep 26: <em>"i really want to start pushing numbers. Hard."</em></li>
+    <li>Oct 28: <em>"The goal is to return to 4 days a week workout, 3 days yoga."</em></li>
+    <li>Nov 3: <em>"I might not be showing up in the gym, but I'm crushing it like in all of the other forms and ways."</em></li>
+    <li>Nov 8: <em>"Overall feeling grounded."</em> He told Daniel his mother passed a couple days before.</li>
+  </ul>
+</div>
+
+<!-- ═══ 8 - COACHING POINTS ═══ -->
+<div class="dp-section">
+  <div class="dp-title">🚩 Coaching Points</div>
+  <ul class="dp-list flag-list">
+    <li class="f-red"><strong>His mother passed about Nov 6.</strong> He told Daniel Nov 8 and Daniel replied. Let him bring it up first and keep the scan conversation light.</li>
+    <li class="f-red"><strong>Squat Day is scheduled on the scan day, Nov 16.</strong> The scan is 8:15 AM, so a heavy squat that day is not realistic. Needs moving in the app or a skip.</li>
+    <li class="f-amber"><strong>No completed session since Oct 19</strong> (3 of 13 in 30 days). The toe, yoga teacher training and the family situation explain it, and Daniel agreed the plan on Nov 3.</li>
+    <li class="f-amber"><strong>No food logged in 14 days.</strong> He said logging adds stress. Do not push it.</li>
+    <li class="f-amber"><strong>Toe injury Oct 19</strong> still healing as of Nov 3; elbow better but ongoing; back tweaked Oct 13.</li>
+    <li class="f-blue"><strong>Sets are flat on the big lifts</strong> (squat 155&times;10, 10; incline 120 across four sets). Open harder on set 1.</li>
+    <li class="f-green"><strong>Strength held through the layoff</strong> and lean mass has climbed on three straight scans.</li>
+  </ul>
+</div>
+
+<!-- ═══ 9 - SCAN-DAY FOCUS ═══ -->
+<div class="dp-section focus">
+  <div class="dp-title">🎯 Scan-Day Focus</div>
+  <ol class="focus-list">
+    <li><strong>Open on the climb:</strong> ALMI 20th, 22nd, 23rd and lean 123.42 to 132.95 lb since February, before any new number.</li>
+    <li><strong>Then the layoff:</strong> 3 of 13 sessions in 30 days. Frame what today shows as the result of a short break, not a verdict.</li>
+    <li><strong>Ask how he is doing</strong> and let him lead on family. Nothing about it unless he raises it.</li>
+    <li><strong>175 lb:</strong> from about 162 to 165, so food is the lever. Protein 120 first, then one more meal a day.</li>
+    <li><strong>Restart plan after yoga ends Nov 12:</strong> three-day split returns Nov 16 to 26. Open hard on set 1, back off set 3.</li>
+    <li><strong>Squat Day Nov 16:</strong> confirm he skips it and the next one is Nov 26.</li>
+    <li><strong>Tie it to his why:</strong> staying strong and self-sufficient with no health insurance, longevity.</li>
+    <li class="f-out"><strong>Leave out:</strong> renewal, packages, billing, calorie numbers, and any push on food logging.</li>
+  </ol>
+</div>
+
+<!-- ═══ 10 - REFERENCE ═══ -->
+<div class="dp-section">
+  <details class="ref">
+    <summary>📎 Reference: booking, other lifts, equipment, life, data caveats</summary>
+    <div class="ref-body">
+      <div class="ref-h">Booking and membership</div>
+      <ul class="dp-list">
+    <li>Mon Nov 16, 8:15 AM, 1875 S Bascom Ave Unit 2550, Campbell (Acuity 1774905868). No mid-point call booked after Nov 3.</li>
+    <li>1-Year Lite from Mar 17, 2026, term ends Apr 17, 2027. Scans roughly every other month. Kalos app since Oct 10.</li>
+  </ul>
+
+      <div class="ref-h">Other lifts</div>
+      <table class="dp-table">
+    <thead><tr><th>Lift</th><th>Sets</th></tr></thead>
+    <tbody>
+      <tr><td>Machine Hack Squat</td><td>Sep 24: 230&times;8, 8, 6</td></tr>
+      <tr><td>Dumbbell Bulgarian Split Squat</td><td>Sep 24: 40&times;8, 8, 35&times;8</td></tr>
+      <tr><td>Bent-Over Barbell Row</td><td>Sep 29: 155&times;4, 140&times;5, 5, 5</td></tr>
+      <tr><td>Dumbbell Bench Press</td><td>Sep 28: 110&times;10, 8, 3</td></tr>
+      <tr><td>Single-Arm Dumbbell Bench</td><td>Oct 14: 45&times;12, 50&times;12, 12</td></tr>
+      <tr><td>Parallel Bar Dip</td><td>Oct 14: bodyweight 8, 8 (25 lb plate noted by DM)</td></tr>
+    </tbody>
+  </table>
+
+      <div class="ref-h">Equipment, injuries and life</div>
+      <ul class="dp-list">
+    <li>Home outdoor gym with squat rack and 190 lb plates, dumbbells incoming. The Club in Los Gatos, front-desk role interview pending. Mountain gym secondary.</li>
+    <li>Toe injury Oct 19, elbow ongoing, back tweaked Oct 13. Yoga: CorePower 200-hour teacher training, in-person part ends Nov 12. Three jobs; casino work.</li>
+    <li>Cold plunge and sauna regularly. Supplement stack lost, restock planned.</li>
+    <li>Reports weight 162 to 165 (Nov 3). App weight log has only 145.83 on Feb 16.</li>
+  </ul>
+
+      <div class="ref-h">Data caveats</div>
+      <ul class="dp-list">
+    <li>Sessions completed since Aug 3 pulled Nov 9 from the Kalos app. Last completed session Oct 19 Immortal Pull B.</li>
+    <li>Squat 1RM estimates use Epley. Gold Standard bucket is a judgment call at age 38.</li>
+    <li>Food log tasks open: Oct 19, 20, 29, 30, Nov 7, 8. None created this run.</li>
+  </ul>
+    </div>
+  </details>
+</div>
+
+</div>
+  <!-- end modal-tim -->
 
 </div><!-- closes .modal-window -->
 </div><!-- end modal-backdrop -->
